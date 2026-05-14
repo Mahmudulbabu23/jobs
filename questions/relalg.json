@@ -3,7 +3,12 @@
     "id": "relalg_001",
     "question": "Which operator represents projection in relational algebra?",
     "code": null,
-    "options": ["pi", "sigma", "join", "union"],
+    "options": [
+      "pi",
+      "sigma",
+      "join",
+      "union"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection is written as pi (select columns)."
@@ -12,7 +17,12 @@
     "id": "relalg_002",
     "question": "Which operator represents selection in relational algebra?",
     "code": null,
-    "options": ["sigma", "pi", "join", "union"],
+    "options": [
+      "sigma",
+      "pi",
+      "join",
+      "union"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection is written as sigma (filter rows)."
@@ -21,7 +31,12 @@
     "id": "relalg_003",
     "question": "Which operator combines two relations with all tuples from both (no duplicates)?",
     "code": null,
-    "options": ["union", "join", "difference", "product"],
+    "options": [
+      "union",
+      "join",
+      "difference",
+      "product"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union combines tuples from both relations."
@@ -30,7 +45,12 @@
     "id": "relalg_004",
     "question": "Which operator returns tuples present in the first relation but not the second?",
     "code": null,
-    "options": ["difference", "union", "product", "join"],
+    "options": [
+      "difference",
+      "union",
+      "product",
+      "join"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Difference returns tuples in R not in S."
@@ -39,7 +59,12 @@
     "id": "relalg_005",
     "question": "Cartesian product of R and S yields:",
     "code": null,
-    "options": ["All tuple pairs", "Only matching tuples", "Only distinct tuples", "Only shared attributes"],
+    "options": [
+      "All tuple pairs",
+      "Only matching tuples",
+      "Only distinct tuples",
+      "Only shared attributes"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Product pairs each tuple of R with each tuple of S."
@@ -48,7 +73,12 @@
     "id": "relalg_006",
     "question": "Natural join combines tuples based on:",
     "code": null,
-    "options": ["Common attribute names", "Row order", "Primary key only", "All attributes"],
+    "options": [
+      "Common attribute names",
+      "Row order",
+      "Primary key only",
+      "All attributes"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Natural join matches on attributes with the same name."
@@ -57,7 +87,12 @@
     "id": "relalg_007",
     "question": "Theta join is:",
     "code": null,
-    "options": ["Join with a condition", "Join without condition", "Union", "Projection"],
+    "options": [
+      "Join with a condition",
+      "Join without condition",
+      "Union",
+      "Projection"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Theta join uses a general comparison condition."
@@ -66,7 +101,12 @@
     "id": "relalg_008",
     "question": "Equijoin is a special case of:",
     "code": null,
-    "options": ["theta join", "cartesian product", "union", "difference"],
+    "options": [
+      "theta join",
+      "cartesian product",
+      "union",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Equijoin uses equality as the join condition."
@@ -75,7 +115,12 @@
     "id": "relalg_009",
     "question": "Which operator changes attribute names?",
     "code": null,
-    "options": ["rename", "projection", "selection", "union"],
+    "options": [
+      "rename",
+      "projection",
+      "selection",
+      "union"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Rename changes attribute or relation names."
@@ -84,7 +129,12 @@
     "id": "relalg_010",
     "question": "Projection can potentially:",
     "code": null,
-    "options": ["Remove duplicates", "Add rows", "Change tuple order", "Add attributes"],
+    "options": [
+      "Remove duplicates",
+      "Add rows",
+      "Change tuple order",
+      "Add attributes"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection eliminates duplicate tuples."
@@ -93,7 +143,12 @@
     "id": "relalg_011",
     "question": "Selection operation affects:",
     "code": null,
-    "options": ["Rows", "Columns", "Schema", "Keys"],
+    "options": [
+      "Rows",
+      "Columns",
+      "Schema",
+      "Keys"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection filters tuples (rows)."
@@ -102,7 +157,12 @@
     "id": "relalg_012",
     "question": "Projection operation affects:",
     "code": null,
-    "options": ["Columns", "Rows", "Tuples only", "Ordering"],
+    "options": [
+      "Columns",
+      "Rows",
+      "Tuples only",
+      "Ordering"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection selects attributes (columns)."
@@ -111,7 +171,12 @@
     "id": "relalg_013",
     "question": "Union requires relations to be:",
     "code": null,
-    "options": ["Union compatible", "Same size only", "Primary-keyed", "Ordered"],
+    "options": [
+      "Union compatible",
+      "Same size only",
+      "Primary-keyed",
+      "Ordered"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union-compatible relations have the same attributes."
@@ -120,7 +185,12 @@
     "id": "relalg_014",
     "question": "Intersection returns tuples that are:",
     "code": null,
-    "options": ["In both relations", "Only in first", "Only in second", "Not in either"],
+    "options": [
+      "In both relations",
+      "Only in first",
+      "Only in second",
+      "Not in either"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Intersection returns common tuples."
@@ -129,7 +199,12 @@
     "id": "relalg_015",
     "question": "Difference operation requires relations to be:",
     "code": null,
-    "options": ["Union compatible", "Same row count", "Same keys", "Ordered"],
+    "options": [
+      "Union compatible",
+      "Same row count",
+      "Same keys",
+      "Ordered"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Difference requires union compatibility."
@@ -138,7 +213,12 @@
     "id": "relalg_016",
     "question": "The result of cartesian product has attributes:",
     "code": null,
-    "options": ["Combined from both relations", "Only from first", "Only from second", "None"],
+    "options": [
+      "Combined from both relations",
+      "Only from first",
+      "Only from second",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Product schema combines attributes from both relations."
@@ -147,7 +227,12 @@
     "id": "relalg_017",
     "question": "Natural join is equivalent to:",
     "code": null,
-    "options": ["Selection over cartesian product", "Union", "Difference", "Intersection"],
+    "options": [
+      "Selection over cartesian product",
+      "Union",
+      "Difference",
+      "Intersection"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Natural join can be expressed as selection on product."
@@ -156,7 +241,12 @@
     "id": "relalg_018",
     "question": "Outer join returns:",
     "code": null,
-    "options": ["Matching and non-matching tuples", "Only matching tuples", "Only non-matching tuples", "No tuples"],
+    "options": [
+      "Matching and non-matching tuples",
+      "Only matching tuples",
+      "Only non-matching tuples",
+      "No tuples"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Outer join keeps non-matching tuples with nulls."
@@ -165,7 +255,12 @@
     "id": "relalg_019",
     "question": "Semi-join returns:",
     "code": null,
-    "options": ["Tuples of first relation that match", "All tuples from both", "Only non-matching", "Only attributes from both"],
+    "options": [
+      "Tuples of first relation that match",
+      "All tuples from both",
+      "Only non-matching",
+      "Only attributes from both"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Semi-join filters the first relation by matches."
@@ -174,7 +269,12 @@
     "id": "relalg_020",
     "question": "Division operator is useful for:",
     "code": null,
-    "options": ["Queries with 'for all'", "Simple selection", "Projection only", "Sorting"],
+    "options": [
+      "Queries with 'for all'",
+      "Simple selection",
+      "Projection only",
+      "Sorting"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Division handles 'for all' type queries."
@@ -183,7 +283,12 @@
     "id": "relalg_021",
     "question": "Rename operation is denoted by:",
     "code": null,
-    "options": ["rho", "pi", "sigma", "theta"],
+    "options": [
+      "rho",
+      "pi",
+      "sigma",
+      "theta"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Rename is often written as rho."
@@ -192,7 +297,12 @@
     "id": "relalg_022",
     "question": "Which operator reduces the number of attributes?",
     "code": null,
-    "options": ["projection", "selection", "union", "join"],
+    "options": [
+      "projection",
+      "selection",
+      "union",
+      "join"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection picks a subset of attributes."
@@ -201,7 +311,12 @@
     "id": "relalg_023",
     "question": "Which operator reduces the number of tuples?",
     "code": null,
-    "options": ["selection", "projection", "rename", "product"],
+    "options": [
+      "selection",
+      "projection",
+      "rename",
+      "product"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection filters rows based on a predicate."
@@ -210,7 +325,12 @@
     "id": "relalg_024",
     "question": "Which operator can increase tuples dramatically?",
     "code": null,
-    "options": ["cartesian product", "projection", "selection", "difference"],
+    "options": [
+      "cartesian product",
+      "projection",
+      "selection",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Cartesian product multiplies tuples."
@@ -219,7 +339,12 @@
     "id": "relalg_025",
     "question": "In relational algebra, join is often defined as:",
     "code": null,
-    "options": ["selection over product", "union over difference", "projection over selection", "rename only"],
+    "options": [
+      "selection over product",
+      "union over difference",
+      "projection over selection",
+      "rename only"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Join can be expressed as a selection on cartesian product."
@@ -228,7 +353,12 @@
     "id": "relalg_026",
     "question": "Which operator ensures union compatibility?",
     "code": null,
-    "options": ["rename", "selection", "projection", "difference"],
+    "options": [
+      "rename",
+      "selection",
+      "projection",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Rename can align attribute names to make relations compatible."
@@ -237,7 +367,12 @@
     "id": "relalg_027",
     "question": "What is the result schema of R union S?",
     "code": null,
-    "options": ["Same as R and S", "Combined attributes", "Only keys", "None"],
+    "options": [
+      "Same as R and S",
+      "Combined attributes",
+      "Only keys",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union keeps the same schema as both inputs."
@@ -246,7 +381,12 @@
     "id": "relalg_028",
     "question": "Which operation is commutative?",
     "code": null,
-    "options": ["union", "difference", "division", "rename"],
+    "options": [
+      "union",
+      "difference",
+      "division",
+      "rename"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union is commutative: R union S = S union R."
@@ -255,7 +395,12 @@
     "id": "relalg_029",
     "question": "Which operation is NOT commutative?",
     "code": null,
-    "options": ["difference", "union", "intersection", "join"],
+    "options": [
+      "difference",
+      "union",
+      "intersection",
+      "join"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Difference depends on order: R - S != S - R."
@@ -264,7 +409,12 @@
     "id": "relalg_030",
     "question": "Which operation is associative?",
     "code": null,
-    "options": ["union", "difference", "rename", "selection"],
+    "options": [
+      "union",
+      "difference",
+      "rename",
+      "selection"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union is associative."
@@ -273,7 +423,12 @@
     "id": "relalg_031",
     "question": "Which operation is idempotent (R op R = R)?",
     "code": null,
-    "options": ["union", "product", "difference", "division"],
+    "options": [
+      "union",
+      "product",
+      "difference",
+      "division"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Union is idempotent."
@@ -282,7 +437,12 @@
     "id": "relalg_032",
     "question": "Which operation is NOT idempotent?",
     "code": null,
-    "options": ["product", "union", "intersection", "selection"],
+    "options": [
+      "product",
+      "union",
+      "intersection",
+      "selection"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Product multiplies tuples, so R x R is not R."
@@ -291,7 +451,12 @@
     "id": "relalg_033",
     "question": "Intersection can be derived using:",
     "code": null,
-    "options": ["difference and union", "selection only", "product only", "rename only"],
+    "options": [
+      "difference and union",
+      "selection only",
+      "product only",
+      "rename only"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Intersection can be expressed with difference operations."
@@ -300,7 +465,12 @@
     "id": "relalg_034",
     "question": "Which operator is unary?",
     "code": null,
-    "options": ["selection", "union", "product", "difference"],
+    "options": [
+      "selection",
+      "union",
+      "product",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection is a unary operator."
@@ -309,7 +479,12 @@
     "id": "relalg_035",
     "question": "Which operator is binary?",
     "code": null,
-    "options": ["union", "projection", "selection", "rename"],
+    "options": [
+      "union",
+      "projection",
+      "selection",
+      "rename"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Union is a binary operator."
@@ -318,7 +493,12 @@
     "id": "relalg_036",
     "question": "Which operator removes duplicate tuples?",
     "code": null,
-    "options": ["projection", "selection", "product", "rename"],
+    "options": [
+      "projection",
+      "selection",
+      "product",
+      "rename"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Projection eliminates duplicates."
@@ -327,7 +507,12 @@
     "id": "relalg_037",
     "question": "Which operator can create duplicate tuples?",
     "code": null,
-    "options": ["cartesian product", "selection", "rename", "difference"],
+    "options": [
+      "cartesian product",
+      "selection",
+      "rename",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Product can produce repeated combinations."
@@ -336,7 +521,12 @@
     "id": "relalg_038",
     "question": "Join is useful to:",
     "code": null,
-    "options": ["Combine related data", "Remove rows", "Rename columns", "Sort"],
+    "options": [
+      "Combine related data",
+      "Remove rows",
+      "Rename columns",
+      "Sort"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Join combines tuples based on a relationship."
@@ -345,7 +535,12 @@
     "id": "relalg_039",
     "question": "Selection followed by projection is used to:",
     "code": null,
-    "options": ["Filter rows then columns", "Sort rows", "Rename columns", "Add rows"],
+    "options": [
+      "Filter rows then columns",
+      "Sort rows",
+      "Rename columns",
+      "Add rows"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection filters tuples and projection selects attributes."
@@ -354,7 +549,12 @@
     "id": "relalg_040",
     "question": "Projection followed by selection is:",
     "code": null,
-    "options": ["Not always valid", "Always same as selection then projection", "Always faster", "Always slower"],
+    "options": [
+      "Not always valid",
+      "Always same as selection then projection",
+      "Always faster",
+      "Always slower"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Projection may remove attributes needed for selection."
@@ -363,7 +563,12 @@
     "id": "relalg_041",
     "question": "Which operation can be used to remove an attribute?",
     "code": null,
-    "options": ["projection", "selection", "union", "difference"],
+    "options": [
+      "projection",
+      "selection",
+      "union",
+      "difference"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection chooses a subset of attributes."
@@ -372,7 +577,12 @@
     "id": "relalg_042",
     "question": "A join condition A = B is a:",
     "code": null,
-    "options": ["equijoin", "theta join only", "natural join", "product"],
+    "options": [
+      "equijoin",
+      "theta join only",
+      "natural join",
+      "product"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Equality joins are equijoins."
@@ -381,7 +591,12 @@
     "id": "relalg_043",
     "question": "Natural join removes:",
     "code": null,
-    "options": ["Duplicate columns of join attributes", "All columns", "All tuples", "All keys"],
+    "options": [
+      "Duplicate columns of join attributes",
+      "All columns",
+      "All tuples",
+      "All keys"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Natural join eliminates duplicate join attributes."
@@ -390,7 +605,12 @@
     "id": "relalg_044",
     "question": "Which operator pairs tuples without any condition?",
     "code": null,
-    "options": ["cartesian product", "join", "selection", "projection"],
+    "options": [
+      "cartesian product",
+      "join",
+      "selection",
+      "projection"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Cartesian product pairs all tuples."
@@ -399,7 +619,12 @@
     "id": "relalg_045",
     "question": "A relation is:",
     "code": null,
-    "options": ["A set of tuples", "A list of files", "A graph", "A function"],
+    "options": [
+      "A set of tuples",
+      "A list of files",
+      "A graph",
+      "A function"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "A relation is a set of tuples with the same attributes."
@@ -408,7 +633,12 @@
     "id": "relalg_046",
     "question": "The degree of a relation is:",
     "code": null,
-    "options": ["Number of attributes", "Number of tuples", "Number of keys", "Number of joins"],
+    "options": [
+      "Number of attributes",
+      "Number of tuples",
+      "Number of keys",
+      "Number of joins"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Degree refers to attribute count."
@@ -417,7 +647,12 @@
     "id": "relalg_047",
     "question": "The cardinality of a relation is:",
     "code": null,
-    "options": ["Number of tuples", "Number of attributes", "Number of keys", "Number of joins"],
+    "options": [
+      "Number of tuples",
+      "Number of attributes",
+      "Number of keys",
+      "Number of joins"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Cardinality is the number of tuples."
@@ -426,7 +661,12 @@
     "id": "relalg_048",
     "question": "Selection is denoted as:",
     "code": null,
-    "options": ["sigma", "pi", "rho", "delta"],
+    "options": [
+      "sigma",
+      "pi",
+      "rho",
+      "delta"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Selection uses sigma."
@@ -435,7 +675,12 @@
     "id": "relalg_049",
     "question": "Projection is denoted as:",
     "code": null,
-    "options": ["pi", "sigma", "rho", "delta"],
+    "options": [
+      "pi",
+      "sigma",
+      "rho",
+      "delta"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Projection uses pi."
@@ -444,9 +689,714 @@
     "id": "relalg_050",
     "question": "Rename is denoted as:",
     "code": null,
-    "options": ["rho", "pi", "sigma", "theta"],
+    "options": [
+      "rho",
+      "pi",
+      "sigma",
+      "theta"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Rename uses rho notation."
+  },
+  {
+    "id": "relalg_051",
+    "question": "Which statement about selection is correct?",
+    "code": null,
+    "options": [
+      "Duplicates tuples",
+      "Filters rows based on a condition",
+      "Combines columns",
+      "Renames relation"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_052",
+    "question": "What is the main purpose of selection in Relational Algebra?",
+    "code": null,
+    "options": [
+      "Filters rows based on a condition",
+      "Combines columns",
+      "Renames relation",
+      "Duplicates tuples"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_053",
+    "question": "Which option best describes selection?",
+    "code": null,
+    "options": [
+      "Duplicates tuples",
+      "Filters rows based on a condition",
+      "Renames relation",
+      "Combines columns"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_054",
+    "question": "In Relational Algebra, selection refers to:",
+    "code": null,
+    "options": [
+      "Filters rows based on a condition",
+      "Renames relation",
+      "Duplicates tuples",
+      "Combines columns"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_055",
+    "question": "What does selection primarily do?",
+    "code": null,
+    "options": [
+      "Combines columns",
+      "Renames relation",
+      "Filters rows based on a condition",
+      "Duplicates tuples"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_056",
+    "question": "Choose the best description of selection.",
+    "code": null,
+    "options": [
+      "Combines columns",
+      "Renames relation",
+      "Duplicates tuples",
+      "Filters rows based on a condition"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_057",
+    "question": "Which is true about selection?",
+    "code": null,
+    "options": [
+      "Combines columns",
+      "Filters rows based on a condition",
+      "Renames relation",
+      "Duplicates tuples"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_058",
+    "question": "How is selection best explained?",
+    "code": null,
+    "options": [
+      "Duplicates tuples",
+      "Renames relation",
+      "Filters rows based on a condition",
+      "Combines columns"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_059",
+    "question": "Which answer matches selection most closely?",
+    "code": null,
+    "options": [
+      "Duplicates tuples",
+      "Renames relation",
+      "Filters rows based on a condition",
+      "Combines columns"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_060",
+    "question": "For Relational Algebra, selection is:",
+    "code": null,
+    "options": [
+      "Combines columns",
+      "Filters rows based on a condition",
+      "Renames relation",
+      "Duplicates tuples"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Selection keeps only rows that satisfy a condition."
+  },
+  {
+    "id": "relalg_061",
+    "question": "Which statement about projection is correct?",
+    "code": null,
+    "options": [
+      "Selects specific columns",
+      "Unions relations",
+      "Filters by rows",
+      "Sorts tuples"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_062",
+    "question": "What is the main purpose of projection in Relational Algebra?",
+    "code": null,
+    "options": [
+      "Selects specific columns",
+      "Sorts tuples",
+      "Filters by rows",
+      "Unions relations"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_063",
+    "question": "Which option best describes projection?",
+    "code": null,
+    "options": [
+      "Filters by rows",
+      "Unions relations",
+      "Selects specific columns",
+      "Sorts tuples"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_064",
+    "question": "In Relational Algebra, projection refers to:",
+    "code": null,
+    "options": [
+      "Selects specific columns",
+      "Filters by rows",
+      "Unions relations",
+      "Sorts tuples"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_065",
+    "question": "What does projection primarily do?",
+    "code": null,
+    "options": [
+      "Unions relations",
+      "Selects specific columns",
+      "Sorts tuples",
+      "Filters by rows"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_066",
+    "question": "Choose the best description of projection.",
+    "code": null,
+    "options": [
+      "Unions relations",
+      "Selects specific columns",
+      "Filters by rows",
+      "Sorts tuples"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_067",
+    "question": "Which is true about projection?",
+    "code": null,
+    "options": [
+      "Selects specific columns",
+      "Sorts tuples",
+      "Unions relations",
+      "Filters by rows"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_068",
+    "question": "How is projection best explained?",
+    "code": null,
+    "options": [
+      "Filters by rows",
+      "Sorts tuples",
+      "Selects specific columns",
+      "Unions relations"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_069",
+    "question": "Which answer matches projection most closely?",
+    "code": null,
+    "options": [
+      "Sorts tuples",
+      "Filters by rows",
+      "Unions relations",
+      "Selects specific columns"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_070",
+    "question": "For Relational Algebra, projection is:",
+    "code": null,
+    "options": [
+      "Unions relations",
+      "Filters by rows",
+      "Sorts tuples",
+      "Selects specific columns"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Projection reduces a relation to selected attributes."
+  },
+  {
+    "id": "relalg_071",
+    "question": "Which statement about join is correct?",
+    "code": null,
+    "options": [
+      "Scans disk",
+      "Combines relations using a condition",
+      "Removes attributes",
+      "Encrypts tuples"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_072",
+    "question": "What is the main purpose of join in Relational Algebra?",
+    "code": null,
+    "options": [
+      "Combines relations using a condition",
+      "Removes attributes",
+      "Encrypts tuples",
+      "Scans disk"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_073",
+    "question": "Which option best describes join?",
+    "code": null,
+    "options": [
+      "Encrypts tuples",
+      "Combines relations using a condition",
+      "Removes attributes",
+      "Scans disk"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_074",
+    "question": "In Relational Algebra, join refers to:",
+    "code": null,
+    "options": [
+      "Scans disk",
+      "Encrypts tuples",
+      "Combines relations using a condition",
+      "Removes attributes"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_075",
+    "question": "What does join primarily do?",
+    "code": null,
+    "options": [
+      "Encrypts tuples",
+      "Combines relations using a condition",
+      "Scans disk",
+      "Removes attributes"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_076",
+    "question": "Choose the best description of join.",
+    "code": null,
+    "options": [
+      "Encrypts tuples",
+      "Combines relations using a condition",
+      "Scans disk",
+      "Removes attributes"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_077",
+    "question": "Which is true about join?",
+    "code": null,
+    "options": [
+      "Removes attributes",
+      "Combines relations using a condition",
+      "Encrypts tuples",
+      "Scans disk"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_078",
+    "question": "How is join best explained?",
+    "code": null,
+    "options": [
+      "Combines relations using a condition",
+      "Scans disk",
+      "Encrypts tuples",
+      "Removes attributes"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_079",
+    "question": "Which answer matches join most closely?",
+    "code": null,
+    "options": [
+      "Removes attributes",
+      "Scans disk",
+      "Encrypts tuples",
+      "Combines relations using a condition"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_080",
+    "question": "For Relational Algebra, join is:",
+    "code": null,
+    "options": [
+      "Combines relations using a condition",
+      "Encrypts tuples",
+      "Removes attributes",
+      "Scans disk"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Join connects related tuples from two relations."
+  },
+  {
+    "id": "relalg_081",
+    "question": "Which statement about union is correct?",
+    "code": null,
+    "options": [
+      "Returns tuples present in either relation",
+      "Only sorted tuples",
+      "Only one column",
+      "Only common tuples"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_082",
+    "question": "What is the main purpose of union in Relational Algebra?",
+    "code": null,
+    "options": [
+      "Only sorted tuples",
+      "Only one column",
+      "Returns tuples present in either relation",
+      "Only common tuples"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_083",
+    "question": "Which option best describes union?",
+    "code": null,
+    "options": [
+      "Only one column",
+      "Only common tuples",
+      "Only sorted tuples",
+      "Returns tuples present in either relation"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_084",
+    "question": "In Relational Algebra, union refers to:",
+    "code": null,
+    "options": [
+      "Only sorted tuples",
+      "Only one column",
+      "Only common tuples",
+      "Returns tuples present in either relation"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_085",
+    "question": "What does union primarily do?",
+    "code": null,
+    "options": [
+      "Only sorted tuples",
+      "Only one column",
+      "Returns tuples present in either relation",
+      "Only common tuples"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_086",
+    "question": "Choose the best description of union.",
+    "code": null,
+    "options": [
+      "Returns tuples present in either relation",
+      "Only sorted tuples",
+      "Only common tuples",
+      "Only one column"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_087",
+    "question": "Which is true about union?",
+    "code": null,
+    "options": [
+      "Returns tuples present in either relation",
+      "Only common tuples",
+      "Only sorted tuples",
+      "Only one column"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_088",
+    "question": "How is union best explained?",
+    "code": null,
+    "options": [
+      "Returns tuples present in either relation",
+      "Only one column",
+      "Only common tuples",
+      "Only sorted tuples"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_089",
+    "question": "Which answer matches union most closely?",
+    "code": null,
+    "options": [
+      "Returns tuples present in either relation",
+      "Only one column",
+      "Only sorted tuples",
+      "Only common tuples"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_090",
+    "question": "For Relational Algebra, union is:",
+    "code": null,
+    "options": [
+      "Only one column",
+      "Only sorted tuples",
+      "Only common tuples",
+      "Returns tuples present in either relation"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Union combines all tuples from both relations."
+  },
+  {
+    "id": "relalg_091",
+    "question": "Which statement about difference is correct?",
+    "code": null,
+    "options": [
+      "Joins on keys",
+      "Returns tuples in first relation but not second",
+      "Duplicates columns",
+      "Merges all tuples"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_092",
+    "question": "What is the main purpose of difference in Relational Algebra?",
+    "code": null,
+    "options": [
+      "Joins on keys",
+      "Duplicates columns",
+      "Returns tuples in first relation but not second",
+      "Merges all tuples"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_093",
+    "question": "Which option best describes difference?",
+    "code": null,
+    "options": [
+      "Merges all tuples",
+      "Joins on keys",
+      "Duplicates columns",
+      "Returns tuples in first relation but not second"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_094",
+    "question": "In Relational Algebra, difference refers to:",
+    "code": null,
+    "options": [
+      "Duplicates columns",
+      "Merges all tuples",
+      "Joins on keys",
+      "Returns tuples in first relation but not second"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_095",
+    "question": "What does difference primarily do?",
+    "code": null,
+    "options": [
+      "Returns tuples in first relation but not second",
+      "Joins on keys",
+      "Duplicates columns",
+      "Merges all tuples"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_096",
+    "question": "Choose the best description of difference.",
+    "code": null,
+    "options": [
+      "Joins on keys",
+      "Merges all tuples",
+      "Returns tuples in first relation but not second",
+      "Duplicates columns"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_097",
+    "question": "Which is true about difference?",
+    "code": null,
+    "options": [
+      "Joins on keys",
+      "Merges all tuples",
+      "Returns tuples in first relation but not second",
+      "Duplicates columns"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_098",
+    "question": "How is difference best explained?",
+    "code": null,
+    "options": [
+      "Duplicates columns",
+      "Joins on keys",
+      "Merges all tuples",
+      "Returns tuples in first relation but not second"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_099",
+    "question": "Which answer matches difference most closely?",
+    "code": null,
+    "options": [
+      "Returns tuples in first relation but not second",
+      "Duplicates columns",
+      "Merges all tuples",
+      "Joins on keys"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Difference subtracts the second relation from the first."
+  },
+  {
+    "id": "relalg_100",
+    "question": "For Relational Algebra, difference is:",
+    "code": null,
+    "options": [
+      "Merges all tuples",
+      "Joins on keys",
+      "Returns tuples in first relation but not second",
+      "Duplicates columns"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Difference subtracts the second relation from the first."
   }
 ]

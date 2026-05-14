@@ -3,7 +3,12 @@
     "id": "oop_001",
     "question": "Which OOP concept allows one interface, many implementations?",
     "code": null,
-    "options": ["Polymorphism", "Encapsulation", "Inheritance", "Abstraction"],
+    "options": [
+      "Polymorphism",
+      "Encapsulation",
+      "Inheritance",
+      "Abstraction"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Polymorphism allows different types to be treated uniformly."
@@ -12,7 +17,12 @@
     "id": "oop_002",
     "question": "Encapsulation means:",
     "code": null,
-    "options": ["Hiding internal state", "Multiple inheritance", "Overloading only", "Using global variables"],
+    "options": [
+      "Hiding internal state",
+      "Multiple inheritance",
+      "Overloading only",
+      "Using global variables"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Encapsulation bundles data and methods with access control."
@@ -21,7 +31,12 @@
     "id": "oop_003",
     "question": "Inheritance is used to:",
     "code": null,
-    "options": ["Reuse code", "Hide data", "Remove classes", "Compile code"],
+    "options": [
+      "Reuse code",
+      "Hide data",
+      "Remove classes",
+      "Compile code"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Inheritance allows reuse of base class behavior."
@@ -30,7 +45,12 @@
     "id": "oop_004",
     "question": "Abstraction focuses on:",
     "code": null,
-    "options": ["Essential details only", "All implementation details", "Copying objects", "File handling"],
+    "options": [
+      "Essential details only",
+      "All implementation details",
+      "Copying objects",
+      "File handling"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Abstraction exposes important features and hides complexity."
@@ -39,7 +59,12 @@
     "id": "oop_005",
     "question": "Method overloading means:",
     "code": null,
-    "options": ["Same name, different parameters", "Same name, same parameters", "Different name, same parameters", "Only in base class"],
+    "options": [
+      "Same name, different parameters",
+      "Same name, same parameters",
+      "Different name, same parameters",
+      "Only in base class"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Overloading uses same method name with different signatures."
@@ -48,7 +73,12 @@
     "id": "oop_006",
     "question": "Method overriding means:",
     "code": null,
-    "options": ["Subclass provides new implementation", "Same method in same class", "Static method call", "Private method call"],
+    "options": [
+      "Subclass provides new implementation",
+      "Same method in same class",
+      "Static method call",
+      "Private method call"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Overriding replaces a base class implementation."
@@ -57,7 +87,12 @@
     "id": "oop_007",
     "question": "Which supports runtime polymorphism?",
     "code": null,
-    "options": ["Method overriding", "Method overloading", "Operator overloading", "Static binding"],
+    "options": [
+      "Method overriding",
+      "Method overloading",
+      "Operator overloading",
+      "Static binding"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Overriding is resolved at runtime via dynamic dispatch."
@@ -66,7 +101,12 @@
     "id": "oop_008",
     "question": "Which supports compile-time polymorphism?",
     "code": null,
-    "options": ["Method overloading", "Method overriding", "Dynamic binding", "Virtual method"],
+    "options": [
+      "Method overloading",
+      "Method overriding",
+      "Dynamic binding",
+      "Virtual method"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Overloading is resolved at compile time."
@@ -75,7 +115,12 @@
     "id": "oop_009",
     "question": "A class is:",
     "code": null,
-    "options": ["A blueprint for objects", "An instance", "A function", "A variable"],
+    "options": [
+      "A blueprint for objects",
+      "An instance",
+      "A function",
+      "A variable"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Classes define structure and behavior for objects."
@@ -84,7 +129,12 @@
     "id": "oop_010",
     "question": "An object is:",
     "code": null,
-    "options": ["An instance of a class", "A function", "A module", "A package"],
+    "options": [
+      "An instance of a class",
+      "A function",
+      "A module",
+      "A package"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Objects are instances created from classes."
@@ -93,7 +143,12 @@
     "id": "oop_011",
     "question": "Which access modifier is most restrictive?",
     "code": null,
-    "options": ["private", "protected", "public", "internal"],
+    "options": [
+      "private",
+      "protected",
+      "public",
+      "internal"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "private limits access to the defining class only."
@@ -102,7 +157,12 @@
     "id": "oop_012",
     "question": "Which access modifier allows subclasses to access members?",
     "code": null,
-    "options": ["protected", "private", "public", "static"],
+    "options": [
+      "protected",
+      "private",
+      "public",
+      "static"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "protected allows subclass access."
@@ -111,7 +171,12 @@
     "id": "oop_013",
     "question": "Which access modifier allows access from anywhere?",
     "code": null,
-    "options": ["public", "private", "protected", "final"],
+    "options": [
+      "public",
+      "private",
+      "protected",
+      "final"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "public is accessible from any code."
@@ -120,7 +185,12 @@
     "id": "oop_014",
     "question": "A constructor is used to:",
     "code": null,
-    "options": ["Initialize objects", "Destroy objects", "Overload operators", "Compile classes"],
+    "options": [
+      "Initialize objects",
+      "Destroy objects",
+      "Overload operators",
+      "Compile classes"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Constructors set initial state for objects."
@@ -129,7 +199,12 @@
     "id": "oop_015",
     "question": "A destructor is used to:",
     "code": null,
-    "options": ["Clean up resources", "Create objects", "Rename classes", "Override methods"],
+    "options": [
+      "Clean up resources",
+      "Create objects",
+      "Rename classes",
+      "Override methods"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Destructors release resources when objects are destroyed."
@@ -138,7 +213,12 @@
     "id": "oop_016",
     "question": "An abstract class:",
     "code": null,
-    "options": ["Cannot be instantiated", "Must have all methods implemented", "Is always final", "Has no fields"],
+    "options": [
+      "Cannot be instantiated",
+      "Must have all methods implemented",
+      "Is always final",
+      "Has no fields"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Abstract classes cannot be instantiated directly."
@@ -147,7 +227,12 @@
     "id": "oop_017",
     "question": "An interface typically:",
     "code": null,
-    "options": ["Defines method signatures", "Stores implementation only", "Is a class instance", "Has private fields only"],
+    "options": [
+      "Defines method signatures",
+      "Stores implementation only",
+      "Is a class instance",
+      "Has private fields only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Interfaces specify method contracts."
@@ -156,7 +241,12 @@
     "id": "oop_018",
     "question": "Composition means:",
     "code": null,
-    "options": ["Has-a relationship", "Is-a relationship", "No relationship", "Is-not relationship"],
+    "options": [
+      "Has-a relationship",
+      "Is-a relationship",
+      "No relationship",
+      "Is-not relationship"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Composition models a has-a relationship."
@@ -165,7 +255,12 @@
     "id": "oop_019",
     "question": "Inheritance models:",
     "code": null,
-    "options": ["Is-a relationship", "Has-a relationship", "Uses-a relationship", "None"],
+    "options": [
+      "Is-a relationship",
+      "Has-a relationship",
+      "Uses-a relationship",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Inheritance represents an is-a relationship."
@@ -174,7 +269,12 @@
     "id": "oop_020",
     "question": "Which principle promotes reusable code?",
     "code": null,
-    "options": ["Inheritance", "Encapsulation", "Abstraction", "Polymorphism"],
+    "options": [
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction",
+      "Polymorphism"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Inheritance allows reuse of common behavior."
@@ -183,7 +283,12 @@
     "id": "oop_021",
     "question": "Which principle hides complexity?",
     "code": null,
-    "options": ["Abstraction", "Inheritance", "Overloading", "Static"],
+    "options": [
+      "Abstraction",
+      "Inheritance",
+      "Overloading",
+      "Static"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Abstraction exposes only essential features."
@@ -192,7 +297,12 @@
     "id": "oop_022",
     "question": "Which principle prevents direct access to internal data?",
     "code": null,
-    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Interfaces"],
+    "options": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Interfaces"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Encapsulation restricts access via access modifiers."
@@ -201,7 +311,12 @@
     "id": "oop_023",
     "question": "Dynamic dispatch is used in:",
     "code": null,
-    "options": ["Runtime polymorphism", "Compile-time polymorphism", "Encapsulation", "Composition"],
+    "options": [
+      "Runtime polymorphism",
+      "Compile-time polymorphism",
+      "Encapsulation",
+      "Composition"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Dynamic dispatch selects the method at runtime."
@@ -210,7 +325,12 @@
     "id": "oop_024",
     "question": "Which keyword prevents inheritance?",
     "code": null,
-    "options": ["final", "virtual", "override", "public"],
+    "options": [
+      "final",
+      "virtual",
+      "override",
+      "public"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "final classes cannot be extended."
@@ -219,7 +339,12 @@
     "id": "oop_025",
     "question": "Which keyword enables overriding?",
     "code": null,
-    "options": ["virtual", "static", "private", "const"],
+    "options": [
+      "virtual",
+      "static",
+      "private",
+      "const"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "virtual enables overriding in many languages."
@@ -228,7 +353,12 @@
     "id": "oop_026",
     "question": "A static method:",
     "code": null,
-    "options": ["Belongs to the class", "Belongs to object", "Is always abstract", "Cannot be called"],
+    "options": [
+      "Belongs to the class",
+      "Belongs to object",
+      "Is always abstract",
+      "Cannot be called"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Static methods are called on the class itself."
@@ -237,7 +367,12 @@
     "id": "oop_027",
     "question": "Which is true about interfaces?",
     "code": null,
-    "options": ["Multiple interfaces can be implemented", "Only one interface allowed", "Interfaces hold data", "Interfaces cannot be used"],
+    "options": [
+      "Multiple interfaces can be implemented",
+      "Only one interface allowed",
+      "Interfaces hold data",
+      "Interfaces cannot be used"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Classes can implement multiple interfaces."
@@ -246,7 +381,12 @@
     "id": "oop_028",
     "question": "Overloading differs from overriding because:",
     "code": null,
-    "options": ["Overloading uses different parameters", "Overriding uses same signature", "Both A and B", "Neither"],
+    "options": [
+      "Overloading uses different parameters",
+      "Overriding uses same signature",
+      "Both A and B",
+      "Neither"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "Overloading uses different signatures; overriding uses same."
@@ -255,7 +395,12 @@
     "id": "oop_029",
     "question": "Which principle suggests favoring composition over inheritance?",
     "code": null,
-    "options": ["Design flexibility", "Compile speed", "Memory leaks", "Syntax"],
+    "options": [
+      "Design flexibility",
+      "Compile speed",
+      "Memory leaks",
+      "Syntax"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Composition reduces tight coupling."
@@ -264,7 +409,12 @@
     "id": "oop_030",
     "question": "A class that cannot be instantiated is:",
     "code": null,
-    "options": ["Abstract class", "Concrete class", "Final class", "Static class"],
+    "options": [
+      "Abstract class",
+      "Concrete class",
+      "Final class",
+      "Static class"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Abstract classes cannot be instantiated."
@@ -273,7 +423,12 @@
     "id": "oop_031",
     "question": "Which is an example of composition?",
     "code": null,
-    "options": ["Car has Engine", "Dog is Animal", "Manager is Employee", "Circle is Shape"],
+    "options": [
+      "Car has Engine",
+      "Dog is Animal",
+      "Manager is Employee",
+      "Circle is Shape"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Composition uses has-a relationships."
@@ -282,7 +437,12 @@
     "id": "oop_032",
     "question": "Which is an example of inheritance?",
     "code": null,
-    "options": ["Dog is Animal", "Car has Engine", "School has Students", "CPU has Cache"],
+    "options": [
+      "Dog is Animal",
+      "Car has Engine",
+      "School has Students",
+      "CPU has Cache"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Inheritance represents is-a relationships."
@@ -291,7 +451,12 @@
     "id": "oop_033",
     "question": "Which is a benefit of encapsulation?",
     "code": null,
-    "options": ["Data hiding", "Multiple inheritance", "More globals", "No methods"],
+    "options": [
+      "Data hiding",
+      "Multiple inheritance",
+      "More globals",
+      "No methods"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Encapsulation hides data and protects invariants."
@@ -300,7 +465,12 @@
     "id": "oop_034",
     "question": "Which is a drawback of deep inheritance?",
     "code": null,
-    "options": ["Tight coupling", "Better reuse", "Simpler testing", "Less complexity"],
+    "options": [
+      "Tight coupling",
+      "Better reuse",
+      "Simpler testing",
+      "Less complexity"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Deep inheritance can create tight coupling and complexity."
@@ -309,7 +479,12 @@
     "id": "oop_035",
     "question": "Which keyword calls the parent constructor?",
     "code": null,
-    "options": ["super", "this", "base", "parent"],
+    "options": [
+      "super",
+      "this",
+      "base",
+      "parent"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "super (or base in C#) invokes parent constructor."
@@ -318,7 +493,12 @@
     "id": "oop_036",
     "question": "Which is a benefit of polymorphism?",
     "code": null,
-    "options": ["Flexible interfaces", "More global variables", "Reduced reuse", "No overriding"],
+    "options": [
+      "Flexible interfaces",
+      "More global variables",
+      "Reduced reuse",
+      "No overriding"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Polymorphism allows code to work with different types."
@@ -327,7 +507,12 @@
     "id": "oop_037",
     "question": "Which feature supports code reuse without inheritance?",
     "code": null,
-    "options": ["Composition", "Encapsulation", "Abstraction", "Overloading"],
+    "options": [
+      "Composition",
+      "Encapsulation",
+      "Abstraction",
+      "Overloading"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Composition allows reuse by containing other objects."
@@ -336,7 +521,12 @@
     "id": "oop_038",
     "question": "Which is an interface implementation example?",
     "code": null,
-    "options": ["class Car implements Drivable", "class Car extends Drivable", "class Car private Drivable", "class Car override Drivable"],
+    "options": [
+      "class Car implements Drivable",
+      "class Car extends Drivable",
+      "class Car private Drivable",
+      "class Car override Drivable"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Implements indicates interface usage."
@@ -345,7 +535,12 @@
     "id": "oop_039",
     "question": "What does 'this' refer to?",
     "code": null,
-    "options": ["Current object", "Parent class", "Child class", "Static class"],
+    "options": [
+      "Current object",
+      "Parent class",
+      "Child class",
+      "Static class"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "this refers to the current instance."
@@ -354,7 +549,12 @@
     "id": "oop_040",
     "question": "Which is a key OOP principle?",
     "code": null,
-    "options": ["Encapsulation", "Normalization", "Compilation", "Routing"],
+    "options": [
+      "Encapsulation",
+      "Normalization",
+      "Compilation",
+      "Routing"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Encapsulation is one of the core OOP principles."
@@ -363,7 +563,12 @@
     "id": "oop_041",
     "question": "Which is a feature of abstract classes?",
     "code": null,
-    "options": ["Can have concrete methods", "Cannot have fields", "Cannot have constructors", "Cannot be inherited"],
+    "options": [
+      "Can have concrete methods",
+      "Cannot have fields",
+      "Cannot have constructors",
+      "Cannot be inherited"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Abstract classes can include concrete methods."
@@ -372,7 +577,12 @@
     "id": "oop_042",
     "question": "Which is a feature of interfaces?",
     "code": null,
-    "options": ["Define contracts", "Allow instance variables", "Provide full implementation", "Forbid inheritance"],
+    "options": [
+      "Define contracts",
+      "Allow instance variables",
+      "Provide full implementation",
+      "Forbid inheritance"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Interfaces define method contracts."
@@ -381,7 +591,12 @@
     "id": "oop_043",
     "question": "Which is an example of method overriding?",
     "code": null,
-    "options": ["Child class replaces parent method", "Two methods same name in one class", "Function pointer", "Static method"],
+    "options": [
+      "Child class replaces parent method",
+      "Two methods same name in one class",
+      "Function pointer",
+      "Static method"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Overriding replaces a parent implementation."
@@ -390,7 +605,12 @@
     "id": "oop_044",
     "question": "Which is an example of method overloading?",
     "code": null,
-    "options": ["Same name, different parameters", "Different classes", "Same signature", "Runtime dispatch"],
+    "options": [
+      "Same name, different parameters",
+      "Different classes",
+      "Same signature",
+      "Runtime dispatch"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Overloading uses different signatures with the same name."
@@ -399,7 +619,12 @@
     "id": "oop_045",
     "question": "Which keyword indicates a method cannot be overridden?",
     "code": null,
-    "options": ["final", "virtual", "override", "abstract"],
+    "options": [
+      "final",
+      "virtual",
+      "override",
+      "abstract"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "final prevents overriding."
@@ -408,7 +633,12 @@
     "id": "oop_046",
     "question": "Which principle reduces coupling?",
     "code": null,
-    "options": ["Encapsulation", "Global state", "Tight inheritance", "Static everything"],
+    "options": [
+      "Encapsulation",
+      "Global state",
+      "Tight inheritance",
+      "Static everything"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Encapsulation hides implementation details."
@@ -417,7 +647,12 @@
     "id": "oop_047",
     "question": "Which is the correct order for object creation?",
     "code": null,
-    "options": ["Allocate memory, call constructor", "Call constructor, allocate memory", "Compile, then allocate", "None"],
+    "options": [
+      "Allocate memory, call constructor",
+      "Call constructor, allocate memory",
+      "Compile, then allocate",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Objects allocate memory then run constructors."
@@ -426,7 +661,12 @@
     "id": "oop_048",
     "question": "Which concept enables method reuse without inheritance?",
     "code": null,
-    "options": ["Composition", "Overloading", "Static binding", "Casting"],
+    "options": [
+      "Composition",
+      "Overloading",
+      "Static binding",
+      "Casting"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Composition allows reuse by including other objects."
@@ -435,7 +675,12 @@
     "id": "oop_049",
     "question": "Which is a key advantage of interfaces?",
     "code": null,
-    "options": ["Decoupling", "Tight coupling", "No abstraction", "No reuse"],
+    "options": [
+      "Decoupling",
+      "Tight coupling",
+      "No abstraction",
+      "No reuse"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Interfaces decouple implementations from usage."
@@ -444,9 +689,714 @@
     "id": "oop_050",
     "question": "Which concept allows the same method name with different behavior?",
     "code": null,
-    "options": ["Polymorphism", "Encapsulation", "Abstraction", "Composition"],
+    "options": [
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction",
+      "Composition"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Polymorphism allows different implementations under one interface."
+  },
+  {
+    "id": "oop_051",
+    "question": "Which statement about polymorphism is correct?",
+    "code": null,
+    "options": [
+      "Same interface, different implementations",
+      "Object destruction",
+      "File hiding",
+      "Access control"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_052",
+    "question": "What is the main purpose of polymorphism in OOP?",
+    "code": null,
+    "options": [
+      "File hiding",
+      "Same interface, different implementations",
+      "Access control",
+      "Object destruction"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_053",
+    "question": "Which option best describes polymorphism?",
+    "code": null,
+    "options": [
+      "Access control",
+      "File hiding",
+      "Same interface, different implementations",
+      "Object destruction"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_054",
+    "question": "In OOP, polymorphism refers to:",
+    "code": null,
+    "options": [
+      "Same interface, different implementations",
+      "Object destruction",
+      "Access control",
+      "File hiding"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_055",
+    "question": "What does polymorphism primarily do?",
+    "code": null,
+    "options": [
+      "Access control",
+      "Same interface, different implementations",
+      "File hiding",
+      "Object destruction"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_056",
+    "question": "Choose the best description of polymorphism.",
+    "code": null,
+    "options": [
+      "File hiding",
+      "Object destruction",
+      "Access control",
+      "Same interface, different implementations"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_057",
+    "question": "Which is true about polymorphism?",
+    "code": null,
+    "options": [
+      "Object destruction",
+      "Same interface, different implementations",
+      "File hiding",
+      "Access control"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_058",
+    "question": "How is polymorphism best explained?",
+    "code": null,
+    "options": [
+      "Object destruction",
+      "Access control",
+      "File hiding",
+      "Same interface, different implementations"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_059",
+    "question": "Which answer matches polymorphism most closely?",
+    "code": null,
+    "options": [
+      "Object destruction",
+      "Access control",
+      "Same interface, different implementations",
+      "File hiding"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_060",
+    "question": "For OOP, polymorphism is:",
+    "code": null,
+    "options": [
+      "Same interface, different implementations",
+      "Object destruction",
+      "File hiding",
+      "Access control"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Polymorphism lets one interface work with many types."
+  },
+  {
+    "id": "oop_061",
+    "question": "Which statement about encapsulation is correct?",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Multiple inheritance",
+      "Bundling data with methods and hiding internal state",
+      "Loop reuse"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_062",
+    "question": "What is the main purpose of encapsulation in OOP?",
+    "code": null,
+    "options": [
+      "Loop reuse",
+      "Bundling data with methods and hiding internal state",
+      "Compile-time optimization",
+      "Multiple inheritance"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_063",
+    "question": "Which option best describes encapsulation?",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Bundling data with methods and hiding internal state",
+      "Loop reuse",
+      "Multiple inheritance"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_064",
+    "question": "In OOP, encapsulation refers to:",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Loop reuse",
+      "Multiple inheritance",
+      "Bundling data with methods and hiding internal state"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_065",
+    "question": "What does encapsulation primarily do?",
+    "code": null,
+    "options": [
+      "Multiple inheritance",
+      "Loop reuse",
+      "Compile-time optimization",
+      "Bundling data with methods and hiding internal state"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_066",
+    "question": "Choose the best description of encapsulation.",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Bundling data with methods and hiding internal state",
+      "Loop reuse",
+      "Multiple inheritance"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_067",
+    "question": "Which is true about encapsulation?",
+    "code": null,
+    "options": [
+      "Bundling data with methods and hiding internal state",
+      "Loop reuse",
+      "Multiple inheritance",
+      "Compile-time optimization"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_068",
+    "question": "How is encapsulation best explained?",
+    "code": null,
+    "options": [
+      "Multiple inheritance",
+      "Compile-time optimization",
+      "Loop reuse",
+      "Bundling data with methods and hiding internal state"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_069",
+    "question": "Which answer matches encapsulation most closely?",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Multiple inheritance",
+      "Loop reuse",
+      "Bundling data with methods and hiding internal state"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_070",
+    "question": "For OOP, encapsulation is:",
+    "code": null,
+    "options": [
+      "Compile-time optimization",
+      "Bundling data with methods and hiding internal state",
+      "Loop reuse",
+      "Multiple inheritance"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Encapsulation protects an object's internal state."
+  },
+  {
+    "id": "oop_071",
+    "question": "Which statement about inheritance is correct?",
+    "code": null,
+    "options": [
+      "Creating arrays",
+      "Hiding variables",
+      "Creating a new class from an existing class",
+      "Deleting objects"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_072",
+    "question": "What is the main purpose of inheritance in OOP?",
+    "code": null,
+    "options": [
+      "Creating arrays",
+      "Deleting objects",
+      "Creating a new class from an existing class",
+      "Hiding variables"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_073",
+    "question": "Which option best describes inheritance?",
+    "code": null,
+    "options": [
+      "Creating a new class from an existing class",
+      "Deleting objects",
+      "Creating arrays",
+      "Hiding variables"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_074",
+    "question": "In OOP, inheritance refers to:",
+    "code": null,
+    "options": [
+      "Hiding variables",
+      "Deleting objects",
+      "Creating arrays",
+      "Creating a new class from an existing class"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_075",
+    "question": "What does inheritance primarily do?",
+    "code": null,
+    "options": [
+      "Deleting objects",
+      "Creating a new class from an existing class",
+      "Hiding variables",
+      "Creating arrays"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_076",
+    "question": "Choose the best description of inheritance.",
+    "code": null,
+    "options": [
+      "Hiding variables",
+      "Creating a new class from an existing class",
+      "Creating arrays",
+      "Deleting objects"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_077",
+    "question": "Which is true about inheritance?",
+    "code": null,
+    "options": [
+      "Deleting objects",
+      "Creating a new class from an existing class",
+      "Hiding variables",
+      "Creating arrays"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_078",
+    "question": "How is inheritance best explained?",
+    "code": null,
+    "options": [
+      "Creating arrays",
+      "Deleting objects",
+      "Hiding variables",
+      "Creating a new class from an existing class"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_079",
+    "question": "Which answer matches inheritance most closely?",
+    "code": null,
+    "options": [
+      "Deleting objects",
+      "Creating arrays",
+      "Creating a new class from an existing class",
+      "Hiding variables"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_080",
+    "question": "For OOP, inheritance is:",
+    "code": null,
+    "options": [
+      "Creating a new class from an existing class",
+      "Deleting objects",
+      "Hiding variables",
+      "Creating arrays"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Inheritance lets a class reuse another class's features."
+  },
+  {
+    "id": "oop_081",
+    "question": "Which statement about abstraction is correct?",
+    "code": null,
+    "options": [
+      "Copying objects",
+      "Showing essential features and hiding details",
+      "Recompiling code",
+      "Changing access levels"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_082",
+    "question": "What is the main purpose of abstraction in OOP?",
+    "code": null,
+    "options": [
+      "Recompiling code",
+      "Copying objects",
+      "Showing essential features and hiding details",
+      "Changing access levels"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_083",
+    "question": "Which option best describes abstraction?",
+    "code": null,
+    "options": [
+      "Copying objects",
+      "Recompiling code",
+      "Showing essential features and hiding details",
+      "Changing access levels"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_084",
+    "question": "In OOP, abstraction refers to:",
+    "code": null,
+    "options": [
+      "Recompiling code",
+      "Showing essential features and hiding details",
+      "Changing access levels",
+      "Copying objects"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_085",
+    "question": "What does abstraction primarily do?",
+    "code": null,
+    "options": [
+      "Copying objects",
+      "Changing access levels",
+      "Showing essential features and hiding details",
+      "Recompiling code"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_086",
+    "question": "Choose the best description of abstraction.",
+    "code": null,
+    "options": [
+      "Changing access levels",
+      "Showing essential features and hiding details",
+      "Copying objects",
+      "Recompiling code"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_087",
+    "question": "Which is true about abstraction?",
+    "code": null,
+    "options": [
+      "Recompiling code",
+      "Copying objects",
+      "Changing access levels",
+      "Showing essential features and hiding details"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_088",
+    "question": "How is abstraction best explained?",
+    "code": null,
+    "options": [
+      "Recompiling code",
+      "Changing access levels",
+      "Showing essential features and hiding details",
+      "Copying objects"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_089",
+    "question": "Which answer matches abstraction most closely?",
+    "code": null,
+    "options": [
+      "Copying objects",
+      "Changing access levels",
+      "Recompiling code",
+      "Showing essential features and hiding details"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_090",
+    "question": "For OOP, abstraction is:",
+    "code": null,
+    "options": [
+      "Recompiling code",
+      "Copying objects",
+      "Changing access levels",
+      "Showing essential features and hiding details"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Abstraction focuses on what an object does, not how."
+  },
+  {
+    "id": "oop_091",
+    "question": "Which statement about composition is correct?",
+    "code": null,
+    "options": [
+      "Has-a relationship between objects",
+      "Static binding",
+      "Runtime dispatch",
+      "Is-a relationship"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_092",
+    "question": "What is the main purpose of composition in OOP?",
+    "code": null,
+    "options": [
+      "Runtime dispatch",
+      "Static binding",
+      "Has-a relationship between objects",
+      "Is-a relationship"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_093",
+    "question": "Which option best describes composition?",
+    "code": null,
+    "options": [
+      "Runtime dispatch",
+      "Is-a relationship",
+      "Static binding",
+      "Has-a relationship between objects"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_094",
+    "question": "In OOP, composition refers to:",
+    "code": null,
+    "options": [
+      "Is-a relationship",
+      "Static binding",
+      "Has-a relationship between objects",
+      "Runtime dispatch"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_095",
+    "question": "What does composition primarily do?",
+    "code": null,
+    "options": [
+      "Has-a relationship between objects",
+      "Is-a relationship",
+      "Runtime dispatch",
+      "Static binding"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_096",
+    "question": "Choose the best description of composition.",
+    "code": null,
+    "options": [
+      "Has-a relationship between objects",
+      "Is-a relationship",
+      "Static binding",
+      "Runtime dispatch"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_097",
+    "question": "Which is true about composition?",
+    "code": null,
+    "options": [
+      "Has-a relationship between objects",
+      "Static binding",
+      "Is-a relationship",
+      "Runtime dispatch"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_098",
+    "question": "How is composition best explained?",
+    "code": null,
+    "options": [
+      "Has-a relationship between objects",
+      "Static binding",
+      "Runtime dispatch",
+      "Is-a relationship"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_099",
+    "question": "Which answer matches composition most closely?",
+    "code": null,
+    "options": [
+      "Runtime dispatch",
+      "Is-a relationship",
+      "Has-a relationship between objects",
+      "Static binding"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Composition builds complex objects from simpler ones."
+  },
+  {
+    "id": "oop_100",
+    "question": "For OOP, composition is:",
+    "code": null,
+    "options": [
+      "Static binding",
+      "Runtime dispatch",
+      "Has-a relationship between objects",
+      "Is-a relationship"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Composition builds complex objects from simpler ones."
   }
 ]

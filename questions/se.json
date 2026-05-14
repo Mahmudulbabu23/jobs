@@ -3,7 +3,12 @@
     "id": "se_001",
     "question": "Which is a common SDLC model?",
     "code": null,
-    "options": ["Waterfall", "QuickSort", "Heap", "DNS"],
+    "options": [
+      "Waterfall",
+      "QuickSort",
+      "Heap",
+      "DNS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Waterfall is a classic SDLC model."
@@ -12,7 +17,12 @@
     "id": "se_002",
     "question": "Agile emphasizes:",
     "code": null,
-    "options": ["Iterative development", "No testing", "Fixed scope only", "No customer feedback"],
+    "options": [
+      "Iterative development",
+      "No testing",
+      "Fixed scope only",
+      "No customer feedback"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Agile uses iterative delivery and feedback."
@@ -21,7 +31,12 @@
     "id": "se_003",
     "question": "A user story typically includes:",
     "code": null,
-    "options": ["As a, I want, so that", "Only technical specs", "Only diagrams", "Only test cases"],
+    "options": [
+      "As a, I want, so that",
+      "Only technical specs",
+      "Only diagrams",
+      "Only test cases"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "User stories capture user need and value."
@@ -30,7 +45,12 @@
     "id": "se_004",
     "question": "A sprint in Scrum is:",
     "code": null,
-    "options": ["Time-boxed iteration", "Final release", "Bug only phase", "Documentation only"],
+    "options": [
+      "Time-boxed iteration",
+      "Final release",
+      "Bug only phase",
+      "Documentation only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Sprints are short time-boxed iterations."
@@ -39,7 +59,12 @@
     "id": "se_005",
     "question": "Which artifact lists product requirements?",
     "code": null,
-    "options": ["Product backlog", "Sprint backlog", "Burn-down chart", "Roadmap only"],
+    "options": [
+      "Product backlog",
+      "Sprint backlog",
+      "Burn-down chart",
+      "Roadmap only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The product backlog contains requirements and features."
@@ -48,7 +73,12 @@
     "id": "se_006",
     "question": "CI stands for:",
     "code": null,
-    "options": ["Continuous Integration", "Code Isolation", "Compile Instance", "Central Interface"],
+    "options": [
+      "Continuous Integration",
+      "Code Isolation",
+      "Compile Instance",
+      "Central Interface"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CI integrates code changes frequently."
@@ -57,7 +87,12 @@
     "id": "se_007",
     "question": "CD stands for:",
     "code": null,
-    "options": ["Continuous Delivery", "Code Deployment", "Compile Debug", "Central Database"],
+    "options": [
+      "Continuous Delivery",
+      "Code Deployment",
+      "Compile Debug",
+      "Central Database"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CD automates delivery or deployment."
@@ -66,7 +101,12 @@
     "id": "se_008",
     "question": "A unit test verifies:",
     "code": null,
-    "options": ["Single component", "Entire system", "Database only", "Network only"],
+    "options": [
+      "Single component",
+      "Entire system",
+      "Database only",
+      "Network only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Unit tests focus on small code units."
@@ -75,7 +115,12 @@
     "id": "se_009",
     "question": "Integration testing verifies:",
     "code": null,
-    "options": ["Interaction between modules", "Single function", "UI only", "Performance only"],
+    "options": [
+      "Interaction between modules",
+      "Single function",
+      "UI only",
+      "Performance only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Integration tests focus on module interactions."
@@ -84,7 +129,12 @@
     "id": "se_010",
     "question": "System testing verifies:",
     "code": null,
-    "options": ["End-to-end system", "Single class", "Unit only", "None"],
+    "options": [
+      "End-to-end system",
+      "Single class",
+      "Unit only",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "System testing validates the whole system."
@@ -93,7 +143,12 @@
     "id": "se_011",
     "question": "Regression testing ensures:",
     "code": null,
-    "options": ["New changes didn't break existing features", "Only new features work", "Performance improves", "No tests needed"],
+    "options": [
+      "New changes didn't break existing features",
+      "Only new features work",
+      "Performance improves",
+      "No tests needed"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Regression testing checks for unintended side effects."
@@ -102,7 +157,12 @@
     "id": "se_012",
     "question": "Black-box testing focuses on:",
     "code": null,
-    "options": ["Inputs and outputs", "Internal code", "Database schema", "Network topology"],
+    "options": [
+      "Inputs and outputs",
+      "Internal code",
+      "Database schema",
+      "Network topology"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Black-box tests observe behavior without code knowledge."
@@ -111,7 +171,12 @@
     "id": "se_013",
     "question": "White-box testing focuses on:",
     "code": null,
-    "options": ["Internal logic", "UI only", "User stories", "Performance only"],
+    "options": [
+      "Internal logic",
+      "UI only",
+      "User stories",
+      "Performance only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "White-box tests use knowledge of internal code."
@@ -120,7 +185,12 @@
     "id": "se_014",
     "question": "A software requirement should be:",
     "code": null,
-    "options": ["Clear and testable", "Vague", "Unmeasurable", "Optional only"],
+    "options": [
+      "Clear and testable",
+      "Vague",
+      "Unmeasurable",
+      "Optional only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Good requirements are precise and testable."
@@ -129,7 +199,12 @@
     "id": "se_015",
     "question": "SRS stands for:",
     "code": null,
-    "options": ["Software Requirements Specification", "System Runtime Suite", "Software Release Schedule", "Service Response Standard"],
+    "options": [
+      "Software Requirements Specification",
+      "System Runtime Suite",
+      "Software Release Schedule",
+      "Service Response Standard"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "SRS documents software requirements."
@@ -138,7 +213,12 @@
     "id": "se_016",
     "question": "Which model is best when requirements are unclear?",
     "code": null,
-    "options": ["Agile", "Waterfall", "V-Model", "Big Bang"],
+    "options": [
+      "Agile",
+      "Waterfall",
+      "V-Model",
+      "Big Bang"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Agile adapts to changing requirements."
@@ -147,7 +227,12 @@
     "id": "se_017",
     "question": "Which phase focuses on defect fixing?",
     "code": null,
-    "options": ["Maintenance", "Design", "Requirement", "Implementation"],
+    "options": [
+      "Maintenance",
+      "Design",
+      "Requirement",
+      "Implementation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Maintenance addresses defects and updates."
@@ -156,7 +241,12 @@
     "id": "se_018",
     "question": "What does code review aim to improve?",
     "code": null,
-    "options": ["Quality and correctness", "Only speed", "Only UI", "Only storage"],
+    "options": [
+      "Quality and correctness",
+      "Only speed",
+      "Only UI",
+      "Only storage"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Reviews detect defects and improve quality."
@@ -165,7 +255,12 @@
     "id": "se_019",
     "question": "Technical debt refers to:",
     "code": null,
-    "options": ["Cost of quick fixes", "Money in bank", "No documentation", "Only bugs"],
+    "options": [
+      "Cost of quick fixes",
+      "Money in bank",
+      "No documentation",
+      "Only bugs"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Shortcuts increase future maintenance costs."
@@ -174,7 +269,12 @@
     "id": "se_020",
     "question": "Which is a common estimation technique?",
     "code": null,
-    "options": ["Story points", "Random guessing", "None", "Daily standups"],
+    "options": [
+      "Story points",
+      "Random guessing",
+      "None",
+      "Daily standups"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Story points estimate effort in Agile."
@@ -183,7 +283,12 @@
     "id": "se_021",
     "question": "A burn-down chart shows:",
     "code": null,
-    "options": ["Remaining work over time", "Only defects", "Revenue", "Code coverage"],
+    "options": [
+      "Remaining work over time",
+      "Only defects",
+      "Revenue",
+      "Code coverage"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Burn-down charts track remaining work in a sprint."
@@ -192,7 +297,12 @@
     "id": "se_022",
     "question": "Which is a project risk?",
     "code": null,
-    "options": ["Scope creep", "Unit test", "Code style", "Linting"],
+    "options": [
+      "Scope creep",
+      "Unit test",
+      "Code style",
+      "Linting"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Scope creep is uncontrolled feature expansion."
@@ -201,7 +311,12 @@
     "id": "se_023",
     "question": "Which model pairs development and testing phases?",
     "code": null,
-    "options": ["V-Model", "Waterfall", "Agile", "Spiral"],
+    "options": [
+      "V-Model",
+      "Waterfall",
+      "Agile",
+      "Spiral"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "The V-Model maps dev stages to test stages."
@@ -210,7 +325,12 @@
     "id": "se_024",
     "question": "Which model emphasizes risk analysis in cycles?",
     "code": null,
-    "options": ["Spiral", "Waterfall", "V-Model", "RAD"],
+    "options": [
+      "Spiral",
+      "Waterfall",
+      "V-Model",
+      "RAD"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Spiral model focuses on risk assessment."
@@ -219,7 +339,12 @@
     "id": "se_025",
     "question": "RAD stands for:",
     "code": null,
-    "options": ["Rapid Application Development", "Random Access Data", "Resource Allocation Design", "Real-time App Delivery"],
+    "options": [
+      "Rapid Application Development",
+      "Random Access Data",
+      "Resource Allocation Design",
+      "Real-time App Delivery"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "RAD is Rapid Application Development."
@@ -228,7 +353,12 @@
     "id": "se_026",
     "question": "Which model is best for small, well-defined projects?",
     "code": null,
-    "options": ["Waterfall", "Spiral", "Agile", "Prototype"],
+    "options": [
+      "Waterfall",
+      "Spiral",
+      "Agile",
+      "Prototype"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Waterfall works well when requirements are stable."
@@ -237,7 +367,12 @@
     "id": "se_027",
     "question": "A prototype is used to:",
     "code": null,
-    "options": ["Validate requirements", "Deploy final product", "Replace testing", "Avoid documentation"],
+    "options": [
+      "Validate requirements",
+      "Deploy final product",
+      "Replace testing",
+      "Avoid documentation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Prototypes help clarify requirements."
@@ -246,7 +381,12 @@
     "id": "se_028",
     "question": "Which metric measures test coverage?",
     "code": null,
-    "options": ["Percentage of code executed", "Number of commits", "Lines of comments", "Disk usage"],
+    "options": [
+      "Percentage of code executed",
+      "Number of commits",
+      "Lines of comments",
+      "Disk usage"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Coverage measures how much code is tested."
@@ -255,7 +395,12 @@
     "id": "se_029",
     "question": "Which metric measures defect density?",
     "code": null,
-    "options": ["Defects per KLOC", "KLOC per defect", "Coverage", "Velocity"],
+    "options": [
+      "Defects per KLOC",
+      "KLOC per defect",
+      "Coverage",
+      "Velocity"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Defect density = defects per thousand lines of code."
@@ -264,7 +409,12 @@
     "id": "se_030",
     "question": "Which artifact defines acceptance criteria?",
     "code": null,
-    "options": ["User story", "Code review", "Build log", "Class diagram"],
+    "options": [
+      "User story",
+      "Code review",
+      "Build log",
+      "Class diagram"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "User stories often include acceptance criteria."
@@ -273,7 +423,12 @@
     "id": "se_031",
     "question": "Which practice integrates code frequently?",
     "code": null,
-    "options": ["Continuous Integration", "Big bang integration", "No integration", "Manual release"],
+    "options": [
+      "Continuous Integration",
+      "Big bang integration",
+      "No integration",
+      "Manual release"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CI integrates changes frequently to reduce risk."
@@ -282,7 +437,12 @@
     "id": "se_032",
     "question": "Which practice automates releases?",
     "code": null,
-    "options": ["Continuous Delivery", "Manual deployment", "Waterfall", "Spiral"],
+    "options": [
+      "Continuous Delivery",
+      "Manual deployment",
+      "Waterfall",
+      "Spiral"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CD automates deployment pipelines."
@@ -291,7 +451,12 @@
     "id": "se_033",
     "question": "Which testing is done by end users?",
     "code": null,
-    "options": ["User Acceptance Testing", "Unit testing", "Integration testing", "System testing"],
+    "options": [
+      "User Acceptance Testing",
+      "Unit testing",
+      "Integration testing",
+      "System testing"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "UAT validates requirements with users."
@@ -300,7 +465,12 @@
     "id": "se_034",
     "question": "Which is a non-functional requirement?",
     "code": null,
-    "options": ["Performance", "Login", "Signup", "Search"],
+    "options": [
+      "Performance",
+      "Login",
+      "Signup",
+      "Search"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Performance describes system quality, not a feature."
@@ -309,7 +479,12 @@
     "id": "se_035",
     "question": "Which diagram represents system components and relationships?",
     "code": null,
-    "options": ["UML component diagram", "Sequence diagram", "Use case", "Class diagram only"],
+    "options": [
+      "UML component diagram",
+      "Sequence diagram",
+      "Use case",
+      "Class diagram only"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Component diagrams show system components and dependencies."
@@ -318,7 +493,12 @@
     "id": "se_036",
     "question": "Which diagram represents object interactions over time?",
     "code": null,
-    "options": ["Sequence diagram", "Class diagram", "State diagram", "Component diagram"],
+    "options": [
+      "Sequence diagram",
+      "Class diagram",
+      "State diagram",
+      "Component diagram"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Sequence diagrams show interactions over time."
@@ -327,7 +507,12 @@
     "id": "se_037",
     "question": "A use case diagram shows:",
     "code": null,
-    "options": ["Actors and system interactions", "Database schema", "Algorithm flow", "Network topology"],
+    "options": [
+      "Actors and system interactions",
+      "Database schema",
+      "Algorithm flow",
+      "Network topology"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Use cases describe how actors use the system."
@@ -336,7 +521,12 @@
     "id": "se_038",
     "question": "Which practice ensures code style consistency?",
     "code": null,
-    "options": ["Linting", "Debugging", "Deployment", "Refactoring only"],
+    "options": [
+      "Linting",
+      "Debugging",
+      "Deployment",
+      "Refactoring only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Linters enforce consistent code style."
@@ -345,7 +535,12 @@
     "id": "se_039",
     "question": "Refactoring is:",
     "code": null,
-    "options": ["Improving code without changing behavior", "Adding features", "Deleting tests", "Deploying"],
+    "options": [
+      "Improving code without changing behavior",
+      "Adding features",
+      "Deleting tests",
+      "Deploying"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Refactoring improves structure without changing behavior."
@@ -354,7 +549,12 @@
     "id": "se_040",
     "question": "Which practice helps prevent defects early?",
     "code": null,
-    "options": ["Code review", "Ignoring tests", "Late QA only", "No documentation"],
+    "options": [
+      "Code review",
+      "Ignoring tests",
+      "Late QA only",
+      "No documentation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Code reviews catch defects early."
@@ -363,7 +563,12 @@
     "id": "se_041",
     "question": "Which is a key Agile value?",
     "code": null,
-    "options": ["Individuals and interactions", "Comprehensive documentation", "Fixed plans", "No change"],
+    "options": [
+      "Individuals and interactions",
+      "Comprehensive documentation",
+      "Fixed plans",
+      "No change"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Agile values people and collaboration."
@@ -372,7 +577,12 @@
     "id": "se_042",
     "question": "Which is a key Agile principle?",
     "code": null,
-    "options": ["Welcome changing requirements", "Avoid feedback", "No testing", "Fixed scope"],
+    "options": [
+      "Welcome changing requirements",
+      "Avoid feedback",
+      "No testing",
+      "Fixed scope"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Agile embraces change for customer value."
@@ -381,7 +591,12 @@
     "id": "se_043",
     "question": "Which phase defines project scope?",
     "code": null,
-    "options": ["Requirements", "Design", "Implementation", "Testing"],
+    "options": [
+      "Requirements",
+      "Design",
+      "Implementation",
+      "Testing"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Requirements define what the system should do."
@@ -390,7 +605,12 @@
     "id": "se_044",
     "question": "Which phase focuses on architecture?",
     "code": null,
-    "options": ["Design", "Testing", "Deployment", "Maintenance"],
+    "options": [
+      "Design",
+      "Testing",
+      "Deployment",
+      "Maintenance"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Design addresses architecture and structure."
@@ -399,7 +619,12 @@
     "id": "se_045",
     "question": "Which phase focuses on coding?",
     "code": null,
-    "options": ["Implementation", "Design", "Testing", "Maintenance"],
+    "options": [
+      "Implementation",
+      "Design",
+      "Testing",
+      "Maintenance"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Implementation is where code is written."
@@ -408,7 +633,12 @@
     "id": "se_046",
     "question": "Which phase focuses on verifying requirements?",
     "code": null,
-    "options": ["Testing", "Design", "Requirements", "Implementation"],
+    "options": [
+      "Testing",
+      "Design",
+      "Requirements",
+      "Implementation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Testing ensures the system meets requirements."
@@ -417,7 +647,12 @@
     "id": "se_047",
     "question": "Which practice prevents merge conflicts?",
     "code": null,
-    "options": ["Frequent integration", "Long-lived branches", "No CI", "No reviews"],
+    "options": [
+      "Frequent integration",
+      "Long-lived branches",
+      "No CI",
+      "No reviews"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Integrating often reduces conflicts."
@@ -426,7 +661,12 @@
     "id": "se_048",
     "question": "Which tool tracks project tasks?",
     "code": null,
-    "options": ["Jira", "Photoshop", "VLC", "Chrome"],
+    "options": [
+      "Jira",
+      "Photoshop",
+      "VLC",
+      "Chrome"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Jira is commonly used for task tracking."
@@ -435,7 +675,12 @@
     "id": "se_049",
     "question": "Which metric measures team speed?",
     "code": null,
-    "options": ["Velocity", "Coverage", "Latency", "Throughput"],
+    "options": [
+      "Velocity",
+      "Coverage",
+      "Latency",
+      "Throughput"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Velocity measures completed work per sprint."
@@ -444,9 +689,714 @@
     "id": "se_050",
     "question": "Which is a benefit of automated testing?",
     "code": null,
-    "options": ["Faster feedback", "No maintenance", "Less coverage", "More defects"],
+    "options": [
+      "Faster feedback",
+      "No maintenance",
+      "Less coverage",
+      "More defects"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Automation provides quick, repeatable feedback."
+  },
+  {
+    "id": "se_051",
+    "question": "Which statement about requirements is correct?",
+    "code": null,
+    "options": [
+      "File path",
+      "What software must do or provide",
+      "CPU clock",
+      "Source code list"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_052",
+    "question": "What is the main purpose of requirements in Software Engineering?",
+    "code": null,
+    "options": [
+      "What software must do or provide",
+      "File path",
+      "CPU clock",
+      "Source code list"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_053",
+    "question": "Which option best describes requirements?",
+    "code": null,
+    "options": [
+      "File path",
+      "Source code list",
+      "What software must do or provide",
+      "CPU clock"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_054",
+    "question": "In Software Engineering, requirements refers to:",
+    "code": null,
+    "options": [
+      "File path",
+      "What software must do or provide",
+      "CPU clock",
+      "Source code list"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_055",
+    "question": "What does requirements primarily do?",
+    "code": null,
+    "options": [
+      "CPU clock",
+      "Source code list",
+      "What software must do or provide",
+      "File path"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_056",
+    "question": "Choose the best description of requirements.",
+    "code": null,
+    "options": [
+      "What software must do or provide",
+      "Source code list",
+      "File path",
+      "CPU clock"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_057",
+    "question": "Which is true about requirements?",
+    "code": null,
+    "options": [
+      "File path",
+      "CPU clock",
+      "Source code list",
+      "What software must do or provide"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_058",
+    "question": "How is requirements best explained?",
+    "code": null,
+    "options": [
+      "What software must do or provide",
+      "CPU clock",
+      "File path",
+      "Source code list"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_059",
+    "question": "Which answer matches requirements most closely?",
+    "code": null,
+    "options": [
+      "CPU clock",
+      "File path",
+      "What software must do or provide",
+      "Source code list"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_060",
+    "question": "For Software Engineering, requirements is:",
+    "code": null,
+    "options": [
+      "File path",
+      "CPU clock",
+      "What software must do or provide",
+      "Source code list"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Requirements describe desired system behavior."
+  },
+  {
+    "id": "se_061",
+    "question": "Which statement about SDLC is correct?",
+    "code": null,
+    "options": [
+      "Software development life cycle",
+      "Database index",
+      "Memory page",
+      "Network protocol"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_062",
+    "question": "What is the main purpose of SDLC in Software Engineering?",
+    "code": null,
+    "options": [
+      "Database index",
+      "Software development life cycle",
+      "Memory page",
+      "Network protocol"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_063",
+    "question": "Which option best describes SDLC?",
+    "code": null,
+    "options": [
+      "Memory page",
+      "Software development life cycle",
+      "Database index",
+      "Network protocol"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_064",
+    "question": "In Software Engineering, SDLC refers to:",
+    "code": null,
+    "options": [
+      "Network protocol",
+      "Memory page",
+      "Database index",
+      "Software development life cycle"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_065",
+    "question": "What does SDLC primarily do?",
+    "code": null,
+    "options": [
+      "Software development life cycle",
+      "Network protocol",
+      "Database index",
+      "Memory page"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_066",
+    "question": "Choose the best description of SDLC.",
+    "code": null,
+    "options": [
+      "Database index",
+      "Memory page",
+      "Network protocol",
+      "Software development life cycle"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_067",
+    "question": "Which is true about SDLC?",
+    "code": null,
+    "options": [
+      "Database index",
+      "Network protocol",
+      "Software development life cycle",
+      "Memory page"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_068",
+    "question": "How is SDLC best explained?",
+    "code": null,
+    "options": [
+      "Network protocol",
+      "Memory page",
+      "Database index",
+      "Software development life cycle"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_069",
+    "question": "Which answer matches SDLC most closely?",
+    "code": null,
+    "options": [
+      "Memory page",
+      "Software development life cycle",
+      "Network protocol",
+      "Database index"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_070",
+    "question": "For Software Engineering, SDLC is:",
+    "code": null,
+    "options": [
+      "Memory page",
+      "Database index",
+      "Network protocol",
+      "Software development life cycle"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "SDLC covers the process of building software."
+  },
+  {
+    "id": "se_071",
+    "question": "Which statement about testing is correct?",
+    "code": null,
+    "options": [
+      "Code obfuscation",
+      "Hardware repair",
+      "Checking software for defects",
+      "File compression"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_072",
+    "question": "What is the main purpose of testing in Software Engineering?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Hardware repair",
+      "Code obfuscation",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_073",
+    "question": "Which option best describes testing?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Hardware repair",
+      "Code obfuscation",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_074",
+    "question": "In Software Engineering, testing refers to:",
+    "code": null,
+    "options": [
+      "Hardware repair",
+      "Code obfuscation",
+      "Checking software for defects",
+      "File compression"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_075",
+    "question": "What does testing primarily do?",
+    "code": null,
+    "options": [
+      "Code obfuscation",
+      "File compression",
+      "Hardware repair",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_076",
+    "question": "Choose the best description of testing.",
+    "code": null,
+    "options": [
+      "File compression",
+      "Code obfuscation",
+      "Hardware repair",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_077",
+    "question": "Which is true about testing?",
+    "code": null,
+    "options": [
+      "Checking software for defects",
+      "Code obfuscation",
+      "File compression",
+      "Hardware repair"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_078",
+    "question": "How is testing best explained?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Hardware repair",
+      "Code obfuscation",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_079",
+    "question": "Which answer matches testing most closely?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Checking software for defects",
+      "Hardware repair",
+      "Code obfuscation"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_080",
+    "question": "For Software Engineering, testing is:",
+    "code": null,
+    "options": [
+      "File compression",
+      "Hardware repair",
+      "Code obfuscation",
+      "Checking software for defects"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Testing finds bugs and verifies behavior."
+  },
+  {
+    "id": "se_081",
+    "question": "Which statement about agile is correct?",
+    "code": null,
+    "options": [
+      "Static typing",
+      "One-shot build only",
+      "An iterative and adaptive development approach",
+      "Hardware encryption"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_082",
+    "question": "What is the main purpose of agile in Software Engineering?",
+    "code": null,
+    "options": [
+      "Static typing",
+      "Hardware encryption",
+      "An iterative and adaptive development approach",
+      "One-shot build only"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_083",
+    "question": "Which option best describes agile?",
+    "code": null,
+    "options": [
+      "One-shot build only",
+      "An iterative and adaptive development approach",
+      "Static typing",
+      "Hardware encryption"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_084",
+    "question": "In Software Engineering, agile refers to:",
+    "code": null,
+    "options": [
+      "Static typing",
+      "One-shot build only",
+      "Hardware encryption",
+      "An iterative and adaptive development approach"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_085",
+    "question": "What does agile primarily do?",
+    "code": null,
+    "options": [
+      "One-shot build only",
+      "Static typing",
+      "Hardware encryption",
+      "An iterative and adaptive development approach"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_086",
+    "question": "Choose the best description of agile.",
+    "code": null,
+    "options": [
+      "One-shot build only",
+      "Static typing",
+      "Hardware encryption",
+      "An iterative and adaptive development approach"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_087",
+    "question": "Which is true about agile?",
+    "code": null,
+    "options": [
+      "Hardware encryption",
+      "One-shot build only",
+      "An iterative and adaptive development approach",
+      "Static typing"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_088",
+    "question": "How is agile best explained?",
+    "code": null,
+    "options": [
+      "An iterative and adaptive development approach",
+      "Static typing",
+      "Hardware encryption",
+      "One-shot build only"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_089",
+    "question": "Which answer matches agile most closely?",
+    "code": null,
+    "options": [
+      "One-shot build only",
+      "An iterative and adaptive development approach",
+      "Hardware encryption",
+      "Static typing"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_090",
+    "question": "For Software Engineering, agile is:",
+    "code": null,
+    "options": [
+      "Static typing",
+      "Hardware encryption",
+      "An iterative and adaptive development approach",
+      "One-shot build only"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Agile develops software in small iterations."
+  },
+  {
+    "id": "se_091",
+    "question": "Which statement about maintenance is correct?",
+    "code": null,
+    "options": [
+      "Drawing diagrams",
+      "Installing RAM",
+      "Compiling the kernel",
+      "Modifying software after delivery"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_092",
+    "question": "What is the main purpose of maintenance in Software Engineering?",
+    "code": null,
+    "options": [
+      "Drawing diagrams",
+      "Compiling the kernel",
+      "Modifying software after delivery",
+      "Installing RAM"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_093",
+    "question": "Which option best describes maintenance?",
+    "code": null,
+    "options": [
+      "Installing RAM",
+      "Drawing diagrams",
+      "Modifying software after delivery",
+      "Compiling the kernel"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_094",
+    "question": "In Software Engineering, maintenance refers to:",
+    "code": null,
+    "options": [
+      "Compiling the kernel",
+      "Drawing diagrams",
+      "Modifying software after delivery",
+      "Installing RAM"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_095",
+    "question": "What does maintenance primarily do?",
+    "code": null,
+    "options": [
+      "Installing RAM",
+      "Modifying software after delivery",
+      "Drawing diagrams",
+      "Compiling the kernel"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_096",
+    "question": "Choose the best description of maintenance.",
+    "code": null,
+    "options": [
+      "Installing RAM",
+      "Compiling the kernel",
+      "Drawing diagrams",
+      "Modifying software after delivery"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_097",
+    "question": "Which is true about maintenance?",
+    "code": null,
+    "options": [
+      "Compiling the kernel",
+      "Modifying software after delivery",
+      "Drawing diagrams",
+      "Installing RAM"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_098",
+    "question": "How is maintenance best explained?",
+    "code": null,
+    "options": [
+      "Compiling the kernel",
+      "Installing RAM",
+      "Drawing diagrams",
+      "Modifying software after delivery"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_099",
+    "question": "Which answer matches maintenance most closely?",
+    "code": null,
+    "options": [
+      "Installing RAM",
+      "Drawing diagrams",
+      "Modifying software after delivery",
+      "Compiling the kernel"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Maintenance keeps software useful after release."
+  },
+  {
+    "id": "se_100",
+    "question": "For Software Engineering, maintenance is:",
+    "code": null,
+    "options": [
+      "Installing RAM",
+      "Compiling the kernel",
+      "Modifying software after delivery",
+      "Drawing diagrams"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Maintenance keeps software useful after release."
   }
 ]

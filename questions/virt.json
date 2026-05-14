@@ -3,7 +3,12 @@
     "id": "virt_001",
     "question": "A Type 1 hypervisor runs on:",
     "code": null,
-    "options": ["Bare metal hardware", "Top of a host OS", "Inside a container", "BIOS only"],
+    "options": [
+      "Bare metal hardware",
+      "Top of a host OS",
+      "Inside a container",
+      "BIOS only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Type 1 hypervisors run directly on hardware."
@@ -12,7 +17,12 @@
     "id": "virt_002",
     "question": "A Type 2 hypervisor runs:",
     "code": null,
-    "options": ["Directly on hardware", "On a host operating system", "Only in firmware", "Only in cloud"],
+    "options": [
+      "Directly on hardware",
+      "On a host operating system",
+      "Only in firmware",
+      "Only in cloud"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Type 2 hypervisors run as applications on a host OS."
@@ -21,7 +31,12 @@
     "id": "virt_003",
     "question": "Which is a Type 1 hypervisor?",
     "code": null,
-    "options": ["VMware ESXi", "VirtualBox", "VMware Workstation", "Parallels Desktop"],
+    "options": [
+      "VMware ESXi",
+      "VirtualBox",
+      "VMware Workstation",
+      "Parallels Desktop"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "ESXi is a bare-metal hypervisor."
@@ -30,7 +45,12 @@
     "id": "virt_004",
     "question": "Which is a Type 2 hypervisor?",
     "code": null,
-    "options": ["VirtualBox", "Hyper-V", "Xen", "KVM"],
+    "options": [
+      "VirtualBox",
+      "Hyper-V",
+      "Xen",
+      "KVM"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "VirtualBox runs on a host OS."
@@ -39,7 +59,12 @@
     "id": "virt_005",
     "question": "VM snapshots are used to:",
     "code": null,
-    "options": ["Increase CPU", "Capture VM state", "Encrypt disks", "Resize network"],
+    "options": [
+      "Increase CPU",
+      "Capture VM state",
+      "Encrypt disks",
+      "Resize network"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Snapshots save VM state for rollback."
@@ -48,7 +73,12 @@
     "id": "virt_006",
     "question": "Live migration means:",
     "code": null,
-    "options": ["Moving VMs with downtime", "Moving VMs without downtime", "Deleting VMs", "Cloning storage"],
+    "options": [
+      "Moving VMs with downtime",
+      "Moving VMs without downtime",
+      "Deleting VMs",
+      "Cloning storage"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Live migration moves a VM while it keeps running."
@@ -57,7 +87,12 @@
     "id": "virt_007",
     "question": "Which feature allows multiple VMs to share a physical CPU?",
     "code": null,
-    "options": ["Time slicing", "Overclocking", "RAID", "Mirroring"],
+    "options": [
+      "Time slicing",
+      "Overclocking",
+      "RAID",
+      "Mirroring"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Hypervisors time-slice CPU across VMs."
@@ -66,7 +101,12 @@
     "id": "virt_008",
     "question": "Which virtualization uses lightweight isolated processes?",
     "code": null,
-    "options": ["Containers", "Full VMs", "Bare metal only", "BIOS"],
+    "options": [
+      "Containers",
+      "Full VMs",
+      "Bare metal only",
+      "BIOS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Containers share the host kernel."
@@ -75,7 +115,12 @@
     "id": "virt_009",
     "question": "Which is a benefit of virtualization?",
     "code": null,
-    "options": ["Reduced hardware utilization", "Resource isolation", "No backups", "No monitoring"],
+    "options": [
+      "Reduced hardware utilization",
+      "Resource isolation",
+      "No backups",
+      "No monitoring"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Virtualization provides isolation and consolidation."
@@ -84,7 +129,12 @@
     "id": "virt_010",
     "question": "Which term describes running multiple OS instances on one host?",
     "code": null,
-    "options": ["Virtualization", "Compilation", "Routing", "Caching"],
+    "options": [
+      "Virtualization",
+      "Compilation",
+      "Routing",
+      "Caching"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Virtualization enables multiple OS instances on one host."
@@ -93,7 +143,12 @@
     "id": "virt_011",
     "question": "Hypervisor is also known as:",
     "code": null,
-    "options": ["Virtual Machine Monitor", "Kernel Module", "Package Manager", "Bootloader"],
+    "options": [
+      "Virtual Machine Monitor",
+      "Kernel Module",
+      "Package Manager",
+      "Bootloader"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Hypervisor is a Virtual Machine Monitor (VMM)."
@@ -102,7 +157,12 @@
     "id": "virt_012",
     "question": "Which virtualization runs multiple OS kernels?",
     "code": null,
-    "options": ["Full virtualization", "Containerization", "Process isolation", "Chroot"],
+    "options": [
+      "Full virtualization",
+      "Containerization",
+      "Process isolation",
+      "Chroot"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Full virtualization runs separate guest kernels."
@@ -111,7 +171,12 @@
     "id": "virt_013",
     "question": "Which virtualization uses the host kernel?",
     "code": null,
-    "options": ["Containerization", "Full virtualization", "Emulation", "BIOS"],
+    "options": [
+      "Containerization",
+      "Full virtualization",
+      "Emulation",
+      "BIOS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Containers share the host kernel."
@@ -120,7 +185,12 @@
     "id": "virt_014",
     "question": "Which mode allows a hypervisor to run unmodified OS?",
     "code": null,
-    "options": ["Hardware-assisted virtualization", "Paravirtualization only", "BIOS emulation", "No virtualization"],
+    "options": [
+      "Hardware-assisted virtualization",
+      "Paravirtualization only",
+      "BIOS emulation",
+      "No virtualization"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "CPU virtualization extensions support unmodified guests."
@@ -129,7 +199,12 @@
     "id": "virt_015",
     "question": "Which is a hypervisor for Linux integrated in kernel?",
     "code": null,
-    "options": ["KVM", "XenServer", "VirtualBox", "VMware Fusion"],
+    "options": [
+      "KVM",
+      "XenServer",
+      "VirtualBox",
+      "VMware Fusion"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "KVM is built into the Linux kernel."
@@ -138,7 +213,12 @@
     "id": "virt_016",
     "question": "Which file format is common for VM disks?",
     "code": null,
-    "options": ["VMDK", "MP4", "ISO", "CSV"],
+    "options": [
+      "VMDK",
+      "MP4",
+      "ISO",
+      "CSV"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "VMDK is a common VM disk format."
@@ -147,7 +227,12 @@
     "id": "virt_017",
     "question": "Which is a cloud virtualization benefit?",
     "code": null,
-    "options": ["Elastic scaling", "Fixed capacity", "Manual provisioning only", "No automation"],
+    "options": [
+      "Elastic scaling",
+      "Fixed capacity",
+      "Manual provisioning only",
+      "No automation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Virtualization enables elastic scaling."
@@ -156,7 +241,12 @@
     "id": "virt_018",
     "question": "VM sprawl refers to:",
     "code": null,
-    "options": ["Uncontrolled VM growth", "CPU overclocking", "Disk encryption", "Network routing"],
+    "options": [
+      "Uncontrolled VM growth",
+      "CPU overclocking",
+      "Disk encryption",
+      "Network routing"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "VM sprawl is excessive unmanaged VM creation."
@@ -165,7 +255,12 @@
     "id": "virt_019",
     "question": "Which approach runs applications in isolated user space?",
     "code": null,
-    "options": ["Containers", "Full VMs", "Bare metal", "Firmware"],
+    "options": [
+      "Containers",
+      "Full VMs",
+      "Bare metal",
+      "Firmware"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Containers isolate apps at the OS level."
@@ -174,7 +269,12 @@
     "id": "virt_020",
     "question": "Which virtualization feature prevents noisy neighbor issues?",
     "code": null,
-    "options": ["Resource limits", "Overcommit only", "No scheduling", "No quotas"],
+    "options": [
+      "Resource limits",
+      "Overcommit only",
+      "No scheduling",
+      "No quotas"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Limits and reservations ensure fair resource allocation."
@@ -183,7 +283,12 @@
     "id": "virt_021",
     "question": "A VM template is used to:",
     "code": null,
-    "options": ["Quickly create standardized VMs", "Encrypt storage", "Route traffic", "Audit logs"],
+    "options": [
+      "Quickly create standardized VMs",
+      "Encrypt storage",
+      "Route traffic",
+      "Audit logs"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Templates allow fast, consistent VM creation."
@@ -192,7 +297,12 @@
     "id": "virt_022",
     "question": "Which is a common container runtime?",
     "code": null,
-    "options": ["containerd", "VMware ESXi", "Hyper-V", "Xen"],
+    "options": [
+      "containerd",
+      "VMware ESXi",
+      "Hyper-V",
+      "Xen"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "containerd is a standard container runtime."
@@ -201,7 +311,12 @@
     "id": "virt_023",
     "question": "What does an image in containers represent?",
     "code": null,
-    "options": ["Read-only template", "Running instance", "Network config", "CPU scheduling"],
+    "options": [
+      "Read-only template",
+      "Running instance",
+      "Network config",
+      "CPU scheduling"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Images are immutable templates for containers."
@@ -210,7 +325,12 @@
     "id": "virt_024",
     "question": "What is a container in runtime?",
     "code": null,
-    "options": ["A running instance of an image", "A VM disk", "A kernel module", "A hypervisor"],
+    "options": [
+      "A running instance of an image",
+      "A VM disk",
+      "A kernel module",
+      "A hypervisor"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "A container is a running image instance."
@@ -219,7 +339,12 @@
     "id": "virt_025",
     "question": "Which tool is used for container orchestration?",
     "code": null,
-    "options": ["Kubernetes", "VMware ESXi", "Hyper-V", "BIOS"],
+    "options": [
+      "Kubernetes",
+      "VMware ESXi",
+      "Hyper-V",
+      "BIOS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Kubernetes orchestrates containers."
@@ -228,7 +353,12 @@
     "id": "virt_026",
     "question": "Which feature allows multiple VMs to share physical memory safely?",
     "code": null,
-    "options": ["Memory ballooning", "Disk striping", "CPU pinning only", "No sharing"],
+    "options": [
+      "Memory ballooning",
+      "Disk striping",
+      "CPU pinning only",
+      "No sharing"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Ballooning reclaims memory from idle VMs."
@@ -237,7 +367,12 @@
     "id": "virt_027",
     "question": "What is overcommit in virtualization?",
     "code": null,
-    "options": ["Allocating more resources than physically available", "Allocating less resources", "Disabling scheduling", "Pausing VMs"],
+    "options": [
+      "Allocating more resources than physically available",
+      "Allocating less resources",
+      "Disabling scheduling",
+      "Pausing VMs"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Overcommit assumes not all VMs use peak resources simultaneously."
@@ -246,7 +381,12 @@
     "id": "virt_028",
     "question": "Which is a benefit of paravirtualization?",
     "code": null,
-    "options": ["Better performance with guest cooperation", "No guest changes", "Runs without hypervisor", "No isolation"],
+    "options": [
+      "Better performance with guest cooperation",
+      "No guest changes",
+      "Runs without hypervisor",
+      "No isolation"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Paravirtualization improves performance but needs guest support."
@@ -255,7 +395,12 @@
     "id": "virt_029",
     "question": "Which is a downside of full virtualization?",
     "code": null,
-    "options": ["Performance overhead", "No isolation", "No compatibility", "No scheduling"],
+    "options": [
+      "Performance overhead",
+      "No isolation",
+      "No compatibility",
+      "No scheduling"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Full virtualization introduces overhead due to emulation."
@@ -264,7 +409,12 @@
     "id": "virt_030",
     "question": "Which term describes sharing a host kernel across containers?",
     "code": null,
-    "options": ["OS-level virtualization", "Hardware virtualization", "Emulation", "Bare metal"],
+    "options": [
+      "OS-level virtualization",
+      "Hardware virtualization",
+      "Emulation",
+      "Bare metal"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Containers provide OS-level virtualization."
@@ -273,7 +423,12 @@
     "id": "virt_031",
     "question": "Which tool is used to build container images?",
     "code": null,
-    "options": ["Docker", "ESXi", "Hyper-V", "Xen"],
+    "options": [
+      "Docker",
+      "ESXi",
+      "Hyper-V",
+      "Xen"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Docker builds container images."
@@ -282,7 +437,12 @@
     "id": "virt_032",
     "question": "Which feature improves VM I/O performance by using guest drivers?",
     "code": null,
-    "options": ["Paravirtualized drivers", "BIOS only", "No drivers", "Disk encryption"],
+    "options": [
+      "Paravirtualized drivers",
+      "BIOS only",
+      "No drivers",
+      "Disk encryption"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Paravirtualized drivers reduce emulation overhead."
@@ -291,7 +451,12 @@
     "id": "virt_033",
     "question": "Which virtualization runs one OS inside another OS?",
     "code": null,
-    "options": ["Hosted virtualization", "Bare-metal virtualization", "Firmware", "None"],
+    "options": [
+      "Hosted virtualization",
+      "Bare-metal virtualization",
+      "Firmware",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Hosted (Type 2) virtualization runs on a host OS."
@@ -300,7 +465,12 @@
     "id": "virt_034",
     "question": "Which feature allows VMs to be duplicated quickly?",
     "code": null,
-    "options": ["Cloning", "Routing", "Sharding", "Caching"],
+    "options": [
+      "Cloning",
+      "Routing",
+      "Sharding",
+      "Caching"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Cloning copies VM configuration and disks."
@@ -309,7 +479,12 @@
     "id": "virt_035",
     "question": "Which technology allows multiple OS instances on one CPU?",
     "code": null,
-    "options": ["Virtualization", "Compilation", "Routing", "DNS"],
+    "options": [
+      "Virtualization",
+      "Compilation",
+      "Routing",
+      "DNS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Virtualization enables multiple OS instances."
@@ -318,7 +493,12 @@
     "id": "virt_036",
     "question": "Which storage feature improves VM redundancy?",
     "code": null,
-    "options": ["RAID", "Overclocking", "Defragmentation", "Swap"],
+    "options": [
+      "RAID",
+      "Overclocking",
+      "Defragmentation",
+      "Swap"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "RAID improves redundancy and fault tolerance."
@@ -327,7 +507,12 @@
     "id": "virt_037",
     "question": "Which interface allows VMs to communicate with the host?",
     "code": null,
-    "options": ["Virtual NIC", "GPU shader", "BIOS", "Kernel panic"],
+    "options": [
+      "Virtual NIC",
+      "GPU shader",
+      "BIOS",
+      "Kernel panic"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Virtual NICs connect VMs to networks."
@@ -336,7 +521,12 @@
     "id": "virt_038",
     "question": "Which virtualization minimizes hardware dependencies?",
     "code": null,
-    "options": ["Hardware abstraction", "No abstraction", "Direct mapping", "Firmware only"],
+    "options": [
+      "Hardware abstraction",
+      "No abstraction",
+      "Direct mapping",
+      "Firmware only"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Hypervisors abstract hardware for portability."
@@ -345,7 +535,12 @@
     "id": "virt_039",
     "question": "Which is a common VM management tool?",
     "code": null,
-    "options": ["vCenter", "Photoshop", "Excel", "Notepad"],
+    "options": [
+      "vCenter",
+      "Photoshop",
+      "Excel",
+      "Notepad"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "vCenter manages VMware environments."
@@ -354,7 +549,12 @@
     "id": "virt_040",
     "question": "Which virtualization approach uses hardware support like VT-x?",
     "code": null,
-    "options": ["Hardware-assisted virtualization", "Emulation only", "Containerization", "No virtualization"],
+    "options": [
+      "Hardware-assisted virtualization",
+      "Emulation only",
+      "Containerization",
+      "No virtualization"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "VT-x and AMD-V accelerate virtualization."
@@ -363,7 +563,12 @@
     "id": "virt_041",
     "question": "Which of the following is a container advantage?",
     "code": null,
-    "options": ["Fast startup", "Runs separate kernels", "Needs more RAM", "No isolation"],
+    "options": [
+      "Fast startup",
+      "Runs separate kernels",
+      "Needs more RAM",
+      "No isolation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Containers start quickly because they share the host kernel."
@@ -372,7 +577,12 @@
     "id": "virt_042",
     "question": "Which virtualization keeps guest OS unmodified?",
     "code": null,
-    "options": ["Full virtualization", "Paravirtualization", "OS-level virtualization", "None"],
+    "options": [
+      "Full virtualization",
+      "Paravirtualization",
+      "OS-level virtualization",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Full virtualization runs unmodified guests."
@@ -381,7 +591,12 @@
     "id": "virt_043",
     "question": "Which technology is used for CPU virtualization?",
     "code": null,
-    "options": ["VT-x/AMD-V", "RAID", "NAT", "DNS"],
+    "options": [
+      "VT-x/AMD-V",
+      "RAID",
+      "NAT",
+      "DNS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Intel VT-x and AMD-V support virtualization."
@@ -390,7 +605,12 @@
     "id": "virt_044",
     "question": "Which is a storage virtualization benefit?",
     "code": null,
-    "options": ["Pooling storage", "Reducing encryption", "Disabling backups", "Removing RAID"],
+    "options": [
+      "Pooling storage",
+      "Reducing encryption",
+      "Disabling backups",
+      "Removing RAID"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Virtualization can pool storage for flexibility."
@@ -399,7 +619,12 @@
     "id": "virt_045",
     "question": "Which is a network virtualization example?",
     "code": null,
-    "options": ["Virtual switch", "Physical hub", "Coax cable", "BIOS"],
+    "options": [
+      "Virtual switch",
+      "Physical hub",
+      "Coax cable",
+      "BIOS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Virtual switches connect virtual network interfaces."
@@ -408,7 +633,12 @@
     "id": "virt_046",
     "question": "Which tool is often used for infrastructure as code?",
     "code": null,
-    "options": ["Terraform", "Photoshop", "Chrome", "Word"],
+    "options": [
+      "Terraform",
+      "Photoshop",
+      "Chrome",
+      "Word"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Terraform provisions infrastructure in code."
@@ -417,7 +647,12 @@
     "id": "virt_047",
     "question": "Which cloud model provides virtualized servers?",
     "code": null,
-    "options": ["IaaS", "SaaS", "PaaS", "FaaS"],
+    "options": [
+      "IaaS",
+      "SaaS",
+      "PaaS",
+      "FaaS"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "IaaS provides virtualized compute resources."
@@ -426,7 +661,12 @@
     "id": "virt_048",
     "question": "Which term describes moving workloads between hosts automatically?",
     "code": null,
-    "options": ["Workload balancing", "Defragmentation", "Encryption", "Logging"],
+    "options": [
+      "Workload balancing",
+      "Defragmentation",
+      "Encryption",
+      "Logging"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Schedulers balance workloads across hosts."
@@ -435,7 +675,12 @@
     "id": "virt_049",
     "question": "Which feature helps isolate VM failures?",
     "code": null,
-    "options": ["Fault isolation", "Resource starvation", "Overcommit", "No scheduling"],
+    "options": [
+      "Fault isolation",
+      "Resource starvation",
+      "Overcommit",
+      "No scheduling"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Isolation prevents one VM from affecting others."
@@ -444,9 +689,714 @@
     "id": "virt_050",
     "question": "Which is a drawback of containers compared to VMs?",
     "code": null,
-    "options": ["Weaker isolation", "Slower startup", "Higher overhead", "No portability"],
+    "options": [
+      "Weaker isolation",
+      "Slower startup",
+      "Higher overhead",
+      "No portability"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Containers share the kernel, which can reduce isolation."
+  },
+  {
+    "id": "virt_051",
+    "question": "Which statement about hypervisor is correct?",
+    "code": null,
+    "options": [
+      "Compiler backend",
+      "File editor",
+      "Packet sniffer",
+      "Software that manages virtual machines"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_052",
+    "question": "What is the main purpose of hypervisor in Virtualization?",
+    "code": null,
+    "options": [
+      "Compiler backend",
+      "Software that manages virtual machines",
+      "File editor",
+      "Packet sniffer"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_053",
+    "question": "Which option best describes hypervisor?",
+    "code": null,
+    "options": [
+      "Compiler backend",
+      "Packet sniffer",
+      "Software that manages virtual machines",
+      "File editor"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_054",
+    "question": "In Virtualization, hypervisor refers to:",
+    "code": null,
+    "options": [
+      "Compiler backend",
+      "File editor",
+      "Software that manages virtual machines",
+      "Packet sniffer"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_055",
+    "question": "What does hypervisor primarily do?",
+    "code": null,
+    "options": [
+      "File editor",
+      "Packet sniffer",
+      "Software that manages virtual machines",
+      "Compiler backend"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_056",
+    "question": "Choose the best description of hypervisor.",
+    "code": null,
+    "options": [
+      "Packet sniffer",
+      "Compiler backend",
+      "Software that manages virtual machines",
+      "File editor"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_057",
+    "question": "Which is true about hypervisor?",
+    "code": null,
+    "options": [
+      "File editor",
+      "Packet sniffer",
+      "Compiler backend",
+      "Software that manages virtual machines"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_058",
+    "question": "How is hypervisor best explained?",
+    "code": null,
+    "options": [
+      "Software that manages virtual machines",
+      "Compiler backend",
+      "Packet sniffer",
+      "File editor"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_059",
+    "question": "Which answer matches hypervisor most closely?",
+    "code": null,
+    "options": [
+      "Packet sniffer",
+      "Compiler backend",
+      "File editor",
+      "Software that manages virtual machines"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_060",
+    "question": "For Virtualization, hypervisor is:",
+    "code": null,
+    "options": [
+      "Compiler backend",
+      "Software that manages virtual machines",
+      "Packet sniffer",
+      "File editor"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "A hypervisor creates and controls virtual machines."
+  },
+  {
+    "id": "virt_061",
+    "question": "Which statement about VM is correct?",
+    "code": null,
+    "options": [
+      "A virtual machine isolated from the host",
+      "A disk partition",
+      "A physical CPU core",
+      "A network cable"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_062",
+    "question": "What is the main purpose of VM in Virtualization?",
+    "code": null,
+    "options": [
+      "A physical CPU core",
+      "A disk partition",
+      "A virtual machine isolated from the host",
+      "A network cable"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_063",
+    "question": "Which option best describes VM?",
+    "code": null,
+    "options": [
+      "A physical CPU core",
+      "A network cable",
+      "A virtual machine isolated from the host",
+      "A disk partition"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_064",
+    "question": "In Virtualization, VM refers to:",
+    "code": null,
+    "options": [
+      "A disk partition",
+      "A virtual machine isolated from the host",
+      "A network cable",
+      "A physical CPU core"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_065",
+    "question": "What does VM primarily do?",
+    "code": null,
+    "options": [
+      "A virtual machine isolated from the host",
+      "A physical CPU core",
+      "A network cable",
+      "A disk partition"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_066",
+    "question": "Choose the best description of VM.",
+    "code": null,
+    "options": [
+      "A physical CPU core",
+      "A virtual machine isolated from the host",
+      "A disk partition",
+      "A network cable"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_067",
+    "question": "Which is true about VM?",
+    "code": null,
+    "options": [
+      "A network cable",
+      "A physical CPU core",
+      "A disk partition",
+      "A virtual machine isolated from the host"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_068",
+    "question": "How is VM best explained?",
+    "code": null,
+    "options": [
+      "A physical CPU core",
+      "A network cable",
+      "A disk partition",
+      "A virtual machine isolated from the host"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_069",
+    "question": "Which answer matches VM most closely?",
+    "code": null,
+    "options": [
+      "A physical CPU core",
+      "A network cable",
+      "A virtual machine isolated from the host",
+      "A disk partition"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_070",
+    "question": "For Virtualization, VM is:",
+    "code": null,
+    "options": [
+      "A disk partition",
+      "A virtual machine isolated from the host",
+      "A physical CPU core",
+      "A network cable"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "A VM is a software-based computer environment."
+  },
+  {
+    "id": "virt_071",
+    "question": "Which statement about container is correct?",
+    "code": null,
+    "options": [
+      "A lightweight isolated runtime sharing the host kernel",
+      "Full hardware emulator",
+      "Checksum function",
+      "BIOS replacement"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_072",
+    "question": "What is the main purpose of container in Virtualization?",
+    "code": null,
+    "options": [
+      "Checksum function",
+      "Full hardware emulator",
+      "BIOS replacement",
+      "A lightweight isolated runtime sharing the host kernel"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_073",
+    "question": "Which option best describes container?",
+    "code": null,
+    "options": [
+      "A lightweight isolated runtime sharing the host kernel",
+      "Checksum function",
+      "Full hardware emulator",
+      "BIOS replacement"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_074",
+    "question": "In Virtualization, container refers to:",
+    "code": null,
+    "options": [
+      "Checksum function",
+      "Full hardware emulator",
+      "A lightweight isolated runtime sharing the host kernel",
+      "BIOS replacement"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_075",
+    "question": "What does container primarily do?",
+    "code": null,
+    "options": [
+      "Checksum function",
+      "BIOS replacement",
+      "A lightweight isolated runtime sharing the host kernel",
+      "Full hardware emulator"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_076",
+    "question": "Choose the best description of container.",
+    "code": null,
+    "options": [
+      "BIOS replacement",
+      "Full hardware emulator",
+      "A lightweight isolated runtime sharing the host kernel",
+      "Checksum function"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_077",
+    "question": "Which is true about container?",
+    "code": null,
+    "options": [
+      "Full hardware emulator",
+      "Checksum function",
+      "BIOS replacement",
+      "A lightweight isolated runtime sharing the host kernel"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_078",
+    "question": "How is container best explained?",
+    "code": null,
+    "options": [
+      "A lightweight isolated runtime sharing the host kernel",
+      "Checksum function",
+      "Full hardware emulator",
+      "BIOS replacement"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_079",
+    "question": "Which answer matches container most closely?",
+    "code": null,
+    "options": [
+      "Full hardware emulator",
+      "Checksum function",
+      "BIOS replacement",
+      "A lightweight isolated runtime sharing the host kernel"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_080",
+    "question": "For Virtualization, container is:",
+    "code": null,
+    "options": [
+      "BIOS replacement",
+      "Checksum function",
+      "Full hardware emulator",
+      "A lightweight isolated runtime sharing the host kernel"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Containers isolate apps while sharing the host kernel."
+  },
+  {
+    "id": "virt_081",
+    "question": "Which statement about snapshot is correct?",
+    "code": null,
+    "options": [
+      "A DNS record",
+      "A saved state of a VM at a point in time",
+      "A password hash",
+      "A kernel driver"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_082",
+    "question": "What is the main purpose of snapshot in Virtualization?",
+    "code": null,
+    "options": [
+      "A kernel driver",
+      "A saved state of a VM at a point in time",
+      "A password hash",
+      "A DNS record"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_083",
+    "question": "Which option best describes snapshot?",
+    "code": null,
+    "options": [
+      "A DNS record",
+      "A kernel driver",
+      "A saved state of a VM at a point in time",
+      "A password hash"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_084",
+    "question": "In Virtualization, snapshot refers to:",
+    "code": null,
+    "options": [
+      "A password hash",
+      "A DNS record",
+      "A saved state of a VM at a point in time",
+      "A kernel driver"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_085",
+    "question": "What does snapshot primarily do?",
+    "code": null,
+    "options": [
+      "A saved state of a VM at a point in time",
+      "A kernel driver",
+      "A DNS record",
+      "A password hash"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_086",
+    "question": "Choose the best description of snapshot.",
+    "code": null,
+    "options": [
+      "A password hash",
+      "A DNS record",
+      "A saved state of a VM at a point in time",
+      "A kernel driver"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_087",
+    "question": "Which is true about snapshot?",
+    "code": null,
+    "options": [
+      "A DNS record",
+      "A kernel driver",
+      "A saved state of a VM at a point in time",
+      "A password hash"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_088",
+    "question": "How is snapshot best explained?",
+    "code": null,
+    "options": [
+      "A kernel driver",
+      "A password hash",
+      "A DNS record",
+      "A saved state of a VM at a point in time"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_089",
+    "question": "Which answer matches snapshot most closely?",
+    "code": null,
+    "options": [
+      "A saved state of a VM at a point in time",
+      "A kernel driver",
+      "A password hash",
+      "A DNS record"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_090",
+    "question": "For Virtualization, snapshot is:",
+    "code": null,
+    "options": [
+      "A saved state of a VM at a point in time",
+      "A kernel driver",
+      "A password hash",
+      "A DNS record"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Snapshots capture the current VM state."
+  },
+  {
+    "id": "virt_091",
+    "question": "Which statement about live migration is correct?",
+    "code": null,
+    "options": [
+      "Moving a running VM to another host",
+      "Changing file permissions",
+      "Deleting a snapshot",
+      "Shutting down a server"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_092",
+    "question": "What is the main purpose of live migration in Virtualization?",
+    "code": null,
+    "options": [
+      "Shutting down a server",
+      "Changing file permissions",
+      "Moving a running VM to another host",
+      "Deleting a snapshot"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_093",
+    "question": "Which option best describes live migration?",
+    "code": null,
+    "options": [
+      "Changing file permissions",
+      "Shutting down a server",
+      "Moving a running VM to another host",
+      "Deleting a snapshot"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_094",
+    "question": "In Virtualization, live migration refers to:",
+    "code": null,
+    "options": [
+      "Shutting down a server",
+      "Deleting a snapshot",
+      "Moving a running VM to another host",
+      "Changing file permissions"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_095",
+    "question": "What does live migration primarily do?",
+    "code": null,
+    "options": [
+      "Changing file permissions",
+      "Shutting down a server",
+      "Moving a running VM to another host",
+      "Deleting a snapshot"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_096",
+    "question": "Choose the best description of live migration.",
+    "code": null,
+    "options": [
+      "Shutting down a server",
+      "Deleting a snapshot",
+      "Changing file permissions",
+      "Moving a running VM to another host"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_097",
+    "question": "Which is true about live migration?",
+    "code": null,
+    "options": [
+      "Shutting down a server",
+      "Changing file permissions",
+      "Deleting a snapshot",
+      "Moving a running VM to another host"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_098",
+    "question": "How is live migration best explained?",
+    "code": null,
+    "options": [
+      "Moving a running VM to another host",
+      "Changing file permissions",
+      "Shutting down a server",
+      "Deleting a snapshot"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_099",
+    "question": "Which answer matches live migration most closely?",
+    "code": null,
+    "options": [
+      "Shutting down a server",
+      "Changing file permissions",
+      "Deleting a snapshot",
+      "Moving a running VM to another host"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Live migration moves a running VM with minimal downtime."
+  },
+  {
+    "id": "virt_100",
+    "question": "For Virtualization, live migration is:",
+    "code": null,
+    "options": [
+      "Changing file permissions",
+      "Shutting down a server",
+      "Deleting a snapshot",
+      "Moving a running VM to another host"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Live migration moves a running VM with minimal downtime."
   }
 ]

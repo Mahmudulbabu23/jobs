@@ -3,7 +3,12 @@
     "id": "math_001",
     "question": "What is 7 + 5?",
     "code": null,
-    "options": ["11", "12", "13", "14"],
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "7 plus 5 equals 12."
@@ -12,7 +17,12 @@
     "id": "math_002",
     "question": "What is 9 - 4?",
     "code": null,
-    "options": ["3", "4", "5", "6"],
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "9 minus 4 equals 5."
@@ -21,7 +31,12 @@
     "id": "math_003",
     "question": "What is 6 x 3?",
     "code": null,
-    "options": ["15", "16", "18", "21"],
+    "options": [
+      "15",
+      "16",
+      "18",
+      "21"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "6 times 3 equals 18."
@@ -30,7 +45,12 @@
     "id": "math_004",
     "question": "What is 20 ÷ 4?",
     "code": null,
-    "options": ["4", "5", "6", "7"],
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "20 divided by 4 equals 5."
@@ -39,7 +59,12 @@
     "id": "math_005",
     "question": "What is 15 + 0?",
     "code": null,
-    "options": ["0", "10", "15", "20"],
+    "options": [
+      "0",
+      "10",
+      "15",
+      "20"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Adding zero keeps the number unchanged."
@@ -48,7 +73,12 @@
     "id": "math_006",
     "question": "What is the value of 2^3?",
     "code": null,
-    "options": ["6", "8", "9", "12"],
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "2 to the power 3 equals 8."
@@ -57,7 +87,12 @@
     "id": "math_007",
     "question": "What is the square root of 49?",
     "code": null,
-    "options": ["5", "6", "7", "8"],
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "The square root of 49 is 7."
@@ -66,7 +101,12 @@
     "id": "math_008",
     "question": "What is 25% of 200?",
     "code": null,
-    "options": ["25", "40", "50", "60"],
+    "options": [
+      "25",
+      "40",
+      "50",
+      "60"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "25% of 200 is 50."
@@ -75,7 +115,12 @@
     "id": "math_009",
     "question": "What is 10% of 90?",
     "code": null,
-    "options": ["9", "10", "11", "12"],
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "10% of 90 is 9."
@@ -84,7 +129,12 @@
     "id": "math_010",
     "question": "What is the HCF of 12 and 18?",
     "code": null,
-    "options": ["2", "3", "6", "9"],
+    "options": [
+      "2",
+      "3",
+      "6",
+      "9"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "The highest common factor is 6."
@@ -93,7 +143,12 @@
     "id": "math_011",
     "question": "What is the LCM of 4 and 6?",
     "code": null,
-    "options": ["8", "10", "12", "24"],
+    "options": [
+      "8",
+      "10",
+      "12",
+      "24"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "The least common multiple is 12."
@@ -102,7 +157,12 @@
     "id": "math_012",
     "question": "What is 3/4 of 20?",
     "code": null,
-    "options": ["10", "12", "15", "18"],
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "3/4 of 20 equals 15."
@@ -111,7 +171,12 @@
     "id": "math_013",
     "question": "What is the decimal form of 1/2?",
     "code": null,
-    "options": ["0.2", "0.25", "0.5", "0.75"],
+    "options": [
+      "0.2",
+      "0.25",
+      "0.5",
+      "0.75"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "1 divided by 2 equals 0.5."
@@ -120,7 +185,12 @@
     "id": "math_014",
     "question": "What is 0.25 as a fraction?",
     "code": null,
-    "options": ["1/2", "1/4", "3/4", "2/5"],
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "2/5"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "0.25 equals 1/4."
@@ -129,7 +199,12 @@
     "id": "math_015",
     "question": "What is the perimeter of a square with side 5?",
     "code": null,
-    "options": ["10", "15", "20", "25"],
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Perimeter of square = 4 x side = 20."
@@ -138,7 +213,12 @@
     "id": "math_016",
     "question": "What is the area of a square with side 4?",
     "code": null,
-    "options": ["12", "14", "16", "18"],
+    "options": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Area of square = side x side = 16."
@@ -147,7 +227,12 @@
     "id": "math_017",
     "question": "What is the area of a rectangle with length 6 and width 3?",
     "code": null,
-    "options": ["9", "12", "15", "18"],
+    "options": [
+      "9",
+      "12",
+      "15",
+      "18"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "Area = length x width = 18."
@@ -156,7 +241,12 @@
     "id": "math_018",
     "question": "What is the circumference formula of a circle?",
     "code": null,
-    "options": ["2πr", "πr^2", "r^2/2", "4πr"],
+    "options": [
+      "2πr",
+      "πr^2",
+      "r^2/2",
+      "4πr"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Circumference is 2πr."
@@ -165,7 +255,12 @@
     "id": "math_019",
     "question": "What is the area formula of a circle?",
     "code": null,
-    "options": ["2πr", "πr^2", "πd", "4πr^2"],
+    "options": [
+      "2πr",
+      "πr^2",
+      "πd",
+      "4πr^2"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Area of circle is πr^2."
@@ -174,7 +269,12 @@
     "id": "math_020",
     "question": "What is 11 x 11?",
     "code": null,
-    "options": ["111", "121", "131", "141"],
+    "options": [
+      "111",
+      "121",
+      "131",
+      "141"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "11 times 11 equals 121."
@@ -183,7 +283,12 @@
     "id": "math_021",
     "question": "What is the next prime after 7?",
     "code": null,
-    "options": ["8", "9", "10", "11"],
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "11 is the next prime after 7."
@@ -192,7 +297,12 @@
     "id": "math_022",
     "question": "What is the smallest even prime number?",
     "code": null,
-    "options": ["1", "2", "3", "5"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "2 is the only even prime."
@@ -201,7 +311,12 @@
     "id": "math_023",
     "question": "What is the sum of angles in a triangle?",
     "code": null,
-    "options": ["90°", "180°", "270°", "360°"],
+    "options": [
+      "90°",
+      "180°",
+      "270°",
+      "360°"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Angles in a triangle sum to 180°."
@@ -210,7 +325,12 @@
     "id": "math_024",
     "question": "What is the sum of angles in a quadrilateral?",
     "code": null,
-    "options": ["180°", "270°", "360°", "450°"],
+    "options": [
+      "180°",
+      "270°",
+      "360°",
+      "450°"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Angles in a quadrilateral sum to 360°."
@@ -219,7 +339,12 @@
     "id": "math_025",
     "question": "What is the supplementary angle of 120°?",
     "code": null,
-    "options": ["30°", "45°", "60°", "90°"],
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Supplementary angles sum to 180°, so 60°."
@@ -228,7 +353,12 @@
     "id": "math_026",
     "question": "What is the complementary angle of 35°?",
     "code": null,
-    "options": ["45°", "55°", "60°", "65°"],
+    "options": [
+      "45°",
+      "55°",
+      "60°",
+      "65°"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Complementary angles sum to 90°, so 55°."
@@ -237,7 +367,12 @@
     "id": "math_027",
     "question": "What is 13 + 17?",
     "code": null,
-    "options": ["28", "29", "30", "31"],
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "13 plus 17 equals 30."
@@ -246,7 +381,12 @@
     "id": "math_028",
     "question": "What is 100 - 37?",
     "code": null,
-    "options": ["53", "63", "73", "83"],
+    "options": [
+      "53",
+      "63",
+      "73",
+      "83"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "100 minus 37 equals 63."
@@ -255,7 +395,12 @@
     "id": "math_029",
     "question": "What is 8 x 7?",
     "code": null,
-    "options": ["54", "56", "58", "60"],
+    "options": [
+      "54",
+      "56",
+      "58",
+      "60"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "8 times 7 equals 56."
@@ -264,7 +409,12 @@
     "id": "math_030",
     "question": "What is 81 ÷ 9?",
     "code": null,
-    "options": ["7", "8", "9", "10"],
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "81 divided by 9 equals 9."
@@ -273,7 +423,12 @@
     "id": "math_031",
     "question": "What is the square of 12?",
     "code": null,
-    "options": ["120", "132", "144", "156"],
+    "options": [
+      "120",
+      "132",
+      "144",
+      "156"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "12 squared equals 144."
@@ -282,7 +437,12 @@
     "id": "math_032",
     "question": "What is the cube of 3?",
     "code": null,
-    "options": ["6", "9", "18", "27"],
+    "options": [
+      "6",
+      "9",
+      "18",
+      "27"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "3 cubed equals 27."
@@ -291,7 +451,12 @@
     "id": "math_033",
     "question": "What is 2/5 of 50?",
     "code": null,
-    "options": ["10", "15", "20", "25"],
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "2/5 of 50 is 20."
@@ -300,7 +465,12 @@
     "id": "math_034",
     "question": "What is the decimal form of 3/5?",
     "code": null,
-    "options": ["0.3", "0.5", "0.6", "0.8"],
+    "options": [
+      "0.3",
+      "0.5",
+      "0.6",
+      "0.8"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "3 divided by 5 equals 0.6."
@@ -309,7 +479,12 @@
     "id": "math_035",
     "question": "If x = 4, what is x + 6?",
     "code": null,
-    "options": ["8", "9", "10", "11"],
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "4 plus 6 equals 10."
@@ -318,7 +493,12 @@
     "id": "math_036",
     "question": "If x = 5, what is 2x?",
     "code": null,
-    "options": ["5", "8", "10", "12"],
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "2 times 5 equals 10."
@@ -327,7 +507,12 @@
     "id": "math_037",
     "question": "What is 14% of 100?",
     "code": null,
-    "options": ["12", "14", "16", "18"],
+    "options": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "14% of 100 is 14."
@@ -336,7 +521,12 @@
     "id": "math_038",
     "question": "What is 50% of 70?",
     "code": null,
-    "options": ["20", "30", "35", "40"],
+    "options": [
+      "20",
+      "30",
+      "35",
+      "40"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Half of 70 is 35."
@@ -345,7 +535,12 @@
     "id": "math_039",
     "question": "What is 3 + 4 x 2?",
     "code": null,
-    "options": ["14", "11", "10", "7"],
+    "options": [
+      "14",
+      "11",
+      "10",
+      "7"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Multiplication first: 4 x 2 = 8; 8 + 3 = 11."
@@ -354,7 +549,12 @@
     "id": "math_040",
     "question": "What is (3 + 4) x 2?",
     "code": null,
-    "options": ["11", "12", "14", "16"],
+    "options": [
+      "11",
+      "12",
+      "14",
+      "16"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Parentheses first: 3 + 4 = 7; 7 x 2 = 14."
@@ -363,7 +563,12 @@
     "id": "math_041",
     "question": "What is the median of 2, 4, 6?",
     "code": null,
-    "options": ["2", "4", "6", "12"],
+    "options": [
+      "2",
+      "4",
+      "6",
+      "12"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The middle value is 4."
@@ -372,7 +577,12 @@
     "id": "math_042",
     "question": "What is the mode of 1, 2, 2, 3, 4?",
     "code": null,
-    "options": ["1", "2", "3", "4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "2 appears most often."
@@ -381,7 +591,12 @@
     "id": "math_043",
     "question": "What is the mean of 2, 4, 6, 8?",
     "code": null,
-    "options": ["4", "5", "6", "7"],
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Mean = (2+4+6+8)/4 = 5."
@@ -390,7 +605,12 @@
     "id": "math_044",
     "question": "What is the probability of getting heads on a fair coin?",
     "code": null,
-    "options": ["1/4", "1/3", "1/2", "1"],
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "A fair coin has 2 equally likely outcomes."
@@ -399,7 +619,12 @@
     "id": "math_045",
     "question": "What is the probability of getting an even number on a fair die?",
     "code": null,
-    "options": ["1/6", "1/3", "1/2", "2/3"],
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Even numbers are 2, 4, 6, so 3 out of 6."
@@ -408,7 +633,12 @@
     "id": "math_046",
     "question": "What is 45 + 55?",
     "code": null,
-    "options": ["90", "95", "100", "105"],
+    "options": [
+      "90",
+      "95",
+      "100",
+      "105"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "45 plus 55 equals 100."
@@ -417,7 +647,12 @@
     "id": "math_047",
     "question": "What is 200 - 125?",
     "code": null,
-    "options": ["65", "70", "75", "80"],
+    "options": [
+      "65",
+      "70",
+      "75",
+      "80"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "200 minus 125 equals 75."
@@ -426,7 +661,12 @@
     "id": "math_048",
     "question": "What is 9 x 9?",
     "code": null,
-    "options": ["72", "73", "81", "89"],
+    "options": [
+      "72",
+      "73",
+      "81",
+      "89"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "9 times 9 equals 81."
@@ -435,7 +675,12 @@
     "id": "math_049",
     "question": "What is 64 ÷ 8?",
     "code": null,
-    "options": ["6", "7", "8", "9"],
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "64 divided by 8 equals 8."
@@ -444,9 +689,714 @@
     "id": "math_050",
     "question": "What is the next number in the sequence 2, 4, 6, 8, ?",
     "code": null,
-    "options": ["9", "10", "11", "12"],
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The pattern increases by 2, so next is 10."
+  },
+  {
+    "id": "math_051",
+    "question": "Which statement about permutation is correct?",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Prime factors only",
+      "Order does not matter",
+      "Arrangements where order matters"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_052",
+    "question": "What is the main purpose of permutation in Mathematics?",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Order does not matter",
+      "Arrangements where order matters",
+      "Prime factors only"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_053",
+    "question": "Which option best describes permutation?",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Prime factors only",
+      "Arrangements where order matters",
+      "Order does not matter"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_054",
+    "question": "In Mathematics, permutation refers to:",
+    "code": null,
+    "options": [
+      "Order does not matter",
+      "Arrangements where order matters",
+      "Prime factors only",
+      "Odd numbers only"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_055",
+    "question": "What does permutation primarily do?",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Order does not matter",
+      "Arrangements where order matters",
+      "Prime factors only"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_056",
+    "question": "Choose the best description of permutation.",
+    "code": null,
+    "options": [
+      "Prime factors only",
+      "Order does not matter",
+      "Odd numbers only",
+      "Arrangements where order matters"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_057",
+    "question": "Which is true about permutation?",
+    "code": null,
+    "options": [
+      "Arrangements where order matters",
+      "Order does not matter",
+      "Odd numbers only",
+      "Prime factors only"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_058",
+    "question": "How is permutation best explained?",
+    "code": null,
+    "options": [
+      "Order does not matter",
+      "Arrangements where order matters",
+      "Odd numbers only",
+      "Prime factors only"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_059",
+    "question": "Which answer matches permutation most closely?",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Order does not matter",
+      "Prime factors only",
+      "Arrangements where order matters"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_060",
+    "question": "For Mathematics, permutation is:",
+    "code": null,
+    "options": [
+      "Odd numbers only",
+      "Arrangements where order matters",
+      "Order does not matter",
+      "Prime factors only"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Permutation counts ordered arrangements."
+  },
+  {
+    "id": "math_061",
+    "question": "Which statement about combination is correct?",
+    "code": null,
+    "options": [
+      "Selections where order does not matter",
+      "Vector sum",
+      "Order matters",
+      "Equation solving"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_062",
+    "question": "What is the main purpose of combination in Mathematics?",
+    "code": null,
+    "options": [
+      "Order matters",
+      "Equation solving",
+      "Selections where order does not matter",
+      "Vector sum"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_063",
+    "question": "Which option best describes combination?",
+    "code": null,
+    "options": [
+      "Selections where order does not matter",
+      "Equation solving",
+      "Vector sum",
+      "Order matters"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_064",
+    "question": "In Mathematics, combination refers to:",
+    "code": null,
+    "options": [
+      "Order matters",
+      "Equation solving",
+      "Vector sum",
+      "Selections where order does not matter"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_065",
+    "question": "What does combination primarily do?",
+    "code": null,
+    "options": [
+      "Vector sum",
+      "Order matters",
+      "Equation solving",
+      "Selections where order does not matter"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_066",
+    "question": "Choose the best description of combination.",
+    "code": null,
+    "options": [
+      "Vector sum",
+      "Selections where order does not matter",
+      "Equation solving",
+      "Order matters"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_067",
+    "question": "Which is true about combination?",
+    "code": null,
+    "options": [
+      "Vector sum",
+      "Selections where order does not matter",
+      "Order matters",
+      "Equation solving"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_068",
+    "question": "How is combination best explained?",
+    "code": null,
+    "options": [
+      "Vector sum",
+      "Order matters",
+      "Equation solving",
+      "Selections where order does not matter"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_069",
+    "question": "Which answer matches combination most closely?",
+    "code": null,
+    "options": [
+      "Order matters",
+      "Selections where order does not matter",
+      "Vector sum",
+      "Equation solving"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_070",
+    "question": "For Mathematics, combination is:",
+    "code": null,
+    "options": [
+      "Selections where order does not matter",
+      "Order matters",
+      "Equation solving",
+      "Vector sum"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Combination counts unordered selections."
+  },
+  {
+    "id": "math_071",
+    "question": "Which statement about probability is correct?",
+    "code": null,
+    "options": [
+      "Average value",
+      "Product rule",
+      "Derivative",
+      "The likelihood of an event"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_072",
+    "question": "What is the main purpose of probability in Mathematics?",
+    "code": null,
+    "options": [
+      "Derivative",
+      "Product rule",
+      "The likelihood of an event",
+      "Average value"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_073",
+    "question": "Which option best describes probability?",
+    "code": null,
+    "options": [
+      "Average value",
+      "Derivative",
+      "Product rule",
+      "The likelihood of an event"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_074",
+    "question": "In Mathematics, probability refers to:",
+    "code": null,
+    "options": [
+      "Average value",
+      "Derivative",
+      "The likelihood of an event",
+      "Product rule"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_075",
+    "question": "What does probability primarily do?",
+    "code": null,
+    "options": [
+      "Product rule",
+      "Average value",
+      "Derivative",
+      "The likelihood of an event"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_076",
+    "question": "Choose the best description of probability.",
+    "code": null,
+    "options": [
+      "Average value",
+      "Derivative",
+      "The likelihood of an event",
+      "Product rule"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_077",
+    "question": "Which is true about probability?",
+    "code": null,
+    "options": [
+      "Product rule",
+      "Derivative",
+      "The likelihood of an event",
+      "Average value"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_078",
+    "question": "How is probability best explained?",
+    "code": null,
+    "options": [
+      "Average value",
+      "The likelihood of an event",
+      "Derivative",
+      "Product rule"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_079",
+    "question": "Which answer matches probability most closely?",
+    "code": null,
+    "options": [
+      "Derivative",
+      "Product rule",
+      "Average value",
+      "The likelihood of an event"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_080",
+    "question": "For Mathematics, probability is:",
+    "code": null,
+    "options": [
+      "The likelihood of an event",
+      "Product rule",
+      "Derivative",
+      "Average value"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Probability measures chance."
+  },
+  {
+    "id": "math_081",
+    "question": "Which statement about matrix is correct?",
+    "code": null,
+    "options": [
+      "A line segment",
+      "A rectangular array of numbers",
+      "A polynomial term",
+      "A scalar constant"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_082",
+    "question": "What is the main purpose of matrix in Mathematics?",
+    "code": null,
+    "options": [
+      "A line segment",
+      "A polynomial term",
+      "A rectangular array of numbers",
+      "A scalar constant"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_083",
+    "question": "Which option best describes matrix?",
+    "code": null,
+    "options": [
+      "A line segment",
+      "A rectangular array of numbers",
+      "A scalar constant",
+      "A polynomial term"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_084",
+    "question": "In Mathematics, matrix refers to:",
+    "code": null,
+    "options": [
+      "A polynomial term",
+      "A scalar constant",
+      "A rectangular array of numbers",
+      "A line segment"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_085",
+    "question": "What does matrix primarily do?",
+    "code": null,
+    "options": [
+      "A line segment",
+      "A scalar constant",
+      "A polynomial term",
+      "A rectangular array of numbers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_086",
+    "question": "Choose the best description of matrix.",
+    "code": null,
+    "options": [
+      "A rectangular array of numbers",
+      "A polynomial term",
+      "A scalar constant",
+      "A line segment"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_087",
+    "question": "Which is true about matrix?",
+    "code": null,
+    "options": [
+      "A scalar constant",
+      "A line segment",
+      "A polynomial term",
+      "A rectangular array of numbers"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_088",
+    "question": "How is matrix best explained?",
+    "code": null,
+    "options": [
+      "A polynomial term",
+      "A scalar constant",
+      "A line segment",
+      "A rectangular array of numbers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_089",
+    "question": "Which answer matches matrix most closely?",
+    "code": null,
+    "options": [
+      "A scalar constant",
+      "A polynomial term",
+      "A line segment",
+      "A rectangular array of numbers"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_090",
+    "question": "For Mathematics, matrix is:",
+    "code": null,
+    "options": [
+      "A rectangular array of numbers",
+      "A polynomial term",
+      "A scalar constant",
+      "A line segment"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "A matrix arranges numbers in rows and columns."
+  },
+  {
+    "id": "math_091",
+    "question": "Which statement about logarithm is correct?",
+    "code": null,
+    "options": [
+      "Square root",
+      "Modulus",
+      "The inverse operation of exponentiation",
+      "Factorial"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_092",
+    "question": "What is the main purpose of logarithm in Mathematics?",
+    "code": null,
+    "options": [
+      "Modulus",
+      "The inverse operation of exponentiation",
+      "Factorial",
+      "Square root"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_093",
+    "question": "Which option best describes logarithm?",
+    "code": null,
+    "options": [
+      "Square root",
+      "The inverse operation of exponentiation",
+      "Modulus",
+      "Factorial"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_094",
+    "question": "In Mathematics, logarithm refers to:",
+    "code": null,
+    "options": [
+      "Modulus",
+      "Factorial",
+      "Square root",
+      "The inverse operation of exponentiation"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_095",
+    "question": "What does logarithm primarily do?",
+    "code": null,
+    "options": [
+      "Modulus",
+      "Factorial",
+      "Square root",
+      "The inverse operation of exponentiation"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_096",
+    "question": "Choose the best description of logarithm.",
+    "code": null,
+    "options": [
+      "Factorial",
+      "Modulus",
+      "Square root",
+      "The inverse operation of exponentiation"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_097",
+    "question": "Which is true about logarithm?",
+    "code": null,
+    "options": [
+      "Factorial",
+      "Square root",
+      "The inverse operation of exponentiation",
+      "Modulus"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_098",
+    "question": "How is logarithm best explained?",
+    "code": null,
+    "options": [
+      "Factorial",
+      "Modulus",
+      "Square root",
+      "The inverse operation of exponentiation"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_099",
+    "question": "Which answer matches logarithm most closely?",
+    "code": null,
+    "options": [
+      "The inverse operation of exponentiation",
+      "Modulus",
+      "Square root",
+      "Factorial"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Logarithms undo exponentiation."
+  },
+  {
+    "id": "math_100",
+    "question": "For Mathematics, logarithm is:",
+    "code": null,
+    "options": [
+      "The inverse operation of exponentiation",
+      "Modulus",
+      "Factorial",
+      "Square root"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Logarithms undo exponentiation."
   }
 ]

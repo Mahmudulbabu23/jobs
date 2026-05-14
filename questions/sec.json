@@ -3,7 +3,12 @@
     "id": "sec_001",
     "question": "Which of the following is part of the CIA triad?",
     "code": null,
-    "options": ["Confidentiality", "Integrity", "Availability", "All of the above"],
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "All of the above"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "CIA stands for Confidentiality, Integrity, and Availability."
@@ -12,7 +17,12 @@
     "id": "sec_002",
     "question": "A strong password should include:",
     "code": null,
-    "options": ["Only letters", "Only numbers", "Letters, numbers, and symbols", "Only lowercase"],
+    "options": [
+      "Only letters",
+      "Only numbers",
+      "Letters, numbers, and symbols",
+      "Only lowercase"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Mixing character types makes passwords harder to guess."
@@ -21,7 +31,12 @@
     "id": "sec_003",
     "question": "Phishing is an attack that:",
     "code": null,
-    "options": ["Overloads a server", "Tricks users into revealing information", "Installs hardware", "Encrypts data for backup"],
+    "options": [
+      "Overloads a server",
+      "Tricks users into revealing information",
+      "Installs hardware",
+      "Encrypts data for backup"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Phishing uses social engineering to steal credentials."
@@ -30,7 +45,12 @@
     "id": "sec_004",
     "question": "Which security control is preventive?",
     "code": null,
-    "options": ["Audit logs", "Firewalls", "Incident response", "Forensics"],
+    "options": [
+      "Audit logs",
+      "Firewalls",
+      "Incident response",
+      "Forensics"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Firewalls block unwanted traffic before it reaches systems."
@@ -39,7 +59,12 @@
     "id": "sec_005",
     "question": "Which is an example of multifactor authentication?",
     "code": null,
-    "options": ["Password only", "Password + SMS code", "PIN only", "Security question only"],
+    "options": [
+      "Password only",
+      "Password + SMS code",
+      "PIN only",
+      "Security question only"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "MFA combines two or more factors."
@@ -48,7 +73,12 @@
     "id": "sec_006",
     "question": "Least privilege means:",
     "code": null,
-    "options": ["Give all users admin rights", "Grant only required access", "Share passwords", "Disable logging"],
+    "options": [
+      "Give all users admin rights",
+      "Grant only required access",
+      "Share passwords",
+      "Disable logging"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Users should only have permissions they need."
@@ -57,7 +87,12 @@
     "id": "sec_007",
     "question": "Which is a type of malware?",
     "code": null,
-    "options": ["Firewall", "Trojan", "Router", "DNS"],
+    "options": [
+      "Firewall",
+      "Trojan",
+      "Router",
+      "DNS"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "A Trojan is malicious software disguised as legitimate."
@@ -66,7 +101,12 @@
     "id": "sec_008",
     "question": "Ransomware typically:",
     "code": null,
-    "options": ["Deletes files silently", "Encrypts files and demands payment", "Improves performance", "Creates backups"],
+    "options": [
+      "Deletes files silently",
+      "Encrypts files and demands payment",
+      "Improves performance",
+      "Creates backups"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Ransomware encrypts data and demands payment for decryption."
@@ -75,7 +115,12 @@
     "id": "sec_009",
     "question": "A DDoS attack aims to:",
     "code": null,
-    "options": ["Steal passwords", "Overwhelm a service", "Encrypt disks", "Patch servers"],
+    "options": [
+      "Steal passwords",
+      "Overwhelm a service",
+      "Encrypt disks",
+      "Patch servers"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "DDoS floods a service with traffic to cause downtime."
@@ -84,7 +129,12 @@
     "id": "sec_010",
     "question": "Which is an example of data integrity?",
     "code": null,
-    "options": ["Data is available", "Data is accurate and unmodified", "Data is private", "Data is encrypted"],
+    "options": [
+      "Data is available",
+      "Data is accurate and unmodified",
+      "Data is private",
+      "Data is encrypted"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Integrity means data has not been altered improperly."
@@ -93,7 +143,12 @@
     "id": "sec_011",
     "question": "Which tool can detect known vulnerabilities in software?",
     "code": null,
-    "options": ["Vulnerability scanner", "Text editor", "Calculator", "Media player"],
+    "options": [
+      "Vulnerability scanner",
+      "Text editor",
+      "Calculator",
+      "Media player"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Vulnerability scanners identify known security weaknesses."
@@ -102,7 +157,12 @@
     "id": "sec_012",
     "question": "Patch management is important because:",
     "code": null,
-    "options": ["It increases bugs", "It fixes vulnerabilities", "It removes logs", "It disables firewalls"],
+    "options": [
+      "It increases bugs",
+      "It fixes vulnerabilities",
+      "It removes logs",
+      "It disables firewalls"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Patches close security holes and fix defects."
@@ -111,7 +171,12 @@
     "id": "sec_013",
     "question": "A zero-day vulnerability is:",
     "code": null,
-    "options": ["Known and patched", "Unknown to vendor", "Found only in old systems", "Harmless"],
+    "options": [
+      "Known and patched",
+      "Unknown to vendor",
+      "Found only in old systems",
+      "Harmless"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Zero-day means no patch exists yet."
@@ -120,7 +185,12 @@
     "id": "sec_014",
     "question": "Which protocol provides secure web traffic?",
     "code": null,
-    "options": ["HTTP", "HTTPS", "FTP", "Telnet"],
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "Telnet"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "HTTPS encrypts traffic with TLS."
@@ -129,7 +199,12 @@
     "id": "sec_015",
     "question": "Which is an example of social engineering?",
     "code": null,
-    "options": ["SQL injection", "Phishing email", "Buffer overflow", "Port scanning"],
+    "options": [
+      "SQL injection",
+      "Phishing email",
+      "Buffer overflow",
+      "Port scanning"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Social engineering manipulates people, such as phishing."
@@ -138,7 +213,12 @@
     "id": "sec_016",
     "question": "What does VPN primarily provide?",
     "code": null,
-    "options": ["Faster internet", "Encrypted tunnel", "More storage", "DNS caching"],
+    "options": [
+      "Faster internet",
+      "Encrypted tunnel",
+      "More storage",
+      "DNS caching"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "A VPN creates an encrypted tunnel over public networks."
@@ -147,7 +227,12 @@
     "id": "sec_017",
     "question": "Which is a strong hashing use case?",
     "code": null,
-    "options": ["Encrypting email", "Storing passwords", "Transferring files", "Routing traffic"],
+    "options": [
+      "Encrypting email",
+      "Storing passwords",
+      "Transferring files",
+      "Routing traffic"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Hashes are used to store and verify passwords securely."
@@ -156,7 +241,12 @@
     "id": "sec_018",
     "question": "Salting passwords helps to:",
     "code": null,
-    "options": ["Speed logins", "Prevent rainbow table attacks", "Reduce encryption", "Disable hashing"],
+    "options": [
+      "Speed logins",
+      "Prevent rainbow table attacks",
+      "Reduce encryption",
+      "Disable hashing"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Salt makes precomputed hash attacks ineffective."
@@ -165,7 +255,12 @@
     "id": "sec_019",
     "question": "Which is a principle of secure design?",
     "code": null,
-    "options": ["Security by obscurity", "Fail secure", "Disable updates", "Open all ports"],
+    "options": [
+      "Security by obscurity",
+      "Fail secure",
+      "Disable updates",
+      "Open all ports"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Fail secure ensures safe behavior on failure."
@@ -174,7 +269,12 @@
     "id": "sec_020",
     "question": "Which is an example of two-factor authentication?",
     "code": null,
-    "options": ["Password + PIN", "Password + fingerprint", "PIN only", "Password only"],
+    "options": [
+      "Password + PIN",
+      "Password + fingerprint",
+      "PIN only",
+      "Password only"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Two factors use different categories, like knowledge and biometrics."
@@ -183,7 +283,12 @@
     "id": "sec_021",
     "question": "What is the primary goal of access control?",
     "code": null,
-    "options": ["Stop all traffic", "Allow only authorized access", "Encrypt every file", "Delete logs"],
+    "options": [
+      "Stop all traffic",
+      "Allow only authorized access",
+      "Encrypt every file",
+      "Delete logs"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Access control ensures only authorized users can access resources."
@@ -192,7 +297,12 @@
     "id": "sec_022",
     "question": "Which of the following is an example of authorization?",
     "code": null,
-    "options": ["Logging in with password", "Checking user permissions", "Encrypting a file", "Backing up data"],
+    "options": [
+      "Logging in with password",
+      "Checking user permissions",
+      "Encrypting a file",
+      "Backing up data"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Authorization determines what actions a user can perform."
@@ -201,7 +311,12 @@
     "id": "sec_023",
     "question": "Which of the following is an example of authentication?",
     "code": null,
-    "options": ["Assigning roles", "Verifying identity", "Encrypting traffic", "Setting firewall rules"],
+    "options": [
+      "Assigning roles",
+      "Verifying identity",
+      "Encrypting traffic",
+      "Setting firewall rules"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Authentication verifies who the user is."
@@ -210,7 +325,12 @@
     "id": "sec_024",
     "question": "What is the primary purpose of an IDS?",
     "code": null,
-    "options": ["Block traffic", "Detect suspicious activity", "Encrypt files", "Assign IPs"],
+    "options": [
+      "Block traffic",
+      "Detect suspicious activity",
+      "Encrypt files",
+      "Assign IPs"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Intrusion Detection Systems monitor and alert on threats."
@@ -219,7 +339,12 @@
     "id": "sec_025",
     "question": "What is the primary purpose of an IPS?",
     "code": null,
-    "options": ["Detect only", "Detect and block", "Only log", "Only scan"],
+    "options": [
+      "Detect only",
+      "Detect and block",
+      "Only log",
+      "Only scan"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Intrusion Prevention Systems can block detected threats."
@@ -228,7 +353,12 @@
     "id": "sec_026",
     "question": "Which is a common secure coding practice?",
     "code": null,
-    "options": ["Validate input", "Trust user data", "Disable logging", "Reuse passwords"],
+    "options": [
+      "Validate input",
+      "Trust user data",
+      "Disable logging",
+      "Reuse passwords"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Input validation reduces injection risks."
@@ -237,7 +367,12 @@
     "id": "sec_027",
     "question": "SQL injection happens when:",
     "code": null,
-    "options": ["Input is not sanitized", "Passwords are hashed", "Firewall is enabled", "Ports are closed"],
+    "options": [
+      "Input is not sanitized",
+      "Passwords are hashed",
+      "Firewall is enabled",
+      "Ports are closed"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Unsanitized input can alter SQL queries."
@@ -246,7 +381,12 @@
     "id": "sec_028",
     "question": "Cross-site scripting (XSS) targets:",
     "code": null,
-    "options": ["Server OS", "Client browsers", "Network routers", "Databases"],
+    "options": [
+      "Server OS",
+      "Client browsers",
+      "Network routers",
+      "Databases"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "XSS injects scripts executed in the user's browser."
@@ -255,7 +395,12 @@
     "id": "sec_029",
     "question": "Cross-site request forgery (CSRF) exploits:",
     "code": null,
-    "options": ["User trust in browser", "Weak encryption", "Open ports", "DNS cache"],
+    "options": [
+      "User trust in browser",
+      "Weak encryption",
+      "Open ports",
+      "DNS cache"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "CSRF tricks a logged-in user into making unwanted requests."
@@ -264,7 +409,12 @@
     "id": "sec_030",
     "question": "What is the goal of encryption?",
     "code": null,
-    "options": ["Integrity", "Confidentiality", "Availability", "Logging"],
+    "options": [
+      "Integrity",
+      "Confidentiality",
+      "Availability",
+      "Logging"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Encryption primarily protects confidentiality."
@@ -273,7 +423,12 @@
     "id": "sec_031",
     "question": "What is the goal of hashing?",
     "code": null,
-    "options": ["Reversible secrecy", "Integrity checking", "Key exchange", "Compression"],
+    "options": [
+      "Reversible secrecy",
+      "Integrity checking",
+      "Key exchange",
+      "Compression"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Hashes verify data integrity."
@@ -282,7 +437,12 @@
     "id": "sec_032",
     "question": "Which is symmetric encryption?",
     "code": null,
-    "options": ["AES", "RSA", "DSA", "ECC"],
+    "options": [
+      "AES",
+      "RSA",
+      "DSA",
+      "ECC"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES uses the same key for encryption and decryption."
@@ -291,7 +451,12 @@
     "id": "sec_033",
     "question": "Which is asymmetric encryption?",
     "code": null,
-    "options": ["AES", "RSA", "3DES", "Blowfish"],
+    "options": [
+      "AES",
+      "RSA",
+      "3DES",
+      "Blowfish"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "RSA uses public and private keys."
@@ -300,7 +465,12 @@
     "id": "sec_034",
     "question": "TLS primarily protects data in:",
     "code": null,
-    "options": ["Storage", "Transit", "Deletion", "Backup"],
+    "options": [
+      "Storage",
+      "Transit",
+      "Deletion",
+      "Backup"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "TLS secures data in transit."
@@ -309,7 +479,12 @@
     "id": "sec_035",
     "question": "Which control is detective?",
     "code": null,
-    "options": ["IDS", "Firewall", "MFA", "Access list"],
+    "options": [
+      "IDS",
+      "Firewall",
+      "MFA",
+      "Access list"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "IDS detects suspicious activity and alerts."
@@ -318,7 +493,12 @@
     "id": "sec_036",
     "question": "Which is an example of a security baseline?",
     "code": null,
-    "options": ["Default config with hardened settings", "No configuration", "Shared admin account", "Open ports"],
+    "options": [
+      "Default config with hardened settings",
+      "No configuration",
+      "Shared admin account",
+      "Open ports"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "A baseline defines minimum secure configurations."
@@ -327,7 +507,12 @@
     "id": "sec_037",
     "question": "Which practice reduces privilege abuse?",
     "code": null,
-    "options": ["Role-based access control", "Password sharing", "Single admin account", "Disable logging"],
+    "options": [
+      "Role-based access control",
+      "Password sharing",
+      "Single admin account",
+      "Disable logging"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "RBAC limits access based on roles."
@@ -336,7 +521,12 @@
     "id": "sec_038",
     "question": "Which is a secure backup practice?",
     "code": null,
-    "options": ["No backups", "3-2-1 rule", "Single USB only", "Overwrite daily"],
+    "options": [
+      "No backups",
+      "3-2-1 rule",
+      "Single USB only",
+      "Overwrite daily"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "3-2-1 keeps multiple copies across media and locations."
@@ -345,7 +535,12 @@
     "id": "sec_039",
     "question": "What does data availability mean?",
     "code": null,
-    "options": ["Data is secret", "Data is accurate", "Data is accessible when needed", "Data is encrypted"],
+    "options": [
+      "Data is secret",
+      "Data is accurate",
+      "Data is accessible when needed",
+      "Data is encrypted"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Availability means data and systems are accessible."
@@ -354,7 +549,12 @@
     "id": "sec_040",
     "question": "A firewall primarily operates by:",
     "code": null,
-    "options": ["Filtering traffic", "Encrypting disks", "Managing users", "Compiling code"],
+    "options": [
+      "Filtering traffic",
+      "Encrypting disks",
+      "Managing users",
+      "Compiling code"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Firewalls allow or block traffic based on rules."
@@ -363,7 +563,12 @@
     "id": "sec_041",
     "question": "Which is a common log source?",
     "code": null,
-    "options": ["SIEM", "Web server", "Keyboard", "Mouse"],
+    "options": [
+      "SIEM",
+      "Web server",
+      "Keyboard",
+      "Mouse"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Web servers generate access and error logs."
@@ -372,7 +577,12 @@
     "id": "sec_042",
     "question": "A SIEM is used to:",
     "code": null,
-    "options": ["Aggregate and analyze logs", "Encrypt disks", "Route packets", "Scan ports"],
+    "options": [
+      "Aggregate and analyze logs",
+      "Encrypt disks",
+      "Route packets",
+      "Scan ports"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "SIEM correlates and analyzes security events."
@@ -381,7 +591,12 @@
     "id": "sec_043",
     "question": "Which is an example of physical security?",
     "code": null,
-    "options": ["CCTV", "TLS", "Antivirus", "Firewall"],
+    "options": [
+      "CCTV",
+      "TLS",
+      "Antivirus",
+      "Firewall"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CCTV is a physical security control."
@@ -390,7 +605,12 @@
     "id": "sec_044",
     "question": "Which is a common endpoint protection tool?",
     "code": null,
-    "options": ["Antivirus", "DNS", "Router", "DHCP"],
+    "options": [
+      "Antivirus",
+      "DNS",
+      "Router",
+      "DHCP"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Antivirus helps detect and block malware on endpoints."
@@ -399,7 +619,12 @@
     "id": "sec_045",
     "question": "Which type of attack targets availability?",
     "code": null,
-    "options": ["DDoS", "Phishing", "Spoofing", "SQL injection"],
+    "options": [
+      "DDoS",
+      "Phishing",
+      "Spoofing",
+      "SQL injection"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "DDoS aims to make services unavailable."
@@ -408,7 +633,12 @@
     "id": "sec_046",
     "question": "Which type of attack targets confidentiality?",
     "code": null,
-    "options": ["Eavesdropping", "DDoS", "Power failure", "Hardware fault"],
+    "options": [
+      "Eavesdropping",
+      "DDoS",
+      "Power failure",
+      "Hardware fault"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Eavesdropping exposes private data."
@@ -417,7 +647,12 @@
     "id": "sec_047",
     "question": "Which type of attack targets integrity?",
     "code": null,
-    "options": ["Data tampering", "Phishing", "DDoS", "Packet loss"],
+    "options": [
+      "Data tampering",
+      "Phishing",
+      "DDoS",
+      "Packet loss"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Tampering alters data, affecting integrity."
@@ -426,7 +661,12 @@
     "id": "sec_048",
     "question": "Which is a secure password storage approach?",
     "code": null,
-    "options": ["Plain text", "Hash + salt", "Reversible encryption", "Shared file"],
+    "options": [
+      "Plain text",
+      "Hash + salt",
+      "Reversible encryption",
+      "Shared file"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Hashing with salt is the standard secure approach."
@@ -435,7 +675,12 @@
     "id": "sec_049",
     "question": "What is the primary purpose of a security policy?",
     "code": null,
-    "options": ["Define rules and expectations", "Block all traffic", "Encrypt all files", "Disable access"],
+    "options": [
+      "Define rules and expectations",
+      "Block all traffic",
+      "Encrypt all files",
+      "Disable access"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Policies outline security requirements and responsibilities."
@@ -444,9 +689,714 @@
     "id": "sec_050",
     "question": "Which is a common incident response phase?",
     "code": null,
-    "options": ["Containment", "Procrastination", "Obfuscation", "Normalization"],
+    "options": [
+      "Containment",
+      "Procrastination",
+      "Obfuscation",
+      "Normalization"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Containment limits damage during an incident."
+  },
+  {
+    "id": "sec_051",
+    "question": "Which statement about confidentiality is correct?",
+    "code": null,
+    "options": [
+      "Preventing unauthorized disclosure",
+      "Packet loss",
+      "Data duplication",
+      "Disk formatting"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_052",
+    "question": "What is the main purpose of confidentiality in Security?",
+    "code": null,
+    "options": [
+      "Disk formatting",
+      "Data duplication",
+      "Packet loss",
+      "Preventing unauthorized disclosure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_053",
+    "question": "Which option best describes confidentiality?",
+    "code": null,
+    "options": [
+      "Data duplication",
+      "Disk formatting",
+      "Packet loss",
+      "Preventing unauthorized disclosure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_054",
+    "question": "In Security, confidentiality refers to:",
+    "code": null,
+    "options": [
+      "Packet loss",
+      "Data duplication",
+      "Disk formatting",
+      "Preventing unauthorized disclosure"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_055",
+    "question": "What does confidentiality primarily do?",
+    "code": null,
+    "options": [
+      "Data duplication",
+      "Disk formatting",
+      "Preventing unauthorized disclosure",
+      "Packet loss"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_056",
+    "question": "Choose the best description of confidentiality.",
+    "code": null,
+    "options": [
+      "Packet loss",
+      "Preventing unauthorized disclosure",
+      "Data duplication",
+      "Disk formatting"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_057",
+    "question": "Which is true about confidentiality?",
+    "code": null,
+    "options": [
+      "Packet loss",
+      "Preventing unauthorized disclosure",
+      "Data duplication",
+      "Disk formatting"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_058",
+    "question": "How is confidentiality best explained?",
+    "code": null,
+    "options": [
+      "Data duplication",
+      "Packet loss",
+      "Disk formatting",
+      "Preventing unauthorized disclosure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_059",
+    "question": "Which answer matches confidentiality most closely?",
+    "code": null,
+    "options": [
+      "Packet loss",
+      "Data duplication",
+      "Preventing unauthorized disclosure",
+      "Disk formatting"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_060",
+    "question": "For Security, confidentiality is:",
+    "code": null,
+    "options": [
+      "Packet loss",
+      "Data duplication",
+      "Disk formatting",
+      "Preventing unauthorized disclosure"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Confidentiality keeps information private."
+  },
+  {
+    "id": "sec_061",
+    "question": "Which statement about integrity is correct?",
+    "code": null,
+    "options": [
+      "Adding users",
+      "Hiding filenames",
+      "Sorting records",
+      "Preventing unauthorized modification"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_062",
+    "question": "What is the main purpose of integrity in Security?",
+    "code": null,
+    "options": [
+      "Hiding filenames",
+      "Preventing unauthorized modification",
+      "Adding users",
+      "Sorting records"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_063",
+    "question": "Which option best describes integrity?",
+    "code": null,
+    "options": [
+      "Hiding filenames",
+      "Adding users",
+      "Preventing unauthorized modification",
+      "Sorting records"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_064",
+    "question": "In Security, integrity refers to:",
+    "code": null,
+    "options": [
+      "Sorting records",
+      "Preventing unauthorized modification",
+      "Adding users",
+      "Hiding filenames"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_065",
+    "question": "What does integrity primarily do?",
+    "code": null,
+    "options": [
+      "Sorting records",
+      "Preventing unauthorized modification",
+      "Hiding filenames",
+      "Adding users"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_066",
+    "question": "Choose the best description of integrity.",
+    "code": null,
+    "options": [
+      "Sorting records",
+      "Preventing unauthorized modification",
+      "Hiding filenames",
+      "Adding users"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_067",
+    "question": "Which is true about integrity?",
+    "code": null,
+    "options": [
+      "Hiding filenames",
+      "Preventing unauthorized modification",
+      "Sorting records",
+      "Adding users"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_068",
+    "question": "How is integrity best explained?",
+    "code": null,
+    "options": [
+      "Sorting records",
+      "Adding users",
+      "Hiding filenames",
+      "Preventing unauthorized modification"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_069",
+    "question": "Which answer matches integrity most closely?",
+    "code": null,
+    "options": [
+      "Preventing unauthorized modification",
+      "Hiding filenames",
+      "Adding users",
+      "Sorting records"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_070",
+    "question": "For Security, integrity is:",
+    "code": null,
+    "options": [
+      "Preventing unauthorized modification",
+      "Sorting records",
+      "Hiding filenames",
+      "Adding users"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Integrity keeps data accurate and unaltered."
+  },
+  {
+    "id": "sec_071",
+    "question": "Which statement about authentication is correct?",
+    "code": null,
+    "options": [
+      "Compressing data",
+      "Allocating memory",
+      "Verifying user or system identity",
+      "Balancing load"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_072",
+    "question": "What is the main purpose of authentication in Security?",
+    "code": null,
+    "options": [
+      "Allocating memory",
+      "Verifying user or system identity",
+      "Balancing load",
+      "Compressing data"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_073",
+    "question": "Which option best describes authentication?",
+    "code": null,
+    "options": [
+      "Balancing load",
+      "Allocating memory",
+      "Compressing data",
+      "Verifying user or system identity"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_074",
+    "question": "In Security, authentication refers to:",
+    "code": null,
+    "options": [
+      "Verifying user or system identity",
+      "Balancing load",
+      "Compressing data",
+      "Allocating memory"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_075",
+    "question": "What does authentication primarily do?",
+    "code": null,
+    "options": [
+      "Allocating memory",
+      "Balancing load",
+      "Verifying user or system identity",
+      "Compressing data"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_076",
+    "question": "Choose the best description of authentication.",
+    "code": null,
+    "options": [
+      "Allocating memory",
+      "Compressing data",
+      "Verifying user or system identity",
+      "Balancing load"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_077",
+    "question": "Which is true about authentication?",
+    "code": null,
+    "options": [
+      "Allocating memory",
+      "Balancing load",
+      "Verifying user or system identity",
+      "Compressing data"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_078",
+    "question": "How is authentication best explained?",
+    "code": null,
+    "options": [
+      "Allocating memory",
+      "Compressing data",
+      "Balancing load",
+      "Verifying user or system identity"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_079",
+    "question": "Which answer matches authentication most closely?",
+    "code": null,
+    "options": [
+      "Verifying user or system identity",
+      "Balancing load",
+      "Allocating memory",
+      "Compressing data"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_080",
+    "question": "For Security, authentication is:",
+    "code": null,
+    "options": [
+      "Balancing load",
+      "Verifying user or system identity",
+      "Compressing data",
+      "Allocating memory"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Authentication confirms who a user is."
+  },
+  {
+    "id": "sec_081",
+    "question": "Which statement about encryption is correct?",
+    "code": null,
+    "options": [
+      "Indexing data",
+      "Changing clock speed",
+      "Converting plaintext into unreadable ciphertext",
+      "Deleting passwords"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_082",
+    "question": "What is the main purpose of encryption in Security?",
+    "code": null,
+    "options": [
+      "Deleting passwords",
+      "Converting plaintext into unreadable ciphertext",
+      "Indexing data",
+      "Changing clock speed"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_083",
+    "question": "Which option best describes encryption?",
+    "code": null,
+    "options": [
+      "Changing clock speed",
+      "Indexing data",
+      "Deleting passwords",
+      "Converting plaintext into unreadable ciphertext"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_084",
+    "question": "In Security, encryption refers to:",
+    "code": null,
+    "options": [
+      "Indexing data",
+      "Converting plaintext into unreadable ciphertext",
+      "Changing clock speed",
+      "Deleting passwords"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_085",
+    "question": "What does encryption primarily do?",
+    "code": null,
+    "options": [
+      "Indexing data",
+      "Changing clock speed",
+      "Deleting passwords",
+      "Converting plaintext into unreadable ciphertext"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_086",
+    "question": "Choose the best description of encryption.",
+    "code": null,
+    "options": [
+      "Deleting passwords",
+      "Changing clock speed",
+      "Converting plaintext into unreadable ciphertext",
+      "Indexing data"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_087",
+    "question": "Which is true about encryption?",
+    "code": null,
+    "options": [
+      "Changing clock speed",
+      "Deleting passwords",
+      "Indexing data",
+      "Converting plaintext into unreadable ciphertext"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_088",
+    "question": "How is encryption best explained?",
+    "code": null,
+    "options": [
+      "Changing clock speed",
+      "Deleting passwords",
+      "Indexing data",
+      "Converting plaintext into unreadable ciphertext"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_089",
+    "question": "Which answer matches encryption most closely?",
+    "code": null,
+    "options": [
+      "Changing clock speed",
+      "Deleting passwords",
+      "Converting plaintext into unreadable ciphertext",
+      "Indexing data"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_090",
+    "question": "For Security, encryption is:",
+    "code": null,
+    "options": [
+      "Converting plaintext into unreadable ciphertext",
+      "Deleting passwords",
+      "Indexing data",
+      "Changing clock speed"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Encryption protects information by encoding it."
+  },
+  {
+    "id": "sec_091",
+    "question": "Which statement about firewall is correct?",
+    "code": null,
+    "options": [
+      "Filters network traffic based on rules",
+      "Allocates RAM",
+      "Stores backups",
+      "Compiles code"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_092",
+    "question": "What is the main purpose of firewall in Security?",
+    "code": null,
+    "options": [
+      "Compiles code",
+      "Filters network traffic based on rules",
+      "Allocates RAM",
+      "Stores backups"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_093",
+    "question": "Which option best describes firewall?",
+    "code": null,
+    "options": [
+      "Filters network traffic based on rules",
+      "Stores backups",
+      "Allocates RAM",
+      "Compiles code"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_094",
+    "question": "In Security, firewall refers to:",
+    "code": null,
+    "options": [
+      "Compiles code",
+      "Stores backups",
+      "Allocates RAM",
+      "Filters network traffic based on rules"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_095",
+    "question": "What does firewall primarily do?",
+    "code": null,
+    "options": [
+      "Filters network traffic based on rules",
+      "Compiles code",
+      "Stores backups",
+      "Allocates RAM"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_096",
+    "question": "Choose the best description of firewall.",
+    "code": null,
+    "options": [
+      "Stores backups",
+      "Compiles code",
+      "Allocates RAM",
+      "Filters network traffic based on rules"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_097",
+    "question": "Which is true about firewall?",
+    "code": null,
+    "options": [
+      "Filters network traffic based on rules",
+      "Stores backups",
+      "Allocates RAM",
+      "Compiles code"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_098",
+    "question": "How is firewall best explained?",
+    "code": null,
+    "options": [
+      "Stores backups",
+      "Filters network traffic based on rules",
+      "Compiles code",
+      "Allocates RAM"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_099",
+    "question": "Which answer matches firewall most closely?",
+    "code": null,
+    "options": [
+      "Compiles code",
+      "Allocates RAM",
+      "Filters network traffic based on rules",
+      "Stores backups"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A firewall allows or blocks network packets based on policy."
+  },
+  {
+    "id": "sec_100",
+    "question": "For Security, firewall is:",
+    "code": null,
+    "options": [
+      "Compiles code",
+      "Stores backups",
+      "Filters network traffic based on rules",
+      "Allocates RAM"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "A firewall allows or blocks network packets based on policy."
   }
 ]

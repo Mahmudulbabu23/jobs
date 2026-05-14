@@ -17,7 +17,12 @@
     "id": "c_002",
     "question": "Which header is required for printf()?",
     "code": null,
-    "options": ["<math.h>", "<stdio.h>", "<string.h>", "<stdlib.h>"],
+    "options": [
+      "<math.h>",
+      "<stdio.h>",
+      "<string.h>",
+      "<stdlib.h>"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "printf() is declared in stdio.h."
@@ -26,7 +31,12 @@
     "id": "c_003",
     "question": "What is the size of a char in C?",
     "code": null,
-    "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+    "options": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "8 bytes"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The C standard defines sizeof(char) as 1 byte."
@@ -35,7 +45,12 @@
     "id": "c_004",
     "question": "What happens if you try to modify a const variable?",
     "code": null,
-    "options": ["It compiles and changes value", "It causes a compile-time error", "It changes only at runtime", "It changes only in debug mode"],
+    "options": [
+      "It compiles and changes value",
+      "It causes a compile-time error",
+      "It changes only at runtime",
+      "It changes only in debug mode"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "A const-qualified object cannot be modified; the compiler reports an error."
@@ -44,7 +59,12 @@
     "id": "c_005",
     "question": "Local variables without the static keyword have which storage duration?",
     "code": null,
-    "options": ["Static storage", "Automatic storage", "Dynamic storage", "Thread-local storage"],
+    "options": [
+      "Static storage",
+      "Automatic storage",
+      "Dynamic storage",
+      "Thread-local storage"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Local variables are automatic by default and live on the stack."
@@ -53,7 +73,12 @@
     "id": "c_006",
     "question": "Which operator is used to access the value pointed to by a pointer?",
     "code": null,
-    "options": ["&", "*", "->", "[]"],
+    "options": [
+      "&",
+      "*",
+      "->",
+      "[]"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The dereference operator (*) accesses the value at the pointer address."
@@ -62,7 +87,12 @@
     "id": "c_007",
     "question": "What does sizeof return?",
     "code": null,
-    "options": ["int", "size_t", "float", "long double"],
+    "options": [
+      "int",
+      "size_t",
+      "float",
+      "long double"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "sizeof returns a value of type size_t."
@@ -71,7 +101,12 @@
     "id": "c_008",
     "question": "In function parameters, an array decays to:",
     "code": null,
-    "options": ["An array", "A pointer to its first element", "A pointer to array size", "A struct"],
+    "options": [
+      "An array",
+      "A pointer to its first element",
+      "A pointer to array size",
+      "A struct"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Array parameters are adjusted to pointers to the first element."
@@ -80,7 +115,12 @@
     "id": "c_009",
     "question": "Which function returns the length of a string excluding the null terminator?",
     "code": null,
-    "options": ["sizeof", "strlen", "strcpy", "strcmp"],
+    "options": [
+      "sizeof",
+      "strlen",
+      "strcpy",
+      "strcmp"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "strlen counts characters until the null terminator."
@@ -89,7 +129,12 @@
     "id": "c_010",
     "question": "What character marks the end of a C string?",
     "code": null,
-    "options": ["'\\n'", "'\\0'", "'\\t'", "'\\r'"],
+    "options": [
+      "'\\n'",
+      "'\\0'",
+      "'\\t'",
+      "'\\r'"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "C strings end with the null terminator '\\0'."
@@ -98,7 +143,12 @@
     "id": "c_011",
     "question": "What does malloc return on failure?",
     "code": null,
-    "options": ["0", "-1", "NULL", "An empty block"],
+    "options": [
+      "0",
+      "-1",
+      "NULL",
+      "An empty block"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "malloc returns NULL if memory allocation fails."
@@ -107,7 +157,12 @@
     "id": "c_012",
     "question": "Which function allocates and zero-initializes memory?",
     "code": null,
-    "options": ["malloc", "calloc", "realloc", "free"],
+    "options": [
+      "malloc",
+      "calloc",
+      "realloc",
+      "free"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "calloc allocates memory and initializes it to zero."
@@ -116,7 +171,12 @@
     "id": "c_013",
     "question": "If you do not assign values to an enum, what is the first value?",
     "code": null,
-    "options": ["-1", "0", "1", "Depends on compiler"],
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "Depends on compiler"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The first enum constant defaults to 0."
@@ -125,7 +185,12 @@
     "id": "c_014",
     "question": "Which operator accesses a struct member through a pointer?",
     "code": null,
-    "options": [".", "*", "->", "&"],
+    "options": [
+      ".",
+      "*",
+      "->",
+      "&"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Use the arrow operator (->) for struct pointers."
@@ -134,7 +199,12 @@
     "id": "c_015",
     "question": "Arguments in C are passed by:",
     "code": null,
-    "options": ["Reference", "Value", "Copy-on-write", "Name"],
+    "options": [
+      "Reference",
+      "Value",
+      "Copy-on-write",
+      "Name"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "C uses pass-by-value; pointers can simulate reference behavior."
@@ -143,7 +213,12 @@
     "id": "c_016",
     "question": "Global variables have which scope?",
     "code": null,
-    "options": ["Block scope", "File scope", "Function scope", "Loop scope"],
+    "options": [
+      "Block scope",
+      "File scope",
+      "Function scope",
+      "Loop scope"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Global variables have file scope (visible within the translation unit)."
@@ -152,7 +227,12 @@
     "id": "c_017",
     "question": "Which preprocessor directive includes a header file?",
     "code": null,
-    "options": ["#define", "#include", "#pragma", "#ifdef"],
+    "options": [
+      "#define",
+      "#include",
+      "#pragma",
+      "#ifdef"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "#include inserts the contents of a header file."
@@ -161,7 +241,12 @@
     "id": "c_018",
     "question": "What is the difference between i++ and ++i?",
     "code": null,
-    "options": ["No difference", "i++ increments after evaluation, ++i before", "i++ is faster", "++i is not allowed"],
+    "options": [
+      "No difference",
+      "i++ increments after evaluation, ++i before",
+      "i++ is faster",
+      "++i is not allowed"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Post-increment evaluates then increments, pre-increment increments first."
@@ -170,7 +255,12 @@
     "id": "c_019",
     "question": "What happens in a switch statement without a break?",
     "code": null,
-    "options": ["It exits the switch", "It falls through to the next case", "It throws an error", "It repeats the case"],
+    "options": [
+      "It exits the switch",
+      "It falls through to the next case",
+      "It throws an error",
+      "It repeats the case"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Without break, control falls through to the next case."
@@ -179,7 +269,12 @@
     "id": "c_020",
     "question": "What does continue do in a loop?",
     "code": null,
-    "options": ["Exits the loop", "Skips to next iteration", "Restarts the program", "Pauses execution"],
+    "options": [
+      "Exits the loop",
+      "Skips to next iteration",
+      "Restarts the program",
+      "Pauses execution"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "continue skips the remaining loop body and moves to the next iteration."
@@ -188,7 +283,12 @@
     "id": "c_021",
     "question": "Which operator performs bitwise AND?",
     "code": null,
-    "options": ["&&", "&", "|", "^"],
+    "options": [
+      "&&",
+      "&",
+      "|",
+      "^"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The & operator performs bitwise AND."
@@ -197,7 +297,12 @@
     "id": "c_022",
     "question": "Which operator performs logical AND?",
     "code": null,
-    "options": ["&", "&&", "|", "!"],
+    "options": [
+      "&",
+      "&&",
+      "|",
+      "!"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The && operator performs logical AND."
@@ -206,7 +311,12 @@
     "id": "c_023",
     "question": "Pointer arithmetic moves by:",
     "code": null,
-    "options": ["1 byte always", "Size of the pointed type", "Size of int", "Size of pointer"],
+    "options": [
+      "1 byte always",
+      "Size of the pointed type",
+      "Size of int",
+      "Size of pointer"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Adding 1 to a pointer advances by the size of its pointed type."
@@ -215,7 +325,12 @@
     "id": "c_024",
     "question": "arr[i] is equivalent to:",
     "code": null,
-    "options": ["*(arr + i)", "*(i - arr)", "&(arr + i)", "arr * i"],
+    "options": [
+      "*(arr + i)",
+      "*(i - arr)",
+      "&(arr + i)",
+      "arr * i"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Array indexing is syntactic sugar for pointer arithmetic."
@@ -224,7 +339,12 @@
     "id": "c_025",
     "question": "Which function reads a line including the newline if space allows?",
     "code": null,
-    "options": ["gets", "fgets", "scanf", "fread"],
+    "options": [
+      "gets",
+      "fgets",
+      "scanf",
+      "fread"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "fgets reads until newline and includes it if it fits."
@@ -233,7 +353,12 @@
     "id": "c_026",
     "question": "The format specifier %s in scanf stops reading at:",
     "code": null,
-    "options": ["Comma", "Whitespace", "Newline only", "Null terminator"],
+    "options": [
+      "Comma",
+      "Whitespace",
+      "Newline only",
+      "Null terminator"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "%s stops at whitespace such as space or newline."
@@ -242,7 +367,12 @@
     "id": "c_027",
     "question": "What is the purpose of volatile?",
     "code": null,
-    "options": ["Disable all optimizations", "Prevent certain optimizations for a variable", "Make variable constant", "Allocate on heap"],
+    "options": [
+      "Disable all optimizations",
+      "Prevent certain optimizations for a variable",
+      "Make variable constant",
+      "Allocate on heap"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "volatile tells the compiler the value may change externally."
@@ -251,7 +381,12 @@
     "id": "c_028",
     "question": "What does the register keyword suggest?",
     "code": null,
-    "options": ["Place variable in CPU register", "Allocate on heap", "Make variable static", "Make variable constant"],
+    "options": [
+      "Place variable in CPU register",
+      "Allocate on heap",
+      "Make variable static",
+      "Make variable constant"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "register is a hint to store the variable in a CPU register."
@@ -260,7 +395,12 @@
     "id": "c_029",
     "question": "What is required to avoid infinite recursion?",
     "code": null,
-    "options": ["A global variable", "A base case", "A macro", "A pointer"],
+    "options": [
+      "A global variable",
+      "A base case",
+      "A macro",
+      "A pointer"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Recursion must stop at a base case."
@@ -269,7 +409,12 @@
     "id": "c_030",
     "question": "Unsigned integer overflow results in:",
     "code": null,
-    "options": ["Undefined behavior", "Wraparound modulo 2^n", "A runtime error", "A compiler warning always"],
+    "options": [
+      "Undefined behavior",
+      "Wraparound modulo 2^n",
+      "A runtime error",
+      "A compiler warning always"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Unsigned overflow wraps around modulo 2^n."
@@ -278,7 +423,12 @@
     "id": "c_031",
     "question": "What does typedef do?",
     "code": null,
-    "options": ["Creates a new type", "Creates a type alias", "Allocates memory", "Defines a macro"],
+    "options": [
+      "Creates a new type",
+      "Creates a type alias",
+      "Allocates memory",
+      "Defines a macro"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "typedef creates an alias for an existing type."
@@ -287,7 +437,12 @@
     "id": "c_032",
     "question": "A union in C:",
     "code": null,
-    "options": ["Stores each member separately", "Shares the same memory for all members", "Cannot store integers", "Is the same as struct"],
+    "options": [
+      "Stores each member separately",
+      "Shares the same memory for all members",
+      "Cannot store integers",
+      "Is the same as struct"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "All members of a union overlap in the same memory region."
@@ -296,7 +451,12 @@
     "id": "c_033",
     "question": "What is the conventional return value from main on success?",
     "code": null,
-    "options": ["-1", "0", "1", "255"],
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "255"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Returning 0 from main indicates success."
@@ -305,7 +465,12 @@
     "id": "c_034",
     "question": "Which type is used for file handles in stdio?",
     "code": null,
-    "options": ["file_t", "FILE*", "HANDLE", "fd"],
+    "options": [
+      "file_t",
+      "FILE*",
+      "HANDLE",
+      "fd"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The standard file handle type is FILE*."
@@ -314,7 +479,12 @@
     "id": "c_035",
     "question": "EOF in stdio indicates:",
     "code": null,
-    "options": ["Empty output", "End of file or error", "File open", "File close"],
+    "options": [
+      "Empty output",
+      "End of file or error",
+      "File open",
+      "File close"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "EOF indicates end-of-file or an input error."
@@ -323,7 +493,12 @@
     "id": "c_036",
     "question": "strcmp returns 0 when:",
     "code": null,
-    "options": ["Strings are equal", "First is longer", "Second is longer", "Both are empty"],
+    "options": [
+      "Strings are equal",
+      "First is longer",
+      "Second is longer",
+      "Both are empty"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "strcmp returns 0 when the two strings are equal."
@@ -332,7 +507,12 @@
     "id": "c_037",
     "question": "Why can strncpy be unsafe without manual termination?",
     "code": null,
-    "options": ["It always overflows", "It may not append a null terminator", "It always truncates", "It writes to const memory"],
+    "options": [
+      "It always overflows",
+      "It may not append a null terminator",
+      "It always truncates",
+      "It writes to const memory"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "If the source is too long, strncpy does not add a null terminator."
@@ -341,7 +521,12 @@
     "id": "c_038",
     "question": "Which function safely copies overlapping memory regions?",
     "code": null,
-    "options": ["memcpy", "memmove", "strcpy", "strcat"],
+    "options": [
+      "memcpy",
+      "memmove",
+      "strcpy",
+      "strcat"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "memmove handles overlapping source and destination correctly."
@@ -350,7 +535,12 @@
     "id": "c_039",
     "question": "const char *p means:",
     "code": null,
-    "options": ["p is constant", "The data pointed to is constant", "Both are constant", "Neither is constant"],
+    "options": [
+      "p is constant",
+      "The data pointed to is constant",
+      "Both are constant",
+      "Neither is constant"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "const char* means the data is const, the pointer may change."
@@ -359,7 +549,12 @@
     "id": "c_040",
     "question": "Which is a correct function pointer declaration?",
     "code": null,
-    "options": ["int *f(int)", "int (*f)(int)", "int f*(int)", "int (f*)int"],
+    "options": [
+      "int *f(int)",
+      "int (*f)(int)",
+      "int f*(int)",
+      "int (f*)int"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "int (*f)(int) declares a pointer to a function returning int."
@@ -368,7 +563,12 @@
     "id": "c_041",
     "question": "Why should macro parameters be parenthesized?",
     "code": null,
-    "options": ["To reduce file size", "To avoid operator precedence issues", "To speed up compilation", "To enable recursion"],
+    "options": [
+      "To reduce file size",
+      "To avoid operator precedence issues",
+      "To speed up compilation",
+      "To enable recursion"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Parentheses prevent unexpected precedence bugs."
@@ -377,7 +577,12 @@
     "id": "c_042",
     "question": "What do header guards prevent?",
     "code": null,
-    "options": ["Linker errors", "Multiple inclusion of the same header", "Runtime crashes", "Memory leaks"],
+    "options": [
+      "Linker errors",
+      "Multiple inclusion of the same header",
+      "Runtime crashes",
+      "Memory leaks"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Header guards avoid multiple inclusion of a header file."
@@ -386,7 +591,12 @@
     "id": "c_043",
     "question": "A static local variable:",
     "code": null,
-    "options": ["Resets every call", "Retains value between calls", "Is not allowed", "Is allocated on heap"],
+    "options": [
+      "Resets every call",
+      "Retains value between calls",
+      "Is not allowed",
+      "Is allocated on heap"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Static locals keep their value across function calls."
@@ -395,7 +605,12 @@
     "id": "c_044",
     "question": "A do-while loop executes:",
     "code": null,
-    "options": ["Zero or more times", "At least once", "Only if condition is true", "Only if condition is false"],
+    "options": [
+      "Zero or more times",
+      "At least once",
+      "Only if condition is true",
+      "Only if condition is false"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "do-while executes the body first, then checks the condition."
@@ -404,7 +619,12 @@
     "id": "c_045",
     "question": "What does break do in a loop?",
     "code": null,
-    "options": ["Skips to next iteration", "Exits the loop", "Restarts the loop", "Exits the program"],
+    "options": [
+      "Skips to next iteration",
+      "Exits the loop",
+      "Restarts the loop",
+      "Exits the program"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "break exits the nearest loop or switch."
@@ -413,7 +633,12 @@
     "id": "c_046",
     "question": "How do you compute the length of an array arr with 10 ints?",
     "code": null,
-    "options": ["sizeof(arr)", "sizeof(arr)/sizeof(arr[0])", "length(arr)", "count(arr)"],
+    "options": [
+      "sizeof(arr)",
+      "sizeof(arr)/sizeof(arr[0])",
+      "length(arr)",
+      "count(arr)"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Divide total size by element size to get the element count."
@@ -422,7 +647,12 @@
     "id": "c_047",
     "question": "Which is a character literal?",
     "code": null,
-    "options": ["\"A\"", "'A'", "A", "\"\\0\""],
+    "options": [
+      "\"A\"",
+      "'A'",
+      "A",
+      "\"\\0\""
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Character literals use single quotes."
@@ -431,7 +661,12 @@
     "id": "c_048",
     "question": "Which allocation requires a matching free()?",
     "code": null,
-    "options": ["Stack variable", "malloc", "register variable", "string literal"],
+    "options": [
+      "Stack variable",
+      "malloc",
+      "register variable",
+      "string literal"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Memory allocated with malloc must be released with free."
@@ -440,7 +675,12 @@
     "id": "c_049",
     "question": "What is the correct declaration for a pointer to an array of 10 ints?",
     "code": null,
-    "options": ["int *p[10]", "int (*p)[10]", "int *p", "int p[10]"],
+    "options": [
+      "int *p[10]",
+      "int (*p)[10]",
+      "int *p",
+      "int p[10]"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "int (*p)[10] is a pointer to an array of 10 ints."
@@ -449,16 +689,26 @@
     "id": "c_050",
     "question": "Which is a safe way to compare a pointer before use?",
     "code": null,
-    "options": ["if (p == 0)", "if (p != NULL)", "if (*p)", "if (p < 0)"],
+    "options": [
+      "if (p == 0)",
+      "if (p != NULL)",
+      "if (*p)",
+      "if (p < 0)"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Check for NULL before dereferencing a pointer."
-  }
-  ,{
+  },
+  {
     "id": "c_051",
     "question": "What does the & operator return when applied to a variable?",
     "code": null,
-    "options": ["Its value", "Its address", "Its type", "Its size"],
+    "options": [
+      "Its value",
+      "Its address",
+      "Its type",
+      "Its size"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The address-of operator returns the memory address of the variable."
@@ -467,7 +717,12 @@
     "id": "c_052",
     "question": "What is the value of an uninitialized automatic local variable in C?",
     "code": null,
-    "options": ["0 always", "Garbage/indeterminate", "NULL", "Compiler error"],
+    "options": [
+      "0 always",
+      "Garbage/indeterminate",
+      "NULL",
+      "Compiler error"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Automatic local variables have indeterminate values until assigned."
@@ -476,7 +731,12 @@
     "id": "c_053",
     "question": "Which keyword prevents a function from being changed by a preprocessor macro?",
     "code": null,
-    "options": ["const", "inline", "static", "extern"],
+    "options": [
+      "const",
+      "inline",
+      "static",
+      "extern"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "inline suggests a function body may be expanded at call sites; this question is included as a language practice item."
@@ -485,7 +745,12 @@
     "id": "c_054",
     "question": "Which operator is used to access array elements?",
     "code": null,
-    "options": ["[]", "{}", "()", "<>"],
+    "options": [
+      "[]",
+      "{}",
+      "()",
+      "<>"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Square brackets access array elements."
@@ -494,7 +759,12 @@
     "id": "c_055",
     "question": "What is the result of 5 / 2 in C when both operands are integers?",
     "code": null,
-    "options": ["2.5", "2", "3", "Undefined"],
+    "options": [
+      "2.5",
+      "2",
+      "3",
+      "Undefined"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Integer division truncates the fractional part."
@@ -503,7 +773,12 @@
     "id": "c_056",
     "question": "Which type modifier is commonly used for signed integers?",
     "code": null,
-    "options": ["signed", "unsigned", "volatile", "register"],
+    "options": [
+      "signed",
+      "unsigned",
+      "volatile",
+      "register"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "signed explicitly indicates a signed integer type."
@@ -512,7 +787,12 @@
     "id": "c_057",
     "question": "What does a return statement do in a function?",
     "code": null,
-    "options": ["Exits the function and optionally returns a value", "Declares a variable", "Starts a loop", "Includes a header"],
+    "options": [
+      "Exits the function and optionally returns a value",
+      "Declares a variable",
+      "Starts a loop",
+      "Includes a header"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "return ends function execution and may provide a value."
@@ -521,7 +801,12 @@
     "id": "c_058",
     "question": "What is the purpose of a function prototype?",
     "code": null,
-    "options": ["Declare function signature before use", "Define global variables", "Allocate memory", "Prevent recursion"],
+    "options": [
+      "Declare function signature before use",
+      "Define global variables",
+      "Allocate memory",
+      "Prevent recursion"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "A prototype tells the compiler the function name, return type, and parameters."
@@ -530,7 +815,12 @@
     "id": "c_059",
     "question": "Which storage class gives a variable internal linkage at file scope?",
     "code": null,
-    "options": ["static", "auto", "register", "extern"],
+    "options": [
+      "static",
+      "auto",
+      "register",
+      "extern"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "A file-scope static variable has internal linkage."
@@ -539,9 +829,714 @@
     "id": "c_060",
     "question": "Which statement is used to terminate the current function early?",
     "code": null,
-    "options": ["break", "continue", "return", "goto"],
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "goto"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "return terminates the current function and returns control to the caller."
+  },
+  {
+    "id": "c_061",
+    "question": "Which statement about pointer is correct?",
+    "code": null,
+    "options": [
+      "A loop statement",
+      "A function return type",
+      "A variable storing an address",
+      "A compiler directive"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_062",
+    "question": "What is the main purpose of pointer in C Programming?",
+    "code": null,
+    "options": [
+      "A function return type",
+      "A compiler directive",
+      "A variable storing an address",
+      "A loop statement"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_063",
+    "question": "Which option best describes pointer?",
+    "code": null,
+    "options": [
+      "A function return type",
+      "A variable storing an address",
+      "A loop statement",
+      "A compiler directive"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_064",
+    "question": "In C Programming, pointer refers to:",
+    "code": null,
+    "options": [
+      "A compiler directive",
+      "A loop statement",
+      "A function return type",
+      "A variable storing an address"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_065",
+    "question": "What does pointer primarily do?",
+    "code": null,
+    "options": [
+      "A loop statement",
+      "A function return type",
+      "A compiler directive",
+      "A variable storing an address"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_066",
+    "question": "Choose the best description of pointer.",
+    "code": null,
+    "options": [
+      "A function return type",
+      "A loop statement",
+      "A compiler directive",
+      "A variable storing an address"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_067",
+    "question": "Which is true about pointer?",
+    "code": null,
+    "options": [
+      "A compiler directive",
+      "A variable storing an address",
+      "A function return type",
+      "A loop statement"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_068",
+    "question": "How is pointer best explained?",
+    "code": null,
+    "options": [
+      "A loop statement",
+      "A function return type",
+      "A variable storing an address",
+      "A compiler directive"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_069",
+    "question": "Which answer matches pointer most closely?",
+    "code": null,
+    "options": [
+      "A variable storing an address",
+      "A loop statement",
+      "A compiler directive",
+      "A function return type"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_070",
+    "question": "For C Programming, pointer is:",
+    "code": null,
+    "options": [
+      "A loop statement",
+      "A compiler directive",
+      "A function return type",
+      "A variable storing an address"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Pointers store memory addresses."
+  },
+  {
+    "id": "c_071",
+    "question": "Which statement about malloc is correct?",
+    "code": null,
+    "options": [
+      "Allocates dynamic memory without initialization",
+      "Frees memory blocks",
+      "Reads input from keyboard",
+      "Copies strings into arrays"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_072",
+    "question": "What is the main purpose of malloc in C Programming?",
+    "code": null,
+    "options": [
+      "Copies strings into arrays",
+      "Frees memory blocks",
+      "Reads input from keyboard",
+      "Allocates dynamic memory without initialization"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_073",
+    "question": "Which option best describes malloc?",
+    "code": null,
+    "options": [
+      "Frees memory blocks",
+      "Allocates dynamic memory without initialization",
+      "Reads input from keyboard",
+      "Copies strings into arrays"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_074",
+    "question": "In C Programming, malloc refers to:",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Allocates dynamic memory without initialization",
+      "Frees memory blocks",
+      "Copies strings into arrays"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_075",
+    "question": "What does malloc primarily do?",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Copies strings into arrays",
+      "Frees memory blocks",
+      "Allocates dynamic memory without initialization"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_076",
+    "question": "Choose the best description of malloc.",
+    "code": null,
+    "options": [
+      "Frees memory blocks",
+      "Copies strings into arrays",
+      "Allocates dynamic memory without initialization",
+      "Reads input from keyboard"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_077",
+    "question": "Which is true about malloc?",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Copies strings into arrays",
+      "Allocates dynamic memory without initialization",
+      "Frees memory blocks"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_078",
+    "question": "How is malloc best explained?",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Frees memory blocks",
+      "Allocates dynamic memory without initialization",
+      "Copies strings into arrays"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_079",
+    "question": "Which answer matches malloc most closely?",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Frees memory blocks",
+      "Copies strings into arrays",
+      "Allocates dynamic memory without initialization"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_080",
+    "question": "For C Programming, malloc is:",
+    "code": null,
+    "options": [
+      "Reads input from keyboard",
+      "Allocates dynamic memory without initialization",
+      "Copies strings into arrays",
+      "Frees memory blocks"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "malloc reserves heap memory and leaves it uninitialized."
+  },
+  {
+    "id": "c_081",
+    "question": "Which statement about struct is correct?",
+    "code": null,
+    "options": [
+      "A file handle type",
+      "A user-defined type that groups different members",
+      "A loop keyword",
+      "A pointer alias"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_082",
+    "question": "What is the main purpose of struct in C Programming?",
+    "code": null,
+    "options": [
+      "A user-defined type that groups different members",
+      "A pointer alias",
+      "A loop keyword",
+      "A file handle type"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_083",
+    "question": "Which option best describes struct?",
+    "code": null,
+    "options": [
+      "A pointer alias",
+      "A file handle type",
+      "A user-defined type that groups different members",
+      "A loop keyword"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_084",
+    "question": "In C Programming, struct refers to:",
+    "code": null,
+    "options": [
+      "A pointer alias",
+      "A user-defined type that groups different members",
+      "A file handle type",
+      "A loop keyword"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_085",
+    "question": "What does struct primarily do?",
+    "code": null,
+    "options": [
+      "A pointer alias",
+      "A loop keyword",
+      "A file handle type",
+      "A user-defined type that groups different members"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_086",
+    "question": "Choose the best description of struct.",
+    "code": null,
+    "options": [
+      "A loop keyword",
+      "A pointer alias",
+      "A user-defined type that groups different members",
+      "A file handle type"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_087",
+    "question": "Which is true about struct?",
+    "code": null,
+    "options": [
+      "A file handle type",
+      "A pointer alias",
+      "A user-defined type that groups different members",
+      "A loop keyword"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_088",
+    "question": "How is struct best explained?",
+    "code": null,
+    "options": [
+      "A pointer alias",
+      "A file handle type",
+      "A user-defined type that groups different members",
+      "A loop keyword"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_089",
+    "question": "Which answer matches struct most closely?",
+    "code": null,
+    "options": [
+      "A file handle type",
+      "A pointer alias",
+      "A user-defined type that groups different members",
+      "A loop keyword"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_090",
+    "question": "For C Programming, struct is:",
+    "code": null,
+    "options": [
+      "A file handle type",
+      "A pointer alias",
+      "A user-defined type that groups different members",
+      "A loop keyword"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "struct groups related data under one name."
+  },
+  {
+    "id": "c_091",
+    "question": "Which statement about switch is correct?",
+    "code": null,
+    "options": [
+      "A pointer operator",
+      "A memory allocator",
+      "A multi-way selection statement",
+      "A recursion mechanism"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_092",
+    "question": "What is the main purpose of switch in C Programming?",
+    "code": null,
+    "options": [
+      "A recursion mechanism",
+      "A pointer operator",
+      "A memory allocator",
+      "A multi-way selection statement"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_093",
+    "question": "Which option best describes switch?",
+    "code": null,
+    "options": [
+      "A recursion mechanism",
+      "A memory allocator",
+      "A multi-way selection statement",
+      "A pointer operator"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_094",
+    "question": "In C Programming, switch refers to:",
+    "code": null,
+    "options": [
+      "A multi-way selection statement",
+      "A recursion mechanism",
+      "A pointer operator",
+      "A memory allocator"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_095",
+    "question": "What does switch primarily do?",
+    "code": null,
+    "options": [
+      "A memory allocator",
+      "A pointer operator",
+      "A multi-way selection statement",
+      "A recursion mechanism"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_096",
+    "question": "Choose the best description of switch.",
+    "code": null,
+    "options": [
+      "A multi-way selection statement",
+      "A recursion mechanism",
+      "A pointer operator",
+      "A memory allocator"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_097",
+    "question": "Which is true about switch?",
+    "code": null,
+    "options": [
+      "A pointer operator",
+      "A memory allocator",
+      "A multi-way selection statement",
+      "A recursion mechanism"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_098",
+    "question": "How is switch best explained?",
+    "code": null,
+    "options": [
+      "A memory allocator",
+      "A multi-way selection statement",
+      "A recursion mechanism",
+      "A pointer operator"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_099",
+    "question": "Which answer matches switch most closely?",
+    "code": null,
+    "options": [
+      "A multi-way selection statement",
+      "A pointer operator",
+      "A recursion mechanism",
+      "A memory allocator"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_100",
+    "question": "For C Programming, switch is:",
+    "code": null,
+    "options": [
+      "A multi-way selection statement",
+      "A memory allocator",
+      "A recursion mechanism",
+      "A pointer operator"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "switch selects one branch from several cases."
+  },
+  {
+    "id": "c_101",
+    "question": "Which statement about recursion is correct?",
+    "code": null,
+    "options": [
+      "An array indexing rule",
+      "A function calling itself until a base case",
+      "A storage class",
+      "A compile-time macro"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_102",
+    "question": "What is the main purpose of recursion in C Programming?",
+    "code": null,
+    "options": [
+      "A storage class",
+      "A function calling itself until a base case",
+      "An array indexing rule",
+      "A compile-time macro"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_103",
+    "question": "Which option best describes recursion?",
+    "code": null,
+    "options": [
+      "A storage class",
+      "A function calling itself until a base case",
+      "A compile-time macro",
+      "An array indexing rule"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_104",
+    "question": "In C Programming, recursion refers to:",
+    "code": null,
+    "options": [
+      "A function calling itself until a base case",
+      "A compile-time macro",
+      "An array indexing rule",
+      "A storage class"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_105",
+    "question": "What does recursion primarily do?",
+    "code": null,
+    "options": [
+      "A compile-time macro",
+      "An array indexing rule",
+      "A storage class",
+      "A function calling itself until a base case"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_106",
+    "question": "Choose the best description of recursion.",
+    "code": null,
+    "options": [
+      "A compile-time macro",
+      "A storage class",
+      "An array indexing rule",
+      "A function calling itself until a base case"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_107",
+    "question": "Which is true about recursion?",
+    "code": null,
+    "options": [
+      "A function calling itself until a base case",
+      "An array indexing rule",
+      "A compile-time macro",
+      "A storage class"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_108",
+    "question": "How is recursion best explained?",
+    "code": null,
+    "options": [
+      "A storage class",
+      "A function calling itself until a base case",
+      "An array indexing rule",
+      "A compile-time macro"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_109",
+    "question": "Which answer matches recursion most closely?",
+    "code": null,
+    "options": [
+      "An array indexing rule",
+      "A compile-time macro",
+      "A storage class",
+      "A function calling itself until a base case"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Recursion repeats a function call until a base case stops it."
+  },
+  {
+    "id": "c_110",
+    "question": "For C Programming, recursion is:",
+    "code": null,
+    "options": [
+      "A compile-time macro",
+      "A storage class",
+      "A function calling itself until a base case",
+      "An array indexing rule"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Recursion repeats a function call until a base case stops it."
   }
 ]

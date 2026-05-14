@@ -3,7 +3,12 @@
     "id": "net_001",
     "question": "Which protocol is connection-oriented?",
     "code": null,
-    "options": ["UDP", "TCP", "ICMP", "ARP"],
+    "options": [
+      "UDP",
+      "TCP",
+      "ICMP",
+      "ARP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "TCP establishes a connection before data transfer."
@@ -12,7 +17,12 @@
     "id": "net_002",
     "question": "Which layer of the OSI model handles routing?",
     "code": null,
-    "options": ["Data Link", "Network", "Transport", "Application"],
+    "options": [
+      "Data Link",
+      "Network",
+      "Transport",
+      "Application"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Routing happens at the Network layer."
@@ -21,7 +31,12 @@
     "id": "net_003",
     "question": "HTTP typically uses which port?",
     "code": null,
-    "options": ["21", "80", "443", "53"],
+    "options": [
+      "21",
+      "80",
+      "443",
+      "53"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "HTTP uses port 80 by default."
@@ -30,7 +45,12 @@
     "id": "net_004",
     "question": "HTTPS typically uses which port?",
     "code": null,
-    "options": ["80", "110", "443", "25"],
+    "options": [
+      "80",
+      "110",
+      "443",
+      "25"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "HTTPS uses port 443."
@@ -39,7 +59,12 @@
     "id": "net_005",
     "question": "DNS is used for:",
     "code": null,
-    "options": ["File transfer", "Name resolution", "Email delivery", "Time sync"],
+    "options": [
+      "File transfer",
+      "Name resolution",
+      "Email delivery",
+      "Time sync"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "DNS maps domain names to IP addresses."
@@ -48,7 +73,12 @@
     "id": "net_006",
     "question": "DHCP provides:",
     "code": null,
-    "options": ["IP address assignment", "Web pages", "Encryption", "Routing"],
+    "options": [
+      "IP address assignment",
+      "Web pages",
+      "Encryption",
+      "Routing"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "DHCP assigns IP addresses dynamically."
@@ -57,7 +87,12 @@
     "id": "net_007",
     "question": "Which layer handles end-to-end reliability?",
     "code": null,
-    "options": ["Transport", "Network", "Data Link", "Physical"],
+    "options": [
+      "Transport",
+      "Network",
+      "Data Link",
+      "Physical"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The Transport layer ensures end-to-end delivery."
@@ -66,7 +101,12 @@
     "id": "net_008",
     "question": "Which protocol is used for email retrieval?",
     "code": null,
-    "options": ["SMTP", "IMAP", "FTP", "DNS"],
+    "options": [
+      "SMTP",
+      "IMAP",
+      "FTP",
+      "DNS"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "IMAP is used to retrieve email messages."
@@ -75,7 +115,12 @@
     "id": "net_009",
     "question": "Which protocol is used for sending email?",
     "code": null,
-    "options": ["POP3", "SMTP", "IMAP", "HTTP"],
+    "options": [
+      "POP3",
+      "SMTP",
+      "IMAP",
+      "HTTP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "SMTP is used to send email."
@@ -84,7 +129,12 @@
     "id": "net_010",
     "question": "Which device connects multiple networks and routes packets?",
     "code": null,
-    "options": ["Switch", "Hub", "Router", "Repeater"],
+    "options": [
+      "Switch",
+      "Hub",
+      "Router",
+      "Repeater"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Routers forward packets between networks."
@@ -93,7 +143,12 @@
     "id": "net_011",
     "question": "Which layer of OSI handles MAC addresses?",
     "code": null,
-    "options": ["Physical", "Data Link", "Network", "Transport"],
+    "options": [
+      "Physical",
+      "Data Link",
+      "Network",
+      "Transport"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "MAC addresses are used at the Data Link layer."
@@ -102,7 +157,12 @@
     "id": "net_012",
     "question": "The loopback IPv4 address is:",
     "code": null,
-    "options": ["0.0.0.0", "127.0.0.1", "255.255.255.255", "192.168.0.1"],
+    "options": [
+      "0.0.0.0",
+      "127.0.0.1",
+      "255.255.255.255",
+      "192.168.0.1"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "127.0.0.1 is the loopback address."
@@ -111,7 +171,12 @@
     "id": "net_013",
     "question": "Which address is the broadcast address for 192.168.1.0/24?",
     "code": null,
-    "options": ["192.168.1.0", "192.168.1.1", "192.168.1.255", "192.168.1.254"],
+    "options": [
+      "192.168.1.0",
+      "192.168.1.1",
+      "192.168.1.255",
+      "192.168.1.254"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "For /24, the broadcast is the last address: .255."
@@ -120,7 +185,12 @@
     "id": "net_014",
     "question": "Which protocol resolves IP to MAC addresses?",
     "code": null,
-    "options": ["DNS", "ARP", "ICMP", "DHCP"],
+    "options": [
+      "DNS",
+      "ARP",
+      "ICMP",
+      "DHCP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "ARP maps IP addresses to MAC addresses."
@@ -129,7 +199,12 @@
     "id": "net_015",
     "question": "ICMP is commonly used for:",
     "code": null,
-    "options": ["Email", "Ping", "Web browsing", "File transfer"],
+    "options": [
+      "Email",
+      "Ping",
+      "Web browsing",
+      "File transfer"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Ping uses ICMP echo requests and replies."
@@ -138,7 +213,12 @@
     "id": "net_016",
     "question": "Which OSI layer defines frames?",
     "code": null,
-    "options": ["Data Link", "Network", "Transport", "Session"],
+    "options": [
+      "Data Link",
+      "Network",
+      "Transport",
+      "Session"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Frames are Data Link layer units."
@@ -147,7 +227,12 @@
     "id": "net_017",
     "question": "Which OSI layer defines packets?",
     "code": null,
-    "options": ["Network", "Transport", "Data Link", "Physical"],
+    "options": [
+      "Network",
+      "Transport",
+      "Data Link",
+      "Physical"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Packets are Network layer units."
@@ -156,7 +241,12 @@
     "id": "net_018",
     "question": "Which OSI layer defines segments?",
     "code": null,
-    "options": ["Transport", "Network", "Data Link", "Application"],
+    "options": [
+      "Transport",
+      "Network",
+      "Data Link",
+      "Application"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Segments are Transport layer units."
@@ -165,7 +255,12 @@
     "id": "net_019",
     "question": "Which OSI layer is responsible for encryption?",
     "code": null,
-    "options": ["Presentation", "Network", "Transport", "Physical"],
+    "options": [
+      "Presentation",
+      "Network",
+      "Transport",
+      "Physical"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Presentation layer handles encryption and encoding."
@@ -174,7 +269,12 @@
     "id": "net_020",
     "question": "Which protocol provides secure web traffic?",
     "code": null,
-    "options": ["HTTP", "HTTPS", "FTP", "Telnet"],
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "Telnet"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "HTTPS uses TLS for secure communication."
@@ -183,7 +283,12 @@
     "id": "net_021",
     "question": "Which protocol provides remote terminal access (insecure)?",
     "code": null,
-    "options": ["SSH", "Telnet", "HTTPS", "SFTP"],
+    "options": [
+      "SSH",
+      "Telnet",
+      "HTTPS",
+      "SFTP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Telnet is unencrypted remote terminal access."
@@ -192,7 +297,12 @@
     "id": "net_022",
     "question": "Which protocol provides secure remote terminal access?",
     "code": null,
-    "options": ["FTP", "SSH", "HTTP", "POP3"],
+    "options": [
+      "FTP",
+      "SSH",
+      "HTTP",
+      "POP3"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "SSH provides encrypted remote access."
@@ -201,7 +311,12 @@
     "id": "net_023",
     "question": "NAT primarily does:",
     "code": null,
-    "options": ["Encrypts data", "Translates private to public IPs", "Routes packets", "Caches DNS"],
+    "options": [
+      "Encrypts data",
+      "Translates private to public IPs",
+      "Routes packets",
+      "Caches DNS"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "NAT maps private addresses to a public address."
@@ -210,7 +325,12 @@
     "id": "net_024",
     "question": "Which protocol is used for file transfer?",
     "code": null,
-    "options": ["FTP", "SMTP", "DNS", "ICMP"],
+    "options": [
+      "FTP",
+      "SMTP",
+      "DNS",
+      "ICMP"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "FTP is designed for file transfer."
@@ -219,7 +339,12 @@
     "id": "net_025",
     "question": "Which protocol is used for secure file transfer over SSH?",
     "code": null,
-    "options": ["TFTP", "SFTP", "FTP", "SMTP"],
+    "options": [
+      "TFTP",
+      "SFTP",
+      "FTP",
+      "SMTP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "SFTP transfers files over SSH securely."
@@ -228,7 +353,12 @@
     "id": "net_026",
     "question": "A device that broadcasts to all ports is a:",
     "code": null,
-    "options": ["Switch", "Hub", "Router", "Bridge"],
+    "options": [
+      "Switch",
+      "Hub",
+      "Router",
+      "Bridge"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Hubs broadcast incoming data to all ports."
@@ -237,7 +367,12 @@
     "id": "net_027",
     "question": "A device that forwards based on MAC addresses is a:",
     "code": null,
-    "options": ["Router", "Switch", "Hub", "Repeater"],
+    "options": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Switches operate at the Data Link layer."
@@ -246,7 +381,12 @@
     "id": "net_028",
     "question": "Which address range is private (RFC1918)?",
     "code": null,
-    "options": ["8.8.8.0/24", "10.0.0.0/8", "1.1.1.0/24", "172.0.0.0/16"],
+    "options": [
+      "8.8.8.0/24",
+      "10.0.0.0/8",
+      "1.1.1.0/24",
+      "172.0.0.0/16"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "10.0.0.0/8 is a private address block."
@@ -255,7 +395,12 @@
     "id": "net_029",
     "question": "Which address range is private?",
     "code": null,
-    "options": ["172.16.0.0/12", "172.0.0.0/12", "192.0.2.0/24", "198.51.100.0/24"],
+    "options": [
+      "172.16.0.0/12",
+      "172.0.0.0/12",
+      "192.0.2.0/24",
+      "198.51.100.0/24"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "172.16.0.0/12 is a private range."
@@ -264,7 +409,12 @@
     "id": "net_030",
     "question": "Which address range is private?",
     "code": null,
-    "options": ["192.168.0.0/16", "192.0.0.0/16", "224.0.0.0/4", "169.254.0.0/16"],
+    "options": [
+      "192.168.0.0/16",
+      "192.0.0.0/16",
+      "224.0.0.0/4",
+      "169.254.0.0/16"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "192.168.0.0/16 is a private range."
@@ -273,7 +423,12 @@
     "id": "net_031",
     "question": "169.254.0.0/16 is used for:",
     "code": null,
-    "options": ["Private LAN", "Link-local addressing", "Public DNS", "Multicast"],
+    "options": [
+      "Private LAN",
+      "Link-local addressing",
+      "Public DNS",
+      "Multicast"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "APIPA uses 169.254.0.0/16 for link-local addresses."
@@ -282,7 +437,12 @@
     "id": "net_032",
     "question": "Which IPv6 address is loopback?",
     "code": null,
-    "options": ["::", "::1", "fe80::1", "ff00::"],
+    "options": [
+      "::",
+      "::1",
+      "fe80::1",
+      "ff00::"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "::1 is the IPv6 loopback address."
@@ -291,7 +451,12 @@
     "id": "net_033",
     "question": "Which IPv6 prefix is link-local?",
     "code": null,
-    "options": ["fe80::/10", "2000::/3", "ff00::/8", "fc00::/7"],
+    "options": [
+      "fe80::/10",
+      "2000::/3",
+      "ff00::/8",
+      "fc00::/7"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "fe80::/10 is reserved for link-local addresses."
@@ -300,7 +465,12 @@
     "id": "net_034",
     "question": "Which protocol ensures reliable delivery?",
     "code": null,
-    "options": ["UDP", "TCP", "IP", "ARP"],
+    "options": [
+      "UDP",
+      "TCP",
+      "IP",
+      "ARP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "TCP provides acknowledgements and retransmissions."
@@ -309,7 +479,12 @@
     "id": "net_035",
     "question": "Which protocol is best for real-time streaming?",
     "code": null,
-    "options": ["UDP", "TCP", "HTTP", "SMTP"],
+    "options": [
+      "UDP",
+      "TCP",
+      "HTTP",
+      "SMTP"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "UDP avoids retransmission delays, good for real-time."
@@ -318,7 +493,12 @@
     "id": "net_036",
     "question": "A default gateway is:",
     "code": null,
-    "options": ["The DNS server", "The router for outbound traffic", "A DHCP server", "A firewall"],
+    "options": [
+      "The DNS server",
+      "The router for outbound traffic",
+      "A DHCP server",
+      "A firewall"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The default gateway routes traffic outside the local network."
@@ -327,7 +507,12 @@
     "id": "net_037",
     "question": "Which protocol performs address resolution in IPv6?",
     "code": null,
-    "options": ["ARP", "NDP", "ICMPv4", "DHCPv4"],
+    "options": [
+      "ARP",
+      "NDP",
+      "ICMPv4",
+      "DHCPv4"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Neighbor Discovery Protocol replaces ARP in IPv6."
@@ -336,7 +521,12 @@
     "id": "net_038",
     "question": "Which device reduces collision domains?",
     "code": null,
-    "options": ["Hub", "Switch", "Repeater", "Modem"],
+    "options": [
+      "Hub",
+      "Switch",
+      "Repeater",
+      "Modem"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "A switch creates separate collision domains per port."
@@ -345,7 +535,12 @@
     "id": "net_039",
     "question": "Which device reduces broadcast domains?",
     "code": null,
-    "options": ["Hub", "Switch", "Router", "Bridge"],
+    "options": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Bridge"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "Routers separate broadcast domains."
@@ -354,7 +549,12 @@
     "id": "net_040",
     "question": "Which protocol is used to securely browse the web?",
     "code": null,
-    "options": ["FTP", "HTTPS", "Telnet", "TFTP"],
+    "options": [
+      "FTP",
+      "HTTPS",
+      "Telnet",
+      "TFTP"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "HTTPS provides TLS encryption."
@@ -363,7 +563,12 @@
     "id": "net_041",
     "question": "Which command tests reachability using ICMP echo?",
     "code": null,
-    "options": ["ping", "traceroute", "nslookup", "ipconfig"],
+    "options": [
+      "ping",
+      "traceroute",
+      "nslookup",
+      "ipconfig"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "ping sends ICMP echo requests."
@@ -372,7 +577,12 @@
     "id": "net_042",
     "question": "Traceroute primarily uses:",
     "code": null,
-    "options": ["TTL expiration", "ARP", "DNS", "TCP window"],
+    "options": [
+      "TTL expiration",
+      "ARP",
+      "DNS",
+      "TCP window"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Traceroute relies on TTL expiry to map hops."
@@ -381,7 +591,12 @@
     "id": "net_043",
     "question": "Which protocol is used for time synchronization?",
     "code": null,
-    "options": ["NTP", "FTP", "SMTP", "SNMP"],
+    "options": [
+      "NTP",
+      "FTP",
+      "SMTP",
+      "SNMP"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "NTP synchronizes clocks across networks."
@@ -390,7 +605,12 @@
     "id": "net_044",
     "question": "Which protocol is used to manage network devices?",
     "code": null,
-    "options": ["SNMP", "HTTP", "SMTP", "FTP"],
+    "options": [
+      "SNMP",
+      "HTTP",
+      "SMTP",
+      "FTP"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "SNMP is used for network management."
@@ -399,7 +619,12 @@
     "id": "net_045",
     "question": "What is the size of an IPv4 address?",
     "code": null,
-    "options": ["32 bits", "64 bits", "128 bits", "16 bits"],
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "16 bits"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "IPv4 uses 32-bit addresses."
@@ -408,7 +633,12 @@
     "id": "net_046",
     "question": "What is the size of an IPv6 address?",
     "code": null,
-    "options": ["32 bits", "64 bits", "128 bits", "256 bits"],
+    "options": [
+      "32 bits",
+      "64 bits",
+      "128 bits",
+      "256 bits"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "IPv6 uses 128-bit addresses."
@@ -417,7 +647,12 @@
     "id": "net_047",
     "question": "Which protocol provides name resolution on local networks for IPv6?",
     "code": null,
-    "options": ["mDNS", "ARP", "RIP", "BGP"],
+    "options": [
+      "mDNS",
+      "ARP",
+      "RIP",
+      "BGP"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "mDNS helps with local name resolution."
@@ -426,7 +661,12 @@
     "id": "net_048",
     "question": "Which routing protocol is used within an autonomous system?",
     "code": null,
-    "options": ["BGP", "OSPF", "EGP", "ARP"],
+    "options": [
+      "BGP",
+      "OSPF",
+      "EGP",
+      "ARP"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "OSPF is an interior gateway protocol."
@@ -435,7 +675,12 @@
     "id": "net_049",
     "question": "Which routing protocol is used between autonomous systems?",
     "code": null,
-    "options": ["RIP", "OSPF", "BGP", "ICMP"],
+    "options": [
+      "RIP",
+      "OSPF",
+      "BGP",
+      "ICMP"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "BGP is used between autonomous systems."
@@ -444,9 +689,714 @@
     "id": "net_050",
     "question": "Which protocol is used for secure VPN tunneling at network layer?",
     "code": null,
-    "options": ["IPSec", "HTTP", "FTP", "SMTP"],
+    "options": [
+      "IPSec",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "IPSec provides security at the IP layer."
+  },
+  {
+    "id": "net_051",
+    "question": "Which statement about IP address is correct?",
+    "code": null,
+    "options": [
+      "An encryption key",
+      "A disk sector",
+      "A logical address used to identify a device on a network",
+      "A physical cable"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_052",
+    "question": "What is the main purpose of IP address in Networking?",
+    "code": null,
+    "options": [
+      "A physical cable",
+      "A logical address used to identify a device on a network",
+      "A disk sector",
+      "An encryption key"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_053",
+    "question": "Which option best describes IP address?",
+    "code": null,
+    "options": [
+      "A logical address used to identify a device on a network",
+      "A disk sector",
+      "A physical cable",
+      "An encryption key"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_054",
+    "question": "In Networking, IP address refers to:",
+    "code": null,
+    "options": [
+      "A logical address used to identify a device on a network",
+      "A physical cable",
+      "An encryption key",
+      "A disk sector"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_055",
+    "question": "What does IP address primarily do?",
+    "code": null,
+    "options": [
+      "An encryption key",
+      "A logical address used to identify a device on a network",
+      "A physical cable",
+      "A disk sector"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_056",
+    "question": "Choose the best description of IP address.",
+    "code": null,
+    "options": [
+      "An encryption key",
+      "A logical address used to identify a device on a network",
+      "A physical cable",
+      "A disk sector"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_057",
+    "question": "Which is true about IP address?",
+    "code": null,
+    "options": [
+      "A logical address used to identify a device on a network",
+      "A physical cable",
+      "An encryption key",
+      "A disk sector"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_058",
+    "question": "How is IP address best explained?",
+    "code": null,
+    "options": [
+      "A physical cable",
+      "A logical address used to identify a device on a network",
+      "A disk sector",
+      "An encryption key"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_059",
+    "question": "Which answer matches IP address most closely?",
+    "code": null,
+    "options": [
+      "A physical cable",
+      "A logical address used to identify a device on a network",
+      "An encryption key",
+      "A disk sector"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_060",
+    "question": "For Networking, IP address is:",
+    "code": null,
+    "options": [
+      "A disk sector",
+      "A logical address used to identify a device on a network",
+      "An encryption key",
+      "A physical cable"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "An IP address identifies a host on an IP network."
+  },
+  {
+    "id": "net_061",
+    "question": "Which statement about TCP is correct?",
+    "code": null,
+    "options": [
+      "A connection-oriented reliable transport protocol",
+      "An unreliable datagram protocol",
+      "A file system",
+      "A switch port"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_062",
+    "question": "What is the main purpose of TCP in Networking?",
+    "code": null,
+    "options": [
+      "A connection-oriented reliable transport protocol",
+      "A file system",
+      "A switch port",
+      "An unreliable datagram protocol"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_063",
+    "question": "Which option best describes TCP?",
+    "code": null,
+    "options": [
+      "A connection-oriented reliable transport protocol",
+      "A file system",
+      "A switch port",
+      "An unreliable datagram protocol"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_064",
+    "question": "In Networking, TCP refers to:",
+    "code": null,
+    "options": [
+      "A file system",
+      "A connection-oriented reliable transport protocol",
+      "A switch port",
+      "An unreliable datagram protocol"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_065",
+    "question": "What does TCP primarily do?",
+    "code": null,
+    "options": [
+      "A switch port",
+      "An unreliable datagram protocol",
+      "A connection-oriented reliable transport protocol",
+      "A file system"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_066",
+    "question": "Choose the best description of TCP.",
+    "code": null,
+    "options": [
+      "A file system",
+      "An unreliable datagram protocol",
+      "A switch port",
+      "A connection-oriented reliable transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_067",
+    "question": "Which is true about TCP?",
+    "code": null,
+    "options": [
+      "A file system",
+      "An unreliable datagram protocol",
+      "A switch port",
+      "A connection-oriented reliable transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_068",
+    "question": "How is TCP best explained?",
+    "code": null,
+    "options": [
+      "A file system",
+      "A switch port",
+      "An unreliable datagram protocol",
+      "A connection-oriented reliable transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_069",
+    "question": "Which answer matches TCP most closely?",
+    "code": null,
+    "options": [
+      "A switch port",
+      "A file system",
+      "A connection-oriented reliable transport protocol",
+      "An unreliable datagram protocol"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_070",
+    "question": "For Networking, TCP is:",
+    "code": null,
+    "options": [
+      "A switch port",
+      "An unreliable datagram protocol",
+      "A file system",
+      "A connection-oriented reliable transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "TCP provides reliable, ordered delivery."
+  },
+  {
+    "id": "net_071",
+    "question": "Which statement about UDP is correct?",
+    "code": null,
+    "options": [
+      "A routing table",
+      "An encrypted file",
+      "A kernel service",
+      "A connectionless lightweight transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_072",
+    "question": "What is the main purpose of UDP in Networking?",
+    "code": null,
+    "options": [
+      "A kernel service",
+      "A routing table",
+      "A connectionless lightweight transport protocol",
+      "An encrypted file"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_073",
+    "question": "Which option best describes UDP?",
+    "code": null,
+    "options": [
+      "A routing table",
+      "An encrypted file",
+      "A connectionless lightweight transport protocol",
+      "A kernel service"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_074",
+    "question": "In Networking, UDP refers to:",
+    "code": null,
+    "options": [
+      "An encrypted file",
+      "A routing table",
+      "A kernel service",
+      "A connectionless lightweight transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_075",
+    "question": "What does UDP primarily do?",
+    "code": null,
+    "options": [
+      "A connectionless lightweight transport protocol",
+      "An encrypted file",
+      "A routing table",
+      "A kernel service"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_076",
+    "question": "Choose the best description of UDP.",
+    "code": null,
+    "options": [
+      "An encrypted file",
+      "A kernel service",
+      "A connectionless lightweight transport protocol",
+      "A routing table"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_077",
+    "question": "Which is true about UDP?",
+    "code": null,
+    "options": [
+      "A routing table",
+      "A kernel service",
+      "An encrypted file",
+      "A connectionless lightweight transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_078",
+    "question": "How is UDP best explained?",
+    "code": null,
+    "options": [
+      "A routing table",
+      "A kernel service",
+      "A connectionless lightweight transport protocol",
+      "An encrypted file"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_079",
+    "question": "Which answer matches UDP most closely?",
+    "code": null,
+    "options": [
+      "A connectionless lightweight transport protocol",
+      "A routing table",
+      "A kernel service",
+      "An encrypted file"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_080",
+    "question": "For Networking, UDP is:",
+    "code": null,
+    "options": [
+      "An encrypted file",
+      "A routing table",
+      "A kernel service",
+      "A connectionless lightweight transport protocol"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "UDP sends datagrams without connection setup."
+  },
+  {
+    "id": "net_081",
+    "question": "Which statement about DNS is correct?",
+    "code": null,
+    "options": [
+      "Compresses packets",
+      "Assigns MAC addresses",
+      "Encrypts emails",
+      "Translates domain names to IP addresses"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_082",
+    "question": "What is the main purpose of DNS in Networking?",
+    "code": null,
+    "options": [
+      "Compresses packets",
+      "Translates domain names to IP addresses",
+      "Assigns MAC addresses",
+      "Encrypts emails"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_083",
+    "question": "Which option best describes DNS?",
+    "code": null,
+    "options": [
+      "Compresses packets",
+      "Encrypts emails",
+      "Translates domain names to IP addresses",
+      "Assigns MAC addresses"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_084",
+    "question": "In Networking, DNS refers to:",
+    "code": null,
+    "options": [
+      "Assigns MAC addresses",
+      "Compresses packets",
+      "Encrypts emails",
+      "Translates domain names to IP addresses"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_085",
+    "question": "What does DNS primarily do?",
+    "code": null,
+    "options": [
+      "Encrypts emails",
+      "Translates domain names to IP addresses",
+      "Compresses packets",
+      "Assigns MAC addresses"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_086",
+    "question": "Choose the best description of DNS.",
+    "code": null,
+    "options": [
+      "Assigns MAC addresses",
+      "Translates domain names to IP addresses",
+      "Encrypts emails",
+      "Compresses packets"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_087",
+    "question": "Which is true about DNS?",
+    "code": null,
+    "options": [
+      "Assigns MAC addresses",
+      "Translates domain names to IP addresses",
+      "Encrypts emails",
+      "Compresses packets"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_088",
+    "question": "How is DNS best explained?",
+    "code": null,
+    "options": [
+      "Encrypts emails",
+      "Compresses packets",
+      "Translates domain names to IP addresses",
+      "Assigns MAC addresses"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_089",
+    "question": "Which answer matches DNS most closely?",
+    "code": null,
+    "options": [
+      "Translates domain names to IP addresses",
+      "Compresses packets",
+      "Assigns MAC addresses",
+      "Encrypts emails"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_090",
+    "question": "For Networking, DNS is:",
+    "code": null,
+    "options": [
+      "Assigns MAC addresses",
+      "Translates domain names to IP addresses",
+      "Encrypts emails",
+      "Compresses packets"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "DNS maps human-readable names to network addresses."
+  },
+  {
+    "id": "net_091",
+    "question": "Which statement about subnet mask is correct?",
+    "code": null,
+    "options": [
+      "Identifies browser cache",
+      "Separates network and host portions of an IP address",
+      "Stores passwords",
+      "Checks file integrity"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_092",
+    "question": "What is the main purpose of subnet mask in Networking?",
+    "code": null,
+    "options": [
+      "Separates network and host portions of an IP address",
+      "Checks file integrity",
+      "Identifies browser cache",
+      "Stores passwords"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_093",
+    "question": "Which option best describes subnet mask?",
+    "code": null,
+    "options": [
+      "Separates network and host portions of an IP address",
+      "Checks file integrity",
+      "Identifies browser cache",
+      "Stores passwords"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_094",
+    "question": "In Networking, subnet mask refers to:",
+    "code": null,
+    "options": [
+      "Identifies browser cache",
+      "Stores passwords",
+      "Checks file integrity",
+      "Separates network and host portions of an IP address"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_095",
+    "question": "What does subnet mask primarily do?",
+    "code": null,
+    "options": [
+      "Checks file integrity",
+      "Separates network and host portions of an IP address",
+      "Stores passwords",
+      "Identifies browser cache"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_096",
+    "question": "Choose the best description of subnet mask.",
+    "code": null,
+    "options": [
+      "Identifies browser cache",
+      "Stores passwords",
+      "Separates network and host portions of an IP address",
+      "Checks file integrity"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_097",
+    "question": "Which is true about subnet mask?",
+    "code": null,
+    "options": [
+      "Separates network and host portions of an IP address",
+      "Identifies browser cache",
+      "Stores passwords",
+      "Checks file integrity"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_098",
+    "question": "How is subnet mask best explained?",
+    "code": null,
+    "options": [
+      "Identifies browser cache",
+      "Separates network and host portions of an IP address",
+      "Checks file integrity",
+      "Stores passwords"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_099",
+    "question": "Which answer matches subnet mask most closely?",
+    "code": null,
+    "options": [
+      "Stores passwords",
+      "Identifies browser cache",
+      "Checks file integrity",
+      "Separates network and host portions of an IP address"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
+  },
+  {
+    "id": "net_100",
+    "question": "For Networking, subnet mask is:",
+    "code": null,
+    "options": [
+      "Identifies browser cache",
+      "Stores passwords",
+      "Separates network and host portions of an IP address",
+      "Checks file integrity"
+    ],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "A subnet mask helps split the IP address into network and host parts."
   }
 ]

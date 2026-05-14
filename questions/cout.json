@@ -3,7 +3,12 @@
     "id": "cout_001",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nprintf(\"%d\", x++);",
-    "options": ["1", "2", "0", "Compiler error"],
+    "options": [
+      "1",
+      "2",
+      "0",
+      "Compiler error"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Post-increment prints the current value then increments."
@@ -12,7 +17,12 @@
     "id": "cout_002",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nprintf(\"%d\", ++x);",
-    "options": ["1", "2", "0", "Compiler error"],
+    "options": [
+      "1",
+      "2",
+      "0",
+      "Compiler error"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Pre-increment increments first, then prints 2."
@@ -21,7 +31,12 @@
     "id": "cout_003",
     "question": "What is the output of the following C code?",
     "code": "int x = 5;\nx += 3;\nprintf(\"%d\", x);",
-    "options": ["5", "8", "3", "0"],
+    "options": [
+      "5",
+      "8",
+      "3",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "x becomes 8 after adding 3."
@@ -30,7 +45,12 @@
     "id": "cout_004",
     "question": "What is the output of the following C code?",
     "code": "for (int i = 0; i < 3; i++) {\nprintf(\"%d\", i);\n}",
-    "options": ["012", "123", "013", "321"],
+    "options": [
+      "012",
+      "123",
+      "013",
+      "321"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The loop prints 0, 1, 2."
@@ -39,7 +59,12 @@
     "id": "cout_005",
     "question": "What is the output of the following C code?",
     "code": "int sum = 0;\nfor (int i = 1; i <= 3; i++) { sum += i; }\nprintf(\"%d\", sum);",
-    "options": ["3", "6", "5", "7"],
+    "options": [
+      "3",
+      "6",
+      "5",
+      "7"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "1 + 2 + 3 = 6."
@@ -48,7 +73,12 @@
     "id": "cout_006",
     "question": "What is the output of the following C code?",
     "code": "int i = 0;\nwhile (i < 3) { printf(\"%d\", i); i++; }",
-    "options": ["012", "123", "210", "001"],
+    "options": [
+      "012",
+      "123",
+      "210",
+      "001"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The loop prints 0, 1, 2."
@@ -57,7 +87,12 @@
     "id": "cout_007",
     "question": "What is the output of the following C code?",
     "code": "int i = 0;\ndo { printf(\"%d\", i); i++; } while (i < 2);",
-    "options": ["0", "01", "12", "02"],
+    "options": [
+      "0",
+      "01",
+      "12",
+      "02"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The do-while prints 0 then 1."
@@ -66,7 +101,12 @@
     "id": "cout_008",
     "question": "What is the output of the following C code?",
     "code": "int a[] = {2, 4, 6};\nprintf(\"%d\", a[1]);",
-    "options": ["2", "4", "6", "0"],
+    "options": [
+      "2",
+      "4",
+      "6",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "a[1] is the second element: 4."
@@ -75,7 +115,12 @@
     "id": "cout_009",
     "question": "What is the output of the following C code?",
     "code": "int a[] = {2, 4, 6};\nint *p = a;\nprintf(\"%d\", *(p + 2));",
-    "options": ["2", "4", "6", "0"],
+    "options": [
+      "2",
+      "4",
+      "6",
+      "0"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "*(p+2) refers to the third element: 6."
@@ -84,7 +129,12 @@
     "id": "cout_010",
     "question": "What is the output of the following C code?",
     "code": "char s[] = \"hi\";\nprintf(\"%d\", (int)strlen(s));",
-    "options": ["1", "2", "3", "4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The string length of \"hi\" is 2."
@@ -93,7 +143,12 @@
     "id": "cout_011",
     "question": "What is the output of the following C code?",
     "code": "char s[] = \"hi\";\nprintf(\"%s\", s);",
-    "options": ["h", "hi", "i", "0"],
+    "options": [
+      "h",
+      "hi",
+      "i",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "printf with %s prints the whole string."
@@ -102,7 +157,12 @@
     "id": "cout_012",
     "question": "What is the output of the following C code?",
     "code": "char s[] = \"hi\";\nprintf(\"%c\", s[0]);",
-    "options": ["h", "i", "hi", "0"],
+    "options": [
+      "h",
+      "i",
+      "hi",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "s[0] is the first character: h."
@@ -111,7 +171,12 @@
     "id": "cout_013",
     "question": "What is the output of the following C code?",
     "code": "printf(\"%d\", 7 / 2);",
-    "options": ["3", "3.5", "4", "2"],
+    "options": [
+      "3",
+      "3.5",
+      "4",
+      "2"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Integer division truncates the fraction, giving 3."
@@ -120,7 +185,12 @@
     "id": "cout_014",
     "question": "What is the output of the following C code?",
     "code": "printf(\"%d\", 7 % 2);",
-    "options": ["0", "1", "2", "3"],
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "7 modulo 2 is 1."
@@ -129,7 +199,12 @@
     "id": "cout_015",
     "question": "What is the output of the following C code?",
     "code": "printf(\"%d\", 3 < 5);",
-    "options": ["0", "1", "3", "5"],
+    "options": [
+      "0",
+      "1",
+      "3",
+      "5"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The expression is true, so it prints 1."
@@ -138,7 +213,12 @@
     "id": "cout_016",
     "question": "What is the output of the following C code?",
     "code": "int x = 0;\nif (x) printf(\"A\"); else printf(\"B\");",
-    "options": ["A", "B", "AB", "None"],
+    "options": [
+      "A",
+      "B",
+      "AB",
+      "None"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "x is 0 (false), so it prints B."
@@ -147,7 +227,12 @@
     "id": "cout_017",
     "question": "What is the output of the following C code?",
     "code": "int x = 2;\nswitch (x) { case 1: printf(\"A\"); break; case 2: printf(\"B\"); break; default: printf(\"C\"); }",
-    "options": ["A", "B", "C", "AB"],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "AB"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Case 2 matches and prints B."
@@ -156,7 +241,12 @@
     "id": "cout_018",
     "question": "What is the output of the following C code?",
     "code": "int x = 2;\nswitch (x) { case 1: printf(\"A\"); case 2: printf(\"B\"); break; default: printf(\"C\"); }",
-    "options": ["A", "B", "AB", "C"],
+    "options": [
+      "A",
+      "B",
+      "AB",
+      "C"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Case 2 executes and prints B."
@@ -165,7 +255,12 @@
     "id": "cout_019",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nif (x == 1) printf(\"Yes\");",
-    "options": ["Yes", "No", "1", "0"],
+    "options": [
+      "Yes",
+      "No",
+      "1",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The condition is true, so it prints Yes."
@@ -174,7 +269,12 @@
     "id": "cout_020",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nif (x == 1) printf(\"Y\");\nif (x == 2) printf(\"Z\");",
-    "options": ["Y", "Z", "YZ", "None"],
+    "options": [
+      "Y",
+      "Z",
+      "YZ",
+      "None"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Only the first condition is true."
@@ -183,7 +283,12 @@
     "id": "cout_021",
     "question": "What is the output of the following C code?",
     "code": "int x = 5;\nprintf(\"%d\", x & 1);",
-    "options": ["0", "1", "5", "4"],
+    "options": [
+      "0",
+      "1",
+      "5",
+      "4"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "5 is odd, so the least significant bit is 1."
@@ -192,7 +297,12 @@
     "id": "cout_022",
     "question": "What is the output of the following C code?",
     "code": "int x = 6;\nprintf(\"%d\", x & 1);",
-    "options": ["0", "1", "6", "7"],
+    "options": [
+      "0",
+      "1",
+      "6",
+      "7"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "6 is even, so the least significant bit is 0."
@@ -201,7 +311,12 @@
     "id": "cout_023",
     "question": "What is the output of the following C code?",
     "code": "int x = 5;\nprintf(\"%d\", x | 2);",
-    "options": ["5", "6", "7", "3"],
+    "options": [
+      "5",
+      "6",
+      "7",
+      "3"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "5 OR 2 equals 7."
@@ -210,7 +325,12 @@
     "id": "cout_024",
     "question": "What is the output of the following C code?",
     "code": "int x = 4;\nprintf(\"%d\", x << 1);",
-    "options": ["2", "4", "8", "16"],
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Left shift by 1 multiplies by 2, giving 8."
@@ -219,7 +339,12 @@
     "id": "cout_025",
     "question": "What is the output of the following C code?",
     "code": "int x = 8;\nprintf(\"%d\", x >> 1);",
-    "options": ["2", "4", "8", "16"],
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Right shift by 1 divides by 2, giving 4."
@@ -228,7 +353,12 @@
     "id": "cout_026",
     "question": "What is the output of the following C code?",
     "code": "int a[5] = {0};\nprintf(\"%d\", (int)(sizeof(a) / sizeof(a[0])));",
-    "options": ["5", "4", "20", "1"],
+    "options": [
+      "5",
+      "4",
+      "20",
+      "1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "The array has 5 elements."
@@ -237,7 +367,12 @@
     "id": "cout_027",
     "question": "What is the output of the following C code?",
     "code": "char c = 'A';\nprintf(\"%d\", c);",
-    "options": ["65", "66", "97", "0"],
+    "options": [
+      "65",
+      "66",
+      "97",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "ASCII code for 'A' is 65."
@@ -246,7 +381,12 @@
     "id": "cout_028",
     "question": "What is the output of the following C code?",
     "code": "char c = 'A' + 1;\nprintf(\"%c\", c);",
-    "options": ["A", "B", "C", "D"],
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "'A' + 1 becomes 'B'."
@@ -255,7 +395,12 @@
     "id": "cout_029",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nprintf(\"%d %d\", x, x + 1);",
-    "options": ["3 4", "4 3", "3 3", "4 4"],
+    "options": [
+      "3 4",
+      "4 3",
+      "3 3",
+      "4 4"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "It prints x then x+1."
@@ -264,7 +409,12 @@
     "id": "cout_030",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nx *= 2;\nprintf(\"%d\", x);",
-    "options": ["3", "4", "6", "9"],
+    "options": [
+      "3",
+      "4",
+      "6",
+      "9"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "3 * 2 = 6."
@@ -273,7 +423,12 @@
     "id": "cout_031",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nx -= 5;\nprintf(\"%d\", x);",
-    "options": ["8", "-2", "2", "-8"],
+    "options": [
+      "8",
+      "-2",
+      "2",
+      "-8"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "3 - 5 = -2."
@@ -282,7 +437,12 @@
     "id": "cout_032",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nprintf(\"%d\", x == 3);",
-    "options": ["0", "1", "3", "-1"],
+    "options": [
+      "0",
+      "1",
+      "3",
+      "-1"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The comparison is true, so it prints 1."
@@ -291,7 +451,12 @@
     "id": "cout_033",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nprintf(\"%d\", x != 3);",
-    "options": ["0", "1", "3", "-1"],
+    "options": [
+      "0",
+      "1",
+      "3",
+      "-1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "x is equal to 3, so the result is false (0)."
@@ -300,7 +465,12 @@
     "id": "cout_034",
     "question": "What is the output of the following C code?",
     "code": "int x = 3;\nprintf(\"%d\", x >= 3);",
-    "options": ["0", "1", "3", "-1"],
+    "options": [
+      "0",
+      "1",
+      "3",
+      "-1"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "3 >= 3 is true, so it prints 1."
@@ -309,7 +479,12 @@
     "id": "cout_035",
     "question": "What is the output of the following C code?",
     "code": "for (int i = 0; i < 3; i++) {\n  if (i == 1) continue;\n  printf(\"%d\", i);\n}",
-    "options": ["012", "02", "13", "01"],
+    "options": [
+      "012",
+      "02",
+      "13",
+      "01"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "It skips i=1, so it prints 0 and 2."
@@ -318,7 +493,12 @@
     "id": "cout_036",
     "question": "What is the output of the following C code?",
     "code": "for (int i = 0; i < 3; i++) {\n  if (i == 1) break;\n  printf(\"%d\", i);\n}",
-    "options": ["0", "01", "012", "1"],
+    "options": [
+      "0",
+      "01",
+      "012",
+      "1"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "The loop breaks when i is 1, so only 0 prints."
@@ -327,7 +507,12 @@
     "id": "cout_037",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nprintf(\"%d\", (x > 0) ? 10 : 20);",
-    "options": ["10", "20", "1", "0"],
+    "options": [
+      "10",
+      "20",
+      "1",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "x > 0 is true, so it chooses 10."
@@ -336,7 +521,12 @@
     "id": "cout_038",
     "question": "What is the output of the following C code?",
     "code": "int x = 0;\nprintf(\"%d\", (x > 0) ? 10 : 20);",
-    "options": ["10", "20", "1", "0"],
+    "options": [
+      "10",
+      "20",
+      "1",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "x > 0 is false, so it chooses 20."
@@ -345,7 +535,12 @@
     "id": "cout_039",
     "question": "What is the output of the following C code?",
     "code": "int a[] = {1, 2, 3};\nint sum = 0;\nfor (int i = 0; i < 3; i++) sum += a[i];\nprintf(\"%d\", sum);",
-    "options": ["3", "5", "6", "7"],
+    "options": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "1 + 2 + 3 = 6."
@@ -354,7 +549,12 @@
     "id": "cout_040",
     "question": "What is the output of the following C code?",
     "code": "char s[] = \"abc\";\nprintf(\"%c\", s[2]);",
-    "options": ["a", "b", "c", "d"],
+    "options": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "s[2] is the third character: c."
@@ -363,7 +563,12 @@
     "id": "cout_041",
     "question": "What is the output of the following C code?",
     "code": "printf(\"%d\", sizeof(char));",
-    "options": ["1", "2", "4", "8"],
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "sizeof(char) is always 1 byte."
@@ -372,7 +577,12 @@
     "id": "cout_042",
     "question": "What is the output of the following C code?",
     "code": "int x = 5;\nprintf(\"%d\", x / 2 * 2);",
-    "options": ["4", "5", "6", "2"],
+    "options": [
+      "4",
+      "5",
+      "6",
+      "2"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Integer division truncates: 5/2 = 2, then 2*2 = 4."
@@ -381,7 +591,12 @@
     "id": "cout_043",
     "question": "What is the output of the following C code?",
     "code": "int x = 5;\nprintf(\"%d\", x % 3);",
-    "options": ["1", "2", "3", "0"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "5 modulo 3 is 2."
@@ -390,7 +605,12 @@
     "id": "cout_044",
     "question": "What is the output of the following C code?",
     "code": "int x = 2;\nint y = 3;\nprintf(\"%d\", x + y * 2);",
-    "options": ["8", "10", "7", "12"],
+    "options": [
+      "8",
+      "10",
+      "7",
+      "12"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Multiplication happens first: 2 + (3*2) = 8."
@@ -399,7 +619,12 @@
     "id": "cout_045",
     "question": "What is the output of the following C code?",
     "code": "int x = 2;\nint y = 3;\nprintf(\"%d\", (x + y) * 2);",
-    "options": ["8", "10", "7", "12"],
+    "options": [
+      "8",
+      "10",
+      "7",
+      "12"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "(2 + 3) * 2 = 10."
@@ -408,7 +633,12 @@
     "id": "cout_046",
     "question": "What is the output of the following C code?",
     "code": "int x = 1;\nint y = 2;\nint z = x + y;\nprintf(\"%d\", z);",
-    "options": ["1", "2", "3", "4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "1 + 2 = 3."
@@ -417,7 +647,12 @@
     "id": "cout_047",
     "question": "What is the output of the following C code?",
     "code": "int x = 10;\nprintf(\"%d\", x--);",
-    "options": ["9", "10", "11", "0"],
+    "options": [
+      "9",
+      "10",
+      "11",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Post-decrement prints 10, then decrements."
@@ -426,7 +661,12 @@
     "id": "cout_048",
     "question": "What is the output of the following C code?",
     "code": "int x = 10;\nprintf(\"%d\", --x);",
-    "options": ["9", "10", "11", "0"],
+    "options": [
+      "9",
+      "10",
+      "11",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Pre-decrement reduces first, then prints 9."
@@ -435,7 +675,12 @@
     "id": "cout_049",
     "question": "What is the output of the following C code?",
     "code": "int a[] = {9, 8, 7};\nprintf(\"%d\", *(a));",
-    "options": ["9", "8", "7", "0"],
+    "options": [
+      "9",
+      "8",
+      "7",
+      "0"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "*(a) is the first element: 9."
@@ -444,9 +689,714 @@
     "id": "cout_050",
     "question": "What is the output of the following C code?",
     "code": "int a[] = {9, 8, 7};\nprintf(\"%d\", *(a + 1));",
-    "options": ["9", "8", "7", "0"],
+    "options": [
+      "9",
+      "8",
+      "7",
+      "0"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "*(a+1) is the second element: 8."
+  },
+  {
+    "id": "cout_051",
+    "question": "What is the output of the following code?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "2",
+      "4",
+      "3"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_052",
+    "question": "What will this code print?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_053",
+    "question": "Choose the correct output for this snippet.",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_054",
+    "question": "What does the program display?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_055",
+    "question": "After execution, what appears on screen?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_056",
+    "question": "What is printed when the code runs?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_057",
+    "question": "Select the output produced by this code.",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_058",
+    "question": "What is the final output?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_059",
+    "question": "Which option matches the code output?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_060",
+    "question": "What value is shown by the program?",
+    "code": "int x = 2;\nprintf(\"%d\", ++x);",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "4"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Pre-increment updates the value before printing."
+  },
+  {
+    "id": "cout_061",
+    "question": "What is the output of the following code?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_062",
+    "question": "What will this code print?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_063",
+    "question": "Choose the correct output for this snippet.",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_064",
+    "question": "What does the program display?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_065",
+    "question": "After execution, what appears on screen?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_066",
+    "question": "What is printed when the code runs?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "4"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_067",
+    "question": "Select the output produced by this code.",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_068",
+    "question": "What is the final output?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_069",
+    "question": "Which option matches the code output?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_070",
+    "question": "What value is shown by the program?",
+    "code": "int x = 2;\nprintf(\"%d\", x++);",
+    "options": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Post-increment prints the current value first."
+  },
+  {
+    "id": "cout_071",
+    "question": "What is the output of the following code?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "012",
+      "210",
+      "123",
+      "001"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_072",
+    "question": "What will this code print?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "001",
+      "012",
+      "210",
+      "123"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_073",
+    "question": "Choose the correct output for this snippet.",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "001",
+      "012",
+      "210",
+      "123"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_074",
+    "question": "What does the program display?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "001",
+      "012",
+      "210",
+      "123"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_075",
+    "question": "After execution, what appears on screen?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "123",
+      "210",
+      "012",
+      "001"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_076",
+    "question": "What is printed when the code runs?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "012",
+      "210",
+      "001",
+      "123"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_077",
+    "question": "Select the output produced by this code.",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "012",
+      "210",
+      "001",
+      "123"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_078",
+    "question": "What is the final output?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "210",
+      "012",
+      "001",
+      "123"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_079",
+    "question": "Which option matches the code output?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "001",
+      "012",
+      "123",
+      "210"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_080",
+    "question": "What value is shown by the program?",
+    "code": "for(int i = 0; i < 3; i++) {\n    printf(\"%d\", i);\n}",
+    "options": [
+      "001",
+      "210",
+      "123",
+      "012"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "The loop prints the sequence as the counter increases."
+  },
+  {
+    "id": "cout_081",
+    "question": "What is the output of the following code?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "03",
+      "30",
+      "20"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_082",
+    "question": "What will this code print?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "03",
+      "30",
+      "20"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_083",
+    "question": "Choose the correct output for this snippet.",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "30",
+      "33",
+      "20",
+      "03"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_084",
+    "question": "What does the program display?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "30",
+      "03",
+      "33",
+      "20"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_085",
+    "question": "After execution, what appears on screen?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "30",
+      "20",
+      "03"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_086",
+    "question": "What is printed when the code runs?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "03",
+      "20",
+      "30"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_087",
+    "question": "Select the output produced by this code.",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "20",
+      "03",
+      "30"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_088",
+    "question": "What is the final output?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "03",
+      "33",
+      "20",
+      "30"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_089",
+    "question": "Which option matches the code output?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "20",
+      "30",
+      "03"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_090",
+    "question": "What value is shown by the program?",
+    "code": "int a[] = {10, 20, 30};\nprintf(\"%d\", a[2]);",
+    "options": [
+      "33",
+      "20",
+      "03",
+      "30"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "Array indexing reads the stored value at the selected position."
+  },
+  {
+    "id": "cout_091",
+    "question": "What is the output of the following code?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "5",
+      "9",
+      "0"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_092",
+    "question": "What will this code print?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "5",
+      "0",
+      "9"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_093",
+    "question": "Choose the correct output for this snippet.",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "9",
+      "0",
+      "7",
+      "5"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_094",
+    "question": "What does the program display?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "0",
+      "5",
+      "9"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_095",
+    "question": "After execution, what appears on screen?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "0"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_096",
+    "question": "What is printed when the code runs?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "0",
+      "9",
+      "5"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_097",
+    "question": "Select the output produced by this code.",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "5",
+      "0",
+      "9"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_098",
+    "question": "What is the final output?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "5",
+      "0",
+      "7",
+      "9"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_099",
+    "question": "Which option matches the code output?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "0",
+      "7",
+      "9",
+      "5"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
+  },
+  {
+    "id": "cout_100",
+    "question": "What value is shown by the program?",
+    "code": "int x = 7;\nint *p = &x;\nprintf(\"%d\", *p);",
+    "options": [
+      "7",
+      "0",
+      "9",
+      "5"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Dereferencing a pointer prints the value stored at the pointed address."
   }
 ]

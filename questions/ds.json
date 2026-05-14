@@ -3,7 +3,12 @@
     "id": "ds_001",
     "question": "Which data structure follows LIFO order?",
     "code": null,
-    "options": ["Queue", "Stack", "Array", "Tree"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Tree"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Stack is Last-In-First-Out."
@@ -12,7 +17,12 @@
     "id": "ds_002",
     "question": "Which data structure follows FIFO order?",
     "code": null,
-    "options": ["Queue", "Stack", "Heap", "Graph"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Graph"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Queue is First-In-First-Out."
@@ -21,7 +31,12 @@
     "id": "ds_003",
     "question": "Push and pop operations are associated with:",
     "code": null,
-    "options": ["Queue", "Stack", "Linked list", "Heap"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Linked list",
+      "Heap"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Push and pop are stack operations."
@@ -30,7 +45,12 @@
     "id": "ds_004",
     "question": "Enqueue and dequeue operations are associated with:",
     "code": null,
-    "options": ["Queue", "Stack", "Array", "Tree"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Tree"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Enqueue and dequeue are queue operations."
@@ -39,7 +59,12 @@
     "id": "ds_005",
     "question": "Which data structure provides O(1) random access?",
     "code": null,
-    "options": ["Array", "Linked list", "Stack", "Tree"],
+    "options": [
+      "Array",
+      "Linked list",
+      "Stack",
+      "Tree"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Arrays provide constant-time index access."
@@ -48,7 +73,12 @@
     "id": "ds_006",
     "question": "Insertion at the head of a singly linked list is:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Head insertion is constant time."
@@ -57,7 +87,12 @@
     "id": "ds_007",
     "question": "Searching in a singly linked list is:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "You must traverse nodes linearly."
@@ -66,7 +101,12 @@
     "id": "ds_008",
     "question": "A doubly linked list node contains:",
     "code": null,
-    "options": ["Only next pointer", "Only prev pointer", "Both prev and next pointers", "No pointers"],
+    "options": [
+      "Only next pointer",
+      "Only prev pointer",
+      "Both prev and next pointers",
+      "No pointers"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "It has links to both previous and next nodes."
@@ -75,7 +115,12 @@
     "id": "ds_009",
     "question": "A queue implemented with a fixed array can suffer from:",
     "code": null,
-    "options": ["Underflow only", "Overflow only", "Wasted space", "All of these"],
+    "options": [
+      "Underflow only",
+      "Overflow only",
+      "Wasted space",
+      "All of these"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "Fixed arrays can overflow, underflow, and waste space without circular logic."
@@ -84,7 +129,12 @@
     "id": "ds_010",
     "question": "A circular queue helps to:",
     "code": null,
-    "options": ["Improve sorting", "Reuse freed slots", "Prevent underflow", "Create recursion"],
+    "options": [
+      "Improve sorting",
+      "Reuse freed slots",
+      "Prevent underflow",
+      "Create recursion"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Circular queues reuse array space efficiently."
@@ -93,7 +143,12 @@
     "id": "ds_011",
     "question": "A binary tree node can have at most:",
     "code": null,
-    "options": ["1 child", "2 children", "3 children", "4 children"],
+    "options": [
+      "1 child",
+      "2 children",
+      "3 children",
+      "4 children"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Binary trees allow at most two children."
@@ -102,7 +157,12 @@
     "id": "ds_012",
     "question": "In a Binary Search Tree (BST):",
     "code": null,
-    "options": ["Left < Root < Right", "Right < Root < Left", "Left = Right", "No ordering"],
+    "options": [
+      "Left < Root < Right",
+      "Right < Root < Left",
+      "Left = Right",
+      "No ordering"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "BST stores smaller keys left and larger keys right."
@@ -111,7 +171,12 @@
     "id": "ds_013",
     "question": "In-order traversal of a BST yields:",
     "code": null,
-    "options": ["Random order", "Sorted order", "Reverse order", "Level order"],
+    "options": [
+      "Random order",
+      "Sorted order",
+      "Reverse order",
+      "Level order"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "In-order traversal visits keys in ascending order."
@@ -120,7 +185,12 @@
     "id": "ds_014",
     "question": "BFS traversal uses which data structure?",
     "code": null,
-    "options": ["Stack", "Queue", "Heap", "Set"],
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Set"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "BFS explores level by level using a queue."
@@ -129,7 +199,12 @@
     "id": "ds_015",
     "question": "DFS traversal typically uses:",
     "code": null,
-    "options": ["Queue", "Stack or recursion", "Heap", "Array only"],
+    "options": [
+      "Queue",
+      "Stack or recursion",
+      "Heap",
+      "Array only"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "DFS uses a stack explicitly or via recursion."
@@ -138,7 +213,12 @@
     "id": "ds_016",
     "question": "Collision handling in hash tables can be done with:",
     "code": null,
-    "options": ["Chaining", "Indexing", "Sorting", "Recursion only"],
+    "options": [
+      "Chaining",
+      "Indexing",
+      "Sorting",
+      "Recursion only"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Chaining stores collided items in a list or bucket."
@@ -147,7 +227,12 @@
     "id": "ds_017",
     "question": "Load factor in hashing is:",
     "code": null,
-    "options": ["Table size / items", "Items / table size", "Items * table size", "Items - table size"],
+    "options": [
+      "Table size / items",
+      "Items / table size",
+      "Items * table size",
+      "Items - table size"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Load factor = number of items / table size."
@@ -156,7 +241,12 @@
     "id": "ds_018",
     "question": "A priority queue is commonly implemented using:",
     "code": null,
-    "options": ["Stack", "Queue", "Heap", "Linked list"],
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Linked list"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Heaps support efficient min/max priority operations."
@@ -165,7 +255,12 @@
     "id": "ds_019",
     "question": "In a max-heap, the parent key is:",
     "code": null,
-    "options": ["Less than children", "Greater than or equal to children", "Always equal", "Unrelated"],
+    "options": [
+      "Less than children",
+      "Greater than or equal to children",
+      "Always equal",
+      "Unrelated"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Max-heap property: parent >= children."
@@ -174,7 +269,12 @@
     "id": "ds_020",
     "question": "Which representation is better for sparse graphs?",
     "code": null,
-    "options": ["Adjacency matrix", "Adjacency list", "Edge matrix", "Tree"],
+    "options": [
+      "Adjacency matrix",
+      "Adjacency list",
+      "Edge matrix",
+      "Tree"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Adjacency lists save space for sparse graphs."
@@ -183,7 +283,12 @@
     "id": "ds_021",
     "question": "Maximum edges in an undirected simple graph with V vertices is:",
     "code": null,
-    "options": ["V^2", "V(V-1)", "V(V-1)/2", "2V"],
+    "options": [
+      "V^2",
+      "V(V-1)",
+      "V(V-1)/2",
+      "2V"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "An undirected graph has V(V-1)/2 possible edges."
@@ -192,7 +297,12 @@
     "id": "ds_022",
     "question": "A tree with n nodes has how many edges?",
     "code": null,
-    "options": ["n", "n-1", "n+1", "2n"],
+    "options": [
+      "n",
+      "n-1",
+      "n+1",
+      "2n"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "A tree is connected and acyclic, so edges = n-1."
@@ -201,7 +311,12 @@
     "id": "ds_023",
     "question": "Which structure is used for function call management?",
     "code": null,
-    "options": ["Queue", "Stack", "Heap", "Graph"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Graph"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "The call stack manages function calls."
@@ -210,7 +325,12 @@
     "id": "ds_024",
     "question": "Level order traversal in a tree uses:",
     "code": null,
-    "options": ["Stack", "Queue", "Set", "Heap"],
+    "options": [
+      "Stack",
+      "Queue",
+      "Set",
+      "Heap"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Level order traversal is BFS and uses a queue."
@@ -219,7 +339,12 @@
     "id": "ds_025",
     "question": "Which structure is dynamic in size?",
     "code": null,
-    "options": ["Array", "Linked list", "Static buffer", "Fixed stack"],
+    "options": [
+      "Array",
+      "Linked list",
+      "Static buffer",
+      "Fixed stack"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Linked lists grow or shrink at runtime."
@@ -228,7 +353,12 @@
     "id": "ds_026",
     "question": "Array memory is:",
     "code": null,
-    "options": ["Contiguous", "Scattered", "Random", "Linked"],
+    "options": [
+      "Contiguous",
+      "Scattered",
+      "Random",
+      "Linked"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Array elements are stored contiguously in memory."
@@ -237,7 +367,12 @@
     "id": "ds_027",
     "question": "A circular linked list has:",
     "code": null,
-    "options": ["No head", "Tail points to head", "Only one node", "No pointers"],
+    "options": [
+      "No head",
+      "Tail points to head",
+      "Only one node",
+      "No pointers"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "In a circular list, the last node links back to the head."
@@ -246,7 +381,12 @@
     "id": "ds_028",
     "question": "Search in a balanced BST is typically:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Balanced BST height is O(log n)."
@@ -255,7 +395,12 @@
     "id": "ds_029",
     "question": "Which tree guarantees strict height balancing?",
     "code": null,
-    "options": ["AVL tree", "Binary tree", "Heap", "Trie"],
+    "options": [
+      "AVL tree",
+      "Binary tree",
+      "Heap",
+      "Trie"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AVL trees maintain strict balance after insert/delete."
@@ -264,7 +409,12 @@
     "id": "ds_030",
     "question": "Red-black trees ensure height is:",
     "code": null,
-    "options": ["Always 1", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "Always 1",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Red-black trees guarantee logarithmic height."
@@ -273,7 +423,12 @@
     "id": "ds_031",
     "question": "A trie is best for:",
     "code": null,
-    "options": ["Prefix search", "Sorting integers", "Matrix multiplication", "Heap operations"],
+    "options": [
+      "Prefix search",
+      "Sorting integers",
+      "Matrix multiplication",
+      "Heap operations"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Tries are optimized for prefix-based searches."
@@ -282,7 +437,12 @@
     "id": "ds_032",
     "question": "A deque supports:",
     "code": null,
-    "options": ["Insert/remove at one end", "Insert/remove at both ends", "Only random access", "Only priority operations"],
+    "options": [
+      "Insert/remove at one end",
+      "Insert/remove at both ends",
+      "Only random access",
+      "Only priority operations"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Deque allows operations at both front and rear."
@@ -291,7 +451,12 @@
     "id": "ds_033",
     "question": "Average time for successful search in a hash table is:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Hash tables provide constant average-time lookup."
@@ -300,7 +465,12 @@
     "id": "ds_034",
     "question": "Worst-case search in a hash table is:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Worst-case collisions degrade to linear search."
@@ -309,7 +479,12 @@
     "id": "ds_035",
     "question": "Queue can be implemented using:",
     "code": null,
-    "options": ["Two stacks", "One stack", "Only arrays", "Only linked lists"],
+    "options": [
+      "Two stacks",
+      "One stack",
+      "Only arrays",
+      "Only linked lists"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Two stacks can simulate a queue."
@@ -318,7 +493,12 @@
     "id": "ds_036",
     "question": "Stack can be implemented using:",
     "code": null,
-    "options": ["Two queues", "One queue", "Only arrays", "Only trees"],
+    "options": [
+      "Two queues",
+      "One queue",
+      "Only arrays",
+      "Only trees"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Two queues can simulate a stack."
@@ -327,7 +507,12 @@
     "id": "ds_037",
     "question": "Deleting a node in a BST with two children often uses:",
     "code": null,
-    "options": ["Predecessor or successor", "Random node", "Root only", "Leaf only"],
+    "options": [
+      "Predecessor or successor",
+      "Random node",
+      "Root only",
+      "Leaf only"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Replace the node with its in-order predecessor or successor."
@@ -336,7 +521,12 @@
     "id": "ds_038",
     "question": "Topological sort is defined for:",
     "code": null,
-    "options": ["Undirected graphs", "DAGs", "Trees only", "Cyclic graphs"],
+    "options": [
+      "Undirected graphs",
+      "DAGs",
+      "Trees only",
+      "Cyclic graphs"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Topological ordering exists only for DAGs."
@@ -345,7 +535,12 @@
     "id": "ds_039",
     "question": "In-degree of a node is the number of:",
     "code": null,
-    "options": ["Outgoing edges", "Incoming edges", "Vertices", "Self loops"],
+    "options": [
+      "Outgoing edges",
+      "Incoming edges",
+      "Vertices",
+      "Self loops"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "In-degree counts incoming edges to a vertex."
@@ -354,7 +549,12 @@
     "id": "ds_040",
     "question": "BFS gives shortest path in:",
     "code": null,
-    "options": ["Weighted graphs", "Unweighted graphs", "Trees only", "DAGs only"],
+    "options": [
+      "Weighted graphs",
+      "Unweighted graphs",
+      "Trees only",
+      "DAGs only"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "BFS finds shortest paths in unweighted graphs."
@@ -363,7 +563,12 @@
     "id": "ds_041",
     "question": "Reversing a linked list iteratively requires:",
     "code": null,
-    "options": ["One pointer", "Two pointers", "Three pointers", "Four pointers"],
+    "options": [
+      "One pointer",
+      "Two pointers",
+      "Three pointers",
+      "Four pointers"
+    ],
     "answer": 2,
     "difficulty": "medium",
     "explanation": "You track previous, current, and next nodes."
@@ -372,7 +577,12 @@
     "id": "ds_042",
     "question": "Dynamic arrays typically resize by:",
     "code": null,
-    "options": ["+1 element", "Doubling size", "Halving size", "Fixed size"],
+    "options": [
+      "+1 element",
+      "Doubling size",
+      "Halving size",
+      "Fixed size"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Doubling gives amortized O(1) append."
@@ -381,7 +591,12 @@
     "id": "ds_043",
     "question": "Which traversal visits root, left, right?",
     "code": null,
-    "options": ["In-order", "Pre-order", "Post-order", "Level-order"],
+    "options": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Pre-order visits root first, then left and right."
@@ -390,7 +605,12 @@
     "id": "ds_044",
     "question": "Which traversal visits left, right, root?",
     "code": null,
-    "options": ["In-order", "Pre-order", "Post-order", "Level-order"],
+    "options": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Post-order visits children before the root."
@@ -399,7 +619,12 @@
     "id": "ds_045",
     "question": "Which traversal visits left, root, right?",
     "code": null,
-    "options": ["In-order", "Pre-order", "Post-order", "Level-order"],
+    "options": [
+      "In-order",
+      "Pre-order",
+      "Post-order",
+      "Level-order"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "In-order visits left, root, then right."
@@ -408,7 +633,12 @@
     "id": "ds_046",
     "question": "A complete binary tree is one where:",
     "code": null,
-    "options": ["All levels full", "All levels full except possibly last, filled left to right", "Every node has 2 children", "It has no leaves"],
+    "options": [
+      "All levels full",
+      "All levels full except possibly last, filled left to right",
+      "Every node has 2 children",
+      "It has no leaves"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Completeness means last level is left-filled."
@@ -417,7 +647,12 @@
     "id": "ds_047",
     "question": "A full binary tree is one where:",
     "code": null,
-    "options": ["Every node has 0 or 2 children", "Every node has 1 child", "All leaves on same level", "It is balanced"],
+    "options": [
+      "Every node has 0 or 2 children",
+      "Every node has 1 child",
+      "All leaves on same level",
+      "It is balanced"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Full binary tree nodes have either 0 or 2 children."
@@ -426,7 +661,12 @@
     "id": "ds_048",
     "question": "Which data structure is best for implementing undo operations?",
     "code": null,
-    "options": ["Queue", "Stack", "Heap", "Graph"],
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Graph"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Undo uses LIFO order, which a stack provides."
@@ -435,7 +675,12 @@
     "id": "ds_049",
     "question": "Which data structure is best for scheduling tasks by priority?",
     "code": null,
-    "options": ["Stack", "Queue", "Priority queue", "Linked list"],
+    "options": [
+      "Stack",
+      "Queue",
+      "Priority queue",
+      "Linked list"
+    ],
     "answer": 2,
     "difficulty": "easy",
     "explanation": "Priority queues retrieve highest (or lowest) priority first."
@@ -444,9 +689,714 @@
     "id": "ds_050",
     "question": "The time complexity of inserting into a hash table (average) is:",
     "code": null,
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Average insert in a hash table is constant time."
+  },
+  {
+    "id": "ds_051",
+    "question": "Which statement about stack is correct?",
+    "code": null,
+    "options": [
+      "A tree traversal rule",
+      "A FIFO data structure",
+      "A hashing method",
+      "A LIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_052",
+    "question": "What is the main purpose of stack in Data Structures?",
+    "code": null,
+    "options": [
+      "A tree traversal rule",
+      "A hashing method",
+      "A FIFO data structure",
+      "A LIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_053",
+    "question": "Which option best describes stack?",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A tree traversal rule",
+      "A hashing method",
+      "A FIFO data structure"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_054",
+    "question": "In Data Structures, stack refers to:",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A hashing method",
+      "A tree traversal rule",
+      "A FIFO data structure"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_055",
+    "question": "What does stack primarily do?",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A hashing method",
+      "A tree traversal rule",
+      "A FIFO data structure"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_056",
+    "question": "Choose the best description of stack.",
+    "code": null,
+    "options": [
+      "A hashing method",
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A tree traversal rule"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_057",
+    "question": "Which is true about stack?",
+    "code": null,
+    "options": [
+      "A tree traversal rule",
+      "A FIFO data structure",
+      "A hashing method",
+      "A LIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_058",
+    "question": "How is stack best explained?",
+    "code": null,
+    "options": [
+      "A hashing method",
+      "A FIFO data structure",
+      "A tree traversal rule",
+      "A LIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_059",
+    "question": "Which answer matches stack most closely?",
+    "code": null,
+    "options": [
+      "A tree traversal rule",
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A hashing method"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_060",
+    "question": "For Data Structures, stack is:",
+    "code": null,
+    "options": [
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A hashing method",
+      "A tree traversal rule"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "A stack removes the most recently inserted item first."
+  },
+  {
+    "id": "ds_061",
+    "question": "Which statement about queue is correct?",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A FIFO data structure",
+      "A graph edge",
+      "A binary search tree"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_062",
+    "question": "What is the main purpose of queue in Data Structures?",
+    "code": null,
+    "options": [
+      "A graph edge",
+      "A FIFO data structure",
+      "A binary search tree",
+      "A LIFO data structure"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_063",
+    "question": "Which option best describes queue?",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A graph edge",
+      "A binary search tree",
+      "A FIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_064",
+    "question": "In Data Structures, queue refers to:",
+    "code": null,
+    "options": [
+      "A FIFO data structure",
+      "A binary search tree",
+      "A LIFO data structure",
+      "A graph edge"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_065",
+    "question": "What does queue primarily do?",
+    "code": null,
+    "options": [
+      "A binary search tree",
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A graph edge"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_066",
+    "question": "Choose the best description of queue.",
+    "code": null,
+    "options": [
+      "A binary search tree",
+      "A FIFO data structure",
+      "A graph edge",
+      "A LIFO data structure"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_067",
+    "question": "Which is true about queue?",
+    "code": null,
+    "options": [
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A graph edge",
+      "A binary search tree"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_068",
+    "question": "How is queue best explained?",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A binary search tree",
+      "A FIFO data structure",
+      "A graph edge"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_069",
+    "question": "Which answer matches queue most closely?",
+    "code": null,
+    "options": [
+      "A FIFO data structure",
+      "A LIFO data structure",
+      "A binary search tree",
+      "A graph edge"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_070",
+    "question": "For Data Structures, queue is:",
+    "code": null,
+    "options": [
+      "A LIFO data structure",
+      "A graph edge",
+      "A binary search tree",
+      "A FIFO data structure"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "A queue removes the earliest inserted item first."
+  },
+  {
+    "id": "ds_071",
+    "question": "Which statement about linked list is correct?",
+    "code": null,
+    "options": [
+      "A sorting rule",
+      "A heap algorithm",
+      "A contiguous array only",
+      "Nodes connected by pointers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_072",
+    "question": "What is the main purpose of linked list in Data Structures?",
+    "code": null,
+    "options": [
+      "A heap algorithm",
+      "Nodes connected by pointers",
+      "A contiguous array only",
+      "A sorting rule"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_073",
+    "question": "Which option best describes linked list?",
+    "code": null,
+    "options": [
+      "A contiguous array only",
+      "A heap algorithm",
+      "A sorting rule",
+      "Nodes connected by pointers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_074",
+    "question": "In Data Structures, linked list refers to:",
+    "code": null,
+    "options": [
+      "A contiguous array only",
+      "A sorting rule",
+      "A heap algorithm",
+      "Nodes connected by pointers"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_075",
+    "question": "What does linked list primarily do?",
+    "code": null,
+    "options": [
+      "A sorting rule",
+      "A heap algorithm",
+      "A contiguous array only",
+      "Nodes connected by pointers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_076",
+    "question": "Choose the best description of linked list.",
+    "code": null,
+    "options": [
+      "A contiguous array only",
+      "Nodes connected by pointers",
+      "A sorting rule",
+      "A heap algorithm"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_077",
+    "question": "Which is true about linked list?",
+    "code": null,
+    "options": [
+      "Nodes connected by pointers",
+      "A heap algorithm",
+      "A sorting rule",
+      "A contiguous array only"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_078",
+    "question": "How is linked list best explained?",
+    "code": null,
+    "options": [
+      "A heap algorithm",
+      "A sorting rule",
+      "A contiguous array only",
+      "Nodes connected by pointers"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_079",
+    "question": "Which answer matches linked list most closely?",
+    "code": null,
+    "options": [
+      "Nodes connected by pointers",
+      "A contiguous array only",
+      "A sorting rule",
+      "A heap algorithm"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_080",
+    "question": "For Data Structures, linked list is:",
+    "code": null,
+    "options": [
+      "A heap algorithm",
+      "Nodes connected by pointers",
+      "A contiguous array only",
+      "A sorting rule"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Linked lists store items in nodes linked by references."
+  },
+  {
+    "id": "ds_081",
+    "question": "Which statement about tree is correct?",
+    "code": null,
+    "options": [
+      "A hierarchical data structure with root and children",
+      "A linear sequence",
+      "A queue discipline",
+      "A hash table only"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_082",
+    "question": "What is the main purpose of tree in Data Structures?",
+    "code": null,
+    "options": [
+      "A queue discipline",
+      "A linear sequence",
+      "A hash table only",
+      "A hierarchical data structure with root and children"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_083",
+    "question": "Which option best describes tree?",
+    "code": null,
+    "options": [
+      "A hash table only",
+      "A queue discipline",
+      "A hierarchical data structure with root and children",
+      "A linear sequence"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_084",
+    "question": "In Data Structures, tree refers to:",
+    "code": null,
+    "options": [
+      "A hierarchical data structure with root and children",
+      "A linear sequence",
+      "A queue discipline",
+      "A hash table only"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_085",
+    "question": "What does tree primarily do?",
+    "code": null,
+    "options": [
+      "A linear sequence",
+      "A hierarchical data structure with root and children",
+      "A hash table only",
+      "A queue discipline"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_086",
+    "question": "Choose the best description of tree.",
+    "code": null,
+    "options": [
+      "A linear sequence",
+      "A hash table only",
+      "A hierarchical data structure with root and children",
+      "A queue discipline"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_087",
+    "question": "Which is true about tree?",
+    "code": null,
+    "options": [
+      "A hash table only",
+      "A queue discipline",
+      "A hierarchical data structure with root and children",
+      "A linear sequence"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_088",
+    "question": "How is tree best explained?",
+    "code": null,
+    "options": [
+      "A hierarchical data structure with root and children",
+      "A queue discipline",
+      "A hash table only",
+      "A linear sequence"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_089",
+    "question": "Which answer matches tree most closely?",
+    "code": null,
+    "options": [
+      "A linear sequence",
+      "A hash table only",
+      "A hierarchical data structure with root and children",
+      "A queue discipline"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_090",
+    "question": "For Data Structures, tree is:",
+    "code": null,
+    "options": [
+      "A hierarchical data structure with root and children",
+      "A linear sequence",
+      "A queue discipline",
+      "A hash table only"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Trees organize data in parent-child levels."
+  },
+  {
+    "id": "ds_091",
+    "question": "Which statement about hash table is correct?",
+    "code": null,
+    "options": [
+      "A key-value structure using hashing for fast lookup",
+      "A recursion tree",
+      "A stack frame",
+      "An adjacency matrix"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_092",
+    "question": "What is the main purpose of hash table in Data Structures?",
+    "code": null,
+    "options": [
+      "A key-value structure using hashing for fast lookup",
+      "An adjacency matrix",
+      "A stack frame",
+      "A recursion tree"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_093",
+    "question": "Which option best describes hash table?",
+    "code": null,
+    "options": [
+      "A recursion tree",
+      "A key-value structure using hashing for fast lookup",
+      "A stack frame",
+      "An adjacency matrix"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_094",
+    "question": "In Data Structures, hash table refers to:",
+    "code": null,
+    "options": [
+      "An adjacency matrix",
+      "A stack frame",
+      "A recursion tree",
+      "A key-value structure using hashing for fast lookup"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_095",
+    "question": "What does hash table primarily do?",
+    "code": null,
+    "options": [
+      "An adjacency matrix",
+      "A stack frame",
+      "A key-value structure using hashing for fast lookup",
+      "A recursion tree"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_096",
+    "question": "Choose the best description of hash table.",
+    "code": null,
+    "options": [
+      "A key-value structure using hashing for fast lookup",
+      "A stack frame",
+      "A recursion tree",
+      "An adjacency matrix"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_097",
+    "question": "Which is true about hash table?",
+    "code": null,
+    "options": [
+      "An adjacency matrix",
+      "A stack frame",
+      "A recursion tree",
+      "A key-value structure using hashing for fast lookup"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_098",
+    "question": "How is hash table best explained?",
+    "code": null,
+    "options": [
+      "A recursion tree",
+      "A stack frame",
+      "A key-value structure using hashing for fast lookup",
+      "An adjacency matrix"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_099",
+    "question": "Which answer matches hash table most closely?",
+    "code": null,
+    "options": [
+      "A key-value structure using hashing for fast lookup",
+      "An adjacency matrix",
+      "A stack frame",
+      "A recursion tree"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
+  },
+  {
+    "id": "ds_100",
+    "question": "For Data Structures, hash table is:",
+    "code": null,
+    "options": [
+      "An adjacency matrix",
+      "A key-value structure using hashing for fast lookup",
+      "A recursion tree",
+      "A stack frame"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "Hash tables map keys to buckets or slots for fast access."
   }
 ]

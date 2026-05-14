@@ -3,7 +3,12 @@
     "id": "crypto_001",
     "question": "AES is primarily used for:",
     "code": null,
-    "options": ["Symmetric encryption", "Asymmetric key exchange", "Hashing", "Digital signatures"],
+    "options": [
+      "Symmetric encryption",
+      "Asymmetric key exchange",
+      "Hashing",
+      "Digital signatures"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES is a symmetric block cipher."
@@ -12,7 +17,12 @@
     "id": "crypto_002",
     "question": "RSA is an example of:",
     "code": null,
-    "options": ["Symmetric encryption", "Asymmetric encryption", "Hashing", "MAC"],
+    "options": [
+      "Symmetric encryption",
+      "Asymmetric encryption",
+      "Hashing",
+      "MAC"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "RSA uses public and private keys."
@@ -21,7 +31,12 @@
     "id": "crypto_003",
     "question": "Which is a hashing algorithm?",
     "code": null,
-    "options": ["SHA-256", "AES", "RSA", "DES"],
+    "options": [
+      "SHA-256",
+      "AES",
+      "RSA",
+      "DES"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "SHA-256 produces fixed-length hashes."
@@ -30,7 +45,12 @@
     "id": "crypto_004",
     "question": "Which property ensures data has not been altered?",
     "code": null,
-    "options": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Integrity verifies data is unchanged."
@@ -39,7 +59,12 @@
     "id": "crypto_005",
     "question": "Digital signatures provide:",
     "code": null,
-    "options": ["Confidentiality", "Authentication and non-repudiation", "Compression", "Routing"],
+    "options": [
+      "Confidentiality",
+      "Authentication and non-repudiation",
+      "Compression",
+      "Routing"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Signatures prove sender identity and prevent denial."
@@ -48,7 +73,12 @@
     "id": "crypto_006",
     "question": "Which algorithm is considered a block cipher?",
     "code": null,
-    "options": ["AES", "RC4", "SHA-1", "HMAC"],
+    "options": [
+      "AES",
+      "RC4",
+      "SHA-1",
+      "HMAC"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES encrypts data in fixed-size blocks."
@@ -57,7 +87,12 @@
     "id": "crypto_007",
     "question": "Which algorithm is a stream cipher?",
     "code": null,
-    "options": ["RC4", "AES", "DES", "RSA"],
+    "options": [
+      "RC4",
+      "AES",
+      "DES",
+      "RSA"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "RC4 is a classic stream cipher."
@@ -66,7 +101,12 @@
     "id": "crypto_008",
     "question": "Which is a key exchange method?",
     "code": null,
-    "options": ["Diffie-Hellman", "SHA-256", "HMAC", "MD5"],
+    "options": [
+      "Diffie-Hellman",
+      "SHA-256",
+      "HMAC",
+      "MD5"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Diffie-Hellman establishes a shared secret."
@@ -75,7 +115,12 @@
     "id": "crypto_009",
     "question": "Which mode provides confidentiality and integrity?",
     "code": null,
-    "options": ["AES-GCM", "AES-ECB", "AES-CBC only", "RSA"],
+    "options": [
+      "AES-GCM",
+      "AES-ECB",
+      "AES-CBC only",
+      "RSA"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "GCM is an authenticated encryption mode."
@@ -84,7 +129,12 @@
     "id": "crypto_010",
     "question": "ECB mode is generally insecure because:",
     "code": null,
-    "options": ["It is too slow", "It reveals patterns", "It is asymmetric", "It uses large keys"],
+    "options": [
+      "It is too slow",
+      "It reveals patterns",
+      "It is asymmetric",
+      "It uses large keys"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "ECB encrypts identical blocks the same way, leaking patterns."
@@ -93,7 +143,12 @@
     "id": "crypto_011",
     "question": "A salt is used to:",
     "code": null,
-    "options": ["Encrypt faster", "Prevent hash precomputation", "Reduce key size", "Compress data"],
+    "options": [
+      "Encrypt faster",
+      "Prevent hash precomputation",
+      "Reduce key size",
+      "Compress data"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Salts defeat rainbow table attacks."
@@ -102,7 +157,12 @@
     "id": "crypto_012",
     "question": "Which is an example of a MAC?",
     "code": null,
-    "options": ["HMAC", "RSA", "AES", "SHA-1"],
+    "options": [
+      "HMAC",
+      "RSA",
+      "AES",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "HMAC provides message authentication."
@@ -111,7 +171,12 @@
     "id": "crypto_013",
     "question": "Which algorithm is considered deprecated for security?",
     "code": null,
-    "options": ["MD5", "SHA-256", "AES", "RSA"],
+    "options": [
+      "MD5",
+      "SHA-256",
+      "AES",
+      "RSA"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "MD5 has known collision weaknesses."
@@ -120,7 +185,12 @@
     "id": "crypto_014",
     "question": "Which algorithm is considered weak due to small key size?",
     "code": null,
-    "options": ["DES", "AES-256", "RSA-2048", "SHA-256"],
+    "options": [
+      "DES",
+      "AES-256",
+      "RSA-2048",
+      "SHA-256"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "DES uses a 56-bit key, which is too small today."
@@ -129,7 +199,12 @@
     "id": "crypto_015",
     "question": "Which is a public key algorithm?",
     "code": null,
-    "options": ["RSA", "AES", "3DES", "ChaCha20"],
+    "options": [
+      "RSA",
+      "AES",
+      "3DES",
+      "ChaCha20"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "RSA is a public key algorithm."
@@ -138,7 +213,12 @@
     "id": "crypto_016",
     "question": "Which provides non-repudiation?",
     "code": null,
-    "options": ["Digital signature", "Symmetric encryption", "Hash only", "Compression"],
+    "options": [
+      "Digital signature",
+      "Symmetric encryption",
+      "Hash only",
+      "Compression"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Digital signatures prevent sender denial."
@@ -147,7 +227,12 @@
     "id": "crypto_017",
     "question": "Which algorithm is commonly used for password hashing?",
     "code": null,
-    "options": ["bcrypt", "AES", "RSA", "DES"],
+    "options": [
+      "bcrypt",
+      "AES",
+      "RSA",
+      "DES"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "bcrypt is designed for password hashing."
@@ -156,7 +241,12 @@
     "id": "crypto_018",
     "question": "Which algorithm is designed for fast stream encryption?",
     "code": null,
-    "options": ["ChaCha20", "AES-CBC", "RSA", "SHA-256"],
+    "options": [
+      "ChaCha20",
+      "AES-CBC",
+      "RSA",
+      "SHA-256"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "ChaCha20 is a modern stream cipher."
@@ -165,7 +255,12 @@
     "id": "crypto_019",
     "question": "Key length increases primarily improve:",
     "code": null,
-    "options": ["Speed", "Security", "Compression", "Routing"],
+    "options": [
+      "Speed",
+      "Security",
+      "Compression",
+      "Routing"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Longer keys increase resistance to brute force."
@@ -174,7 +269,12 @@
     "id": "crypto_020",
     "question": "Public key encryption is generally:",
     "code": null,
-    "options": ["Faster than symmetric", "Slower than symmetric", "Equal speed", "Not used"],
+    "options": [
+      "Faster than symmetric",
+      "Slower than symmetric",
+      "Equal speed",
+      "Not used"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Asymmetric operations are slower than symmetric ones."
@@ -183,7 +283,12 @@
     "id": "crypto_021",
     "question": "Which protocol uses TLS for secure communication?",
     "code": null,
-    "options": ["HTTPS", "HTTP", "FTP", "Telnet"],
+    "options": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "Telnet"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "HTTPS runs HTTP over TLS."
@@ -192,7 +297,12 @@
     "id": "crypto_022",
     "question": "A hash function should be:",
     "code": null,
-    "options": ["Reversible", "One-way", "Symmetric", "Key-based"],
+    "options": [
+      "Reversible",
+      "One-way",
+      "Symmetric",
+      "Key-based"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Hashes should be one-way."
@@ -201,7 +311,12 @@
     "id": "crypto_023",
     "question": "A collision-resistant hash means:",
     "code": null,
-    "options": ["Hard to find two inputs with same hash", "Hash is always unique", "Hash is reversible", "Hash is encrypted"],
+    "options": [
+      "Hard to find two inputs with same hash",
+      "Hash is always unique",
+      "Hash is reversible",
+      "Hash is encrypted"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Collision resistance makes finding equal hashes infeasible."
@@ -210,7 +325,12 @@
     "id": "crypto_024",
     "question": "Which algorithm provides authenticated encryption?",
     "code": null,
-    "options": ["AES-GCM", "AES-ECB", "DES-ECB", "RC4"],
+    "options": [
+      "AES-GCM",
+      "AES-ECB",
+      "DES-ECB",
+      "RC4"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "GCM provides confidentiality and integrity."
@@ -219,7 +339,12 @@
     "id": "crypto_025",
     "question": "Which algorithm is a key derivation function?",
     "code": null,
-    "options": ["PBKDF2", "RSA", "AES", "SHA-1"],
+    "options": [
+      "PBKDF2",
+      "RSA",
+      "AES",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "PBKDF2 derives keys from passwords."
@@ -228,7 +353,12 @@
     "id": "crypto_026",
     "question": "The purpose of an IV in block ciphers is to:",
     "code": null,
-    "options": ["Increase key size", "Ensure different ciphertexts for same plaintext", "Compress data", "Provide public key"],
+    "options": [
+      "Increase key size",
+      "Ensure different ciphertexts for same plaintext",
+      "Compress data",
+      "Provide public key"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "An IV ensures randomness so identical plaintext blocks differ."
@@ -237,7 +367,12 @@
     "id": "crypto_027",
     "question": "Which is a standard elliptic-curve algorithm?",
     "code": null,
-    "options": ["ECDSA", "RSA", "DES", "MD5"],
+    "options": [
+      "ECDSA",
+      "RSA",
+      "DES",
+      "MD5"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "ECDSA is based on elliptic curves."
@@ -246,7 +381,12 @@
     "id": "crypto_028",
     "question": "Which property ensures the sender cannot deny a message?",
     "code": null,
-    "options": ["Confidentiality", "Non-repudiation", "Availability", "Obfuscation"],
+    "options": [
+      "Confidentiality",
+      "Non-repudiation",
+      "Availability",
+      "Obfuscation"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "Non-repudiation is provided by digital signatures."
@@ -255,7 +395,12 @@
     "id": "crypto_029",
     "question": "Which is a common use of HMAC?",
     "code": null,
-    "options": ["Encrypting data", "Authenticating messages", "Compressing files", "Routing packets"],
+    "options": [
+      "Encrypting data",
+      "Authenticating messages",
+      "Compressing files",
+      "Routing packets"
+    ],
     "answer": 1,
     "difficulty": "easy",
     "explanation": "HMAC authenticates and verifies message integrity."
@@ -264,7 +409,12 @@
     "id": "crypto_030",
     "question": "Which algorithm is vulnerable to length extension attacks?",
     "code": null,
-    "options": ["SHA-256", "AES", "RSA", "ECC"],
+    "options": [
+      "SHA-256",
+      "AES",
+      "RSA",
+      "ECC"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Merkle-Damgard hashes like SHA-256 can have length extension issues."
@@ -273,7 +423,12 @@
     "id": "crypto_031",
     "question": "Which mode requires padding for block alignment?",
     "code": null,
-    "options": ["AES-CBC", "AES-GCM", "ChaCha20", "RC4"],
+    "options": [
+      "AES-CBC",
+      "AES-GCM",
+      "ChaCha20",
+      "RC4"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "CBC mode requires plaintext to be block-aligned."
@@ -282,7 +437,12 @@
     "id": "crypto_032",
     "question": "Which algorithm is symmetric and uses 128-bit blocks?",
     "code": null,
-    "options": ["AES", "RSA", "DSA", "SHA-1"],
+    "options": [
+      "AES",
+      "RSA",
+      "DSA",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES uses 128-bit blocks."
@@ -291,7 +451,12 @@
     "id": "crypto_033",
     "question": "Which is a secure hash replacement for MD5?",
     "code": null,
-    "options": ["SHA-256", "DES", "RC4", "RSA"],
+    "options": [
+      "SHA-256",
+      "DES",
+      "RC4",
+      "RSA"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "SHA-256 is a modern secure hash."
@@ -300,7 +465,12 @@
     "id": "crypto_034",
     "question": "Which algorithm is used for key exchange in TLS?",
     "code": null,
-    "options": ["Diffie-Hellman", "AES", "HMAC", "SHA-1"],
+    "options": [
+      "Diffie-Hellman",
+      "AES",
+      "HMAC",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "DH (or ECDH) is used for key exchange."
@@ -309,7 +479,12 @@
     "id": "crypto_035",
     "question": "A brute-force attack attempts to:",
     "code": null,
-    "options": ["Guess keys by trying all possibilities", "Exploit a backdoor", "Spoof ARP", "Flood a server"],
+    "options": [
+      "Guess keys by trying all possibilities",
+      "Exploit a backdoor",
+      "Spoof ARP",
+      "Flood a server"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Brute force tries every key until one works."
@@ -318,7 +493,12 @@
     "id": "crypto_036",
     "question": "Which property ensures secrecy of data?",
     "code": null,
-    "options": ["Confidentiality", "Integrity", "Availability", "Non-repudiation"],
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Confidentiality keeps data private."
@@ -327,7 +507,12 @@
     "id": "crypto_037",
     "question": "Which algorithm is designed for hashing passwords with cost factor?",
     "code": null,
-    "options": ["bcrypt", "MD5", "SHA-1", "RC4"],
+    "options": [
+      "bcrypt",
+      "MD5",
+      "SHA-1",
+      "RC4"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "bcrypt has a configurable cost factor."
@@ -336,7 +521,12 @@
     "id": "crypto_038",
     "question": "What is the role of a nonce?",
     "code": null,
-    "options": ["A random unique value", "A secret key", "A hash", "A password"],
+    "options": [
+      "A random unique value",
+      "A secret key",
+      "A hash",
+      "A password"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "A nonce is a number used once to prevent replay."
@@ -345,7 +535,12 @@
     "id": "crypto_039",
     "question": "Which attack replays valid messages?",
     "code": null,
-    "options": ["Replay attack", "Phishing", "DoS", "Tampering"],
+    "options": [
+      "Replay attack",
+      "Phishing",
+      "DoS",
+      "Tampering"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "Replay attacks reuse captured valid messages."
@@ -354,7 +549,12 @@
     "id": "crypto_040",
     "question": "Which algorithm provides message authentication with a shared key?",
     "code": null,
-    "options": ["HMAC", "RSA", "ECC", "SHA-1"],
+    "options": [
+      "HMAC",
+      "RSA",
+      "ECC",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "HMAC uses a shared secret for authentication."
@@ -363,7 +563,12 @@
     "id": "crypto_041",
     "question": "Which is a block cipher mode?",
     "code": null,
-    "options": ["CBC", "SHA", "RSA", "HMAC"],
+    "options": [
+      "CBC",
+      "SHA",
+      "RSA",
+      "HMAC"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "CBC is a block cipher mode."
@@ -372,7 +577,12 @@
     "id": "crypto_042",
     "question": "Which is a modern replacement for DES?",
     "code": null,
-    "options": ["AES", "MD5", "RC4", "SHA-1"],
+    "options": [
+      "AES",
+      "MD5",
+      "RC4",
+      "SHA-1"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES replaces DES for symmetric encryption."
@@ -381,7 +591,12 @@
     "id": "crypto_043",
     "question": "Which algorithm is symmetric and uses 256-bit keys?",
     "code": null,
-    "options": ["AES-256", "RSA-2048", "ECDSA", "SHA-256"],
+    "options": [
+      "AES-256",
+      "RSA-2048",
+      "ECDSA",
+      "SHA-256"
+    ],
     "answer": 0,
     "difficulty": "easy",
     "explanation": "AES-256 is a symmetric cipher with 256-bit key size."
@@ -390,7 +605,12 @@
     "id": "crypto_044",
     "question": "Which algorithm signs data using elliptic curves?",
     "code": null,
-    "options": ["ECDSA", "AES", "RSA", "DES"],
+    "options": [
+      "ECDSA",
+      "AES",
+      "RSA",
+      "DES"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "ECDSA is an elliptic-curve signature algorithm."
@@ -399,7 +619,12 @@
     "id": "crypto_045",
     "question": "Which technique combines encryption and MAC?",
     "code": null,
-    "options": ["Authenticated encryption", "Key exchange", "Hashing", "Compression"],
+    "options": [
+      "Authenticated encryption",
+      "Key exchange",
+      "Hashing",
+      "Compression"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "Authenticated encryption provides confidentiality and integrity."
@@ -408,7 +633,12 @@
     "id": "crypto_046",
     "question": "Which algorithm is commonly used in JWT signatures?",
     "code": null,
-    "options": ["HS256 (HMAC SHA-256)", "AES", "RC4", "MD5"],
+    "options": [
+      "HS256 (HMAC SHA-256)",
+      "AES",
+      "RC4",
+      "MD5"
+    ],
     "answer": 0,
     "difficulty": "medium",
     "explanation": "JWT commonly uses HMAC SHA-256 or RSA signatures."
@@ -417,7 +647,12 @@
     "id": "crypto_047",
     "question": "Which of these is not a cryptographic hash?",
     "code": null,
-    "options": ["SHA-256", "SHA-1", "MD5", "AES"],
+    "options": [
+      "SHA-256",
+      "SHA-1",
+      "MD5",
+      "AES"
+    ],
     "answer": 3,
     "difficulty": "easy",
     "explanation": "AES is an encryption algorithm, not a hash."
@@ -426,7 +661,12 @@
     "id": "crypto_048",
     "question": "A one-time pad is:",
     "code": null,
-    "options": ["Perfectly secure if used correctly", "Always weak", "Asymmetric", "A hash"],
+    "options": [
+      "Perfectly secure if used correctly",
+      "Always weak",
+      "Asymmetric",
+      "A hash"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "One-time pad is secure if the key is truly random and used once."
@@ -435,7 +675,12 @@
     "id": "crypto_049",
     "question": "Which attack targets weak random number generation?",
     "code": null,
-    "options": ["Predictable nonce attack", "Replay attack", "Phishing", "DDoS"],
+    "options": [
+      "Predictable nonce attack",
+      "Replay attack",
+      "Phishing",
+      "DDoS"
+    ],
     "answer": 0,
     "difficulty": "hard",
     "explanation": "Weak randomness can allow nonce prediction."
@@ -444,9 +689,714 @@
     "id": "crypto_050",
     "question": "What is the purpose of key rotation?",
     "code": null,
-    "options": ["Reuse keys forever", "Reduce impact if a key is compromised", "Increase speed", "Disable encryption"],
+    "options": [
+      "Reuse keys forever",
+      "Reduce impact if a key is compromised",
+      "Increase speed",
+      "Disable encryption"
+    ],
     "answer": 1,
     "difficulty": "medium",
     "explanation": "Rotating keys limits the damage from a compromised key."
+  },
+  {
+    "id": "crypto_051",
+    "question": "Which statement about AES is correct?",
+    "code": null,
+    "options": [
+      "A hash table",
+      "A routing protocol",
+      "A text editor",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_052",
+    "question": "What is the main purpose of AES in Cryptography?",
+    "code": null,
+    "options": [
+      "A routing protocol",
+      "A text editor",
+      "A hash table",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_053",
+    "question": "Which option best describes AES?",
+    "code": null,
+    "options": [
+      "A hash table",
+      "A text editor",
+      "A symmetric block cipher standard",
+      "A routing protocol"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_054",
+    "question": "In Cryptography, AES refers to:",
+    "code": null,
+    "options": [
+      "A text editor",
+      "A hash table",
+      "A routing protocol",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_055",
+    "question": "What does AES primarily do?",
+    "code": null,
+    "options": [
+      "A routing protocol",
+      "A text editor",
+      "A hash table",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_056",
+    "question": "Choose the best description of AES.",
+    "code": null,
+    "options": [
+      "A hash table",
+      "A text editor",
+      "A routing protocol",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_057",
+    "question": "Which is true about AES?",
+    "code": null,
+    "options": [
+      "A text editor",
+      "A hash table",
+      "A routing protocol",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_058",
+    "question": "How is AES best explained?",
+    "code": null,
+    "options": [
+      "A text editor",
+      "A hash table",
+      "A symmetric block cipher standard",
+      "A routing protocol"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_059",
+    "question": "Which answer matches AES most closely?",
+    "code": null,
+    "options": [
+      "A routing protocol",
+      "A hash table",
+      "A text editor",
+      "A symmetric block cipher standard"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_060",
+    "question": "For Cryptography, AES is:",
+    "code": null,
+    "options": [
+      "A routing protocol",
+      "A symmetric block cipher standard",
+      "A text editor",
+      "A hash table"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "AES is a widely used symmetric encryption algorithm."
+  },
+  {
+    "id": "crypto_061",
+    "question": "Which statement about RSA is correct?",
+    "code": null,
+    "options": [
+      "A SQL clause",
+      "A symmetric stream cipher",
+      "A public-key cryptosystem based on number theory",
+      "A file format"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_062",
+    "question": "What is the main purpose of RSA in Cryptography?",
+    "code": null,
+    "options": [
+      "A file format",
+      "A public-key cryptosystem based on number theory",
+      "A SQL clause",
+      "A symmetric stream cipher"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_063",
+    "question": "Which option best describes RSA?",
+    "code": null,
+    "options": [
+      "A file format",
+      "A public-key cryptosystem based on number theory",
+      "A SQL clause",
+      "A symmetric stream cipher"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_064",
+    "question": "In Cryptography, RSA refers to:",
+    "code": null,
+    "options": [
+      "A file format",
+      "A public-key cryptosystem based on number theory",
+      "A SQL clause",
+      "A symmetric stream cipher"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_065",
+    "question": "What does RSA primarily do?",
+    "code": null,
+    "options": [
+      "A file format",
+      "A SQL clause",
+      "A public-key cryptosystem based on number theory",
+      "A symmetric stream cipher"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_066",
+    "question": "Choose the best description of RSA.",
+    "code": null,
+    "options": [
+      "A file format",
+      "A symmetric stream cipher",
+      "A SQL clause",
+      "A public-key cryptosystem based on number theory"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_067",
+    "question": "Which is true about RSA?",
+    "code": null,
+    "options": [
+      "A SQL clause",
+      "A file format",
+      "A symmetric stream cipher",
+      "A public-key cryptosystem based on number theory"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_068",
+    "question": "How is RSA best explained?",
+    "code": null,
+    "options": [
+      "A SQL clause",
+      "A public-key cryptosystem based on number theory",
+      "A file format",
+      "A symmetric stream cipher"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_069",
+    "question": "Which answer matches RSA most closely?",
+    "code": null,
+    "options": [
+      "A public-key cryptosystem based on number theory",
+      "A SQL clause",
+      "A symmetric stream cipher",
+      "A file format"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_070",
+    "question": "For Cryptography, RSA is:",
+    "code": null,
+    "options": [
+      "A SQL clause",
+      "A symmetric stream cipher",
+      "A file format",
+      "A public-key cryptosystem based on number theory"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "RSA uses a public and private key pair."
+  },
+  {
+    "id": "crypto_071",
+    "question": "Which statement about hash function is correct?",
+    "code": null,
+    "options": [
+      "Reversibly encrypts messages",
+      "Manages memory",
+      "Schedules tasks",
+      "Produces a fixed-length digest from input"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_072",
+    "question": "What is the main purpose of hash function in Cryptography?",
+    "code": null,
+    "options": [
+      "Schedules tasks",
+      "Reversibly encrypts messages",
+      "Produces a fixed-length digest from input",
+      "Manages memory"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_073",
+    "question": "Which option best describes hash function?",
+    "code": null,
+    "options": [
+      "Schedules tasks",
+      "Manages memory",
+      "Produces a fixed-length digest from input",
+      "Reversibly encrypts messages"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_074",
+    "question": "In Cryptography, hash function refers to:",
+    "code": null,
+    "options": [
+      "Produces a fixed-length digest from input",
+      "Reversibly encrypts messages",
+      "Manages memory",
+      "Schedules tasks"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_075",
+    "question": "What does hash function primarily do?",
+    "code": null,
+    "options": [
+      "Reversibly encrypts messages",
+      "Schedules tasks",
+      "Manages memory",
+      "Produces a fixed-length digest from input"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_076",
+    "question": "Choose the best description of hash function.",
+    "code": null,
+    "options": [
+      "Manages memory",
+      "Produces a fixed-length digest from input",
+      "Reversibly encrypts messages",
+      "Schedules tasks"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_077",
+    "question": "Which is true about hash function?",
+    "code": null,
+    "options": [
+      "Manages memory",
+      "Schedules tasks",
+      "Produces a fixed-length digest from input",
+      "Reversibly encrypts messages"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_078",
+    "question": "How is hash function best explained?",
+    "code": null,
+    "options": [
+      "Schedules tasks",
+      "Manages memory",
+      "Reversibly encrypts messages",
+      "Produces a fixed-length digest from input"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_079",
+    "question": "Which answer matches hash function most closely?",
+    "code": null,
+    "options": [
+      "Reversibly encrypts messages",
+      "Schedules tasks",
+      "Manages memory",
+      "Produces a fixed-length digest from input"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_080",
+    "question": "For Cryptography, hash function is:",
+    "code": null,
+    "options": [
+      "Manages memory",
+      "Reversibly encrypts messages",
+      "Schedules tasks",
+      "Produces a fixed-length digest from input"
+    ],
+    "answer": 3,
+    "difficulty": "hard",
+    "explanation": "A hash function maps input data to a digest."
+  },
+  {
+    "id": "crypto_081",
+    "question": "Which statement about public key is correct?",
+    "code": null,
+    "options": [
+      "A key shared openly in asymmetric cryptography",
+      "A secret file",
+      "A broadcast address",
+      "A password reset token"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_082",
+    "question": "What is the main purpose of public key in Cryptography?",
+    "code": null,
+    "options": [
+      "A secret file",
+      "A key shared openly in asymmetric cryptography",
+      "A broadcast address",
+      "A password reset token"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_083",
+    "question": "Which option best describes public key?",
+    "code": null,
+    "options": [
+      "A broadcast address",
+      "A key shared openly in asymmetric cryptography",
+      "A secret file",
+      "A password reset token"
+    ],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_084",
+    "question": "In Cryptography, public key refers to:",
+    "code": null,
+    "options": [
+      "A secret file",
+      "A password reset token",
+      "A broadcast address",
+      "A key shared openly in asymmetric cryptography"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_085",
+    "question": "What does public key primarily do?",
+    "code": null,
+    "options": [
+      "A secret file",
+      "A password reset token",
+      "A key shared openly in asymmetric cryptography",
+      "A broadcast address"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_086",
+    "question": "Choose the best description of public key.",
+    "code": null,
+    "options": [
+      "A password reset token",
+      "A secret file",
+      "A broadcast address",
+      "A key shared openly in asymmetric cryptography"
+    ],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_087",
+    "question": "Which is true about public key?",
+    "code": null,
+    "options": [
+      "A broadcast address",
+      "A secret file",
+      "A key shared openly in asymmetric cryptography",
+      "A password reset token"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_088",
+    "question": "How is public key best explained?",
+    "code": null,
+    "options": [
+      "A password reset token",
+      "A broadcast address",
+      "A key shared openly in asymmetric cryptography",
+      "A secret file"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_089",
+    "question": "Which answer matches public key most closely?",
+    "code": null,
+    "options": [
+      "A key shared openly in asymmetric cryptography",
+      "A secret file",
+      "A broadcast address",
+      "A password reset token"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_090",
+    "question": "For Cryptography, public key is:",
+    "code": null,
+    "options": [
+      "A key shared openly in asymmetric cryptography",
+      "A password reset token",
+      "A broadcast address",
+      "A secret file"
+    ],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "The public key can be shared with everyone."
+  },
+  {
+    "id": "crypto_091",
+    "question": "Which statement about digital signature is correct?",
+    "code": null,
+    "options": [
+      "Video encoding",
+      "Routing metric",
+      "File compression",
+      "Provides authenticity and nonrepudiation"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_092",
+    "question": "What is the main purpose of digital signature in Cryptography?",
+    "code": null,
+    "options": [
+      "Provides authenticity and nonrepudiation",
+      "File compression",
+      "Routing metric",
+      "Video encoding"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_093",
+    "question": "Which option best describes digital signature?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Video encoding",
+      "Provides authenticity and nonrepudiation",
+      "Routing metric"
+    ],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_094",
+    "question": "In Cryptography, digital signature refers to:",
+    "code": null,
+    "options": [
+      "Video encoding",
+      "Provides authenticity and nonrepudiation",
+      "Routing metric",
+      "File compression"
+    ],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_095",
+    "question": "What does digital signature primarily do?",
+    "code": null,
+    "options": [
+      "Provides authenticity and nonrepudiation",
+      "Video encoding",
+      "Routing metric",
+      "File compression"
+    ],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_096",
+    "question": "Choose the best description of digital signature.",
+    "code": null,
+    "options": [
+      "Provides authenticity and nonrepudiation",
+      "File compression",
+      "Routing metric",
+      "Video encoding"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_097",
+    "question": "Which is true about digital signature?",
+    "code": null,
+    "options": [
+      "Video encoding",
+      "Routing metric",
+      "Provides authenticity and nonrepudiation",
+      "File compression"
+    ],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_098",
+    "question": "How is digital signature best explained?",
+    "code": null,
+    "options": [
+      "File compression",
+      "Routing metric",
+      "Video encoding",
+      "Provides authenticity and nonrepudiation"
+    ],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_099",
+    "question": "Which answer matches digital signature most closely?",
+    "code": null,
+    "options": [
+      "Provides authenticity and nonrepudiation",
+      "Video encoding",
+      "File compression",
+      "Routing metric"
+    ],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A digital signature proves origin and integrity."
+  },
+  {
+    "id": "crypto_100",
+    "question": "For Cryptography, digital signature is:",
+    "code": null,
+    "options": [
+      "Video encoding",
+      "Provides authenticity and nonrepudiation",
+      "File compression",
+      "Routing metric"
+    ],
+    "answer": 1,
+    "difficulty": "hard",
+    "explanation": "A digital signature proves origin and integrity."
   }
 ]
