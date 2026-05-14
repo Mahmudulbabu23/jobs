@@ -755,6 +755,60 @@ ul.blist li strong { color: var(--text); }
 .mq-a:hover { border-color: var(--accent2); color: var(--text); }
 .mq-reveal { display: none; margin-top: .7rem; padding: .6rem .9rem; background: rgba(63,185,80,.1); border: 1px solid rgba(63,185,80,.3); border-radius: 6px; font-size: .88rem; color: var(--accent3); }
 .mq-reveal.show { display: block; }
+.diagram-practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.diagram-card {
+  background: var(--surface2);
+  border: 1px solid rgba(88,166,255,.18);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+.diagram-card h5 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: .35rem;
+}
+.diagram-card .diagram-label {
+  font-family: 'DM Mono', monospace;
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: .7rem;
+  display: block;
+}
+.diagram-card .diagram-art {
+  white-space: pre-wrap;
+  background: rgba(13,17,23,.55);
+  border: 1px solid rgba(125,133,144,.18);
+  border-radius: 8px;
+  padding: .8rem;
+  font-family: 'DM Mono', monospace;
+  font-size: .76rem;
+  line-height: 1.55;
+  color: #c9d1d9;
+  margin: .75rem 0;
+}
+.diagram-card .diagram-answer {
+  font-size: .88rem;
+  color: #c9d1d9;
+}
+.diagram-card .diagram-answer strong {
+  color: var(--text);
+}
+.diagram-shot {
+  width: 100%;
+  display: block;
+  margin: .75rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(125,133,144,.18);
+  background: #0b0f14;
+}
 </style>
 </head>
 <body>
@@ -777,6 +831,7 @@ ul.blist li strong { color: var(--text); }
     <span class="pill pill-y">Cyber Security</span>
     <span class="pill pill-o">Digital Logic</span>
     <span class="pill pill-b">AI / ML</span>
+    <span class="pill pill-g">Computer Architecture</span>
   </div>
 </div>
 
@@ -794,6 +849,7 @@ ul.blist li strong { color: var(--text); }
   <a href="#ch10">AI / ML</a>
   <a href="#ch11">TOC</a>
   <a href="#ch12">C / Java Concepts</a>
+  <a href="#ch13">Comp Arch / µP</a>
 </nav>
 
 <main>
@@ -1321,6 +1377,38 @@ Recurse on left: [3,1,2,1] and right: [8,10]</div>
         <span class="callout-title">Topological Sort — Key Rule</span>
         Only works on <strong>DAGs (Directed Acyclic Graphs)</strong>. Algorithm: run DFS, push nodes to stack on finish. Pop stack = topological order. Used for: build systems, course prerequisites, task scheduling.
       </div>
+
+      <h4>Diagram-Based Exam Practice</h4>
+      <div class="simple-box">
+        <span class="sb-title">How to study these questions</span>
+        Read the picture, say what the diagram is showing, then write the answer in one short step-by-step explanation. This is how many exam questions test understanding, not just memory.
+      </div>
+      <div class="diagram-practice-grid">
+        <div class="diagram-card">
+          <span class="diagram-label">Sorting Trace</span>
+          <h5>Selection sort versus insertion sort side by side trace</h5>
+          <img class="diagram-shot" src="../diagram/selection_vs_insertion_sort.svg" alt="Selection sort versus insertion sort side by side trace" title="Selection sort versus insertion sort side by side trace">
+          <div class="diagram-answer"><strong>Answer:</strong> Selection sort repeatedly finds the smallest item and swaps it. Insertion sort inserts the current item into the correct place in the sorted part. For nearly sorted data, insertion sort usually needs fewer moves, so it is easier and faster to follow.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Sorting Trace</span>
+          <h5>Merge sort trace on array [38,27,43,3,9,82,10]</h5>
+          <img class="diagram-shot" src="../diagram/merge_sort_trace.svg" alt="Merge sort trace on array [38,27,43,3,9,82,10]" title="Merge sort trace on array [38,27,43,3,9,82,10]">
+          <div class="diagram-answer"><strong>Answer:</strong> Merge sort keeps splitting the array into smaller halves, then merges sorted halves back together. Final sorted order is 3, 9, 10, 27, 38, 43, 82. This is a divide-and-conquer algorithm with guaranteed O(n log n).</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Sorting Trace</span>
+          <h5>Quick sort partitioning trace</h5>
+          <img class="diagram-shot" src="../diagram/quick_sort_partition_trace.svg" alt="Quick sort partitioning trace" title="Quick sort partitioning trace">
+          <div class="diagram-answer"><strong>Answer:</strong> Quick sort picks a pivot, places smaller values on the left and larger values on the right, and puts the pivot in its final position. The important idea is that the pivot never moves again after partitioning.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Sorting Trace</span>
+          <h5>Heap sort complete trace including build heap and extract max phases</h5>
+          <img class="diagram-shot" src="../diagram/heap_sort_complete_trace.svg" alt="Heap sort complete trace including build heap and extract max phases" title="Heap sort complete trace including build heap and extract max phases">
+          <div class="diagram-answer"><strong>Answer:</strong> Heap sort first builds a max heap, then repeatedly removes the maximum element and places it at the end of the array. This gives a sorted array while keeping the algorithm in-place.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1465,6 +1553,28 @@ Dequeue again:    S2=[3,2] → pop → returns 2 ✅</div>
         <span class="callout-title">Amortized Analysis</span>
         Each element is pushed/popped at most <strong>twice</strong> (once into S1, once into S2). So amortized cost per operation = O(1). Even though a single dequeue might take O(n) to refill S2, this happens rarely enough that the average is still O(1).
       </div>
+
+      <h4>Picture Practice — Core Operations</h4>
+      <div class="diagram-practice-grid">
+        <div class="diagram-card">
+          <span class="diagram-label">Stack Trace</span>
+          <h5>Stack push and pop trace diagram</h5>
+          <img class="diagram-shot" src="../diagram/stack_operations_trace.svg" alt="Stack push and pop trace diagram" title="Stack push and pop trace diagram">
+          <div class="diagram-answer"><strong>Answer:</strong> The top item comes out first, so this is LIFO. If you push A, then B, then C, the first pop returns C. This is why stacks are used for recursion, undo, and expression evaluation.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Queue Trace</span>
+          <h5>Queue implemented using two stacks</h5>
+          <img class="diagram-shot" src="../diagram/queue_using_two_stacks.svg" alt="Queue implemented using two stacks" title="Queue implemented using two stacks">
+          <div class="diagram-answer"><strong>Answer:</strong> This shows how to build FIFO behavior from two LIFO stacks. New items go into the input stack, and items are moved to the output stack only when a dequeue is needed. That keeps the queue order correct.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Linked List Trace</span>
+          <h5>Linked list insert and delete operations</h5>
+          <img class="diagram-shot" src="../diagram/linked_list_insert_delete.svg" alt="Linked list insert and delete operations" title="Linked list insert and delete operations">
+          <div class="diagram-answer"><strong>Answer:</strong> A linked list changes by updating pointers, not moving all elements. Insert a node by changing next links. Delete a node by bypassing it. If the first node changes, update the head pointer too.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1509,6 +1619,34 @@ Complete BT = all levels full except possibly last (filled left-to-right)</div>
           <p>For node at index i: <strong>Left child = 2i+1</strong>, <strong>Right child = 2i+2</strong>, <strong>Parent = (i-1)/2</strong>. This is how heaps are stored in arrays without pointers.</p>
         </div>
       </div>
+
+      <h4>Picture Practice — Trees and Heap</h4>
+      <div class="diagram-practice-grid">
+        <div class="diagram-card">
+          <span class="diagram-label">Tree Traversal</span>
+          <h5>Binary Search Tree with three traversals</h5>
+          <img class="diagram-shot" src="../diagram/bst_traversals.svg" alt="Binary Search Tree with three traversals" title="Binary Search Tree with three traversals">
+          <div class="diagram-answer"><strong>Answer:</strong> In-order traversal gives sorted output in a BST. Pre-order visits root first, which is useful for copying a tree. Post-order visits children before the root, which is useful for deleting a tree safely.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Heap Build</span>
+          <h5>Max-heap construction from array</h5>
+          <img class="diagram-shot" src="../diagram/max_heap_build.svg" alt="Max-heap construction from array" title="Max-heap construction from array">
+          <div class="diagram-answer"><strong>Answer:</strong> A max heap keeps the largest element at the root. Build heap starts from the last non-leaf node and fixes each subtree. This is the fast way to prepare the array before heap sort or priority queue operations.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">AVL Rotation</span>
+          <h5>AVL tree LL rotation example</h5>
+          <img class="diagram-shot" src="../diagram/avl_tree_ll_rotation.svg" alt="AVL tree LL rotation example" title="AVL tree LL rotation example">
+          <div class="diagram-answer"><strong>Answer:</strong> This is a left-left imbalance, so one right rotation fixes it. After rotation, the tree becomes balanced again and search stays O(log n).</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">AVL Rotation</span>
+          <h5>All four AVL tree rotation cases: LL, RR, LR, RL</h5>
+          <img class="diagram-shot" src="../diagram/avl_all_4_rotations.svg" alt="All four AVL tree rotation cases: LL, RR, LR, RL" title="All four AVL tree rotation cases: LL, RR, LR, RL">
+          <div class="diagram-answer"><strong>Answer:</strong> AVL trees use LL, RR, LR, or RL rotations depending on where the new node was inserted. The goal is always the same: restore balance so the tree stays shallow and fast.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1541,6 +1679,16 @@ Complete BT = all levels full except possibly last (filled left-to-right)</div>
           <p>On collision, use a second hash function to compute step size. Eliminates clustering.</p>
         </div>
       </div>
+
+      <h4>Picture Practice — Hash Table</h4>
+      <div class="diagram-practice-grid">
+        <div class="diagram-card">
+          <span class="diagram-label">Hashing</span>
+          <h5>Hash table with chaining collision resolution</h5>
+          <img class="diagram-shot" src="../diagram/hash_table_chaining.svg" alt="Hash table with chaining collision resolution" title="Hash table with chaining collision resolution">
+          <div class="diagram-answer"><strong>Answer:</strong> When two keys hash to the same slot, chaining stores them in a list inside that bucket. This solves collisions without forcing the table to search for a nearby empty cell.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1562,6 +1710,151 @@ Complete BT = all levels full except possibly last (filled left-to-right)</div>
         <strong>Adjacency Matrix:</strong> Quick edge existence check needed, dense graph (E ≈ V²), Floyd-Warshall algorithm.<br>
         <strong>Adjacency List:</strong> BFS/DFS traversals, sparse graphs (E &lt;&lt; V²), most real-world graphs (social networks, road maps).
       </div>
+
+      <h4>Picture Practice — Graph Algorithms</h4>
+      <div class="diagram-practice-grid">
+        <div class="diagram-card">
+          <span class="diagram-label">Graph Traversal</span>
+          <h5>BFS vs DFS traversal on undirected graph</h5>
+          <img class="diagram-shot" src="../diagram/bfs_vs_dfs_graph.svg" alt="BFS vs DFS traversal on undirected graph" title="BFS vs DFS traversal on undirected graph">
+          <div class="diagram-answer"><strong>Answer:</strong> BFS visits level by level using a queue. DFS goes deep first using a stack or recursion. If the question asks for the shortest path in an unweighted graph, BFS is usually the right choice.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">Shortest Path</span>
+          <h5>Dijkstra's shortest path algorithm trace</h5>
+          <img class="diagram-shot" src="../diagram/dijkstra_shortest_path.svg" alt="Dijkstra's shortest path algorithm trace" title="Dijkstra's shortest path algorithm trace">
+          <div class="diagram-answer"><strong>Answer:</strong> Dijkstra starts with the source node, keeps tentative distances, and always chooses the smallest unvisited distance next. The final table shows the shortest known cost from the start node to every other node.</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">MST</span>
+          <h5>Prim's minimum spanning tree algorithm trace</h5>
+          <img class="diagram-shot" src="../diagram/prims_mst_trace.svg" alt="Prim's minimum spanning tree algorithm trace" title="Prim's minimum spanning tree algorithm trace">
+          <div class="diagram-answer"><strong>Answer:</strong> Prim's algorithm grows a tree one cheapest edge at a time. It always adds the smallest edge that connects a new vertex, and it never adds an edge that creates a cycle.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">🧱</div>
+      <div class="topic-title">Data Structure Operations Master Sheet</div>
+      <div class="topic-tags"><span class="ttag">Array</span><span class="ttag">Linked List</span><span class="ttag">Stack</span><span class="ttag">Queue</span><span class="ttag">Tree</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Structure</th><th>Key operations</th><th>Typical complexity</th></tr>
+        <tr><td>Array</td><td>Insert, Delete, Update, Traverse</td><td>Insert/Delete O(n), Update O(1), Traverse O(n)</td></tr>
+        <tr><td>Singly Linked List</td><td>Insert, Delete, Update, Reverse, Traverse</td><td>Head insert/delete O(1), search/update O(n), reverse O(n)</td></tr>
+        <tr><td>Doubly Linked List</td><td>Insert/Delete at both sides, traverse both directions</td><td>O(1) near known node, traversal O(n)</td></tr>
+        <tr><td>Circular Linked List</td><td>Round-robin style traversal, cyclic insert/delete</td><td>Similar to linked list, useful for repeating cycles</td></tr>
+        <tr><td>Stack</td><td>Push, Pop, Peek</td><td>All O(1)</td></tr>
+        <tr><td>Queue</td><td>Enqueue, Dequeue, Front</td><td>All O(1) with linked list/circular array</td></tr>
+        <tr><td>Circular Queue</td><td>Enqueue/Dequeue with wrap-around indices</td><td>O(1), prevents wasted slots</td></tr>
+      </table>
+
+      <h4>Stack and Queue using Linked List</h4>
+<pre><span class="cm">// Stack using linked list</span>
+<span class="kw">push</span>(x): new->next = top; top = new
+<span class="kw">pop</span>(): if top==NULL underflow; x=top->data; top=top->next
+
+<span class="cm">// Queue using linked list (front, rear)</span>
+<span class="kw">enqueue</span>(x): create node; if rear==NULL front=rear=node; else rear->next=node; rear=node
+<span class="kw">dequeue</span>(): if front==NULL underflow; x=front->data; front=front->next; if front==NULL rear=NULL</pre>
+
+      <h4>Linked List Patterns Asked in Exam</h4>
+      <div class="diagram">
+Reverse Linked List (iterative):
+prev = NULL, curr = head
+while curr != NULL:
+  next = curr->next
+  curr->next = prev
+  prev = curr
+  curr = next
+head = prev
+
+Merge Two Sorted Linked Lists:
+Compare heads, attach smaller node to result, advance that list,
+append remaining nodes at the end.
+      </div>
+
+      <h4>Tree and Heap Essentials</h4>
+      <table>
+        <tr><th>Topic</th><th>Exam focus</th></tr>
+        <tr><td>Binary Tree representation using array</td><td>For node i: left=2i+1, right=2i+2, parent=(i-1)/2</td></tr>
+        <tr><td>BST</td><td>Left &lt; root &lt; right; average search/insert/delete O(log n)</td></tr>
+        <tr><td>Traversals</td><td>In-order, Pre-order, Post-order, Level-order</td></tr>
+        <tr><td>Heap</td><td>Complete binary tree; max/min root property; priority queues</td></tr>
+        <tr><td>B-Tree / B+ Tree</td><td>Multi-way balanced trees for disks/databases; B+ stores records at leaves</td></tr>
+      </table>
+
+      <h4>Expression Conversion</h4>
+      <div class="simple-box">
+        <span class="sb-title">Infix and Postfix</span>
+        Infix: <code>(A+B)*C</code> (operators between operands). Postfix: <code>AB+C*</code> (operators after operands). Stack is used for infix-to-postfix conversion and postfix evaluation.
+      </div>
+
+      <h4>Matrix Multiplication Algorithm</h4>
+<pre><span class="cm">// Multiply A[r1][c1] and B[c1][c2]</span>
+<span class="kw">for</span> i = 0 to r1-1
+  <span class="kw">for</span> j = 0 to c2-1
+    C[i][j] = 0
+    <span class="kw">for</span> k = 0 to c1-1
+      C[i][j] += A[i][k] * B[k][j]
+
+Time: O(r1 * c1 * c2), classical square case O(n^3)</pre>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🧠</div>
+      <div class="topic-title">Algorithm Paradigms, Graph Shortest Paths & Complexity Classes</div>
+      <div class="topic-tags"><span class="ttag">MST</span><span class="ttag">DP</span><span class="ttag">Greedy</span><span class="ttag">P vs NP</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Algorithm</th><th>Main use</th><th>Key condition / note</th><th>Complexity</th></tr>
+        <tr><td>Prim's</td><td>MST</td><td>Grow tree from a start node</td><td>O(E log V) with heap</td></tr>
+        <tr><td>Kruskal</td><td>MST</td><td>Sort edges + union-find, avoid cycles</td><td>O(E log E)</td></tr>
+        <tr><td>Dijkstra</td><td>Single-source shortest path</td><td>No negative edge weights</td><td>O((V+E) log V)</td></tr>
+        <tr><td>Bellman-Ford</td><td>Single-source shortest path</td><td>Supports negative edges, detects negative cycle</td><td>O(VE)</td></tr>
+        <tr><td>Floyd-Warshall</td><td>All-pairs shortest path</td><td>Dynamic programming on adjacency matrix</td><td>O(V^3)</td></tr>
+        <tr><td>DFS / BFS</td><td>Traversal, components, reachability</td><td>DFS uses stack/recursion, BFS uses queue</td><td>O(V+E)</td></tr>
+      </table>
+
+      <h4>Sorting and Searching Revision Table</h4>
+      <table>
+        <tr><th>Category</th><th>Algorithms</th><th>Typical complexity</th></tr>
+        <tr><td>Searching</td><td>Linear Search, Binary Search</td><td>O(n), O(log n)</td></tr>
+        <tr><td>Quadratic Sorts</td><td>Bubble, Selection, Insertion</td><td>O(n^2)</td></tr>
+        <tr><td>n log n Sorts</td><td>Merge, Quick(avg), Heap, Shell(avg practical)</td><td>about O(n log n)</td></tr>
+        <tr><td>Non-comparison sort</td><td>Radix Sort</td><td>O(d*(n+b))</td></tr>
+      </table>
+
+      <h4>Algorithm Design Paradigms</h4>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🎯</div><h5>Greedy</h5><p>Choose best local option each step. Example: Kruskal, Prim, Huffman coding.</p></div>
+        <div class="concept-card"><div class="cc-icon">🧩</div><h5>Dynamic Programming</h5><p>Overlapping subproblems + optimal substructure. Save results (memoization/tabulation).</p></div>
+        <div class="concept-card"><div class="cc-icon">✂️</div><h5>Divide and Conquer</h5><p>Split, solve recursively, combine. Example: merge sort, quicksort, matrix divide methods.</p></div>
+        <div class="concept-card"><div class="cc-icon">🔁</div><h5>Recursion</h5><p>Function calls itself until base case; without base case it leads to infinite recursion.</p></div>
+      </div>
+
+      <div class="simple-box">
+        <span class="sb-title">Huffman Coding</span>
+        Greedy compression algorithm that builds an optimal prefix code tree from character frequencies. Lower-frequency symbols get longer codes; frequent symbols get shorter codes.
+      </div>
+
+      <h4>Complexity Theory Basics</h4>
+      <table>
+        <tr><th>Class</th><th>Meaning</th></tr>
+        <tr><td>P</td><td>Problems solvable in polynomial time by deterministic algorithms.</td></tr>
+        <tr><td>NP</td><td>Solutions can be verified in polynomial time.</td></tr>
+        <tr><td>NP-hard</td><td>At least as hard as NP problems; may not be in NP.</td></tr>
+        <tr><td>NP-complete</td><td>In NP and NP-hard both.</td></tr>
+      </table>
     </div>
   </div>
 </div>
@@ -1625,6 +1918,177 @@ SDLC Phases:
         <tr><td><code>git branch</code></td><td>Create parallel line of work</td><td>Local</td></tr>
         <tr><td><code>git merge</code></td><td>Combine branches</td><td>Local</td></tr>
       </table>
+
+      <h4>Software Engineering Deep Dive</h4>
+      <div class="simple-box">
+        <span class="sb-title">How to read this section</span>
+        Think of software engineering as the full journey of a project: first decide if it should exist, then plan it, build it, test it, release it, and keep improving it. The exam usually asks for the purpose, order, and best use of each model or technique.
+      </div>
+
+      <div class="topic open" style="margin-top:1rem">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(188,140,255,.15)">🧭</div>
+          <div class="topic-title">SDLC, Feasibility, Maintenance & Process Models</div>
+          <div class="topic-tags"><span class="ttag">SDLC</span><span class="ttag">Feasibility</span><span class="ttag">Waterfall</span><span class="ttag">Agile</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <div class="diagram">
+SDLC flow:
+Planning → Feasibility → Requirements → Design → Coding → Testing → Deployment → Maintenance
+
+Maintenance life cycle:
+Bug fix → impact analysis → change request → modify code → retest → release
+          </div>
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Exam point</th></tr>
+            <tr><td>SDLC</td><td>Full life of software from idea to support.</td><td>Used to explain the whole software process.</td></tr>
+            <tr><td>Software Maintenance Life Cycle</td><td>How a finished product is changed after release.</td><td>Includes corrective, adaptive, perfective, and preventive maintenance.</td></tr>
+            <tr><td>Feasibility Study</td><td>Check whether the project is worth doing.</td><td>Usually technical, economic, operational, legal, and schedule feasibility.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🏗️</div><h5>Waterfall</h5><p>One phase finishes before the next starts. Best when requirements are fixed and clear.</p></div>
+            <div class="concept-card"><div class="cc-icon">🔁</div><h5>Agile</h5><p>Work in short iterations or sprints. Best when requirements may change often.</p></div>
+            <div class="concept-card"><div class="cc-icon">🧪</div><h5>Prototype</h5><p>Build a quick sample version first so users can see and comment early.</p></div>
+            <div class="concept-card"><div class="cc-icon">🏃</div><h5>Scrum</h5><p>A popular Agile method. Uses product backlog, sprint backlog, daily stand-up, sprint review, and retrospective.</p></div>
+            <div class="concept-card"><div class="cc-icon">🌀</div><h5>Spiral</h5><p>Risk-driven model. Each cycle checks risks, builds a version, and improves it.</p></div>
+          </div>
+          <div class="why-box">
+            <span class="wb-title">Why projects fail</span>
+            Common reasons are unclear requirements, poor planning, weak communication, unrealistic deadlines, no user involvement, bad estimation, scope creep, and weak testing.
+          </div>
+          <div class="exam-tip">
+            <div class="et-icon">🎯</div>
+            <div class="et-body">
+              <div class="et-label">PERT and Critical Path</div>
+              <p><strong>PERT</strong> is used when time estimates are uncertain. It uses optimistic, pessimistic, and most likely times. <strong>Critical path</strong> is the longest path in a project network; it tells the minimum project duration. Any delay on the critical path delays the whole project.</p>
+            </div>
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">Build, Buy, or Customize</span>
+            <strong>Build</strong> if you need full control and the requirement is unique. <strong>Buy</strong> if speed and lower cost matter more than control. <strong>Customize</strong> if an off-the-shelf product is close, but you need some changes.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(88,166,255,.15)">📐</div>
+          <div class="topic-title">UML Diagrams, Design Patterns & Architecture</div>
+          <div class="topic-tags"><span class="ttag">UML</span><span class="ttag">MVC</span><span class="ttag">Singleton</span><span class="ttag">Microservices</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <div class="simple-box">
+            <span class="sb-title">UML — In Simple Words</span>
+            UML is a drawing language for software. It helps people understand the system before coding. The most common exam diagrams are use case, class, and state diagrams.
+          </div>
+          <table>
+            <tr><th>Diagram</th><th>What it shows</th><th>Simple use</th></tr>
+            <tr><td>Use Case</td><td>Actor and system interaction</td><td>Shows what users can do in the system</td></tr>
+            <tr><td>Class Diagram</td><td>Classes, attributes, methods, relationships</td><td>Shows static structure of the software</td></tr>
+            <tr><td>State Diagram</td><td>States and transitions of an object</td><td>Shows how an object changes over time</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🧩</div><h5>MVC</h5><p>Model stores data, View shows data, Controller handles input. Good for separating logic and UI.</p></div>
+            <div class="concept-card"><div class="cc-icon">👀</div><h5>Observer</h5><p>When one object changes, all subscribed objects get updated automatically.</p></div>
+            <div class="concept-card"><div class="cc-icon">1️⃣</div><h5>Singleton</h5><p>Only one object should exist. Used for configuration, logger, or shared manager objects.</p></div>
+            <div class="concept-card"><div class="cc-icon">🎛️</div><h5>Strategy</h5><p>Choose one algorithm from many at runtime. Example: different payment methods or sorting strategies.</p></div>
+          </div>
+          <div class="why-box">
+            <span class="wb-title">Application Framework</span>
+            A framework gives ready-made structure, libraries, and rules so developers do not start from zero. It speeds up development and keeps projects consistent.
+          </div>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">📊</div><h5>DSS</h5><p>Decision Support System helps managers make decisions using reports, models, and analysis.</p></div>
+            <div class="concept-card"><div class="cc-icon">📈</div><h5>MIS</h5><p>Management Information System gives regular reports for planning and control.</p></div>
+            <div class="concept-card"><div class="cc-icon">🧱</div><h5>Microservices</h5><p>Break one app into small independent services. Easier to scale, deploy, and maintain separately.</p></div>
+            <div class="concept-card"><div class="cc-icon">🔐</div><h5>Validation & Verification</h5><p>Verification asks “Are we building the product right?” Validation asks “Are we building the right product?”</p></div>
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">UI/UX Design</span>
+            <strong>UI</strong> is what the user sees and clicks. <strong>UX</strong> is the feeling of using the product. Good UI/UX means simple navigation, clear labels, fast feedback, and low confusion.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(63,185,80,.15)">🧪</div>
+          <div class="topic-title">Software Testing, Quality & Defect Metrics</div>
+          <div class="topic-tags"><span class="ttag">Unit</span><span class="ttag">Regression</span><span class="ttag">Boundary</span><span class="ttag">DRE</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <div class="simple-box">
+            <span class="sb-title">Testing — In Simple Words</span>
+            Testing checks whether the software behaves correctly. Some testing looks at internal code, and some tests only the output. Good testing finds bugs before users do.
+          </div>
+          <table>
+            <tr><th>Type</th><th>Meaning</th><th>Simple example</th></tr>
+            <tr><td>Unit Testing</td><td>Test one small function or class.</td><td>Check addTax() by itself.</td></tr>
+            <tr><td>Acceptance Testing</td><td>User checks if requirements are met.</td><td>Client confirms the login flow works.</td></tr>
+            <tr><td>Black Box</td><td>Test input/output without seeing code.</td><td>Enter data, compare output.</td></tr>
+            <tr><td>White Box</td><td>Test internal logic and paths.</td><td>Check if every branch executes correctly.</td></tr>
+            <tr><td>Gray Box</td><td>Mix of black box and white box.</td><td>Know some internal design, but not all code.</td></tr>
+            <tr><td>Regression</td><td>Re-test old features after a change.</td><td>Fix one bug, then check other features still work.</td></tr>
+            <tr><td>Alpha</td><td>Testing inside the company.</td><td>Internal team finds bugs before release.</td></tr>
+            <tr><td>Beta</td><td>Testing by real users outside the team.</td><td>Small user group tests the software.</td></tr>
+            <tr><td>Gamma</td><td>Very late stage testing before final release.</td><td>Final confirmation that the product is ready.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🧩</div><h5>Equivalence Partitioning</h5><p>Split inputs into groups that behave the same. Test one value from each group.</p></div>
+            <div class="concept-card"><div class="cc-icon">📏</div><h5>Boundary Value Analysis</h5><p>Test values at the edge of valid input ranges, because bugs often happen there.</p></div>
+            <div class="concept-card"><div class="cc-icon">💨</div><h5>Smoke Testing</h5><p>Quick basic test to see whether the build is stable enough for deeper testing.</p></div>
+            <div class="concept-card"><div class="cc-icon">⚙️</div><h5>Functional Testing</h5><p>Checks what the system does.</p></div>
+            <div class="concept-card"><div class="cc-icon">🎨</div><h5>Non-functional Testing</h5><p>Checks how well the system works: performance, usability, security, reliability.</p></div>
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">Cohesion vs Coupling</span>
+            <strong>Cohesion</strong> means one module does one clear job. Higher cohesion is better. <strong>Coupling</strong> means how much one module depends on another. Lower coupling is better.
+          </div>
+          <div class="exam-tip">
+            <div class="et-icon">🎯</div>
+            <div class="et-body">
+              <div class="et-label">DRE — Defect Removal Efficiency</div>
+              <p>DRE measures how well defects are removed before release. Formula idea: defects removed before release divided by total defects found before + after release. Higher DRE means better quality and fewer user-facing bugs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(255,123,114,.15)">🛠️</div>
+          <div class="topic-title">Tools, Delivery & Modern Development Terms</div>
+          <div class="topic-tags"><span class="ttag">Git</span><span class="ttag">Docker</span><span class="ttag">HTTP</span><span class="ttag">Microservice</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Why it matters</th></tr>
+            <tr><td>Git</td><td>Version control for tracking code changes.</td><td>Lets teams collaborate and recover old versions.</td></tr>
+            <tr><td>Docker</td><td>Packages app + dependencies into a container.</td><td>Runs the same way on laptop, server, or cloud.</td></tr>
+            <tr><td>Socket</td><td>Endpoint for network communication between two machines or programs.</td><td>Used for chat, games, and real-time systems.</td></tr>
+            <tr><td>GET / POST</td><td>HTTP methods for sending requests.</td><td>GET reads data, POST sends data to create or submit something.</td></tr>
+            <tr><td>Microservices</td><td>Small services communicate over APIs.</td><td>Each service can scale or fail independently.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">📦</div><h5>Docker in one line</h5><p>“Build once, run anywhere” by bundling code, runtime, libraries, and settings together.</p></div>
+            <div class="concept-card"><div class="cc-icon">🌍</div><h5>Socket in one line</h5><p>A socket is the communication bridge between a client and a server.</p></div>
+            <div class="concept-card"><div class="cc-icon">⬇️</div><h5>GET</h5><p>Used to fetch data. Parameters are often visible in the URL.</p></div>
+            <div class="concept-card"><div class="cc-icon">⬆️</div><h5>POST</h5><p>Used to submit data. Data goes in the request body, not the URL.</p></div>
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">DFS note</span>
+            DFS is primarily an algorithm topic, but in software projects it is often used for traversing trees, file systems, dependency graphs, and abstract syntax trees.
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">UI/UX reminder</span>
+            UI/UX design is part of software engineering because good software is not only correct; it is also easy to understand, fast to use, and pleasant for real users.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1744,6 +2208,297 @@ Layer 1 — Physical      : Bits, cables, signals, hubs, NIC</div>
         <li><span class="step-text">Receiver sums all segments including checksum</span></li>
         <li><span class="step-text">If result = all 1s → no error. Any 0 → error, request retransmission</span></li>
       </ol>
+
+      <h4>Networking Deep Dive</h4>
+      <div class="simple-box">
+        <span class="sb-title">How to study networking</span>
+        Group the topics like this: network types and devices, routing and transport, addressing and subnetting, switching and switching attacks, wireless and cables, and security/services. That makes the long syllabus easier to remember.
+      </div>
+
+      <div class="topic open" style="margin-top:1rem">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(255,123,114,.15)">🌍</div>
+          <div class="topic-title">Network Types, Topologies & Devices</div>
+          <div class="topic-tags"><span class="ttag">LAN</span><span class="ttag">MAN</span><span class="ttag">WAN</span><span class="ttag">Router</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Term</th><th>Simple meaning</th><th>Exam hint</th></tr>
+            <tr><td>LAN</td><td>Local Area Network, small area like lab/building.</td><td>Fast, private, small range.</td></tr>
+            <tr><td>MAN</td><td>Metropolitan Area Network, city-wide network.</td><td>Bigger than LAN, smaller than WAN.</td></tr>
+            <tr><td>WAN</td><td>Wide Area Network, very large area like country or world.</td><td>The Internet is the biggest WAN example.</td></tr>
+            <tr><td>Backbone</td><td>Main high-speed network path connecting major parts.</td><td>Think of it as the main highway of the network.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🔀</div><h5>Router</h5><p>Connects different networks and forwards packets using IP addresses.</p></div>
+            <div class="concept-card"><div class="cc-icon">🔁</div><h5>Switch</h5><p>Connects devices in a LAN and forwards frames using MAC addresses.</p></div>
+            <div class="concept-card"><div class="cc-icon">📡</div><h5>Hub</h5><p>Sends data to every port. Old, simple, and inefficient.</p></div>
+            <div class="concept-card"><div class="cc-icon">🛡️</div><h5>Firewall</h5><p>Filters traffic based on rules, ports, IPs, and application policies.</p></div>
+            <div class="concept-card"><div class="cc-icon">🚪</div><h5>Gateway</h5><p>Connects different protocols or networks. Often acts as the entrance to other networks.</p></div>
+          </div>
+          <div class="diagram">
+Network topologies:
+Bus = one shared cable
+Star = all devices connect to a central switch
+Ring = each device connects to two neighbors
+Mesh = many links, high reliability
+Tree = hierarchy of stars
+Hybrid = mix of topologies
+          </div>
+          <div class="why-box">
+            <span class="wb-title">Broadcast vs Multicast</span>
+            <strong>Broadcast</strong> = send to everyone in the network. <strong>Multicast</strong> = send to a selected group only. Broadcast is wider and noisier; multicast is more efficient.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(88,166,255,.15)">📶</div>
+          <div class="topic-title">Transport, TCP/IP, HTTP, DHCP, NAT & Addressing</div>
+          <div class="topic-tags"><span class="ttag">TCP</span><span class="ttag">UDP</span><span class="ttag">DHCP</span><span class="ttag">NAT</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Term</th><th>Simple meaning</th><th>Key point</th></tr>
+            <tr><td>TCP</td><td>Reliable, connection-oriented transport.</td><td>Uses handshake, sequencing, acknowledgments, retransmission, congestion control.</td></tr>
+            <tr><td>UDP</td><td>Fast, connectionless transport.</td><td>No handshake, low overhead, good for streaming and games.</td></tr>
+            <tr><td>TCP/IP</td><td>The main protocol suite of the Internet.</td><td>Application, transport, internet, network access layers are often taught here.</td></tr>
+            <tr><td>HTTP/HTTPS</td><td>Web communication protocols.</td><td>HTTPS = HTTP plus encryption using TLS/SSL.</td></tr>
+            <tr><td>DHCP</td><td>Automatically gives IP, gateway, DNS, and lease information.</td><td>Server assigns address; client asks for one.</td></tr>
+            <tr><td>NAT</td><td>Maps private IPs to public IPs.</td><td>Many internal devices can share one public address.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🤝</div><h5>Connection-oriented</h5><p>The connection is set up before data transfer. TCP is the classic example.</p></div>
+            <div class="concept-card"><div class="cc-icon">⚡</div><h5>Connectionless</h5><p>No setup first; packets are sent directly. UDP is the classic example.</p></div>
+            <div class="concept-card"><div class="cc-icon">🪟</div><h5>3-Way Handshake</h5><p>SYN → SYN-ACK → ACK. This starts a TCP session safely.</p></div>
+            <div class="concept-card"><div class="cc-icon">🚦</div><h5>Congestion Control</h5><p>TCP slows down when the network gets busy to avoid overload and packet loss.</p></div>
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">Stateful vs Stateless</span>
+            <strong>Stateful</strong> means the server remembers previous interactions or session state. <strong>Stateless</strong> means each request is handled independently. HTTP is generally stateless; cookies can add state.
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">Private vs Public IP</span>
+            Private IPs are used inside local networks and are not routed on the public Internet. Public IPs are globally reachable and visible on the Internet.
+          </div>
+          <div class="table-wrap">
+            <table>
+              <tr><th>Protocol</th><th>Use</th><th>Simple role</th></tr>
+              <tr><td>DNS</td><td>Names to IP</td><td>Phonebook of the Internet</td></tr>
+              <tr><td>DNS Server</td><td>Answers name lookups</td><td>Returns the IP for a domain</td></tr>
+              <tr><td>DHCP Server</td><td>Leases IP settings</td><td>Automatically configures clients</td></tr>
+              <tr><td>ARP</td><td>IP to MAC</td><td>Finds the hardware address on a LAN</td></tr>
+              <tr><td>RARP</td><td>MAC to IP</td><td>Older reverse lookup method</td></tr>
+              <tr><td>SMTP</td><td>Send email</td><td>Mail transfer from client/server</td></tr>
+              <tr><td>FTP</td><td>File transfer</td><td>Uploads/downloads files</td></tr>
+              <tr><td>HTTP</td><td>Web pages</td><td>Browser and web server communication</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(63,185,80,.15)">🧮</div>
+          <div class="topic-title">Subnetting, VLSM, IPv4/IPv6 & Routing</div>
+          <div class="topic-tags"><span class="ttag">IPv4</span><span class="ttag">IPv6</span><span class="ttag">Subnet</span><span class="ttag">VLSM</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <div class="simple-box">
+            <span class="sb-title">IP Subnetting — In Simple Words</span>
+            Subnetting divides a network into smaller parts so addresses are used efficiently. VLSM means Variable Length Subnet Mask, so different subnets can have different sizes instead of all being equal.
+          </div>
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Exam point</th></tr>
+            <tr><td>Subnet Mask</td><td>Separates network part and host part of an IP.</td><td>Helps decide which devices are local.</td></tr>
+            <tr><td>VLSM</td><td>Different subnet sizes inside the same network.</td><td>Reduces address waste.</td></tr>
+            <tr><td>IPv4</td><td>32-bit address format.</td><td>Limited address space.</td></tr>
+            <tr><td>IPv6</td><td>128-bit address format.</td><td>Huge address space, modern Internet protocol.</td></tr>
+            <tr><td>Distance Vector</td><td>Routers share distance to destinations with neighbors.</td><td>Used by RIP; slower convergence than link-state.</td></tr>
+            <tr><td>RIP</td><td>Routing Information Protocol.</td><td>Uses hop count; simple but old.</td></tr>
+            <tr><td>OSPF</td><td>Open Shortest Path First.</td><td>Link-state, fast, uses Dijkstra.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">📦</div><h5>Gateway</h5><p>Exit point from one network to another, usually toward the Internet.</p></div>
+            <div class="concept-card"><div class="cc-icon">🌐</div><h5>Router</h5><p>Forwards packets between networks.</p></div>
+            <div class="concept-card"><div class="cc-icon">🔀</div><h5>Forwarding</h5><p>Moving a packet to the next hop based on routing information.</p></div>
+            <div class="concept-card"><div class="cc-icon">📣</div><h5>Flooding</h5><p>Sending packets to all possible paths. Simple but inefficient.</p></div>
+          </div>
+          <div class="callout callout-info">
+            <span class="callout-title">IP Addressing idea</span>
+            IP addresses can be thought of as network location plus host identity. Subnetting changes how many bits are used for each part.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(188,140,255,.15)">🔒</div>
+          <div class="topic-title">Switching, Wireless, Cables & Security Attacks</div>
+          <div class="topic-tags"><span class="ttag">Switch</span><span class="ttag">Wi-Fi</span><span class="ttag">Firewall</span><span class="ttag">Attack</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Term</th><th>Simple meaning</th><th>Key note</th></tr>
+            <tr><td>Switch</td><td>Connects devices in a LAN and forwards frames to the correct port.</td><td>Uses MAC addresses.</td></tr>
+            <tr><td>Hub</td><td>Old device that sends data to all ports.</td><td>No intelligence, more collisions.</td></tr>
+            <tr><td>Ethernet</td><td>Common wired LAN technology.</td><td>Uses frames and MAC addressing.</td></tr>
+            <tr><td>Twisted pair cable</td><td>Two copper wires twisted together.</td><td>Cheap, common, can carry Ethernet.</td></tr>
+            <tr><td>Fiber cable slicing</td><td>Preparing and joining fiber-optic cable ends.</td><td>Used for high-speed backbone and long-distance links.</td></tr>
+            <tr><td>Wi-Fi</td><td>Wireless LAN technology.</td><td>Uses radio waves.</td></tr>
+            <tr><td>Bluetooth</td><td>Short-range wireless communication.</td><td>Good for peripherals and personal devices.</td></tr>
+            <tr><td>WiMAX</td><td>Longer-range wireless broadband.</td><td>Often compared with Wi-Fi and used for wider coverage.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">💥</div><h5>MAC Flood</h5><p>Attack that overfills a switch MAC table so it starts behaving like a hub.</p></div>
+            <div class="concept-card"><div class="cc-icon">🌊</div><h5>DHCP Starvation</h5><p>Attack that requests many IPs to exhaust the DHCP pool.</p></div>
+            <div class="concept-card"><div class="cc-icon">🧪</div><h5>DNS Poisoning</h5><p>Attack that sends fake DNS answers and redirects users to wrong IPs.</p></div>
+            <div class="concept-card"><div class="cc-icon">🕵️</div><h5>Proxy Server</h5><p>Intermediary between client and server for filtering, caching, and hiding clients.</p></div>
+          </div>
+          <table>
+            <tr><th>Attack / Risk</th><th>Simple meaning</th><th>Common defense</th></tr>
+            <tr><td>Threat</td><td>Anything that can cause harm.</td><td>Security controls</td></tr>
+            <tr><td>Vulnerability</td><td>A weakness that can be exploited.</td><td>Patch, harden, monitor</td></tr>
+            <tr><td>Risk</td><td>Chance of loss when threat meets vulnerability.</td><td>Reduce threat or weakness</td></tr>
+            <tr><td>WAF</td><td>Web Application Firewall protects web apps.</td><td>Blocks bad HTTP requests</td></tr>
+            <tr><td>NMS</td><td>Network Management System monitors and manages network devices.</td><td>Tracks health, alerts, and performance</td></tr>
+            <tr><td>Internet Cookies</td><td>Small data saved by websites in the browser.</td><td>Used for sessions, preferences, and tracking</td></tr>
+          </table>
+          <div class="simple-box">
+            <span class="sb-title">Tor</span>
+            Tor is an anonymity network that routes traffic through multiple encrypted relays so it is harder to trace the user and destination.
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">Online vs Offline UPS</span>
+            <strong>Online UPS</strong> continuously powers the load through inverter and gives better protection. <strong>Offline UPS</strong> switches to battery only when power fails.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(240,201,74,.15)">🧷</div>
+          <div class="topic-title">Protocols, Switching Styles & Hardware Interfaces</div>
+          <div class="topic-tags"><span class="ttag">CSMA</span><span class="ttag">TDM</span><span class="ttag">FDM</span><span class="ttag">SPI</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Where used</th></tr>
+            <tr><td>CSMA</td><td>Devices listen before sending on shared media.</td><td>Ethernet/wireless contention methods.</td></tr>
+            <tr><td>Circuit switching</td><td>Dedicated path set before communication.</td><td>Traditional telephone style networks.</td></tr>
+            <tr><td>Packet switching</td><td>Data split into packets and routed independently.</td><td>The Internet.</td></tr>
+            <tr><td>Cell switching</td><td>Fixed-size cells are switched.</td><td>ATM-style networks.</td></tr>
+            <tr><td>TDM</td><td>Time Division Multiplexing, share one channel by time slots.</td><td>Telecom and digital links.</td></tr>
+            <tr><td>FDM</td><td>Frequency Division Multiplexing, share by frequency bands.</td><td>Radio and cable systems.</td></tr>
+            <tr><td>Serial communication</td><td>Bits sent one after another on one line.</td><td>Simple devices, embedded systems.</td></tr>
+            <tr><td>I2C</td><td>Two-wire serial bus for chips and sensors.</td><td>Embedded hardware communication.</td></tr>
+            <tr><td>SPI</td><td>Fast serial bus for short-distance chip communication.</td><td>Microcontrollers, displays, memory chips.</td></tr>
+          </table>
+          <div class="simple-box">
+            <span class="sb-title">HTTP, ARP and RARP</span>
+            HTTP moves web pages. ARP maps IP to MAC on a local network. RARP does the reverse and is mostly historical.
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">OCR and MICR</span>
+            OCR reads printed characters from images. MICR reads special magnetic ink characters, often used in banking cheques.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(57,208,208,.15)">📩</div>
+          <div class="topic-title">Email, Internet Services & Exam Comparisons</div>
+          <div class="topic-tags"><span class="ttag">SMTP</span><span class="ttag">DNS</span><span class="ttag">HTTPS</span><span class="ttag">Cookies</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Exam point</th></tr>
+            <tr><td>SMTP</td><td>Used to send email.</td><td>Mail transfer protocol.</td></tr>
+            <tr><td>DNS</td><td>Converts names to IP addresses.</td><td>Like the Internet phonebook.</td></tr>
+            <tr><td>HTTP</td><td>Web protocol without encryption by default.</td><td>Used for web pages and APIs.</td></tr>
+            <tr><td>HTTPS</td><td>HTTP with encryption.</td><td>Protects data using TLS/SSL.</td></tr>
+            <tr><td>Cookies</td><td>Small browser data files.</td><td>Store session and user preferences.</td></tr>
+          </table>
+          <div class="concept-grid">
+            <div class="concept-card"><div class="cc-icon">🌐</div><h5>DNS Server</h5><p>Resolves human-friendly domain names into IP addresses.</p></div>
+            <div class="concept-card"><div class="cc-icon">📬</div><h5>SMTP Server</h5><p>Handles outgoing mail transfer.</p></div>
+            <div class="concept-card"><div class="cc-icon">🔗</div><h5>HTTP vs HTTPS</h5><p>HTTPS adds encryption, so it is safer for login and payments.</p></div>
+          </div>
+          <div class="why-box">
+            <span class="wb-title">Why HTTPS is safer</span>
+            With HTTPS, the browser and server encrypt the traffic so attackers cannot easily read or change the data in transit.
+          </div>
+          <div class="simple-box">
+            <span class="sb-title">MAC flood in switch</span>
+            In a MAC flood attack, the attacker fills the switch MAC table with fake entries. The switch may then behave more like a hub and send frames to many ports.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic">
+        <div class="topic-header" onclick="toggleTopic(this)">
+          <div class="topic-icon" style="background:rgba(240,136,62,.15)">📡</div>
+          <div class="topic-title">Communication Systems Deep Dive (Sampling, Modulation, Fiber, PCM)</div>
+          <div class="topic-tags"><span class="ttag">Nyquist</span><span class="ttag">AWGN</span><span class="ttag">PCM</span><span class="ttag">AM/FM</span><span class="ttag">Fiber</span></div>
+          <div class="toggle-btn">▾</div>
+        </div>
+        <div class="topic-body">
+          <table>
+            <tr><th>Topic</th><th>Simple meaning</th><th>Exam formula / note</th></tr>
+            <tr><td>Data communication</td><td>Exchange of data between sender and receiver over a channel.</td><td>Sender, medium, receiver, protocol.</td></tr>
+            <tr><td>Communication channel</td><td>Path used to transmit signal.</td><td>Guided (wired) or unguided (wireless).</td></tr>
+            <tr><td>Guided media</td><td>Twisted pair, coax, optical fiber.</td><td>Physical path controls signal.</td></tr>
+            <tr><td>Unguided media</td><td>Radio, microwave, infrared.</td><td>Signal travels through air/space.</td></tr>
+            <tr><td>Simplex / Half Duplex / Full Duplex</td><td>One-way / two-way one-at-a-time / two-way simultaneous.</td><td>Examples: keyboard, walkie-talkie, phone call.</td></tr>
+            <tr><td>CDMA</td><td>Users share same band with unique codes.</td><td>Code separation enables multiple access.</td></tr>
+          </table>
+
+          <h4>Sampling, ADC and Quantization</h4>
+          <div class="formula-block">Nyquist Sampling Theorem: fs &gt;= 2fm</div>
+          <ul class="blist">
+            <li><strong>ADC steps:</strong> sampling, quantization, encoding.</li>
+            <li><strong>Quantization error:</strong> difference between actual analog value and nearest quantized level.</li>
+            <li><strong>AWGN:</strong> Additive White Gaussian Noise, a random noise model with Gaussian amplitude and flat spectral density.</li>
+            <li><strong>PCM:</strong> Pulse Code Modulation converts sampled and quantized values to binary code.</li>
+            <li><strong>Delta Modulation:</strong> transmits only the change (+/- step). Simpler than PCM but may have slope overload/granular noise.</li>
+          </ul>
+
+          <h4>Modulation and Demodulation Numericals</h4>
+          <table>
+            <tr><th>Parameter</th><th>Formula</th><th>Note</th></tr>
+            <tr><td>AM modulation index</td><td>m = (Amax - Amin)/(Amax + Amin)</td><td>0 to 1 for under-modulation.</td></tr>
+            <tr><td>Total AM power</td><td>Pt = Pc(1 + m^2/2)</td><td>Pc = carrier power.</td></tr>
+            <tr><td>Carrier frequency</td><td>fc = 1/Tc</td><td>Tc is carrier period.</td></tr>
+            <tr><td>SNR (ratio)</td><td>SNR = Ps/Pn</td><td>In dB: 10log10(Ps/Pn).</td></tr>
+            <tr><td>Bit rate</td><td>Rb = bits per symbol x baud rate</td><td>bps unit.</td></tr>
+            <tr><td>Baud rate</td><td>Symbols per second</td><td>Not always equal to bit rate.</td></tr>
+            <tr><td>Bit Error Rate</td><td>BER = error bits / total transmitted bits</td><td>Lower BER means better link quality.</td></tr>
+          </table>
+
+          <h4>Optical Fiber and Transport Terms</h4>
+          <table>
+            <tr><th>Term</th><th>Meaning</th><th>Exam point</th></tr>
+            <tr><td>Working principle of optical fiber</td><td>Light guided through core using total internal reflection.</td><td>Core refractive index &gt; cladding index.</td></tr>
+            <tr><td>Single-mode fiber</td><td>One propagation mode, long distance, high bandwidth.</td><td>Small core diameter.</td></tr>
+            <tr><td>Multi-mode fiber</td><td>Multiple light paths, shorter distance.</td><td>Larger core, modal dispersion.</td></tr>
+            <tr><td>Numerical aperture</td><td>Light gathering ability of fiber.</td><td>NA = sqrt(n1^2 - n2^2).</td></tr>
+            <tr><td>STS / STM</td><td>Synchronous optical hierarchy transport frames.</td><td>STS in SONET, STM in SDH.</td></tr>
+          </table>
+
+          <div class="simple-box">
+            <span class="sb-title">Triac dimmer and seven-segment display</span>
+            A TRIAC dimmer controls AC power by phase control (changes RMS voltage to load). Seven-segment displays are LED segment arrays used to show decimal digits (0-9) by turning selected segments ON/OFF.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1903,6 +2658,160 @@ PROCESS:                          THREAD (within a process):
         <div class="concept-card"><div class="cc-icon">🔐</div><h5>Security</h5><p>User authentication, access control, system call validation.</p></div>
         <div class="concept-card"><div class="cc-icon">📡</div><h5>IPC</h5><p>Pipes, signals, message queues, shared memory, semaphores.</p></div>
       </div>
+
+      <h4>Kernel Types & Shell</h4>
+      <table>
+        <tr><th>Type</th><th>Meaning</th><th>Exam point</th></tr>
+        <tr><td>Monolithic Kernel (Macro Kernel)</td><td>Most services run in kernel space.</td><td>Fast but larger trusted code base.</td></tr>
+        <tr><td>Microkernel</td><td>Only minimal core in kernel space; services in user space.</td><td>More modular and secure, slightly higher IPC overhead.</td></tr>
+        <tr><td>Shell</td><td>User-facing command interpreter.</td><td>Shell takes command and asks kernel to execute it.</td></tr>
+        <tr><td>Kernel</td><td>Core manager of hardware/resources.</td><td>Shell vs kernel is a very common viva question.</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">Symmetric vs Asymmetric Multiprocessing</span>
+        <strong>SMP (Symmetric)</strong>: all CPUs are equal and run OS tasks. <strong>AMP (Asymmetric)</strong>: one master CPU controls others. Modern systems usually prefer SMP.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🧱</div>
+      <div class="topic-title">OS Basics, Process States, Fork & Linux Essentials</div>
+      <div class="topic-tags"><span class="ttag">Fork</span><span class="ttag">State</span><span class="ttag">Linux</span><span class="ttag">Open Source</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">OS Definition & Core Functions</span>
+        An Operating System is system software that manages hardware and provides services to applications. Main functions: process management, memory management, file management, device management, security, and user interface.
+      </div>
+      <table>
+        <tr><th>Term</th><th>Simple meaning</th><th>Exam point</th></tr>
+        <tr><td>Multitasking</td><td>One CPU appears to run many tasks by switching quickly.</td><td>Time slicing gives this illusion.</td></tr>
+        <tr><td>Multiprogramming</td><td>Keep multiple programs in memory to maximize CPU use.</td><td>If one waits for I/O, CPU runs another.</td></tr>
+        <tr><td>Multiprocessing</td><td>System has multiple CPUs/cores for real parallel execution.</td><td>Higher throughput and reliability.</td></tr>
+        <tr><td>Multithreading</td><td>Multiple threads inside one process.</td><td>Shared memory, cheaper than process creation.</td></tr>
+        <tr><td>Open Source OS</td><td>Source code is publicly available.</td><td>Linux is a common example.</td></tr>
+        <tr><td>32-bit vs 64-bit</td><td>CPU register/address width.</td><td>64-bit supports much larger address space.</td></tr>
+      </table>
+      <h4>Process State Model</h4>
+      <div class="diagram">
+New → Ready → Running → Waiting/Blocked → Ready → Running → Terminated
+
+Context switch moves CPU from one running process to another.
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">fork()</span>
+        In Unix/Linux, <code>fork()</code> creates a child process. Parent and child run concurrently and have separate process IDs, but initially similar memory content.
+      </div>
+      <h4>Linux Commands, Shell Script & Mount Point</h4>
+<pre><span class="cm"># common commands</span>
+pwd
+ls -la
+cd /home/user
+mkdir demo
+cp a.txt b.txt
+mv b.txt notes.txt
+rm notes.txt
+ps -ef
+top
+
+<span class="cm"># mount point example</span>
+mount /dev/sdb1 /mnt/data
+
+<span class="cm"># tiny shell script</span>
+#!/bin/bash
+echo "Hello OS"
+date</pre>
+      <div class="why-box">
+        <span class="wb-title">Mount Point in Linux</span>
+        A mount point is a directory where a filesystem/device is attached in Linux (for example, <code>/mnt/data</code>). Without mounting, the OS cannot access that device's files through the normal directory tree.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">⏱️</div>
+      <div class="topic-title">CPU Scheduling — FCFS, SJF, RR, SRTF, Priority</div>
+      <div class="topic-tags"><span class="ttag">FCFS</span><span class="ttag">SJF</span><span class="ttag">RR</span><span class="ttag">Priority</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Algorithm</th><th>Type</th><th>Main idea</th><th>Weakness</th></tr>
+        <tr><td>FCFS</td><td>Non-preemptive</td><td>First come, first served.</td><td>Convoy effect.</td></tr>
+        <tr><td>SJF</td><td>Non-preemptive</td><td>Shortest job first.</td><td>Needs burst prediction.</td></tr>
+        <tr><td>SRTF</td><td>Preemptive</td><td>Shortest remaining time first.</td><td>Can starve long jobs.</td></tr>
+        <tr><td>Round Robin</td><td>Preemptive</td><td>Fixed time quantum rotation.</td><td>Too small quantum = overhead.</td></tr>
+        <tr><td>Priority</td><td>Both</td><td>Higher priority first.</td><td>Low priority starvation (fix with aging).</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">Preemptive vs Non-preemptive</span>
+        <strong>Preemptive</strong> scheduling can interrupt a running process. <strong>Non-preemptive</strong> scheduling waits until a process finishes or blocks.
+      </div>
+      <h4>Quick Solved Scheduling Pattern</h4>
+      <div class="example-flow">Example:
+P1(AT=0,BT=5), P2(AT=1,BT=3), P3(AT=2,BT=1)
+
+SJF (non-preemptive) order: P1 → P3 → P2
+Average waiting time = (0 + 3 + 5) / 3 = 2.67
+
+Round Robin (q=2) Gantt often differs; exam asks to compute turnaround and waiting.
+Formula: WT = TAT - BT, and TAT = CT - AT</div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">📚</div>
+      <div class="topic-title">Paging, Segmentation, Thrashing & Numerical Problems</div>
+      <div class="topic-tags"><span class="ttag">Demand Paging</span><span class="ttag">Page Fault</span><span class="ttag">Segmentation</span><span class="ttag">Thrashing</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Concept</th><th>Simple meaning</th><th>Exam note</th></tr>
+        <tr><td>Paging</td><td>Split memory into fixed-size pages/frames.</td><td>Avoids external fragmentation.</td></tr>
+        <tr><td>Segmentation</td><td>Split memory by logical units (code/data/stack).</td><td>Variable-sized segments, user-visible.</td></tr>
+        <tr><td>Demand Paging</td><td>Load pages only when needed.</td><td>First reference may cause page fault.</td></tr>
+        <tr><td>Page Fault</td><td>Required page not in RAM.</td><td>OS brings page from disk.</td></tr>
+        <tr><td>Thrashing</td><td>System spends too much time swapping pages.</td><td>Very high page fault rate, poor CPU usage.</td></tr>
+        <tr><td>Small page size</td><td>More page table entries, less internal fragmentation.</td><td>Trade-off question is common in viva.</td></tr>
+      </table>
+      <h4>Page Replacement Coverage</h4>
+      <div class="simple-box">
+        FIFO, LIFO, LRU are common replacement policies. LRU usually performs better than FIFO; LIFO is rare in real OS design but asked in exams as a concept.
+      </div>
+      <h4>Address Translation Math (Solved)</h4>
+      <div class="example-flow">Example 1:
+Logical address space = 16 bits, page size = 1 KB = 2^10
+Offset bits = 10
+Page number bits = 16 - 10 = 6
+
+Example 2:
+If logical address = 2500 and page size = 1024
+Page number = floor(2500/1024) = 2
+Offset = 2500 mod 1024 = 452
+
+Example 3:
+If page fault service time = 8 ms and memory access = 100 ns,
+effective access time increases significantly with higher fault rate.
+This is why thrashing kills performance.</div>
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Numerical Formula Reminders</div>
+          <p>Frames = Physical Memory / Page Size. Pages = Logical Memory / Page Size. Offset bits = log2(Page Size in bytes). Logical address = page# + offset. Physical address = frame# + offset.</p>
+        </div>
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">Processor note</span>
+        The processor executes instructions, while MMU helps translate logical addresses to physical addresses during memory access.
+      </div>
+    </div>
+  </div>
     </div>
   </div>
 </div>
@@ -2012,6 +2921,143 @@ PROCESS:                          THREAD (within a process):
       <div class="analogy-box">
         <span class="ab-title">📦 Normalization Analogy — Organizing a Warehouse</span>
         1NF: Put each item in its own box (no mixing). 2NF: Group related items together. 3NF: Don't store the same info twice — if "product code" already tells you the "category", don't repeat category everywhere. BCNF: The most organized — every shelf label (key) fully determines the contents.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🧠</div>
+      <div class="topic-title">Distributed DBMS, ER Diagram, Keys, FD, Indexing & Storage Structures</div>
+      <div class="topic-tags"><span class="ttag">DDBMS</span><span class="ttag">ERD</span><span class="ttag">FD</span><span class="ttag">B+ Tree</span><span class="ttag">Hashing</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple meaning</th><th>Exam note</th></tr>
+        <tr><td>Distributed DBMS</td><td>One logical DB spread across multiple physical sites.</td><td>Goals: availability, locality, scalability, transparency.</td></tr>
+        <tr><td>Relational database</td><td>Data stored in relation (table) form.</td><td>Rows = tuples, columns = attributes, degree = number of attributes.</td></tr>
+        <tr><td>Degree of relationship</td><td>Number of participating entities in relationship.</td><td>Unary, binary, ternary; cardinality: 1:1, 1:N, M:N.</td></tr>
+        <tr><td>Functional Dependency</td><td>X -> Y means X determines Y.</td><td>Used in normalization and key finding.</td></tr>
+        <tr><td>Confidentiality & Integrity (DB security)</td><td>Confidentiality = authorized access only; Integrity = correct and unmodified data.</td><td>Use access control, constraints, logs, backup, hashing.</td></tr>
+      </table>
+
+      <h4>ER Diagram Symbols and Drawing Notes</h4>
+      <div class="diagram">
+Rectangle       = Entity
+Oval            = Attribute
+Underlined attr = Key attribute
+Diamond         = Relationship
+Double oval     = Multivalued attribute
+Dashed oval     = Derived attribute
+Double rectangle= Weak entity
+Double diamond  = Identifying relationship
+
+Drawing flow: identify entities -> attributes -> primary keys -> relationships -> cardinality.
+      </div>
+
+      <h4>Key Types Quick Revision</h4>
+      <table>
+        <tr><th>Key</th><th>Meaning</th></tr>
+        <tr><td>Primary key</td><td>Main unique identifier, not null.</td></tr>
+        <tr><td>Candidate key</td><td>Minimal unique attribute set.</td></tr>
+        <tr><td>Alternate key</td><td>Candidate keys not selected as primary key.</td></tr>
+        <tr><td>Super key</td><td>Any attribute set that uniquely identifies rows.</td></tr>
+        <tr><td>Foreign key</td><td>References key from another table.</td></tr>
+        <tr><td>Composite key</td><td>Key formed by multiple attributes.</td></tr>
+      </table>
+
+      <h4>Indexing, B-tree, B+ tree and Hashing</h4>
+      <table>
+        <tr><th>Structure</th><th>Use</th><th>Exam line</th></tr>
+        <tr><td>Indexing</td><td>Speeds up lookup by auxiliary structure.</td><td>Trade-off: extra storage and update cost.</td></tr>
+        <tr><td>B-tree</td><td>Balanced multi-way search tree.</td><td>Keys and records can be in internal and leaf nodes.</td></tr>
+        <tr><td>B+ tree</td><td>DB index tree optimized for range queries.</td><td>All records at leaves; leaves linked sequentially.</td></tr>
+        <tr><td>Hashing (static/dynamic)</td><td>Fast equality search by hash function.</td><td>Very fast for = queries, weak for range queries.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🧾</div>
+      <div class="topic-title">SQL (Basic to Advanced), Transactions, Triggers, Procedures, Functions & Relational Algebra</div>
+      <div class="topic-tags"><span class="ttag">DDL</span><span class="ttag">DML</span><span class="ttag">JOIN</span><span class="ttag">Trigger</span><span class="ttag">RA</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>SQL Command Groups</h4>
+      <table>
+        <tr><th>Group</th><th>Commands</th><th>Meaning</th></tr>
+        <tr><td>DDL</td><td>CREATE, ALTER, DROP, TRUNCATE</td><td>Defines or changes schema objects.</td></tr>
+        <tr><td>DML</td><td>INSERT, UPDATE, DELETE</td><td>Modifies table data.</td></tr>
+        <tr><td>DQL</td><td>SELECT</td><td>Reads/query data.</td></tr>
+        <tr><td>DCL</td><td>GRANT, REVOKE</td><td>Privileges and permissions.</td></tr>
+        <tr><td>TCL</td><td>COMMIT, ROLLBACK, SAVEPOINT</td><td>Transaction control.</td></tr>
+      </table>
+
+<pre><span class="cm">-- Basic to advanced SQL flow</span>
+<span class="kw">CREATE TABLE</span> Student(id <span class="kw">INT PRIMARY KEY</span>, name <span class="kw">VARCHAR</span>(<span class="nm">80</span>), dept <span class="kw">VARCHAR</span>(<span class="nm">40</span>), cgpa <span class="kw">DECIMAL</span>(<span class="nm">3</span>,<span class="nm">2</span>));
+
+<span class="kw">INSERT INTO</span> Student <span class="kw">VALUES</span> (<span class="nm">1</span>,<span class="st">'Ari'</span>,<span class="st">'CSE'</span>,<span class="nm">3.75</span>);
+<span class="kw">UPDATE</span> Student <span class="kw">SET</span> cgpa = <span class="nm">3.85</span> <span class="kw">WHERE</span> id = <span class="nm">1</span>;
+<span class="kw">DELETE FROM</span> Student <span class="kw">WHERE</span> id = <span class="nm">1</span>;
+
+<span class="kw">SELECT</span> s.name, d.dept_name
+<span class="kw">FROM</span> Student s <span class="kw">JOIN</span> Department d <span class="kw">ON</span> s.dept = d.code;
+
+<span class="cm">-- View</span>
+<span class="kw">CREATE VIEW</span> cse_students <span class="kw">AS</span>
+<span class="kw">SELECT</span> id, name, cgpa <span class="kw">FROM</span> Student <span class="kw">WHERE</span> dept = <span class="st">'CSE'</span>;
+
+<span class="cm">-- Procedure (dialect-dependent syntax)</span>
+<span class="kw">CREATE PROCEDURE</span> promote_cgpa(<span class="kw">IN</span> sid <span class="kw">INT</span>)
+<span class="kw">BEGIN</span>
+  <span class="kw">UPDATE</span> Student <span class="kw">SET</span> cgpa = cgpa + <span class="nm">0.10</span> <span class="kw">WHERE</span> id = sid;
+<span class="kw">END</span>;
+
+<span class="cm">-- Function (dialect-dependent syntax)</span>
+<span class="kw">CREATE FUNCTION</span> grade_point(x <span class="kw">DECIMAL</span>(<span class="nm">3</span>,<span class="nm">2</span>)) <span class="kw">RETURNS VARCHAR</span>(<span class="nm">2</span>)
+<span class="kw">BEGIN</span>
+  <span class="kw">RETURN</span> <span class="kw">CASE WHEN</span> x &gt;= <span class="nm">3.7</span> <span class="kw">THEN</span> <span class="st">'A'</span> <span class="kw">ELSE</span> <span class="st">'B'</span> <span class="kw">END</span>;
+<span class="kw">END</span>;</pre>
+
+      <h4>Trigger and Transaction</h4>
+<pre><span class="cm">-- Trigger: log salary update</span>
+<span class="kw">CREATE TRIGGER</span> trg_salary_update
+<span class="kw">AFTER UPDATE ON</span> Employee
+<span class="kw">FOR EACH ROW</span>
+<span class="kw">BEGIN</span>
+  <span class="kw">INSERT INTO</span> AuditLog(emp_id, old_sal, new_sal)
+  <span class="kw">VALUES</span>(OLD.emp_id, OLD.salary, NEW.salary);
+<span class="kw">END</span>;
+
+<span class="cm">-- Transaction</span>
+<span class="kw">START TRANSACTION</span>;
+<span class="kw">UPDATE</span> Account <span class="kw">SET</span> balance = balance - <span class="nm">500</span> <span class="kw">WHERE</span> id = <span class="nm">1</span>;
+<span class="kw">UPDATE</span> Account <span class="kw">SET</span> balance = balance + <span class="nm">500</span> <span class="kw">WHERE</span> id = <span class="nm">2</span>;
+<span class="kw">COMMIT</span>;</pre>
+
+      <h4>TRUNCATE vs DELETE</h4>
+      <table>
+        <tr><th>Command</th><th>Effect</th><th>Speed</th><th>WHERE allowed?</th></tr>
+        <tr><td>DELETE</td><td>Removes selected rows</td><td>Slower</td><td>Yes</td></tr>
+        <tr><td>TRUNCATE</td><td>Removes all rows, keeps table structure</td><td>Faster</td><td>No</td></tr>
+      </table>
+
+      <h4>Relational Algebra Basics</h4>
+      <table>
+        <tr><th>Operator</th><th>Symbol</th><th>Meaning</th></tr>
+        <tr><td>Select</td><td>sigma</td><td>Row filtering by condition</td></tr>
+        <tr><td>Project</td><td>pi</td><td>Column selection</td></tr>
+        <tr><td>Union</td><td>union</td><td>Combine tuples from compatible relations</td></tr>
+        <tr><td>Difference</td><td>minus</td><td>Tuples in R not in S</td></tr>
+        <tr><td>Cartesian product</td><td>times</td><td>All pair combinations</td></tr>
+        <tr><td>Join</td><td>bowtie</td><td>Combine related tuples on condition</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">RA to SQL mapping</span>
+        sigma maps to WHERE, pi maps to SELECT columns, and join in relational algebra maps to SQL JOIN clauses.
       </div>
     </div>
   </div>
@@ -2223,6 +3269,171 @@ De Morgan  : ̄(A·B)=Ā+B̄,   ̄(A+B)=Ā·B̄   ← Most Important!</div>
       </div>
     </div>
   </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🔁</div>
+      <div class="topic-title">Binary Systems, Number Conversion & Digital Codes</div>
+      <div class="topic-tags"><span class="ttag">Binary</span><span class="ttag">Hex</span><span class="ttag">Gray</span><span class="ttag">Excess-3</span><span class="ttag">Parity</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Conversion</th><th>Quick method</th><th>Example</th></tr>
+        <tr><td>Binary → Decimal</td><td>Sum of powers of 2</td><td>101101₂ = 45₁₀</td></tr>
+        <tr><td>Decimal → Binary</td><td>Repeated division by 2</td><td>45₁₀ = 101101₂</td></tr>
+        <tr><td>Binary ↔ Octal</td><td>Group 3 bits</td><td>110101₂ = 65₈</td></tr>
+        <tr><td>Binary ↔ Hex</td><td>Group 4 bits</td><td>11111111₂ = FF₁₆</td></tr>
+      </table>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🎯</div><h5>Gray Code</h5><p>Adjacent values differ by only 1 bit. Useful in encoders to reduce transition error.</p></div>
+        <div class="concept-card"><div class="cc-icon">➕</div><h5>Excess-3 Code</h5><p>Decimal digit +3 then convert to binary. Example: 5 → 8 → 1000.</p></div>
+        <div class="concept-card"><div class="cc-icon">🛡️</div><h5>Parity Code</h5><p>Add one bit to make total 1s even or odd for simple error detection.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">🧮</div>
+      <div class="topic-title">Boolean Simplification, SOP/POS, K-Map & ALU Basics</div>
+      <div class="topic-tags"><span class="ttag">SOP</span><span class="ttag">POS</span><span class="ttag">K-map</span><span class="ttag">ALU</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Term</th><th>Meaning</th><th>Exam focus</th></tr>
+        <tr><td>SOP (Sum of Products)</td><td>OR of AND terms</td><td>Use minterms and K-map grouping of 1s</td></tr>
+        <tr><td>POS (Product of Sums)</td><td>AND of OR terms</td><td>Use maxterms and K-map grouping of 0s</td></tr>
+        <tr><td>Prime Implicant</td><td>Largest possible group in K-map</td><td>Essential prime implicant must be selected</td></tr>
+      </table>
+      <div class="diagram">
+K-map reminder:
+3-variable K-map = 2 x 4 cells
+4-variable K-map = 4 x 4 cells
+
+Group sizes must be powers of 2: 1,2,4,8...
+Wrap-around groups are valid.
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">ALU Function Snippets</span>
+        Typical ALU operations include F=A, F=A+B, F=A+B', F=A-1. These are built using adder logic, complement logic, and control select lines.
+      </div>
+      <table>
+        <tr><th>Adder Block</th><th>Output</th><th>Use</th></tr>
+        <tr><td>Half Adder</td><td>Sum = A⊕B, Carry = A·B</td><td>Single-bit add without carry-in</td></tr>
+        <tr><td>Full Adder</td><td>Sum = A⊕B⊕Cin</td><td>Single-bit add with carry-in</td></tr>
+        <tr><td>3-bit Adder</td><td>Cascade of full adders</td><td>Multi-bit addition</td></tr>
+      </table>
+      <div class="why-box">
+        <span class="wb-title">Multiply Bit</span>
+        In binary multiplication, each partial product bit is generated by AND gates, then summed using adders.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🧩</div>
+      <div class="topic-title">Combinational Logic Design (MUX, Decoder, Encoder)</div>
+      <div class="topic-tags"><span class="ttag">MUX</span><span class="ttag">Decoder</span><span class="ttag">Encoder</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Design Task</th><th>Core idea</th></tr>
+        <tr><td>4:1 MUX, 8:1 MUX</td><td>Select one input using select lines.</td></tr>
+        <tr><td>6:1 MUX using 2:1 MUX</td><td>Build in stages (tree structure) with cascaded selectors.</td></tr>
+        <tr><td>3-input NAND using 4:1 MUX</td><td>Map truth table to MUX data inputs.</td></tr>
+        <tr><td>2:4 decoder using basic gates</td><td>Create minterms with NOT and AND gates.</td></tr>
+        <tr><td>3:8 decoder using 2:4 decoders</td><td>Use one decoder for enable selection, others for outputs.</td></tr>
+        <tr><td>4:16 decoder from 2:4 decoders</td><td>Hierarchical expansion using enable signals.</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">Decoder and Encoder</span>
+        Decoder maps n input bits to 2^n output lines. Encoder performs reverse mapping from active input line to binary code.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🔄</div>
+      <div class="topic-title">Sequential Logic, Flip-Flops, Counters, Registers & Clock</div>
+      <div class="topic-tags"><span class="ttag">D-FF</span><span class="ttag">T-FF</span><span class="ttag">Counter</span><span class="ttag">Register</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple point</th><th>Exam cue</th></tr>
+        <tr><td>Latch vs Flip-Flop</td><td>Latch is level-triggered; flip-flop is edge-triggered.</td><td>Timing behavior difference</td></tr>
+        <tr><td>Synchronous sequential circuit</td><td>State updates on common clock edge.</td><td>Predictable design timing</td></tr>
+        <tr><td>D-FF to T-FF conversion</td><td>Use logic: D = T ⊕ Q</td><td>Classic conversion question</td></tr>
+        <tr><td>Asynchronous counter</td><td>Clock ripples through FF chain.</td><td>Simpler, but propagation delay</td></tr>
+        <tr><td>Down counter / Up counter</td><td>State sequence decreases/increases each pulse.</td><td>Need state table + excitation logic</td></tr>
+      </table>
+      <div class="diagram">
+Clock division with D flip-flops:
+Qbar feedback to D makes toggle behavior.
+
+100 MHz --(D-FF toggle)--> 50 MHz
+50 MHz  --(D-FF toggle)--> 25 MHz
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">MOD Counter Notes</span>
+        MOD-6 counter needs 6 states, MOD-12 up counter needs 12 states. Use required number of FFs and reset logic to skip unused states.
+      </div>
+      <table>
+        <tr><th>Register Type</th><th>Meaning</th></tr>
+        <tr><td>SISO</td><td>Serial In Serial Out</td></tr>
+        <tr><td>SIPO</td><td>Serial In Parallel Out</td></tr>
+        <tr><td>PISO</td><td>Parallel In Serial Out</td></tr>
+        <tr><td>PIPO</td><td>Parallel In Parallel Out</td></tr>
+      </table>
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">State Diagram Question</div>
+          <p>For sequential design questions, first write state table, then draw state diagram, then derive flip-flop excitation equations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">⚙️</div>
+      <div class="topic-title">Basic Electrical Circuits — Thevenin, Norton, Mesh, Nodal, Superposition</div>
+      <div class="topic-tags"><span class="ttag">Thevenin</span><span class="ttag">Norton</span><span class="ttag">Mesh</span><span class="ttag">Nodal</span><span class="ttag">Superposition</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Method</th><th>Main idea</th><th>Quick formula / step</th></tr>
+        <tr><td>Circuit solution basics</td><td>Apply KCL, KVL, Ohm's law.</td><td>V = IR, sum currents at node = 0, sum loop voltages = 0.</td></tr>
+        <tr><td>Mesh analysis</td><td>Write KVL in each independent loop.</td><td>Solve simultaneous equations for mesh currents.</td></tr>
+        <tr><td>Nodal analysis</td><td>Write KCL at non-reference nodes.</td><td>Use node voltages as unknowns.</td></tr>
+        <tr><td>Superposition theorem</td><td>One independent source active at a time.</td><td>Voltage source off = short, current source off = open.</td></tr>
+        <tr><td>Thevenin theorem</td><td>Replace linear network by Vth in series with Rth.</td><td>Vth = open-circuit voltage, Rth = equivalent resistance seen from load.</td></tr>
+        <tr><td>Norton theorem</td><td>Replace network by In in parallel with Rn.</td><td>In = short-circuit current, Rn = Rth.</td></tr>
+      </table>
+
+      <div class="diagram">
+Thevenin to Norton conversion:
+In = Vth / Rth
+Rn = Rth
+
+Norton to Thevenin conversion:
+Vth = In * Rn
+Rth = Rn
+      </div>
+
+      <div class="simple-box">
+        <span class="sb-title">Exam solving order</span>
+        Identify terminals and source/load first, simplify circuit, choose the best method (nodal for many current sources, mesh for many voltage loops), then compute requested current/voltage/power.
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- ═══════════════════════════════════════
@@ -2272,6 +3483,69 @@ De Morgan  : ̄(A·B)=Ā+B̄,   ̄(A+B)=Ā·B̄   ← Most Important!</div>
           <div class="et-label">Quick Comparison Memory Aid</div>
           <p><strong>Supervised</strong> = Teacher gives answers → student learns. <strong>Unsupervised</strong> = No teacher → student finds patterns. <strong>Reinforcement</strong> = Trial and error with rewards → agent learns optimal strategy.</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🧭</div>
+      <div class="topic-title">AI Search, Agents, Logic & Heuristics</div>
+      <div class="topic-tags"><span class="ttag">A*</span><span class="ttag">RBFS</span><span class="ttag">IDA*</span><span class="ttag">PEAS</span><span class="ttag">FOL</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Algorithm / Concept</th><th>Simple idea</th><th>Exam note</th></tr>
+        <tr><td>A*</td><td>Best-first search using <code>f(n)=g(n)+h(n)</code></td><td>Optimal if heuristic is admissible.</td></tr>
+        <tr><td>RBFS</td><td>Recursive best-first search with limited memory</td><td>Memory-friendly variant of A*.</td></tr>
+        <tr><td>IDA*</td><td>Iterative deepening with A* threshold</td><td>Combines DFS memory use with heuristic guidance.</td></tr>
+        <tr><td>Adversarial Search</td><td>Search against an opponent (game tree)</td><td>Minimax and alpha-beta are core methods.</td></tr>
+      </table>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🤖</div><h5>Agent</h5><p>An agent perceives environment and takes actions to maximize performance.</p></div>
+        <div class="concept-card"><div class="cc-icon">🧩</div><h5>PEAS</h5><p>Performance measure, Environment, Actuators, Sensors — framework to define an intelligent agent task.</p></div>
+        <div class="concept-card"><div class="cc-icon">🧠</div><h5>First Order Logic</h5><p>Knowledge representation with predicates, quantifiers, and relations.</p></div>
+        <div class="concept-card"><div class="cc-icon">📍</div><h5>Approximate vs Heuristic Value</h5><p>Heuristic value estimates cost-to-go; approximate value can refer to estimated state value from learning methods.</p></div>
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">Hybridization of local and global search</span>
+        Hybrid methods combine global exploration (to avoid local minima) with local exploitation (to refine good solutions quickly).
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">📊</div>
+      <div class="topic-title">ML Practical Concepts, ANN/LSTM, Big Data & Cloud Computing</div>
+      <div class="topic-tags"><span class="ttag">Validation</span><span class="ttag">Ensemble</span><span class="ttag">LSTM</span><span class="ttag">Cloud</span><span class="ttag">Big Data</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple meaning</th><th>Exam cue</th></tr>
+        <tr><td>Training/Validation/Test split</td><td>Train fits model, validation tunes model, test gives final unbiased score.</td><td>Never tune directly on test set.</td></tr>
+        <tr><td>Strong Learner vs Ensemble</td><td>Strong learner performs well alone; ensemble combines weak/medium models.</td><td>Bagging/Boosting increase robustness.</td></tr>
+        <tr><td>One-layer, two-output ANN</td><td>Single hidden/output setup with two output neurons.</td><td>Used for 2-target prediction or 2-class score outputs.</td></tr>
+        <tr><td>Decision Tree</td><td>Rule-based split model.</td><td>Easy to interpret, can overfit.</td></tr>
+        <tr><td>Overfitting</td><td>Model learns noise from training data.</td><td>Use regularization, pruning, dropout, more data.</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">LSTM Gates</span>
+        LSTM uses <strong>forget gate</strong>, <strong>input gate</strong>, and <strong>output gate</strong> to control memory flow in sequence models.
+      </div>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Area</th><th>Definition</th><th>Real-life example</th></tr>
+          <tr><td>Cloud Computing</td><td>On-demand computing resources over the Internet.</td><td>Hosting app on AWS/Azure/GCP instead of local server.</td></tr>
+          <tr><td>Cloud Types</td><td>Public, Private, Hybrid</td><td>Public for startup apps, private for banking, hybrid for mixed workloads.</td></tr>
+          <tr><td>Big Data</td><td>Very large, fast, and diverse datasets (volume, velocity, variety).</td><td>E-commerce clickstream analysis, fraud detection, recommendation systems.</td></tr>
+        </table>
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">OTDR (Exam note)</span>
+        OTDR (Optical Time Domain Reflectometer) is used in fiber networks to detect faults and measure cable characteristics by analyzing reflected light.
       </div>
     </div>
   </div>
@@ -2334,6 +3608,96 @@ Regular Expression: 1*(01*01*01*)*
         <tr><td>.</td><td>Concatenation</td><td>ab = a followed by b</td></tr>
         <tr><td>()</td><td>Grouping</td><td>(ab)* = ε, ab, abab...</td></tr>
       </table>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">📚</div>
+      <div class="topic-title">CFG, Turing Machine & Recursion Elimination</div>
+      <div class="topic-tags"><span class="ttag">CFG</span><span class="ttag">TM</span><span class="ttag">Left Recursion</span><span class="ttag">ε-production</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Concept</th><th>Simple meaning</th><th>Exam point</th></tr>
+        <tr><td>Context Free Grammar (CFG)</td><td>Grammar where each production has one nonterminal on LHS.</td><td>Used for language syntax design.</td></tr>
+        <tr><td>Turing Machine</td><td>Abstract model with tape, head, and state transitions.</td><td>Defines computability limits.</td></tr>
+        <tr><td>Left recursion elimination</td><td>Rewrite productions like A → Aα | β.</td><td>Needed for top-down parsers.</td></tr>
+        <tr><td>Right recursion</td><td>A → βA form often parser-friendly.</td><td>Common in grammar rewriting.</td></tr>
+        <tr><td>ε-production handling</td><td>Remove nullable productions carefully.</td><td>Maintain language equivalence.</td></tr>
+      </table>
+      <div class="diagram">
+Example left recursion elimination:
+A -> Aα | β
+becomes
+A  -> βA'
+A' -> αA' | ε
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🛠️</div>
+      <div class="topic-title">Compiler Design Basics — Lexical, Syntax, Semantic & Optimization</div>
+      <div class="topic-tags"><span class="ttag">Token</span><span class="ttag">Lexer</span><span class="ttag">Parser</span><span class="ttag">Semantic</span><span class="ttag">Optimization</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="diagram">
+Compiler pipeline:
+Source Code -> Lexical Analysis -> Syntax Analysis -> Semantic Analysis
+-> Intermediate Code -> Code Optimization -> Target Code
+      </div>
+      <table>
+        <tr><th>Phase</th><th>Role</th><th>Output</th></tr>
+        <tr><td>Lexical Analyzer</td><td>Converts character stream to tokens.</td><td>Token stream (id, keyword, number, operator).</td></tr>
+        <tr><td>Syntax Analysis</td><td>Checks grammar structure with parser.</td><td>Parse tree / syntax tree.</td></tr>
+        <tr><td>Semantic Analysis</td><td>Checks meaning (types, declarations, scope).</td><td>Annotated syntax tree / semantic checks.</td></tr>
+        <tr><td>Code Optimization</td><td>Improves intermediate code efficiency.</td><td>Faster/smaller optimized code.</td></tr>
+      </table>
+      <div class="simple-box">
+        <span class="sb-title">Token Example</span>
+        For <code>int x = a + 5;</code> possible tokens: <code>int</code>, <code>id(x)</code>, <code>=</code>, <code>id(a)</code>, <code>+</code>, <code>num(5)</code>, <code>;</code>
+      </div>
+      <div class="why-box">
+        <span class="wb-title">Why optimization matters</span>
+        Optimization reduces execution time, memory use, or instruction count without changing program meaning.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🧮</div>
+      <div class="topic-title">Discrete Mathematics — Pigeonhole Principle & Recurrence Relations</div>
+      <div class="topic-tags"><span class="ttag">Pigeonhole</span><span class="ttag">Recurrence</span><span class="ttag">Discrete Math</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple definition</th><th>Exam pattern</th></tr>
+        <tr><td>Pigeonhole Principle</td><td>If n+1 objects are placed into n boxes, at least one box has >=2 objects.</td><td>Proof by counting and contradiction.</td></tr>
+        <tr><td>Generalized Pigeonhole</td><td>For N objects and k boxes, one box has at least ceil(N/k) objects.</td><td>Used in divisibility and grouping problems.</td></tr>
+        <tr><td>Recurrence Relation</td><td>Defines a sequence using previous terms.</td><td>Find nth term using iteration or characteristic roots.</td></tr>
+      </table>
+
+      <h4>Quick examples</h4>
+      <div class="diagram">
+Pigeonhole example:
+Among 13 people, at least two share a birth month.
+Reason: 13 people, 12 months -> one month has at least 2.
+
+Recurrence example:
+T(n) = 2T(n-1) + 1, T(1)=1
+T(2)=3, T(3)=7, T(4)=15 -> T(n)=2^n - 1
+      </div>
+
+      <div class="simple-box">
+        <span class="sb-title">Recurrence in algorithms</span>
+        Divide-and-conquer often gives recurrences, for example merge sort: T(n)=2T(n/2)+n leading to O(n log n).
+      </div>
     </div>
   </div>
 </div>
@@ -2515,6 +3879,336 @@ Call Stack (grows on each call, shrinks on return):
     </div>
   </div>
 
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🧠</div>
+      <div class="topic-title">C Programming Problem Bank — Concept + Coding Patterns</div>
+      <div class="topic-tags"><span class="ttag">Array</span><span class="ttag">Pointer</span><span class="ttag">String</span><span class="ttag">Matrix</span><span class="ttag">File</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">How to practice C problems</span>
+        For each problem, write input/output first, then dry-run with a small example, then code. Most mistakes happen in loop boundaries and index updates.
+      </div>
+      <table>
+        <tr><th>Category</th><th>Common Problems</th><th>Core idea</th></tr>
+        <tr><td>Numbers</td><td>odd-even, leap year, prime, palindrome, Armstrong, perfect number, quadratic equation</td><td>Use modulo, divisibility checks, and loop-based digit operations.</td></tr>
+        <tr><td>Digit Operations</td><td>sum of digits, separation of digits, reverse number, number division</td><td>Repeatedly use n % 10 and n / 10.</td></tr>
+        <tr><td>Series</td><td>Fibonacci, arithmetic/geometric series, custom pattern series</td><td>Track previous values and running sum.</td></tr>
+        <tr><td>Pattern</td><td>stars, number triangle, pyramid, inverted pattern</td><td>Nested loops with row/column control.</td></tr>
+        <tr><td>1-D Array</td><td>reverse, find highest/lowest, duplicate detection, merge sorted/unsorted arrays</td><td>Use linear scan; sort first if needed.</td></tr>
+        <tr><td>2-D Array / Matrix</td><td>matrix sum, multiplication, transpose</td><td>Nested loops over rows and columns.</td></tr>
+        <tr><td>String</td><td>compare, reverse string, remove character/string, find specific word</td><td>Use pointer/index traversal and null terminator checks.</td></tr>
+        <tr><td>Pointers</td><td>call by value vs call by reference, value replace through pointer</td><td>Address passing lets function modify original variable.</td></tr>
+        <tr><td>File</td><td>append, read/write, count word/number occurrences</td><td>Use fopen modes like "a", "r", "w" and check NULL.</td></tr>
+        <tr><td>Recursion</td><td>factorial, Fibonacci recursion, array recursion</td><td>Base case plus smaller subproblem.</td></tr>
+      </table>
+
+      <h4>Call by Value vs Call by Reference</h4>
+<pre><span class="cm">// call by value: original x unchanged</span>
+<span class="kw">void</span> incVal(<span class="kw">int</span> x) { x++; }
+
+<span class="cm">// call by reference (pointer): original x changes</span>
+<span class="kw">void</span> incRef(<span class="kw">int</span>* x) { (*x)++; }</pre>
+
+      <h4>Mini Output Problem (C)</h4>
+      <div class="example-flow">int a = 5;
+incVal(a);   // a still 5
+incRef(&a);  // a becomes 6
+printf("%d", a);  // output: 6</div>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Frequent C Mistakes</div>
+          <p>Off-by-one loops, forgetting null terminator in strings, not checking file pointer from <code>fopen</code>, incorrect matrix loop indices, and missing base case in recursion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🔎</div>
+      <div class="topic-title">Searching & Sorting Problem Set (C / DSA Basics)</div>
+      <div class="topic-tags"><span class="ttag">Linear</span><span class="ttag">Binary</span><span class="ttag">Merge</span><span class="ttag">Quick</span><span class="ttag">Radix</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Algorithm</th><th>When used</th><th>Important note</th></tr>
+        <tr><td>Linear Search</td><td>Small or unsorted arrays</td><td>O(n), no precondition.</td></tr>
+        <tr><td>Binary Search</td><td>Sorted arrays</td><td>O(log n), requires sorted order.</td></tr>
+        <tr><td>Bubble Sort</td><td>Learning/basic small arrays</td><td>Simple but O(n²).</td></tr>
+        <tr><td>Merge Sort</td><td>Stable, predictable performance</td><td>O(n log n), needs extra memory.</td></tr>
+        <tr><td>Quick Sort</td><td>Fast average-case in practice</td><td>Pivot choice affects worst case.</td></tr>
+        <tr><td>Radix Sort</td><td>Integer keys with bounded digits</td><td>Non-comparison sort.</td></tr>
+      </table>
+
+      <h4>Mini Output Problem (Binary Search)</h4>
+      <div class="example-flow">Array: [2, 5, 8, 12, 16, 23, 38, 56], target=23
+low=0, high=7, mid=3 (12)
+low=4, high=7, mid=5 (23) => found at index 5</div>
+
+      <h4>Mini Output Problem (Array Merge)</h4>
+      <div class="example-flow">A = [1,4,7], B = [2,3,6]
+Merged sorted output = [1,2,3,4,6,7]</div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">☕</div>
+      <div class="topic-title">Java OOP Output + Conceptual Problems</div>
+      <div class="topic-tags"><span class="ttag">Inheritance</span><span class="ttag">Polymorphism</span><span class="ttag">Binding</span><span class="ttag">Lambda</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Concept</th><th>Problem style</th><th>What to check</th></tr>
+        <tr><td>Inheritance</td><td>Parent-child method call output</td><td><code>extends</code>, constructor call order, overridden methods.</td></tr>
+        <tr><td>Abstraction</td><td>Abstract class/interface usage</td><td>Cannot instantiate abstract class directly.</td></tr>
+        <tr><td>Polymorphism</td><td>Reference type vs object type output</td><td>Overriding resolved at runtime (dynamic/late binding).</td></tr>
+        <tr><td>Overloading</td><td>Same method name, different params</td><td>Compile-time binding.</td></tr>
+        <tr><td>Overriding</td><td>Same signature in child class</td><td>Runtime binding.</td></tr>
+        <tr><td>Interface + Runnable</td><td>Thread question</td><td><code>class X implements Runnable</code>, start with new Thread(obj).start().</td></tr>
+        <tr><td>Instance Variable</td><td>Object initialization output</td><td>Default values if not initialized.</td></tr>
+        <tr><td>Lambda Expression</td><td>Functional interface implementation</td><td>Single abstract method only.</td></tr>
+      </table>
+
+      <h4>Mini Output Problem (Overriding)</h4>
+<pre><span class="kw">class</span> A { <span class="kw">void</span> show(){ System.out.<span class="fn">print</span>(<span class="st">"A"</span>); } }
+<span class="kw">class</span> B <span class="kw">extends</span> A { <span class="kw">void</span> show(){ System.out.<span class="fn">print</span>(<span class="st">"B"</span>); } }
+A obj = <span class="kw">new</span> B();
+obj.<span class="fn">show</span>();  <span class="cm">// Output: B</span></pre>
+
+      <h4>Mini Output Problem (Lambda + Functional Interface)</h4>
+<pre><span class="kw">interface</span> Op { <span class="kw">int</span> apply(<span class="kw">int</span> a, <span class="kw">int</span> b); }
+Op add = (a,b) -&gt; a+b;
+System.out.<span class="fn">println</span>(add.<span class="fn">apply</span>(<span class="nm">2</span>,<span class="nm">3</span>)); <span class="cm">// Output: 5</span></pre>
+
+      <div class="simple-box">
+        <span class="sb-title">Practice Sources</span>
+        For output and conceptual practice you can use GateOverflow and Javatpoint topic drills: <a href="https://gateoverflow.in/" target="_blank" rel="noopener noreferrer">GateOverflow</a> and <a href="https://www.javatpoint.com/" target="_blank" rel="noopener noreferrer">Javatpoint</a>.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 13 — COMPUTER FUNDAMENTALS / ARCHITECTURE / MICROPROCESSOR
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch13">
+  <div class="chapter-header ch-5">
+    <div class="chapter-icon">🖥️</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 13</div>
+      <div class="chapter-title">Computer Fundamentals, Architecture & Microprocessor</div>
+      <div class="chapter-desc">Memory, pipeline, cache math, hardware troubleshooting, 8086 and assembly basics</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🧠</div>
+      <div class="topic-title">Memory, CPU, Firmware & Core Hardware Fundamentals</div>
+      <div class="topic-tags"><span class="ttag">SRAM</span><span class="ttag">DRAM</span><span class="ttag">Cache</span><span class="ttag">BIOS</span><span class="ttag">UEFI</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple meaning</th><th>Exam cue</th></tr>
+        <tr><td>CPU function</td><td>Fetch, decode, execute instructions; controls all operations.</td><td>ALU + CU + registers.</td></tr>
+        <tr><td>Memory hierarchy</td><td>Registers -> Cache -> RAM -> SSD/HDD.</td><td>Top is fastest and smallest.</td></tr>
+        <tr><td>SRAM</td><td>Very fast static memory (no refresh).</td><td>Used in cache memory.</td></tr>
+        <tr><td>DRAM</td><td>Dynamic RAM needs periodic refresh.</td><td>Main memory in most systems.</td></tr>
+        <tr><td>Flash memory</td><td>Non-volatile electronic storage.</td><td>SSD, pen drive, firmware storage.</td></tr>
+        <tr><td>Blank memory</td><td>Unprogrammed memory device.</td><td>Typical in fresh EEPROM/Flash chips.</td></tr>
+        <tr><td>Virtual memory</td><td>Disk-backed extension of RAM.</td><td>Uses paging; slower than RAM.</td></tr>
+        <tr><td>Cache memory</td><td>Small high-speed memory near CPU.</td><td>L1/L2/L3 levels.</td></tr>
+        <tr><td>Write-through cache</td><td>Write to cache and RAM together.</td><td>Safer consistency, slower writes.</td></tr>
+        <tr><td>Write-back cache</td><td>Write to cache first, RAM later.</td><td>Faster writes, dirty-bit management.</td></tr>
+        <tr><td>BIOS vs UEFI</td><td>Firmware that starts system hardware and boot process.</td><td>UEFI is modern, supports GPT and secure boot.</td></tr>
+        <tr><td>Loader vs Firmware</td><td>Firmware initializes hardware; loader loads OS kernel.</td><td>Boot sequence question favorite.</td></tr>
+      </table>
+
+      <h4>Peripherals and Common Ports</h4>
+      <table>
+        <tr><th>Port / Interface</th><th>Use</th></tr>
+        <tr><td>USB (A/C)</td><td>General peripherals, data + power.</td></tr>
+        <tr><td>HDMI / DisplayPort / VGA</td><td>Display output interfaces.</td></tr>
+        <tr><td>Ethernet (RJ45)</td><td>Wired networking.</td></tr>
+        <tr><td>Audio jack</td><td>Speaker/microphone connection.</td></tr>
+        <tr><td>SATA / NVMe (M.2, PCIe)</td><td>SSD interfacing methods.</td></tr>
+      </table>
+
+      <h4>Printer and Device Drivers</h4>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🖨️</div><h5>Printer types</h5><p>Impact (dot matrix) and non-impact (inkjet, laser, thermal).</p></div>
+        <div class="concept-card"><div class="cc-icon">🧩</div><h5>Device driver</h5><p>Software bridge between OS and hardware (printer, GPU, NIC, etc.).</p></div>
+        <div class="concept-card"><div class="cc-icon">🔧</div><h5>Printer driver</h5><p>Converts print jobs to printer-understandable command format.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🏗️</div>
+      <div class="topic-title">Computer Architecture, Pipeline, Cache Mapping & RAID</div>
+      <div class="topic-tags"><span class="ttag">Pipeline</span><span class="ttag">Hazard</span><span class="ttag">RAID</span><span class="ttag">RISC/CISC</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Concept</th><th>Simple meaning</th><th>Exam key</th></tr>
+        <tr><td>Von Neumann architecture</td><td>Instruction and data share same memory path.</td><td>Simple design, bottleneck possible.</td></tr>
+        <tr><td>Harvard architecture</td><td>Separate instruction and data memories.</td><td>Higher throughput.</td></tr>
+        <tr><td>CISC vs RISC</td><td>Complex vs reduced instruction sets.</td><td>RISC simpler/faster pipeline, CISC richer instructions.</td></tr>
+        <tr><td>Pipeline (5 stages)</td><td>IF, ID, EX, MEM, WB</td><td>Increases instruction throughput.</td></tr>
+        <tr><td>Branching</td><td>Control flow change instruction.</td><td>Can cause control hazard and pipeline stalls.</td></tr>
+        <tr><td>Hazards</td><td>Pipeline conflicts</td><td>Structural, Data, Control hazards.</td></tr>
+        <tr><td>Shared-memory architecture</td><td>Processors share one memory space.</td><td>SMP systems.</td></tr>
+        <tr><td>Parallel processing architecture</td><td>Multiple processors/cores execute tasks together.</td><td>Speedup and throughput.</td></tr>
+      </table>
+
+      <h4>RAID Levels (job exam essentials)</h4>
+      <table>
+        <tr><th>RAID</th><th>Main idea</th><th>Strength</th></tr>
+        <tr><td>RAID 0</td><td>Striping only</td><td>Fast, no fault tolerance.</td></tr>
+        <tr><td>RAID 1</td><td>Mirroring</td><td>High reliability.</td></tr>
+        <tr><td>RAID 5</td><td>Striping + distributed parity</td><td>Good balance of speed and safety.</td></tr>
+        <tr><td>RAID 6</td><td>Dual parity</td><td>Survives two-disk failure.</td></tr>
+        <tr><td>RAID 10</td><td>Mirror + stripe</td><td>High performance with redundancy.</td></tr>
+      </table>
+
+      <h4>Direct Mapping and Overhead</h4>
+      <div class="diagram">
+Address fields in direct-mapped cache:
+[Tag | Index | Block Offset]
+
+Cache lines = Cache Size / Block Size
+Index bits = log2(Cache lines)
+Offset bits = log2(Block Size)
+Tag bits = Address bits - Index bits - Offset bits
+
+Overhead = Tag bits + valid bit (+ dirty bit if write-back) per line.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🧮</div>
+      <div class="topic-title">Important Architecture Numericals (CPI, Cache, AAT, Processor Speed)</div>
+      <div class="topic-tags"><span class="ttag">CPI</span><span class="ttag">Hit/Miss</span><span class="ttag">AAT</span><span class="ttag">Clock</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="formula-block">CPU Time = Instruction Count x CPI x Clock Cycle Time</div>
+      <div class="formula-block">Average Access Time (AAT) = Hit Time + Miss Rate x Miss Penalty</div>
+      <table>
+        <tr><th>Quantity</th><th>Formula</th></tr>
+        <tr><td>Clock frequency</td><td>f = 1/T</td></tr>
+        <tr><td>Weighted CPI</td><td>CPI = sum(instruction fraction x CPI_i)</td></tr>
+        <tr><td>Cache miss rate</td><td>Miss Rate = Misses / Total Accesses</td></tr>
+        <tr><td>Cache hit rate</td><td>Hit Rate = 1 - Miss Rate</td></tr>
+      </table>
+
+      <h4>Quick solved pattern</h4>
+      <div class="example-flow">Example:
+Hit time = 1 ns, miss rate = 0.05, miss penalty = 80 ns
+AAT = 1 + 0.05 x 80 = 5 ns
+
+If clock = 2 GHz, cycle time = 0.5 ns
+If instruction count = 1e9 and CPI = 1.8
+CPU time = 1e9 x 1.8 x 0.5 ns = 0.9 sec</div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🔬</div>
+      <div class="topic-title">Microprocessor & Microcontroller (8086, DMA, Interrupts, Buses, Assembly Practice)</div>
+      <div class="topic-tags"><span class="ttag">8086</span><span class="ttag">DMA</span><span class="ttag">Interrupt</span><span class="ttag">Addressing Mode</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Topic</th><th>Simple meaning</th><th>Exam point</th></tr>
+        <tr><td>Microprocessor</td><td>CPU-centric chip, needs external RAM/ROM/peripherals.</td><td>High flexibility, general-purpose computing.</td></tr>
+        <tr><td>Microcontroller</td><td>CPU + memory + I/O in one chip.</td><td>Low-cost embedded control.</td></tr>
+        <tr><td>8/16/32/64-bit processor</td><td>Data-path/register width.</td><td>Affects word size and address capability.</td></tr>
+        <tr><td>Fetch-execute cycle</td><td>Fetch instruction -> decode -> execute -> write back.</td><td>Core processor activity.</td></tr>
+        <tr><td>Address bus / Data bus / Control bus</td><td>Address selects location, data carries values, control carries read/write signals.</td><td>Address bus width controls addressable space.</td></tr>
+        <tr><td>Interrupt</td><td>Signal that diverts CPU to service routine.</td><td>Maskable vs non-maskable.</td></tr>
+        <tr><td>DMA</td><td>Direct memory transfer without CPU moving every byte.</td><td>CPU offload for high-speed I/O.</td></tr>
+        <tr><td>Pentium superscalar</td><td>Can issue multiple instructions per clock.</td><td>Improves IPC and throughput.</td></tr>
+        <tr><td>Multiprogramming vs uniprocessor</td><td>Many programs in memory vs one CPU execution core.</td><td>Context switching gives concurrency illusion.</td></tr>
+      </table>
+
+      <h4>8086 block-level components</h4>
+      <div class="diagram">
+8086 Architecture:
+1) BIU (Bus Interface Unit): instruction queue, segment registers, address generation.
+2) EU (Execution Unit): ALU, control, flag register, general registers.
+
+Common segment registers: CS, DS, SS, ES
+General registers: AX, BX, CX, DX, SP, BP, SI, DI
+      </div>
+
+      <h4>Addressing Modes (must remember)</h4>
+      <table>
+        <tr><th>Mode</th><th>Example</th></tr>
+        <tr><td>Immediate</td><td>MOV AX, 1234H</td></tr>
+        <tr><td>Register</td><td>MOV AX, BX</td></tr>
+        <tr><td>Direct</td><td>MOV AL, [2000H]</td></tr>
+        <tr><td>Register indirect</td><td>MOV AL, [BX]</td></tr>
+        <tr><td>Indexed / based indexed</td><td>MOV AL, [BX+SI]</td></tr>
+      </table>
+
+      <h4>Timing diagram idea for memory read</h4>
+      <div class="simple-box">
+        <span class="sb-title">Memory read cycle (conceptual)</span>
+        T1: CPU puts address on bus and activates ALE. T2: RD goes low. T3: memory puts data on data bus. T4: CPU latches data and RD returns high.
+      </div>
+
+      <h4>Assembly practice snippets</h4>
+<pre><span class="cm">; Sum of two numbers (8086 style idea)</span>
+MOV AX, 0005H
+MOV BX, 0003H
+ADD AX, BX        <span class="cm">; AX = 8</span>
+
+<span class="cm">; Print 1 to n (logic sketch, pseudo-assembly)</span>
+MOV CX, n
+MOV AX, 1
+L1: ; print AX
+INC AX
+LOOP L1</pre>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">🛠️</div>
+      <div class="topic-title">Job-Exam Hardware Troubleshooting Cases</div>
+      <div class="topic-tags"><span class="ttag">Overheating</span><span class="ttag">Blue Screen</span><span class="ttag">Restore</span><span class="ttag">Motherboard</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Problem</th><th>Likely cause</th><th>Quick action</th></tr>
+        <tr><td>Laptop overheating</td><td>Dusty vents, fan failure, dried thermal paste, heavy background load.</td><td>Clean vents, check fan, repaste, reduce load, cooling pad.</td></tr>
+        <tr><td>Blue screen (BSOD)</td><td>Driver crash, RAM issue, disk corruption, overheating.</td><td>Safe mode, update/rollback driver, memory test, disk check.</td></tr>
+        <tr><td>Printer not working</td><td>Driver mismatch, spooler issue, port error.</td><td>Reinstall printer driver, restart spooler, verify USB/network port.</td></tr>
+        <tr><td>Windows restore needed</td><td>Bad update/software conflict.</td><td>System Restore or recovery startup repair.</td></tr>
+        <tr><td>SSD not detected</td><td>Loose cable, wrong BIOS mode, NVMe lane/slot issue.</td><td>Check SATA/NVMe seating, BIOS detection, storage mode settings.</td></tr>
+        <tr><td>Motherboard dead symptoms</td><td>No POST, no beep, power rail issue.</td><td>Minimal boot test: PSU, RAM reseat, CMOS reset, speaker codes.</td></tr>
+      </table>
+    </div>
+  </div>
 </div>
 
 <!-- ═══════════════════════════════════════
@@ -2549,6 +4243,13 @@ Call Stack (grows on each call, shrinks on return):
           <div class="mq-q">Q: What data structure does BFS use? What about DFS?</div>
           <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
           <div class="mq-reveal">BFS = Queue (FIFO — explores level by level). DFS = Stack or recursion (LIFO — goes deep first). Remember: B=Bus (Queue, FIFO), D=Depth (Stack, goes deep).</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Diagram Trace Quiz</span>
+          <div class="mq-q">Q: If you insert 1, 2, 3 into a stack, which item comes out first? Which item comes out first from a queue?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Stack → 3 comes out first because it is LIFO. Queue → 1 comes out first because it is FIFO. A simple picture helps: stack behaves like a plate pile, queue behaves like a line of people.</div>
         </div>
 
         <div class="mini-quiz">
