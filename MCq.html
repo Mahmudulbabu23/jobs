@@ -503,7 +503,7 @@ function updateCounts(){
   if(prevBtn)prevBtn.textContent=(PREV_YEAR_BANK.length?`${PREV_YEAR_BANK.length} year${PREV_YEAR_BANK.length===1?'':'s'}`:'0 years');
 }
 
-let selTopics = TOPICS.map(t=>t.id);
+let selTopics = [];
 let selMode = 'practice';
 let usedQuestionIds = new Set();
 let qs = {questions:[],answers:[],cur:0,timerSec:0,timerInt:null,startMs:0,cor:0,wr:0,sk:0,total:0,topics:[],mode:'',diff:''};
@@ -512,7 +512,7 @@ let gScore=0,gDone=0;
 const tGrid = document.getElementById('topicGrid');
 TOPICS.forEach(t=>{
   const d=document.createElement('div');
-  d.className='topic-tile on';d.dataset.id=t.id;
+  d.className='topic-tile';d.dataset.id=t.id;
   d.innerHTML=`<i class="ti ${t.icon}" aria-hidden="true"></i><span>${t.name}</span><div class="check"></div>`;
   d.onclick=()=>toggleTopic(d,t.id);
   tGrid.appendChild(d);
@@ -544,10 +544,6 @@ function selAll(v){
     if(v){el.classList.add('on');}else{el.classList.remove('on');}
   });
   selTopics=v?TOPICS.map(t=>t.id):[];
-  if(!v&&TOPICS.length>0){
-    document.querySelector('.topic-tile').classList.add('on');
-    selTopics=[TOPICS[0].id];
-  }
   updateSelCount();
 }
 function pickMode(el,m){
@@ -708,6 +704,11 @@ async function startQuiz(selectedTopicsParam){
         const active = Array.from(document.querySelectorAll('.topic-tile.on')).map(el=>el.dataset.id).filter(Boolean);
         return active.length? active : [...selTopics];
       })();
+  if(!usedTopics.length){
+    alert('Please select at least one topic before starting the exam.');
+    document.getElementById('loadCard').classList.add('hidden');
+    return;
+  }
   const finalQuestions=generateQuizQuestions([...usedTopics],total,diff);
   if(!finalQuestions)return;
   qs={questions:finalQuestions,answers:new Array(total).fill(null),
