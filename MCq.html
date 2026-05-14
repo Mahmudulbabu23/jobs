@@ -526,7 +526,7 @@ function toggleTopic(el,id){
     // quick start exam for single topic
     selTopics=[id];
     updateSelCount();
-    startQuiz();
+    startQuiz([id]);
     return;
   }
   if(el.classList.contains('on')){
@@ -566,8 +566,8 @@ function sbClick(btn,id){
   if(selMode==='exam'){
     selTopics = (id==='all')?TOPICS.map(t=>t.id):[id];
     updateSelCount();
-    // startQuiz will switch to scrQuiz
-    startQuiz();
+    // startQuiz will switch to scrQuiz; pass explicit topics to guarantee filtering
+    startQuiz(selTopics);
     return;
   }
   showScr('scrHome');
@@ -681,7 +681,7 @@ function generateQuizQuestions(selectedTopics,total,diff){
   return chosen;
 }
 
-async function startQuiz(){
+async function startQuiz(selectedTopicsParam){
   document.getElementById('loadCard').classList.remove('hidden');
   document.getElementById('loadSub').textContent='Loading question banks from JSON files';
   document.getElementById('qBox').classList.add('hidden');
@@ -701,11 +701,12 @@ async function startQuiz(){
   document.getElementById('gScore').textContent=gScore;
   document.getElementById('gDone').textContent=gDone;
   updateCounts();
-  const finalQuestions=generateQuizQuestions([...selTopics],total,diff);
+  const usedTopics = Array.isArray(selectedTopicsParam) && selectedTopicsParam.length? selectedTopicsParam : [...selTopics];
+  const finalQuestions=generateQuizQuestions([...usedTopics],total,diff);
   if(!finalQuestions)return;
   qs={questions:finalQuestions,answers:new Array(total).fill(null),
     cur:0,timerSec:tmr*60,timerInt:null,startMs:Date.now(),
-    cor:0,wr:0,sk:0,total,topics:[...selTopics],mode:selMode,diff};
+    cor:0,wr:0,sk:0,total,topics:[...usedTopics],mode:selMode,diff};
   buildNav(total);
   showScr('scrQuiz');
   document.getElementById('qTot').textContent=total;
