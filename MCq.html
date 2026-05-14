@@ -522,6 +522,13 @@ function updateSelCount(){
   document.getElementById('selCount').textContent=selTopics.length+' selected';
 }
 function toggleTopic(el,id){
+  if(selMode==='exam'){
+    // quick start exam for single topic
+    selTopics=[id];
+    updateSelCount();
+    startQuiz();
+    return;
+  }
   if(el.classList.contains('on')){
     if(selTopics.length===1)return;
     el.classList.remove('on');
@@ -553,6 +560,14 @@ function sbClick(btn,id){
   if(id==='prev'){
     showScr('scrPrev');
     renderPreviousYearView();
+    return;
+  }
+  // If in exam mode, start an exam for this topic immediately
+  if(selMode==='exam'){
+    selTopics = (id==='all')?TOPICS.map(t=>t.id):[id];
+    updateSelCount();
+    // startQuiz will switch to scrQuiz
+    startQuiz();
     return;
   }
   showScr('scrHome');
