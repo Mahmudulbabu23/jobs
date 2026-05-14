@@ -1,0 +1,452 @@
+[
+  {
+    "id": "sec_001",
+    "question": "Which of the following is part of the CIA triad?",
+    "code": null,
+    "options": ["Confidentiality", "Integrity", "Availability", "All of the above"],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "CIA stands for Confidentiality, Integrity, and Availability."
+  },
+  {
+    "id": "sec_002",
+    "question": "A strong password should include:",
+    "code": null,
+    "options": ["Only letters", "Only numbers", "Letters, numbers, and symbols", "Only lowercase"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Mixing character types makes passwords harder to guess."
+  },
+  {
+    "id": "sec_003",
+    "question": "Phishing is an attack that:",
+    "code": null,
+    "options": ["Overloads a server", "Tricks users into revealing information", "Installs hardware", "Encrypts data for backup"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Phishing uses social engineering to steal credentials."
+  },
+  {
+    "id": "sec_004",
+    "question": "Which security control is preventive?",
+    "code": null,
+    "options": ["Audit logs", "Firewalls", "Incident response", "Forensics"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Firewalls block unwanted traffic before it reaches systems."
+  },
+  {
+    "id": "sec_005",
+    "question": "Which is an example of multifactor authentication?",
+    "code": null,
+    "options": ["Password only", "Password + SMS code", "PIN only", "Security question only"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "MFA combines two or more factors."
+  },
+  {
+    "id": "sec_006",
+    "question": "Least privilege means:",
+    "code": null,
+    "options": ["Give all users admin rights", "Grant only required access", "Share passwords", "Disable logging"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Users should only have permissions they need."
+  },
+  {
+    "id": "sec_007",
+    "question": "Which is a type of malware?",
+    "code": null,
+    "options": ["Firewall", "Trojan", "Router", "DNS"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A Trojan is malicious software disguised as legitimate."
+  },
+  {
+    "id": "sec_008",
+    "question": "Ransomware typically:",
+    "code": null,
+    "options": ["Deletes files silently", "Encrypts files and demands payment", "Improves performance", "Creates backups"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Ransomware encrypts data and demands payment for decryption."
+  },
+  {
+    "id": "sec_009",
+    "question": "A DDoS attack aims to:",
+    "code": null,
+    "options": ["Steal passwords", "Overwhelm a service", "Encrypt disks", "Patch servers"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "DDoS floods a service with traffic to cause downtime."
+  },
+  {
+    "id": "sec_010",
+    "question": "Which is an example of data integrity?",
+    "code": null,
+    "options": ["Data is available", "Data is accurate and unmodified", "Data is private", "Data is encrypted"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Integrity means data has not been altered improperly."
+  },
+  {
+    "id": "sec_011",
+    "question": "Which tool can detect known vulnerabilities in software?",
+    "code": null,
+    "options": ["Vulnerability scanner", "Text editor", "Calculator", "Media player"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Vulnerability scanners identify known security weaknesses."
+  },
+  {
+    "id": "sec_012",
+    "question": "Patch management is important because:",
+    "code": null,
+    "options": ["It increases bugs", "It fixes vulnerabilities", "It removes logs", "It disables firewalls"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Patches close security holes and fix defects."
+  },
+  {
+    "id": "sec_013",
+    "question": "A zero-day vulnerability is:",
+    "code": null,
+    "options": ["Known and patched", "Unknown to vendor", "Found only in old systems", "Harmless"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Zero-day means no patch exists yet."
+  },
+  {
+    "id": "sec_014",
+    "question": "Which protocol provides secure web traffic?",
+    "code": null,
+    "options": ["HTTP", "HTTPS", "FTP", "Telnet"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "HTTPS encrypts traffic with TLS."
+  },
+  {
+    "id": "sec_015",
+    "question": "Which is an example of social engineering?",
+    "code": null,
+    "options": ["SQL injection", "Phishing email", "Buffer overflow", "Port scanning"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Social engineering manipulates people, such as phishing."
+  },
+  {
+    "id": "sec_016",
+    "question": "What does VPN primarily provide?",
+    "code": null,
+    "options": ["Faster internet", "Encrypted tunnel", "More storage", "DNS caching"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A VPN creates an encrypted tunnel over public networks."
+  },
+  {
+    "id": "sec_017",
+    "question": "Which is a strong hashing use case?",
+    "code": null,
+    "options": ["Encrypting email", "Storing passwords", "Transferring files", "Routing traffic"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Hashes are used to store and verify passwords securely."
+  },
+  {
+    "id": "sec_018",
+    "question": "Salting passwords helps to:",
+    "code": null,
+    "options": ["Speed logins", "Prevent rainbow table attacks", "Reduce encryption", "Disable hashing"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Salt makes precomputed hash attacks ineffective."
+  },
+  {
+    "id": "sec_019",
+    "question": "Which is a principle of secure design?",
+    "code": null,
+    "options": ["Security by obscurity", "Fail secure", "Disable updates", "Open all ports"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Fail secure ensures safe behavior on failure."
+  },
+  {
+    "id": "sec_020",
+    "question": "Which is an example of two-factor authentication?",
+    "code": null,
+    "options": ["Password + PIN", "Password + fingerprint", "PIN only", "Password only"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Two factors use different categories, like knowledge and biometrics."
+  },
+  {
+    "id": "sec_021",
+    "question": "What is the primary goal of access control?",
+    "code": null,
+    "options": ["Stop all traffic", "Allow only authorized access", "Encrypt every file", "Delete logs"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Access control ensures only authorized users can access resources."
+  },
+  {
+    "id": "sec_022",
+    "question": "Which of the following is an example of authorization?",
+    "code": null,
+    "options": ["Logging in with password", "Checking user permissions", "Encrypting a file", "Backing up data"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Authorization determines what actions a user can perform."
+  },
+  {
+    "id": "sec_023",
+    "question": "Which of the following is an example of authentication?",
+    "code": null,
+    "options": ["Assigning roles", "Verifying identity", "Encrypting traffic", "Setting firewall rules"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Authentication verifies who the user is."
+  },
+  {
+    "id": "sec_024",
+    "question": "What is the primary purpose of an IDS?",
+    "code": null,
+    "options": ["Block traffic", "Detect suspicious activity", "Encrypt files", "Assign IPs"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Intrusion Detection Systems monitor and alert on threats."
+  },
+  {
+    "id": "sec_025",
+    "question": "What is the primary purpose of an IPS?",
+    "code": null,
+    "options": ["Detect only", "Detect and block", "Only log", "Only scan"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Intrusion Prevention Systems can block detected threats."
+  },
+  {
+    "id": "sec_026",
+    "question": "Which is a common secure coding practice?",
+    "code": null,
+    "options": ["Validate input", "Trust user data", "Disable logging", "Reuse passwords"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Input validation reduces injection risks."
+  },
+  {
+    "id": "sec_027",
+    "question": "SQL injection happens when:",
+    "code": null,
+    "options": ["Input is not sanitized", "Passwords are hashed", "Firewall is enabled", "Ports are closed"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Unsanitized input can alter SQL queries."
+  },
+  {
+    "id": "sec_028",
+    "question": "Cross-site scripting (XSS) targets:",
+    "code": null,
+    "options": ["Server OS", "Client browsers", "Network routers", "Databases"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "XSS injects scripts executed in the user's browser."
+  },
+  {
+    "id": "sec_029",
+    "question": "Cross-site request forgery (CSRF) exploits:",
+    "code": null,
+    "options": ["User trust in browser", "Weak encryption", "Open ports", "DNS cache"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "CSRF tricks a logged-in user into making unwanted requests."
+  },
+  {
+    "id": "sec_030",
+    "question": "What is the goal of encryption?",
+    "code": null,
+    "options": ["Integrity", "Confidentiality", "Availability", "Logging"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Encryption primarily protects confidentiality."
+  },
+  {
+    "id": "sec_031",
+    "question": "What is the goal of hashing?",
+    "code": null,
+    "options": ["Reversible secrecy", "Integrity checking", "Key exchange", "Compression"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Hashes verify data integrity."
+  },
+  {
+    "id": "sec_032",
+    "question": "Which is symmetric encryption?",
+    "code": null,
+    "options": ["AES", "RSA", "DSA", "ECC"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "AES uses the same key for encryption and decryption."
+  },
+  {
+    "id": "sec_033",
+    "question": "Which is asymmetric encryption?",
+    "code": null,
+    "options": ["AES", "RSA", "3DES", "Blowfish"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "RSA uses public and private keys."
+  },
+  {
+    "id": "sec_034",
+    "question": "TLS primarily protects data in:",
+    "code": null,
+    "options": ["Storage", "Transit", "Deletion", "Backup"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "TLS secures data in transit."
+  },
+  {
+    "id": "sec_035",
+    "question": "Which control is detective?",
+    "code": null,
+    "options": ["IDS", "Firewall", "MFA", "Access list"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "IDS detects suspicious activity and alerts."
+  },
+  {
+    "id": "sec_036",
+    "question": "Which is an example of a security baseline?",
+    "code": null,
+    "options": ["Default config with hardened settings", "No configuration", "Shared admin account", "Open ports"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A baseline defines minimum secure configurations."
+  },
+  {
+    "id": "sec_037",
+    "question": "Which practice reduces privilege abuse?",
+    "code": null,
+    "options": ["Role-based access control", "Password sharing", "Single admin account", "Disable logging"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "RBAC limits access based on roles."
+  },
+  {
+    "id": "sec_038",
+    "question": "Which is a secure backup practice?",
+    "code": null,
+    "options": ["No backups", "3-2-1 rule", "Single USB only", "Overwrite daily"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "3-2-1 keeps multiple copies across media and locations."
+  },
+  {
+    "id": "sec_039",
+    "question": "What does data availability mean?",
+    "code": null,
+    "options": ["Data is secret", "Data is accurate", "Data is accessible when needed", "Data is encrypted"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Availability means data and systems are accessible."
+  },
+  {
+    "id": "sec_040",
+    "question": "A firewall primarily operates by:",
+    "code": null,
+    "options": ["Filtering traffic", "Encrypting disks", "Managing users", "Compiling code"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Firewalls allow or block traffic based on rules."
+  },
+  {
+    "id": "sec_041",
+    "question": "Which is a common log source?",
+    "code": null,
+    "options": ["SIEM", "Web server", "Keyboard", "Mouse"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Web servers generate access and error logs."
+  },
+  {
+    "id": "sec_042",
+    "question": "A SIEM is used to:",
+    "code": null,
+    "options": ["Aggregate and analyze logs", "Encrypt disks", "Route packets", "Scan ports"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "SIEM correlates and analyzes security events."
+  },
+  {
+    "id": "sec_043",
+    "question": "Which is an example of physical security?",
+    "code": null,
+    "options": ["CCTV", "TLS", "Antivirus", "Firewall"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CCTV is a physical security control."
+  },
+  {
+    "id": "sec_044",
+    "question": "Which is a common endpoint protection tool?",
+    "code": null,
+    "options": ["Antivirus", "DNS", "Router", "DHCP"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Antivirus helps detect and block malware on endpoints."
+  },
+  {
+    "id": "sec_045",
+    "question": "Which type of attack targets availability?",
+    "code": null,
+    "options": ["DDoS", "Phishing", "Spoofing", "SQL injection"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "DDoS aims to make services unavailable."
+  },
+  {
+    "id": "sec_046",
+    "question": "Which type of attack targets confidentiality?",
+    "code": null,
+    "options": ["Eavesdropping", "DDoS", "Power failure", "Hardware fault"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Eavesdropping exposes private data."
+  },
+  {
+    "id": "sec_047",
+    "question": "Which type of attack targets integrity?",
+    "code": null,
+    "options": ["Data tampering", "Phishing", "DDoS", "Packet loss"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Tampering alters data, affecting integrity."
+  },
+  {
+    "id": "sec_048",
+    "question": "Which is a secure password storage approach?",
+    "code": null,
+    "options": ["Plain text", "Hash + salt", "Reversible encryption", "Shared file"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Hashing with salt is the standard secure approach."
+  },
+  {
+    "id": "sec_049",
+    "question": "What is the primary purpose of a security policy?",
+    "code": null,
+    "options": ["Define rules and expectations", "Block all traffic", "Encrypt all files", "Disable access"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Policies outline security requirements and responsibilities."
+  },
+  {
+    "id": "sec_050",
+    "question": "Which is a common incident response phase?",
+    "code": null,
+    "options": ["Containment", "Procrastination", "Obfuscation", "Normalization"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Containment limits damage during an incident."
+  }
+]

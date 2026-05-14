@@ -1,0 +1,452 @@
+[
+  {
+    "id": "en_001",
+    "question": "Choose the correct article: ___ apple a day keeps the doctor away.",
+    "code": null,
+    "options": ["A", "An", "The", "No article"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "'Apple' starts with a vowel sound, so 'an' is correct."
+  },
+  {
+    "id": "en_002",
+    "question": "Choose the correct sentence.",
+    "code": null,
+    "options": ["He go to school.", "He goes to school.", "He gone to school.", "He going to school."],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Third person singular needs 'goes'."
+  },
+  {
+    "id": "en_003",
+    "question": "What is the synonym of 'big'?",
+    "code": null,
+    "options": ["Large", "Small", "Tiny", "Short"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "'Large' is a synonym of 'big'."
+  },
+  {
+    "id": "en_004",
+    "question": "What is the antonym of 'hot'?",
+    "code": null,
+    "options": ["Warm", "Cold", "Burning", "Boiling"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "'Cold' is the opposite of 'hot'."
+  },
+  {
+    "id": "en_005",
+    "question": "Identify the noun: 'The cat sleeps on the sofa.'",
+    "code": null,
+    "options": ["cat", "sleeps", "on", "the"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "'Cat' is the noun."
+  },
+  {
+    "id": "en_006",
+    "question": "Identify the verb: 'The child is playing.'",
+    "code": null,
+    "options": ["child", "is", "playing", "the"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "'Playing' is the main verb form here."
+  },
+  {
+    "id": "en_007",
+    "question": "What is the plural of 'child'?",
+    "code": null,
+    "options": ["childs", "childes", "children", "childrens"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "The irregular plural is 'children'."
+  },
+  {
+    "id": "en_008",
+    "question": "What is the past tense of 'go'?",
+    "code": null,
+    "options": ["goed", "went", "gone", "going"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The past tense of go is went."
+  },
+  {
+    "id": "en_009",
+    "question": "What is the past participle of 'eat'?",
+    "code": null,
+    "options": ["ate", "eaten", "eating", "eats"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The past participle of eat is eaten."
+  },
+  {
+    "id": "en_010",
+    "question": "Which word is an adjective?",
+    "code": null,
+    "options": ["beautiful", "run", "quickly", "book"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Beautiful describes a noun, so it is an adjective."
+  },
+  {
+    "id": "en_011",
+    "question": "Which word is an adverb?",
+    "code": null,
+    "options": ["slowly", "slow", "slowness", "slower"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Slowly modifies a verb, so it is an adverb."
+  },
+  {
+    "id": "en_012",
+    "question": "Choose the correct preposition: She is good ___ mathematics.",
+    "code": null,
+    "options": ["in", "at", "on", "for"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The correct phrase is 'good at mathematics'."
+  },
+  {
+    "id": "en_013",
+    "question": "Which is a countable noun?",
+    "code": null,
+    "options": ["apple", "water", "milk", "air"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Apple can be counted as apples."
+  },
+  {
+    "id": "en_014",
+    "question": "Which is an uncountable noun?",
+    "code": null,
+    "options": ["rice", "book", "car", "pen"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Rice is generally uncountable."
+  },
+  {
+    "id": "en_015",
+    "question": "Choose the correct form: He has ___ finished his homework.",
+    "code": null,
+    "options": ["already", "yet", "never", "soon"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Already fits affirmative present perfect sentences."
+  },
+  {
+    "id": "en_016",
+    "question": "Choose the correct sentence.",
+    "code": null,
+    "options": ["I have seen him yesterday.", "I saw him yesterday.", "I see him yesterday.", "I am see him yesterday."],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Simple past is correct with 'yesterday'."
+  },
+  {
+    "id": "en_017",
+    "question": "Which is a coordinating conjunction?",
+    "code": null,
+    "options": ["and", "because", "although", "since"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "And is a coordinating conjunction."
+  },
+  {
+    "id": "en_018",
+    "question": "Which is a subordinating conjunction?",
+    "code": null,
+    "options": ["because", "and", "or", "but"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Because introduces a subordinate clause."
+  },
+  {
+    "id": "en_019",
+    "question": "What is the comparative form of 'good'?",
+    "code": null,
+    "options": ["gooder", "better", "best", "more good"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The comparative of good is better."
+  },
+  {
+    "id": "en_020",
+    "question": "What is the superlative form of 'good'?",
+    "code": null,
+    "options": ["best", "better", "goodest", "most good"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The superlative of good is best."
+  },
+  {
+    "id": "en_021",
+    "question": "Choose the correct passive form: They make shoes here.",
+    "code": null,
+    "options": ["Shoes are made here.", "Shoes made here.", "Shoes is made here.", "Shoes are make here."],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Active voice changes to passive with 'are made'."
+  },
+  {
+    "id": "en_022",
+    "question": "Choose the correct reported speech: He said, 'I am busy.'",
+    "code": null,
+    "options": ["He said that he was busy.", "He said that I was busy.", "He said that he is busy.", "He says that he was busy."],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Present changes to past in reported speech."
+  },
+  {
+    "id": "en_023",
+    "question": "Identify the pronoun: She gave me her pen.",
+    "code": null,
+    "options": ["She", "gave", "pen", "her"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "She is a pronoun."
+  },
+  {
+    "id": "en_024",
+    "question": "Identify the possessive adjective: My book is on the table.",
+    "code": null,
+    "options": ["My", "book", "table", "is"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "My is a possessive adjective."
+  },
+  {
+    "id": "en_025",
+    "question": "Choose the correct determiner: ___ students are ready.",
+    "code": null,
+    "options": ["These", "This", "That", "Much"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "These is used for plural nouns."
+  },
+  {
+    "id": "en_026",
+    "question": "Choose the correct article: She bought ___ umbrella.",
+    "code": null,
+    "options": ["a", "an", "the", "no article"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Umbrella starts with a vowel sound, so 'an' is correct."
+  },
+  {
+    "id": "en_027",
+    "question": "What is the meaning of 'rapid'?",
+    "code": null,
+    "options": ["fast", "slow", "late", "weak"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "en_028",
+    "question": "What is the meaning of 'expand'?",
+    "code": null,
+    "options": ["grow", "reduce", "hide", "freeze"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Expand means to grow or become larger."
+  },
+  {
+    "id": "en_029",
+    "question": "Choose the correct spelling.",
+    "code": null,
+    "options": ["necessary", "neccessary", "nesessary", "necessery"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Necessary is the correct spelling."
+  },
+  {
+    "id": "en_030",
+    "question": "Choose the correct spelling.",
+    "code": null,
+    "options": ["receive", "recieve", "receve", "receeve"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Receive follows 'i before e' exception."
+  },
+  {
+    "id": "en_031",
+    "question": "What is the antonym of 'accept'?",
+    "code": null,
+    "options": ["reject", "admit", "allow", "agree"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Reject is the opposite of accept."
+  },
+  {
+    "id": "en_032",
+    "question": "What is the synonym of 'happy'?",
+    "code": null,
+    "options": ["joyful", "angry", "sleepy", "silent"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Joyful is a synonym of happy."
+  },
+  {
+    "id": "en_033",
+    "question": "Which sentence uses correct subject-verb agreement?",
+    "code": null,
+    "options": ["The boys are playing.", "The boys is playing.", "The boy are playing.", "The boy play is."],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Plural subject takes plural verb 'are'."
+  },
+  {
+    "id": "en_034",
+    "question": "Which sentence is interrogative?",
+    "code": null,
+    "options": ["Where are you going?", "You are going home.", "Please close the door.", "What a beautiful day!"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "It asks a question, so it is interrogative."
+  },
+  {
+    "id": "en_035",
+    "question": "Which sentence is imperative?",
+    "code": null,
+    "options": ["Close the window.", "He closed the window.", "Did he close the window?", "What a window!"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Imperative sentences give commands."
+  },
+  {
+    "id": "en_036",
+    "question": "Choose the correct form: She ___ to music every evening.",
+    "code": null,
+    "options": ["listen", "listens", "listening", "listened"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Third person singular takes 'listens'."
+  },
+  {
+    "id": "en_037",
+    "question": "Which is a common noun?",
+    "code": null,
+    "options": ["city", "Dhaka", "Asia", "Bangladesh"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "City is a common noun."
+  },
+  {
+    "id": "en_038",
+    "question": "Which is a proper noun?",
+    "code": null,
+    "options": ["river", "book", "Dhaka", "teacher"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Dhaka is a proper noun."
+  },
+  {
+    "id": "en_039",
+    "question": "Choose the correct phrase: He is afraid ___ dogs.",
+    "code": null,
+    "options": ["of", "with", "at", "for"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The correct phrase is 'afraid of'."
+  },
+  {
+    "id": "en_040",
+    "question": "Which word is a modal verb?",
+    "code": null,
+    "options": ["can", "running", "house", "beautiful"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Can is a modal verb."
+  },
+  {
+    "id": "en_041",
+    "question": "Choose the correct sentence.",
+    "code": null,
+    "options": ["Neither of them are correct.", "Neither of them is correct.", "Neither them are correct.", "Neither of them be correct."],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Neither is singular here."
+  },
+  {
+    "id": "en_042",
+    "question": "Choose the correct sentence.",
+    "code": null,
+    "options": ["Each of the students has a book.", "Each of the students have a book.", "Each students has a book.", "Each of students have a book."],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Each is singular, so 'has' is correct."
+  },
+  {
+    "id": "en_043",
+    "question": "What is the meaning of 'ancient'?",
+    "code": null,
+    "options": ["very old", "modern", "quick", "small"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Ancient means very old."
+  },
+  {
+    "id": "en_044",
+    "question": "What is the meaning of 'brief'?",
+    "code": null,
+    "options": ["short", "long", "bright", "loud"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Brief means short in duration or length."
+  },
+  {
+    "id": "en_045",
+    "question": "Which word is a conjunction?",
+    "code": null,
+    "options": ["because", "book", "run", "quickly"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Because connects clauses."
+  },
+  {
+    "id": "en_046",
+    "question": "Which word is a preposition?",
+    "code": null,
+    "options": ["under", "often", "very", "but"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Under shows relation of place."
+  },
+  {
+    "id": "en_047",
+    "question": "Choose the correct form: She enjoys ___ books.",
+    "code": null,
+    "options": ["read", "to read", "reading", "reads"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Enjoy is followed by gerund."
+  },
+  {
+    "id": "en_048",
+    "question": "Choose the correct form: It is important ___ hard.",
+    "code": null,
+    "options": ["study", "to study", "studying", "studies"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "The correct structure is 'important to study'."
+  },
+  {
+    "id": "en_049",
+    "question": "What is the synonym of 'error'?",
+    "code": null,
+    "options": ["mistake", "success", "speed", "care"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Mistake is a synonym of error."
+  },
+  {
+    "id": "en_050",
+    "question": "What is the antonym of 'increase'?",
+    "code": null,
+    "options": ["decrease", "raise", "grow", "rise"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Decrease is the opposite of increase."
+  }
+]

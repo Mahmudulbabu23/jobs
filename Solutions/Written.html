@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank AP Question Solutions — CS Complete Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f0e0c;
+    --paper: #f5f0e8;
+    --cream: #ede8dc;
+    --gold: #c9952a;
+    --gold-light: #e8b84b;
+    --rust: #8b3a1f;
+    --teal: #1a6b6b;
+    --teal-light: #2a9090;
+    --slate: #2d3748;
+    --muted: #7a7060;
+    --code-bg: #1a1814;
+    --code-text: #e8d5a3;
+    --accent-green: #2d6a4f;
+    --border: #d4c9b0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(201,149,42,.06) 40px, rgba(201,149,42,.06) 41px);
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: var(--gold-light);
+    letter-spacing: .02em;
+    position: relative;
+  }
+  header p {
+    margin-top: .75rem;
+    font-style: italic;
+    color: #b0a898;
+    font-size: 1.05rem;
+    position: relative;
+  }
+  header .badge-row {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    position: relative;
+  }
+  .badge {
+    background: rgba(201,149,42,.15);
+    border: 1px solid var(--gold);
+    color: var(--gold-light);
+    padding: .2rem .8rem;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .75rem;
+    letter-spacing: .05em;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--cream);
+    border-bottom: 2px solid var(--border);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+  }
+  nav span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .7rem;
+    color: var(--muted);
+    margin-right: .5rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  nav a {
+    color: var(--teal);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .72rem;
+    padding: .25rem .6rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: all .2s;
+    letter-spacing: .04em;
+  }
+  nav a:hover {
+    border-color: var(--teal);
+    background: rgba(26,107,107,.08);
+  }
+
+  /* ── LAYOUT ── */
+  main { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+
+  /* ── SECTION ── */
+  .section {
+    margin-bottom: 3.5rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: .75rem;
+    border-bottom: 3px solid var(--gold);
+  }
+  .section-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    min-width: 2.5rem;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  /* ── QUESTION CARD ── */
+  .q-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--teal);
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 0 var(--border);
+    animation: fadeUp .4s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .q-header {
+    background: var(--cream);
+    padding: .75rem 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .q-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .8rem;
+    background: var(--teal);
+    color: white;
+    padding: .15rem .5rem;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-top: .1rem;
+  }
+  .q-text {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--slate);
+    line-height: 1.5;
+  }
+  .q-source {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .65rem;
+    color: var(--muted);
+    white-space: nowrap;
+    padding-top: .2rem;
+  }
+  .q-body {
+    padding: 1.25rem 1.5rem;
+  }
+  .q-body p { margin-bottom: .8rem; }
+  .q-body p:last-child { margin-bottom: 0; }
+
+  /* ── ANSWER COMPONENTS ── */
+  .def-box {
+    background: rgba(26,107,107,.06);
+    border-left: 3px solid var(--teal-light);
+    padding: .8rem 1rem;
+    margin: .8rem 0;
+    border-radius: 0 2px 2px 0;
+  }
+  .def-box strong { color: var(--teal); }
+
+  .warn-box {
+    background: rgba(139,58,31,.06);
+    border-left: 3px solid var(--rust);
+    padding: .8rem 1rem;
+    margin: .8rem 0;
+    border-radius: 0 2px 2px 0;
+  }
+  .warn-box strong { color: var(--rust); }
+
+  .tip-box {
+    background: rgba(201,149,42,.08);
+    border-left: 3px solid var(--gold);
+    padding: .8rem 1rem;
+    margin: .8rem 0;
+    border-radius: 0 2px 2px 0;
+  }
+
+  /* ── CODE ── */
+  pre {
+    background: var(--code-bg);
+    color: var(--code-text);
+    padding: 1.2rem 1.4rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .82rem;
+    line-height: 1.65;
+    margin: .9rem 0;
+    border: 1px solid #333;
+  }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(0,0,0,.08);
+    padding: .1rem .35rem;
+    border-radius: 3px;
+    font-size: .88em;
+    color: var(--teal);
+  }
+  .kw  { color: #f8a55c; }
+  .cm  { color: #6a8a6a; font-style: italic; }
+  .st  { color: #90d090; }
+  .nm  { color: #88ccee; }
+  .fn  { color: #ffcc44; }
+
+  /* ── TABLES ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .9rem 0;
+    font-size: .93rem;
+  }
+  th {
+    background: var(--ink);
+    color: var(--gold-light);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .78rem;
+    letter-spacing: .06em;
+    padding: .55rem .9rem;
+    text-align: left;
+  }
+  td {
+    padding: .5rem .9rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: var(--cream); }
+  tr:hover td { background: rgba(26,107,107,.05); }
+
+  /* ── LISTS ── */
+  ol, ul {
+    padding-left: 1.5rem;
+    margin: .5rem 0;
+  }
+  li { margin-bottom: .35rem; }
+  li strong { color: var(--teal); }
+
+  /* ── STEP LIST ── */
+  .steps { list-style: none; padding: 0; counter-reset: step; }
+  .steps li {
+    counter-increment: step;
+    display: flex;
+    gap: .75rem;
+    margin-bottom: .6rem;
+    align-items: flex-start;
+  }
+  .steps li::before {
+    content: counter(step);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .75rem;
+    background: var(--teal);
+    color: white;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: .1rem;
+  }
+
+  /* ── DIAGRAM (text art) ── */
+  .diagram {
+    background: var(--ink);
+    color: #a0d0a0;
+    padding: 1.2rem 1.5rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .8rem;
+    line-height: 1.7;
+    overflow-x: auto;
+    margin: .9rem 0;
+    white-space: pre;
+    border: 1px solid #333;
+  }
+
+  /* ── FORMULA ── */
+  .formula {
+    display: inline-block;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .4rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .9rem;
+    color: var(--rust);
+    margin: .4rem 0;
+  }
+
+  /* ── GRID ── */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: .8rem 0;
+  }
+  @media(max-width:600px){ .grid-2 { grid-template-columns: 1fr; } }
+
+  .mini-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .8rem 1rem;
+  }
+  .mini-card h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .8rem;
+    color: var(--teal);
+    margin-bottom: .4rem;
+    letter-spacing: .04em;
+  }
+
+  /* ── FLOWCHART SVG wrapper ── */
+  .flowchart { margin: 1rem 0; overflow-x: auto; }
+  .flowchart svg { max-width: 100%; height: auto; }
+
+  /* ── TAG ── */
+  .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .7rem;
+    padding: .15rem .5rem;
+    border-radius: 2px;
+    margin: .1rem;
+    letter-spacing: .04em;
+  }
+  .tag-teal  { background: rgba(26,107,107,.12); color: var(--teal); border: 1px solid rgba(26,107,107,.3); }
+  .tag-gold  { background: rgba(201,149,42,.12); color: #8a6010; border: 1px solid rgba(201,149,42,.3); }
+  .tag-rust  { background: rgba(139,58,31,.12); color: var(--rust); border: 1px solid rgba(139,58,31,.3); }
+
+  /* ── ANSWER LABEL ── */
+  .ans-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin-bottom: .6rem;
+    display: block;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--slate);
+    margin: 1rem 0 .4rem;
+  }
+  h4 {
+    font-weight: 600;
+    color: var(--teal);
+    margin: .7rem 0 .2rem;
+    font-size: .97rem;
+  }
+
+  hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+
+  /* ── BACK TO TOP ── */
+  .top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--ink);
+    color: var(--gold-light);
+    border: 1px solid var(--gold);
+    padding: .5rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .75rem;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .top-btn.visible { opacity: 1; }
+
+  /* indent sub-points */
+  .sub { margin-left: 1.2rem; margin-top: .2rem; font-size: .95em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bank AP Question Solutions</h1>
+  <p>Complete answers to all previous year questions — Programming, OS, DBMS, Networks, Security & more</p>
+  <div class="badge-row">
+    <span class="badge">CB 2026</span>
+    <span class="badge">CB 2024</span>
+    <span class="badge">CB 2023</span>
+    <span class="badge">BB 2023</span>
+    <span class="badge">6BFI 2021</span>
+    <span class="badge">SPCBL 2022</span>
+  </div>
+</header>
+
+<nav>
+  <span>Jump to →</span>
+  <a href="#s1">Programming</a>
+  <a href="#s2">Software Eng</a>
+  <a href="#s3">Networking</a>
+  <a href="#s4">OS</a>
+  <a href="#s5">DBMS</a>
+  <a href="#s6">Cyber Security</a>
+  <a href="#s7">Digital Logic</a>
+  <a href="#s8">Data Structures</a>
+  <a href="#s9">AI / ML</a>
+</nav>
+
+<main>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 1 — PROGRAMMING, ALGORITHMS & TOC
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s1">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div class="section-title">Programming, Algorithm & Theory of Computation</div>
+  </div>
+
+  <!-- Q1 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q1</span>
+      <span class="q-text">Explain the concept of Inheritance in OOP. Name and briefly describe three common types.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Answer</span>
+      <div class="def-box">
+        <strong>Inheritance</strong> is an OOP mechanism that allows a new class (<em>child/derived</em>) to acquire the properties and behaviours (fields and methods) of an existing class (<em>parent/base</em>), promoting code reuse and establishing an <em>is-a</em> relationship.
+      </div>
+      <h3>Three Common Types</h3>
+      <ol>
+        <li><strong>Single Inheritance</strong> — One child class inherits from exactly one parent class.<br>
+          <span class="sub">Example: <code>Dog extends Animal</code></span></li>
+        <li><strong>Multilevel Inheritance</strong> — A class inherits from a class that is itself a derived class, forming a chain.<br>
+          <span class="sub">Example: <code>Puppy → Dog → Animal</code></span></li>
+        <li><strong>Hierarchical Inheritance</strong> — Multiple child classes inherit from a single parent class.<br>
+          <span class="sub">Example: <code>Cat extends Animal</code> AND <code>Dog extends Animal</code></span></li>
+      </ol>
+      <p>Other types include <strong>Multiple Inheritance</strong> (C++; one child, many parents) and <strong>Hybrid Inheritance</strong> (combination). Java avoids multiple inheritance of classes to prevent the <em>Diamond Problem</em>.</p>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q2</span>
+      <span class="q-text">Describe step-by-step how Binary Search locates a target value in a sorted array. Why does it fail if the array is unsorted?</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Answer</span>
+      <ol class="steps">
+        <li>Set <code>low = 0</code>, <code>high = n-1</code>.</li>
+        <li>Compute <code>mid = (low + high) / 2</code>.</li>
+        <li>If <code>arr[mid] == target</code> → found, return index.</li>
+        <li>If <code>arr[mid] &lt; target</code> → search the right half: <code>low = mid + 1</code>.</li>
+        <li>If <code>arr[mid] &gt; target</code> → search the left half: <code>high = mid - 1</code>.</li>
+        <li>Repeat steps 2–5 until <code>low &gt; high</code> (not found).</li>
+      </ol>
+      <div class="tip-box"><strong>Time Complexity:</strong> O(log n) — each step halves the search space.</div>
+      <div class="warn-box"><strong>Fails on unsorted arrays</strong> because the algorithm discards half the array based on the assumption that elements are ordered. If that assumption is violated, the target may be discarded in the rejected half, producing incorrect results.</div>
+<pre><span class="kw">int</span> <span class="fn">binarySearch</span>(<span class="kw">int</span> arr[], <span class="kw">int</span> n, <span class="kw">int</span> target) {
+    <span class="kw">int</span> low = <span class="nm">0</span>, high = n - <span class="nm">1</span>;
+    <span class="kw">while</span> (low &lt;= high) {
+        <span class="kw">int</span> mid = (low + high) / <span class="nm">2</span>;
+        <span class="kw">if</span> (arr[mid] == target) <span class="kw">return</span> mid;
+        <span class="kw">else if</span> (arr[mid] &lt; target) low = mid + <span class="nm">1</span>;
+        <span class="kw">else</span> high = mid - <span class="nm">1</span>;
+    }
+    <span class="kw">return</span> -<span class="nm">1</span>; <span class="cm">// not found</span>
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q3</span>
+      <span class="q-text">Explain the logic to implement a Queue (FIFO) using two stacks.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Answer</span>
+      <p>Use <strong>Stack S1</strong> (input) and <strong>Stack S2</strong> (output).</p>
+      <h4>Enqueue (push to S1)</h4>
+      <ol><li>Push element onto S1.</li></ol>
+      <h4>Dequeue (pop from S2)</h4>
+      <ol>
+        <li>If S2 is empty, pop <em>all</em> elements from S1 and push them onto S2 (this reverses the order).</li>
+        <li>Pop from S2 — this gives the oldest element (FIFO order).</li>
+      </ol>
+      <div class="tip-box">Amortized time: O(1) per operation. Each element moves at most once S1→S2.</div>
+<pre><span class="cm">// Enqueue</span>
+<span class="fn">push</span>(S1, x);
+
+<span class="cm">// Dequeue</span>
+<span class="kw">if</span> (S2.empty())
+    <span class="kw">while</span> (!S1.empty()) <span class="fn">push</span>(S2, <span class="fn">pop</span>(S1));
+<span class="kw">return</span> <span class="fn">pop</span>(S2);</pre>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q4</span>
+      <span class="q-text">Explain the logic of Bubble Sort. Why is it inefficient for large datasets vs Merge Sort?</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Answer</span>
+      <p><strong>Bubble Sort</strong> repeatedly steps through the array, comparing adjacent elements and swapping them if out of order. Each full pass "bubbles" the largest unsorted element to its correct position.</p>
+<pre><span class="kw">for</span> (i = <span class="nm">0</span>; i &lt; n-<span class="nm">1</span>; i++)
+    <span class="kw">for</span> (j = <span class="nm">0</span>; j &lt; n-i-<span class="nm">1</span>; j++)
+        <span class="kw">if</span> (arr[j] &gt; arr[j+<span class="nm">1</span>]) <span class="fn">swap</span>(arr[j], arr[j+<span class="nm">1</span>]);</pre>
+      <table>
+        <tr><th>Algorithm</th><th>Best</th><th>Average</th><th>Worst</th><th>Space</th></tr>
+        <tr><td>Bubble Sort</td><td>O(n)</td><td>O(n²)</td><td>O(n²)</td><td>O(1)</td></tr>
+        <tr><td>Merge Sort</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n)</td></tr>
+      </table>
+      <div class="warn-box">Bubble Sort does O(n²) comparisons and swaps even for nearly-sorted data. Merge Sort uses divide-and-conquer, always achieving O(n log n), making it far faster for large n.</div>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q5</span>
+      <span class="q-text">Draw or describe a Flowchart to determine the largest of three distinct numbers (A, B, C).</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Flowchart (ASCII Art)</span>
+      <div class="flowchart">
+<svg viewBox="0 0 340 500" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace" font-size="12">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#1a6b6b"/>
+    </marker>
+  </defs>
+  <!-- Start -->
+  <ellipse cx="170" cy="30" rx="60" ry="20" fill="#0f0e0c" stroke="#c9952a" stroke-width="2"/>
+  <text x="170" y="35" text-anchor="middle" fill="#e8b84b" font-size="11">START</text>
+
+  <!-- Input -->
+  <rect x="95" y="75" width="150" height="36" rx="4" fill="#1a1814" stroke="#1a6b6b" stroke-width="1.5"/>
+  <text x="170" y="98" text-anchor="middle" fill="#e8d5a3" font-size="11">Input A, B, C</text>
+
+  <!-- Decision A>B -->
+  <polygon points="170,135 250,160 170,185 90,160" fill="#1a1814" stroke="#c9952a" stroke-width="1.5"/>
+  <text x="170" y="164" text-anchor="middle" fill="#e8d5a3" font-size="10">A &gt; B ?</text>
+
+  <!-- Yes branch A>B: A>C? -->
+  <polygon points="50,220 130,245 50,270 -30,245" fill="#1a1814" stroke="#c9952a" stroke-width="1.5"/>
+  <text x="50" y="249" text-anchor="middle" fill="#e8d5a3" font-size="10">A &gt; C ?</text>
+  <text x="92" y="215" fill="#2a9090" font-size="10">YES</text>
+  <line x1="90" y1="160" x2="50" y2="220" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- No branch A>B: B>C? -->
+  <polygon points="290,220 370,245 290,270 210,245" fill="#1a1814" stroke="#c9952a" stroke-width="1.5"/>
+  <text x="290" y="249" text-anchor="middle" fill="#e8d5a3" font-size="10">B &gt; C ?</text>
+  <text x="215" y="215" fill="#f8a55c" font-size="10">NO</text>
+  <line x1="250" y1="160" x2="290" y2="220" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- A is largest -->
+  <rect x="0" y="300" width="100" height="30" rx="4" fill="#2d6a4f" stroke="#90d090" stroke-width="1"/>
+  <text x="50" y="320" text-anchor="middle" fill="white" font-size="10">A is Largest</text>
+  <text x="-15" y="290" fill="#2a9090" font-size="10">YES</text>
+  <line x1="50" y1="270" x2="50" y2="300" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- C is largest (left) -->
+  <rect x="110" y="300" width="100" height="30" rx="4" fill="#8b3a1f" stroke="#f8a55c" stroke-width="1"/>
+  <text x="160" y="320" text-anchor="middle" fill="white" font-size="10">C is Largest</text>
+  <text x="68" y="298" fill="#f8a55c" font-size="10">NO</text>
+  <line x1="50" y1="270" x2="160" y2="300" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- B is largest -->
+  <rect x="240" y="300" width="100" height="30" rx="4" fill="#2d6a4f" stroke="#90d090" stroke-width="1"/>
+  <text x="290" y="320" text-anchor="middle" fill="white" font-size="10">B is Largest</text>
+  <text x="305" y="290" fill="#2a9090" font-size="10">YES</text>
+  <line x1="290" y1="270" x2="290" y2="300" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- C is largest (right) -->
+  <rect x="350" y="300" width="100" height="30" rx="4" fill="#8b3a1f" stroke="#f8a55c" stroke-width="1"/>
+  <text x="400" y="320" text-anchor="middle" fill="white" font-size="10">C is Largest</text>
+  <text x="358" y="298" fill="#f8a55c" font-size="10">NO</text>
+  <line x1="290" y1="270" x2="400" y2="300" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Print Result -->
+  <rect x="70" y="380" width="200" height="30" rx="4" fill="#1a1814" stroke="#1a6b6b" stroke-width="1.5"/>
+  <text x="170" y="400" text-anchor="middle" fill="#e8d5a3" font-size="11">Print Largest</text>
+  <line x1="50" y1="330" x2="50" y2="365" stroke="#1a6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="330" x2="160" y2="365" stroke="#1a6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="290" y1="330" x2="290" y2="365" stroke="#1a6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="400" y1="330" x2="400" y2="365" stroke="#1a6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="50" y1="365" x2="400" y2="365" stroke="#1a6b6b" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="170" y1="365" x2="170" y2="380" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- End -->
+  <ellipse cx="170" cy="455" rx="60" ry="20" fill="#0f0e0c" stroke="#c9952a" stroke-width="2"/>
+  <text x="170" y="460" text-anchor="middle" fill="#e8b84b" font-size="11">END</text>
+  <line x1="170" y1="410" x2="170" y2="435" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <line x1="170" y1="50" x2="170" y2="75" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="170" y1="111" x2="170" y2="135" stroke="#1a6b6b" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q6</span>
+      <span class="q-text">Why might heuristic search (A*) be faster than blind search (BFS), even without guaranteed optimal path?</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <span class="ans-label">Answer</span>
+      <p><strong>BFS</strong> is an <em>uninformed/blind</em> search that explores all nodes at distance d before nodes at distance d+1, regardless of direction to the goal. It expands exponentially many nodes.</p>
+      <p><strong>A*</strong> uses a heuristic function <span class="formula">f(n) = g(n) + h(n)</span> where g(n) is the cost so far and h(n) is the estimated remaining cost. This guides the search toward the goal, drastically reducing explored nodes.</p>
+      <table>
+        <tr><th>Aspect</th><th>BFS</th><th>A*</th></tr>
+        <tr><td>Knowledge</td><td>None (blind)</td><td>Heuristic estimate</td></tr>
+        <tr><td>Nodes expanded</td><td>O(b^d)</td><td>Much fewer (guided)</td></tr>
+        <tr><td>Optimal?</td><td>Yes (unweighted)</td><td>Yes if h is admissible</td></tr>
+        <tr><td>Speed in practice</td><td>Slow for large spaces</td><td>Very fast with good h</td></tr>
+      </table>
+      <div class="tip-box">Even a non-perfect heuristic greatly reduces search space. The trade-off is acceptable: a slightly suboptimal path found quickly is often more useful than the perfect path found slowly.</div>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q7</span>
+      <span class="q-text">Write a Program to print Prime numbers from 1 to n.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+<pre><span class="cm">// C++ — Prime numbers from 1 to n</span>
+#include &lt;iostream&gt;
+<span class="kw">using namespace</span> std;
+
+<span class="kw">bool</span> <span class="fn">isPrime</span>(<span class="kw">int</span> num) {
+    <span class="kw">if</span> (num &lt; <span class="nm">2</span>) <span class="kw">return false</span>;
+    <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">2</span>; i * i &lt;= num; i++)
+        <span class="kw">if</span> (num % i == <span class="nm">0</span>) <span class="kw">return false</span>;
+    <span class="kw">return true</span>;
+}
+
+<span class="kw">int</span> <span class="fn">main</span>() {
+    <span class="kw">int</span> n;
+    cin &gt;&gt; n;
+    cout &lt;&lt; <span class="st">"Primes: "</span>;
+    <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">2</span>; i &lt;= n; i++)
+        <span class="kw">if</span> (<span class="fn">isPrime</span>(i)) cout &lt;&lt; i &lt;&lt; <span class="st">" "</span>;
+    <span class="kw">return</span> <span class="nm">0</span>;
+}
+<span class="cm">// Output for n=20: Primes: 2 3 5 7 11 13 17 19</span></pre>
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q8</span>
+      <span class="q-text">Write a Program to print Floyd's Triangle for n = 5.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+<pre><span class="cm">// Floyd's Triangle (n=5)</span>
+#include &lt;iostream&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">int</span> <span class="fn">main</span>() {
+    <span class="kw">int</span> num = <span class="nm">1</span>;
+    <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">1</span>; i &lt;= <span class="nm">5</span>; i++) {
+        <span class="kw">for</span> (<span class="kw">int</span> j = <span class="nm">1</span>; j &lt;= i; j++)
+            cout &lt;&lt; num++ &lt;&lt; <span class="st">" "</span>;
+        cout &lt;&lt; <span class="st">"\n"</span>;
+    }
+}
+<span class="cm">/* Output:
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15 */</span></pre>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q9</span>
+      <span class="q-text">Write a C++ program to find the sum of the series: 1 + 2 + 4 + 7 + 11 + ... + N.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <p>The differences between terms are 1, 2, 3, 4, … (incrementing by 1 each time).</p>
+<pre>#include &lt;iostream&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">int</span> <span class="fn">main</span>() {
+    <span class="kw">int</span> n, sum = <span class="nm">0</span>, term = <span class="nm">1</span>, diff = <span class="nm">1</span>;
+    cin &gt;&gt; n;
+    <span class="kw">while</span> (term &lt;= n) {
+        sum += term;
+        term += diff++;   <span class="cm">// next diff: 1,2,3,4...</span>
+    }
+    cout &lt;&lt; <span class="st">"Sum = "</span> &lt;&lt; sum;
+    <span class="kw">return</span> <span class="nm">0</span>;
+}
+<span class="cm">// For N=11: Sum = 1+2+4+7+11 = 25</span></pre>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q10</span>
+      <span class="q-text">What is Polymorphism? Discuss different types with examples.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Polymorphism</strong> ("many forms") is the ability of different objects to respond to the same interface/method call in different ways.</div>
+      <div class="grid-2">
+        <div class="mini-card">
+          <h4>Compile-time (Static)</h4>
+          <p><strong>Method Overloading</strong> — same name, different parameters.</p>
+<pre><span class="kw">int</span> <span class="fn">add</span>(<span class="kw">int</span> a, <span class="kw">int</span> b)
+<span class="kw">double</span> <span class="fn">add</span>(<span class="kw">double</span> a, <span class="kw">double</span> b)</pre>
+        </div>
+        <div class="mini-card">
+          <h4>Run-time (Dynamic)</h4>
+          <p><strong>Method Overriding</strong> — child redefines parent method; resolved via virtual dispatch.</p>
+<pre><span class="kw">class</span> Animal { <span class="kw">virtual void</span> <span class="fn">speak</span>(); }
+<span class="kw">class</span> Dog : Animal { <span class="kw">void</span> <span class="fn">speak</span>() { cout&lt;&lt;<span class="st">"Woof"</span>; }}</pre>
+        </div>
+      </div>
+      <p>Also includes <strong>Operator Overloading</strong> (C++) and <strong>Interface Polymorphism</strong> (Java).</p>
+    </div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q11</span>
+      <span class="q-text">Difference between Stack and Queue. Write about two problems solved by each.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Stack</th><th>Queue</th></tr>
+        <tr><td>Order</td><td>LIFO (Last In First Out)</td><td>FIFO (First In First Out)</td></tr>
+        <tr><td>Operations</td><td>push / pop / peek</td><td>enqueue / dequeue / front</td></tr>
+        <tr><td>End used</td><td>One end (top)</td><td>Two ends (front & rear)</td></tr>
+      </table>
+      <div class="grid-2">
+        <div class="mini-card">
+          <h4>Stack Problems</h4>
+          <ol><li>Balanced Parentheses checking</li><li>Undo/Redo in text editors; Function call stack (recursion)</li></ol>
+        </div>
+        <div class="mini-card">
+          <h4>Queue Problems</h4>
+          <ol><li>CPU Process Scheduling (Round Robin)</li><li>BFS graph traversal; Print spooling</li></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q12</span>
+      <span class="q-text">Find the output of the given recursion program.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <p>Since no specific program was provided, here is the standard recursive approach with a typical example:</p>
+<pre><span class="kw">int</span> <span class="fn">f</span>(<span class="kw">int</span> n) {
+    <span class="kw">if</span> (n == <span class="nm">0</span>) <span class="kw">return</span> <span class="nm">0</span>;
+    <span class="kw">return</span> n + <span class="fn">f</span>(n - <span class="nm">1</span>);
+}
+<span class="cm">// f(4) → 4+f(3) → 4+3+f(2) → ... → 4+3+2+1+0 = 10</span></pre>
+      <div class="tip-box">To trace recursion: draw the <strong>call stack</strong> — each call waits for its sub-call to return, then adds/processes results on the way back up (return phase).</div>
+    </div>
+  </div>
+
+  <!-- Q13 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q13</span>
+      <span class="q-text">Write a program to compute the LCM of two integers A and B.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p class="formula">LCM(A, B) = (A × B) / GCD(A, B)</p>
+<pre>#include &lt;iostream&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">int</span> <span class="fn">gcd</span>(<span class="kw">int</span> a, <span class="kw">int</span> b) { <span class="kw">return</span> b == <span class="nm">0</span> ? a : <span class="fn">gcd</span>(b, a % b); }
+<span class="kw">int</span> <span class="fn">main</span>() {
+    <span class="kw">int</span> a, b;
+    cin &gt;&gt; a &gt;&gt; b;
+    cout &lt;&lt; <span class="st">"LCM = "</span> &lt;&lt; (a / <span class="fn">gcd</span>(a, b)) * b;
+    <span class="kw">return</span> <span class="nm">0</span>;
+}
+<span class="cm">// A=12, B=18 → GCD=6, LCM=36</span></pre>
+    </div>
+  </div>
+
+  <!-- Q14 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q14</span>
+      <span class="q-text">Identify which methods overload, override and hide superclass methods in given Java code.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">
+        <strong>Overloading:</strong> Same method name, different parameter list in the <em>same</em> class.<br>
+        <strong>Overriding:</strong> Same method signature in a <em>subclass</em>; <code>@Override</code>; polymorphic at runtime.<br>
+        <strong>Hiding:</strong> A <code>static</code> method in the subclass with the same signature as a static parent method — it <em>hides</em> (does not override) it.
+      </div>
+<pre><span class="kw">class</span> Parent {
+    <span class="kw">static void</span> <span class="fn">display</span>() { System.out.println(<span class="st">"Parent static"</span>); } <span class="cm">// will be hidden</span>
+    <span class="kw">void</span> <span class="fn">show</span>()  { }                   <span class="cm">// will be overridden</span>
+    <span class="kw">void</span> <span class="fn">show</span>(<span class="kw">int</span> x) { }               <span class="cm">// overloaded in Parent</span>
+}
+<span class="kw">class</span> Child <span class="kw">extends</span> Parent {
+    <span class="kw">static void</span> <span class="fn">display</span>() { }         <span class="cm">// HIDES Parent.display()</span>
+    @Override <span class="kw">void</span> <span class="fn">show</span>() { }         <span class="cm">// OVERRIDES Parent.show()</span>
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q15 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q15</span>
+      <span class="q-text">Write a function to find the smallest element from an array.</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+<pre><span class="kw">int</span> <span class="fn">findMin</span>(<span class="kw">int</span> arr[], <span class="kw">int</span> n) {
+    <span class="kw">int</span> min = arr[<span class="nm">0</span>];
+    <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">1</span>; i &lt; n; i++)
+        <span class="kw">if</span> (arr[i] &lt; min) min = arr[i];
+    <span class="kw">return</span> min;
+}
+<span class="cm">// Time: O(n), Space: O(1)</span></pre>
+    </div>
+  </div>
+
+  <!-- Q16 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q16</span>
+      <span class="q-text">Adjacency list vs adjacency matrix — which problems suit each?</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Criterion</th><th>Adjacency List</th><th>Adjacency Matrix</th></tr>
+        <tr><td>Space</td><td>O(V + E) — sparse graphs</td><td>O(V²) — always</td></tr>
+        <tr><td>Edge existence check</td><td>O(degree)</td><td>O(1)</td></tr>
+        <tr><td>Best for</td><td>Sparse graphs, BFS/DFS traversal</td><td>Dense graphs, Floyd-Warshall</td></tr>
+        <tr><td>Add edge</td><td>O(1)</td><td>O(1)</td></tr>
+        <tr><td>List all edges</td><td>O(V + E)</td><td>O(V²)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Q17 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q17</span>
+      <span class="q-text">Topological Sorting for DAG — write a C/C++ program.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+<pre>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;stack&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">int</span> V = <span class="nm">6</span>;
+vector&lt;<span class="kw">int</span>&gt; adj[<span class="nm">6</span>];
+
+<span class="kw">void</span> <span class="fn">dfs</span>(<span class="kw">int</span> v, <span class="kw">bool</span> visited[], stack&lt;<span class="kw">int</span>&gt; &stk) {
+    visited[v] = <span class="kw">true</span>;
+    <span class="kw">for</span> (<span class="kw">int</span> u : adj[v])
+        <span class="kw">if</span> (!visited[u]) <span class="fn">dfs</span>(u, visited, stk);
+    stk.push(v);
+}
+
+<span class="kw">void</span> <span class="fn">topologicalSort</span>() {
+    stack&lt;<span class="kw">int</span>&gt; stk;
+    <span class="kw">bool</span> visited[<span class="nm">6</span>] = {<span class="kw">false</span>};
+    <span class="kw">for</span> (<span class="kw">int</span> i = <span class="nm">0</span>; i &lt; V; i++)
+        <span class="kw">if</span> (!visited[i]) <span class="fn">dfs</span>(i, visited, stk);
+    <span class="kw">while</span> (!stk.empty()) {
+        cout &lt;&lt; stk.top() &lt;&lt; <span class="st">" "</span>;
+        stk.pop();
+    }
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q18 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q18</span>
+      <span class="q-text">Write a C/C++ program to check Balanced Parentheses in an expression.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+<pre>#include &lt;iostream&gt;
+#include &lt;stack&gt;
+#include &lt;string&gt;
+<span class="kw">using namespace</span> std;
+
+<span class="kw">bool</span> <span class="fn">isBalanced</span>(string expr) {
+    stack&lt;<span class="kw">char</span>&gt; stk;
+    <span class="kw">for</span> (<span class="kw">char</span> c : expr) {
+        <span class="kw">if</span> (c==<span class="st">'('</span>||c==<span class="st">'['</span>||c==<span class="st">'{'</span>) stk.push(c);
+        <span class="kw">else if</span> (c==<span class="st">')'</span>||c==<span class="st">']'</span>||c==<span class="st">'}'</span>) {
+            <span class="kw">if</span> (stk.empty()) <span class="kw">return false</span>;
+            <span class="kw">char</span> top = stk.top(); stk.pop();
+            <span class="kw">if</span> ((c==<span class="st">')'</span>&&top!=<span class="st">'('</span>)||(c==<span class="st">']'</span>&&top!=<span class="st">'['</span>)||(c==<span class="st">'}'</span>&&top!=<span class="st">'{'</span>))
+                <span class="kw">return false</span>;
+        }
+    }
+    <span class="kw">return</span> stk.empty();
+}
+<span class="kw">int</span> <span class="fn">main</span>() {
+    cout &lt;&lt; <span class="fn">isBalanced</span>(<span class="st">"{[()]}"</span>) ? <span class="st">"Balanced"</span> : <span class="st">"Not Balanced"</span>;
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q19 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q19</span>
+      <span class="q-text">Write a C/C++ Program that shows whether the given sequence is a Mountain sequence or not.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+      <p>A mountain sequence strictly increases then strictly decreases (peak not at start/end).</p>
+<pre>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">bool</span> <span class="fn">isMountain</span>(vector&lt;<span class="kw">int</span>&gt; A) {
+    <span class="kw">int</span> n = A.size(), i = <span class="nm">0</span>;
+    <span class="kw">if</span> (n &lt; <span class="nm">3</span>) <span class="kw">return false</span>;
+    <span class="kw">while</span> (i &lt; n-<span class="nm">1</span> && A[i] &lt; A[i+<span class="nm">1</span>]) i++;  <span class="cm">// climb</span>
+    <span class="kw">if</span> (i == <span class="nm">0</span> || i == n-<span class="nm">1</span>) <span class="kw">return false</span>;  <span class="cm">// peak at edge</span>
+    <span class="kw">while</span> (i &lt; n-<span class="nm">1</span> && A[i] &gt; A[i+<span class="nm">1</span>]) i++;  <span class="cm">// descend</span>
+    <span class="kw">return</span> i == n-<span class="nm">1</span>;
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q20 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q20</span>
+      <span class="q-text">Given n jobs with starting times and durations, print maximum number of non-overlapping jobs.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+      <p>This is the <strong>Activity Selection Problem</strong>. Strategy: sort by finish time (start + duration), greedily select jobs that don't overlap.</p>
+<pre>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+<span class="kw">using namespace</span> std;
+<span class="kw">int</span> <span class="fn">maxJobs</span>(vector&lt;pair&lt;<span class="kw">int</span>,<span class="kw">int</span>&gt;&gt; jobs) { <span class="cm">// {start, finish}</span>
+    sort(jobs.begin(), jobs.end(), [](<span class="kw">auto</span> a, <span class="kw">auto</span> b){ <span class="kw">return</span> a.second &lt; b.second; });
+    <span class="kw">int</span> count = <span class="nm">0</span>, lastEnd = -<span class="nm">1</span>;
+    <span class="kw">for</span> (<span class="kw">auto</span> j : jobs)
+        <span class="kw">if</span> (j.first &gt;= lastEnd) { count++; lastEnd = j.second; }
+    <span class="kw">return</span> count;
+}</pre>
+    </div>
+  </div>
+
+  <!-- Q21 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q21</span>
+      <span class="q-text">Write a C++ program with Class Account, SavingsAccount and CurrentAccount with hierarchy.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+<pre>#include &lt;iostream&gt;
+<span class="kw">using namespace</span> std;
+
+<span class="kw">class</span> Account {
+<span class="kw">protected</span>:
+    <span class="kw">double</span> balance;
+<span class="kw">public</span>:
+    Account(<span class="kw">double</span> b) : balance(b) {}
+    <span class="kw">virtual void</span> <span class="fn">display</span>() { cout &lt;&lt; <span class="st">"Balance: "</span> &lt;&lt; balance &lt;&lt; <span class="st">"\n"</span>; }
+    <span class="kw">virtual void</span> <span class="fn">deposit</span>(<span class="kw">double</span> amt) { balance += amt; }
+};
+
+<span class="kw">class</span> SavingsAccount : <span class="kw">public</span> Account {
+    <span class="kw">double</span> interestRate;
+<span class="kw">public</span>:
+    SavingsAccount(<span class="kw">double</span> b, <span class="kw">double</span> r) : Account(b), interestRate(r) {}
+    <span class="kw">void</span> <span class="fn">addInterest</span>() { balance += balance * interestRate; }
+    <span class="kw">void</span> <span class="fn">display</span>() <span class="kw">override</span> {
+        cout &lt;&lt; <span class="st">"Savings — Balance: "</span> &lt;&lt; balance &lt;&lt; <span class="st">"\n"</span>;
+    }
+};
+
+<span class="kw">class</span> CurrentAccount : <span class="kw">public</span> Account {
+    <span class="kw">double</span> overdraftLimit;
+<span class="kw">public</span>:
+    CurrentAccount(<span class="kw">double</span> b, <span class="kw">double</span> od) : Account(b), overdraftLimit(od) {}
+    <span class="kw">void</span> <span class="fn">withdraw</span>(<span class="kw">double</span> amt) {
+        <span class="kw">if</span> (amt &lt;= balance + overdraftLimit) balance -= amt;
+        <span class="kw">else</span> cout &lt;&lt; <span class="st">"Limit exceeded!\n"</span>;
+    }
+    <span class="kw">void</span> <span class="fn">display</span>() <span class="kw">override</span> {
+        cout &lt;&lt; <span class="st">"Current — Balance: "</span> &lt;&lt; balance &lt;&lt; <span class="st">"\n"</span>;
+    }
+};</pre>
+    </div>
+  </div>
+
+  <!-- Q22 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q22</span>
+      <span class="q-text">Definition of Inheritance and Polymorphism with coding example.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+      <p>See Q1 (Inheritance) and Q10 (Polymorphism) for detailed definitions. Quick combined example:</p>
+<pre><span class="kw">class</span> Shape {
+<span class="kw">public</span>:
+    <span class="kw">virtual double</span> <span class="fn">area</span>() = <span class="nm">0</span>;          <span class="cm">// Polymorphism: pure virtual</span>
+};
+<span class="kw">class</span> Circle : <span class="kw">public</span> Shape {           <span class="cm">// Inheritance</span>
+    <span class="kw">double</span> r;
+<span class="kw">public</span>:
+    Circle(<span class="kw">double</span> r) : r(r) {}
+    <span class="kw">double</span> <span class="fn">area</span>() <span class="kw">override</span> { <span class="kw">return</span> <span class="nm">3.14</span>*r*r; }
+};
+<span class="kw">class</span> Rect : <span class="kw">public</span> Shape {
+    <span class="kw">double</span> w, h;
+<span class="kw">public</span>:
+    Rect(<span class="kw">double</span> w, <span class="kw">double</span> h) : w(w), h(h) {}
+    <span class="kw">double</span> <span class="fn">area</span>() <span class="kw">override</span> { <span class="kw">return</span> w*h; }
+};</pre>
+    </div>
+  </div>
+
+  <!-- Q23 -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q23</span>
+      <span class="q-text">State diagram of DFA accepting binary strings where number of 0s is a multiple of 3. Also show regular expression.</span>
+      <span class="q-source">6BFI AP 2021</span>
+    </div>
+    <div class="q-body">
+      <p>States track count of 0s mod 3. Three states: <strong>q0</strong> (0 mod 3 — start &amp; accept), <strong>q1</strong> (1 mod 3), <strong>q2</strong> (2 mod 3).</p>
+      <div class="diagram">
+  States: q0 (initial, accepting), q1, q2
+  Input alphabet: {0, 1}
+
+  Transition Table:
+  ┌───────┬──────┬──────┐
+  │ State │  0   │  1   │
+  ├───────┼──────┼──────┤
+  │  q0*  │  q1  │  q0  │
+  │  q1   │  q2  │  q1  │
+  │  q2   │  q0  │  q2  │
+  └───────┴──────┴──────┘
+
+  DFA Diagram:
+        1                1                1
+  ┌─────┐          ┌─────┐          ┌─────┐
+  ↓     │  0       ↓     │  0       ↓     │  0
+ (q0)──────────►(q1)──────────►(q2)──────────►(q0)
+  ↑ *accepting                               loop
+      </div>
+      <p><strong>Regular Expression:</strong> <span class="formula">1*(01*01*01*)*</span></p>
+      <p class="sub">Meaning: any number of 1s, then groups of exactly three 0s (each separated by any 1s), repeated any number of times.</p>
+    </div>
+  </div>
+
+  <!-- Q24-Q30: SPCBL questions -->
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q24</span>
+      <span class="q-text">Difference between Data and Information.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Data</th><th>Information</th></tr>
+        <tr><td>Definition</td><td>Raw, unprocessed facts and figures</td><td>Processed, organized data with context and meaning</td></tr>
+        <tr><td>Form</td><td>Unstructured (numbers, text, symbols)</td><td>Structured and meaningful</td></tr>
+        <tr><td>Usefulness</td><td>Not directly useful alone</td><td>Useful for decision making</td></tr>
+        <tr><td>Example</td><td>87, 92, 78, 95</td><td>"Student scored avg 88 — Grade B+"</td></tr>
+        <tr><td>Dependency</td><td>Independent</td><td>Derived from data</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q25</span>
+      <span class="q-text">Difference between High Level Language and Low Level Language with examples.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>High Level Language</th><th>Low Level Language</th></tr>
+        <tr><td>Abstraction</td><td>High (close to human)</td><td>Low (close to hardware)</td></tr>
+        <tr><td>Portability</td><td>Portable across platforms</td><td>Machine/CPU specific</td></tr>
+        <tr><td>Readability</td><td>Easy to read &amp; write</td><td>Difficult, complex syntax</td></tr>
+        <tr><td>Execution speed</td><td>Slower (translated)</td><td>Faster (direct)</td></tr>
+        <tr><td>Examples</td><td>Python, Java, C++, C#</td><td>Assembly, Machine Code</td></tr>
+        <tr><td>Translation</td><td>Compiler / Interpreter</td><td>Assembler</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q26</span>
+      <span class="q-text">Describe Dynamic Memory Allocation in C programming.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Dynamic Memory Allocation</strong> allocates memory at <em>runtime</em> from the <em>heap</em>, unlike static allocation (stack/compile-time). Managed via <code>&lt;stdlib.h&gt;</code> functions.</div>
+      <table>
+        <tr><th>Function</th><th>Purpose</th><th>Syntax</th></tr>
+        <tr><td><code>malloc()</code></td><td>Allocate uninitialized block</td><td><code>ptr = malloc(n * sizeof(int))</code></td></tr>
+        <tr><td><code>calloc()</code></td><td>Allocate &amp; zero-initialize</td><td><code>ptr = calloc(n, sizeof(int))</code></td></tr>
+        <tr><td><code>realloc()</code></td><td>Resize existing allocation</td><td><code>ptr = realloc(ptr, newSize)</code></td></tr>
+        <tr><td><code>free()</code></td><td>Release allocated memory</td><td><code>free(ptr)</code></td></tr>
+      </table>
+<pre><span class="kw">int</span> *arr = (<span class="kw">int</span>*) <span class="fn">malloc</span>(<span class="nm">5</span> * <span class="kw">sizeof</span>(<span class="kw">int</span>));
+<span class="kw">if</span> (arr == NULL) { <span class="cm">/* allocation failed */</span> }
+arr[<span class="nm">0</span>] = <span class="nm">10</span>;
+<span class="fn">free</span>(arr); <span class="cm">// must free to prevent memory leak</span></pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q27</span>
+      <span class="q-text">What is Nested Structure in C programming? Explain with example.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">A <strong>Nested Structure</strong> is a structure declared as a member inside another structure, allowing complex data modeling.</div>
+<pre><span class="kw">struct</span> Date {
+    <span class="kw">int</span> day, month, year;
+};
+
+<span class="kw">struct</span> Employee {
+    <span class="kw">char</span> name[<span class="nm">50</span>];
+    <span class="kw">float</span> salary;
+    <span class="kw">struct</span> Date joiningDate;  <span class="cm">// nested</span>
+};
+
+<span class="kw">int</span> <span class="fn">main</span>() {
+    <span class="kw">struct</span> Employee emp = {<span class="st">"Alice"</span>, <span class="nm">55000</span>, {<span class="nm">15</span>, <span class="nm">3</span>, <span class="nm">2020</span>}};
+    printf(<span class="st">"%s joined: %d/%d/%d\n"</span>,
+        emp.name, emp.joiningDate.day,
+        emp.joiningDate.month, emp.joiningDate.year);
+}</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q28</span>
+      <span class="q-text">Difference between Exception and Error in Java.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Exception</th><th>Error</th></tr>
+        <tr><td>Class</td><td><code>java.lang.Exception</code></td><td><code>java.lang.Error</code></td></tr>
+        <tr><td>Recoverability</td><td>Typically recoverable</td><td>Generally unrecoverable</td></tr>
+        <tr><td>Cause</td><td>Application logic / user input</td><td>JVM / system level failure</td></tr>
+        <tr><td>Examples</td><td>NullPointerException, IOException</td><td>StackOverflowError, OutOfMemoryError</td></tr>
+        <tr><td>Handling</td><td>Should be caught &amp; handled</td><td>Usually not handled</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q29</span>
+      <span class="q-text">What is Exception Handling? Explain with example.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Exception Handling</strong> is a mechanism to intercept runtime errors and handle them gracefully without crashing the program, using <code>try</code>, <code>catch</code>, <code>finally</code>, and <code>throw</code>.</div>
+<pre><span class="kw">try</span> {
+    <span class="kw">int</span> result = <span class="nm">10</span> / <span class="nm">0</span>;  <span class="cm">// ArithmeticException</span>
+} <span class="kw">catch</span> (ArithmeticException e) {
+    System.out.println(<span class="st">"Error: "</span> + e.getMessage());
+} <span class="kw">finally</span> {
+    System.out.println(<span class="st">"This always runs"</span>);
+}
+<span class="cm">// Output:
+// Error: / by zero
+// This always runs</span></pre>
+    </div>
+  </div>
+
+</div><!-- end section 1 -->
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 2 — SOFTWARE ENGINEERING
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s2">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div class="section-title">Software Engineering, Testing, Audit & IT Governance</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q30</span>
+      <span class="q-text">Explain the Software Development Life Cycle (SDLC) and describe its main phases.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>SDLC</strong> is a structured process defining the stages involved in planning, creating, testing, and maintaining software.</div>
+      <ol>
+        <li><strong>Planning</strong> — Define scope, feasibility study, resource and cost estimation.</li>
+        <li><strong>Requirements Analysis</strong> — Gather and document functional/non-functional requirements (SRS).</li>
+        <li><strong>System Design</strong> — Architecture design, database schema, UI wireframes, HLD &amp; LLD.</li>
+        <li><strong>Implementation (Coding)</strong> — Developers write code following design specs.</li>
+        <li><strong>Testing</strong> — Unit, integration, system, and UAT testing; bug fixing.</li>
+        <li><strong>Deployment</strong> — Release to production environment.</li>
+        <li><strong>Maintenance</strong> — Bug fixes, updates, enhancements post-release.</li>
+      </ol>
+      <div class="tip-box">Common SDLC models: Waterfall (sequential), Agile (iterative sprints), Spiral (risk-driven), V-Model (testing parallel to development).</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q31</span>
+      <span class="q-text">What is Version Control (e.g., Git)? Explain the difference between Committing and Pushing code.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Version Control</strong> is a system that tracks changes to files over time, enabling collaboration, history review, and rollback. Git is the most widely used distributed VCS.</div>
+      <table>
+        <tr><th>Action</th><th>Commit</th><th>Push</th></tr>
+        <tr><td>What it does</td><td>Saves a snapshot of staged changes to the <em>local</em> repository</td><td>Uploads local commits to the <em>remote</em> repository</td></tr>
+        <tr><td>Location</td><td>Local only</td><td>Remote (GitHub/GitLab)</td></tr>
+        <tr><td>Command</td><td><code>git commit -m "message"</code></td><td><code>git push origin main</code></td></tr>
+        <tr><td>Internet needed?</td><td>No</td><td>Yes</td></tr>
+      </table>
+<pre><span class="cm"># Typical workflow:</span>
+git add .                    <span class="cm"># stage changes</span>
+git commit -m <span class="st">"feat: login"</span>  <span class="cm"># local snapshot</span>
+git push origin main         <span class="cm"># upload to remote</span></pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q32</span>
+      <span class="q-text">Compute Function Point when all CAF and weighting factors are average (given values).</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>Since specific values were not provided, here is the standard Formula Point calculation method with average weights:</p>
+      <table>
+        <tr><th>Component</th><th>Average Weight</th><th>Count (example)</th><th>Subtotal</th></tr>
+        <tr><td>External Inputs (EI)</td><td>4</td><td>10</td><td>40</td></tr>
+        <tr><td>External Outputs (EO)</td><td>5</td><td>8</td><td>40</td></tr>
+        <tr><td>External Inquiries (EQ)</td><td>4</td><td>6</td><td>24</td></tr>
+        <tr><td>Internal Logical Files (ILF)</td><td>10</td><td>4</td><td>40</td></tr>
+        <tr><td>External Interface Files (EIF)</td><td>7</td><td>2</td><td>14</td></tr>
+        <tr><td colspan="3"><strong>UFP (Unadjusted FP)</strong></td><td><strong>158</strong></td></tr>
+      </table>
+      <p><span class="formula">CAF = 0.65 + 0.01 × ΣFi</span> (14 general characteristics, each 0–5; average = 3, so ΣFi = 42)</p>
+      <p><span class="formula">CAF = 0.65 + 0.01 × 42 = 1.07</span></p>
+      <p><span class="formula">FP = UFP × CAF = 158 × 1.07 = 169.06</span></p>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q33</span>
+      <span class="q-text">What is Blacklist and Whitelist? Write the differences.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Blacklist</th><th>Whitelist</th></tr>
+        <tr><td>Definition</td><td>List of entities explicitly DENIED access</td><td>List of entities explicitly ALLOWED access</td></tr>
+        <tr><td>Default policy</td><td>Allow all, block listed</td><td>Block all, allow listed</td></tr>
+        <tr><td>Security level</td><td>Less secure</td><td>More secure</td></tr>
+        <tr><td>Maintenance</td><td>Easier (reactive)</td><td>Harder (proactive)</td></tr>
+        <tr><td>Use case</td><td>Spam filters, malware domains</td><td>Firewall rules, IP allowlists</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 3 — NETWORKING
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s3">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div class="section-title">Computer Networking</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q34</span>
+      <span class="q-text">Apply IP addressing and routing: how packets are delivered using OSPF at the network layer.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <h4>IP Addressing</h4>
+      <p>Each device has a unique IP address (IPv4: 32-bit). Routers use subnet masks to determine if a destination is local or remote. Packets include source IP, destination IP, TTL, and payload.</p>
+      <h4>OSPF (Open Shortest Path First)</h4>
+      <div class="def-box">OSPF is a <strong>link-state routing protocol</strong> using Dijkstra's algorithm to compute the shortest path tree. It operates at Layer 3 (Network Layer) and uses AS (Autonomous System) hierarchy with areas.</div>
+      <ol class="steps">
+        <li>Each router discovers neighbors via <strong>Hello packets</strong>.</li>
+        <li>Routers exchange <strong>Link State Advertisements (LSAs)</strong> describing their connections and costs.</li>
+        <li>Each router builds a complete <strong>Link State Database (LSDB)</strong> — identical across the area.</li>
+        <li>Dijkstra's SPF algorithm computes the shortest path tree to all destinations.</li>
+        <li>Results populate the <strong>routing table</strong>. Packets are forwarded hop-by-hop based on this table.</li>
+      </ol>
+      <div class="tip-box">OSPF converges faster than distance-vector protocols (RIP) and scales well using hierarchical areas (Area 0 = backbone).</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q35</span>
+      <span class="q-text">Explain the logic of a Checksum. How is it used to verify data integrity during file transfer?</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">A <strong>Checksum</strong> is a fixed-size numeric value computed from data, used to detect errors introduced during transmission or storage.</div>
+      <h4>How It Works</h4>
+      <ol class="steps">
+        <li><strong>Sender:</strong> Divides data into segments, adds all values (in binary), takes 1's complement → checksum.</li>
+        <li>Checksum is appended to the data and sent.</li>
+        <li><strong>Receiver:</strong> Adds all received segments including the checksum.</li>
+        <li>If result is all 1s → no error detected. If any 0 → error detected, request retransmission.</li>
+      </ol>
+      <div class="diagram">
+Sender:  Data = [1001, 1010, 0011]
+Sum      = 1001 + 1010 + 0011 = 11110 (overflow wrap) = 0000
+Checksum = 1's complement of 0000 = 1111
+
+Receiver: 1001 + 1010 + 0011 + 1111 = 11111 (wrap) = 1111
+All 1s → Data OK ✓</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q36</span>
+      <span class="q-text">For end-to-end encryption, which OSI layer is most suitable considering maintainability and development cost?</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>The most suitable layer is <strong>Layer 6 — Presentation Layer</strong> or more practically <strong>Layer 7 — Application Layer</strong>.</p>
+      <table>
+        <tr><th>Layer</th><th>Suitability for E2E Encryption</th></tr>
+        <tr><td>Layer 3 (Network)</td><td>IPSec — low-level, complex, requires infrastructure changes</td></tr>
+        <tr><td>Layer 4 (Transport)</td><td>TLS/SSL — widely used, good balance</td></tr>
+        <tr><td>Layer 6/7 (Presentation/Application)</td><td><strong>Best for E2E</strong> — app controls keys, lowest development cost, no middleware changes</td></tr>
+      </table>
+      <div class="tip-box">Application-layer encryption (like Signal Protocol, PGP) ensures only endpoints can decrypt — truly end-to-end. TLS protects transport but the server can see plaintext. For maintainability and cost: <strong>Application Layer (L7)</strong> wins.</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q37</span>
+      <span class="q-text">Telephone line: bandwidth 3000 Hz, SNR 3162. Calculate channel capacity.</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>Use <strong>Shannon's Capacity Theorem</strong>:</p>
+      <p class="formula">C = B × log₂(1 + SNR)</p>
+      <p>Where B = bandwidth (Hz), SNR = signal-to-noise ratio.</p>
+      <p><strong>Given:</strong> B = 3000 Hz, SNR = 3162</p>
+      <div class="def-box">
+        C = 3000 × log₂(1 + 3162)<br>
+        C = 3000 × log₂(3163)<br>
+        C = 3000 × 11.627<br>
+        <strong>C ≈ 34,881 bps ≈ 34.88 kbps</strong>
+      </div>
+      <p>This is the <em>theoretical maximum</em> capacity regardless of the modulation scheme used.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 4 — OPERATING SYSTEMS
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s4">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div class="section-title">Operating Systems</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q38</span>
+      <span class="q-text">Fundamental difference between a Process and a Thread. Two advantages of threads over processes.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Process</th><th>Thread</th></tr>
+        <tr><td>Definition</td><td>Independent program in execution with its own memory space</td><td>Lightweight unit of execution within a process</td></tr>
+        <tr><td>Memory</td><td>Separate address space per process</td><td>Shares address space with other threads</td></tr>
+        <tr><td>Communication</td><td>IPC (pipes, sockets, shared mem)</td><td>Direct (shared memory)</td></tr>
+        <tr><td>Creation cost</td><td>High (fork + copy)</td><td>Low (within same process)</td></tr>
+        <tr><td>Crash impact</td><td>Isolated — other processes unaffected</td><td>One thread crash can kill the process</td></tr>
+      </table>
+      <h4>Two Advantages of Threads</h4>
+      <ol>
+        <li><strong>Lower overhead:</strong> Thread creation/context-switch is significantly cheaper than processes (no full address space copy).</li>
+        <li><strong>Efficient communication:</strong> Threads share memory directly, avoiding expensive IPC mechanisms.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q39</span>
+      <span class="q-text">Explain the Producer-Consumer problem. What synchronization issue must be solved?</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">The <strong>Producer-Consumer problem</strong> involves two processes sharing a fixed-size buffer: the producer adds items, the consumer removes them.</div>
+      <h4>Issues to Solve</h4>
+      <ul>
+        <li><strong>Race Condition:</strong> Both access the buffer concurrently without synchronization, causing data corruption.</li>
+        <li><strong>Buffer Full:</strong> Producer must wait when buffer is full.</li>
+        <li><strong>Buffer Empty:</strong> Consumer must wait when buffer is empty.</li>
+      </ul>
+      <h4>Solution using Semaphores</h4>
+<pre>Semaphore mutex = <span class="nm">1</span>;    <span class="cm">// mutual exclusion</span>
+Semaphore empty = N;    <span class="cm">// free slots (initially N)</span>
+Semaphore full  = <span class="nm">0</span>;    <span class="cm">// filled slots</span>
+
+<span class="cm">// Producer:</span>
+<span class="fn">wait</span>(empty); <span class="fn">wait</span>(mutex);
+<span class="cm">// add item</span>
+<span class="fn">signal</span>(mutex); <span class="fn">signal</span>(full);
+
+<span class="cm">// Consumer:</span>
+<span class="fn">wait</span>(full); <span class="fn">wait</span>(mutex);
+<span class="cm">// remove item</span>
+<span class="fn">signal</span>(mutex); <span class="fn">signal</span>(empty);</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q40</span>
+      <span class="q-text">What is Multithreading? Why is it used?</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Multithreading</strong> is the ability of a CPU (or single application) to execute multiple threads concurrently, sharing the same process resources.</div>
+      <h4>Why It Is Used</h4>
+      <ul>
+        <li><strong>Responsiveness:</strong> UI thread remains active while background threads compute (e.g., browser).</li>
+        <li><strong>Resource utilization:</strong> CPU cores stay busy during I/O waits.</li>
+        <li><strong>Parallelism:</strong> Multicore CPUs execute threads truly simultaneously.</li>
+        <li><strong>Performance:</strong> Divides large tasks into parallel sub-tasks (e.g., image processing).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q41</span>
+      <span class="q-text">Page reference string: 1,3,0,3,5,6,3 with 3 frames. Find number of page faults (FIFO).</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>Using <strong>FIFO Page Replacement</strong> with 3 frames:</p>
+      <table>
+        <tr><th>Ref</th><th>Frame 1</th><th>Frame 2</th><th>Frame 3</th><th>Fault?</th></tr>
+        <tr><td>1</td><td>1</td><td>-</td><td>-</td><td class="tag tag-rust">FAULT</td></tr>
+        <tr><td>3</td><td>1</td><td>3</td><td>-</td><td class="tag tag-rust">FAULT</td></tr>
+        <tr><td>0</td><td>1</td><td>3</td><td>0</td><td class="tag tag-rust">FAULT</td></tr>
+        <tr><td>3</td><td>1</td><td>3</td><td>0</td><td class="tag tag-teal">HIT</td></tr>
+        <tr><td>5</td><td>5</td><td>3</td><td>0</td><td class="tag tag-rust">FAULT (replaces 1)</td></tr>
+        <tr><td>6</td><td>5</td><td>6</td><td>0</td><td class="tag tag-rust">FAULT (replaces 3)</td></tr>
+        <tr><td>3</td><td>5</td><td>6</td><td>3</td><td class="tag tag-rust">FAULT (replaces 0)</td></tr>
+      </table>
+      <div class="def-box"><strong>Total Page Faults = 6</strong></div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q42</span>
+      <span class="q-text">What is Kernel? Write down the objectives of Kernel.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">The <strong>Kernel</strong> is the core component of an OS that acts as a bridge between hardware and software, running in privileged (kernel) mode with direct hardware access.</div>
+      <h4>Objectives of Kernel</h4>
+      <ul>
+        <li><strong>Process Management:</strong> Create, schedule, terminate processes/threads.</li>
+        <li><strong>Memory Management:</strong> Allocate/deallocate RAM, manage virtual memory and paging.</li>
+        <li><strong>Device Management:</strong> Interface with hardware via device drivers.</li>
+        <li><strong>File System Management:</strong> Read/write files, manage directories, permissions.</li>
+        <li><strong>Security &amp; Access Control:</strong> Enforce user permissions and system calls.</li>
+        <li><strong>Inter-Process Communication:</strong> Provide pipes, signals, message queues.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q43</span>
+      <span class="q-text">Short note on Virtual Memory and Cache Memory.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="grid-2">
+        <div class="mini-card">
+          <h4>Virtual Memory</h4>
+          <p>A memory management technique that uses disk space (swap/page file) to extend the apparent RAM. Programs see a large contiguous virtual address space; OS maps it to physical memory using page tables. Enables running programs larger than physical RAM.</p>
+        </div>
+        <div class="mini-card">
+          <h4>Cache Memory</h4>
+          <p>A small, extremely fast memory (SRAM) between CPU and RAM. Stores frequently accessed data/instructions. Hierarchy: L1 (fastest, smallest, in-core) → L2 → L3 (largest, shared). Exploits <em>locality of reference</em> to reduce average access time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 5 — DBMS
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s5">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div class="section-title">DBMS / Database</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q44</span>
+      <span class="q-text">You are designing a database for a Library. Explain the relationship between Book and Borrower tables.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <p>The relationship is <strong>Many-to-Many</strong>: a borrower can borrow many books, and a book can be borrowed by many borrowers (over time). This requires a junction/bridge table.</p>
+      <div class="diagram">
+┌──────────────┐       ┌────────────────┐       ┌──────────────┐
+│    BOOK      │       │  BORROWING     │       │  BORROWER    │
+│──────────────│       │────────────────│       │──────────────│
+│ book_id (PK) │──────►│ book_id (FK)   │◄──────│ bor_id (PK)  │
+│ title        │       │ bor_id (FK)    │       │ name         │
+│ author       │       │ borrow_date    │       │ email        │
+│ isbn         │       │ return_date    │       │ phone        │
+│ copies       │       │ status         │       │ address      │
+└──────────────┘       └────────────────┘       └──────────────┘</div>
+<pre><span class="cm">-- SQL Schema</span>
+<span class="kw">CREATE TABLE</span> Book (
+    book_id <span class="kw">INT PRIMARY KEY</span>, title <span class="kw">VARCHAR</span>(<span class="nm">200</span>), author <span class="kw">VARCHAR</span>(<span class="nm">100</span>)
+);
+<span class="kw">CREATE TABLE</span> Borrower (
+    bor_id <span class="kw">INT PRIMARY KEY</span>, name <span class="kw">VARCHAR</span>(<span class="nm">100</span>), email <span class="kw">VARCHAR</span>(<span class="nm">100</span>)
+);
+<span class="kw">CREATE TABLE</span> Borrowing (
+    book_id <span class="kw">INT REFERENCES</span> Book(book_id),
+    bor_id  <span class="kw">INT REFERENCES</span> Borrower(bor_id),
+    borrow_date <span class="kw">DATE</span>, return_date <span class="kw">DATE</span>,
+    <span class="kw">PRIMARY KEY</span>(book_id, bor_id, borrow_date)
+);</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q45</span>
+      <span class="q-text">Discuss different types of relations in DBMS.</span>
+      <span class="q-source">CB AP 2024</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Relationship Type</th><th>Description</th><th>Example</th></tr>
+        <tr><td>One-to-One (1:1)</td><td>One record in A relates to exactly one in B</td><td>Person ↔ Passport</td></tr>
+        <tr><td>One-to-Many (1:N)</td><td>One record in A relates to many in B</td><td>Department → Employees</td></tr>
+        <tr><td>Many-to-One (N:1)</td><td>Many records in A relate to one in B</td><td>Students → Department</td></tr>
+        <tr><td>Many-to-Many (M:N)</td><td>Many in A relate to many in B (junction table needed)</td><td>Students ↔ Courses</td></tr>
+      </table>
+      <p>Also: <strong>Self-referencing</strong> (Employee manages Employee), <strong>Weak entities</strong> (depend on a strong entity).</p>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q46</span>
+      <span class="q-text">Write an SQL query to return the number of movies that are romantic comedies.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+<pre><span class="cm">-- Assuming a Movies table with a 'genre' column</span>
+<span class="kw">SELECT COUNT</span>(*) <span class="kw">AS</span> romantic_comedy_count
+<span class="kw">FROM</span> Movies
+<span class="kw">WHERE</span> genre = <span class="st">'Romantic Comedy'</span>;
+
+<span class="cm">-- If genre is stored as multiple tags:</span>
+<span class="kw">SELECT COUNT</span>(*) <span class="kw">AS</span> rom_com_count
+<span class="kw">FROM</span> Movies
+<span class="kw">WHERE</span> genre <span class="kw">LIKE</span> <span class="st">'%romantic%'</span>
+  <span class="kw">AND</span> genre <span class="kw">LIKE</span> <span class="st">'%comedy%'</span>;</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q47</span>
+      <span class="q-text">SQL queries using tables S, T, U, R, Q to retrieve sid, uid and A, C values.</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>Since the exact schema was not provided, here are standard relational queries demonstrating joins:</p>
+<pre><span class="cm">-- Join S and T to get sid and A values</span>
+<span class="kw">SELECT</span> S.sid, T.A
+<span class="kw">FROM</span> S <span class="kw">JOIN</span> T <span class="kw">ON</span> S.sid = T.sid;
+
+<span class="cm">-- Join U and R to get uid and C values</span>
+<span class="kw">SELECT</span> U.uid, R.C
+<span class="kw">FROM</span> U <span class="kw">JOIN</span> R <span class="kw">ON</span> U.uid = R.uid;
+
+<span class="cm">-- Combined multi-table join via Q as bridge</span>
+<span class="kw">SELECT</span> S.sid, U.uid, T.A, R.C
+<span class="kw">FROM</span> S
+<span class="kw">JOIN</span> Q <span class="kw">ON</span> S.sid = Q.sid
+<span class="kw">JOIN</span> U <span class="kw">ON</span> Q.uid = U.uid
+<span class="kw">JOIN</span> T <span class="kw">ON</span> S.sid = T.sid
+<span class="kw">JOIN</span> R <span class="kw">ON</span> U.uid = R.uid;</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q48</span>
+      <span class="q-text">What is DBMS?</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">A <strong>Database Management System (DBMS)</strong> is software that enables creation, management, and querying of databases in an organized, efficient, and secure manner.</div>
+      <h4>Key Features</h4>
+      <ul>
+        <li><strong>Data Abstraction:</strong> Hides internal complexity from users.</li>
+        <li><strong>Data Independence:</strong> Physical/logical changes don't affect applications.</li>
+        <li><strong>ACID Transactions:</strong> Atomicity, Consistency, Isolation, Durability.</li>
+        <li><strong>Concurrency Control:</strong> Multiple users access data simultaneously without conflicts.</li>
+        <li><strong>Security:</strong> Access control, authentication, authorization.</li>
+      </ul>
+      <p><strong>Examples:</strong> MySQL, PostgreSQL, Oracle, MS SQL Server, MongoDB (NoSQL).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 6 — CYBER SECURITY
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s6">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div class="section-title">Cyber Security</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q49</span>
+      <span class="q-text">Describe a Man-in-the-Middle attack on the Diffie-Hellman key exchange protocol.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>Diffie-Hellman</strong> allows two parties to establish a shared secret over an insecure channel without exchanging the secret directly.</div>
+      <h4>MitM Attack on DH</h4>
+      <div class="diagram">
+Alice                 Mallory (attacker)              Bob
+  │                        │                           │
+  │──── sends g^a mod p ──►│                           │
+  │                        │──── sends g^m mod p ─────►│
+  │                        │◄─── sends g^b mod p ──────│
+  │◄─── sends g^m mod p ───│                           │
+
+Alice thinks shared secret = g^(a*m) mod p (with Mallory)
+Bob   thinks shared secret = g^(b*m) mod p (with Mallory)
+Mallory decrypts, reads, re-encrypts — invisible to both!</div>
+      <div class="warn-box"><strong>Prevention:</strong> Authenticate the DH exchange using certificates (TLS uses this), digital signatures, or a PKI to verify parties' identities before key exchange.</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q50</span>
+      <span class="q-text">Explain how CIA triad relates to falsification, interception, masquerade and denial of service.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>CIA Property</th><th>Threat</th><th>Description</th></tr>
+        <tr><td>Integrity</td><td>Falsification</td><td>Attacker modifies data in transit without detection — violates data accuracy.</td></tr>
+        <tr><td>Confidentiality</td><td>Interception</td><td>Attacker eavesdrops and reads private data — violates secrecy.</td></tr>
+        <tr><td>Confidentiality + Integrity</td><td>Masquerade</td><td>Attacker impersonates a legitimate user — violates identity integrity.</td></tr>
+        <tr><td>Availability</td><td>Denial of Service</td><td>Attacker floods system, making it unavailable to legitimate users.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q51</span>
+      <span class="q-text">If an attacker steals the private key of a website using TLS, what can be done with it?</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>With the <strong>server's TLS private key</strong>, an attacker can:</p>
+      <ul>
+        <li><strong>Decrypt recorded past sessions</strong> (if Perfect Forward Secrecy was NOT used — static RSA key exchange). All captured traffic can be decrypted retroactively.</li>
+        <li><strong>Impersonate the server</strong> — perform MitM attacks on future connections by presenting the real certificate and signing with the stolen key.</li>
+        <li><strong>Forge signatures</strong> — authenticate as the server to clients.</li>
+      </ul>
+      <div class="tip-box"><strong>If PFS (Perfect Forward Secrecy) was used</strong> (ECDHE/DHE cipher suites), past sessions remain safe because session keys were ephemeral and not derivable from the private key.</div>
+      <div class="warn-box"><strong>Response:</strong> Immediately revoke the certificate via the CA, issue a new key pair, enable PFS, investigate breach scope.</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q52</span>
+      <span class="q-text">What is SQL Injection? How can it be prevented?</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>SQL Injection</strong> is an attack where malicious SQL code is inserted into an input field to manipulate the database query.</div>
+<pre><span class="cm">// Vulnerable code:</span>
+query = <span class="st">"SELECT * FROM users WHERE user='"</span> + input + <span class="st">"'"</span>;
+<span class="cm">// Attacker inputs: ' OR '1'='1
+// Query becomes: SELECT * FROM users WHERE user='' OR '1'='1'
+// Returns ALL users!</span></pre>
+      <h4>Prevention</h4>
+      <ul>
+        <li><strong>Prepared Statements / Parameterized Queries</strong> (most effective)</li>
+        <li><strong>Stored Procedures</strong></li>
+        <li><strong>Input Validation &amp; Whitelisting</strong></li>
+        <li><strong>Least Privilege</strong> — DB user should have minimum permissions</li>
+        <li><strong>WAF (Web Application Firewall)</strong></li>
+      </ul>
+<pre><span class="cm">// Safe parameterized query (Java):</span>
+PreparedStatement ps = conn.prepareStatement(
+    <span class="st">"SELECT * FROM users WHERE user = ?"</span>);
+ps.setString(<span class="nm">1</span>, input);</pre>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q53</span>
+      <span class="q-text">What is Cross Site Scripting (XSS) and how can it be fixed?</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box"><strong>XSS (Cross-Site Scripting)</strong> is an attack where an attacker injects malicious client-side scripts (JavaScript) into web pages viewed by other users.</div>
+      <h4>Types</h4>
+      <ul>
+        <li><strong>Stored XSS:</strong> Script persisted in DB (e.g., forum post).</li>
+        <li><strong>Reflected XSS:</strong> Script in URL parameter, reflected in response.</li>
+        <li><strong>DOM-based XSS:</strong> Client-side script manipulates DOM unsafely.</li>
+      </ul>
+      <h4>Prevention</h4>
+      <ul>
+        <li><strong>Output Encoding/Escaping</strong> — encode &lt; &gt; &amp; &quot; before rendering</li>
+        <li><strong>Content Security Policy (CSP)</strong> headers</li>
+        <li><strong>Input Validation</strong> — reject or sanitize suspicious input</li>
+        <li><strong>HttpOnly Cookie flag</strong> — prevents JS from accessing session cookies</li>
+        <li>Use secure frameworks (React auto-escapes JSX)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 7 — DIGITAL LOGIC
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s7">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <div class="section-title">Digital Logic Design / Electronics</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q54</span>
+      <span class="q-text">What is a Universal Gate? Prove that the NAND Gate is a Universal Gate.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <div class="def-box">A <strong>Universal Gate</strong> is a gate that can implement any Boolean function without using any other gate type. Both <strong>NAND</strong> and <strong>NOR</strong> are universal gates.</div>
+      <h4>Proof: NAND implements all basic gates</h4>
+      <div class="diagram">
+NOT gate using NAND:
+  A ──┬──| NAND |── Ā
+      └──|       |
+
+AND gate using NAND:
+  A ──| NAND |──| NAND |── A·B
+  B ──|      |    (NOT of NAND output)
+
+OR gate using NAND (De Morgan):
+  A ──| NAND |──┐
+                 | NAND |── A+B
+  B ──| NAND |──┘</div>
+      <div class="tip-box">Since NOT, AND, OR can all be built from NAND gates alone, and any Boolean function can be expressed using NOT/AND/OR → NAND is universal.</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q55</span>
+      <span class="q-text">CRC error detection: original data 11100, divisor 1001. Solve using CRC method.</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>Divisor has 4 bits → append 3 zeros to data: <strong>11100000</strong></p>
+      <div class="diagram">
+Binary Division (XOR): 11100000 ÷ 1001
+
+  11100000
+  1001
+  ─────
+   1110
+   1001
+   ────
+    1110
+    1001
+    ────
+     1110
+     1001
+     ────
+      1110
+      1001
+      ────
+       111  ← Remainder (CRC)
+
+Transmitted frame = Original Data + Remainder
+= 11100 + 111 = 11100111
+
+Receiver divides 11100111 by 1001:
+Remainder = 000 → No Error ✓</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 8 — DATA STRUCTURES & GRAPH THEORY
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s8">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <div class="section-title">Data Structure & Graph Theory</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q56</span>
+      <span class="q-text">Hash function h(k)=k mod 13. Insert keys 10,3,6,16,17,19 using linear probing.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Key</th><th>h(k)=k mod 13</th><th>Probe sequence</th><th>Final slot</th></tr>
+        <tr><td>10</td><td>10</td><td>10 (empty)</td><td>10</td></tr>
+        <tr><td>3</td><td>3</td><td>3 (empty)</td><td>3</td></tr>
+        <tr><td>6</td><td>6</td><td>6 (empty)</td><td>6</td></tr>
+        <tr><td>16</td><td>3</td><td>3 (occupied) → 4</td><td>4</td></tr>
+        <tr><td>17</td><td>4</td><td>4 (occupied) → 5</td><td>5</td></tr>
+        <tr><td>19</td><td>6</td><td>6 (occ) → 7</td><td>7</td></tr>
+      </table>
+      <div class="diagram">
+Hash Table (size 13):
+Index: 0  1  2   3   4   5   6   7  8  9  10  11  12
+Value: -  -  -  [3] [16][17] [6] [19] -  - [10]  -   -</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q57</span>
+      <span class="q-text">Given adjacency list for a complete binary tree on 7 vertices, construct the adjacency matrix.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <div class="diagram">
+Complete Binary Tree (7 nodes):
+         1
+       /   \
+      2     3
+     / \   / \
+    4   5 6   7
+
+Adjacency List:
+1: [2, 3]
+2: [1, 4, 5]
+3: [1, 6, 7]
+4: [2]
+5: [2]
+6: [3]
+7: [3]
+
+Adjacency Matrix (7×7):
+   1  2  3  4  5  6  7
+1  0  1  1  0  0  0  0
+2  1  0  0  1  1  0  0
+3  1  0  0  0  0  1  1
+4  0  1  0  0  0  0  0
+5  0  1  0  0  0  0  0
+6  0  0  1  0  0  0  0
+7  0  0  1  0  0  0  0</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q58</span>
+      <span class="q-text">Draw a class diagram for a token-ring based LAN.</span>
+      <span class="q-source">BB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <div class="diagram">
+┌─────────────┐         ┌──────────────────┐
+│  TokenRing  │─────────│   NetworkNode    │
+│─────────────│1      * │──────────────────│
+│+ringSize    │         │+nodeID: int      │
+│+tokenSpeed  │         │+macAddress: str  │
+│─────────────│         │+status: string   │
+│+passToken() │         │──────────────────│
+│+addNode()   │         │+sendFrame()      │
+│+removeNode()│         │+receiveFrame()   │
+└─────────────┘         │+requestToken()   │
+                        └──────────────────┘
+                               ▲
+                    ┌──────────┴─────────┐
+             ┌──────────┐          ┌──────────┐
+             │  Server  │          │Workstation│
+             │──────────│          │──────────│
+             │+services │          │+userID   │
+             └──────────┘          └──────────┘
+┌───────────┐
+│   Token   │
+│───────────│
+│+free: bool│
+│+data: bits│
+│───────────│
+│+release() │
+└───────────┘</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q59</span>
+      <span class="q-text">Max Heap Operations — show heap construction and operations.</span>
+      <span class="q-source">CB AP 2023</span>
+    </div>
+    <div class="q-body">
+      <p>A <strong>Max Heap</strong> is a complete binary tree where each parent ≥ its children.</p>
+      <h4>Build Max Heap from [4, 10, 3, 5, 1, 12, 8]</h4>
+      <div class="diagram">
+Initial Array:        [4, 10, 3, 5, 1, 12, 8]
+Start heapify from last non-leaf (index 2):
+
+Step 1 — Heapify index 2 (value 3): 3 vs children 12,8 → swap with 12
+         [4, 10, 12, 5, 1, 3, 8]
+
+Step 2 — Heapify index 1 (value 10): 10 vs children 5,1 → no swap
+         [4, 10, 12, 5, 1, 3, 8]
+
+Step 3 — Heapify index 0 (value 4): 4 vs children 10,12 → swap with 12
+         [12, 10, 4, 5, 1, 3, 8]
+         Then heapify pushed 4 at index 2: 4 vs 3,8 → swap with 8
+         [12, 10, 8, 5, 1, 3, 4]
+
+Final Max Heap:
+           12
+          /  \
+        10    8
+       /  \  / \
+      5    1 3   4
+</div>
+      <h4>Insert (e.g., 15): add at end, bubble up</h4>
+      <div class="diagram">
+[12, 10, 8, 5, 1, 3, 4, 15] → 15 > 5 swap → 15 > 10 swap → 15 > 12 swap
+Result: [15, 12, 8, 10, 1, 3, 4, 5]</div>
+      <h4>Delete Max (extract root 15): swap root with last, heapify down</h4>
+      <div class="diagram">
+[5, 12, 8, 10, 1, 3, 4] → heapify 5 down → [12, 10, 8, 5, 1, 3, 4]</div>
+    </div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q60</span>
+      <span class="q-text">Difference between LIFO and FIFO in Data Structure.</span>
+      <span class="q-source">SPCBL SAP 2022</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>LIFO (Stack)</th><th>FIFO (Queue)</th></tr>
+        <tr><td>Full form</td><td>Last In, First Out</td><td>First In, First Out</td></tr>
+        <tr><td>Access point</td><td>One end (top)</td><td>Two ends (front &amp; rear)</td></tr>
+        <tr><td>Operations</td><td>push, pop, peek</td><td>enqueue, dequeue, front</td></tr>
+        <tr><td>Analogy</td><td>Stack of plates</td><td>Queue at a ticket counter</td></tr>
+        <tr><td>Use cases</td><td>Function calls, undo, DFS</td><td>Scheduling, BFS, printing</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 9 — AI / ML
+     ══════════════════════════════════════════════ -->
+<div class="section" id="s9">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <div class="section-title">Machine Learning & Artificial Intelligence</div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-header">
+      <span class="q-num">Q61</span>
+      <span class="q-text">Compare and contrast Supervised Learning, Unsupervised Learning and Reinforcement Learning.</span>
+      <span class="q-source">CB AP 2026</span>
+    </div>
+    <div class="q-body">
+      <table>
+        <tr><th>Aspect</th><th>Supervised Learning</th><th>Unsupervised Learning</th><th>Reinforcement Learning</th></tr>
+        <tr><td>Data</td><td>Labeled input-output pairs</td><td>Unlabeled data</td><td>No dataset; learns by interaction</td></tr>
+        <tr><td>Goal</td><td>Predict output for new inputs</td><td>Find hidden patterns/structure</td><td>Maximize cumulative reward</td></tr>
+        <tr><td>Feedback</td><td>Direct (label)</td><td>None</td><td>Reward/penalty signal</td></tr>
+        <tr><td>Algorithms</td><td>Linear Regression, SVM, CNN</td><td>K-Means, PCA, DBSCAN</td><td>Q-Learning, PPO, DQN</td></tr>
+        <tr><td>Examples</td><td>Email spam detection, image classification</td><td>Customer segmentation, anomaly detection</td><td>Game playing (AlphaGo), robotics</td></tr>
+        <tr><td>Key challenge</td><td>Getting labeled training data</td><td>Interpreting discovered patterns</td><td>Exploration vs exploitation tradeoff</td></tr>
+      </table>
+      <div class="tip-box"><strong>Summary:</strong> Supervised = learn from examples with answers. Unsupervised = find structure without answers. Reinforcement = learn by trying and getting rewarded or penalized.</div>
+    </div>
+  </div>
+
+</div><!-- end section 9 -->
+
+</main>
+
+<!-- BACK TO TOP -->
+<a class="top-btn" href="#" id="topBtn">↑ Top</a>
+
+<script>
+  // Back to top
+  const btn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Animate cards on scroll
+  const cards = document.querySelectorAll('.q-card');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.05 });
+  cards.forEach(c => {
+    c.style.opacity = '0';
+    c.style.transform = 'translateY(16px)';
+    c.style.transition = 'opacity .4s ease, transform .4s ease';
+    obs.observe(c);
+  });
+</script>
+</body>
+</html>

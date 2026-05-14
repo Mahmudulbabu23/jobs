@@ -1,0 +1,2760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS Master Study Guide — Bank AP Exam</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #1c2330;
+  --surface3: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #7d8590;
+  --accent: #f0883e;
+  --accent2: #58a6ff;
+  --accent3: #3fb950;
+  --accent4: #bc8cff;
+  --accent5: #ff7b72;
+  --gold: #d29922;
+  --gold-soft: #f0c94a;
+  --teal: #39d0d0;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #1a1f2e 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(88,166,255,.06) 0%, transparent 70%);
+  top: -100px; left: 50%; transform: translateX(-50%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #e6edf3 30%, var(--accent2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  color: var(--muted);
+  margin-top: 1rem;
+  font-size: 1rem;
+  max-width: 560px;
+  margin-left: auto; margin-right: auto;
+}
+.subject-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.pill {
+  padding: .35rem 1rem;
+  border-radius: 999px;
+  font-family: 'DM Mono', monospace;
+  font-size: .7rem;
+  letter-spacing: .06em;
+  cursor: pointer;
+  transition: all .2s;
+  border: 1px solid;
+}
+.pill-o  { color: var(--accent);  border-color: rgba(240,136,62,.3);  background: rgba(240,136,62,.07); }
+.pill-b  { color: var(--accent2); border-color: rgba(88,166,255,.3);  background: rgba(88,166,255,.07); }
+.pill-g  { color: var(--accent3); border-color: rgba(63,185,80,.3);   background: rgba(63,185,80,.07); }
+.pill-p  { color: var(--accent4); border-color: rgba(188,140,255,.3); background: rgba(188,140,255,.07); }
+.pill-r  { color: var(--accent5); border-color: rgba(255,123,114,.3); background: rgba(255,123,114,.07); }
+.pill-t  { color: var(--teal);    border-color: rgba(57,208,208,.3);  background: rgba(57,208,208,.07); }
+.pill-y  { color: var(--gold-soft);border-color: rgba(240,201,74,.3); background: rgba(240,201,74,.07); }
+.pill:hover { transform: translateY(-2px); filter: brightness(1.2); }
+
+/* ── STICKY NAV ── */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(13,17,23,.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: .6rem 1.5rem;
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sticky-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  padding: .25rem .65rem;
+  border-radius: 4px;
+  transition: all .18s;
+  letter-spacing: .04em;
+}
+.sticky-nav a:hover { background: var(--surface3); color: var(--text); }
+.sticky-nav a.active { background: var(--surface3); color: var(--accent2); }
+
+/* ── LAYOUT ── */
+main { max-width: 1020px; margin: 0 auto; padding: 2.5rem 1.5rem 6rem; }
+
+/* ── CHAPTER ── */
+.chapter {
+  margin-bottom: 4rem;
+  scroll-margin-top: 60px;
+}
+.chapter-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.chapter-header::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  border-radius: 4px 0 0 4px;
+}
+.ch-1::before { background: var(--accent); }
+.ch-2::before { background: var(--accent2); }
+.ch-3::before { background: var(--accent3); }
+.ch-4::before { background: var(--accent4); }
+.ch-5::before { background: var(--accent5); }
+.ch-6::before { background: var(--teal); }
+.ch-7::before { background: var(--gold-soft); }
+.ch-8::before { background: #e05cca; }
+.ch-9::before { background: #79c0ff; }
+
+.chapter-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.chapter-meta { flex: 1; }
+.chapter-num {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  color: var(--muted);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: .25rem;
+}
+.chapter-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.chapter-desc {
+  font-size: .88rem;
+  color: var(--muted);
+  margin-top: .25rem;
+}
+.chapter-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: .65rem;
+  padding: .3rem .8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* ── TOPIC CARD ── */
+.topic {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.topic:hover { border-color: #484f58; }
+.topic-header {
+  padding: 1rem 1.5rem;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  cursor: pointer;
+  user-select: none;
+}
+.topic-icon {
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.topic-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  flex: 1;
+}
+.topic-tags { display: flex; gap: .4rem; flex-wrap: wrap; }
+.ttag {
+  font-family: 'DM Mono', monospace;
+  font-size: .62rem;
+  padding: .15rem .5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+.toggle-btn {
+  font-size: 1.1rem;
+  color: var(--muted);
+  transition: transform .3s;
+  width: 24px; text-align: center;
+}
+.topic.open .toggle-btn { transform: rotate(180deg); }
+
+.topic-body {
+  padding: 1.5rem;
+  display: none;
+}
+.topic.open .topic-body { display: block; }
+
+/* ── CONTENT ELEMENTS ── */
+h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--accent2);
+  margin: 1.25rem 0 .5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+h3::before { content: '//'; font-family: 'DM Mono', monospace; font-size: .8rem; color: var(--muted); }
+h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 1rem 0 .4rem;
+}
+
+p { margin-bottom: .75rem; color: #c9d1d9; }
+p:last-child { margin-bottom: 0; }
+
+pre {
+  background: #0d1117;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  overflow-x: auto;
+  font-family: 'DM Mono', monospace;
+  font-size: .8rem;
+  line-height: 1.7;
+  margin: .9rem 0;
+  position: relative;
+}
+pre .lang-label {
+  position: absolute;
+  top: .5rem; right: .75rem;
+  font-size: .62rem;
+  color: var(--muted);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+code {
+  font-family: 'DM Mono', monospace;
+  font-size: .85em;
+  background: rgba(88,166,255,.1);
+  color: var(--accent2);
+  padding: .1rem .35rem;
+  border-radius: 4px;
+}
+
+.kw  { color: #ff7b72; }
+.cm  { color: #484f58; font-style: italic; }
+.st  { color: #a5d6ff; }
+.nm  { color: #79c0ff; }
+.fn  { color: #d2a8ff; }
+.tp  { color: #ffa657; }
+
+/* ── CALLOUT BOXES ── */
+.callout {
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: .9rem 0;
+  border-left: 3px solid;
+  font-size: .93rem;
+}
+.callout-info  { background: rgba(88,166,255,.08);  border-color: var(--accent2); }
+.callout-warn  { background: rgba(240,136,62,.08);  border-color: var(--accent); }
+.callout-success{background: rgba(63,185,80,.08);   border-color: var(--accent3); }
+.callout-danger { background: rgba(255,123,114,.08); border-color: var(--accent5); }
+.callout-purple { background: rgba(188,140,255,.08); border-color: var(--accent4); }
+.callout strong { color: var(--text); }
+.callout-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .4rem;
+  display: block;
+}
+
+/* ── COMPARISON TABLE ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: .9rem 0;
+  font-size: .88rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+th {
+  background: var(--surface3);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .7rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: .6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: #c9d1d9;
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(88,166,255,.04); }
+
+/* ── KEY CONCEPT GRID ── */
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: .9rem 0;
+}
+.concept-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  transition: border-color .2s, transform .2s;
+}
+.concept-card:hover { border-color: #484f58; transform: translateY(-2px); }
+.concept-card .cc-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+.concept-card h5 {
+  font-family: 'Syne', sans-serif;
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .3rem;
+}
+.concept-card p { font-size: .83rem; color: var(--muted); margin: 0; }
+
+/* ── FORMULA BLOCK ── */
+.formula-block {
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: .8rem 0;
+  font-family: 'DM Mono', monospace;
+  font-size: .9rem;
+  color: var(--gold-soft);
+  text-align: center;
+  letter-spacing: .04em;
+}
+
+/* ── STEPS ── */
+.steps { list-style: none; padding: 0; counter-reset: step-ctr; margin: .8rem 0; }
+.steps li {
+  counter-increment: step-ctr;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: .75rem;
+  align-items: flex-start;
+}
+.steps li::before {
+  content: counter(step-ctr);
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  background: var(--accent2);
+  color: var(--bg);
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  margin-top: .2rem;
+}
+.steps li .step-text { flex: 1; font-size: .93rem; color: #c9d1d9; }
+.steps li .step-text strong { color: var(--text); }
+
+/* ── BULLET LIST ── */
+ul.blist { list-style: none; padding: 0; margin: .6rem 0; }
+ul.blist li {
+  padding: .3rem 0 .3rem 1.4rem;
+  position: relative;
+  font-size: .93rem;
+  color: #c9d1d9;
+}
+ul.blist li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent2);
+  font-size: .8rem;
+}
+ul.blist li strong { color: var(--text); }
+
+/* ── DIAGRAM (monospace art) ── */
+.diagram {
+  background: #0a0e14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: .77rem;
+  line-height: 1.75;
+  color: #3fb950;
+  overflow-x: auto;
+  white-space: pre;
+  margin: .9rem 0;
+}
+
+/* ── HIGHLIGHT ROW ── */
+.highlight-row {
+  display: flex;
+  gap: 1rem;
+  margin: .9rem 0;
+  flex-wrap: wrap;
+}
+.hl-card {
+  flex: 1;
+  min-width: 140px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  text-align: center;
+}
+.hl-card .hl-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: .25rem;
+}
+.hl-card .hl-label { font-size: .78rem; color: var(--muted); }
+
+/* ── EXAM TIP ── */
+.exam-tip {
+  background: linear-gradient(135deg, rgba(210,153,34,.1), rgba(240,201,74,.05));
+  border: 1px solid rgba(210,153,34,.3);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+}
+.exam-tip .et-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: .05rem; }
+.exam-tip .et-body { flex: 1; }
+.exam-tip .et-label {
+  font-family: 'DM Mono', monospace;
+  font-size: .65rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .25rem;
+}
+.exam-tip p { font-size: .9rem; color: #c9d1d9; margin: 0; }
+
+/* ── TIMELINE ── */
+.timeline { margin: .8rem 0; }
+.tl-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  align-items: flex-start;
+}
+.tl-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent2);
+  margin-top: .5rem;
+  flex-shrink: 0;
+}
+.tl-line-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.tl-line { width: 2px; background: var(--border); flex: 1; min-height: 20px; }
+
+/* ── PROGRESS INDICATORS ── */
+.complexity-bar {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin: .4rem 0;
+  font-size: .85rem;
+}
+.complexity-bar .cb-label { color: var(--muted); min-width: 120px; font-family: 'DM Mono', monospace; font-size: .75rem; }
+.cb-track { flex: 1; height: 6px; background: var(--surface3); border-radius: 3px; overflow: hidden; }
+.cb-fill { height: 100%; border-radius: 3px; }
+.cb-value { font-family: 'DM Mono', monospace; font-size: .75rem; color: var(--muted); min-width: 70px; text-align: right; }
+
+/* ── SCROLL TO TOP ── */
+#topBtn {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--accent2);
+  padding: .6rem 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .3s, transform .2s;
+  z-index: 500;
+  letter-spacing: .06em;
+}
+#topBtn.vis { opacity: 1; }
+#topBtn:hover { transform: translateY(-2px); }
+
+/* search */
+.search-wrap {
+  max-width: 480px;
+  margin: 1.5rem auto 0;
+  position: relative;
+}
+.search-wrap input {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .65rem 1rem .65rem 2.5rem;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .9rem;
+  outline: none;
+  transition: border-color .2s;
+}
+.search-wrap input:focus { border-color: var(--accent2); }
+.search-wrap .si { position: absolute; left: .85rem; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: .9rem; }
+
+@media(max-width:640px){
+  .concept-grid { grid-template-columns: 1fr; }
+  .highlight-row { flex-direction: column; }
+  .chapter-header { flex-wrap: wrap; }
+}
+
+/* ── ENHANCED ADDITIONS ── */
+.simple-box {
+  background: linear-gradient(135deg, rgba(88,166,255,.06), rgba(63,185,80,.04));
+  border: 1px solid rgba(88,166,255,.25);
+  border-radius: 10px;
+  padding: 1.1rem 1.4rem;
+  margin: .9rem 0;
+  font-size: .93rem;
+  color: #c9d1d9;
+}
+.simple-box strong { color: var(--text); }
+.simple-box .sb-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: .5rem;
+  display: block;
+}
+.analogy-box {
+  background: rgba(188,140,255,.06);
+  border: 1px solid rgba(188,140,255,.25);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin: .9rem 0;
+  font-size: .93rem;
+  color: #c9d1d9;
+}
+.analogy-box .ab-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent4);
+  margin-bottom: .5rem;
+  display: block;
+}
+.why-box {
+  background: rgba(63,185,80,.06);
+  border: 1px solid rgba(63,185,80,.25);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin: .9rem 0;
+  font-size: .93rem;
+  color: #c9d1d9;
+}
+.why-box .wb-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent3);
+  margin-bottom: .5rem;
+  display: block;
+}
+.mistake-box {
+  background: rgba(255,123,114,.06);
+  border: 1px solid rgba(255,123,114,.25);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  margin: .9rem 0;
+  font-size: .93rem;
+  color: #c9d1d9;
+}
+.mistake-box .mb-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent5);
+  margin-bottom: .5rem;
+  display: block;
+}
+.example-flow {
+  background: #0a0e14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.4rem;
+  font-family: 'DM Mono', monospace;
+  font-size: .78rem;
+  line-height: 1.8;
+  color: #79c0ff;
+  margin: .9rem 0;
+  white-space: pre;
+  overflow-x: auto;
+}
+.step-by-step {
+  margin: .9rem 0;
+  counter-reset: sbs;
+}
+.sbs-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: .9rem;
+  align-items: flex-start;
+}
+.sbs-num {
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  background: rgba(88,166,255,.15);
+  color: var(--accent2);
+  border: 1px solid rgba(88,166,255,.3);
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  margin-top: .1rem;
+}
+.sbs-content { flex: 1; font-size: .9rem; color: #c9d1d9; }
+.sbs-content strong { color: var(--text); }
+.progress-bar-section {
+  margin: .6rem 0;
+}
+.pbs-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'DM Mono', monospace;
+  font-size: .72rem;
+  color: var(--muted);
+  margin-bottom: .3rem;
+}
+.pbs-track {
+  height: 8px;
+  background: var(--surface3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: .6rem;
+}
+.pbs-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+.mini-quiz {
+  background: var(--surface2);
+  border: 1px solid rgba(240,201,74,.2);
+  border-radius: 10px;
+  padding: 1.1rem 1.4rem;
+  margin: 1rem 0;
+}
+.mini-quiz .mq-title {
+  font-family: 'DM Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .7rem;
+  display: block;
+}
+.mq-q { font-size: .93rem; color: var(--text); margin-bottom: .5rem; font-weight: 500; }
+.mq-a { font-size: .88rem; color: var(--muted); cursor: pointer; padding: .5rem .75rem; background: var(--surface3); border-radius: 6px; display: inline-block; margin-top: .3rem; transition: all .2s; border: 1px solid transparent; }
+.mq-a:hover { border-color: var(--accent2); color: var(--text); }
+.mq-reveal { display: none; margin-top: .7rem; padding: .6rem .9rem; background: rgba(63,185,80,.1); border: 1px solid rgba(63,185,80,.3); border-radius: 6px; font-size: .88rem; color: var(--accent3); }
+.mq-reveal.show { display: block; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-eyebrow">Bank AP Exam — Complete Study Guide</div>
+  <h1>CS Master Notes</h1>
+  <p>Deep topic coverage across all 9 subjects. Study, understand, and walk into any exam ready. Every concept explained simply with analogies, examples, and exam tips.</p>
+  <div class="search-wrap">
+    <span class="si">🔍</span>
+    <input type="text" id="searchBox" placeholder="Search topics, algorithms, concepts...">
+  </div>
+  <div class="subject-pills" style="margin-top:1.5rem">
+    <span class="pill pill-o">Programming & OOP</span>
+    <span class="pill pill-b">Algorithms & DSA</span>
+    <span class="pill pill-g">Software Engineering</span>
+    <span class="pill pill-p">Networking</span>
+    <span class="pill pill-r">Operating Systems</span>
+    <span class="pill pill-t">DBMS</span>
+    <span class="pill pill-y">Cyber Security</span>
+    <span class="pill pill-o">Digital Logic</span>
+    <span class="pill pill-b">AI / ML</span>
+  </div>
+</div>
+
+<nav class="sticky-nav">
+  <a href="#ch1">OOP</a>
+  <a href="#ch2">Algorithms</a>
+  <a href="#ch3">Data Structures</a>
+  <a href="#ch4">Software Eng.</a>
+  <a href="#ch5">Networking</a>
+  <a href="#ch6">OS</a>
+  <a href="#ch7">DBMS</a>
+  <a href="#ch8">Cyber Security</a>
+  <a href="#ch9">Digital Logic</a>
+  <a href="#ch10">AI / ML</a>
+  <a href="#ch11">TOC</a>
+  <a href="#ch12">C / Java Concepts</a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 1 — OOP
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch1">
+  <div class="chapter-header ch-1">
+    <div class="chapter-icon">🧬</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 01</div>
+      <div class="chapter-title">Object-Oriented Programming (OOP)</div>
+      <div class="chapter-desc">Classes, objects, the four pillars — mastered from first principles</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <!-- Topic: The 4 Pillars -->
+  <div class="topic open" id="t-pillars">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🏛️</div>
+      <div class="topic-title">The Four Pillars of OOP</div>
+      <div class="topic-tags">
+        <span class="ttag">Encapsulation</span><span class="ttag">Inheritance</span><span class="ttag">Polymorphism</span><span class="ttag">Abstraction</span>
+      </div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">📖 What is OOP? — In Simple Words</span>
+        OOP is a way of writing programs by organizing code into <strong>objects</strong>. Think of objects like real-world things — a Car, a Student, a BankAccount. Each object has its own <strong>data</strong> (properties) and <strong>actions</strong> (methods/functions). OOP makes code easier to understand, reuse, and maintain.
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="cc-icon">🔒</div>
+          <h5>Encapsulation</h5>
+          <p>Bundling data + methods together. Hide internal state using access modifiers (private/public/protected).</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">🧬</div>
+          <h5>Inheritance</h5>
+          <p>Child class acquires parent's properties. Promotes reuse. Establishes IS-A relationship.</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">🎭</div>
+          <h5>Polymorphism</h5>
+          <p>"Many forms." Same method name behaves differently. Compile-time (overloading) or runtime (overriding).</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">🗺️</div>
+          <h5>Abstraction</h5>
+          <p>Hide implementation details. Show only what is necessary. Achieved via abstract classes and interfaces.</p>
+        </div>
+      </div>
+
+      <div class="analogy-box">
+        <span class="ab-title">🚗 Real-Life Analogy — A Car</span>
+        <strong>Encapsulation:</strong> The engine is hidden inside the car. You use the steering wheel and gas pedal — you don't see the engine internals. <br><br>
+        <strong>Inheritance:</strong> A SportsCar "is a" Car. It gets everything a Car has, plus extra features like turbo. <br><br>
+        <strong>Polymorphism:</strong> Both Car and Truck have a <code>startEngine()</code> method, but each starts differently. <br><br>
+        <strong>Abstraction:</strong> You know pressing the gas accelerates — you don't need to know HOW the engine burns fuel.
+      </div>
+
+      <h3>Encapsulation — Deep Explanation</h3>
+      <div class="simple-box">
+        <span class="sb-title">🔒 Why use encapsulation?</span>
+        Imagine if anyone could directly change your bank account balance! <code>myAccount.balance = 999999</code> — that's dangerous. Encapsulation prevents this by making <code>balance</code> private and only allowing changes through controlled methods like <code>deposit()</code> or <code>withdraw()</code>.
+      </div>
+<pre><span class="cm">// WITHOUT Encapsulation (BAD — dangerous!)</span>
+<span class="kw">class</span> <span class="tp">BankAccount</span> {
+    <span class="kw">public double</span> balance; <span class="cm">// Anyone can change directly!</span>
+}
+account.balance = -1000; <span class="cm">// No validation → problem!</span>
+
+<span class="cm">// WITH Encapsulation (GOOD — safe!)</span>
+<span class="kw">class</span> <span class="tp">BankAccount</span> {
+    <span class="kw">private double</span> balance; <span class="cm">// Hidden from outside</span>
+
+    <span class="kw">public void</span> <span class="fn">deposit</span>(<span class="kw">double</span> amount) {
+        <span class="kw">if</span> (amount > <span class="nm">0</span>) balance += amount; <span class="cm">// Controlled access</span>
+    }
+    <span class="kw">public double</span> <span class="fn">getBalance</span>() { <span class="kw">return</span> balance; } <span class="cm">// Read-only</span>
+}</pre>
+
+      <h3>Inheritance — Deep Explanation</h3>
+      <div class="simple-box">
+        <span class="sb-title">🧬 Why use inheritance?</span>
+        Without inheritance, if you have 10 animal types (Dog, Cat, Fish…), you'd copy-paste the same code (name, age, eat()) into 10 classes. Inheritance lets you define common stuff ONCE in a parent (Animal), and all children get it automatically.
+      </div>
+<pre><span class="kw">class</span> <span class="tp">Animal</span> {               <span class="cm">// Parent class</span>
+    <span class="kw">String</span> name;
+    <span class="kw">int</span>    age;
+    <span class="kw">void</span>   <span class="fn">eat</span>()  { System.out.<span class="fn">println</span>(name + <span class="st">" is eating"</span>); }
+    <span class="kw">void</span>   <span class="fn">sleep</span>(){ System.out.<span class="fn">println</span>(name + <span class="st">" is sleeping"</span>); }
+}
+
+<span class="kw">class</span> <span class="tp">Dog</span> <span class="kw">extends</span> <span class="tp">Animal</span> {   <span class="cm">// Child class — gets ALL Animal properties</span>
+    <span class="kw">void</span> <span class="fn">bark</span>() { System.out.<span class="fn">println</span>(name + <span class="st">" says Woof!"</span>); }
+}
+
+<span class="cm">// Dog can use eat(), sleep(), AND bark()</span>
+<span class="tp">Dog</span> d = <span class="kw">new</span> <span class="tp">Dog</span>();
+d.name = <span class="st">"Rex"</span>;
+d.<span class="fn">eat</span>();   <span class="cm">// Inherited from Animal</span>
+d.<span class="fn">bark</span>();  <span class="cm">// Dog's own method</span></pre>
+
+      <h3>Inheritance in Depth</h3>
+      <table>
+        <tr><th>Type</th><th>Definition</th><th>Example</th><th>Support</th></tr>
+        <tr><td><strong>Single</strong></td><td>One child, one parent</td><td>Dog → Animal</td><td>Java, C++</td></tr>
+        <tr><td><strong>Multilevel</strong></td><td>Chain: A → B → C</td><td>Puppy → Dog → Animal</td><td>Java, C++</td></tr>
+        <tr><td><strong>Hierarchical</strong></td><td>Multiple children, one parent</td><td>Cat, Dog → Animal</td><td>Java, C++</td></tr>
+        <tr><td><strong>Multiple</strong></td><td>One child, multiple parents</td><td>FlyingFish → Fish, Bird</td><td>C++ only</td></tr>
+        <tr><td><strong>Hybrid</strong></td><td>Combination of above</td><td>Mix of multiple + hierarchical</td><td>C++</td></tr>
+      </table>
+
+      <div class="callout callout-warn">
+        <span class="callout-title">⚠ Diamond Problem — Explained Simply</span>
+        Imagine: Class D inherits from both B and C. Both B and C inherit from A. Now D has TWO copies of A's data — which one does D use? This confusion is the Diamond Problem. <strong>Java's solution:</strong> classes cannot extend more than one class. But a class CAN implement multiple interfaces (interfaces are just contracts, no data).
+      </div>
+
+      <h3>Abstraction — Deep Explanation</h3>
+      <div class="analogy-box">
+        <span class="ab-title">📱 Real-Life Analogy</span>
+        When you press the volume button on your phone, you don't think about the sound wave physics, DAC chips, or amplifier circuits. You just see: "press up = louder." The complexity is <em>abstracted away</em>. In code, abstract classes and interfaces let you define WHAT something does, without specifying HOW.
+      </div>
+<pre><span class="cm">// Abstract class — defines WHAT, not HOW</span>
+<span class="kw">abstract class</span> <span class="tp">Shape</span> {
+    <span class="kw">abstract double</span> <span class="fn">area</span>();      <span class="cm">// Must be implemented by children</span>
+    <span class="kw">void</span> <span class="fn">describe</span>() {             <span class="cm">// Concrete method (shared behavior)</span>
+        System.out.<span class="fn">println</span>(<span class="st">"Area = "</span> + <span class="fn">area</span>());
+    }
+}
+
+<span class="kw">class</span> <span class="tp">Circle</span> <span class="kw">extends</span> <span class="tp">Shape</span> {
+    <span class="kw">double</span> radius;
+    <span class="kw">double</span> <span class="fn">area</span>() { <span class="kw">return</span> Math.PI * radius * radius; } <span class="cm">// HOW</span>
+}
+
+<span class="kw">class</span> <span class="tp">Rectangle</span> <span class="kw">extends</span> <span class="tp">Shape</span> {
+    <span class="kw">double</span> w, h;
+    <span class="kw">double</span> <span class="fn">area</span>() { <span class="kw">return</span> w * h; }                    <span class="cm">// Different HOW</span>
+}</pre>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Exam Memory Trick — EIPA</div>
+          <p><strong>E</strong>ncapsulation = data hiding (private fields + public getters). <strong>I</strong>nheritance = parent-child, IS-A relationship, code reuse. <strong>P</strong>olymorphism = same name, different behavior. <strong>A</strong>bstraction = hide complexity, show interface. Remember: <strong>"Every Important Programmer Abstracts"</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic: Polymorphism Overloading vs Overriding -->
+  <div class="topic" id="t-polymorphism">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🎭</div>
+      <div class="topic-title">Polymorphism — Overloading vs Overriding</div>
+      <div class="topic-tags"><span class="ttag">Overloading</span><span class="ttag">Overriding</span><span class="ttag">Compile-Time</span><span class="ttag">Run-Time</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🎯 Simple Explanation</span>
+        <strong>Overloading</strong> = same method name, different parameters, SAME class. Java figures out which one to call at compile time (before running). <br><br>
+        <strong>Overriding</strong> = same method name, same parameters, DIFFERENT class (child overrides parent). Java figures out which one to call at run time (while running).
+      </div>
+      <div class="highlight-row">
+        <div class="hl-card">
+          <div class="hl-num" style="color:var(--accent)">CT</div>
+          <div class="hl-label">Compile-Time (Static) Polymorphism</div>
+        </div>
+        <div class="hl-card">
+          <div class="hl-num" style="color:var(--accent2)">RT</div>
+          <div class="hl-label">Run-Time (Dynamic) Polymorphism</div>
+        </div>
+      </div>
+      <table>
+        <tr><th>Aspect</th><th>Method Overloading</th><th>Method Overriding</th></tr>
+        <tr><td>Occurs in</td><td>Same class</td><td>Parent-Child (Inheritance)</td></tr>
+        <tr><td>Resolved at</td><td>Compile time</td><td>Run time (vtable / virtual dispatch)</td></tr>
+        <tr><td>Signature</td><td>Different params</td><td>Identical signature</td></tr>
+        <tr><td>Return type</td><td>Can differ</td><td>Must be same (or covariant)</td></tr>
+        <tr><td>Keyword (Java)</td><td>None needed</td><td>@Override recommended</td></tr>
+      </table>
+
+<pre><span class="cm">// Compile-time: Overloading</span>
+<span class="kw">class</span> <span class="tp">Calculator</span> {
+    <span class="kw">int</span>    <span class="fn">add</span>(<span class="kw">int</span> a, <span class="kw">int</span> b)       { <span class="kw">return</span> a + b; }
+    <span class="kw">double</span> <span class="fn">add</span>(<span class="kw">double</span> a, <span class="kw">double</span> b) { <span class="kw">return</span> a + b; }
+}
+
+<span class="cm">// Runtime: Overriding</span>
+<span class="kw">class</span> <span class="tp">Animal</span> { <span class="kw">virtual void</span> <span class="fn">speak</span>() { cout &lt;&lt; <span class="st">"..."</span>; } };
+<span class="kw">class</span> <span class="tp">Dog</span> : <span class="kw">public</span> <span class="tp">Animal</span> {
+    <span class="kw">void</span> <span class="fn">speak</span>() <span class="kw">override</span> { cout &lt;&lt; <span class="st">"Woof!"</span>; }
+};
+<span class="tp">Animal</span>* a = <span class="kw">new</span> <span class="tp">Dog</span>();
+a-&gt;<span class="fn">speak</span>(); <span class="cm">// → "Woof!" (runtime dispatch)</span></pre>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Exam Tip</div>
+          <p>Remember: <strong>Overloading = same name, different parameters</strong> (compile-time). <strong>Overriding = same name, same parameters, different class</strong> (runtime). Hiding applies only to <strong>static</strong> methods in Java subclasses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic: Classes & Objects -->
+  <div class="topic" id="t-classes">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">📦</div>
+      <div class="topic-title">Classes, Objects & Access Modifiers</div>
+      <div class="topic-tags"><span class="ttag">class</span><span class="ttag">object</span><span class="ttag">constructor</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">📦 Class vs Object — In Simple Words</span>
+        A <strong>Class</strong> is like a blueprint/recipe. A <strong>Cookie Cutter</strong> (class) can make many cookies (objects). Each cookie (object) has the same shape (structure) but different toppings (data). A class defines WHAT properties and behaviors an object has. An object is an ACTUAL instance with real values in memory.
+      </div>
+      <p>A <strong>class</strong> is a blueprint/template. An <strong>object</strong> is an instance of a class with actual values in memory.</p>
+<pre><span class="cm">// Class = Blueprint</span>
+<span class="kw">class</span> <span class="tp">Student</span> {
+    <span class="kw">private</span> <span class="kw">String</span> name;      <span class="cm">// Field</span>
+    <span class="kw">private int</span>    age;
+    <span class="kw">private double</span> gpa;
+
+    <span class="cm">// Constructor — called when creating an object</span>
+    <span class="tp">Student</span>(<span class="kw">String</span> name, <span class="kw">int</span> age, <span class="kw">double</span> gpa) {
+        <span class="kw">this</span>.name = name;
+        <span class="kw">this</span>.age  = age;
+        <span class="kw">this</span>.gpa  = gpa;
+    }
+    <span class="kw">public String</span> <span class="fn">getName</span>() { <span class="kw">return</span> name; } <span class="cm">// Getter</span>
+    <span class="kw">public void</span>   <span class="fn">setGpa</span>(<span class="kw">double</span> g) { gpa = g; } <span class="cm">// Setter</span>
+}
+
+<span class="cm">// Objects = actual instances</span>
+<span class="tp">Student</span> s1 = <span class="kw">new</span> <span class="tp">Student</span>(<span class="st">"Ali"</span>,   <span class="nm">20</span>, <span class="nm">3.8</span>);
+<span class="tp">Student</span> s2 = <span class="kw">new</span> <span class="tp">Student</span>(<span class="st">"Zara"</span>,  <span class="nm">21</span>, <span class="nm">3.9</span>);
+<span class="tp">Student</span> s3 = <span class="kw">new</span> <span class="tp">Student</span>(<span class="st">"Ahmed"</span>, <span class="nm">19</span>, <span class="nm">3.5</span>);</pre>
+
+      <h4>Access Modifiers — Who can see what?</h4>
+      <table>
+        <tr><th>Access Modifier</th><th>Same Class</th><th>Same Package</th><th>Subclass</th><th>Outside</th></tr>
+        <tr><td><code>private</code></td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+        <tr><td><code>default</code></td><td>✅</td><td>✅</td><td>❌</td><td>❌</td></tr>
+        <tr><td><code>protected</code></td><td>✅</td><td>✅</td><td>✅</td><td>❌</td></tr>
+        <tr><td><code>public</code></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+      </table>
+      <div class="callout callout-info">
+        <span class="callout-title">Key Rule — Encapsulation Best Practice</span>
+        Use <strong>private</strong> for data fields + <strong>public</strong> getters/setters = Encapsulation. This prevents direct unauthorized access. Think of it as: private fields are inside a safe, getters/setters are the authorized ways to access the safe.
+      </div>
+      <div class="why-box">
+        <span class="wb-title">💡 Why use this keyword?</span>
+        <code>this.name</code> refers to the object's own field "name". Without <code>this</code>, inside the constructor the parameter <code>name</code> would shadow the field <code>name</code> — Java would think you're assigning name to itself! <code>this</code> removes the ambiguity.
+      </div>
+    </div>
+  </div>
+
+  <!-- Topic: Abstract & Interface -->
+  <div class="topic" id="t-abstract">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🔷</div>
+      <div class="topic-title">Abstract Classes vs Interfaces</div>
+      <div class="topic-tags"><span class="ttag">abstract</span><span class="ttag">interface</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🔷 Abstract Class vs Interface — In Simple Words</span>
+        <strong>Abstract class</strong> = partially built house. Has some rooms finished (concrete methods), some rooms just walls with no furniture (abstract methods). Subclasses finish the incomplete rooms.<br><br>
+        <strong>Interface</strong> = a job contract/agreement. "You MUST implement these methods." No actual code provided — just a list of requirements. A class can sign multiple contracts (implement multiple interfaces).
+      </div>
+      <table>
+        <tr><th>Feature</th><th>Abstract Class</th><th>Interface</th></tr>
+        <tr><td>Methods</td><td>Abstract + concrete (both allowed)</td><td>Abstract by default; default/static allowed in Java 8+</td></tr>
+        <tr><td>Variables</td><td>Any type (instance, static, etc.)</td><td>public static final only (constants)</td></tr>
+        <tr><td>Multiple inherit</td><td>No (one parent class only)</td><td>Yes (class can implement many interfaces)</td></tr>
+        <tr><td>Constructor</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Use when</td><td>Share partial code among related classes</td><td>Define a contract for possibly unrelated classes</td></tr>
+      </table>
+<pre><span class="cm">// Abstract class — partially implemented</span>
+<span class="kw">abstract class</span> <span class="tp">Vehicle</span> {
+    <span class="kw">String</span> brand;
+    <span class="kw">void</span> <span class="fn">refuel</span>() { System.out.<span class="fn">println</span>(<span class="st">"Refueling..."</span>); } <span class="cm">// concrete</span>
+    <span class="kw">abstract void</span> <span class="fn">drive</span>();  <span class="cm">// abstract — must override!</span>
+}
+
+<span class="cm">// Interface — contract only</span>
+<span class="kw">interface</span> <span class="tp">Electric</span> {
+    <span class="kw">void</span> <span class="fn">charge</span>();   <span class="cm">// must implement</span>
+    <span class="kw">int</span>  <span class="fn">batteryLevel</span>();
+}
+<span class="kw">interface</span> <span class="tp">Autonomous</span> {
+    <span class="kw">void</span> <span class="fn">selfDrive</span>();
+}
+
+<span class="cm">// Class extends ONE abstract class, implements MULTIPLE interfaces</span>
+<span class="kw">class</span> <span class="tp">Tesla</span> <span class="kw">extends</span> <span class="tp">Vehicle</span> <span class="kw">implements</span> <span class="tp">Electric</span>, <span class="tp">Autonomous</span> {
+    <span class="kw">void</span> <span class="fn">drive</span>()      { System.out.<span class="fn">println</span>(<span class="st">"Tesla drives silently"</span>); }
+    <span class="kw">void</span> <span class="fn">charge</span>()     { System.out.<span class="fn">println</span>(<span class="st">"Charging at supercharger"</span>); }
+    <span class="kw">int</span>  <span class="fn">batteryLevel</span>() { <span class="kw">return</span> <span class="nm">85</span>; }
+    <span class="kw">void</span> <span class="fn">selfDrive</span>()  { System.out.<span class="fn">println</span>(<span class="st">"Autopilot engaged"</span>); }
+}</pre>
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Exam Tip</div>
+          <p>Interface = <strong>contract</strong> (WHAT to do). Abstract class = <strong>partial implementation</strong> (HOW to partially do it). Java uses interfaces to simulate multiple inheritance. Key difference: abstract class can have constructors and instance variables; interface cannot. When in doubt: if you want IS-A with shared code → abstract class. If you want "can-do" capabilities across unrelated classes → interface.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 2 — ALGORITHMS
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch2">
+  <div class="chapter-header ch-2">
+    <div class="chapter-icon">⚡</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 02</div>
+      <div class="chapter-title">Algorithms & Sorting</div>
+      <div class="chapter-desc">Searching, sorting, complexity analysis — the engine of CS</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🔍</div>
+      <div class="topic-title">Searching Algorithms</div>
+      <div class="topic-tags"><span class="ttag">Linear</span><span class="ttag">Binary</span><span class="ttag">O(log n)</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🔍 What is Searching? — In Simple Words</span>
+        Searching means finding a specific item inside a list. Imagine looking for "Ali" in a phone book. You could go page by page (Linear Search) OR jump to the middle and compare (Binary Search). Both work, but one is MUCH faster for sorted data.
+      </div>
+      <table>
+        <tr><th>Algorithm</th><th>Best</th><th>Average</th><th>Worst</th><th>Requires Sorted?</th></tr>
+        <tr><td>Linear Search</td><td>O(1)</td><td>O(n)</td><td>O(n)</td><td>No</td></tr>
+        <tr><td>Binary Search</td><td>O(1)</td><td>O(log n)</td><td>O(log n)</td><td>YES</td></tr>
+      </table>
+
+      <div class="analogy-box">
+        <span class="ab-title">📖 Analogy — Searching in a Dictionary</span>
+        <strong>Linear Search:</strong> Start at page 1. Read every word until you find "Zebra". Could take 500+ page turns.<br><br>
+        <strong>Binary Search:</strong> Open to the MIDDLE. Is "Zebra" before or after? It's after! Ignore the first half. Open to middle of the second half. Repeat. Find "Zebra" in ~10 steps instead of 500!
+      </div>
+
+      <h4>Binary Search — How it works</h4>
+      <div class="example-flow">Array: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]   ← Must be SORTED
+Indices:  0  1  2   3   4   5   6   7   8   9
+
+Target = 23
+
+Step 1: low=0, high=9, mid=4 → arr[4]=16. 16 < 23, so search RIGHT half
+Step 2: low=5, high=9, mid=7 → arr[7]=56. 56 > 23, so search LEFT half  
+Step 3: low=5, high=6, mid=5 → arr[5]=23. ✅ FOUND at index 5!
+
+Total: 3 steps instead of 6 (linear would check 2,5,8,12,16,23 = 6 steps)</div>
+      <ol class="steps">
+        <li><span class="step-text">Set <strong>low = 0</strong>, <strong>high = n-1</strong></span></li>
+        <li><span class="step-text">Calculate <strong>mid = (low + high) / 2</strong></span></li>
+        <li><span class="step-text">If <code>arr[mid] == target</code> → return mid (found)</span></li>
+        <li><span class="step-text">If <code>arr[mid] < target</code> → set <strong>low = mid + 1</strong> (search right half)</span></li>
+        <li><span class="step-text">If <code>arr[mid] > target</code> → set <strong>high = mid - 1</strong> (search left half)</span></li>
+        <li><span class="step-text">Repeat until <code>low > high</code> → not found</span></li>
+      </ol>
+
+      <div class="why-box">
+        <span class="wb-title">💡 Why Binary Search is O(log n)</span>
+        Every step cuts the remaining search space in HALF. Starting with 1024 elements: after 1 step = 512, after 2 = 256, after 3 = 128 … after 10 steps = 1. So 1024 elements needs at most <strong>10 comparisons</strong>. That's log₂(1024) = 10. For 1 million items: only 20 steps!
+      </div>
+
+      <div class="callout callout-danger">
+        <span class="callout-title">Why Binary Search fails on unsorted arrays</span>
+        Binary search <strong>discards half</strong> the array at each step based on ordering. If the array is unsorted, the target might be in the discarded half — giving incorrect results.
+      </div>
+
+      <div class="mistake-box">
+        <span class="mb-title">❌ Common Mistake</span>
+        Using <code>mid = (low + high) / 2</code> can cause integer overflow when low and high are very large. Safer: <code>mid = low + (high - low) / 2</code>. Both give the same result but the second never overflows.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🔄</div>
+      <div class="topic-title">Sorting Algorithms — Complete Comparison</div>
+      <div class="topic-tags"><span class="ttag">Bubble</span><span class="ttag">Selection</span><span class="ttag">Merge</span><span class="ttag">Quick</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🔄 What is Sorting? — In Simple Words</span>
+        Sorting means arranging items in order (small to large, or large to small). Like arranging books alphabetically on a shelf. Different sorting methods have different speeds — some are simple but slow, others are complex but blazing fast.
+      </div>
+      <table>
+        <tr><th>Algorithm</th><th>Best</th><th>Average</th><th>Worst</th><th>Space</th><th>Stable?</th></tr>
+        <tr><td>Bubble Sort</td><td>O(n)</td><td>O(n²)</td><td>O(n²)</td><td>O(1)</td><td>✅</td></tr>
+        <tr><td>Selection Sort</td><td>O(n²)</td><td>O(n²)</td><td>O(n²)</td><td>O(1)</td><td>❌</td></tr>
+        <tr><td>Insertion Sort</td><td>O(n)</td><td>O(n²)</td><td>O(n²)</td><td>O(1)</td><td>✅</td></tr>
+        <tr><td>Merge Sort</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n)</td><td>✅</td></tr>
+        <tr><td>Quick Sort</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n²)</td><td>O(log n)</td><td>❌</td></tr>
+        <tr><td>Heap Sort</td><td>O(n log n)</td><td>O(n log n)</td><td>O(n log n)</td><td>O(1)</td><td>❌</td></tr>
+      </table>
+
+      <div class="simple-box">
+        <span class="sb-title">📊 Stable Sort — What Does It Mean?</span>
+        A sort is <strong>stable</strong> if equal elements maintain their original order. Example: sorting students by grade. If Ali and Zara both scored 90, in a stable sort Ali stays before Zara (original order preserved). In an unstable sort, Zara might appear first. <strong>Matters when sorting by multiple keys.</strong>
+      </div>
+
+      <h4>Bubble Sort — Logic</h4>
+      <p>Repeatedly compare adjacent elements and swap if out of order. After each full pass, the largest element "bubbles up" to its correct position.</p>
+      <div class="example-flow">Example: Sort [5, 3, 8, 1]
+
+Pass 1: Compare(5,3)→swap → [3,5,8,1]
+        Compare(5,8)→no swap → [3,5,8,1]
+        Compare(8,1)→swap → [3,5,1,8]  ← 8 is now at correct position!
+
+Pass 2: Compare(3,5)→no swap → [3,5,1,8]
+        Compare(5,1)→swap → [3,1,5,8]  ← 5 is now at correct position!
+
+Pass 3: Compare(3,1)→swap → [1,3,5,8]  ← Done! ✅</div>
+<pre><span class="cm">// Optimized Bubble Sort (early exit)</span>
+<span class="kw">for</span> (i = <span class="nm">0</span>; i &lt; n-<span class="nm">1</span>; i++) {
+    swapped = <span class="kw">false</span>;
+    <span class="kw">for</span> (j = <span class="nm">0</span>; j &lt; n-i-<span class="nm">1</span>; j++)
+        <span class="kw">if</span> (arr[j] &gt; arr[j+<span class="nm">1</span>]) { <span class="fn">swap</span>(); swapped = <span class="kw">true</span>; }
+    <span class="kw">if</span> (!swapped) <span class="kw">break</span>; <span class="cm">// already sorted → exit early → best case O(n)</span>
+}</pre>
+
+      <h4>Merge Sort — Divide &amp; Conquer</h4>
+      <div class="analogy-box">
+        <span class="ab-title">📚 Analogy — Sorting Playing Cards</span>
+        Split your 8 cards into two piles of 4. Split each into two piles of 2. Sort each pair. Now merge two sorted pairs into a sorted group of 4. Merge the two groups of 4 into a sorted group of 8. This is exactly how Merge Sort works!
+      </div>
+      <div class="example-flow">Merge Sort on [38, 27, 43, 3, 9, 82, 10]:
+
+Split:  [38,27,43,3]  |  [9,82,10]
+Split:  [38,27] [43,3] | [9,82] [10]
+Split:  [38][27] [43][3] | [9][82] [10]
+
+Merge: [27,38] [3,43] | [9,82] [10]
+Merge: [3,27,38,43]   | [9,10,82]
+Merge: [3, 9, 10, 27, 38, 43, 82] ✅</div>
+      <ol class="steps">
+        <li><span class="step-text"><strong>Divide:</strong> Split array in half recursively until single elements</span></li>
+        <li><span class="step-text"><strong>Conquer:</strong> Each single element is trivially sorted</span></li>
+        <li><span class="step-text"><strong>Combine:</strong> Merge two sorted halves by comparing elements one by one</span></li>
+      </ol>
+      <div class="callout callout-success">
+        <span class="callout-title">Why Merge Sort beats Bubble Sort for large datasets</span>
+        Merge Sort always runs in <strong>O(n log n)</strong> regardless of input. Bubble Sort degrades to <strong>O(n²)</strong> in worst/average case. For n=1,000,000: Merge ≈ 20M ops vs Bubble ≈ 1,000,000,000,000 ops.
+      </div>
+
+      <h4>Quick Sort — Key Concepts</h4>
+      <div class="simple-box">
+        <span class="sb-title">⚡ How Quick Sort Works</span>
+        Pick a "pivot" element. Put all smaller elements to the LEFT, all larger to the RIGHT. The pivot is now in its FINAL position. Recursively do the same for left and right halves. The key insight: after partitioning, the pivot is always in the right place forever.
+      </div>
+      <div class="example-flow">Quick Sort on [3, 6, 8, 10, 1, 2, 1], pivot = 6 (last element approach):
+
+Before partition: [3, 6, 8, 10, 1, 2, 1]
+After partition:  [3, 1, 2, 1, 6, 8, 10]  ← 6 is now in correct position!
+                  ↑ left of 6 ↑  ↑ right of 6 ↑
+Recurse on left: [3,1,2,1] and right: [8,10]</div>
+      <ul class="blist">
+        <li><strong>Pivot selection</strong> is crucial. Bad pivots (always min/max) cause O(n²) worst case.</li>
+        <li>Best pivot: random or median-of-three.</li>
+        <li>In-place: O(log n) stack space only. Preferred when memory is limited.</li>
+        <li><strong>When does worst case O(n²) happen?</strong> When array is already sorted and you always pick first or last element as pivot. Then one partition is always empty.</li>
+      </ul>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Exam Tip — "Which sorting algorithm?"</div>
+          <p><strong>Small data / nearly sorted → Insertion Sort.</strong> Large data, guaranteed performance → Merge Sort. Large data, average-case speed, in-place → Quick Sort. Priority queue operations → Heap Sort. Simple / educational → Bubble Sort (but slow in practice).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🗺️</div>
+      <div class="topic-title">Graph Algorithms (BFS, DFS, Dijkstra, A*, Topological Sort)</div>
+      <div class="topic-tags"><span class="ttag">BFS</span><span class="ttag">DFS</span><span class="ttag">Shortest Path</span><span class="ttag">Heuristic</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Algorithm</th><th>Type</th><th>Data Structure</th><th>Use Case</th><th>Complexity</th></tr>
+        <tr><td>BFS</td><td>Uninformed</td><td>Queue</td><td>Shortest path (unweighted)</td><td>O(V+E)</td></tr>
+        <tr><td>DFS</td><td>Uninformed</td><td>Stack/Recursion</td><td>Connected components, cycles</td><td>O(V+E)</td></tr>
+        <tr><td>Dijkstra</td><td>Informed</td><td>Priority Queue</td><td>Shortest path (weighted, no neg)</td><td>O((V+E) log V)</td></tr>
+        <tr><td>A*</td><td>Heuristic</td><td>Priority Queue</td><td>Goal-directed pathfinding</td><td>Depends on h</td></tr>
+        <tr><td>Topological Sort</td><td>DAG only</td><td>Stack + DFS</td><td>Task scheduling, dependency order</td><td>O(V+E)</td></tr>
+      </table>
+
+      <h4>A* vs BFS — Why Heuristic Wins</h4>
+      <div class="formula-block">f(n) = g(n) + h(n)</div>
+      <ul class="blist">
+        <li><strong>g(n)</strong> = actual cost from start to node n</li>
+        <li><strong>h(n)</strong> = estimated cost from n to goal (heuristic)</li>
+        <li><strong>Admissible heuristic:</strong> h(n) never overestimates → A* is optimal</li>
+        <li>BFS explores all nodes at distance d before distance d+1 — wasteful in large spaces</li>
+        <li>A* explores nodes closest to the goal first → fewer nodes expanded</li>
+      </ul>
+      <div class="callout callout-purple">
+        <span class="callout-title">Topological Sort — Key Rule</span>
+        Only works on <strong>DAGs (Directed Acyclic Graphs)</strong>. Algorithm: run DFS, push nodes to stack on finish. Pop stack = topological order. Used for: build systems, course prerequisites, task scheduling.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">📊</div>
+      <div class="topic-title">Time & Space Complexity — Big-O Mastery</div>
+      <div class="topic-tags"><span class="ttag">O(1)</span><span class="ttag">O(log n)</span><span class="ttag">O(n)</span><span class="ttag">O(n²)</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">⏱️ Big-O Notation — In Simple Words</span>
+        Big-O tells you how an algorithm's speed SCALES as input grows. If your algorithm takes 1 second for 100 items, how long for 1 million? Big-O answers this. It measures the WORST CASE and ignores constants (O(2n) = O(n)) because we care about the growth trend, not exact speed.
+      </div>
+      <div class="diagram">
+Growth Rate (fastest to slowest):
+O(1) &lt; O(log n) &lt; O(n) &lt; O(n log n) &lt; O(n²) &lt; O(2ⁿ) &lt; O(n!)
+
+Examples:
+O(1)       — Array index access, hash table lookup
+O(log n)   — Binary search, balanced BST operations
+O(n)       — Linear scan, linear search
+O(n log n) — Merge sort, heap sort, quick sort (avg)
+O(n²)      — Bubble/selection/insertion sort (worst)
+O(2ⁿ)      — Recursive Fibonacci (naive)
+O(n!)      — Permutation generation</div>
+
+      <div class="analogy-box">
+        <span class="ab-title">🚗 Analogy — Traveling to a City</span>
+        O(1) = Teleport. No matter how far, instant.<br>
+        O(log n) = Binary search on map. Halve the search area each time. Very fast even for huge maps.<br>
+        O(n) = Drive at constant speed. 2x farther = 2x longer.<br>
+        O(n²) = For every mile, check every other mile. Gets terrible fast.<br>
+        O(2ⁿ) = Every step doubles your work. Absolute disaster for large inputs.
+      </div>
+
+      <h4>Concrete Numbers — Why It Matters</h4>
+      <table>
+        <tr><th>Algorithm</th><th>n = 10</th><th>n = 100</th><th>n = 1,000</th><th>n = 1,000,000</th></tr>
+        <tr><td>O(1)</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>O(log n)</td><td>~3</td><td>~7</td><td>~10</td><td>~20</td></tr>
+        <tr><td>O(n)</td><td>10</td><td>100</td><td>1,000</td><td>1,000,000</td></tr>
+        <tr><td>O(n log n)</td><td>~33</td><td>~700</td><td>~10,000</td><td>~20,000,000</td></tr>
+        <tr><td>O(n²)</td><td>100</td><td>10,000</td><td>1,000,000</td><td>10¹²</td></tr>
+        <tr><td>O(2ⁿ)</td><td>1,024</td><td>10³⁰</td><td>Impossible</td><td>Impossible</td></tr>
+      </table>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Exam Tip — Calculating Complexity</div>
+          <p>For nested loops: multiply complexities. <code>for(i) for(j)</code> = O(n²). Single loop = O(n). Halving each iteration = O(log n). Count the <strong>dominant term</strong> only, drop constants. O(3n² + 5n + 7) = O(n²). The biggest term dominates as n → ∞.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 3 — DATA STRUCTURES
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch3">
+  <div class="chapter-header ch-3">
+    <div class="chapter-icon">🗂️</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 03</div>
+      <div class="chapter-title">Data Structures</div>
+      <div class="chapter-desc">Stack, Queue, Trees, Heaps, Hashing — structures that power everything</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">📚</div>
+      <div class="topic-title">Stack & Queue — LIFO vs FIFO</div>
+      <div class="topic-tags"><span class="ttag">Stack</span><span class="ttag">Queue</span><span class="ttag">LIFO</span><span class="ttag">FIFO</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">📚 Stack vs Queue — In Simple Words</span>
+        <strong>Stack</strong> = pile of plates. You add to the TOP, you take from the TOP. The LAST plate you put is the FIRST you take (LIFO).<br><br>
+        <strong>Queue</strong> = line at a ticket counter. You join at the BACK, you leave from the FRONT. The FIRST person who joined is FIRST served (FIFO).
+      </div>
+      <div class="diagram">
+STACK (LIFO — Last In, First Out):
+  push(A) push(B) push(C)   →  [A, B, C] ← TOP
+  pop()                      →  returns C, stack = [A, B]
+
+  Analogy: Stack of plates — add/remove from top only.
+
+QUEUE (FIFO — First In, First Out):
+  enqueue(A) enqueue(B) enqueue(C)  →  FRONT [A, B, C] REAR
+  dequeue()                          →  returns A, queue = [B, C]
+
+  Analogy: People in a line — first in, first served.</div>
+      <table>
+        <tr><th>Operation</th><th>Stack</th><th>Queue</th></tr>
+        <tr><td>Insert</td><td>push(x) — O(1)</td><td>enqueue(x) — O(1)</td></tr>
+        <tr><td>Remove</td><td>pop() — O(1)</td><td>dequeue() — O(1)</td></tr>
+        <tr><td>Peek</td><td>top() — O(1)</td><td>front() — O(1)</td></tr>
+      </table>
+
+      <h4>Stack — Concrete Example: Balanced Parentheses</h4>
+      <div class="example-flow">Check if "{[()]}" is balanced:
+
+Read '{' → push → Stack: ['{']
+Read '[' → push → Stack: ['{', '[']
+Read '(' → push → Stack: ['{', '[', '(']
+Read ')' → top is '(' → matches! pop → Stack: ['{', '[']
+Read ']' → top is '[' → matches! pop → Stack: ['{']
+Read '}' → top is '{' → matches! pop → Stack: []
+
+Stack is EMPTY at end → ✅ BALANCED!
+
+For "(]": push '(' → read ']' → top is '(' → MISMATCH → ❌ NOT BALANCED</div>
+
+      <h4>Real-World Applications</h4>
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="cc-icon">🥞</div><h5>Stack Uses</h5>
+          <p>Function call stack (recursion), undo/redo in editors (Ctrl+Z), balanced parentheses checking, DFS traversal, expression evaluation (postfix/prefix), browser back button</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">🚶</div><h5>Queue Uses</h5>
+          <p>CPU scheduling (Round Robin), BFS traversal, print spooling (printer queue), keyboard buffer, network packet management, customer service systems</p>
+        </div>
+      </div>
+      <h4>Queue using Two Stacks — Clever Trick</h4>
+      <div class="analogy-box">
+        <span class="ab-title">🎩 The Trick Explained Simply</span>
+        You have 2 stacks (S1 and S2). To <strong>enqueue</strong>: push to S1. To <strong>dequeue</strong>: if S2 is empty, pour ALL of S1 into S2 (this reverses the order, making the oldest item on top of S2). Then pop from S2.
+      </div>
+      <p>Stack S1 (input) + Stack S2 (output). Enqueue to S1. To dequeue: if S2 empty, pour all S1 → S2 (reversal), then pop from S2.</p>
+      <div class="example-flow">Enqueue 1, 2, 3:  S1=[1,2,3]  S2=[]
+Dequeue:          S2 empty → pour S1 into S2 → S1=[] S2=[3,2,1]
+                  pop from S2 → returns 1 ✅ (correct FIFO order!)
+Dequeue again:    S2=[3,2] → pop → returns 2 ✅</div>
+      <div class="callout callout-info">
+        <span class="callout-title">Amortized Analysis</span>
+        Each element is pushed/popped at most <strong>twice</strong> (once into S1, once into S2). So amortized cost per operation = O(1). Even though a single dequeue might take O(n) to refill S2, this happens rarely enough that the average is still O(1).
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🌳</div>
+      <div class="topic-title">Trees, Binary Trees & Heaps</div>
+      <div class="topic-tags"><span class="ttag">BST</span><span class="ttag">Max Heap</span><span class="ttag">Traversal</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="diagram">
+Binary Tree Terminology:
+       [Root]
+      /      \
+  [Node]   [Node]  ← Level 1
+   /  \    /   \
+ [L] [R] [L]  [R] ← Level 2 (Leaves)
+
+Height  = longest path from root to leaf
+Degree  = number of children
+Complete BT = all levels full except possibly last (filled left-to-right)</div>
+      <table>
+        <tr><th>Traversal</th><th>Order</th><th>Use Case</th></tr>
+        <tr><td>In-order (LNR)</td><td>Left → Root → Right</td><td>BST gives sorted output</td></tr>
+        <tr><td>Pre-order (NLR)</td><td>Root → Left → Right</td><td>Copy a tree, prefix expression</td></tr>
+        <tr><td>Post-order (LRN)</td><td>Left → Right → Root</td><td>Delete a tree, postfix expression</td></tr>
+        <tr><td>Level-order</td><td>Level by level (BFS)</td><td>Shortest path in unweighted tree</td></tr>
+      </table>
+      <h4>Max Heap</h4>
+      <ul class="blist">
+        <li><strong>Property:</strong> Every parent ≥ both children. Root is always the maximum.</li>
+        <li><strong>Insert:</strong> Add at end (maintain complete BT), then <strong>bubble up</strong> (heapify up).</li>
+        <li><strong>Delete Max:</strong> Swap root with last element, remove last, then <strong>heapify down</strong> (sift down).</li>
+        <li><strong>Build Heap:</strong> Start from last non-leaf (n/2 - 1), heapify down each. O(n) time.</li>
+        <li><strong>Applications:</strong> Priority Queue, Heap Sort, finding k largest elements.</li>
+      </ul>
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Heap Array Indexing</div>
+          <p>For node at index i: <strong>Left child = 2i+1</strong>, <strong>Right child = 2i+2</strong>, <strong>Parent = (i-1)/2</strong>. This is how heaps are stored in arrays without pointers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">#️⃣</div>
+      <div class="topic-title">Hashing & Hash Tables</div>
+      <div class="topic-tags"><span class="ttag">Hash Function</span><span class="ttag">Collision</span><span class="ttag">Linear Probing</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <p>A <strong>hash table</strong> maps keys to values using a <strong>hash function</strong>. Average-case O(1) lookup, insert, delete.</p>
+      <div class="formula-block">h(k) = k mod TABLE_SIZE</div>
+      <h4>Collision Resolution Methods</h4>
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="cc-icon">➡️</div><h5>Linear Probing</h5>
+          <p>On collision at h(k), try h(k)+1, h(k)+2, … (mod size) until empty slot found. Simple but causes clustering.</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">⊞</div><h5>Quadratic Probing</h5>
+          <p>Try h(k)+1², h(k)+2², h(k)+3²... Reduces primary clustering.</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">⛓️</div><h5>Chaining</h5>
+          <p>Each table slot holds a linked list. All keys hashing to same slot are stored in the list.</p>
+        </div>
+        <div class="concept-card">
+          <div class="cc-icon">🔢</div><h5>Double Hashing</h5>
+          <p>On collision, use a second hash function to compute step size. Eliminates clustering.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🕸️</div>
+      <div class="topic-title">Graphs — Representations & Theory</div>
+      <div class="topic-tags"><span class="ttag">Adjacency Matrix</span><span class="ttag">Adjacency List</span><span class="ttag">Directed</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Representation</th><th>Space</th><th>Edge Check</th><th>List All Edges</th><th>Best For</th></tr>
+        <tr><td>Adjacency Matrix</td><td>O(V²)</td><td>O(1)</td><td>O(V²)</td><td>Dense graphs</td></tr>
+        <tr><td>Adjacency List</td><td>O(V+E)</td><td>O(degree)</td><td>O(V+E)</td><td>Sparse graphs</td></tr>
+      </table>
+      <div class="callout callout-info">
+        <span class="callout-title">When to use which</span>
+        <strong>Adjacency Matrix:</strong> Quick edge existence check needed, dense graph (E ≈ V²), Floyd-Warshall algorithm.<br>
+        <strong>Adjacency List:</strong> BFS/DFS traversals, sparse graphs (E &lt;&lt; V²), most real-world graphs (social networks, road maps).
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 4 — SOFTWARE ENGINEERING
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch4">
+  <div class="chapter-header ch-4">
+    <div class="chapter-icon">🏗️</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 04</div>
+      <div class="chapter-title">Software Engineering</div>
+      <div class="chapter-desc">SDLC, testing, version control, metrics — building software that lasts</div>
+    </div>
+    <div class="chapter-badge">Medium Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🔄</div>
+      <div class="topic-title">SDLC — Software Development Life Cycle</div>
+      <div class="topic-tags"><span class="ttag">Waterfall</span><span class="ttag">Agile</span><span class="ttag">Spiral</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="diagram">
+SDLC Phases:
+┌──────────────┐  ┌──────────────────┐  ┌────────────┐
+│  1. Planning  │→│ 2. Requirements  │→│ 3. Design  │
+│  Feasibility  │  │ Analysis (SRS)   │  │ HLD + LLD  │
+└──────────────┘  └──────────────────┘  └────────────┘
+                                               ↓
+┌──────────────┐  ┌──────────────────┐  ┌──────────────┐
+│ 6.Maintenance│←│  5. Deployment   │←│4.Impl+Testing│
+│ Bug fixes    │  │  Release to prod │  │ Code + QA    │
+└──────────────┘  └──────────────────┘  └──────────────┘</div>
+      <table>
+        <tr><th>Model</th><th>Approach</th><th>Advantage</th><th>Disadvantage</th><th>Best for</th></tr>
+        <tr><td>Waterfall</td><td>Sequential phases</td><td>Simple, well-documented</td><td>No going back, late testing</td><td>Fixed requirements</td></tr>
+        <tr><td>Agile</td><td>Iterative sprints</td><td>Flexible, continuous delivery</td><td>Scope creep, less documentation</td><td>Changing requirements</td></tr>
+        <tr><td>Spiral</td><td>Risk-driven cycles</td><td>Early risk mitigation</td><td>Complex, expensive</td><td>Large high-risk projects</td></tr>
+        <tr><td>V-Model</td><td>Test parallel to dev</td><td>Early test planning</td><td>Rigid, like waterfall</td><td>Safety-critical systems</td></tr>
+      </table>
+
+      <h4>Function Point (FP) Calculation</h4>
+      <div class="formula-block">FP = UFP × CAF &nbsp;&nbsp;|&nbsp;&nbsp; CAF = 0.65 + (0.01 × ΣFi)</div>
+      <ul class="blist">
+        <li><strong>UFP</strong> = sum of (count × weight) for: External Inputs (3/4/6), External Outputs (4/5/7), External Inquiries (3/4/6), Internal Logical Files (7/10/15), External Interface Files (5/7/10)</li>
+        <li><strong>ΣFi</strong> = sum of 14 General System Characteristics (0–5 each). All average → each=3, ΣFi=42</li>
+        <li><strong>CAF</strong> with all average = 0.65 + 0.01 × 42 = <strong>1.07</strong></li>
+      </ul>
+
+      <h4>Git — Version Control</h4>
+      <table>
+        <tr><th>Command</th><th>What it does</th><th>Location</th></tr>
+        <tr><td><code>git add .</code></td><td>Stage changes for commit</td><td>Working → Staging Area</td></tr>
+        <tr><td><code>git commit</code></td><td>Save snapshot locally</td><td>Staging → Local Repo</td></tr>
+        <tr><td><code>git push</code></td><td>Upload to remote server</td><td>Local → Remote (GitHub)</td></tr>
+        <tr><td><code>git pull</code></td><td>Download remote changes</td><td>Remote → Local</td></tr>
+        <tr><td><code>git branch</code></td><td>Create parallel line of work</td><td>Local</td></tr>
+        <tr><td><code>git merge</code></td><td>Combine branches</td><td>Local</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 5 — NETWORKING
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch5">
+  <div class="chapter-header ch-5">
+    <div class="chapter-icon">🌐</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 05</div>
+      <div class="chapter-title">Computer Networking</div>
+      <div class="chapter-desc">OSI, TCP/IP, routing protocols, error detection — how data travels</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">📶</div>
+      <div class="topic-title">OSI Model — 7 Layers (Complete)</div>
+      <div class="topic-tags"><span class="ttag">OSI</span><span class="ttag">TCP/IP</span><span class="ttag">Protocols</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🌐 What is the OSI Model? — In Simple Words</span>
+        When you send a message from your phone to your friend's phone, it travels through 7 layers of processing. Each layer does a specific job — like wrapping a gift in multiple boxes, each with a label. The receiver unwraps each box (layer) in reverse order to get the message.
+      </div>
+      <div class="analogy-box">
+        <span class="ab-title">📬 Analogy — Sending a Letter Internationally</span>
+        Layer 7 (Application): You write the letter.<br>
+        Layer 6 (Presentation): You translate it to English.<br>
+        Layer 5 (Session): You start a conversation (phone call logistics).<br>
+        Layer 4 (Transport): You decide how many pages to send per envelope.<br>
+        Layer 3 (Network): You write the destination country and city.<br>
+        Layer 2 (Data Link): Local post office puts it in their mail bag.<br>
+        Layer 1 (Physical): The mail truck physically carries it.
+      </div>
+      <div class="diagram">
+Mnemonic: "Please Do Not Throw Sausage Pizza Away"
+
+Layer 7 — Application   : HTTP, FTP, SMTP, DNS, DHCP
+Layer 6 — Presentation  : Encryption, Compression, Encoding (SSL/TLS here conceptually)
+Layer 5 — Session       : Session management, Authentication, NetBIOS
+Layer 4 — Transport     : TCP (reliable), UDP (fast), Port numbers, Segmentation
+Layer 3 — Network       : IP addressing, Routing (OSPF, RIP, BGP), Packets
+Layer 2 — Data Link     : MAC addresses, Framing, Error detection (CRC), Switches
+Layer 1 — Physical      : Bits, cables, signals, hubs, NIC</div>
+      <table>
+        <tr><th>Layer</th><th>PDU</th><th>Key Devices</th><th>Key Protocols</th></tr>
+        <tr><td>Application (7)</td><td>Data</td><td>Servers, PCs</td><td>HTTP, FTP, SMTP, DNS</td></tr>
+        <tr><td>Transport (4)</td><td>Segment</td><td>Firewalls</td><td>TCP, UDP</td></tr>
+        <tr><td>Network (3)</td><td>Packet</td><td>Router</td><td>IP, OSPF, ICMP</td></tr>
+        <tr><td>Data Link (2)</td><td>Frame</td><td>Switch, Bridge</td><td>Ethernet, ARP</td></tr>
+        <tr><td>Physical (1)</td><td>Bit</td><td>Hub, Cable</td><td>Ethernet physical</td></tr>
+      </table>
+
+      <h4>TCP vs UDP — Which one to use?</h4>
+      <table>
+        <tr><th>Feature</th><th>TCP</th><th>UDP</th></tr>
+        <tr><td>Connection</td><td>Connection-oriented (handshake)</td><td>Connectionless (no handshake)</td></tr>
+        <tr><td>Reliability</td><td>Guaranteed delivery, in order</td><td>No guarantee (fire and forget)</td></tr>
+        <tr><td>Speed</td><td>Slower (overhead)</td><td>Faster (no overhead)</td></tr>
+        <tr><td>Error checking</td><td>Yes — retransmits lost packets</td><td>Minimal — application handles errors</td></tr>
+        <tr><td>Use case</td><td>Web browsing, file download, email</td><td>Video streaming, gaming, VoIP, DNS</td></tr>
+      </table>
+      <div class="why-box">
+        <span class="wb-title">💡 Why UDP for Video?</span>
+        If one video frame arrives late, it's better to SKIP it and show the next frame. Waiting and retransmitting would cause annoying delays. TCP would freeze your video until the missing packet arrives. UDP just continues — that's why Netflix/YouTube use UDP-based protocols.
+      </div>
+
+      <div class="callout callout-info">
+        <span class="callout-title">End-to-End Encryption — Best Layer</span>
+        <strong>Application Layer (L7)</strong> — The application controls the keys. Only the communicating endpoints can decrypt. Intermediate servers (even your ISP) cannot read the data. This is true E2E encryption (e.g., Signal, WhatsApp, PGP). TLS (L4/L5 boundary) is transport encryption — the server can still see plaintext.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🛣️</div>
+      <div class="topic-title">IP Addressing, Routing & OSPF</div>
+      <div class="topic-tags"><span class="ttag">IPv4</span><span class="ttag">Subnetting</span><span class="ttag">OSPF</span><span class="ttag">Dijkstra</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>IP Address Classes</h4>
+      <table>
+        <tr><th>Class</th><th>Range</th><th>Default Subnet</th><th>Use</th></tr>
+        <tr><td>A</td><td>1.0.0.0 – 126.x.x.x</td><td>255.0.0.0 /8</td><td>Large enterprises</td></tr>
+        <tr><td>B</td><td>128.0.0.0 – 191.255.x.x</td><td>255.255.0.0 /16</td><td>Medium organizations</td></tr>
+        <tr><td>C</td><td>192.0.0.0 – 223.255.255.x</td><td>255.255.255.0 /24</td><td>Small networks</td></tr>
+        <tr><td>D</td><td>224.0.0.0 – 239.x.x.x</td><td>—</td><td>Multicast</td></tr>
+      </table>
+
+      <h4>OSPF — Open Shortest Path First</h4>
+      <ul class="blist">
+        <li><strong>Type:</strong> Link-State routing protocol (Layer 3)</li>
+        <li><strong>Algorithm:</strong> Dijkstra's SPF (Shortest Path First)</li>
+        <li><strong>Area concept:</strong> Area 0 = backbone. Other areas connect to Area 0.</li>
+        <li><strong>LSA:</strong> Link State Advertisements flood the area so every router has identical LSDB.</li>
+        <li><strong>Metric:</strong> Cost based on bandwidth (higher bandwidth = lower cost).</li>
+        <li><strong>Convergence:</strong> Much faster than RIP. No hop-count limit.</li>
+      </ul>
+
+      <h4>Shannon's Capacity Theorem</h4>
+      <div class="formula-block">C = B × log₂(1 + SNR) &nbsp; [bits per second]</div>
+      <p>For telephone line: B = 3000 Hz, SNR = 3162 → C = 3000 × log₂(3163) = 3000 × 11.627 ≈ <strong>34,881 bps</strong></p>
+
+      <h4>Checksum — Error Detection</h4>
+      <ol class="steps">
+        <li><span class="step-text">Sender divides data into fixed-size segments and adds all (binary addition with wraparound)</span></li>
+        <li><span class="step-text">Takes <strong>1's complement</strong> of the sum = checksum</span></li>
+        <li><span class="step-text">Appends checksum to data and transmits</span></li>
+        <li><span class="step-text">Receiver sums all segments including checksum</span></li>
+        <li><span class="step-text">If result = all 1s → no error. Any 0 → error, request retransmission</span></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 6 — OPERATING SYSTEMS
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch6">
+  <div class="chapter-header ch-6">
+    <div class="chapter-icon">⚙️</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 06</div>
+      <div class="chapter-title">Operating Systems</div>
+      <div class="chapter-desc">Processes, threads, memory, scheduling, synchronization — the OS brain</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(57,208,208,.15)">🧵</div>
+      <div class="topic-title">Process vs Thread — Core Concepts</div>
+      <div class="topic-tags"><span class="ttag">Process</span><span class="ttag">Thread</span><span class="ttag">Multithreading</span><span class="ttag">PCB</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🧵 Process vs Thread — In Simple Words</span>
+        <strong>Process</strong> = a running program. When you open Chrome, that's a process. It has its own memory space — Chrome can't accidentally read Notepad's data.<br><br>
+        <strong>Thread</strong> = a mini-task inside a process. Chrome uses multiple threads: one thread loads the webpage, another plays a video, another handles your typing — all at the SAME TIME, sharing Chrome's memory.
+      </div>
+      <div class="analogy-box">
+        <span class="ab-title">🏭 Factory Analogy</span>
+        <strong>Process</strong> = a whole factory. It has its own land, workers, machines, and inventory.<br>
+        <strong>Thread</strong> = a worker inside the factory. Multiple workers share the same factory's resources (machines, inventory) but each does their own task simultaneously.
+      </div>
+      <div class="diagram">
+PROCESS:                          THREAD (within a process):
+┌──────────────────────┐          ┌────────────────────────┐
+│  Code Segment        │          │  Thread Stack          │
+│  Data Segment        │  ──────► │  Thread Registers      │
+│  Stack               │          │  Thread ID             │
+│  Heap                │          │  (shares code, data,   │
+│  PCB (OS metadata)   │          │   heap with other       │
+└──────────────────────┘          │   threads in process)   │
+                                  └────────────────────────┘</div>
+      <table>
+        <tr><th>Aspect</th><th>Process</th><th>Thread</th></tr>
+        <tr><td>Memory</td><td>Own address space</td><td>Shared with process</td></tr>
+        <tr><td>Creation</td><td>Expensive (fork)</td><td>Cheap (within process)</td></tr>
+        <tr><td>Context switch</td><td>Slow (full save/restore)</td><td>Fast (partial)</td></tr>
+        <tr><td>Communication</td><td>IPC (pipes, sockets)</td><td>Direct (shared memory)</td></tr>
+        <tr><td>Isolation</td><td>Strong (crash contained)</td><td>Weak (one crash may kill all)</td></tr>
+      </table>
+
+      <h4>What is a PCB? (Process Control Block)</h4>
+      <div class="simple-box">
+        <span class="sb-title">📋 PCB — The OS's Record Card for Each Process</span>
+        Just like a hospital keeps a patient record, the OS keeps a PCB for every process. It contains: Process ID (PID), current state (running/waiting/stopped), program counter (which instruction is next), CPU registers, memory limits, open files list, and priority. When the CPU switches from one process to another, it saves the PCB of the current process and loads the PCB of the next.
+      </div>
+
+      <h4>Why Use Multithreading?</h4>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">⚡</div><h5>Performance</h5><p>Parallel execution on multicore CPUs — tasks done simultaneously. A 4-core CPU can truly run 4 threads at the same time.</p></div>
+        <div class="concept-card"><div class="cc-icon">📱</div><h5>Responsiveness</h5><p>UI thread stays active while background thread downloads/computes. Without threads, your app would freeze while downloading a file.</p></div>
+        <div class="concept-card"><div class="cc-icon">💾</div><h5>Resource Sharing</h5><p>Threads share memory automatically — no expensive IPC (pipes, sockets) needed to pass data between them.</p></div>
+        <div class="concept-card"><div class="cc-icon">🔄</div><h5>Economy</h5><p>Creating/destroying threads is much cheaper than processes. Thread creation: microseconds. Process creation: milliseconds.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🔒</div>
+      <div class="topic-title">Synchronization — Producer-Consumer, Semaphores, Deadlock</div>
+      <div class="topic-tags"><span class="ttag">Semaphore</span><span class="ttag">Mutex</span><span class="ttag">Deadlock</span><span class="ttag">Race Condition</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>Producer-Consumer Problem</h4>
+      <div class="simple-box">
+        <span class="sb-title">🏭 Producer-Consumer — Simple Explanation</span>
+        Imagine a factory with a conveyor belt (buffer). <strong>Producers</strong> put items on the belt. <strong>Consumers</strong> take items off. Problems: (1) Two producers adding at same moment — race condition! (2) Belt is full — producer must wait. (3) Belt is empty — consumer must wait. Semaphores solve all three.
+      </div>
+      <p>A bounded buffer shared between producers (add items) and consumers (remove items). Three issues: (1) race condition, (2) producer blocking when full, (3) consumer blocking when empty.</p>
+      <p><strong>Solution uses 3 semaphores:</strong> <code>mutex=1</code> (mutual exclusion — only one thread accesses buffer at a time), <code>empty=N</code> (counts free slots — producer waits if 0), <code>full=0</code> (counts filled slots — consumer waits if 0)</p>
+
+      <h4>Deadlock — 4 Necessary Conditions (Coffman)</h4>
+      <div class="analogy-box">
+        <span class="ab-title">🚗 Deadlock Analogy — Traffic Jam at 4-Way Intersection</span>
+        Car A (North) needs to go South but Car B (East) is blocking. Car B needs to go West but Car C (South) is blocking. Car C needs to go North but Car D (West) is blocking. Car D needs to go East but Car A is blocking. All 4 cars are waiting — FOREVER. That's deadlock!<br><br>
+        Solution: Make one car back up (preemption) OR make all cars agree on an order of crossing (prevent circular wait).
+      </div>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🚫</div><h5>Mutual Exclusion</h5><p>Resource held by only one process at a time. Example: Only one process can write to a file at once (can't be shared simultaneously).</p></div>
+        <div class="concept-card"><div class="cc-icon">✋</div><h5>Hold &amp; Wait</h5><p>Process holds at least one resource while waiting for more. Process P1 holds printer, waiting for scanner.</p></div>
+        <div class="concept-card"><div class="cc-icon">❌</div><h5>No Preemption</h5><p>Resources cannot be forcibly taken away — only released voluntarily by the holding process.</p></div>
+        <div class="concept-card"><div class="cc-icon">🔄</div><h5>Circular Wait</h5><p>P1 waits for P2, P2 waits for P3, P3 waits for P1 — a cycle of waiting that never ends.</p></div>
+      </div>
+      <div class="callout callout-danger">
+        <span class="callout-title">Exam Tip — Deadlock Prevention</span>
+        Break ANY ONE of the 4 Coffman conditions to prevent deadlock. Most practical: <strong>eliminate circular wait</strong> by imposing a total ordering on resource acquisition (e.g., always acquire resources in ascending ID order — if everyone follows this rule, circular wait is impossible).
+      </div>
+      <div class="simple-box">
+        <span class="sb-title">🔄 Race Condition — What Is It?</span>
+        When two threads access shared data simultaneously and the final result depends on the execution ORDER, which is unpredictable. Example: Counter = 5. Thread A reads 5, Thread B reads 5. Thread A writes 6. Thread B writes 6. Counter is 6 — but should be 7! One increment was LOST. Solution: mutex/lock to make the read-modify-write ATOMIC.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">💾</div>
+      <div class="topic-title">Memory Management — Paging, Virtual Memory, Cache</div>
+      <div class="topic-tags"><span class="ttag">Paging</span><span class="ttag">Page Fault</span><span class="ttag">FIFO</span><span class="ttag">LRU</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>Page Replacement Algorithms</h4>
+      <table>
+        <tr><th>Algorithm</th><th>Policy</th><th>Optimal?</th><th>Practical?</th></tr>
+        <tr><td>FIFO</td><td>Replace oldest loaded page</td><td>No (Belady's anomaly)</td><td>Simple</td></tr>
+        <tr><td>LRU</td><td>Replace least recently used</td><td>Close to optimal</td><td>Yes (stack)</td></tr>
+        <tr><td>Optimal (OPT)</td><td>Replace page used farthest in future</td><td>Yes (theoretical)</td><td>No (needs future knowledge)</td></tr>
+        <tr><td>Clock (NRU)</td><td>Approximate LRU using reference bit</td><td>No</td><td>Yes (used in Linux)</td></tr>
+      </table>
+      <div class="callout callout-warn">
+        <span class="callout-title">Belady's Anomaly</span>
+        In FIFO, adding MORE frames can sometimes cause MORE page faults. This does NOT happen with LRU or OPT. Exam questions often ask to identify this anomaly.
+      </div>
+      <h4>Virtual Memory vs Cache Memory</h4>
+      <table>
+        <tr><th></th><th>Virtual Memory</th><th>Cache Memory</th></tr>
+        <tr><td>Location</td><td>Disk (extends RAM)</td><td>Between CPU and RAM (SRAM)</td></tr>
+        <tr><td>Speed</td><td>Slower (disk access)</td><td>Extremely fast (CPU speed)</td></tr>
+        <tr><td>Managed by</td><td>OS + MMU</td><td>Hardware (CPU)</td></tr>
+        <tr><td>Purpose</td><td>Run programs larger than RAM</td><td>Reduce average memory access time</td></tr>
+        <tr><td>Exploits</td><td>Locality of reference (temporal + spatial)</td><td>Same</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">🧠</div>
+      <div class="topic-title">Kernel — Core & Objectives</div>
+      <div class="topic-tags"><span class="ttag">Monolithic</span><span class="ttag">Microkernel</span><span class="ttag">System Calls</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <p>The <strong>kernel</strong> is the core of the OS running in privileged mode with full hardware access.</p>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🔄</div><h5>Process Management</h5><p>Create, schedule, terminate processes. Context switching between them.</p></div>
+        <div class="concept-card"><div class="cc-icon">💾</div><h5>Memory Management</h5><p>Allocate/free RAM, virtual memory, paging, segmentation.</p></div>
+        <div class="concept-card"><div class="cc-icon">🖨️</div><h5>Device Management</h5><p>I/O device drivers, interrupt handling, device communication.</p></div>
+        <div class="concept-card"><div class="cc-icon">📁</div><h5>File System</h5><p>Create/read/write/delete files, directory management, permissions.</p></div>
+        <div class="concept-card"><div class="cc-icon">🔐</div><h5>Security</h5><p>User authentication, access control, system call validation.</p></div>
+        <div class="concept-card"><div class="cc-icon">📡</div><h5>IPC</h5><p>Pipes, signals, message queues, shared memory, semaphores.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 7 — DBMS
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch7">
+  <div class="chapter-header ch-7">
+    <div class="chapter-icon">🗄️</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 07</div>
+      <div class="chapter-title">Database Management Systems (DBMS)</div>
+      <div class="chapter-desc">Relational model, SQL, normalization, transactions — the data backbone</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(57,208,208,.15)">📊</div>
+      <div class="topic-title">Relational Model — Tables, Keys & Relationships</div>
+      <div class="topic-tags"><span class="ttag">Primary Key</span><span class="ttag">Foreign Key</span><span class="ttag">1:N</span><span class="ttag">M:N</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">📊 Relational Database — In Simple Words</span>
+        Data is stored in <strong>tables</strong> (like Excel sheets). Each table has rows (records) and columns (attributes). Tables are related to each other using keys. Example: A Students table and a Courses table are connected through an Enrollments table.
+      </div>
+      <table>
+        <tr><th>Key Type</th><th>Definition</th><th>Example</th></tr>
+        <tr><td>Primary Key</td><td>Uniquely identifies each row. NOT NULL. No duplicates ever.</td><td>student_id in Students</td></tr>
+        <tr><td>Foreign Key</td><td>References PK in another table. Enforces referential integrity — you can't add a student to a non-existent department.</td><td>dept_id in Students references Departments</td></tr>
+        <tr><td>Candidate Key</td><td>Minimal set of attributes that uniquely identifies a row — any of these could be the PK.</td><td>email OR student_id (both are unique)</td></tr>
+        <tr><td>Composite Key</td><td>PK made of 2+ attributes together — neither alone is unique, but combined they are.</td><td>(student_id, course_id) in Enrollment</td></tr>
+        <tr><td>Super Key</td><td>Any set of attributes that can uniquely identify a row — may contain extra attributes beyond needed.</td><td>{student_id, name} — student_id alone is enough, but this combo is also unique</td></tr>
+      </table>
+
+      <h4>Relationship Types</h4>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">1️⃣</div><h5>One-to-One (1:1)</h5><p>Person ↔ Passport. Each person has one passport, each passport belongs to one person. Stored via FK in either table.</p></div>
+        <div class="concept-card"><div class="cc-icon">1️⃣➡️🔢</div><h5>One-to-Many (1:N)</h5><p>Department → Employees. One department has many employees, but each employee belongs to one department. FK goes in the "many" table (dept_id in Employees).</p></div>
+        <div class="concept-card"><div class="cc-icon">🔢↔️🔢</div><h5>Many-to-Many (M:N)</h5><p>Students ↔ Courses. A student takes many courses; a course has many students. Needs a junction/bridge table (Enrollment) with both FKs as composite PK.</p></div>
+      </div>
+
+      <h4>SQL Essentials — With Explanations</h4>
+<pre><span class="cm">-- CREATE TABLE</span>
+<span class="kw">CREATE TABLE</span> Employee (
+    emp_id   <span class="kw">INT PRIMARY KEY</span>,          <span class="cm">-- unique, not null</span>
+    name     <span class="kw">VARCHAR</span>(<span class="nm">100</span>) <span class="kw">NOT NULL</span>,    <span class="cm">-- can't be empty</span>
+    salary   <span class="kw">DECIMAL</span>(<span class="nm">10</span>,<span class="nm">2</span>),             <span class="cm">-- 10 digits, 2 decimals</span>
+    dept_id  <span class="kw">INT REFERENCES</span> Department(dept_id)  <span class="cm">-- FK constraint</span>
+);
+
+<span class="cm">-- SELECT with JOIN — combine two related tables</span>
+<span class="kw">SELECT</span> e.name, d.dept_name, e.salary
+<span class="kw">FROM</span> Employee e
+<span class="kw">JOIN</span> Department d <span class="kw">ON</span> e.dept_id = d.dept_id  <span class="cm">-- INNER JOIN: only matching rows</span>
+<span class="kw">WHERE</span> e.salary &gt; <span class="nm">50000</span>
+<span class="kw">ORDER BY</span> e.salary <span class="kw">DESC</span>;
+
+<span class="cm">-- Aggregate functions + GROUP BY</span>
+<span class="kw">SELECT</span> dept_id, <span class="fn">COUNT</span>(*), <span class="fn">AVG</span>(salary), <span class="fn">MAX</span>(salary)
+<span class="kw">FROM</span> Employee
+<span class="kw">GROUP BY</span> dept_id       <span class="cm">-- group rows by department</span>
+<span class="kw">HAVING AVG</span>(salary) &gt; <span class="nm">40000</span>;  <span class="cm">-- filter GROUPS (not rows — that's WHERE)</span></pre>
+
+      <div class="why-box">
+        <span class="wb-title">💡 WHERE vs HAVING — Key Difference</span>
+        <strong>WHERE</strong> filters individual ROWS before grouping. <strong>HAVING</strong> filters GROUPS after GROUP BY. You cannot use aggregate functions (COUNT, AVG, MAX) in WHERE — use HAVING for that.
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">⚡</div>
+      <div class="topic-title">ACID Properties & Normalization</div>
+      <div class="topic-tags"><span class="ttag">ACID</span><span class="ttag">1NF</span><span class="ttag">2NF</span><span class="ttag">3NF</span><span class="ttag">BCNF</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>ACID Properties</h4>
+      <div class="simple-box">
+        <span class="sb-title">🏦 Why ACID? — Bank Transfer Example</span>
+        Transferring ₹1000 from Ali's account to Zara's account requires TWO operations: (1) deduct ₹1000 from Ali, (2) add ₹1000 to Zara. What if the system crashes BETWEEN these two steps? ACID guarantees this can never leave the database in a broken state.
+      </div>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">⚛️</div><h5>Atomicity</h5><p>All operations succeed OR all are rolled back. "All or nothing." If step 1 succeeds but step 2 fails, step 1 is reversed automatically. Money never disappears.</p></div>
+        <div class="concept-card"><div class="cc-icon">✅</div><h5>Consistency</h5><p>Transaction takes DB from one valid state to another. Rules/constraints always hold. Total money before = total money after the transfer.</p></div>
+        <div class="concept-card"><div class="cc-icon">🏝️</div><h5>Isolation</h5><p>Concurrent transactions behave as if sequential. If two people transfer money simultaneously, each sees the DB as if they're the only one acting. No "dirty reads."</p></div>
+        <div class="concept-card"><div class="cc-icon">💾</div><h5>Durability</h5><p>Committed transactions survive crashes. Once the bank confirms your transfer, even a power cut won't reverse it. Data is on disk (non-volatile).</p></div>
+      </div>
+      <h4>Normalization — Explained with Examples</h4>
+      <div class="simple-box">
+        <span class="sb-title">📋 Why Normalize? The Problem</span>
+        Imagine a table: StudentID | StudentName | CourseID | CourseName | InstructorName. If instructor changes, you update 100 rows. If you miss one, data is inconsistent (update anomaly). Normalization splits this into smaller tables to eliminate such problems.
+      </div>
+      <table>
+        <tr><th>Form</th><th>Rule</th><th>Eliminates</th><th>Simple Example</th></tr>
+        <tr><td>1NF</td><td>Atomic values, no repeating groups</td><td>Multi-valued attributes</td><td>No "Math, Science" in one cell — use separate rows</td></tr>
+        <tr><td>2NF</td><td>1NF + no partial dependency on composite PK</td><td>Partial dependencies</td><td>If PK=(StudentID, CourseID), CourseName depends only on CourseID → move it out</td></tr>
+        <tr><td>3NF</td><td>2NF + no transitive dependency (non-key → non-key)</td><td>Transitive dependencies</td><td>ZipCode → City — ZipCode is not a key but determines City → separate table</td></tr>
+        <tr><td>BCNF</td><td>Every determinant is a candidate key</td><td>Remaining anomalies</td><td>Stronger version of 3NF — every left-hand side of a functional dependency is a superkey</td></tr>
+      </table>
+      <div class="analogy-box">
+        <span class="ab-title">📦 Normalization Analogy — Organizing a Warehouse</span>
+        1NF: Put each item in its own box (no mixing). 2NF: Group related items together. 3NF: Don't store the same info twice — if "product code" already tells you the "category", don't repeat category everywhere. BCNF: The most organized — every shelf label (key) fully determines the contents.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 8 — CYBER SECURITY
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch8">
+  <div class="chapter-header ch-8" style="--ch-color:#e05cca">
+    <div class="chapter-icon">🔐</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 08</div>
+      <div class="chapter-title">Cyber Security</div>
+      <div class="chapter-desc">Cryptography, attacks, CIA triad, web security — protecting data</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+  <style>.ch-8::before { background: #e05cca; }</style>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(224,92,202,.15)">🛡️</div>
+      <div class="topic-title">CIA Triad & Attack Types</div>
+      <div class="topic-tags"><span class="ttag">Confidentiality</span><span class="ttag">Integrity</span><span class="ttag">Availability</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">🛡️ CIA Triad — In Simple Words</span>
+        The CIA Triad is the foundation of cybersecurity. Every security goal fits into one of three categories: keeping data SECRET (Confidentiality), keeping data ACCURATE (Integrity), and keeping systems RUNNING (Availability). When you hear about any cyberattack, ask: which of these three did it violate?
+      </div>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">🔏</div><h5>Confidentiality</h5><p>Only authorized parties can access data. Techniques: Encryption (AES, RSA), access control (passwords, roles), authentication (2FA, certificates). Example: Your bank password is encrypted so even if hackers steal the database, they can't read it.</p></div>
+        <div class="concept-card"><div class="cc-icon">✅</div><h5>Integrity</h5><p>Data is accurate and unaltered in transit or storage. Techniques: Hash functions (SHA-256), digital signatures, checksums, MAC. Example: When you download software, the SHA hash confirms the file wasn't tampered with.</p></div>
+        <div class="concept-card"><div class="cc-icon">⚡</div><h5>Availability</h5><p>Systems are accessible when needed. Techniques: Redundancy (backup servers), load balancing, DDoS protection, UPS. Example: Hospital systems must ALWAYS be available — a cyberattack that shuts them down could cost lives.</p></div>
+      </div>
+      <table>
+        <tr><th>Attack</th><th>CIA Violated</th><th>Description</th><th>Defense</th></tr>
+        <tr><td>Interception (Eavesdropping)</td><td>Confidentiality</td><td>Hacker listens to network traffic (man-in-the-middle) and reads your messages</td><td>Encryption (TLS/HTTPS)</td></tr>
+        <tr><td>Falsification (Tampering)</td><td>Integrity</td><td>Attacker modifies data in transit — changes your bank transfer amount from ৳100 to ৳10,000</td><td>Digital signatures, MACs</td></tr>
+        <tr><td>Masquerade (Spoofing)</td><td>Confidentiality + Integrity</td><td>Attacker pretends to be your bank website (phishing) to steal your credentials</td><td>Authentication, SSL certificates</td></tr>
+        <tr><td>Denial of Service (DoS/DDoS)</td><td>Availability</td><td>Flood a server with millions of fake requests so it can't serve real users</td><td>Rate limiting, CDN, redundancy</td></tr>
+      </table>
+      <div class="analogy-box">
+        <span class="ab-title">🏦 Analogy — A Bank Vault</span>
+        <strong>Confidentiality:</strong> Only the account holder can open the vault (authentication, encryption).<br>
+        <strong>Integrity:</strong> Money inside the vault can't be silently replaced with fake bills (hashing, signatures).<br>
+        <strong>Availability:</strong> The vault must be accessible 24/7 — you can always withdraw when you need to (redundancy, uptime).
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🔑</div>
+      <div class="topic-title">Cryptography — Symmetric, Asymmetric, Diffie-Hellman, TLS</div>
+      <div class="topic-tags"><span class="ttag">RSA</span><span class="ttag">AES</span><span class="ttag">Diffie-Hellman</span><span class="ttag">TLS</span><span class="ttag">MitM</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Type</th><th>Keys</th><th>Speed</th><th>Algorithm</th><th>Use</th></tr>
+        <tr><td>Symmetric</td><td>Same key for encrypt/decrypt</td><td>Fast</td><td>AES, DES</td><td>Bulk data encryption</td></tr>
+        <tr><td>Asymmetric</td><td>Public + Private key pair</td><td>Slow</td><td>RSA, ECC</td><td>Key exchange, digital signatures</td></tr>
+        <tr><td>Hash</td><td>No key (one-way)</td><td>Very fast</td><td>SHA-256, MD5</td><td>Integrity verification</td></tr>
+      </table>
+
+      <h4>Diffie-Hellman Key Exchange</h4>
+      <div class="diagram">
+Public: prime p, base g (known to all)
+
+Alice picks secret a     Bob picks secret b
+Sends: A = g^a mod p ──►  Sends: B = g^b mod p
+     ◄─────────────────────────────────────────
+
+Alice computes: K = B^a mod p = g^(ab) mod p
+Bob   computes: K = A^b mod p = g^(ab) mod p
+Both arrive at the SAME shared secret K ✓
+
+MitM Attack: Mallory intercepts A and B,
+substitutes her own g^m, forming 2 sessions.
+Prevention: Sign the exchange with certificates.</div>
+
+      <h4>TLS Private Key Theft — Impact</h4>
+      <ul class="blist">
+        <li><strong>Without PFS (RSA key exchange):</strong> All past recorded encrypted sessions can be DECRYPTED retroactively</li>
+        <li><strong>With PFS (ECDHE):</strong> Past sessions safe — session keys were ephemeral, not derived from the private key</li>
+        <li><strong>Future attack:</strong> Can impersonate the server in MitM attacks for new connections</li>
+        <li><strong>Response:</strong> Revoke certificate at CA, generate new key pair, enable PFS cipher suites</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(255,123,114,.15)">💉</div>
+      <div class="topic-title">Web Attacks — SQL Injection & XSS</div>
+      <div class="topic-tags"><span class="ttag">SQLi</span><span class="ttag">XSS</span><span class="ttag">CSRF</span><span class="ttag">Prevention</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>SQL Injection</h4>
+      <div class="callout callout-danger">
+        <span class="callout-title">Attack Vector</span>
+        Malicious SQL code injected into input fields. Example: entering <code>' OR '1'='1</code> turns a login query into one that returns all users, bypassing authentication.
+      </div>
+      <table>
+        <tr><th>Prevention Method</th><th>How it Works</th></tr>
+        <tr><td>Prepared Statements</td><td>SQL structure pre-compiled; input treated as pure data, never as code</td></tr>
+        <tr><td>Stored Procedures</td><td>Pre-defined SQL on server; parameterized</td></tr>
+        <tr><td>Input Validation</td><td>Whitelist allowed characters, reject suspicious input</td></tr>
+        <tr><td>Least Privilege</td><td>DB user has minimum permissions needed (no DROP/CREATE)</td></tr>
+        <tr><td>WAF</td><td>Web Application Firewall detects and blocks SQLi patterns</td></tr>
+      </table>
+
+      <h4>Cross-Site Scripting (XSS)</h4>
+      <table>
+        <tr><th>Type</th><th>How</th><th>Example</th></tr>
+        <tr><td>Stored XSS</td><td>Malicious script saved in DB, served to other users</td><td>Forum post with &lt;script&gt;...</td></tr>
+        <tr><td>Reflected XSS</td><td>Script in URL, reflected in response page</td><td>Search?q=&lt;script&gt;alert(1)&lt;/script&gt;</td></tr>
+        <tr><td>DOM-based XSS</td><td>Script manipulates DOM via client-side JS</td><td>location.hash processed unsafely</td></tr>
+      </table>
+      <p><strong>Prevention:</strong> Output encoding/escaping (& → &amp;amp;), Content-Security-Policy headers, HttpOnly cookies, input sanitization, use modern frameworks (React auto-escapes JSX).</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 9 — DIGITAL LOGIC
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch9">
+  <div class="chapter-header ch-9">
+    <div class="chapter-icon">🔌</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 09</div>
+      <div class="chapter-title">Digital Logic Design</div>
+      <div class="chapter-desc">Logic gates, Boolean algebra, CRC, number systems</div>
+    </div>
+    <div class="chapter-badge">Medium Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,201,74,.15)">⚡</div>
+      <div class="topic-title">Logic Gates, Boolean Algebra & Universal Gates</div>
+      <div class="topic-tags"><span class="ttag">AND</span><span class="ttag">OR</span><span class="ttag">NOT</span><span class="ttag">NAND</span><span class="ttag">NOR</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Gate</th><th>Symbol</th><th>Truth Table</th><th>Boolean</th></tr>
+        <tr><td>AND</td><td>&amp;</td><td>1 only when ALL inputs = 1</td><td>A·B</td></tr>
+        <tr><td>OR</td><td>|</td><td>1 when ANY input = 1</td><td>A+B</td></tr>
+        <tr><td>NOT</td><td>¬</td><td>Inverts input</td><td>Ā</td></tr>
+        <tr><td>NAND</td><td>↑</td><td>NOT of AND</td><td>̄(A·B) = Ā+B̄</td></tr>
+        <tr><td>NOR</td><td>↓</td><td>NOT of OR</td><td>̄(A+B) = Ā·B̄</td></tr>
+        <tr><td>XOR</td><td>⊕</td><td>1 when inputs differ</td><td>A⊕B</td></tr>
+        <tr><td>XNOR</td><td>⊙</td><td>1 when inputs same</td><td>̄(A⊕B)</td></tr>
+      </table>
+
+      <h4>NAND is Universal Gate — Proof</h4>
+      <div class="diagram">
+1. NOT using NAND:  A ──┬──[NAND]── Ā
+                        └──
+
+2. AND using NAND:  A ──[NAND]──[NAND]── A·B
+                    B ──       (2nd NAND = NOT of NAND output)
+
+3. OR using NAND (De Morgan: A+B = ̄Ā·B̄):
+   A ──[NAND]──┐
+               [NAND]── A+B
+   B ──[NAND]──┘
+
+Since NOT, AND, OR → all Boolean functions can be built.
+∴ NAND alone is sufficient = Universal Gate ✓
+
+Same proof applies to NOR gate.</div>
+
+      <h4>Boolean Laws (for simplification)</h4>
+      <div class="diagram">
+Identity   : A+0=A,   A·1=A
+Null       : A+1=1,   A·0=0
+Idempotent : A+A=A,   A·A=A
+Complement : A+Ā=1,   A·Ā=0
+Double NOT : ̄(Ā)=A
+De Morgan  : ̄(A·B)=Ā+B̄,   ̄(A+B)=Ā·B̄   ← Most Important!</div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🔢</div>
+      <div class="topic-title">CRC — Cyclic Redundancy Check</div>
+      <div class="topic-tags"><span class="ttag">Error Detection</span><span class="ttag">Binary Division</span><span class="ttag">XOR</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <ol class="steps">
+        <li><span class="step-text"><strong>Append zeros:</strong> If divisor has r bits, append (r-1) zeros to the data message</span></li>
+        <li><span class="step-text"><strong>Divide:</strong> Perform binary XOR division of the padded data by the generator polynomial</span></li>
+        <li><span class="step-text"><strong>Remainder = CRC:</strong> Replace the appended zeros with this remainder</span></li>
+        <li><span class="step-text"><strong>Transmit:</strong> Send original data + CRC remainder</span></li>
+        <li><span class="step-text"><strong>Receiver checks:</strong> Divides received frame by same divisor. Remainder = 0 → no error</span></li>
+      </ol>
+      <div class="callout callout-info">
+        <span class="callout-title">Key Rule for Binary XOR Division</span>
+        Unlike regular division, XOR subtraction never borrows. 1⊕1=0, 0⊕0=0, 1⊕0=1, 0⊕1=1. Align and XOR top r bits of dividend with divisor. Bring down next bit. Repeat until all bits consumed.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 10 — AI / ML
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch10">
+  <div class="chapter-header ch-9">
+    <div class="chapter-icon">🤖</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 10</div>
+      <div class="chapter-title">Artificial Intelligence & Machine Learning</div>
+      <div class="chapter-desc">Learning paradigms, neural networks, search — the intelligent systems</div>
+    </div>
+    <div class="chapter-badge">High Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(121,192,255,.15)">🧪</div>
+      <div class="topic-title">Supervised vs Unsupervised vs Reinforcement Learning</div>
+      <div class="topic-tags"><span class="ttag">Classification</span><span class="ttag">Clustering</span><span class="ttag">Reward</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Aspect</th><th>Supervised</th><th>Unsupervised</th><th>Reinforcement</th></tr>
+        <tr><td>Data</td><td>Labeled (input → output pairs)</td><td>Unlabeled data only</td><td>No dataset; environment interaction</td></tr>
+        <tr><td>Goal</td><td>Predict output for new inputs</td><td>Discover hidden structure</td><td>Maximize cumulative reward</td></tr>
+        <tr><td>Feedback</td><td>Direct correct labels</td><td>None</td><td>Delayed reward/penalty signal</td></tr>
+        <tr><td>Output</td><td>Classification or Regression</td><td>Clusters, representations</td><td>Policy (action mapping)</td></tr>
+        <tr><td>Algorithms</td><td>Linear Regression, SVM, Decision Tree, CNN</td><td>K-Means, PCA, DBSCAN, Autoencoders</td><td>Q-Learning, PPO, DQN, A3C</td></tr>
+        <tr><td>Examples</td><td>Spam detection, image classification, price prediction</td><td>Customer segmentation, anomaly detection, topic modeling</td><td>Game playing (AlphaGo), robotics, self-driving</td></tr>
+        <tr><td>Challenge</td><td>Getting labeled training data (expensive)</td><td>Interpreting what was discovered</td><td>Exploration vs exploitation tradeoff</td></tr>
+      </table>
+
+      <h4>Key ML Concepts</h4>
+      <div class="concept-grid">
+        <div class="concept-card"><div class="cc-icon">📈</div><h5>Overfitting</h5><p>Model memorizes training data but fails on new data. Fix: more data, regularization, dropout, cross-validation.</p></div>
+        <div class="concept-card"><div class="cc-icon">📉</div><h5>Underfitting</h5><p>Model too simple to capture patterns. Fix: more complex model, more features, less regularization.</p></div>
+        <div class="concept-card"><div class="cc-icon">⚖️</div><h5>Bias-Variance</h5><p>Bias = error from wrong assumptions. Variance = sensitivity to training data. Both must be balanced.</p></div>
+        <div class="concept-card"><div class="cc-icon">🧮</div><h5>Gradient Descent</h5><p>Optimization algorithm. Update weights by moving opposite to gradient of loss function. Learning rate controls step size.</p></div>
+      </div>
+
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Quick Comparison Memory Aid</div>
+          <p><strong>Supervised</strong> = Teacher gives answers → student learns. <strong>Unsupervised</strong> = No teacher → student finds patterns. <strong>Reinforcement</strong> = Trial and error with rewards → agent learns optimal strategy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 11 — THEORY OF COMPUTATION
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch11">
+  <div class="chapter-header ch-2">
+    <div class="chapter-icon">🔣</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 11</div>
+      <div class="chapter-title">Theory of Computation</div>
+      <div class="chapter-desc">DFA, NFA, regular expressions, grammars — the mathematics of computation</div>
+    </div>
+    <div class="chapter-badge">Medium Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(88,166,255,.15)">🤖</div>
+      <div class="topic-title">DFA, NFA & Regular Expressions</div>
+      <div class="topic-tags"><span class="ttag">DFA</span><span class="ttag">NFA</span><span class="ttag">Regex</span><span class="ttag">Automata</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <table>
+        <tr><th>Feature</th><th>DFA</th><th>NFA</th></tr>
+        <tr><td>Transitions</td><td>Exactly one per symbol per state</td><td>Zero, one, or many</td></tr>
+        <tr><td>ε-transitions</td><td>Not allowed</td><td>Allowed</td></tr>
+        <tr><td>Power</td><td>Equivalent to NFA</td><td>Equivalent to DFA</td></tr>
+        <tr><td>Design</td><td>Harder to design</td><td>Easier to design</td></tr>
+        <tr><td>Simulation</td><td>Linear time, single path</td><td>Exponential states possible (subset construction)</td></tr>
+      </table>
+
+      <h4>DFA for "number of 0s divisible by 3"</h4>
+      <div class="diagram">
+States: q0 (start, accepting), q1, q2
+Alphabet: {0, 1}
+
+Transition:
+  q0 --0--> q1   q0 --1--> q0
+  q1 --0--> q2   q1 --1--> q1
+  q2 --0--> q0   q2 --1--> q2
+
+Accepting: q0 (0 mod 3 = 0 zeros counted so far)
+
+Regular Expression: 1*(01*01*01*)*
+  Meaning: any 1s, then groups of exactly 3 zeros
+           (each group can have 1s between them)</div>
+
+      <h4>Regular Expression Operators</h4>
+      <table>
+        <tr><th>Operator</th><th>Meaning</th><th>Example</th></tr>
+        <tr><td>*</td><td>Zero or more occurrences</td><td>a* = ε, a, aa, aaa...</td></tr>
+        <tr><td>+</td><td>One or more occurrences</td><td>a+ = a, aa, aaa...</td></tr>
+        <tr><td>?</td><td>Zero or one occurrence</td><td>a? = ε or a</td></tr>
+        <tr><td>|</td><td>Alternation (OR)</td><td>a|b = a or b</td></tr>
+        <tr><td>.</td><td>Concatenation</td><td>ab = a followed by b</td></tr>
+        <tr><td>()</td><td>Grouping</td><td>(ab)* = ε, ab, abab...</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CHAPTER 12 — C / JAVA PROGRAMMING CONCEPTS
+     ═══════════════════════════════════════ -->
+<div class="chapter" id="ch12">
+  <div class="chapter-header ch-1">
+    <div class="chapter-icon">💻</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Chapter 12</div>
+      <div class="chapter-title">C & Java Programming Concepts</div>
+      <div class="chapter-desc">Memory, pointers, structures, exceptions — language-level mastery</div>
+    </div>
+    <div class="chapter-badge">Medium Priority</div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(240,136,62,.15)">🗂️</div>
+      <div class="topic-title">Dynamic Memory Allocation in C</div>
+      <div class="topic-tags"><span class="ttag">malloc</span><span class="ttag">calloc</span><span class="ttag">realloc</span><span class="ttag">free</span><span class="ttag">Heap</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="simple-box">
+        <span class="sb-title">💾 Dynamic Memory — In Simple Words</span>
+        When you declare <code>int arr[100]</code> in C, you must know the size at compile time. But what if the user wants to enter 5 items or 500 items? You don't know in advance! Dynamic memory allocation lets you ask for memory AT RUNTIME — exactly how much you need. The memory comes from the <strong>Heap</strong>.
+      </div>
+      <div class="diagram">
+Memory Layout of a C Program:
+┌──────────────┐ High Address
+│    Stack     │  ← Local variables, function frames (grows downward)
+│──────────────│
+│      ↕       │  ← Gap (prevents Stack and Heap from colliding)
+│──────────────│
+│     Heap     │  ← Dynamic allocation (malloc/calloc) (grows upward)
+│──────────────│
+│    BSS       │  ← Uninitialized global/static variables (auto-zeroed)
+│──────────────│
+│    Data      │  ← Initialized global/static variables
+│──────────────│
+│    Text      │  ← Code/instructions (read-only)
+└──────────────┘ Low Address</div>
+      <table>
+        <tr><th>Function</th><th>Initializes?</th><th>Arguments</th><th>Returns</th></tr>
+        <tr><td>malloc(size)</td><td>No (garbage values)</td><td>bytes to allocate</td><td>void* to allocated block</td></tr>
+        <tr><td>calloc(n, size)</td><td>Yes (zeros)</td><td>count + size each</td><td>void* to allocated block</td></tr>
+        <tr><td>realloc(ptr, size)</td><td>No (existing preserved)</td><td>pointer + new size</td><td>void* (may move memory)</td></tr>
+        <tr><td>free(ptr)</td><td>N/A</td><td>pointer to free</td><td>void</td></tr>
+      </table>
+<pre><span class="cm">// Practical example: Dynamic array</span>
+<span class="kw">int</span> n;
+<span class="fn">printf</span>(<span class="st">"How many numbers? "</span>);
+<span class="fn">scanf</span>(<span class="st">"%d"</span>, &n);
+
+<span class="kw">int</span>* arr = (<span class="kw">int</span>*) <span class="fn">malloc</span>(n * <span class="kw">sizeof</span>(<span class="kw">int</span>));  <span class="cm">// Allocate n integers</span>
+
+<span class="kw">if</span> (arr == NULL) {                              <span class="cm">// ALWAYS check for NULL!</span>
+    <span class="fn">printf</span>(<span class="st">"Memory allocation failed!\n"</span>);
+    <span class="kw">return</span> <span class="nm">1</span>;
+}
+
+<span class="cm">// Use arr...</span>
+<span class="fn">free</span>(arr);   <span class="cm">// MUST free to prevent memory leak</span>
+arr = NULL;  <span class="cm">// Good practice: avoid dangling pointer</span></pre>
+
+      <div class="callout callout-danger">
+        <span class="callout-title">Common Memory Errors — With Explanations</span>
+        <strong>Memory Leak:</strong> Forgetting free() → RAM fills up gradually → system slows down or crashes. Common in long-running programs.<br><br>
+        <strong>Dangling Pointer:</strong> Calling free(ptr) then still using ptr → undefined behavior → crash or corrupted data.<br><br>
+        <strong>Double Free:</strong> Calling free() twice on the same pointer → the OS's memory manager gets confused → security vulnerability (heap corruption).<br><br>
+        <strong>Buffer Overflow:</strong> Writing beyond allocated size: <code>arr[n+5] = 99</code> → overwrites other data → security attack vector (stack smashing).
+      </div>
+      <div class="why-box">
+        <span class="wb-title">💡 malloc vs calloc — When to use which?</span>
+        Use <strong>calloc</strong> when you need the memory initialized to zero (e.g., creating a new array you'll fill from scratch — avoids garbage values causing bugs). Use <strong>malloc</strong> when you're about to immediately overwrite all bytes anyway (slightly faster since no zeroing step).
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(63,185,80,.15)">🚨</div>
+      <div class="topic-title">Java Exception Handling — Complete Guide</div>
+      <div class="topic-tags"><span class="ttag">try-catch</span><span class="ttag">finally</span><span class="ttag">throws</span><span class="ttag">Checked</span><span class="ttag">Unchecked</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <div class="diagram">
+Java Throwable Hierarchy:
+                 Throwable
+                /         \
+           Exception        Error (don't catch these)
+          /        \
+Checked Exception  RuntimeException (Unchecked)
+  IOException        NullPointerException
+  SQLException       ArrayIndexOutOfBoundsException
+  FileNotFoundException  ClassCastException</div>
+      <table>
+        <tr><th>Type</th><th>Checked Exception</th><th>Unchecked Exception</th><th>Error</th></tr>
+        <tr><td>Must handle?</td><td>Yes (compile forces try-catch or throws)</td><td>No (optional)</td><td>No (don't handle)</td></tr>
+        <tr><td>Examples</td><td>IOException, SQLException</td><td>NullPointerException, ArrayIndexOutOfBounds</td><td>StackOverflowError, OutOfMemoryError</td></tr>
+        <tr><td>Cause</td><td>External factors (file, network)</td><td>Programming bugs</td><td>JVM failure</td></tr>
+      </table>
+
+<pre><span class="cm">// Complete exception handling structure</span>
+<span class="kw">try</span> {
+    <span class="cm">// Code that might throw</span>
+    <span class="kw">int</span> result = Integer.<span class="fn">parseInt</span>(<span class="st">"abc"</span>); <span class="cm">// NumberFormatException</span>
+} <span class="kw">catch</span> (NumberFormatException e) {
+    System.out.<span class="fn">println</span>(<span class="st">"Invalid number: "</span> + e.<span class="fn">getMessage</span>());
+} <span class="kw">catch</span> (Exception e) {
+    System.out.<span class="fn">println</span>(<span class="st">"General error: "</span> + e.<span class="fn">getMessage</span>());
+} <span class="kw">finally</span> {
+    <span class="cm">// ALWAYS executes (cleanup: close files, DB connections)</span>
+    System.out.<span class="fn">println</span>(<span class="st">"Cleanup done"</span>);
+}
+
+<span class="cm">// Custom exception</span>
+<span class="kw">class</span> InsufficientFundsException <span class="kw">extends</span> Exception {
+    InsufficientFundsException(<span class="kw">double</span> amount) {
+        <span class="kw">super</span>(<span class="st">"Insufficient funds: need "</span> + amount);
+    }
+}</pre>
+      <div class="exam-tip">
+        <div class="et-icon">🎯</div>
+        <div class="et-body">
+          <div class="et-label">Key Rules</div>
+          <p><strong>finally always runs</strong> — even if exception is not caught. Use for cleanup (close DB, files). <strong>catch order matters</strong> — put specific exceptions before general ones. Error vs Exception: don't confuse them, they are separate branches of Throwable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic(this)">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">📋</div>
+      <div class="topic-title">Structures, Nested Structures & Recursion in C</div>
+      <div class="topic-tags"><span class="ttag">struct</span><span class="ttag">recursion</span><span class="ttag">call stack</span></div>
+      <div class="toggle-btn">▾</div>
+    </div>
+    <div class="topic-body">
+      <h4>Nested Structures</h4>
+<pre><span class="kw">struct</span> Address {
+    <span class="kw">char</span> city[<span class="nm">50</span>];
+    <span class="kw">char</span> country[<span class="nm">50</span>];
+    <span class="kw">int</span>  zip;
+};
+<span class="kw">struct</span> Student {
+    <span class="kw">int</span>   id;
+    <span class="kw">char</span>  name[<span class="nm">100</span>];
+    <span class="kw">float</span> gpa;
+    <span class="kw">struct</span> Address addr;   <span class="cm">// Nested</span>
+};
+<span class="cm">// Access: student.addr.city</span></pre>
+
+      <h4>Recursion — How the Call Stack Works</h4>
+      <div class="diagram">
+factorial(3):
+  factorial(3) → 3 * factorial(2)
+                       factorial(2) → 2 * factorial(1)
+                                           factorial(1) → 1 * factorial(0)
+                                                               factorial(0) → 1 (base case)
+                                           ← returns 1
+                                ← returns 2
+               ← returns 6
+
+Call Stack (grows on each call, shrinks on return):
+| factorial(0) | ← top (active)
+| factorial(1) |
+| factorial(2) |
+| factorial(3) | ← bottom</div>
+      <div class="callout callout-warn">
+        <span class="callout-title">Stack Overflow</span>
+        Recursion without a proper base case causes infinite calls → call stack overflows → program crashes. Always ensure: (1) a base case, (2) progress toward the base case with each recursive call.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════
+     QUICK SELF-TEST QUIZZES
+     ═══════════════════════════════════════ -->
+<div class="chapter" style="margin-bottom:2rem">
+  <div class="chapter-header" style="background: linear-gradient(135deg, var(--surface), #1a2030); border-color: rgba(188,140,255,.3);">
+    <div class="chapter-icon">🧪</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Self Test</div>
+      <div class="chapter-title">Quick Check Questions</div>
+      <div class="chapter-desc">Test your understanding before the exam — click to reveal answers</div>
+    </div>
+  </div>
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)" style="cursor:default; pointer-events:none">
+      <div class="topic-icon" style="background:rgba(188,140,255,.15)">❓</div>
+      <div class="topic-title">Concept Check — All Chapters</div>
+    </div>
+    <div class="topic-body" style="display:block">
+      <div class="concept-grid">
+
+        <div class="mini-quiz">
+          <span class="mq-title">OOP Quiz</span>
+          <div class="mq-q">Q: What is the difference between overloading and overriding?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Overloading = same method name, different parameters, SAME class, resolved at COMPILE time. Overriding = same method name, same parameters, DIFFERENT class (child overrides parent), resolved at RUN time.</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Data Structures Quiz</span>
+          <div class="mq-q">Q: What data structure does BFS use? What about DFS?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">BFS = Queue (FIFO — explores level by level). DFS = Stack or recursion (LIFO — goes deep first). Remember: B=Bus (Queue, FIFO), D=Depth (Stack, goes deep).</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Sorting Quiz</span>
+          <div class="mq-q">Q: Which sorting algorithm has guaranteed O(n log n) in ALL cases?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Merge Sort — always O(n log n) best, average, and worst case. Quick Sort is O(n log n) on average but O(n²) worst case. Heap Sort is also always O(n log n).</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">OS Quiz</span>
+          <div class="mq-q">Q: What are the 4 Coffman conditions for deadlock?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">1. Mutual Exclusion (resource held exclusively), 2. Hold &amp; Wait (hold one, wait for more), 3. No Preemption (can't forcibly take resources), 4. Circular Wait (P1→P2→P3→P1). Break ANY ONE to prevent deadlock!</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">DBMS Quiz</span>
+          <div class="mq-q">Q: What does the 'A' in ACID stand for and what does it mean?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Atomicity = "All or nothing." All operations in a transaction succeed OR all are rolled back. No partial updates. Example: Bank transfer deducts from A and adds to B — if step 2 fails, step 1 is also reversed.</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Security Quiz</span>
+          <div class="mq-q">Q: A hacker floods a server with millions of requests. Which CIA property is violated?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Availability — This is a Denial of Service (DoS/DDoS) attack. The server becomes unavailable to legitimate users. Defense: rate limiting, CDN, redundant servers, DDoS protection services.</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Networking Quiz</span>
+          <div class="mq-q">Q: At which OSI layer does a Router operate?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Layer 3 — Network Layer. Routers read IP addresses (Layer 3) to decide where to forward packets. Switch = Layer 2 (MAC addresses). Hub = Layer 1 (physical signal). Firewall = Layer 4 (Transport, port-based rules).</div>
+        </div>
+
+        <div class="mini-quiz">
+          <span class="mq-title">Memory Quiz</span>
+          <div class="mq-q">Q: What is a memory leak and how do you prevent it in C?</div>
+          <span class="mq-a" onclick="revealAnswer(this)">💡 Show Answer</span>
+          <div class="mq-reveal">Memory leak = calling malloc/calloc but never calling free() → allocated heap memory is never returned to the OS → RAM usage grows until crash. Prevention: Always match every malloc with a free(). Set pointer to NULL after freeing to avoid dangling pointer.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="chapter" style="margin-bottom:2rem">
+  <div class="chapter-header" style="background: linear-gradient(135deg, var(--surface), #1a2030); border-color: rgba(240,201,74,.3);">
+    <div class="chapter-icon">📋</div>
+    <div class="chapter-meta">
+      <div class="chapter-num">Quick Reference</div>
+      <div class="chapter-title">Exam Cheat Sheet — Must-Know Facts</div>
+      <div class="chapter-desc">The most commonly tested concepts, formulas, and rules</div>
+    </div>
+  </div>
+
+  <div class="topic open">
+    <div class="topic-header" onclick="toggleTopic(this)" style="cursor:default; pointer-events:none">
+      <div class="topic-icon" style="background:rgba(240,201,74,.15)">⭐</div>
+      <div class="topic-title">Key Formulas & Rules</div>
+      <div class="toggle-btn" style="opacity:0">▾</div>
+    </div>
+    <div class="topic-body" style="display:block">
+      <div class="concept-grid">
+        <div class="concept-card">
+          <h5>Shannon Capacity</h5>
+          <p><code>C = B × log₂(1 + SNR)</code><br>B=3000Hz, SNR=3162 → ~34.88 kbps</p>
+        </div>
+        <div class="concept-card">
+          <h5>Function Points</h5>
+          <p><code>FP = UFP × CAF</code><br><code>CAF = 0.65 + 0.01 × ΣFi</code><br>All avg → CAF = 1.07</p>
+        </div>
+        <div class="concept-card">
+          <h5>LCM Formula</h5>
+          <p><code>LCM(a,b) = (a×b) / GCD(a,b)</code><br>Use Euclidean algorithm for GCD</p>
+        </div>
+        <div class="concept-card">
+          <h5>Hash Table (Linear Probing)</h5>
+          <p><code>h(k) = k mod TABLE_SIZE</code><br>Collision: try (h+1), (h+2)... mod size</p>
+        </div>
+        <div class="concept-card">
+          <h5>Heap Indices</h5>
+          <p>Node i → Left: 2i+1, Right: 2i+2, Parent: (i-1)/2</p>
+        </div>
+        <div class="concept-card">
+          <h5>CRC Steps</h5>
+          <p>Append (r-1) zeros → XOR divide → remainder = CRC → transmit data+CRC</p>
+        </div>
+        <div class="concept-card">
+          <h5>OSPF</h5>
+          <p>Link-state, uses Dijkstra's SPF, LSA flooding, Area 0 = backbone</p>
+        </div>
+        <div class="concept-card">
+          <h5>ACID</h5>
+          <p><strong>A</strong>tomicity <strong>C</strong>onsistency <strong>I</strong>solation <strong>D</strong>urability</p>
+        </div>
+        <div class="concept-card">
+          <h5>Deadlock (Coffman)</h5>
+          <p>Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait — break ANY one</p>
+        </div>
+        <div class="concept-card">
+          <h5>CIA Triad</h5>
+          <p>Confidentiality (interception) + Integrity (falsification) + Availability (DoS)</p>
+        </div>
+        <div class="concept-card">
+          <h5>Polymorphism</h5>
+          <p>Overloading = compile-time (same class, diff params). Overriding = runtime (diff class, same params)</p>
+        </div>
+        <div class="concept-card">
+          <h5>Page Fault (FIFO)</h5>
+          <p>3-frame FIFO: ref string 1,3,0,3,5,6,3 → 6 page faults</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<a href="#" id="topBtn">↑ Top</a>
+
+<script>
+// Toggle topics
+function toggleTopic(header) {
+  const topic = header.closest('.topic');
+  topic.classList.toggle('open');
+}
+
+// Mini quiz reveal
+function revealAnswer(btn) {
+  const reveal = btn.nextElementSibling;
+  reveal.classList.toggle('show');
+  btn.textContent = reveal.classList.contains('show') ? '🙈 Hide Answer' : '💡 Show Answer';
+}
+
+// Scroll to top button
+const topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', () => {
+  topBtn.classList.toggle('vis', window.scrollY > 500);
+});
+
+// Active nav link
+const chapters = document.querySelectorAll('.chapter');
+const navLinks = document.querySelectorAll('.sticky-nav a');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { threshold: 0.2 });
+chapters.forEach(ch => observer.observe(ch));
+
+// Search functionality
+const searchBox = document.getElementById('searchBox');
+searchBox.addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  const topics = document.querySelectorAll('.topic');
+  if (!q) {
+    topics.forEach(t => { t.style.display = ''; });
+    document.querySelectorAll('.chapter').forEach(c => c.style.display = '');
+    return;
+  }
+  document.querySelectorAll('.chapter').forEach(ch => {
+    let hasVisible = false;
+    ch.querySelectorAll('.topic').forEach(t => {
+      const text = t.textContent.toLowerCase();
+      const match = text.includes(q);
+      t.style.display = match ? '' : 'none';
+      if (match) { hasVisible = true; t.classList.add('open'); }
+    });
+    ch.style.display = hasVisible ? '' : 'none';
+  });
+});
+
+// Pill nav scrolling
+document.querySelectorAll('.pill').forEach((pill, i) => {
+  const targets = ['#ch1','#ch2','#ch3','#ch4','#ch5','#ch6','#ch7','#ch9','#ch10'];
+  if (targets[i]) {
+    pill.addEventListener('click', () => {
+      document.querySelector(targets[i])?.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+});
+
+// Animate chapters on scroll
+const chObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.05 });
+document.querySelectorAll('.chapter').forEach(ch => {
+  ch.style.opacity = '0';
+  ch.style.transform = 'translateY(20px)';
+  ch.style.transition = 'opacity .5s ease, transform .5s ease';
+  chObs.observe(ch);
+});
+</script>
+</body>
+</html>

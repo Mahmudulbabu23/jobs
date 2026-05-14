@@ -1,0 +1,452 @@
+[
+  {
+    "id": "digital_001",
+    "question": "Which gate outputs 1 only when all inputs are 0?",
+    "code": null,
+    "options": ["AND", "OR", "NOR", "NAND"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "NOR outputs 1 only when all inputs are 0."
+  },
+  {
+    "id": "digital_002",
+    "question": "Which gate outputs 0 only when all inputs are 1?",
+    "code": null,
+    "options": ["AND", "OR", "NAND", "XOR"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "NAND outputs 0 only when all inputs are 1."
+  },
+  {
+    "id": "digital_003",
+    "question": "XOR outputs 1 when:",
+    "code": null,
+    "options": ["Inputs are equal", "Inputs are different", "All inputs 1", "All inputs 0"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "XOR is 1 for different inputs."
+  },
+  {
+    "id": "digital_004",
+    "question": "XNOR outputs 1 when:",
+    "code": null,
+    "options": ["Inputs are equal", "Inputs are different", "Any input is 1", "Any input is 0"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "XNOR is 1 when inputs match."
+  },
+  {
+    "id": "digital_005",
+    "question": "Which gate is the complement of AND?",
+    "code": null,
+    "options": ["OR", "NAND", "XOR", "NOR"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "NAND is NOT-AND."
+  },
+  {
+    "id": "digital_006",
+    "question": "Which gate is the complement of OR?",
+    "code": null,
+    "options": ["XOR", "NOR", "NAND", "AND"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "NOR is NOT-OR."
+  },
+  {
+    "id": "digital_007",
+    "question": "Which of these is a universal gate?",
+    "code": null,
+    "options": ["AND", "OR", "NAND", "XOR"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "NAND can implement any boolean function."
+  },
+  {
+    "id": "digital_008",
+    "question": "Which of these is also a universal gate?",
+    "code": null,
+    "options": ["NOR", "OR", "AND", "XOR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "NOR is universal like NAND."
+  },
+  {
+    "id": "digital_009",
+    "question": "Binary 1010 equals decimal:",
+    "code": null,
+    "options": ["8", "10", "12", "14"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "1010 (binary) is 10 (decimal)."
+  },
+  {
+    "id": "digital_010",
+    "question": "Decimal 13 equals binary:",
+    "code": null,
+    "options": ["1101", "1011", "1110", "1001"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "13 in binary is 1101."
+  },
+  {
+    "id": "digital_011",
+    "question": "Hexadecimal A equals decimal:",
+    "code": null,
+    "options": ["10", "11", "12", "13"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A in hex is 10 in decimal."
+  },
+  {
+    "id": "digital_012",
+    "question": "Binary 1111 equals hex:",
+    "code": null,
+    "options": ["F", "E", "D", "C"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "1111 in binary equals F in hex."
+  },
+  {
+    "id": "digital_013",
+    "question": "Which flip-flop stores 1 bit?",
+    "code": null,
+    "options": ["SR", "JK", "D", "All of the above"],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "All flip-flops store one bit of information."
+  },
+  {
+    "id": "digital_014",
+    "question": "A full adder adds:",
+    "code": null,
+    "options": ["Two bits", "Three bits", "One bit", "Four bits"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "A full adder adds two input bits plus a carry-in."
+  },
+  {
+    "id": "digital_015",
+    "question": "A half adder outputs:",
+    "code": null,
+    "options": ["Sum and Carry", "Sum only", "Carry only", "None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Half adder produces sum and carry."
+  },
+  {
+    "id": "digital_016",
+    "question": "Which adder adds three bits?",
+    "code": null,
+    "options": ["Half adder", "Full adder", "Ripple adder", "Carry lookahead"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Full adder adds two bits plus carry-in."
+  },
+  {
+    "id": "digital_017",
+    "question": "A multiplexer selects:",
+    "code": null,
+    "options": ["One input from many", "Many inputs from one", "Two outputs", "No input"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A MUX selects one of many inputs."
+  },
+  {
+    "id": "digital_018",
+    "question": "A demultiplexer routes:",
+    "code": null,
+    "options": ["One input to many outputs", "Many inputs to one output", "Two inputs to two outputs", "No outputs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "DEMUX sends one input to a selected output."
+  },
+  {
+    "id": "digital_019",
+    "question": "A decoder converts:",
+    "code": null,
+    "options": ["Binary to one-hot", "One-hot to binary", "Decimal to binary", "Binary to hex"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Decoders generate one active output for a binary input."
+  },
+  {
+    "id": "digital_020",
+    "question": "An encoder converts:",
+    "code": null,
+    "options": ["One-hot to binary", "Binary to one-hot", "Decimal to hex", "Gray to binary"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Encoders map one active input to binary output."
+  },
+  {
+    "id": "digital_021",
+    "question": "Which code changes only one bit between successive values?",
+    "code": null,
+    "options": ["Gray code", "BCD", "ASCII", "Excess-3"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Gray code changes only one bit at a time."
+  },
+  {
+    "id": "digital_022",
+    "question": "BCD stands for:",
+    "code": null,
+    "options": ["Binary Coded Decimal", "Binary Counted Data", "Bit Coded Decimal", "Base Coded Data"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "BCD represents decimal digits using binary."
+  },
+  {
+    "id": "digital_023",
+    "question": "Which device stores data sequentially in cycles?",
+    "code": null,
+    "options": ["Shift register", "Full adder", "Decoder", "MUX"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Shift registers move bits step by step."
+  },
+  {
+    "id": "digital_024",
+    "question": "A latch is:",
+    "code": null,
+    "options": ["Level-sensitive", "Edge-triggered", "Clockless only", "Asynchronous only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Latches are level-sensitive storage elements."
+  },
+  {
+    "id": "digital_025",
+    "question": "A flip-flop is:",
+    "code": null,
+    "options": ["Edge-triggered", "Level-sensitive", "Analog", "Combinational"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Flip-flops are edge-triggered."
+  },
+  {
+    "id": "digital_026",
+    "question": "A combinational circuit has:",
+    "code": null,
+    "options": ["No memory", "Memory", "Clock", "Storage"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Combinational circuits depend only on inputs."
+  },
+  {
+    "id": "digital_027",
+    "question": "A sequential circuit has:",
+    "code": null,
+    "options": ["Memory", "No memory", "No inputs", "No outputs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Sequential circuits depend on current input and past state."
+  },
+  {
+    "id": "digital_028",
+    "question": "A ring counter consists of:",
+    "code": null,
+    "options": ["Shift register with feedback", "Adder", "Decoder", "Encoder"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Ring counters use feedback in a shift register."
+  },
+  {
+    "id": "digital_029",
+    "question": "A Johnson counter is also known as:",
+    "code": null,
+    "options": ["Twisted ring counter", "Binary counter", "Gray counter", "BCD counter"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Johnson is a twisted ring counter."
+  },
+  {
+    "id": "digital_030",
+    "question": "Propagation delay is:",
+    "code": null,
+    "options": ["Time for output to change after input", "Clock period", "Frequency", "Power loss"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Propagation delay is the input-to-output change time."
+  },
+  {
+    "id": "digital_031",
+    "question": "Which memory is volatile?",
+    "code": null,
+    "options": ["SRAM", "ROM", "Flash", "EEPROM"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "SRAM is volatile memory."
+  },
+  {
+    "id": "digital_032",
+    "question": "Which memory is non-volatile?",
+    "code": null,
+    "options": ["ROM", "SRAM", "DRAM", "Cache"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ROM retains data without power."
+  },
+  {
+    "id": "digital_033",
+    "question": "Which register stores the next instruction address?",
+    "code": null,
+    "options": ["Program Counter", "Accumulator", "MAR", "MDR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The program counter holds the next instruction address."
+  },
+  {
+    "id": "digital_034",
+    "question": "Which register stores the current instruction?",
+    "code": null,
+    "options": ["Instruction Register", "Program Counter", "MAR", "MDR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "IR holds the current instruction."
+  },
+  {
+    "id": "digital_035",
+    "question": "Which register holds memory address for access?",
+    "code": null,
+    "options": ["MAR", "MDR", "PC", "IR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "MAR holds the memory address to access."
+  },
+  {
+    "id": "digital_036",
+    "question": "Which register holds data read from memory?",
+    "code": null,
+    "options": ["MDR", "MAR", "PC", "IR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "MDR holds data transferred to/from memory."
+  },
+  {
+    "id": "digital_037",
+    "question": "Which number system uses base 16?",
+    "code": null,
+    "options": ["Hexadecimal", "Binary", "Octal", "Decimal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hexadecimal uses base 16."
+  },
+  {
+    "id": "digital_038",
+    "question": "Which number system uses base 8?",
+    "code": null,
+    "options": ["Octal", "Binary", "Hexadecimal", "Decimal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Octal uses base 8."
+  },
+  {
+    "id": "digital_039",
+    "question": "Which number system uses base 2?",
+    "code": null,
+    "options": ["Binary", "Octal", "Hexadecimal", "Decimal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Binary uses base 2."
+  },
+  {
+    "id": "digital_040",
+    "question": "Which number system uses base 10?",
+    "code": null,
+    "options": ["Decimal", "Binary", "Octal", "Hexadecimal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Decimal uses base 10."
+  },
+  {
+    "id": "digital_041",
+    "question": "Which component performs arithmetic operations?",
+    "code": null,
+    "options": ["ALU", "Control unit", "Register", "Cache"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ALU performs arithmetic and logic operations."
+  },
+  {
+    "id": "digital_042",
+    "question": "Two's complement representation is used for:",
+    "code": null,
+    "options": ["Signed numbers", "Unsigned numbers", "Hex only", "BCD only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Two's complement encodes signed integers."
+  },
+  {
+    "id": "digital_043",
+    "question": "1's complement of binary 1010 is:",
+    "code": null,
+    "options": ["0101", "1011", "0110", "1101"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Invert each bit: 0101."
+  },
+  {
+    "id": "digital_044",
+    "question": "2's complement of binary 1010 is:",
+    "code": null,
+    "options": ["0110", "0101", "1011", "1101"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Invert (0101) then add 1 -> 0110."
+  },
+  {
+    "id": "digital_045",
+    "question": "Which adder is faster?",
+    "code": null,
+    "options": ["Carry lookahead adder", "Ripple carry adder", "Half adder", "Full adder"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Carry lookahead reduces propagation delay."
+  },
+  {
+    "id": "digital_046",
+    "question": "A 4-to-1 multiplexer has:",
+    "code": null,
+    "options": ["2 select lines", "4 select lines", "1 select line", "3 select lines"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "2 select lines choose among 4 inputs."
+  },
+  {
+    "id": "digital_047",
+    "question": "A 2-to-4 decoder has:",
+    "code": null,
+    "options": ["2 inputs, 4 outputs", "4 inputs, 2 outputs", "1 input, 4 outputs", "4 inputs, 1 output"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "2 input bits generate 4 output lines."
+  },
+  {
+    "id": "digital_048",
+    "question": "A 4-bit register can store:",
+    "code": null,
+    "options": ["4 bits", "8 bits", "2 bits", "16 bits"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A 4-bit register stores 4 bits of data."
+  },
+  {
+    "id": "digital_049",
+    "question": "Which circuit converts binary to BCD?",
+    "code": null,
+    "options": ["Binary to BCD converter", "Encoder", "Decoder", "MUX"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A converter maps binary to BCD representation."
+  },
+  {
+    "id": "digital_050",
+    "question": "Which term refers to a group of 8 bits?",
+    "code": null,
+    "options": ["Byte", "Nibble", "Word", "Bit"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "8 bits make a byte."
+  }
+]

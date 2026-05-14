@@ -1,0 +1,452 @@
+[
+  {
+    "id": "algo_001",
+    "question": "What is the average time complexity of binary search?",
+    "code": null,
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Binary search halves the search space each step."
+  },
+  {
+    "id": "algo_002",
+    "question": "Which sorting algorithm is stable?",
+    "code": null,
+    "options": ["Quick sort", "Merge sort", "Heap sort", "Selection sort"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Merge sort preserves the order of equal elements."
+  },
+  {
+    "id": "algo_003",
+    "question": "Which algorithm uses divide and conquer?",
+    "code": null,
+    "options": ["Merge sort", "Linear search", "Insertion sort", "Bubble sort"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Merge sort divides and merges recursively."
+  },
+  {
+    "id": "algo_004",
+    "question": "Worst-case time complexity of quicksort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Bad pivots cause O(n^2) comparisons."
+  },
+  {
+    "id": "algo_005",
+    "question": "Best-case time complexity of bubble sort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "With a swap flag, bubble sort can finish in O(n)."
+  },
+  {
+    "id": "algo_006",
+    "question": "Which algorithm guarantees O(n log n) in the worst case?",
+    "code": null,
+    "options": ["Quick sort", "Merge sort", "Bubble sort", "Insertion sort"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Merge sort always runs in O(n log n)."
+  },
+  {
+    "id": "algo_007",
+    "question": "Which algorithm is typically used for shortest path in unweighted graphs?",
+    "code": null,
+    "options": ["BFS", "DFS", "Dijkstra", "Bellman-Ford"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "BFS finds shortest path in unweighted graphs."
+  },
+  {
+    "id": "algo_008",
+    "question": "Dijkstra’s algorithm fails with:",
+    "code": null,
+    "options": ["Negative edge weights", "Positive edge weights", "Undirected graphs", "Trees"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dijkstra assumes non-negative edge weights."
+  },
+  {
+    "id": "algo_009",
+    "question": "Which algorithm can handle negative edge weights?",
+    "code": null,
+    "options": ["Dijkstra", "Bellman-Ford", "Prim", "Kruskal"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Bellman-Ford supports negative weights."
+  },
+  {
+    "id": "algo_010",
+    "question": "Which algorithm is used to find a Minimum Spanning Tree?",
+    "code": null,
+    "options": ["Kruskal", "BFS", "DFS", "Floyd-Warshall"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Kruskal’s algorithm builds an MST by sorting edges."
+  },
+  {
+    "id": "algo_011",
+    "question": "Which algorithm also finds a Minimum Spanning Tree?",
+    "code": null,
+    "options": ["Prim", "Topological sort", "Bellman-Ford", "Binary search"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Prim’s algorithm grows an MST from a start vertex."
+  },
+  {
+    "id": "algo_012",
+    "question": "Time complexity of linear search is:",
+    "code": null,
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Linear search checks each element once."
+  },
+  {
+    "id": "algo_013",
+    "question": "Which sorting algorithm is in-place?",
+    "code": null,
+    "options": ["Merge sort", "Quick sort", "Counting sort", "Bucket sort"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Quicksort can be implemented in-place."
+  },
+  {
+    "id": "algo_014",
+    "question": "Which sorting algorithm is not comparison-based?",
+    "code": null,
+    "options": ["Heap sort", "Quick sort", "Counting sort", "Merge sort"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Counting sort uses keys rather than comparisons."
+  },
+  {
+    "id": "algo_015",
+    "question": "Fisher-Yates shuffle runs in:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(1)"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Fisher-Yates performs a single pass through the array."
+  },
+  {
+    "id": "algo_016",
+    "question": "Which algorithm uses dynamic programming?",
+    "code": null,
+    "options": ["Fibonacci with memoization", "Binary search", "Selection sort", "DFS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Memoization stores subproblem results."
+  },
+  {
+    "id": "algo_017",
+    "question": "Which technique chooses the locally optimal solution at each step?",
+    "code": null,
+    "options": ["Dynamic programming", "Greedy", "Backtracking", "Divide and conquer"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Greedy algorithms pick the best local choice each step."
+  },
+  {
+    "id": "algo_018",
+    "question": "Time complexity of heap sort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Heap sort uses heapify and repeated extract operations."
+  },
+  {
+    "id": "algo_019",
+    "question": "The best-case time complexity of insertion sort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Already sorted input gives O(n)."
+  },
+  {
+    "id": "algo_020",
+    "question": "Which algorithm finds all-pairs shortest paths?",
+    "code": null,
+    "options": ["Dijkstra", "Floyd-Warshall", "Prim", "Kruskal"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Floyd-Warshall computes shortest paths between all pairs."
+  },
+  {
+    "id": "algo_021",
+    "question": "Which algorithm is used for cycle detection in a directed graph?",
+    "code": null,
+    "options": ["DFS with recursion stack", "BFS only", "Binary search", "Heap sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "DFS with recursion stack detects back edges."
+  },
+  {
+    "id": "algo_022",
+    "question": "Topological sort is possible only in:",
+    "code": null,
+    "options": ["Any graph", "DAG", "Undirected graph", "Complete graph"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Topological ordering requires a DAG."
+  },
+  {
+    "id": "algo_023",
+    "question": "The time complexity of merge sort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Merge sort runs in O(n log n)."
+  },
+  {
+    "id": "algo_024",
+    "question": "Which algorithm is best for searching in a sorted array?",
+    "code": null,
+    "options": ["Linear search", "Binary search", "DFS", "BFS"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Binary search exploits ordering for O(log n) time."
+  },
+  {
+    "id": "algo_025",
+    "question": "Which algorithm solves the knapsack problem optimally?",
+    "code": null,
+    "options": ["Greedy always", "Dynamic programming", "DFS", "BFS"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "0/1 knapsack is solved optimally using dynamic programming."
+  },
+  {
+    "id": "algo_026",
+    "question": "Which algorithm is used for shortest path in weighted graphs without negative edges?",
+    "code": null,
+    "options": ["BFS", "Dijkstra", "Kruskal", "Prim"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Dijkstra handles non-negative edge weights."
+  },
+  {
+    "id": "algo_027",
+    "question": "Which sorting algorithm has the smallest auxiliary space requirement?",
+    "code": null,
+    "options": ["Merge sort", "Quick sort", "Bubble sort", "Counting sort"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Bubble sort is in-place and uses constant extra space."
+  },
+  {
+    "id": "algo_028",
+    "question": "Which technique explores all possibilities with pruning?",
+    "code": null,
+    "options": ["Greedy", "Backtracking", "Divide and conquer", "Dynamic programming"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Backtracking explores options and prunes invalid paths."
+  },
+  {
+    "id": "algo_029",
+    "question": "The time complexity of selection sort is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Selection sort uses nested loops for O(n^2)."
+  },
+  {
+    "id": "algo_030",
+    "question": "Which algorithm is stable and in-place?",
+    "code": null,
+    "options": ["Insertion sort", "Heap sort", "Quick sort", "Selection sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Insertion sort is stable and uses constant extra space."
+  },
+  {
+    "id": "algo_031",
+    "question": "Which algorithm uses a priority queue internally?",
+    "code": null,
+    "options": ["Dijkstra", "DFS", "Binary search", "Topological sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dijkstra uses a priority queue to select the next vertex."
+  },
+  {
+    "id": "algo_032",
+    "question": "Which sorting algorithm is best for nearly sorted data?",
+    "code": null,
+    "options": ["Insertion sort", "Heap sort", "Counting sort", "Quick sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Insertion sort performs very well on nearly sorted input."
+  },
+  {
+    "id": "algo_033",
+    "question": "Which algorithm repeatedly selects the smallest remaining element?",
+    "code": null,
+    "options": ["Selection sort", "Bubble sort", "Merge sort", "Quick sort"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Selection sort picks the minimum and places it in order."
+  },
+  {
+    "id": "algo_034",
+    "question": "Which algorithm repeatedly swaps adjacent out-of-order elements?",
+    "code": null,
+    "options": ["Bubble sort", "Quick sort", "Merge sort", "Heap sort"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Bubble sort works by adjacent swaps."
+  },
+  {
+    "id": "algo_035",
+    "question": "Which algorithm builds the final sorted list by inserting elements in place?",
+    "code": null,
+    "options": ["Insertion sort", "Selection sort", "Heap sort", "Merge sort"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Insertion sort inserts each item into the correct position."
+  },
+  {
+    "id": "algo_036",
+    "question": "Which algorithm is used for pattern matching in strings with preprocessing?",
+    "code": null,
+    "options": ["Knuth-Morris-Pratt", "Linear search", "DFS", "Prim"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "KMP uses preprocessing for efficient pattern matching."
+  },
+  {
+    "id": "algo_037",
+    "question": "Time complexity of KMP string matching is:",
+    "code": null,
+    "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "KMP runs in linear time."
+  },
+  {
+    "id": "algo_038",
+    "question": "Which algorithm uses two pointers and partitions the array?",
+    "code": null,
+    "options": ["Quick sort", "Merge sort", "Selection sort", "Counting sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Quicksort partitions the array around a pivot."
+  },
+  {
+    "id": "algo_039",
+    "question": "Which algorithm is best for shortest path in a DAG?",
+    "code": null,
+    "options": ["Topological order + relaxation", "Dijkstra", "Bellman-Ford", "Prim"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "DAG shortest paths can be computed via topological ordering."
+  },
+  {
+    "id": "algo_040",
+    "question": "The time complexity of BFS is:",
+    "code": null,
+    "options": ["O(V + E)", "O(V^2)", "O(E log V)", "O(log V)"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "BFS visits each vertex and edge once."
+  },
+  {
+    "id": "algo_041",
+    "question": "The time complexity of DFS is:",
+    "code": null,
+    "options": ["O(V + E)", "O(V^2)", "O(E log V)", "O(log V)"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "DFS explores each vertex and edge once."
+  },
+  {
+    "id": "algo_042",
+    "question": "Which algorithm is used to find strongly connected components?",
+    "code": null,
+    "options": ["Kosaraju", "Prim", "Kruskal", "Binary search"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Kosaraju’s algorithm finds strongly connected components."
+  },
+  {
+    "id": "algo_043",
+    "question": "Which algorithm is used for minimum cuts in a graph?",
+    "code": null,
+    "options": ["Stoer-Wagner", "Prim", "Kruskal", "BFS"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Stoer-Wagner finds the global minimum cut in undirected graphs."
+  },
+  {
+    "id": "algo_044",
+    "question": "Which algorithm is used for scheduling with earliest finishing time?",
+    "code": null,
+    "options": ["Activity selection (greedy)", "Merge sort", "DFS", "Heap sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The activity selection problem uses a greedy strategy."
+  },
+  {
+    "id": "algo_045",
+    "question": "Which algorithm finds the longest common subsequence optimally?",
+    "code": null,
+    "options": ["Dynamic programming", "Greedy", "DFS", "BFS"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "LCS is solved using dynamic programming."
+  },
+  {
+    "id": "algo_046",
+    "question": "Which algorithm finds the edit distance between two strings?",
+    "code": null,
+    "options": ["Dynamic programming", "Binary search", "Heap sort", "Prim"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Edit distance is computed via dynamic programming."
+  },
+  {
+    "id": "algo_047",
+    "question": "Which algorithm uses a table of subproblem solutions?",
+    "code": null,
+    "options": ["Dynamic programming", "Greedy", "Backtracking", "Divide and conquer"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Dynamic programming stores subproblem results."
+  },
+  {
+    "id": "algo_048",
+    "question": "Which algorithm is used to detect cycles in an undirected graph?",
+    "code": null,
+    "options": ["Union-Find", "BFS only", "Binary search", "Topological sort"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Union-Find can detect cycles while adding edges."
+  },
+  {
+    "id": "algo_049",
+    "question": "The complexity of counting sort depends on:",
+    "code": null,
+    "options": ["n only", "k (range of keys)", "log n", "n log n"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Counting sort is O(n + k), where k is key range."
+  },
+  {
+    "id": "algo_050",
+    "question": "Which algorithm is used to find maximum flow?",
+    "code": null,
+    "options": ["Edmonds-Karp", "Prim", "Kruskal", "Merge sort"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Edmonds-Karp is a classic max-flow algorithm."
+  }
+]

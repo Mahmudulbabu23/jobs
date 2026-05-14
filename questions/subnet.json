@@ -1,0 +1,452 @@
+[
+  {
+    "id": "subnet_001",
+    "question": "How many usable hosts are in a /24 network?",
+    "code": null,
+    "options": ["254", "256", "128", "510"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /24 has 256 addresses minus network and broadcast = 254 usable."
+  },
+  {
+    "id": "subnet_002",
+    "question": "How many usable hosts are in a /25 network?",
+    "code": null,
+    "options": ["126", "128", "62", "254"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /25 has 128 addresses, 126 usable."
+  },
+  {
+    "id": "subnet_003",
+    "question": "How many usable hosts are in a /26 network?",
+    "code": null,
+    "options": ["62", "64", "30", "126"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /26 has 64 addresses, 62 usable."
+  },
+  {
+    "id": "subnet_004",
+    "question": "How many usable hosts are in a /27 network?",
+    "code": null,
+    "options": ["30", "32", "14", "62"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /27 has 32 addresses, 30 usable."
+  },
+  {
+    "id": "subnet_005",
+    "question": "How many usable hosts are in a /28 network?",
+    "code": null,
+    "options": ["14", "16", "6", "30"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /28 has 16 addresses, 14 usable."
+  },
+  {
+    "id": "subnet_006",
+    "question": "How many usable hosts are in a /29 network?",
+    "code": null,
+    "options": ["6", "8", "2", "14"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /29 has 8 addresses, 6 usable."
+  },
+  {
+    "id": "subnet_007",
+    "question": "How many usable hosts are in a /30 network?",
+    "code": null,
+    "options": ["2", "4", "6", "14"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /30 has 4 addresses, 2 usable."
+  },
+  {
+    "id": "subnet_008",
+    "question": "How many usable hosts are in a /23 network?",
+    "code": null,
+    "options": ["510", "512", "1022", "254"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /23 has 512 addresses, 510 usable."
+  },
+  {
+    "id": "subnet_009",
+    "question": "What is the subnet mask for /24?",
+    "code": null,
+    "options": ["255.255.255.0", "255.255.0.0", "255.255.255.128", "255.255.255.252"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/24 corresponds to 255.255.255.0."
+  },
+  {
+    "id": "subnet_010",
+    "question": "What is the subnet mask for /26?",
+    "code": null,
+    "options": ["255.255.255.192", "255.255.255.128", "255.255.255.224", "255.255.255.240"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/26 has 26 network bits, mask 255.255.255.192."
+  },
+  {
+    "id": "subnet_011",
+    "question": "What is the subnet mask for /27?",
+    "code": null,
+    "options": ["255.255.255.224", "255.255.255.192", "255.255.255.240", "255.255.255.248"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/27 corresponds to 255.255.255.224."
+  },
+  {
+    "id": "subnet_012",
+    "question": "What is the subnet mask for /28?",
+    "code": null,
+    "options": ["255.255.255.240", "255.255.255.224", "255.255.255.248", "255.255.255.252"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/28 corresponds to 255.255.255.240."
+  },
+  {
+    "id": "subnet_013",
+    "question": "What is the subnet mask for /29?",
+    "code": null,
+    "options": ["255.255.255.248", "255.255.255.240", "255.255.255.252", "255.255.255.224"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/29 corresponds to 255.255.255.248."
+  },
+  {
+    "id": "subnet_014",
+    "question": "What is the subnet mask for /30?",
+    "code": null,
+    "options": ["255.255.255.252", "255.255.255.248", "255.255.255.240", "255.255.255.224"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/30 corresponds to 255.255.255.252."
+  },
+  {
+    "id": "subnet_015",
+    "question": "How many subnets are created when splitting a /24 into /26?",
+    "code": null,
+    "options": ["2", "4", "8", "16"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Two extra bits create 2^2 = 4 subnets."
+  },
+  {
+    "id": "subnet_016",
+    "question": "How many subnets are created when splitting a /24 into /27?",
+    "code": null,
+    "options": ["4", "8", "16", "2"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Three extra bits create 2^3 = 8 subnets."
+  },
+  {
+    "id": "subnet_017",
+    "question": "How many subnets are created when splitting a /24 into /28?",
+    "code": null,
+    "options": ["16", "8", "4", "32"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Four extra bits create 2^4 = 16 subnets."
+  },
+  {
+    "id": "subnet_018",
+    "question": "In 192.168.1.0/24, what is the network address?",
+    "code": null,
+    "options": ["192.168.1.0", "192.168.1.1", "192.168.1.255", "192.168.0.0"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The network address is the first address: .0."
+  },
+  {
+    "id": "subnet_019",
+    "question": "In 192.168.1.0/24, what is the broadcast address?",
+    "code": null,
+    "options": ["192.168.1.255", "192.168.1.0", "192.168.1.1", "192.168.1.254"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The broadcast is the last address in the subnet."
+  },
+  {
+    "id": "subnet_020",
+    "question": "What is the wildcard mask for /24?",
+    "code": null,
+    "options": ["0.0.0.255", "0.0.255.0", "0.255.255.255", "255.255.255.0"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Wildcard mask is the inverse of subnet mask."
+  },
+  {
+    "id": "subnet_021",
+    "question": "What is the wildcard mask for /26?",
+    "code": null,
+    "options": ["0.0.0.63", "0.0.0.31", "0.0.0.127", "0.0.0.255"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "255.255.255.192 inverted gives 0.0.0.63."
+  },
+  {
+    "id": "subnet_022",
+    "question": "How many usable hosts are in a /22 network?",
+    "code": null,
+    "options": ["1022", "1024", "510", "2046"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /22 has 1024 addresses, 1022 usable."
+  },
+  {
+    "id": "subnet_023",
+    "question": "How many usable hosts are in a /21 network?",
+    "code": null,
+    "options": ["2046", "2048", "1022", "4094"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /21 has 2048 addresses, 2046 usable."
+  },
+  {
+    "id": "subnet_024",
+    "question": "How many usable hosts are in a /20 network?",
+    "code": null,
+    "options": ["4094", "4096", "2046", "8190"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A /20 has 4096 addresses, 4094 usable."
+  },
+  {
+    "id": "subnet_025",
+    "question": "Which prefix length provides 16 subnets from a /24?",
+    "code": null,
+    "options": ["/28", "/27", "/26", "/25"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/28 adds 4 bits, creating 16 subnets."
+  },
+  {
+    "id": "subnet_026",
+    "question": "The first usable host in 192.168.2.0/24 is:",
+    "code": null,
+    "options": ["192.168.2.1", "192.168.2.0", "192.168.2.255", "192.168.2.254"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "First usable is network + 1."
+  },
+  {
+    "id": "subnet_027",
+    "question": "The last usable host in 192.168.2.0/24 is:",
+    "code": null,
+    "options": ["192.168.2.254", "192.168.2.255", "192.168.2.1", "192.168.2.0"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Last usable is broadcast - 1."
+  },
+  {
+    "id": "subnet_028",
+    "question": "How many usable hosts are in a /31 network (RFC 3021)?",
+    "code": null,
+    "options": ["0", "1", "2", "4"],
+    "answer": 2,
+    "difficulty": "hard",
+    "explanation": "Point-to-point /31 can use both addresses as hosts."
+  },
+  {
+    "id": "subnet_029",
+    "question": "What is the block size for /27 subnets?",
+    "code": null,
+    "options": ["32", "64", "16", "8"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/27 uses 32-address blocks in the last octet."
+  },
+  {
+    "id": "subnet_030",
+    "question": "What is the block size for /26 subnets?",
+    "code": null,
+    "options": ["64", "32", "16", "128"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/26 uses 64-address blocks in the last octet."
+  },
+  {
+    "id": "subnet_031",
+    "question": "What is the block size for /28 subnets?",
+    "code": null,
+    "options": ["16", "32", "8", "4"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/28 uses 16-address blocks in the last octet."
+  },
+  {
+    "id": "subnet_032",
+    "question": "192.168.10.64/26 has broadcast address:",
+    "code": null,
+    "options": ["192.168.10.127", "192.168.10.95", "192.168.10.63", "192.168.10.191"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/26 block size 64, range 64-127, broadcast .127."
+  },
+  {
+    "id": "subnet_033",
+    "question": "192.168.10.64/26 first usable host is:",
+    "code": null,
+    "options": ["192.168.10.65", "192.168.10.64", "192.168.10.63", "192.168.10.126"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "First usable is network + 1."
+  },
+  {
+    "id": "subnet_034",
+    "question": "192.168.10.64/26 last usable host is:",
+    "code": null,
+    "options": ["192.168.10.126", "192.168.10.127", "192.168.10.125", "192.168.10.64"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Last usable is broadcast - 1."
+  },
+  {
+    "id": "subnet_035",
+    "question": "Which prefix gives 4 subnets from a /24?",
+    "code": null,
+    "options": ["/26", "/27", "/25", "/28"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/26 adds 2 bits -> 4 subnets."
+  },
+  {
+    "id": "subnet_036",
+    "question": "Which prefix gives 8 subnets from a /24?",
+    "code": null,
+    "options": ["/27", "/26", "/25", "/28"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/27 adds 3 bits -> 8 subnets."
+  },
+  {
+    "id": "subnet_037",
+    "question": "Which prefix gives 2 subnets from a /24?",
+    "code": null,
+    "options": ["/25", "/26", "/27", "/28"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/25 adds 1 bit -> 2 subnets."
+  },
+  {
+    "id": "subnet_038",
+    "question": "Which prefix gives 32 subnets from a /24?",
+    "code": null,
+    "options": ["/29", "/28", "/27", "/26"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/29 adds 5 bits -> 32 subnets."
+  },
+  {
+    "id": "subnet_039",
+    "question": "What is the network address of 10.0.5.200/24?",
+    "code": null,
+    "options": ["10.0.5.0", "10.0.5.200", "10.0.0.0", "10.0.5.255"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/24 network uses the first three octets."
+  },
+  {
+    "id": "subnet_040",
+    "question": "What is the broadcast address of 10.0.5.0/24?",
+    "code": null,
+    "options": ["10.0.5.255", "10.0.5.0", "10.0.5.1", "10.0.0.255"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Broadcast is the last address in the /24."
+  },
+  {
+    "id": "subnet_041",
+    "question": "Which prefix yields 1022 usable hosts?",
+    "code": null,
+    "options": ["/22", "/23", "/21", "/24"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/22 has 1024 addresses, 1022 usable."
+  },
+  {
+    "id": "subnet_042",
+    "question": "Which prefix yields 510 usable hosts?",
+    "code": null,
+    "options": ["/23", "/22", "/24", "/25"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/23 has 512 addresses, 510 usable."
+  },
+  {
+    "id": "subnet_043",
+    "question": "Which prefix yields 62 usable hosts?",
+    "code": null,
+    "options": ["/26", "/27", "/25", "/28"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/26 has 62 usable hosts."
+  },
+  {
+    "id": "subnet_044",
+    "question": "Which prefix yields 30 usable hosts?",
+    "code": null,
+    "options": ["/27", "/28", "/26", "/25"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/27 has 30 usable hosts."
+  },
+  {
+    "id": "subnet_045",
+    "question": "Which prefix yields 14 usable hosts?",
+    "code": null,
+    "options": ["/28", "/27", "/29", "/30"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/28 has 14 usable hosts."
+  },
+  {
+    "id": "subnet_046",
+    "question": "Which prefix yields 6 usable hosts?",
+    "code": null,
+    "options": ["/29", "/28", "/30", "/27"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/29 has 6 usable hosts."
+  },
+  {
+    "id": "subnet_047",
+    "question": "Which prefix yields 2 usable hosts?",
+    "code": null,
+    "options": ["/30", "/29", "/28", "/31"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "/30 has 2 usable hosts."
+  },
+  {
+    "id": "subnet_048",
+    "question": "192.168.5.128/25 belongs to which host range?",
+    "code": null,
+    "options": ["192.168.5.129-192.168.5.254", "192.168.5.1-192.168.5.126", "192.168.5.0-192.168.5.127", "192.168.5.128-192.168.5.255"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Network .128, broadcast .255, usable .129-.254."
+  },
+  {
+    "id": "subnet_049",
+    "question": "192.168.5.0/25 broadcast address is:",
+    "code": null,
+    "options": ["192.168.5.127", "192.168.5.255", "192.168.5.0", "192.168.5.126"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "For /25, first block is 0-127, broadcast .127."
+  },
+  {
+    "id": "subnet_050",
+    "question": "The network address of 192.168.5.200/25 is:",
+    "code": null,
+    "options": ["192.168.5.128", "192.168.5.0", "192.168.5.200", "192.168.5.255"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "/25 divides at .128, so 200 belongs to 192.168.5.128/25."
+  }
+]

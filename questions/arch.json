@@ -1,0 +1,452 @@
+[
+  {
+    "id": "arch_001",
+    "question": "RISC architecture emphasizes:",
+    "code": null,
+    "options": ["Simple instructions", "Complex instructions", "Microcode only", "No registers"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "RISC uses a small set of simple instructions."
+  },
+  {
+    "id": "arch_002",
+    "question": "CISC architecture emphasizes:",
+    "code": null,
+    "options": ["Complex instructions", "Simple instructions", "No microcode", "No pipelining"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CISC includes complex instructions."
+  },
+  {
+    "id": "arch_003",
+    "question": "The program counter holds:",
+    "code": null,
+    "options": ["Next instruction address", "Current data", "Stack pointer", "ALU result"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "PC points to the next instruction."
+  },
+  {
+    "id": "arch_004",
+    "question": "The instruction register holds:",
+    "code": null,
+    "options": ["Current instruction", "Next instruction", "Memory address", "Stack pointer"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "IR stores the instruction being executed."
+  },
+  {
+    "id": "arch_005",
+    "question": "ALU stands for:",
+    "code": null,
+    "options": ["Arithmetic Logic Unit", "Address Logic Unit", "Array Logic Unit", "Arithmetic Link Unit"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ALU performs arithmetic and logic operations."
+  },
+  {
+    "id": "arch_006",
+    "question": "The control unit is responsible for:",
+    "code": null,
+    "options": ["Directing operations", "Storing data", "Arithmetic only", "I/O only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Control unit coordinates CPU operations."
+  },
+  {
+    "id": "arch_007",
+    "question": "Cache memory is used to:",
+    "code": null,
+    "options": ["Reduce access time", "Increase disk size", "Store backups", "Encrypt data"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Cache speeds up access to frequently used data."
+  },
+  {
+    "id": "arch_008",
+    "question": "Which memory is fastest?",
+    "code": null,
+    "options": ["Registers", "RAM", "SSD", "HDD"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CPU registers are the fastest storage."
+  },
+  {
+    "id": "arch_009",
+    "question": "Which is volatile memory?",
+    "code": null,
+    "options": ["RAM", "ROM", "SSD", "HDD"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "RAM loses data when power is off."
+  },
+  {
+    "id": "arch_010",
+    "question": "Which is non-volatile memory?",
+    "code": null,
+    "options": ["ROM", "RAM", "Cache", "Registers"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ROM retains data without power."
+  },
+  {
+    "id": "arch_011",
+    "question": "Pipelining improves:",
+    "code": null,
+    "options": ["Instruction throughput", "Memory size", "Disk speed", "Power loss"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Pipelining increases throughput by overlapping stages."
+  },
+  {
+    "id": "arch_012",
+    "question": "A pipeline hazard occurs when:",
+    "code": null,
+    "options": ["Instructions conflict", "Cache is full", "ALU is idle", "RAM is slow"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Hazards happen when pipeline stages depend on each other."
+  },
+  {
+    "id": "arch_013",
+    "question": "Which hazard is caused by data dependencies?",
+    "code": null,
+    "options": ["Data hazard", "Control hazard", "Structural hazard", "None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Data hazards arise from instruction dependencies."
+  },
+  {
+    "id": "arch_014",
+    "question": "Branch prediction helps reduce:",
+    "code": null,
+    "options": ["Control hazards", "Data hazards", "Structural hazards", "Cache misses"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Branch prediction reduces pipeline stalls."
+  },
+  {
+    "id": "arch_015",
+    "question": "Which is a structural hazard?",
+    "code": null,
+    "options": ["Two stages need same resource", "Branch instruction", "Data dependency", "Cache miss only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Structural hazards occur when resources conflict."
+  },
+  {
+    "id": "arch_016",
+    "question": "The clock cycle time is determined by:",
+    "code": null,
+    "options": ["Slowest pipeline stage", "Fastest stage", "Cache size", "Disk speed"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Clock period must accommodate the slowest stage."
+  },
+  {
+    "id": "arch_017",
+    "question": "CPI stands for:",
+    "code": null,
+    "options": ["Cycles Per Instruction", "Cache Per Instruction", "Control Per Instruction", "Cycles Per Integer"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CPI measures cycles per instruction."
+  },
+  {
+    "id": "arch_018",
+    "question": "Which increases performance?",
+    "code": null,
+    "options": ["Lower CPI", "Higher CPI", "More cache misses", "Slower clock"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Lower CPI improves performance."
+  },
+  {
+    "id": "arch_019",
+    "question": "Amdahl's Law states:",
+    "code": null,
+    "options": ["Speedup limited by serial portion", "Speedup equals number of cores", "Cache always improves performance", "CPU speed always doubles"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overall speedup is limited by the non-parallelizable part."
+  },
+  {
+    "id": "arch_020",
+    "question": "Which is a typical cache replacement policy?",
+    "code": null,
+    "options": ["LRU", "FIFO", "Random", "All of the above"],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Caches may use LRU, FIFO, or random replacement."
+  },
+  {
+    "id": "arch_021",
+    "question": "Cache hit ratio is:",
+    "code": null,
+    "options": ["Hits / total accesses", "Misses / hits", "Hits / misses", "Accesses / hits"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hit ratio equals hits divided by total accesses."
+  },
+  {
+    "id": "arch_022",
+    "question": "Which bus carries addresses?",
+    "code": null,
+    "options": ["Address bus", "Data bus", "Control bus", "I/O bus"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Address bus carries memory addresses."
+  },
+  {
+    "id": "arch_023",
+    "question": "Which bus carries data?",
+    "code": null,
+    "options": ["Data bus", "Address bus", "Control bus", "System bus"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Data bus transports data between components."
+  },
+  {
+    "id": "arch_024",
+    "question": "Which bus carries control signals?",
+    "code": null,
+    "options": ["Control bus", "Data bus", "Address bus", "Memory bus"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Control bus carries signals like read/write."
+  },
+  {
+    "id": "arch_025",
+    "question": "Which memory is closer to CPU?",
+    "code": null,
+    "options": ["Cache", "RAM", "SSD", "HDD"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Cache is closest to CPU for speed."
+  },
+  {
+    "id": "arch_026",
+    "question": "Which is a Harvard architecture feature?",
+    "code": null,
+    "options": ["Separate instruction and data memory", "Single shared memory", "No cache", "No registers"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Harvard uses separate instruction and data memories."
+  },
+  {
+    "id": "arch_027",
+    "question": "Which is a Von Neumann architecture feature?",
+    "code": null,
+    "options": ["Shared instruction and data memory", "Separate memory", "No control unit", "No ALU"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Von Neumann uses shared memory for data and instructions."
+  },
+  {
+    "id": "arch_028",
+    "question": "A stall in a pipeline is also called:",
+    "code": null,
+    "options": ["Bubble", "Cache hit", "Branch", "Interrupt"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A bubble is an inserted stall cycle."
+  },
+  {
+    "id": "arch_029",
+    "question": "Superscalar processors can:",
+    "code": null,
+    "options": ["Execute multiple instructions per cycle", "Execute one instruction per cycle", "Disable pipelining", "Run without cache"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Superscalar CPUs issue multiple instructions per cycle."
+  },
+  {
+    "id": "arch_030",
+    "question": "Out-of-order execution aims to:",
+    "code": null,
+    "options": ["Improve performance", "Increase CPI", "Reduce cache size", "Disable branches"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "It allows instructions to execute when ready to improve throughput."
+  },
+  {
+    "id": "arch_031",
+    "question": "Which memory is used for temporary storage during computation?",
+    "code": null,
+    "options": ["Registers", "ROM", "SSD", "HDD"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Registers provide the fastest temporary storage."
+  },
+  {
+    "id": "arch_032",
+    "question": "Which is a microarchitecture feature?",
+    "code": null,
+    "options": ["Pipeline stages", "Programming language", "File system", "Network protocol"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Pipeline stages are part of microarchitecture."
+  },
+  {
+    "id": "arch_033",
+    "question": "Which cache level is usually smallest and fastest?",
+    "code": null,
+    "options": ["L1", "L2", "L3", "L4"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "L1 cache is closest and fastest."
+  },
+  {
+    "id": "arch_034",
+    "question": "Which cache level is usually largest and slowest?",
+    "code": null,
+    "options": ["L3", "L2", "L1", "L0"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "L3 is larger and slower than L1/L2."
+  },
+  {
+    "id": "arch_035",
+    "question": "A cache miss occurs when:",
+    "code": null,
+    "options": ["Data not in cache", "Data is in cache", "Cache is empty", "CPU stops"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A miss means the data must be fetched from lower memory."
+  },
+  {
+    "id": "arch_036",
+    "question": "Which register points to top of the stack?",
+    "code": null,
+    "options": ["Stack pointer", "Program counter", "Instruction register", "MAR"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Stack pointer tracks the stack top."
+  },
+  {
+    "id": "arch_037",
+    "question": "Which memory is used to store firmware?",
+    "code": null,
+    "options": ["ROM", "RAM", "Cache", "Register"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Firmware is stored in ROM/Flash."
+  },
+  {
+    "id": "arch_038",
+    "question": "Which concept allows executing multiple threads per core?",
+    "code": null,
+    "options": ["Simultaneous multithreading", "Pipelining", "Branch prediction", "Overclocking"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "SMT allows multiple hardware threads per core."
+  },
+  {
+    "id": "arch_039",
+    "question": "Which is a RISC example?",
+    "code": null,
+    "options": ["ARM", "x86", "VAX", "Z80"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ARM is a common RISC architecture."
+  },
+  {
+    "id": "arch_040",
+    "question": "Which is a CISC example?",
+    "code": null,
+    "options": ["x86", "ARM", "MIPS", "RISC-V"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "x86 is a classic CISC architecture."
+  },
+  {
+    "id": "arch_041",
+    "question": "Which hazard is caused by branch instructions?",
+    "code": null,
+    "options": ["Control hazard", "Data hazard", "Structural hazard", "Cache hazard"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Branches create control hazards."
+  },
+  {
+    "id": "arch_042",
+    "question": "Which improves instruction-level parallelism?",
+    "code": null,
+    "options": ["Pipelining", "Swapping", "Paging", "Fragmentation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Pipelining allows overlapping instruction execution."
+  },
+  {
+    "id": "arch_043",
+    "question": "Which memory uses capacitors?",
+    "code": null,
+    "options": ["DRAM", "SRAM", "ROM", "Cache"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "DRAM stores bits in capacitors."
+  },
+  {
+    "id": "arch_044",
+    "question": "Which memory uses flip-flops?",
+    "code": null,
+    "options": ["SRAM", "DRAM", "ROM", "HDD"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "SRAM uses flip-flops."
+  },
+  {
+    "id": "arch_045",
+    "question": "Which improves cache performance by exploiting locality?",
+    "code": null,
+    "options": ["Spatial locality", "Overclocking", "Underclocking", "Fragmentation"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Spatial locality improves cache hit rates."
+  },
+  {
+    "id": "arch_046",
+    "question": "Temporal locality means:",
+    "code": null,
+    "options": ["Recently used data likely reused", "Nearby data used", "Random access", "No reuse"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Temporal locality refers to reuse of recently accessed data."
+  },
+  {
+    "id": "arch_047",
+    "question": "Which addressing mode uses immediate value?",
+    "code": null,
+    "options": ["Immediate", "Register", "Indirect", "Indexed"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Immediate mode uses a constant operand in the instruction."
+  },
+  {
+    "id": "arch_048",
+    "question": "Which addressing mode uses a register value as address?",
+    "code": null,
+    "options": ["Register indirect", "Immediate", "Direct", "Implied"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Register indirect uses the register as the address."
+  },
+  {
+    "id": "arch_049",
+    "question": "Which addressing mode uses base + offset?",
+    "code": null,
+    "options": ["Indexed", "Immediate", "Implied", "Register"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Indexed addressing combines base with offset."
+  },
+  {
+    "id": "arch_050",
+    "question": "Which technique improves CPU performance by increasing frequency?",
+    "code": null,
+    "options": ["Overclocking", "Underclocking", "Paging", "Spooling"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Overclocking increases the CPU clock speed."
+  }
+]

@@ -1,0 +1,1874 @@
+2026
+1. A maintenance engineer is setting up a RAID 5 array with five hard drives, each having a capacity of 4 TB. What is the total usable storage capacity, and why is it not 20 TB?
+Answer:
+In RAID 5, the storage capacity of one drive is used for parity information.
+
+Parity is used for fault tolerance and data recovery if one drive fails.
+
+Given:
+
+Number of drives = 5
+Capacity of each drive = 4 TB
+Total Raw Capacity
+
+5 × 4 TB = 20 TB
+Usable RAID 5 Capacity Formula
+
+(Number of Drives − 1) × Drive Capacity
+Calculation
+
+(5 − 1) × 4 TB
+= 4 × 4 TB
+= 16 TB
+Answer
+
+Total Usable Storage Capacity = 16 TB
+It is not 20 TB because RAID 5 uses the equivalent capacity of one drive for storing parity data, which provides redundancy and allows recovery if a drive fails.
+
+2. Distinguish between Preventive and Corrective maintenance with a real-world example for each in a data center environment. A critical system consists of three components (Power Supply, Motherboard, and Storage) connected in a series configuration. If each component has a reliability of 0.95, what is the total reliability of the system?
+Preventive Maintenance: Preventive maintenance is the maintenance performed regularly before any failure occurs in order to reduce the chance of system breakdown. Its main goal is to prevent faults and improve system reliability.
+
+Real-World Example:
+In a data center, regularly cleaning server cooling fans and replacing UPS batteries before failure is an example of preventive maintenance.
+
+Corrective Maintenance: Corrective maintenance is the maintenance performed after a fault or failure has occurred to restore the system to normal operation. Its main goal is to repair failed components and resume service.
+
+Real-World Example:
+If a server hard disk suddenly fails in a data center and the technician replaces the failed disk to restore operation, it is corrective maintenance.
+
+Difference Between Preventive and Corrective Maintenance
+
+Preventive Maintenance	Corrective Maintenance
+Performed before failure occurs.	Performed after failure occurs.
+Reduces possibility of breakdown.	Restores failed system.
+Planned and scheduled maintenance.	Unplanned maintenance.
+Improves reliability and lifespan.	Focuses on repairing faults.
+Example: Cleaning cooling systems.	Example: Replacing failed hard disk.
+Reliability Calculation of Series System: In a series configuration, total system reliability is the product of reliabilities of all components.
+
+Given: Reliability of Power Supply = 0.95 Reliability of Motherboard = 0.95 Reliability of Storage = 0.95
+
+Formula: R = R1 × R2 × R3
+
+Calculation:
+
+R = 0.95 × 0.95 × 0.95 R = 0.857375
+
+Answer: Total Reliability of the System = 0.857375 ≈ 85.74%
+
+3. At which layer of the OSI model does a standard Router primarily operate, and what is the specific name of the Protocol Data Unit (PDU) at this layer? A router has four contiguous /24 routing table entries: 10.1.0.0/24, 10.1.1.0/24, 10.1.2.0/24, and 10.1.3.0/24. If you summarize (supernet) these into a single route, what will be the new CIDR notation?
+A standard router primarily operates at the Network Layer, which is Layer 3 of the OSI model.
+
+The Protocol Data Unit (PDU) at the Network Layer is called a Packet.
+
+Given Routing Entries:10.1.0.0/24
+10.1.1.0/24
+10.1.2.0/24
+10.1.3.0/24
+
+These four networks are continuous or contiguous because their network addresses increase sequentially
+
+First Network: 10.1.0.0/24
+Range: 10.1.0.0 to 10.1.0.255
+
+Second Network: 10.1.1.0/24
+Range: 10.1.1.0 to 10.1.1.255
+
+Third Network: 10.1.2.0/24
+Range: 10.1.2.0 to 10.1.2.255
+
+Fourth Network: 10.1.3.0/24
+Range: 10.1.3.0 to 10.1.3.255
+
+Together, these four networks cover addresses from:10.1.0.0 to 10.1.3.255
+
+Each /24 network contains 256 addresses.
+
+So total addresses become:256 + 256 + 256 + 256 = 1024 addresses
+
+To represent 1024 addresses, 10 host bits are required.
+
+Since IPv4 address contains 32 bits:32 − 10 = 22
+
+Therefore, the summarized CIDR notation becomes:10.1.0.0/22
+
+Final Answer:Router Layer = Network Layer / Layer 3
+PDU Name = Packet
+Supernet = 10.1.0.0/22
+
+4. What does the Consistency property in ACID guarantee during a bank fund transfer transaction? You are designing the schema for a Savings_Accounts table. Write the specific SQL constraint clause to ensure that the current_balance column can never drop below zero.
+Consistency Property in ACID
+
+Consistency ensures that a database always remains in a valid state before and after a transaction.
+During a bank fund transfer transaction, consistency guarantees that all database rules and constraints are maintained properly.
+For example, if money is transferred from one account to another:
+
+The amount deducted from one account must be added to the other account correctly.
+The total balance in the system must remain consistent.
+No account balance can become invalid or violate database rules.
+If any part of the transaction fails, the entire transaction is rolled back to preserve consistency.
+
+SQL Constraint Clause
+
+To ensure that the current_balance column never becomes negative, the following CHECK constraint can be used:
+
+CHECK (current_balance >= 0)
+Example in Table Schema
+
+CREATE TABLE Savings_Accounts (
+    account_id INT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    current_balance DECIMAL(10,2),
+    
+    CHECK (current_balance >= 0)
+);
+5. Briefly explain "Circular Wait." In a Resource Allocation Graph (RAG), if a cycle exists, does it absolutely guarantee that a Deadlock has occurred? Explain briefly.
+Circular Wait
+
+Circular wait is one of the necessary conditions for deadlock.
+It occurs when a group of processes are waiting for resources in a circular chain.
+In this situation, each process holds at least one resource and waits for another resource held by the next process in the cycle.
+Example:
+
+Process P1 holds Resource R1 and waits for R2.
+Process P2 holds Resource R2 and waits for R3.
+Process P3 holds Resource R3 and waits for R1.
+This creates a circular waiting condition.
+
+Cycle in Resource Allocation Graph (RAG)
+
+If a cycle exists in a Resource Allocation Graph, it does not always guarantee deadlock.
+
+If each resource type has only one instance, then a cycle definitely indicates deadlock.
+If resource types have multiple instances, then a cycle may exist without deadlock.
+So, a cycle is:
+
+A necessary condition for deadlock
+But not always a sufficient condition
+Deadlock Detection using Resource Allocation Graph
+
+To detect deadlock using Resource Allocation Graph (RAG), we follow these steps −
+
+If RAG contains no cycles, then there is no deadlock in the system.
+If RAG is of single instance resources and it contains a cycle, then there is a deadlock in the system.
+If RAG is of multiple instance resources and it contains a cycle, then deadlock may or may not exist. To check for deadlock, we need convert multiple instance RAG to single instance RAG, by treating each instance of a resource as a separate resource type.
+
+In the graph:
+
+Resource R1 has only one instance.
+Resource R2 has two instances.
+P1 is holding R1 and requesting R2.
+P2 is holding one instance of R2 and requesting R1.
+P3 is using another instance of R2.
+A cycle exists in the graph: P1 → R2 → P2 → R1 → P1
+
+But this graph does not indicate deadlock.
+
+Reason:
+
+Resource R2 has multiple instances. One instance of R2 is currently allocated to P3.
+
+If P3 finishes its work and releases R2, then:
+
+P1 can obtain R2 and complete execution.
+After P1 completes, it releases R1.
+Then P2 can obtain R1 and continue execution.
+Since the processes can still proceed and resources can eventually be released, the system is not permanently blocked.
+6. A server suddenly starts sending abnormal traffic to external systems. Analyze the possible cause and suggest immediate actions.
+Possible Causes
+
+A server sending abnormal traffic may indicate security or system-related problems. Possible causes include:
+
+Malware or Virus Infection: The server may be infected with malware, botnet software, or ransomware that is sending malicious traffic.
+DDoS Attack Participation: The compromised server may be used to launch Distributed Denial of Service (DDoS) attacks.
+Unauthorized Access: An attacker may have gained access using weak passwords, stolen credentials, or vulnerabilities.
+Misconfigured Applications: Faulty software or incorrect network configuration may generate excessive traffic.
+Data Breach or Data Exfiltration: Sensitive data may be transferred illegally to external systems.
+Immediate Actions
+
+Isolate the Server: Disconnect the server from the network immediately to stop abnormal traffic.
+Check System Logs: Analyze firewall, server, and application logs to identify suspicious activities.
+Run Security Scan: Use antivirus and malware detection tools to scan the server.
+Identify Active Connections: Check running processes and network connections using monitoring tools.
+Change Credentials: Reset passwords and disable compromised accounts.
+Apply Security Updates: Patch operating system and software vulnerabilities.
+Notify Security Team: Inform administrators or incident response teams immediately.
+Backup Important Data: Secure critical data before recovery actions.
+Abnormal outbound traffic is often a sign of compromise or malfunction. Quick isolation, investigation, and security response are necessary to protect the network and prevent further damage.
+7. A financial services provider needs to handle massive streaming and historical log data to perform fraud analytics and ML-driven maintenance prediction. Identify five Hadoop ecosystem technologies appropriate for this use case and describe their roles. (Assumming)
+To process large-scale streaming and historical log data, different Hadoop ecosystem technologies can be used together for storage, processing, querying, and machine learning.
+
+1. HDFS (Hadoop Distributed File System)
+
+HDFS is used for distributed storage of massive amounts of data across multiple servers.
+It stores historical logs, transaction records, and streaming data reliably with fault tolerance.
+Role: Large-scale distributed data storage.
+
+2. Apache Kafka
+
+Kafka is used for real-time data streaming and message collection.
+It collects continuous transaction logs, user activities, and system events from different sources.
+Role: Real-time streaming data ingestion.
+
+3. Apache Spark
+
+Spark is a fast data processing framework used for big data analytics and machine learning.
+It can process both streaming data and historical data efficiently.
+Role: Real-time analytics, fraud detection, and ML processing.
+
+4. Apache Hive
+
+Hive is a data warehouse tool used to query large datasets using SQL-like language.
+Analysts can generate reports and analyze fraud-related historical data easily.
+Role: SQL-based querying and data analysis.
+
+5. Apache Mahout
+
+Mahout provides machine learning algorithms for big data applications.
+It can be used for predictive analytics, anomaly detection, and maintenance prediction models.
+Role: Machine learning and predictive analytics.
+8. Http status code.
+HTTP Status Codes are standard response codes sent by a web server to a client (browser or application) after receiving an HTTP request.
+
+These codes indicate whether the request was successful, failed, redirected, or caused a server error.
+
+HTTP status codes are represented by three-digit numbers.
+
+Purpose of HTTP Status Codes
+
+Inform the client about request status.
+Help in debugging network or website problems.
+Control browser and application behavior.
+Support communication between client and server.
+Categories of HTTP Status Codes
+
+HTTP status codes are divided into five categories:
+
+Status Code Range	Category	Description
+100 – 199	Informational	Request received and processing continues
+200 – 299	Success	Request completed successfully
+300 – 399	Redirection	Further action required
+400 – 499	Client Error	Error caused by client request
+500 – 599	Server Error	Error occurred on the server
+1. Informational Status Codes (100–199)
+
+These codes indicate that the request has been received and processing is continuing.
+
+100 Continue: Client can continue sending the request.
+101 Switching Protocols: Server agrees to switch protocols.
+2. Success Status Codes (200–299)
+
+These codes indicate successful request processing.
+
+200 OK: Request completed successfully.
+201 Created: New resource created successfully.
+204 No Content: Request successful but no content returned.
+3. Redirection Status Codes (300–399)
+
+These codes indicate that additional action is needed.
+
+301 Moved Permanently: Resource has permanently moved to another URL.
+302 Found: Resource temporarily moved.
+304 Not Modified: Cached version can be used.
+4. Client Error Status Codes (400–499)
+
+These errors occur due to problems in the client request.
+
+400 Bad Request: Invalid request syntax.
+401 Unauthorized: Authentication required.
+403 Forbidden: Access denied.
+404 Not Found: Requested resource not found.
+5. Server Error Status Codes (500–599)
+
+These errors occur when the server fails to process the request.
+
+500 Internal Server Error: General server-side error.
+502 Bad Gateway: Invalid response from another server.
+503 Service Unavailable: Server temporarily unavailable.
+504 Gateway Timeout: Server response timeout.
+Commonly Used HTTP Status Codes
+
+Status Code	Meaning
+200	OK
+301	Moved Permanently
+400	Bad Request
+401	Unauthorized
+403	Forbidden
+404	Not Found
+500	Internal Server Error
+503	Service Unavailable
+9. Define zero-day attacks. Compare the technologies used to secure data in transit versus data at rest.
+A Zero-Day Attack is a cyber attack that exploits a software or hardware vulnerability before the vendor or developer becomes aware of it or releases a security patch.
+It is called “zero-day” because developers have had zero days to fix the vulnerability before the attack occurs.
+Attackers use these unknown vulnerabilities to gain unauthorized access, steal data, spread malware, or damage systems.
+Characteristics of Zero-Day Attacks
+
+Exploit unknown vulnerabilities.
+No security patch is available initially.
+Difficult to detect using traditional antivirus tools.
+Can cause serious financial and security damage.
+Examples of Zero-Day Attacks
+
+Ransomware exploiting unpatched systems.
+Browser vulnerabilities used for data theft.
+Operating system exploits for unauthorized access.
+Data in Transit vs Data at Rest
+
+Data security technologies differ depending on whether data is moving through a network or stored in a device.
+
+Feature	Data in Transit	Data at Rest
+Definition	Data moving across a network	Stored data in disks, databases, or storage devices
+Main Goal	Protect data during transmission	Protect stored data from unauthorized access
+Common Technologies	TLS, SSL, VPN, HTTPS, SSH	Disk Encryption, Database Encryption, AES
+Security Method	Encryption during communication	Encryption while stored
+Example	Secure web browsing using HTTPS	Encrypted hard drive or encrypted database
+Main Threat	Packet sniffing, man-in-the-middle attack	Data theft, unauthorized access
+Technologies Used for Data in Transit
+
+SSL/TLS: Encrypts communication between client and server.
+HTTPS: Secure version of HTTP using TLS/SSL.
+VPN: Creates encrypted communication tunnels.
+SSH: Secure remote login and communication.
+Technologies Used for Data at Rest
+
+Disk Encryption: Encrypts entire storage devices.
+Database Encryption: Protects stored database records.
+AES Encryption: Common encryption standard for stored data.
+Access Control: Restricts unauthorized access to files and storage.
+10. Simplify boolean equation using k-map: F (A,B,C,D) = ∑(0,3,5,7, 8,10,11,12,13,14,15)
+
+
+1. Given iP address 192.168.1.0 and divided four subnets in equal size
+A) find the new subnet musk (CIDR)
+B)find out first usable host address of subnetting
+
+Given:
+
+IP Address = 192.168.1.0
+Default mask = /24
+Required subnets = 4
+A) New Subnet Mask (CIDR)
+
+Required subnets = 4 = 2²
+So, borrowed bits = 2
+New CIDR = /24 + 2 = /26
+Subnet Mask = 255.255.255.192
+B) First Usable Host Address of Each Subnet
+
+Subnet 1: 192.168.1.0/26 → First usable host = 192.168.1.1
+Subnet 2: 192.168.1.64/26 → First usable host = 192.168.1.65
+Subnet 3: 192.168.1.128/26 → First usable host = 192.168.1.129
+Subnet 4: 192.168.1.192/26 → First usable host = 192.168.1.193
+2. You friend device is slow performing so what should you take step in you task manager
+Steps to Fix Slow Device Using Task Manager
+
+Open Task Manager: Press Ctrl + Shift + Esc.
+Check CPU Usage: Identify processes using high CPU.
+Check Memory (RAM): Find apps consuming too much memory.
+End Unnecessary Tasks: Select heavy apps → click End Task.
+Startup Programs: Go to Startup tab → disable unnecessary apps.
+Disk Usage: Check if disk is 100% → stop heavy processes.
+Background Apps: Close unused background applications.
+3. Suppose you workstation affect ransomware attack so what five step you take to metegrate this problem.
+Ransomware Attack
+
+Ransomware is a type of malware that encrypts or locks a user’s data and demands ransom (money) to restore access.
+
+It spreads through phishing emails, malicious downloads, or infected websites.
+Steps to Mitigate Ransomware Attack
+
+1. Isolate the System: Immediately disconnect the workstation from network (LAN/Wi-Fi) to stop spreading.
+2. Do Not Pay Ransom: Paying does not guarantee data recovery and encourages attackers.
+3. Identify & Remove Malware: Use antivirus / anti-malware tools to scan and remove ransomware.
+4. Restore Data from Backup: Recover files from secure offline or cloud backup.
+5. Report & Recover: Inform IT/security team, update system, patch vulnerabilities, and change all passwords.
+3. What is Dyanamic programming? Related Question
+Dynamic Programming
+Dynamic Programming (DP) is a method used to solve problems by breaking them into smaller subproblems and storing their results to avoid repeated computation.
+
+Key Idea:
+
+Solve each subproblem once and store the result.
+Reuse stored results (called memoization or tabulation).
+Characteristics:
+
+Overlapping Subproblems: Same subproblems are solved multiple times.
+Optimal Substructure: Optimal solution can be built from optimal sub-solutions.
+Example
+
+Fibonacci Series
+Knapsack Problem
+Shortest Path (e.g., Bellman-Ford)
+Advantages:
+
+Reduces time complexity.
+Improves efficiency by avoiding repeated work.
+5. What is Phishing? Describe different type of phissing attack
+Phishing is a type of cyber attack where attackers trick users into revealing sensitive information like passwords, OTP, or bank details by pretending to be a trusted entity.
+Types of Phishing Attacks
+
+Email Phishing: Fake emails that look like banks or companies asking for login details.
+Spear Phishing: Targeted attack on a specific person or organization using personalized information.
+Smishing (SMS Phishing): Fraud messages sent via SMS with malicious links.
+Vishing (Voice Phishing): Attackers call users pretending to be bank officials to collect information.
+Clone Phishing: A legitimate email is copied and modified with a malicious link.
+Pharming: Redirects users to a fake website even if they enter the correct URL.
+6. What is programming? Give 4 example. Difference between structured and OOP programming
+Programming
+
+Programming is the process of writing instructions (code) that a computer follows to perform specific tasks.
+
+Examples of Programming Languages
+
+C
+Java
+Python
+C++
+Difference Between Structured Programming and OOP
+
+Feature	Structured Programming	Object-Oriented Programming (OOP)
+Approach	Function-based	Object-based
+Focus	Procedures/Functions	Objects & Classes
+Data Handling	Data and functions are separate	Data and methods are combined (Encapsulation)
+Reusability	Limited	High (Inheritance, Polymorphism)
+Examples	C	Java, C++, Python
+7. What is firewall? Difference between stateful inspection and new technology firewall (NTFW)
+A firewall is a network security system that monitors and controls incoming and outgoing traffic based on predefined security rules.
+Difference Between Stateful Inspection Firewall and NGFW (Next Generation Firewall)
+Feature	Stateful Inspection Firewall	NGFW (New Technology Firewall)
+Working	Tracks connection state of packets	Performs deep packet inspection
+Security Level	Medium security	High security
+Application Awareness	Not supported	Supported
+Threat Detection	Basic filtering	Advanced (IPS, malware detection)
+User Control	IP-based	User & application-based
+Features	Packet filtering + state tracking	WAF, IPS, DPI, SSL inspection
+
+8. ATM pin code flow chart (user input define). decision take (successful, failure)
+9. Define software testing Level. show that unit, integration, system and user accepting testing. How these are complemented of each other.
+Software Testing Level : Software Testing Levels are the different stages of testing used to verify and validate that software works correctly and meets requirements.
+
+Types of Testing Levels
+1. Unit Testing
+
+Definition: Testing of the smallest individual unit (function/module) of a program.
+Purpose: To check each part works correctly.
+Performed by: Developer.
+2. Integration Testing
+
+Definition: Testing of combined modules to verify interaction between them.
+Purpose: To find interface/communication errors.
+3. System Testing
+
+Definition: Testing of the complete system as a whole.
+Purpose: To ensure system meets functional and non-functional requirements.
+4. User Acceptance Testing (UAT)
+
+Definition: Final testing performed by end users.
+Purpose: To confirm system meets business needs and is ready for deployment.
+How They Complement Each Other
+
+Unit Testing: Ensures each component is correct.
+Integration Testing: Ensures components work together.
+System Testing: Ensures the whole system works properly.
+UAT: Ensures system satisfies user requirements.
+These levels work step-by-step from small parts to full system, ensuring complete quality assurance.
+10. firewall rules Rules 1: A source destain B port is 89. Rules 2: A source destain B less than 443; Rules 3: A source destain B port is 443. So when a packet come form 443 is it accept or rejected the procedure “First inspection rules” explain it.
+Given Rules:
+
+Rule 1: Source A → Destination B, port = 89
+Rule 2: Source A → Destination B, port < 443
+Rule 3: Source A → Destination B, port = 443
+First-Match Rule Inspection:
+
+Firewall checks rules from top to bottom.
+As soon as a packet matches a rule, action is taken and no further rules are checked.
+Case: Packet arrives with port = 443
+
+Check Rule 1: port 89 → ❌ Not matched
+Check Rule 2: port < 443 → ❌ 443 is NOT less than 443
+Check Rule 3: port = 443 → ✅ Matched
+Final Decision:
+
+The packet will follow Rule 3.
+If Rule 3 action = ALLOW → packet accepted ✅
+If Rule 3 action = DENY → packet rejected ❌
+11. What is DNS? How DNS work?
+DNS (Domain Name System)
+DNS is a system that translates domain names (like google.com) into IP addresses (like 142.250.190.78). It works like the phonebook of the internet.
+How DNS Works:
+
+1. User Request: User enters a domain name (e.g., www.google.com) in the browser.
+2. DNS Resolver: The request goes to a DNS resolver (usually ISP or local cache).
+3. Root Server: If not cached, resolver queries the Root DNS server.
+4. TLD Server: Root server directs to TLD server (.com, .org).
+5. Authoritative Server: TLD server provides the authoritative DNS server for the domain.
+6. IP Address Returned: Authoritative server returns the IP address.
+7. Connection: Browser uses the IP to connect to the website.
+Example:
+
+User types www.facebook.com
+DNS converts it to an IP (e.g., 157.240.x.x)
+Browser connects to that IP and loads the website
+
+
+1. Explain the concept of inheritance in Object-Oriented Programming. Name and briefly describe three common types of inheritance used in OOP. 10
+Inheritance in Object-Oriented Programming (OOP)
+Inheritance is an OOP concept where a child (derived) class inherits properties and behaviors from a parent (base) class. It helps reuse existing code and represents real-world hierarchical relationships (like Animal → Dog).
+
+Types of Inheritance
+
+1) Single Inheritance
+One child class inherits from one parent class.
+
+Animal
+  |
+ Dog
+Here, Dog inherits features (like eating, breathing) from Animal.
+
+2) Multiple Inheritance
+One child class inherits from more than one parent class.
+
+Printer     Scanner
+     \     /
+      \   /
+     AllInOne
+Here, AllInOne inherits features of both Printer and Scanner.
+
+3) Multilevel Inheritance
+A class is derived from another derived class, forming a chain.
+
+Vehicle
+   |
+  Car
+   |
+ElectricCar
+Here, ElectricCar indirectly inherits features from Vehicle through Car.
+2. Explain the concept of the Software Development Life Cycle (SDLC) and describe its main phases. 10
+Software Development Life Cycle (SDLC)
+The Software Development Life Cycle (SDLC) is a structured process used to design, develop, test, deploy, and maintain software systems. It provides a systematic approach to building high-quality software that meets user requirements, stays within budget, and is delivered on time.
+
+Main Phases of SDLC
+
+1) Requirement Analysis
+In this phase, user needs and system requirements are collected and analyzed to understand what the software should do.
+
+2) System Design
+Based on the requirements, the overall system architecture, database design, and technical specifications are prepared.
+
+3) Implementation (Coding)
+The actual software is developed by writing code according to the design specifications.
+
+4) Testing
+The software is tested to identify and fix bugs and ensure it works correctly and meets user expectations.
+
+5) Deployment
+After successful testing, the software is released and deployed in a real user environment.
+
+6) Maintenance
+Once deployed, the software is maintained through updates, bug fixes, and enhancements based on user feedback.
+3. Apply the concept of IP addressing and routing to explain how packets are delivered across networks using Open Shortest Path First (OSPF) at the network layer. 10
+IP Addressing and Routing with OSPF
+IP addressing provides a unique logical address to every device in a network, which allows packets to be identified and routed to the correct destination. Routing is the process of selecting the best path for these packets to travel across interconnected networks.
+
+Role of OSPF at the Network Layer
+Open Shortest Path First (OSPF) is a link-state routing protocol used at the network layer. Each router running OSPF maintains a complete map of the network topology using IP addresses and link information.
+
+How Packet Delivery Works Using OSPF
+• Routers exchange link-state advertisements (LSAs) containing information about their networks and IP subnets.
+• Each router builds a link-state database representing the entire network.
+• OSPF uses the Dijkstra shortest path algorithm to calculate the best path to every destination IP network based on cost (bandwidth).
+• The routing table is updated with the shortest paths.
+• When a packet arrives, the router checks the destination IP address and forwards the packet to the next-hop router based on the routing table.
+
+Result
+Using IP addressing for identification and OSPF for intelligent routing, packets are delivered efficiently, reliably, and dynamically across large networks, even when network changes occur.
+4. What is a Universal Gate? Prove that the NAND Gate is a Universal Gate.
+Universal Gate
+A Universal Gate is a logic gate that can be used to implement any Boolean function (i.e., any logic circuit). If we can build the basic gates NOT, AND, and OR using only one type of gate, then that gate is called a universal gate.
+
+Proof: NAND is a Universal Gate
+To prove NAND is universal, we show that we can construct NOT, AND, and OR using only NAND gates.
+
+
+Since we can build NOT, AND, and OR using only NAND gates, we can build any Boolean expression. Therefore, the NAND gate is a Universal Gate.
+5. Explain the fundamental difference between a Process and a Thread. Provide two distinct advantages of using threads over processes.
+Difference between Process and Thread A process is an independent program in execution with its own memory space, system resources, and execution context. A thread is the smallest unit of execution within a process and shares the same memory and resources with other threads of that process.Advantages of Threads over Processes 1) Faster Communication: Threads within the same process share memory, making inter-thread communication faster than inter-process communication.2) Lower Resource Overhead: Threads require less memory and fewer system resources compared to processes, leading to better performance and efficiency.
+6. What is Version Control (e.g., Git)? Explain the specific difference between "Committing" code and "Pushing" code.
+Version Control (Git)
+Version Control is a system that helps developers track changes in source code over time. Git is a popular version control system that allows multiple developers to work on the same project, manage different versions of code, and revert to previous states when needed.
+
+Difference between Committing and Pushing Code
+Committing Code
+Committing means saving changes to the local repository. It records a snapshot of the code with a message describing what was changed. The changes are stored only on the developer’s local machine.
+
+Pushing Code
+Pushing means sending committed changes from the local repository to a remote repository (such as GitHub or GitLab). This makes the changes available to other team members.
+
+Key Difference
+Committing saves changes locally, while pushing uploads those committed changes to a remote server.
+
+6. Mention the layer of OSI Model and Function of each layer. 10
+OSI Model Layers and Their Functions
+
+1. Physical Layer: Responsible for the transmission of raw bits over a physical medium. It defines cables, connectors, voltage levels, and data rates.
+
+2. Data Link Layer: Ensures error-free data transfer between two directly connected nodes. It handles framing, error detection, and MAC addressing.
+
+3. Network Layer: Manages logical addressing and routing of data packets across different networks.
+Example: IP addressing.
+
+4. Transport Layer: Provides reliable data transfer between end systems. It handles segmentation, flow control, and error recovery.
+Example: TCP, UDP.
+
+5. Session Layer: Manages sessions between applications. It establishes, maintains, and terminates communication sessions.
+
+6. Presentation Layer: Translates data formats, handles encryption/decryption, and data compression.
+
+7. Application Layer: Provides network services directly to end users and applications.
+Example: HTTP, FTP, SMTP.
+7. Compare TCP and UDP protocol with examples. 10
+
+Examples of TCP:
+Web browsing (HTTP/HTTPS), Email (SMTP), File transfer (FTP).
+
+Examples of UDP:
+Video streaming, Online gaming, Voice calls (VoIP).
+8. Explains the difference between compiler and interpreter. 10
+9. What is cloud computing? Mention its service models
+Cloud Computing
+
+Cloud Computing is a technology that provides computing resources such as servers, storage, databases, networking, and software over the internet on a pay-as-you-go basis. It allows users to access and use IT resources without owning or maintaining physical infrastructure.
+
+Service Models of Cloud Computing
+
+1. Infrastructure as a Service (IaaS)
+
+IaaS provides virtualized computing resources like virtual machines, storage, and networks. Users have control over operating systems and applications.
+Examples: Amazon EC2, Google Compute Engine, Microsoft Azure VM.
+
+2. Platform as a Service (PaaS)
+
+PaaS provides a platform that allows developers to build, test, and deploy applications without worrying about infrastructure management.
+Examples: Google App Engine, Heroku, Microsoft Azure App Service.
+
+3. Software as a Service (SaaS)
+
+SaaS delivers complete software applications over the internet. Users can access software using a web browser without installation or maintenance.
+Examples: Gmail, Google Docs, Salesforce.
+
+10. What is the functional and non functional requirements? What is requirement validation?
+Functional Requirements
+
+Functional requirements describe what a system should do. They define the specific functions, features, and behaviors of the system.
+
+Examples:
+
+User login and authentication.
+Generating reports.
+Processing online payments.
+Data entry, update, and deletion.
+Non-Functional Requirements
+
+Non-functional requirements describe how a system performs its functions. They specify quality attributes and system constraints.
+
+Examples:
+
+Performance (response time, throughput).
+Security (authentication, authorization).
+Usability and accessibility.
+Reliability and availability.
+Scalability and maintainability.
+Requirement Validation
+
+Requirement Validation is the process of ensuring that documented requirements are correct, complete, consistent, feasible, and meet the actual needs of stakeholders. It answers the question: “Are we building the right system?”
+
+Activities in Requirement Validation:
+
+Requirement reviews and walkthroughs.
+Prototyping.
+Stakeholder approval and sign-off.
+Checking for ambiguity and conflicts.
+
+11. What is authentication and authorization? What is the CIA triad in cyber security.
+Authentication: Authentication is the process of verifying the identity of a user or system.
+Example: Logging in using username and password, OTP, biometric.
+
+Authorization: Authorization is the process of determining what resources or actions a verified user is allowed to access.
+Example: Admin can edit data, but a normal user can only view data.
+
+CIA Triad in Cyber Security
+
+The CIA Triad is a model that defines three core principles of information security:
+
+Confidentiality: Ensures that data is accessible only to authorized users.
+Example: Encryption, passwords.
+Integrity: Ensures that data remains accurate and unaltered.
+Example: Hashing, digital signatures.
+Availability: Ensures that data and systems are accessible when needed.
+Example: Backup systems, redundancy.
+12. What is social engineering? What is hashing? How is it different from encryption? What is vulneribility assessment?
+Social Engineering
+
+Social Engineering is a cyber-attack technique where attackers manipulate people into revealing confidential information such as passwords, OTPs, or bank details. Instead of exploiting technical vulnerabilities, it exploits human psychology.
+
+Examples: Phishing emails, fake phone calls, impersonation.
+
+Hashing
+
+Hashing is a process of converting data into a fixed-length value (hash) using a mathematical algorithm. It is a one-way process, meaning the original data cannot be retrieved from the hash.
+
+Examples: Password storage using SHA-256, MD5.
+
+Difference between Hashing and Encryption
+
+Hashing: One-way process, cannot be reversed.
+Encryption: Two-way process, data can be decrypted using a key.
+Purpose of Hashing: Data integrity and password protection.
+Purpose of Encryption: Data confidentiality and secure communication.
+Vulnerability Assessment
+
+Vulnerability Assessment is the process of identifying, analyzing, and prioritizing security weaknesses in systems, networks, or applications. It helps organizations understand potential risks before attackers exploit them.
+
+Examples: Scanning for outdated software, weak passwords, misconfigured systems.
+
+
+
+
+
+
+
+
+
+
+
+1. OOP stands for:
+Object Oriented Programming
+Open Office Protocol
+Object Operating Program
+Output Oriented Process
+Explanation: Object Oriented Programming (OOP) is a programming approach that organizes software into objects containing both data and methods, making programs easier to design, reuse, and maintain.
+
+Open Office Protocol is a set of standards for office software communication.
+Object Operating Program is not a standard term in programming.
+Output Oriented Process refers to a process focused on results, not a programming paradigm.
+2. Which attack floods a system with traffic?
+Phishing
+DOS
+Spoofing
+Sniffing
+Explanation: A Denial of Service (DoS) attack floods a system with excessive traffic to make it slow or unavailable to legitimate users.
+
+Phishing is an attack that tricks users into revealing sensitive information.
+Spoofing is pretending to be another user or device to gain access.
+Sniffing is intercepting and capturing network data for analysis or theft.
+3. HTTPS is more secure than HTTP because it uses:
+IP
+Encryption
+Cookies
+Proxy
+Explanation: Encryption converts data into a secure coded form, preventing unauthorized users from reading the information during transmission.
+
+IP (Internet Protocol) is used to identify and locate devices on a network so data can be sent to the correct destination.
+Cookies are small files stored in a user’s browser to remember login details, preferences, and session information.
+A proxy server acts as an intermediary between a user and the internet, forwarding requests and responses.
+4. Firewall is used to:
+Store data
+Monitor network traffic
+Compile programs
+Create backups
+Explanation: Monitoring network traffic means observing and controlling data flow to protect systems from unauthorized access and attacks.
+
+Storing data refers to saving information in databases or storage devices for future use.
+Compiling programs involves converting source code into machine code using a compiler.
+Creating backups means making copies of data so it can be restored if the original data is lost.
+5. Which model is known as linear sequential model?
+Agile
+Spiral
+Waterfall
+V-Model
+Explanation: The Waterfall model follows a linear, step-by-step development process where each phase is completed before moving to the next.
+
+Agile is an iterative development model that focuses on flexibility and frequent updates.
+The Spiral model combines iterative development with risk analysis in repeated cycles.
+The V-Model emphasizes verification and validation by linking development phases with testing phases.
+6. Cloud computing provides:
+Hardware only
+Software only
+On-demand resources
+Offline services
+Explanation: On-demand resources mean accessing computing services such as storage, software, and servers whenever needed over the internet.
+
+Hardware refers to physical components like servers, computers, and networking devices.
+Software includes applications and programs used to perform specific tasks.
+Offline services are services that work without an internet connection.
+7. Which protocol is used for file transfer?
+SMTP
+FTP
+SNMP
+TELNET
+Explanation: FTP (File Transfer Protocol) is used to transfer files between computers over a network.
+
+SMTP (Simple Mail Transfer Protocol) is used for sending emails.
+SNMP (Simple Network Management Protocol) is used to monitor and manage network devices.
+TELNET is used for remote login and command-line access to another computer.
+8. IPv4 address size is:
+16-bit
+32-bit
+64-bit
+128-bit
+Explanation: IPv4 addresses are 32-bit numeric addresses used to identify devices on a network.
+
+16-bit addresses are used in older protocols like IPv2.
+64-bit addresses are used in some specialized systems.
+128-bit addresses are used in IPv6, not IPv4.
+9. Which layer is responsible for routing in OSI model?
+Network
+Transport
+Data Link
+Session
+Explanation: The Network layer determines the best path to send data packets from source to destination, performing routing and addressing.
+
+The Transport layer ensures end-to-end delivery of data.
+The Data Link layer handles physical addressing and error detection.
+The Session layer manages sessions and connections between applications.
+10. Which tool is used for version control?
+Git
+Jenkins
+Docker
+Maven
+Explanation: Git is a distributed version control system used to track changes in code and collaborate with multiple developers.
+
+Jenkins is used for continuous integration and delivery.
+Docker is used for containerization of applications.
+Maven is a build automation tool for Java projects.
+11. Which storage has fastest access speed?
+HDD
+SSD
+DVD
+Cache
+Explanation: Cache memory is the fastest storage, located close to the CPU for quick data access.
+
+HDD (Hard Disk Drive) is slower mechanical storage.
+SSD (Solid State Drive) is faster than HDD but slower than cache.
+DVD is optical storage and very slow compared to other options.
+12. Which component is often referred to as the "brain" of the computer?
+Hard Drive
+Central Processing Unit (CPU)
+RAM
+Power Supply Unit
+Explanation: The Central Processing Unit (CPU) executes instructions and controls all computer operations, earning the title "brain" of the computer.
+
+Hard Drive stores data permanently.
+RAM provides temporary working memory.
+Power Supply Unit provides electrical power to the system.
+13. What does "GUI" stand for in computing?
+Global User Interface
+Graphical User Interface
+General Utility Interface
+Graphical Unit Interconnection
+Explanation: GUI (Graphical User Interface) allows users to interact with computers through visual elements like icons, windows, and menus.
+
+Global User Interface is not a standard term.
+General Utility Interface is not a recognized term in computing.
+Graphical Unit Interconnection is not a valid term related to user interfaces.
+14. Which protocol is primarily used for securely browsing the web?
+HTTP
+FTP
+HTTPS
+SMTP
+Explanation: HTTPS encrypts web traffic using SSL/TLS, making browsing secure.
+
+HTTP is unencrypted and not secure.
+FTP is used for file transfer.
+SMTP is used for sending emails.
+15. A user reports the internet is down. You can Ping 8.8.8.8 but cannot browse "www.google.com". What is the most likely issue?
+The ISP gateway is down
+The DNS server is unreachable or misconfigured
+The network cable is unplugged
+The DHCP server is full
+Explanation: The most likely issue is that the DNS server is unreachable or misconfigured, preventing domain names from being resolved to IP addresses.
+
+The ISP gateway being down would prevent all connectivity, including pinging 8.8.8.8.
+If the network cable were unplugged, nothing would work.
+A full DHCP server would prevent obtaining an IP, but pinging 8.8.8.8 shows the device has an IP.
+16. What is "Cloud Storage"?
+Storing data on your local hard drive
+Storing data on the internet servers managed by a provider
+Storing data on a CD-ROM
+Printing data on paper
+Explanation: Cloud Storage is storing data on internet servers managed by a provider, allowing access from anywhere with an internet connection.
+
+Storing data on your local hard drive keeps data on your own device.
+Storing data on a CD-ROM saves data on physical media.
+Printing data on paper creates a physical copy of the data.
+17. Which concept ensures that a sender cannot deny having sent a message?
+Confidentiality
+Integrity
+Non-repudiation
+Availability
+Explanation: Non-repudiation ensures that a sender cannot deny sending a message by using digital signatures or other verification methods.
+
+Confidentiality ensures data is kept secret.
+Integrity ensures data is not altered.
+Availability ensures systems and data are accessible when needed.
+18. Which command in Linux is used to change the permissions of a file?
+chown
+chmod
+chgrp
+umask
+Explanation: chmod is the Linux command used to change file permissions for read, write, and execute access.
+
+chown changes the file owner.
+chgrp changes the group ownership.
+umask sets default permissions for newly created files.
+19. Which command is used to display the IP configuration on al Windows host?
+ipconfig
+route print
+netstat
+tracert
+Explanation: ipconfig displays the IP configuration, including IP address, subnet mask, and default gateway.
+
+route print shows the routing table.
+netstat shows active network connections.
+tracert traces the route to a destination IP or host.
+20. Which of the following describes a "Phishing" attack?
+Scanning ports to find open services
+Sending fraudulent emails to trick users into revealing credentials
+Overloading a server with traffic
+Intercepting Wi-Fi signals from a parking lot
+Explanation: Phishing involves sending fraudulent emails to trick users into revealing credentials or sensitive information.
+
+Scanning ports is a method to find open services.
+Overloading a server with traffic is a DoS attack.
+Intercepting Wi-Fi signals is a form of sniffing or eavesdropping.
+21. What is the result of the logic operation: (1 AND 0) OR (1 AND 1)?
+0
+1
+Null
+-1
+Explanation: The result is 1 because (1 AND 0) = 0, (1 AND 1) = 1, and 0 OR 1 = 1.
+
+0 is incorrect because the final OR operation produces 1.
+Null is not a valid binary logic result.
+-1 is not used in binary logic operations.
+22. Which of the following is a key principle of "Agile" project management?
+Detailed documentation is more important than working software
+Following a plan is more important than responding to change
+Iterative development and customer collaboration
+Contract negotiation is the primary goal
+Explanation: Iterative development and customer collaboration are central to Agile, emphasizing flexibility and frequent delivery.
+
+Detailed documentation over working software is the opposite of Agile principles.
+Following a plan over responding to change is more aligned with Waterfall.
+Contract negotiation as the primary goal is a traditional project management approach, not Agile.
+23. Which of the following effectively mitigates "Social Engineering" attacks?
+Installing a stronger firewall
+Regular security awareness training for employees
+Increasing the complexity of database passwords
+Upgrading the server RAM
+Explanation: Regular security awareness training for employees helps them recognize and prevent social engineering attacks.
+
+Installing a stronger firewall protects systems, but not people.
+Increasing database password complexity protects accounts but doesn’t prevent social manipulation.
+Upgrading server RAM improves performance, not security awareness.
+24. What is the correct binary representation of the IP address 192.168.1.1?
+11000000.10101000.00000001.00000001
+10100000.10101000.00000001.00000001
+11000000.10001000.00000001.00000001
+11000000.10101000.00000011.00000001
+Explanation: 11000000.10101000.00000001.00000001 is the correct binary format for 192.168.1.1.
+
+10100000.10101000.00000001.00000001 is incorrect.
+11000000.10001000.00000001.00000001 is incorrect.
+11000000.10101000.00000011.00000001 is incorrect.
+25. What is the definition of "Throughput" in networking?
+The theoretical maximum speed of the medium
+The actual amount of data successfully transferred over a period
+The time it takes for a packet to travel to the destination
+The number of errors on the line
+Explanation: Throughput is the actual amount of data successfully transferred over a network in a given time, reflecting real performance.
+
+Theoretical maximum speed is the network capacity.
+Time for a packet to travel is latency.
+Number of errors measures reliability, not throughput.
+26. What is a "Logic Gate" that outputs 1 only if the inputs are different (e.g., 1 and 0)?
+AND
+OR
+XOR
+NAND
+Explanation: XOR (Exclusive OR) outputs 1 when inputs differ and 0 when they are the same.
+
+AND outputs 1 only when both inputs are 1.
+OR outputs 1 if at least one input is 1.
+NAND outputs the opposite of AND, giving 0 only when both inputs are 1.
+27. Which of the following is an Administrative Control?
+Security Guards
+User Training Program
+Smart Cards
+Encryption
+Explanation: User Training Program is an administrative control that establishes policies, procedures, and training to manage security risks.
+
+Security Guards are physical controls.
+Smart Cards are technical access controls.
+Encryption is a technical control to secure data.
+28. Which port must be open to allow sending emails from a client to a server?
+25 or 587
+110
+143
+443
+Explanation: Ports 25 and 587 are used by SMTP to send emails from a client to a mail server, with 587 preferred for secure submission.
+
+Port 110 is used for receiving emails via POP3.
+Port 143 is used for receiving emails via IMAP.
+Port 443 is used for secure HTTPS web traffic.
+29. Which of the following is the most secure method for remote administration of a Linux server?
+Telnet using root account
+SSH using password authentication
+SSH using key-based authentication
+VNC without encryption
+Explanation: SSH using key-based authentication provides secure remote access without relying on passwords, making it highly resistant to attacks.
+
+Telnet using root account is insecure because data is sent in plain text.
+SSH using password authentication is secure but can be vulnerable to password guessing.
+VNC without encryption exposes sessions to eavesdropping.
+30. What describes a "Dictionary Attack"?
+Guessing passwords by trying every word in a pre-defined list
+Trying every possible combination of characters (Brute Force)
+Stealing the physical password notebook
+Asking the user for their password
+Explanation: A dictionary attack involves guessing passwords by trying every word in a pre-defined list of common passwords.
+
+Trying every possible combination of characters is a brute-force attack.
+Stealing the physical password notebook is a physical attack.
+Asking the user for their password is social engineering.
+31. What is the primary purpose of a "Demilitarized Zone" (DMZ)?
+To store the core database
+To host public-facing services (Web, Email) separate from the internal LAN
+To connect the CEO's computer to the internet
+To test viruses safely
+Explanation: A DMZ is used to host public-facing services like web and email servers separately from the internal LAN to enhance security.
+
+It is not for storing core databases.
+It does not connect just the CEO’s computer to the internet.
+It is not specifically for testing viruses safely.
+32. The data structure required to check whether an expression contains a balanced parenthesis is?
+Stack
+Queue
+Tree
+Array
+Explanation: A stack is used to track opening and closing parentheses, ensuring they are properly balanced.
+
+A queue processes items in FIFO order, unsuitable for nested structures.
+A tree organizes hierarchical data, not for balancing parentheses.
+An array stores elements sequentially but does not inherently handle nested checks.
+33. What data structure is often results in a time-space tradeoff by using extra memory to speed up operations?
+Arrays
+Hash tables
+Stacks
+Queues
+Explanation: Hash tables use extra memory for storing hash keys to allow fast search and retrieval, trading memory for speed.
+
+Arrays are simple sequential storage.
+Stacks are LIFO structures.
+Queues are FIFO structures.
+34. Which dynamic programming approach starts solving from the smallest subproblems?
+Greedy approach
+Recursive approach
+Top-down approach
+Bottom-up approach
+Explanation: The bottom-up approach solves the smallest subproblems first and builds up solutions to larger problems efficiently.
+
+Greedy approach makes locally optimal choices without solving all subproblems.
+Recursive approach may solve problems repeatedly without optimization.
+Top-down approach uses recursion with memoization, starting from the main problem.
+35. Which of the following service use TCP?
+DHCP
+SMTP
+CSMA
+DNS
+Explanation: SMTP uses TCP to reliably send emails between clients and servers, ensuring all data is delivered correctly.
+
+DHCP primarily uses UDP for assigning IP addresses.
+CSMA is a network access method, not a transport protocol.
+DNS can use both TCP and UDP, but UDP is more common for queries.
+36. Which standard TCP port is assigned for contacting SSH servers?
+21
+22
+23
+24
+Explanation: Port 22 is the standard TCP port for SSH, allowing secure remote login to servers.
+
+Port 21 is used for FTP control.
+Port 23 is used for Telnet.
+Port 24 is unused or reserved.
+37. The memory that is allocated for any object is ________
+Cache
+HDD
+ROM
+RAM
+Explanation: RAM is the memory where objects and programs are temporarily stored while being executed.
+
+Cache is faster memory for CPU but not for object allocation.
+HDD is permanent storage.
+ROM stores firmware and is read-only.
+38. What does ACID stand for in database transactions?
+All Columns in Database
+Atomicity, Consistency, Isolation, Durability
+Automated Commit in Database
+Association of Conditions in Data
+Explanation: Atomicity, Consistency, Isolation, Durability (ACID) ensures database transactions are reliable and maintain integrity.
+
+All Columns in Database is not correct.
+Automated Commit in Database is not a standard term.
+Association of Conditions in Data is incorrect.
+39. Which neural network architecture is the foundation of most modern LLMs?
+Bayesian Network
+Convolutional Neural Network (CNN)
+Transformer
+Autoencoder
+Explanation: Transformer architecture is used in most modern large language models (LLMs) for efficient handling of sequences and attention mechanisms.
+
+Bayesian Networks are probabilistic models.
+Convolutional Neural Networks (CNN) are mainly used for image processing.
+Autoencoders are used for data compression and reconstruction.
+40. If a process fails, most operating systems write the error information to a ________
+new file
+another running process
+log file
+database
+Explanation: A log file is used to record errors, events, and messages for debugging and system monitoring.
+
+Creating a new file is unnecessary.
+Writing to another running process is not standard.
+Databases are used for data storage, not routine error logging.
+41. Which data structure is generally used for implementing recursion?
+Stack
+Queue
+List
+Array
+Explanation: Stack is used to store function calls and local variables during recursion, following the LIFO principle.
+
+Queue is FIFO and not suitable for recursion.
+List stores elements sequentially but does not handle nested calls.
+Array is sequential storage, not inherently recursive.
+42. Which of the following tags is used to define an image in HTML?
+Explanation: The  tag is used to embed images in an HTML page, specifying the source and alternate text.
+
+is not a valid HTML tag.
+is used for responsive images but not standard single images.
+is an attribute, not a tag.
+43. What does CSS stand for?
+Computer Style Sheets
+Creative Style Sheets
+Cascading Style Sheets
+Colorful Style Sheets
+Explanation: Cascading Style Sheets (CSS) is used to style HTML elements, controlling layout, colors, fonts, and more.
+
+Computer Style Sheets is incorrect.
+Creative Style Sheets is not a standard term.
+Colorful Style Sheets is incorrect.
+44. Which of the following is a type of memory that retains its contents even when the power is turned off?
+RAM
+ROM
+Cache Memory
+Register
+Explanation: ROM (Read-Only Memory) retains data permanently even when the system is powered off.
+
+RAM loses its contents when the power is off.
+Cache memory is volatile and temporary.
+Registers are small, fast, volatile storage in the CPU.
+45. After groups have been established, SQL applies predicates in the clause, allowing aggregate functions to be used.
+Having
+Where
+With
+Select
+Explanation: HAVING is the SQL clause used to filter groups after aggregation, unlike WHERE which filters individual rows.
+
+WHERE filters rows before grouping.
+WITH is used for common table expressions.
+SELECT is used to choose columns to display.
+46. An administrator is troubleshooting network connectivity and would like to view the path that packets are taking from workstation A to server 1. Which of the following command line tools is MOST appropriate to use?
+traceroute
+dig
+ping
+route
+Explanation: traceroute (or tracert in Windows) shows the route packets take to reach a destination, helping diagnose network paths.
+
+dig queries DNS records.
+ping checks basic connectivity and latency.
+route displays the routing table, not packet path.
+47. Wrapping data and its related functionality into a single entity is known as-
+Abstraction
+Encapsulation
+Polymorphism
+Modularity
+Explanation: Encapsulation is the OOP principle of combining data and methods into one unit, protecting internal state.
+
+Abstraction hides implementation details but does not combine data and methods.
+Polymorphism allows multiple behaviors for the same interface.
+Modularity breaks programs into separate modules but doesn’t necessarily combine data and functions.
+48. In the Model-View-Controller (MVC) architecture used in web applications, which component is responsible for handling HTTP requests such as GET and POST?
+Model
+View
+Controller
+Both Model and View
+Explanation: Controller receives and processes HTTP requests, interacts with the model, and returns responses to the view.
+
+Model handles data and business logic.
+View renders the user interface.
+Both Model and View together do not handle requests directly.
+49. Source code translation and Program modularization are the activities of ________
+Reverse engineering
+Forward engineering
+Reengineering
+Testing
+Explanation: Reengineering involves analyzing and transforming existing software to improve structure, performance, or maintainability.
+
+Reverse engineering extracts design or code from existing software.
+Forward engineering is developing software from scratch.
+Testing verifies that software behaves as expected.
+50. Which one of these is NOT shared by the same process's threads?
+Address Space
+Stack
+Message Queue
+File Descriptor Table
+Explanation: Stack is unique for each thread to store function calls and local variables.
+
+Address Space is shared among threads.
+Message Queue can be shared.
+File Descriptor Table is shared among threads in the same process.
+51. If a process is executing in its critical section, then no other processes can be executing in their critical section. What is this condition called?
+mutual exclusion
+race condition
+critical condition
+synchronous condition
+Explanation: Mutual exclusion ensures that only one process executes in its critical section at a time.
+
+Race condition occurs when processes access shared resources unsafely.
+Critical condition is not a standard term.
+Synchronous condition is general synchronization, not specifically mutual exclusion.
+52. Which statement best describes a public IP address?
+Used only within a local network
+Not routable on the Internet
+Assigned only by local routers
+Unique and globally routable on the Internet
+Explanation: A public IP address is unique and globally routable on the Internet, allowing communication across networks.
+
+Used only within a local network describes private IPs.
+Not routable on the Internet describes private IPs.
+Assigned only by local routers is not correct; public IPs are assigned by ISPs.
+53. Which scheduling algorithm gives minimum average waiting time?
+FCFS
+Round Robin
+SJF
+Prority
+Explanation: SJF (Shortest Job First) schedules the shortest jobs first, minimizing average waiting time.
+
+FCFS (First Come First Serve) may have higher waiting time.
+Round Robin assigns fixed time slices without minimizing waiting time.
+Priority scheduling may not always minimize average waiting time.
+54. Context switching occurs in:
+Compiler
+Memory
+CPU
+I/O device
+Explanation: CPU performs context switching by saving the state of a process and loading another.
+
+Compiler translates code.
+Memory stores data.
+I/O devices handle input/output operations, not context switching.
+55. Port number for HTTP is:
+21
+25
+80
+443
+Explanation: 80 is the standard port used for HTTP web traffic.
+
+21 is FTP.
+25 is SMTP.
+443 is HTTPS.
+56. Which language is used to manage databases?
+HTML
+SQL
+XML
+Java
+Explanation: SQL (Structured Query Language) is used to create, manage, and query databases.
+
+HTML is for web page structure.
+XML is a markup language for data representation.
+Java is a programming language, not specifically for databases.
+57. Which command is used to remove a table?
+DELETE
+DROP
+REMOVE
+TRUNCATE
+Explanation: DROP is used to permanently remove a table from a database.
+
+DELETE removes rows but not the table itself.
+REMOVE is not a standard SQL command.
+TRUNCATE removes all rows but keeps the table structure.
+58. Which is not a programming language?
+Python
+Java
+HTML
+C++
+Explanation: HTML is a markup language used for structuring web pages, not a programming language.
+
+Python is a programming language.
+Java is a programming language.
+C++ is a programming language.
+59. Which command is used to view active connections and listening ports?
+netstat
+ping
+nslookup
+ipconfig
+Explanation: netstat shows active network connections, listening ports, and routing information.
+
+ping checks connectivity.
+nslookup queries DNS.
+ipconfig shows IP configuration.
+60. What is the decimal value of the binary number 111?
+3
+5
+7
+9
+Explanation: The binary number 111 equals 7 in decimal (1×2² + 1×2¹ + 1×2⁰ = 4+2+1).
+
+3 is decimal for binary 11.
+5 is decimal for binary 101.
+9 is decimal for binary 1001.
+61. এক কথায় প্রকাশ করুন : অক্ষির অভিমুখে —
+প্রত্যক্ষ
+পরোক্ষ
+সমক্ষ
+চাক্ষুষ
+Explanation:
+62. 'প্রত্যয়'-এর বিপরীত শব্দ কী?
+উপচয়
+অপচয়
+সংশয়
+সন্দেহ
+Explanation:
+63. সে এখন যাবে না। - এই বাক্যে 'না' কোন পদ?
+বিশেষণ
+অব্যয়
+ক্রিয়াবিশেষণ
+অনুসর্গ
+Explanation:
+64. 'অক্কা পাওয়া' বাগধারায় ফারসি 'অক্কা' শব্দের অর্থ কী?
+প্রভু
+মৃত্যু
+বেহেশত
+আত্মা
+Explanation:
+65. শুদ্ধ বানান গুচ্ছ-
+পরিষ্কার, পুরস্কার
+বিকৃত, বিক্রীত
+স্বীকার, শীক্ষার
+ধরণ, ধারনা
+Explanation:
+66. 'ন্যূনতম' শব্দের উচ্চারণ-
+নুনোতমো
+নুনুনোতমো
+নুনোতম
+নুনোতম
+Explanation:
+67. 'কানে কলম' কোন সমাসের উদাহরণ?
+উপপদ তৎপুরুষ
+অলুক দ্বন্দ্ব
+প্রত্যয়ান্ত বহুব্রীহি
+অলুক বহুব্রীহি
+Explanation:
+68. 'তীক্ষ্ণ' শব্দের যুক্তব্যঞ্জনের সঠিক বিশ্লেষণ কোনটি?
+ক্‌ + ষ্‌ + ণ
+ক্‌ + ষ্‌ + ন
+ক্‌ + ষ্‌ + ম
+ক্‌ + হ্‌ + ণ
+Explanation:
+69. Empty vessels sound much- এর সঠিক বঙ্গানুবাদ কোনটি?
+যত কথা তত কাজ।
+অসারের তর্জন গর্জনই সার।
+মুখে বুলি লম্বা, কাজে অষ্টরম্ভা।
+এক মাঘে শীত যায়না।
+Explanation:
+70. Pluck me a flower. The correct passive voice form is-
+Let a flower be plucked by me.
+Let a flower be plucked for me
+Let me a flower be plucked to me.
+A flower is plucked by me
+Explanation:
+71. Find out the correct form-
+I, you and Shuma are guilty.
+Shuma, you and I are guilty.
+Shuma, I and you are guilty.
+I, you and Shuma is guilty.
+Explanation:
+72. What is the antonym of 'segregate'?
+isolate
+combine
+divide
+sever
+Explanation:
+73. ________ Opportunity comes responsibility.
+From
+Before
+Without
+With
+Explanation:
+74. The man who came here yesterday has applied for the post. The underlined clause is a/an ________ clause
+Noun
+Adjective
+Adverbial
+Principal
+Explanation:
+75. Are you sure that you ________ the killer before?
+will have seen
+had seen
+would have seen
+must have seen
+Explanation:
+76. A restaurant makes 20% profit after selling a set menu at a discount of 20%. What is the percentage increase of marked price?
+30%
+20%
+40%
+50%
+Explanation:
+77. A ladder rests against a wall that is perpendicular to the ground. If the bottom of the ladder is 4m away from the bottom of the wall, while the tip of the ladders is at a height of 3m, what is the length of the ladder?
+7m
+35m
+5m
+25m
+Explanation:
+78. A box having height 2m, length 10m and width 7m have the top lid open. What is the surface are of the box?
+138
+118
+104
+208
+Explanation:
+79. x+1/x​=7 What is the value of x2+1/x2
+14
+21
+51
+49
+Explanation:
+80. Which two pairs of x satisfies the equation
+(x+3)2=x+5
+1,4
+1,-4
+-1,-4
+-1,4
+Explanation:
+81. The H.C.F. and L.C.M. of two numbers are 12 and 288 respectively. If one of the numbers is 96, find the other.
+34
+36
+38
+40
+Explanation:
+82. Which of the following is a buffer state?
+Bangladesh
+Pakistan
+Maldives
+Bhutan
+Explanation:
+83. Where is the Ethnic Cultural Academy Birisini situated?
+Rangamati
+Habiganj
+Netrokona
+Mymensing
+Explanation:
+84. Which of the following Bengali scientists is famous for inventing Mercurous Nitrite?
+Satyendra Nath Bose
+Jagadish Chandra Bose
+Muhammad Qudrat-I-Khuda
+Prafulla Chandra Roy
+Explanation:
+85. Which organization led the Language Movement first?
+East Pakistan Muslim League
+Tamaddun Majlish
+All-Party Central Language Action Committee
+Dhaka University Language Action Committee
+Explanation:
+86. What does NPSB stand for in Bangladesh's banking sector?
+National Payment System of Banks
+National Payment Switch Bangladesh
+National Processing Service Bureau
+Network Payment and Settlement Board
+Explanation:
+87. In which district the 'Tin Bigha Corridor' is located?
+Nilphamari
+Lalmonirhat
+Rangpur
+Kurigram
+Explanation:
+88. Which country introduced the AI-powered, document-free immigration corridor?
+United State
+United Arab Emirates
+United Kingdom
+Singapore
+Explanation:
+89. ________ I bought you a new dress, would you be happy?
+If
+When
+as
+Since
+Explanation:
+90. "I want you to understand that worldly gains cannot guarantee ________ everlasting happiness?
+the
+an
+no article
+a
+Explanation:
+91. Which of the following words is spelt wrong?
+Commitment
+Disciplinary
+Jewelery
+Absorption
+Explanation:
+92. "The biriyani tastes as good as it looks." Make comparative degree of adjectives:
+The biriyani looks better than it tastes
+The biriyani tastes better than it looks
+The biriyani both tastes and looks better
+The biriyani tastes no better than it looks
+Explanation:
+93. How many linear factors of 8+4x+6x2+3x3−2x4−x5
+0
+1
+2
+3
+Explanation:
+94. The factors of 4x4+1 is-
+(2x2+2x−1)(2x2−2x+1)
+(2x2+2x+1)(2x2−2x−1)
+(2x2+2x−1)(2x2−2x−1)
+(2x2+2x+1)(2x2−2x+1)
+Explanation:
+95. A train 220 m long is moving at 45 km/h. The time taken by the train to cross a tunnel 260 m long, is-
+25.4 sec
+35.4 sec
+38.4 sec
+40.4 sec
+Explanation:
+96. Two trucks 300 km away are travelling towards each other with a constant speed. Truck A is moving at a constant speed of 70 km/h while Truck B is moving at a constant speed of 50 km/h. How long does it take for them to meet?
+5 hrs
+3 hrs
+2.5 hrs
+6 hrs
+Explanation:
+97. The International Literacy Day –
+4 October
+4 September
+8 September
+8 November
+Explanation:
+98. First Computer in Bangladesh was installed at the ________
+Dhaka University Science Library
+ICDDRB
+Atomic Energy Center
+BCSIR
+Explanation:
+99. Where did artist Hamidur Rahman create his mural titled "Borak Duldul"?
+TSC
+Bangla Academy
+Curzon Hal
+Dhaka University Library
+Explanation:
+
+\
+
+
+
+
+
+
+
+1(i) Why do modern processor designs favor multistage pipeline approach over single cycle implementation? Explain with appropriate reasoning.
+Single Cycle Processor :
+
+All steps of an instruction (fetch, decode, execute, memory, write back) are completed in one clock cycle.
+Clock cycle must be long enough to complete the slowest instruction.
+Multistage Pipeline Processor :
+
+Instruction execution is divided into multiple stages (fetch, decode, execute, etc.).
+Multiple instructions are processed simultaneously in different stages.
+Why Modern Processors Prefer Multistage Pipeline:
+
+Higher Throughput: Multiple instructions execute in parallel → more work done in less time.
+Faster Clock Speed: Each stage does small work → shorter clock cycle.
+Efficient Hardware Usage: Different units work at the same time → better utilization.
+Less Idle Time: Hardware is continuously active unlike single cycle.
+Supports Parallelism: Enables instruction-level parallelism (ILP).
+Better Performance: Overall execution is faster than single cycle design.
+1(ii) A system has a very fast CPU but slow main memory, explain how memory hierarchy helps reduce the performance gap between CPU and memory.
+Memory Hierarchy :
+
+Memory hierarchy is an arrangement of different types of memory (Cache, RAM, Secondary Storage) based on speed, cost, and size.
+Faster memory is placed closer to CPU and slower memory is placed farther away.
+How It Reduces CPU–Memory Gap:
+
+Use of Cache Memory: Frequently used data is stored in Cache (very fast) → CPU accesses data quickly.
+Temporal Locality: Recently used data is likely to be used again → kept in cache.
+Spatial Locality: Nearby data is also loaded → reduces repeated memory access.
+Reduced Access Time: CPU mostly accesses cache instead of slow main memory.
+Layered Access: If data not in cache → check RAM → then secondary storage.
+Improved Performance: Overall system speed increases by minimizing slow memory access.
+2(i) Explain packet switching. A packet passes through 4 routers with each router introducing 2 ms processing delay. Transmission delay per link is 5 ms. Calculate total end-to-end delay (ignore propagation).
+Packet Switching
+
+Packet Switching is a method of data transmission where data is broken into small packets.
+Each packet travels independently through the network and may take different paths.
+At the destination, packets are reassembled to form the original message.
+End-to-End Delay Calculation:
+
+Number of routers = 4
+Processing delay per router = 2 ms → Total = 4 × 2 = 8 ms
+Number of links = routers + 1 = 5
+Transmission delay per link = 5 ms → Total = 5 × 5 = 25 ms
+Total Delay = Processing + Transmission
+= 8 ms + 25 ms = 33 ms
+2(ii) Differentiate between IPv4 and IPv6. Given the IP address 192.168.10.0/24, calculate. Number of subnets if borrowed bits = 3 and hosts per subnet.
+Difference Between IPv4 and IPv6
+
+
+Subnet Calculation
+
+Given IP: 192.168.10.0/24
+Borrowed bits = 3
+
+Number of Subnets = 2³ = 8
+New subnet mask = /24 + 3 = /27
+Host bits = 32 – 27 = 5
+Hosts per subnet = 2⁵ – 2 = 32 – 2 = 30
+Final Answer:
+
+Subnets = 8
+Hosts per subnet = 30
+3(i) Why is "Atomicity" specifically critical for an Inter-Bank Fund Transfer?
+Atomicity
+
+Atomicity means a transaction is treated as a single unit → either fully completed or not executed at all.
+Reason:
+
+All-or-Nothing Execution: In fund transfer, money must be debited and credited together.
+Prevents Data Inconsistency: If debit happens but credit fails → money is lost.
+Error Handling: If any step fails, the system performs rollback to restore original state.
+Maintains Trust: Ensures reliable banking transactions between two banks.
+Avoids Partial Transactions: No situation where one account is updated and the other is not.
+Example:
+
+Transfer 1000 Tk from Account A (Bank 1) to Account B (Bank 2).
+If system crashes after debit but before credit → without atomicity, money is lost
+With atomicity → transaction is rolled back, so no loss
+3(ii) A bank's ATM network experiences an average of 4 hours of downtime every 30 days due to server maintenance and network glitches. Calculate the System Availability percentage for the month. If the bank processes an average of 500 transactions per hour with an average fee of Taka 0.50 per transaction, calculate the total revenue loss during this downtime.
+Total Time in a Month
+
+30 days = 30 × 24 = 720 hours
+Downtime = 4 hours
+Availability Calculation
+
+Availability = [(Total Time − Downtime) / Total Time] × 100
+= [(720 − 4) / 720] × 100
+= (716 / 720) × 100 ≈ 99.44%
+Revenue Loss
+
+Transactions per hour = 500
+Fee per transaction = 0.50 Tk
+Loss per hour = 500 × 0.50 = 250 Tk
+Total loss = 250 × 4 = 1000 Tk
+3(iii) What are the four necessary conditions for a deadlock to occur? Briefly explain "Circular Wait."
+Four Necessary Conditions for Deadlock
+
+Mutual Exclusion: At least one resource must be held in a non-shareable mode.
+Hold and Wait: A process holds at least one resource and waits for others.
+No Preemption: Resources cannot be forcibly taken; must be released voluntarily.
+Circular Wait: A set of processes are waiting for each other in a circular chain.
+Circular Wait (Explanation):
+
+In circular wait, each process is waiting for a resource held by another process.
+This forms a cycle (e.g., P1 → P2 → P3 → P1).
+None of the processes can proceed, causing a deadlock.
+Example:
+
+P1 holds R1 and waits for R2
+P2 holds R2 and waits for R3
+P3 holds R3 and waits for R1
+
+4(i) Differentiate between Logical Address and Physical Address in context of Operating System.
+Difference Between Logical Address and Physical Address
+Definition: Logical Address is generated by CPU; Physical Address is the actual location in memory (RAM).
+Visibility: Logical Address is visible to the user/program; Physical Address is not directly visible to the user.
+Generation: Logical Address is created during program execution; Physical Address is obtained after address translation.
+Translation: Logical Address is converted to Physical Address using MMU (Memory Management Unit).
+Address Space: Logical Address Space is virtual; Physical Address Space is real memory.
+Access: CPU uses Logical Address; Memory hardware uses Physical Address.
+4(ii). What is the main disadvantage of a fuse compared to a Circuit Breaker?
+Main Disadvantage of Fuse Compared to Circuit Breaker
+
+One-Time Use: A fuse melts and must be replaced after it blows, while a circuit breaker can be reset and reused.
+Convenience: Fuse replacement is time-consuming and requires manual effort.
+Control: Circuit breakers can be switched ON/OFF easily, but fuses cannot.
+Precision: Circuit breakers provide more accurate protection settings compared to fuses.
+4(iii). You need to protect a small heater rated at 2.4 kW connected to a 240 V single- phase supply. What is the minimum current rating of the fuse you should use?
+Given:
+
+Power (P) = 2.4 kW = 2400 W
+Voltage (V) = 240 V
+Calculate Current
+
+I = P / V
+I = 2400 / 240 = 10 A
+Step 2: Choose Fuse Rating
+
+Fuse rating should be slightly higher than calculated current
+So, select next standard value ≈ 13 A
+5(i). In web technology what do the following status code categories represent? Give some specific example for each. i. 2xx 11. 4xx iii. 5xx
+HTTP Status Code Categories
+
+i. 2xx (Success)
+
+Indicates that the request was successfully received and processed.
+Example: 200 OK → Request successful
+Example: 201 Created → Resource successfully created
+ii. 4xx (Client Error)
+
+Indicates an error from the client side (wrong request).
+Example: 400 Bad Request → Invalid request format
+Example: 404 Not Found → Requested resource not found
+iii. 5xx (Server Error)
+
+Indicates an error from the server side.
+Example: 500 Internal Server Error → Server failed to process request
+Example: 503 Service Unavailable → Server temporarily unavailable
+[Source:Mozilla]
+5(ii) What are HTTP Cookies? How can cookies be a security risk?
+HTTP Cookies
+
+Definition: HTTP Cookies are small pieces of data stored in the user’s browser by a website.
+Purpose: Used to store user information such as login session, preferences, and tracking data.
+Working: Server sends cookies → Browser stores them → Browser sends them back with future requests.
+Security Risks of Cookies
+
+Session Hijacking: If cookies are stolen, attackers can access user accounts.
+Cross-Site Scripting (XSS): Malicious scripts can read cookies and send them to attackers.
+Man-in-the-Middle Attack: Cookies can be intercepted if not encrypted (no HTTPS).
+Privacy Issues: Cookies can track user behavior across websites.
+6. Simplify the following boolean expression using 4 variable K-map F(A, B,C,D)=m(0,3,5,7,8,10,11,12,13,14,15).
+
+7. An increasing number of organizations in industry and business sectors adopt" cloud computing. List 5 key enabling technologies of cloud computing.
+Key Enabling Technologies of Cloud Computing
+Virtualization: Allows multiple virtual machines (VMs) to run on a single physical server.
+Distributed Computing: Uses multiple interconnected systems to share resources and process data.
+High-Speed Internet / Networking: Provides fast and reliable connectivity to access cloud services.
+Service-Oriented Architecture (SOA): Enables services to communicate and work together over the network.
+Data Centers: Large-scale infrastructure with servers and storage to host cloud services.
+8. You have been hired as a Cloud Data Engineer to design a big data analytes pipeline for an e-commerce company. The company needs to: Ingest millions of real-time web server logs, Store and manage petabytes of raw and structured data, Process data for batch and stream analytics, Provide near real-time product recommendations, Run machine learning models at scale,
+Big Data Analytics Pipeline for an E-commerce Company
+
+Recommended Cloud Data Pipeline:
+
+Data Ingestion Layer: Use Apache Kafka / Amazon Kinesis to ingest millions of real-time web server logs.
+Storage Layer: Use Data Lake in Amazon S3 / Google Cloud Storage / Azure Data Lake to store petabytes of raw and structured data.
+Data Processing Layer: Use Apache Spark for batch processing and Spark Streaming / Apache Flink for stream analytics.
+Data Warehouse Layer: Use BigQuery / Snowflake / Amazon Redshift for structured analytics and reporting.
+Recommendation Engine: Use real-time analytics + ML models to provide near real-time product recommendations.
+Machine Learning Layer: Use SageMaker / Vertex AI / Azure ML to train and deploy ML models at scale.
+Orchestration Layer: Use Apache Airflow for workflow scheduling and pipeline automation.
+Visualization Layer: Use Power BI / Tableau / Looker to create dashboards and business reports.
+How the Pipeline Works:
+
+Web server logs are collected continuously through Kafka/Kinesis.
+Raw data is stored in a Data Lake.
+Stream data is processed for instant insights and recommendations.
+Batch data is processed for daily/weekly analysis.
+Processed data is stored in a Data Warehouse.
+ML models analyze customer behavior and generate product recommendations.
+Why this Design is Suitable:
+
+Scalable: Can handle millions of logs and petabytes of data.
+Fault Tolerant: Cloud services provide reliability and backup.
+Flexible: Supports both structured and unstructured data.
+Real-Time + Batch Support: Suitable for both streaming and offline analytics.
+ML Ready: Easy to train and deploy recommendation models.
+9. From the following Hadoop ecosystem components:
+MapReduce, HDFS, YARN, HBase, ZooKeeper, Pig, Hive, Mahout, Chukwa, Cassandra, Avro, Oozie, Flume, Sqoop
+Identify five components from the list that you would use to design this pipeline. Justify the role of each chosen component in this scenario, focusing on its functionality.
+Selected Hadoop Components for Big Data Pipeline
+
+1. HDFS (Hadoop Distributed File System)
+
+Used to store massive volumes of data (petabytes).
+Provides distributed and fault-tolerant storage.
+2. YARN (Yet Another Resource Negotiator)
+
+Manages cluster resources and schedules jobs.
+Ensures efficient execution of multiple applications.
+3. MapReduce
+
+Used for batch data processing.
+Processes large datasets in parallel across nodes.
+4. Hive
+
+Provides SQL-like interface for querying big data.
+Useful for data analysis and reporting.
+5. Flume
+
+Used for real-time data ingestion (e.g., web server logs).
+Efficiently collects and transfers streaming data to HDFS.
+These components together support data ingestion, storage, processing, resource management, and analytics for a scalable big data pipeline.
+10. Explain the role of CSS Media Queries and the Viewport Meta Tag in creating responsive applications. What is the "Mobile-First" approach?
+Responsive Design: Media Queries, Viewport & Mobile-First
+
+CSS Media Queries (Role):
+
+Used to apply different styles based on screen size, resolution, or device type.
+Helps create responsive layouts for mobile, tablet, and desktop.
+Example: @media (max-width: 768px) → apply styles for small screens.
+Viewport Meta Tag (Role):
+
+Controls how a web page is displayed on mobile devices.
+Ensures proper scaling and layout on different screen sizes.
+Example: <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+Mobile-First Approach:
+
+Design the website first for mobile devices, then enhance for larger screens.
+Uses min-width media queries to add features for tablets and desktops.
+Benefits: better performance, simpler design, and improved user experience on mobile.
+11. A bank's internal audit reveals that several employees share a single "Superuser" password to update customer accounts. Furthermore, the bank's policy requires daily backups, but the audit shows backups are only being done weekly.
+i. Identify the Policy violation regarding account access. the backup schedule.
+ii. Explain the Compliance failure regarding the backup schedule.
+i. Policy Violations
+
+Account Access Violation: Sharing a single Superuser password among multiple employees violates security policy (no accountability and poor access control).
+Backup Schedule Violation: Policy requires daily backups, but the system performs only weekly backups.
+ii. Compliance Failure (Backup Schedule)
+
+Policy Non-Compliance: The organization is not following its defined backup policy.
+Data Loss Risk: Weekly backups can result in losing up to 7 days of data.
+Business Continuity Risk: In case of failure, recovery will not be up-to-date.
+Audit & Legal Risk: Non-compliance may lead to penalties, audit failure, or legal issues.
+12. A machine produces defective items at a rate of 25% IT items are selected, what is the probability that at least one item is defective?
+Given:
+Defective rate = 25% = 0.25
+Non-defective = 75% = 0.75
+Number of items selected = 2
+Find: Probability that at least one item is defective
+P(at least one defective) = 1 − P(none defective)
+Step 2: Probability of no defective
+= 0.75 × 0.75 = 0.5625
+So we find,
+= 1 − 0.5625 = 0.4375
+Final Answer:
+Probability = 0.4375 (or 43.75%)
+13. At a bank's annual maintenance engineering conference, there are 10 engineers a room. If every engineer shakes hands with every other engineer exactly unce what is the total number of handshakes that take place?
+Given:
+
+Total engineers, n = 10
+Each engineer shakes hands with every other engineer once
+Formula:
+
+Total handshakes = nc2
+Calculation:
+
+= 10 C 2
+=(10*9)/(1*2)
+= 45
+Total handshakes = 45

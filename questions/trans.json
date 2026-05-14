@@ -1,0 +1,452 @@
+[
+  {
+    "id": "trans_001",
+    "question": "What is a compiler?",
+    "code": null,
+    "options": ["A program that translates source code into machine code", "A text editor", "A database tool", "A browser"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A compiler translates source code into machine code or object code."
+  },
+  {
+    "id": "trans_002",
+    "question": "What is an interpreter?",
+    "code": null,
+    "options": ["A program that translates and executes code line by line", "A file compressor", "A compiler output", "An operating system"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An interpreter translates and executes code step by step."
+  },
+  {
+    "id": "trans_003",
+    "question": "What is an assembler?",
+    "code": null,
+    "options": ["A translator for assembly language", "A web server", "A text editor", "A debugging tool"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An assembler converts assembly language into machine code."
+  },
+  {
+    "id": "trans_004",
+    "question": "Which language is closest to machine language?",
+    "code": null,
+    "options": ["Assembly language", "Python", "Java", "C#"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Assembly language is close to machine language."
+  },
+  {
+    "id": "trans_005",
+    "question": "What does a compiler usually do before execution?",
+    "code": null,
+    "options": ["Translates the whole program first", "Executes each line immediately", "Deletes syntax errors automatically", "Runs without source code"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A compiler translates the entire source program before execution."
+  },
+  {
+    "id": "trans_006",
+    "question": "What does an interpreter usually do?",
+    "code": null,
+    "options": ["Translates line by line during execution", "Produces object code only", "Works offline only", "Compiles hardware"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An interpreter translates and executes one statement at a time."
+  },
+  {
+    "id": "trans_007",
+    "question": "Which is a benefit of a compiler?",
+    "code": null,
+    "options": ["Faster execution after compilation", "No syntax checking", "No object code", "Line-by-line translation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Compiled programs typically run faster after translation."
+  },
+  {
+    "id": "trans_008",
+    "question": "Which is a benefit of an interpreter?",
+    "code": null,
+    "options": ["Easy debugging", "Faster final execution", "No translation needed", "Generates hardware"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Interpreters allow easier step-by-step debugging."
+  },
+  {
+    "id": "trans_009",
+    "question": "What is object code?",
+    "code": null,
+    "options": ["Output of compilation", "Source program text", "A runtime error", "A debugger"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Object code is the result of compiling source code."
+  },
+  {
+    "id": "trans_010",
+    "question": "What is source code?",
+    "code": null,
+    "options": ["Human-readable program text", "Machine binary only", "A hardware circuit", "A translated file"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Source code is the human-readable program written by programmers."
+  },
+  {
+    "id": "trans_011",
+    "question": "Which translator converts high-level language to machine code?",
+    "code": null,
+    "options": ["Compiler", "Assembler", "Linker", "Loader"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A compiler converts high-level source to lower-level code."
+  },
+  {
+    "id": "trans_012",
+    "question": "Which translator converts assembly language to machine code?",
+    "code": null,
+    "options": ["Assembler", "Compiler", "Interpreter", "Debugger"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An assembler translates assembly language into machine code."
+  },
+  {
+    "id": "trans_013",
+    "question": "Which translator executes code without producing a full object file?",
+    "code": null,
+    "options": ["Interpreter", "Compiler", "Assembler", "Linker"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An interpreter executes code directly during translation."
+  },
+  {
+    "id": "trans_014",
+    "question": "What is the main difference between compiler and interpreter?",
+    "code": null,
+    "options": ["Compiler translates all at once; interpreter line by line", "Both work exactly the same", "Interpreter creates object code only", "Compiler runs source code directly"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Compilers translate the whole program, while interpreters translate step by step."
+  },
+  {
+    "id": "trans_015",
+    "question": "Which one usually reports errors after compilation?",
+    "code": null,
+    "options": ["Compiler", "Interpreter", "Assembler", "Loader"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A compiler reports errors after analyzing the program."
+  },
+  {
+    "id": "trans_016",
+    "question": "Which one can stop at the first error during execution?",
+    "code": null,
+    "options": ["Interpreter", "Compiler", "Linker", "Editor"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Interpreters often stop when they encounter an error in a line."
+  },
+  {
+    "id": "trans_017",
+    "question": "What is the output of a compiler called before linking?",
+    "code": null,
+    "options": ["Object file", "Source file", "Header file", "Script file"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The compiler typically produces an object file before linking."
+  },
+  {
+    "id": "trans_018",
+    "question": "What does a linker do?",
+    "code": null,
+    "options": ["Combines object files and libraries", "Translates assembly to source", "Runs program line by line", "Edits code style"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A linker combines object code and libraries into an executable."
+  },
+  {
+    "id": "trans_019",
+    "question": "What does a loader do?",
+    "code": null,
+    "options": ["Loads executable into memory", "Writes source code", "Translates assembly", "Formats disk"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A loader places the executable into memory for execution."
+  },
+  {
+    "id": "trans_020",
+    "question": "Which stage comes after compilation in many systems?",
+    "code": null,
+    "options": ["Linking", "Editing", "Debugging only", "Parsing only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Linking often follows compilation."
+  },
+  {
+    "id": "trans_021",
+    "question": "Which phase checks syntax structure of source code?",
+    "code": null,
+    "options": ["Parsing", "Execution", "Loading", "Linking"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Parsing analyzes grammatical structure and syntax."
+  },
+  {
+    "id": "trans_022",
+    "question": "What is lexical analysis?",
+    "code": null,
+    "options": ["Breaking text into tokens", "Running the program", "Combining files", "Allocating memory"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Lexical analysis converts source text into tokens."
+  },
+  {
+    "id": "trans_023",
+    "question": "What are tokens in compiler design?",
+    "code": null,
+    "options": ["Small meaningful units of code", "Memory blocks", "Error messages", "Libraries"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Tokens are keywords, identifiers, operators, and literals."
+  },
+  {
+    "id": "trans_024",
+    "question": "Which is a token example?",
+    "code": null,
+    "options": ["if", "main", "+", "All of the above"],
+    "answer": 3,
+    "difficulty": "easy",
+    "explanation": "Keywords, identifiers, and operators can all be tokens."
+  },
+  {
+    "id": "trans_025",
+    "question": "What does syntax analysis do?",
+    "code": null,
+    "options": ["Checks grammar rules", "Optimizes machine code", "Loads files", "Runs programs"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Syntax analysis checks whether the token sequence follows grammar rules."
+  },
+  {
+    "id": "trans_026",
+    "question": "What does semantic analysis check?",
+    "code": null,
+    "options": ["Meaning and type consistency", "Keyboard input", "Disk size", "Color usage"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Semantic analysis validates meaning, types, and declarations."
+  },
+  {
+    "id": "trans_027",
+    "question": "What is code optimization?",
+    "code": null,
+    "options": ["Improving code efficiency", "Breaking code into tokens", "Saving files", "Printing errors"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Optimization improves performance or reduces resource usage."
+  },
+  {
+    "id": "trans_028",
+    "question": "Which translator is usually used with machine code generation?",
+    "code": null,
+    "options": ["Compiler", "Text editor", "Browser", "Spreadsheet"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Compilers generate machine or intermediate code."
+  },
+  {
+    "id": "trans_029",
+    "question": "Which language is usually compiled?",
+    "code": null,
+    "options": ["C", "HTML", "CSS", "SQL"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "C is typically compiled to machine code."
+  },
+  {
+    "id": "trans_030",
+    "question": "Which language is often interpreted?",
+    "code": null,
+    "options": ["Python", "Assembly", "Machine code", "Binary"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Python is commonly interpreted, though implementations can vary."
+  },
+  {
+    "id": "trans_031",
+    "question": "What is the role of a preprocessor?",
+    "code": null,
+    "options": ["Handles directives before compilation", "Runs the program", "Links object files", "Loads memory"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A preprocessor processes directives like include and macro expansion."
+  },
+  {
+    "id": "trans_032",
+    "question": "What is a macro in preprocessing?",
+    "code": null,
+    "options": ["A replacement rule", "A machine instruction", "A library file", "A runtime error"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Macros are text substitution rules used by preprocessors."
+  },
+  {
+    "id": "trans_033",
+    "question": "What is the use of a symbol table in compilation?",
+    "code": null,
+    "options": ["Stores identifiers and attributes", "Stores CPU registers", "Stores images", "Stores disk sectors"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Symbol tables record variables, functions, and related metadata."
+  },
+  {
+    "id": "trans_034",
+    "question": "What is the purpose of a lexical analyzer?",
+    "code": null,
+    "options": ["Converts characters to tokens", "Executes machine code", "Creates object file", "Merges libraries"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The lexical analyzer breaks source text into tokens."
+  },
+  {
+    "id": "trans_035",
+    "question": "What does a parser produce?",
+    "code": null,
+    "options": ["Parse tree / syntax tree", "Executable file", "Driver file", "Source comment"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A parser builds a parse tree or syntax tree."
+  },
+  {
+    "id": "trans_036",
+    "question": "What is a syntax error?",
+    "code": null,
+    "options": ["Violation of grammar rules", "Hardware failure", "Network issue", "Disk error"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Syntax errors occur when code violates language grammar."
+  },
+  {
+    "id": "trans_037",
+    "question": "What is a semantic error?",
+    "code": null,
+    "options": ["Code is grammatically correct but logically wrong", "Code does not compile at all", "No tokens found", "Machine code only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Semantic errors relate to meaning or type inconsistencies."
+  },
+  {
+    "id": "trans_038",
+    "question": "What is the purpose of error handling in translators?",
+    "code": null,
+    "options": ["Report and recover from errors", "Increase screen brightness", "Change hardware", "Delete tokens"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Translators detect, report, and sometimes recover from errors."
+  },
+  {
+    "id": "trans_039",
+    "question": "Which stage removes unnecessary code while preserving meaning?",
+    "code": null,
+    "options": ["Optimization", "Lexical analysis", "Linking", "Loading"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Optimization may remove redundant instructions."
+  },
+  {
+    "id": "trans_040",
+    "question": "What is cross compilation?",
+    "code": null,
+    "options": ["Compiling on one platform for another", "Running code twice", "Compiling without source", "Interpreting by hand"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Cross compilation targets a different platform than the host."
+  },
+  {
+    "id": "trans_041",
+    "question": "What is a bootstrapping compiler?",
+    "code": null,
+    "options": ["Compiler written in its own language", "Compiler for boot sector only", "A debugger", "A loader only"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Bootstrapping means the compiler is implemented using the language it compiles."
+  },
+  {
+    "id": "trans_042",
+    "question": "Which is a phase of a compiler?",
+    "code": null,
+    "options": ["Lexical analysis", "Defragmentation", "Spooling", "Paging"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Lexical analysis is a compiler phase."
+  },
+  {
+    "id": "trans_043",
+    "question": "Which is another compiler phase?",
+    "code": null,
+    "options": ["Code generation", "Routing", "Mounting", "Caching"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Code generation transforms intermediate code to target code."
+  },
+  {
+    "id": "trans_044",
+    "question": "What is intermediate code?",
+    "code": null,
+    "options": ["Representation between source and target code", "Final executable only", "Assembly source only", "Header file"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Intermediate code is an internal form used during translation."
+  },
+  {
+    "id": "trans_045",
+    "question": "What is the advantage of intermediate code?",
+    "code": null,
+    "options": ["Portability and optimization", "More syntax errors", "Less clarity", "No translation"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Intermediate code helps portability and optimization."
+  },
+  {
+    "id": "trans_046",
+    "question": "What is a syntax tree also called?",
+    "code": null,
+    "options": ["Abstract syntax tree", "Binary tree only", "Heap tree", "Segment tree"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A syntax tree is commonly called an abstract syntax tree (AST)."
+  },
+  {
+    "id": "trans_047",
+    "question": "What is the purpose of a compiler front end?",
+    "code": null,
+    "options": ["Analyze source program", "Load executable", "Run machine code", "Manage memory pages"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The front end performs analysis and produces an intermediate form."
+  },
+  {
+    "id": "trans_048",
+    "question": "What is the purpose of a compiler back end?",
+    "code": null,
+    "options": ["Generate target code", "Read user input", "Store variables", "Execute shell commands"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The back end turns intermediate form into target machine code."
+  },
+  {
+    "id": "trans_049",
+    "question": "Which tool is used to debug compiled programs?",
+    "code": null,
+    "options": ["Debugger", "Linker", "Assembler", "Loader"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A debugger helps inspect and troubleshoot programs."
+  },
+  {
+    "id": "trans_050",
+    "question": "What is a language translator in computer science?",
+    "code": null,
+    "options": ["A program that converts one programming language form to another", "A web browser", "A CPU core", "A storage device"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Language translators convert source programs into another form for execution."
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "virt_001",
+    "question": "A Type 1 hypervisor runs on:",
+    "code": null,
+    "options": ["Bare metal hardware", "Top of a host OS", "Inside a container", "BIOS only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Type 1 hypervisors run directly on hardware."
+  },
+  {
+    "id": "virt_002",
+    "question": "A Type 2 hypervisor runs:",
+    "code": null,
+    "options": ["Directly on hardware", "On a host operating system", "Only in firmware", "Only in cloud"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Type 2 hypervisors run as applications on a host OS."
+  },
+  {
+    "id": "virt_003",
+    "question": "Which is a Type 1 hypervisor?",
+    "code": null,
+    "options": ["VMware ESXi", "VirtualBox", "VMware Workstation", "Parallels Desktop"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ESXi is a bare-metal hypervisor."
+  },
+  {
+    "id": "virt_004",
+    "question": "Which is a Type 2 hypervisor?",
+    "code": null,
+    "options": ["VirtualBox", "Hyper-V", "Xen", "KVM"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "VirtualBox runs on a host OS."
+  },
+  {
+    "id": "virt_005",
+    "question": "VM snapshots are used to:",
+    "code": null,
+    "options": ["Increase CPU", "Capture VM state", "Encrypt disks", "Resize network"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Snapshots save VM state for rollback."
+  },
+  {
+    "id": "virt_006",
+    "question": "Live migration means:",
+    "code": null,
+    "options": ["Moving VMs with downtime", "Moving VMs without downtime", "Deleting VMs", "Cloning storage"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "Live migration moves a VM while it keeps running."
+  },
+  {
+    "id": "virt_007",
+    "question": "Which feature allows multiple VMs to share a physical CPU?",
+    "code": null,
+    "options": ["Time slicing", "Overclocking", "RAID", "Mirroring"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hypervisors time-slice CPU across VMs."
+  },
+  {
+    "id": "virt_008",
+    "question": "Which virtualization uses lightweight isolated processes?",
+    "code": null,
+    "options": ["Containers", "Full VMs", "Bare metal only", "BIOS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers share the host kernel."
+  },
+  {
+    "id": "virt_009",
+    "question": "Which is a benefit of virtualization?",
+    "code": null,
+    "options": ["Reduced hardware utilization", "Resource isolation", "No backups", "No monitoring"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Virtualization provides isolation and consolidation."
+  },
+  {
+    "id": "virt_010",
+    "question": "Which term describes running multiple OS instances on one host?",
+    "code": null,
+    "options": ["Virtualization", "Compilation", "Routing", "Caching"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtualization enables multiple OS instances on one host."
+  },
+  {
+    "id": "virt_011",
+    "question": "Hypervisor is also known as:",
+    "code": null,
+    "options": ["Virtual Machine Monitor", "Kernel Module", "Package Manager", "Bootloader"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hypervisor is a Virtual Machine Monitor (VMM)."
+  },
+  {
+    "id": "virt_012",
+    "question": "Which virtualization runs multiple OS kernels?",
+    "code": null,
+    "options": ["Full virtualization", "Containerization", "Process isolation", "Chroot"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Full virtualization runs separate guest kernels."
+  },
+  {
+    "id": "virt_013",
+    "question": "Which virtualization uses the host kernel?",
+    "code": null,
+    "options": ["Containerization", "Full virtualization", "Emulation", "BIOS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers share the host kernel."
+  },
+  {
+    "id": "virt_014",
+    "question": "Which mode allows a hypervisor to run unmodified OS?",
+    "code": null,
+    "options": ["Hardware-assisted virtualization", "Paravirtualization only", "BIOS emulation", "No virtualization"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "CPU virtualization extensions support unmodified guests."
+  },
+  {
+    "id": "virt_015",
+    "question": "Which is a hypervisor for Linux integrated in kernel?",
+    "code": null,
+    "options": ["KVM", "XenServer", "VirtualBox", "VMware Fusion"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "KVM is built into the Linux kernel."
+  },
+  {
+    "id": "virt_016",
+    "question": "Which file format is common for VM disks?",
+    "code": null,
+    "options": ["VMDK", "MP4", "ISO", "CSV"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "VMDK is a common VM disk format."
+  },
+  {
+    "id": "virt_017",
+    "question": "Which is a cloud virtualization benefit?",
+    "code": null,
+    "options": ["Elastic scaling", "Fixed capacity", "Manual provisioning only", "No automation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtualization enables elastic scaling."
+  },
+  {
+    "id": "virt_018",
+    "question": "VM sprawl refers to:",
+    "code": null,
+    "options": ["Uncontrolled VM growth", "CPU overclocking", "Disk encryption", "Network routing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "VM sprawl is excessive unmanaged VM creation."
+  },
+  {
+    "id": "virt_019",
+    "question": "Which approach runs applications in isolated user space?",
+    "code": null,
+    "options": ["Containers", "Full VMs", "Bare metal", "Firmware"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers isolate apps at the OS level."
+  },
+  {
+    "id": "virt_020",
+    "question": "Which virtualization feature prevents noisy neighbor issues?",
+    "code": null,
+    "options": ["Resource limits", "Overcommit only", "No scheduling", "No quotas"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Limits and reservations ensure fair resource allocation."
+  },
+  {
+    "id": "virt_021",
+    "question": "A VM template is used to:",
+    "code": null,
+    "options": ["Quickly create standardized VMs", "Encrypt storage", "Route traffic", "Audit logs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Templates allow fast, consistent VM creation."
+  },
+  {
+    "id": "virt_022",
+    "question": "Which is a common container runtime?",
+    "code": null,
+    "options": ["containerd", "VMware ESXi", "Hyper-V", "Xen"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "containerd is a standard container runtime."
+  },
+  {
+    "id": "virt_023",
+    "question": "What does an image in containers represent?",
+    "code": null,
+    "options": ["Read-only template", "Running instance", "Network config", "CPU scheduling"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Images are immutable templates for containers."
+  },
+  {
+    "id": "virt_024",
+    "question": "What is a container in runtime?",
+    "code": null,
+    "options": ["A running instance of an image", "A VM disk", "A kernel module", "A hypervisor"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A container is a running image instance."
+  },
+  {
+    "id": "virt_025",
+    "question": "Which tool is used for container orchestration?",
+    "code": null,
+    "options": ["Kubernetes", "VMware ESXi", "Hyper-V", "BIOS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Kubernetes orchestrates containers."
+  },
+  {
+    "id": "virt_026",
+    "question": "Which feature allows multiple VMs to share physical memory safely?",
+    "code": null,
+    "options": ["Memory ballooning", "Disk striping", "CPU pinning only", "No sharing"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Ballooning reclaims memory from idle VMs."
+  },
+  {
+    "id": "virt_027",
+    "question": "What is overcommit in virtualization?",
+    "code": null,
+    "options": ["Allocating more resources than physically available", "Allocating less resources", "Disabling scheduling", "Pausing VMs"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overcommit assumes not all VMs use peak resources simultaneously."
+  },
+  {
+    "id": "virt_028",
+    "question": "Which is a benefit of paravirtualization?",
+    "code": null,
+    "options": ["Better performance with guest cooperation", "No guest changes", "Runs without hypervisor", "No isolation"],
+    "answer": 0,
+    "difficulty": "hard",
+    "explanation": "Paravirtualization improves performance but needs guest support."
+  },
+  {
+    "id": "virt_029",
+    "question": "Which is a downside of full virtualization?",
+    "code": null,
+    "options": ["Performance overhead", "No isolation", "No compatibility", "No scheduling"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Full virtualization introduces overhead due to emulation."
+  },
+  {
+    "id": "virt_030",
+    "question": "Which term describes sharing a host kernel across containers?",
+    "code": null,
+    "options": ["OS-level virtualization", "Hardware virtualization", "Emulation", "Bare metal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers provide OS-level virtualization."
+  },
+  {
+    "id": "virt_031",
+    "question": "Which tool is used to build container images?",
+    "code": null,
+    "options": ["Docker", "ESXi", "Hyper-V", "Xen"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Docker builds container images."
+  },
+  {
+    "id": "virt_032",
+    "question": "Which feature improves VM I/O performance by using guest drivers?",
+    "code": null,
+    "options": ["Paravirtualized drivers", "BIOS only", "No drivers", "Disk encryption"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Paravirtualized drivers reduce emulation overhead."
+  },
+  {
+    "id": "virt_033",
+    "question": "Which virtualization runs one OS inside another OS?",
+    "code": null,
+    "options": ["Hosted virtualization", "Bare-metal virtualization", "Firmware", "None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hosted (Type 2) virtualization runs on a host OS."
+  },
+  {
+    "id": "virt_034",
+    "question": "Which feature allows VMs to be duplicated quickly?",
+    "code": null,
+    "options": ["Cloning", "Routing", "Sharding", "Caching"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Cloning copies VM configuration and disks."
+  },
+  {
+    "id": "virt_035",
+    "question": "Which technology allows multiple OS instances on one CPU?",
+    "code": null,
+    "options": ["Virtualization", "Compilation", "Routing", "DNS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtualization enables multiple OS instances."
+  },
+  {
+    "id": "virt_036",
+    "question": "Which storage feature improves VM redundancy?",
+    "code": null,
+    "options": ["RAID", "Overclocking", "Defragmentation", "Swap"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "RAID improves redundancy and fault tolerance."
+  },
+  {
+    "id": "virt_037",
+    "question": "Which interface allows VMs to communicate with the host?",
+    "code": null,
+    "options": ["Virtual NIC", "GPU shader", "BIOS", "Kernel panic"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtual NICs connect VMs to networks."
+  },
+  {
+    "id": "virt_038",
+    "question": "Which virtualization minimizes hardware dependencies?",
+    "code": null,
+    "options": ["Hardware abstraction", "No abstraction", "Direct mapping", "Firmware only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Hypervisors abstract hardware for portability."
+  },
+  {
+    "id": "virt_039",
+    "question": "Which is a common VM management tool?",
+    "code": null,
+    "options": ["vCenter", "Photoshop", "Excel", "Notepad"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "vCenter manages VMware environments."
+  },
+  {
+    "id": "virt_040",
+    "question": "Which virtualization approach uses hardware support like VT-x?",
+    "code": null,
+    "options": ["Hardware-assisted virtualization", "Emulation only", "Containerization", "No virtualization"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "VT-x and AMD-V accelerate virtualization."
+  },
+  {
+    "id": "virt_041",
+    "question": "Which of the following is a container advantage?",
+    "code": null,
+    "options": ["Fast startup", "Runs separate kernels", "Needs more RAM", "No isolation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Containers start quickly because they share the host kernel."
+  },
+  {
+    "id": "virt_042",
+    "question": "Which virtualization keeps guest OS unmodified?",
+    "code": null,
+    "options": ["Full virtualization", "Paravirtualization", "OS-level virtualization", "None"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Full virtualization runs unmodified guests."
+  },
+  {
+    "id": "virt_043",
+    "question": "Which technology is used for CPU virtualization?",
+    "code": null,
+    "options": ["VT-x/AMD-V", "RAID", "NAT", "DNS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Intel VT-x and AMD-V support virtualization."
+  },
+  {
+    "id": "virt_044",
+    "question": "Which is a storage virtualization benefit?",
+    "code": null,
+    "options": ["Pooling storage", "Reducing encryption", "Disabling backups", "Removing RAID"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Virtualization can pool storage for flexibility."
+  },
+  {
+    "id": "virt_045",
+    "question": "Which is a network virtualization example?",
+    "code": null,
+    "options": ["Virtual switch", "Physical hub", "Coax cable", "BIOS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtual switches connect virtual network interfaces."
+  },
+  {
+    "id": "virt_046",
+    "question": "Which tool is often used for infrastructure as code?",
+    "code": null,
+    "options": ["Terraform", "Photoshop", "Chrome", "Word"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Terraform provisions infrastructure in code."
+  },
+  {
+    "id": "virt_047",
+    "question": "Which cloud model provides virtualized servers?",
+    "code": null,
+    "options": ["IaaS", "SaaS", "PaaS", "FaaS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "IaaS provides virtualized compute resources."
+  },
+  {
+    "id": "virt_048",
+    "question": "Which term describes moving workloads between hosts automatically?",
+    "code": null,
+    "options": ["Workload balancing", "Defragmentation", "Encryption", "Logging"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Schedulers balance workloads across hosts."
+  },
+  {
+    "id": "virt_049",
+    "question": "Which feature helps isolate VM failures?",
+    "code": null,
+    "options": ["Fault isolation", "Resource starvation", "Overcommit", "No scheduling"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Isolation prevents one VM from affecting others."
+  },
+  {
+    "id": "virt_050",
+    "question": "Which is a drawback of containers compared to VMs?",
+    "code": null,
+    "options": ["Weaker isolation", "Slower startup", "Higher overhead", "No portability"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Containers share the kernel, which can reduce isolation."
+  }
+]

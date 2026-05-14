@@ -1,0 +1,452 @@
+[
+  {
+    "id": "gk_001",
+    "question": "What is the capital of Bangladesh?",
+    "code": null,
+    "options": ["Dhaka", "Chattogram", "Khulna", "Rajshahi"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Dhaka is the capital of Bangladesh."
+  },
+  {
+    "id": "gk_002",
+    "question": "Which is the national flower of Bangladesh?",
+    "code": null,
+    "options": ["Water lily", "Rose", "Sunflower", "Marigold"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Water lily is the national flower."
+  },
+  {
+    "id": "gk_003",
+    "question": "Which is the national bird of Bangladesh?",
+    "code": null,
+    "options": ["Doyel", "Peacock", "Crow", "Sparrow"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Doyel (Oriental magpie robin) is the national bird."
+  },
+  {
+    "id": "gk_004",
+    "question": "Which is the national animal of Bangladesh?",
+    "code": null,
+    "options": ["Royal Bengal Tiger", "Elephant", "Deer", "Horse"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Royal Bengal Tiger is the national animal."
+  },
+  {
+    "id": "gk_005",
+    "question": "Which is the national fruit of Bangladesh?",
+    "code": null,
+    "options": ["Jackfruit", "Mango", "Banana", "Litchi"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Jackfruit is the national fruit."
+  },
+  {
+    "id": "gk_006",
+    "question": "Which is the national fish of Bangladesh?",
+    "code": null,
+    "options": ["Hilsa", "Rui", "Katla", "Tengra"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Hilsa is the national fish."
+  },
+  {
+    "id": "gk_007",
+    "question": "Bangladesh became independent in:",
+    "code": null,
+    "options": ["1947", "1952", "1971", "1975"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "Bangladesh became independent in 1971."
+  },
+  {
+    "id": "gk_008",
+    "question": "Bangladesh celebrates Independence Day on:",
+    "code": null,
+    "options": ["16 December", "21 February", "26 March", "14 April"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "26 March is Independence Day."
+  },
+  {
+    "id": "gk_009",
+    "question": "Victory Day is celebrated on:",
+    "code": null,
+    "options": ["16 December", "26 March", "21 February", "1 May"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "16 December is Victory Day."
+  },
+  {
+    "id": "gk_010",
+    "question": "International Mother Language Day is observed on:",
+    "code": null,
+    "options": ["21 February", "26 March", "16 December", "14 April"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "21 February is International Mother Language Day."
+  },
+  {
+    "id": "gk_011",
+    "question": "Who is the current head of government of Bangladesh?",
+    "code": null,
+    "options": ["Prime Minister", "President", "Chief Justice", "Speaker"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The Prime Minister is the head of government."
+  },
+  {
+    "id": "gk_012",
+    "question": "Who is the head of state of Bangladesh?",
+    "code": null,
+    "options": ["President", "Prime Minister", "Speaker", "Mayor"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The President is the head of state."
+  },
+  {
+    "id": "gk_013",
+    "question": "Which river is the largest in Bangladesh?",
+    "code": null,
+    "options": ["Padma", "Buriganga", "Meghna", "Jamuna"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "The Meghna is among the largest river systems in Bangladesh."
+  },
+  {
+    "id": "gk_014",
+    "question": "Which is the longest river in Bangladesh?",
+    "code": null,
+    "options": ["Jamuna", "Padma", "Meghna", "Karnaphuli"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Jamuna is commonly considered the longest main river channel in Bangladesh."
+  },
+  {
+    "id": "gk_015",
+    "question": "What is the currency of Bangladesh?",
+    "code": null,
+    "options": ["Taka", "Rupee", "Dollar", "Riyal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The currency of Bangladesh is Taka."
+  },
+  {
+    "id": "gk_016",
+    "question": "Which is the largest ocean in the world?",
+    "code": null,
+    "options": ["Indian", "Atlantic", "Pacific", "Arctic"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "The Pacific Ocean is the largest."
+  },
+  {
+    "id": "gk_017",
+    "question": "Which is the largest continent?",
+    "code": null,
+    "options": ["Asia", "Africa", "Europe", "Australia"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Asia is the largest continent."
+  },
+  {
+    "id": "gk_018",
+    "question": "Which planet is known as the Red Planet?",
+    "code": null,
+    "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Mars is called the Red Planet."
+  },
+  {
+    "id": "gk_019",
+    "question": "Which planet is closest to the Sun?",
+    "code": null,
+    "options": ["Mercury", "Venus", "Earth", "Mars"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Mercury is closest to the Sun."
+  },
+  {
+    "id": "gk_020",
+    "question": "How many days are in a leap year?",
+    "code": null,
+    "options": ["365", "366", "364", "360"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Leap years have 366 days."
+  },
+  {
+    "id": "gk_021",
+    "question": "Which month has 28 days in a common year?",
+    "code": null,
+    "options": ["February", "April", "June", "November"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "February has 28 days in a common year."
+  },
+  {
+    "id": "gk_022",
+    "question": "Who wrote the national anthem of Bangladesh?",
+    "code": null,
+    "options": ["Rabindranath Tagore", "Kazi Nazrul Islam", "Lalon", "Jasim Uddin"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Rabindranath Tagore wrote the national anthem."
+  },
+  {
+    "id": "gk_023",
+    "question": "Which is the smallest prime number?",
+    "code": null,
+    "options": ["1", "2", "3", "5"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "2 is the smallest prime number."
+  },
+  {
+    "id": "gk_024",
+    "question": "What is the largest two-digit number?",
+    "code": null,
+    "options": ["90", "98", "99", "100"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "99 is the largest two-digit number."
+  },
+  {
+    "id": "gk_025",
+    "question": "Which is the tallest mountain in the world?",
+    "code": null,
+    "options": ["K2", "Everest", "Kangchenjunga", "Lhotse"],
+    "answer": 1,
+    "difficulty": "easy",
+    "explanation": "Mount Everest is the tallest mountain."
+  },
+  {
+    "id": "gk_026",
+    "question": "Which country hosted the 2024 ICC T20 World Cup with the West Indies?",
+    "code": null,
+    "options": ["USA", "India", "Australia", "England"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The USA co-hosted the 2024 T20 World Cup with the West Indies."
+  },
+  {
+    "id": "gk_027",
+    "question": "Which is the national sport of Bangladesh?",
+    "code": null,
+    "options": ["Kabaddi", "Cricket", "Football", "Hockey"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Kabaddi is the national sport."
+  },
+  {
+    "id": "gk_028",
+    "question": "Which is the largest mammal?",
+    "code": null,
+    "options": ["Blue whale", "Elephant", "Giraffe", "Hippopotamus"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Blue whale is the largest mammal."
+  },
+  {
+    "id": "gk_029",
+    "question": "How many continents are there?",
+    "code": null,
+    "options": ["5", "6", "7", "8"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "There are 7 continents."
+  },
+  {
+    "id": "gk_030",
+    "question": "How many oceans are there?",
+    "code": null,
+    "options": ["3", "4", "5", "6"],
+    "answer": 2,
+    "difficulty": "easy",
+    "explanation": "There are 5 oceans."
+  },
+  {
+    "id": "gk_031",
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "code": null,
+    "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Helium"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Plants absorb carbon dioxide for photosynthesis."
+  },
+  {
+    "id": "gk_032",
+    "question": "Which gas do humans need to breathe?",
+    "code": null,
+    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Humans need oxygen to breathe."
+  },
+  {
+    "id": "gk_033",
+    "question": "Which is the hardest natural substance?",
+    "code": null,
+    "options": ["Diamond", "Gold", "Iron", "Silver"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Diamond is the hardest natural substance."
+  },
+  {
+    "id": "gk_034",
+    "question": "Which is the largest desert in the world?",
+    "code": null,
+    "options": ["Sahara", "Gobi", "Kalahari", "Arabian"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Sahara is the largest hot desert and often cited as the largest desert in school GK contexts."
+  },
+  {
+    "id": "gk_035",
+    "question": "Which is the longest river in the world?",
+    "code": null,
+    "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Nile is commonly cited as the longest river."
+  },
+  {
+    "id": "gk_036",
+    "question": "Which is the largest country by area?",
+    "code": null,
+    "options": ["Russia", "China", "USA", "Canada"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Russia is the largest country by area."
+  },
+  {
+    "id": "gk_037",
+    "question": "Which is the most populous country?",
+    "code": null,
+    "options": ["China", "India", "USA", "Indonesia"],
+    "answer": 1,
+    "difficulty": "medium",
+    "explanation": "India is now the most populous country."
+  },
+  {
+    "id": "gk_038",
+    "question": "Which is the largest organ of the human body?",
+    "code": null,
+    "options": ["Skin", "Heart", "Liver", "Lung"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Skin is the largest organ of the body."
+  },
+  {
+    "id": "gk_039",
+    "question": "How many bones are there in an adult human body?",
+    "code": null,
+    "options": ["206", "205", "201", "210"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "An adult human has 206 bones."
+  },
+  {
+    "id": "gk_040",
+    "question": "Which vitamin is produced by sunlight on skin?",
+    "code": null,
+    "options": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin K"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Sunlight helps the body produce vitamin D."
+  },
+  {
+    "id": "gk_041",
+    "question": "Which city is known as the City of Light?",
+    "code": null,
+    "options": ["Paris", "London", "Tokyo", "Dhaka"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Paris is famously called the City of Light."
+  },
+  {
+    "id": "gk_042",
+    "question": "Which is the national tree of Bangladesh?",
+    "code": null,
+    "options": ["Mango tree", "Banyan tree", "Neem tree", "Jackfruit tree"],
+    "answer": 3,
+    "difficulty": "medium",
+    "explanation": "Jackfruit tree is recognized as the national tree."
+  },
+  {
+    "id": "gk_043",
+    "question": "What is the main source of energy for Earth?",
+    "code": null,
+    "options": ["Sun", "Moon", "Fire", "Wind"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The Sun is Earth's primary energy source."
+  },
+  {
+    "id": "gk_044",
+    "question": "Which festival is known as the festival of lights?",
+    "code": null,
+    "options": ["Diwali", "Eid", "Christmas", "Easter"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Diwali is widely called the festival of lights."
+  },
+  {
+    "id": "gk_045",
+    "question": "Which is the capital of India?",
+    "code": null,
+    "options": ["New Delhi", "Mumbai", "Kolkata", "Chennai"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "New Delhi is the capital of India."
+  },
+  {
+    "id": "gk_046",
+    "question": "Which is the capital of the United States?",
+    "code": null,
+    "options": ["Washington, D.C.", "New York", "Los Angeles", "Chicago"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Washington, D.C. is the capital of the USA."
+  },
+  {
+    "id": "gk_047",
+    "question": "Which is the longest day of the year in the Northern Hemisphere?",
+    "code": null,
+    "options": ["Summer solstice", "Winter solstice", "Equinox", "Leap day"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The summer solstice gives the longest daylight."
+  },
+  {
+    "id": "gk_048",
+    "question": "Which organization is related to the United Nations?",
+    "code": null,
+    "options": ["UNESCO", "NATO", "OPEC", "WTO"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "UNESCO is a specialized agency of the UN."
+  },
+  {
+    "id": "gk_049",
+    "question": "Who invented the light bulb?",
+    "code": null,
+    "options": ["Thomas Edison", "Isaac Newton", "Albert Einstein", "Nikola Tesla"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Thomas Edison is credited with the practical light bulb."
+  },
+  {
+    "id": "gk_050",
+    "question": "Which day is celebrated as World Environment Day?",
+    "code": null,
+    "options": ["5 June", "21 March", "22 April", "1 January"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "World Environment Day is on 5 June."
+  }
+]

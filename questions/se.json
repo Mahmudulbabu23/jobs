@@ -1,0 +1,452 @@
+[
+  {
+    "id": "se_001",
+    "question": "Which is a common SDLC model?",
+    "code": null,
+    "options": ["Waterfall", "QuickSort", "Heap", "DNS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Waterfall is a classic SDLC model."
+  },
+  {
+    "id": "se_002",
+    "question": "Agile emphasizes:",
+    "code": null,
+    "options": ["Iterative development", "No testing", "Fixed scope only", "No customer feedback"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Agile uses iterative delivery and feedback."
+  },
+  {
+    "id": "se_003",
+    "question": "A user story typically includes:",
+    "code": null,
+    "options": ["As a, I want, so that", "Only technical specs", "Only diagrams", "Only test cases"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "User stories capture user need and value."
+  },
+  {
+    "id": "se_004",
+    "question": "A sprint in Scrum is:",
+    "code": null,
+    "options": ["Time-boxed iteration", "Final release", "Bug only phase", "Documentation only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Sprints are short time-boxed iterations."
+  },
+  {
+    "id": "se_005",
+    "question": "Which artifact lists product requirements?",
+    "code": null,
+    "options": ["Product backlog", "Sprint backlog", "Burn-down chart", "Roadmap only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The product backlog contains requirements and features."
+  },
+  {
+    "id": "se_006",
+    "question": "CI stands for:",
+    "code": null,
+    "options": ["Continuous Integration", "Code Isolation", "Compile Instance", "Central Interface"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CI integrates code changes frequently."
+  },
+  {
+    "id": "se_007",
+    "question": "CD stands for:",
+    "code": null,
+    "options": ["Continuous Delivery", "Code Deployment", "Compile Debug", "Central Database"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CD automates delivery or deployment."
+  },
+  {
+    "id": "se_008",
+    "question": "A unit test verifies:",
+    "code": null,
+    "options": ["Single component", "Entire system", "Database only", "Network only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Unit tests focus on small code units."
+  },
+  {
+    "id": "se_009",
+    "question": "Integration testing verifies:",
+    "code": null,
+    "options": ["Interaction between modules", "Single function", "UI only", "Performance only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Integration tests focus on module interactions."
+  },
+  {
+    "id": "se_010",
+    "question": "System testing verifies:",
+    "code": null,
+    "options": ["End-to-end system", "Single class", "Unit only", "None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "System testing validates the whole system."
+  },
+  {
+    "id": "se_011",
+    "question": "Regression testing ensures:",
+    "code": null,
+    "options": ["New changes didn't break existing features", "Only new features work", "Performance improves", "No tests needed"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Regression testing checks for unintended side effects."
+  },
+  {
+    "id": "se_012",
+    "question": "Black-box testing focuses on:",
+    "code": null,
+    "options": ["Inputs and outputs", "Internal code", "Database schema", "Network topology"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Black-box tests observe behavior without code knowledge."
+  },
+  {
+    "id": "se_013",
+    "question": "White-box testing focuses on:",
+    "code": null,
+    "options": ["Internal logic", "UI only", "User stories", "Performance only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "White-box tests use knowledge of internal code."
+  },
+  {
+    "id": "se_014",
+    "question": "A software requirement should be:",
+    "code": null,
+    "options": ["Clear and testable", "Vague", "Unmeasurable", "Optional only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Good requirements are precise and testable."
+  },
+  {
+    "id": "se_015",
+    "question": "SRS stands for:",
+    "code": null,
+    "options": ["Software Requirements Specification", "System Runtime Suite", "Software Release Schedule", "Service Response Standard"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "SRS documents software requirements."
+  },
+  {
+    "id": "se_016",
+    "question": "Which model is best when requirements are unclear?",
+    "code": null,
+    "options": ["Agile", "Waterfall", "V-Model", "Big Bang"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Agile adapts to changing requirements."
+  },
+  {
+    "id": "se_017",
+    "question": "Which phase focuses on defect fixing?",
+    "code": null,
+    "options": ["Maintenance", "Design", "Requirement", "Implementation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Maintenance addresses defects and updates."
+  },
+  {
+    "id": "se_018",
+    "question": "What does code review aim to improve?",
+    "code": null,
+    "options": ["Quality and correctness", "Only speed", "Only UI", "Only storage"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Reviews detect defects and improve quality."
+  },
+  {
+    "id": "se_019",
+    "question": "Technical debt refers to:",
+    "code": null,
+    "options": ["Cost of quick fixes", "Money in bank", "No documentation", "Only bugs"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Shortcuts increase future maintenance costs."
+  },
+  {
+    "id": "se_020",
+    "question": "Which is a common estimation technique?",
+    "code": null,
+    "options": ["Story points", "Random guessing", "None", "Daily standups"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Story points estimate effort in Agile."
+  },
+  {
+    "id": "se_021",
+    "question": "A burn-down chart shows:",
+    "code": null,
+    "options": ["Remaining work over time", "Only defects", "Revenue", "Code coverage"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Burn-down charts track remaining work in a sprint."
+  },
+  {
+    "id": "se_022",
+    "question": "Which is a project risk?",
+    "code": null,
+    "options": ["Scope creep", "Unit test", "Code style", "Linting"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Scope creep is uncontrolled feature expansion."
+  },
+  {
+    "id": "se_023",
+    "question": "Which model pairs development and testing phases?",
+    "code": null,
+    "options": ["V-Model", "Waterfall", "Agile", "Spiral"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "The V-Model maps dev stages to test stages."
+  },
+  {
+    "id": "se_024",
+    "question": "Which model emphasizes risk analysis in cycles?",
+    "code": null,
+    "options": ["Spiral", "Waterfall", "V-Model", "RAD"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Spiral model focuses on risk assessment."
+  },
+  {
+    "id": "se_025",
+    "question": "RAD stands for:",
+    "code": null,
+    "options": ["Rapid Application Development", "Random Access Data", "Resource Allocation Design", "Real-time App Delivery"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "RAD is Rapid Application Development."
+  },
+  {
+    "id": "se_026",
+    "question": "Which model is best for small, well-defined projects?",
+    "code": null,
+    "options": ["Waterfall", "Spiral", "Agile", "Prototype"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Waterfall works well when requirements are stable."
+  },
+  {
+    "id": "se_027",
+    "question": "A prototype is used to:",
+    "code": null,
+    "options": ["Validate requirements", "Deploy final product", "Replace testing", "Avoid documentation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Prototypes help clarify requirements."
+  },
+  {
+    "id": "se_028",
+    "question": "Which metric measures test coverage?",
+    "code": null,
+    "options": ["Percentage of code executed", "Number of commits", "Lines of comments", "Disk usage"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Coverage measures how much code is tested."
+  },
+  {
+    "id": "se_029",
+    "question": "Which metric measures defect density?",
+    "code": null,
+    "options": ["Defects per KLOC", "KLOC per defect", "Coverage", "Velocity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Defect density = defects per thousand lines of code."
+  },
+  {
+    "id": "se_030",
+    "question": "Which artifact defines acceptance criteria?",
+    "code": null,
+    "options": ["User story", "Code review", "Build log", "Class diagram"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "User stories often include acceptance criteria."
+  },
+  {
+    "id": "se_031",
+    "question": "Which practice integrates code frequently?",
+    "code": null,
+    "options": ["Continuous Integration", "Big bang integration", "No integration", "Manual release"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CI integrates changes frequently to reduce risk."
+  },
+  {
+    "id": "se_032",
+    "question": "Which practice automates releases?",
+    "code": null,
+    "options": ["Continuous Delivery", "Manual deployment", "Waterfall", "Spiral"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "CD automates deployment pipelines."
+  },
+  {
+    "id": "se_033",
+    "question": "Which testing is done by end users?",
+    "code": null,
+    "options": ["User Acceptance Testing", "Unit testing", "Integration testing", "System testing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "UAT validates requirements with users."
+  },
+  {
+    "id": "se_034",
+    "question": "Which is a non-functional requirement?",
+    "code": null,
+    "options": ["Performance", "Login", "Signup", "Search"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Performance describes system quality, not a feature."
+  },
+  {
+    "id": "se_035",
+    "question": "Which diagram represents system components and relationships?",
+    "code": null,
+    "options": ["UML component diagram", "Sequence diagram", "Use case", "Class diagram only"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Component diagrams show system components and dependencies."
+  },
+  {
+    "id": "se_036",
+    "question": "Which diagram represents object interactions over time?",
+    "code": null,
+    "options": ["Sequence diagram", "Class diagram", "State diagram", "Component diagram"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Sequence diagrams show interactions over time."
+  },
+  {
+    "id": "se_037",
+    "question": "A use case diagram shows:",
+    "code": null,
+    "options": ["Actors and system interactions", "Database schema", "Algorithm flow", "Network topology"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Use cases describe how actors use the system."
+  },
+  {
+    "id": "se_038",
+    "question": "Which practice ensures code style consistency?",
+    "code": null,
+    "options": ["Linting", "Debugging", "Deployment", "Refactoring only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Linters enforce consistent code style."
+  },
+  {
+    "id": "se_039",
+    "question": "Refactoring is:",
+    "code": null,
+    "options": ["Improving code without changing behavior", "Adding features", "Deleting tests", "Deploying"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Refactoring improves structure without changing behavior."
+  },
+  {
+    "id": "se_040",
+    "question": "Which practice helps prevent defects early?",
+    "code": null,
+    "options": ["Code review", "Ignoring tests", "Late QA only", "No documentation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Code reviews catch defects early."
+  },
+  {
+    "id": "se_041",
+    "question": "Which is a key Agile value?",
+    "code": null,
+    "options": ["Individuals and interactions", "Comprehensive documentation", "Fixed plans", "No change"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Agile values people and collaboration."
+  },
+  {
+    "id": "se_042",
+    "question": "Which is a key Agile principle?",
+    "code": null,
+    "options": ["Welcome changing requirements", "Avoid feedback", "No testing", "Fixed scope"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Agile embraces change for customer value."
+  },
+  {
+    "id": "se_043",
+    "question": "Which phase defines project scope?",
+    "code": null,
+    "options": ["Requirements", "Design", "Implementation", "Testing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Requirements define what the system should do."
+  },
+  {
+    "id": "se_044",
+    "question": "Which phase focuses on architecture?",
+    "code": null,
+    "options": ["Design", "Testing", "Deployment", "Maintenance"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Design addresses architecture and structure."
+  },
+  {
+    "id": "se_045",
+    "question": "Which phase focuses on coding?",
+    "code": null,
+    "options": ["Implementation", "Design", "Testing", "Maintenance"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Implementation is where code is written."
+  },
+  {
+    "id": "se_046",
+    "question": "Which phase focuses on verifying requirements?",
+    "code": null,
+    "options": ["Testing", "Design", "Requirements", "Implementation"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Testing ensures the system meets requirements."
+  },
+  {
+    "id": "se_047",
+    "question": "Which practice prevents merge conflicts?",
+    "code": null,
+    "options": ["Frequent integration", "Long-lived branches", "No CI", "No reviews"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Integrating often reduces conflicts."
+  },
+  {
+    "id": "se_048",
+    "question": "Which tool tracks project tasks?",
+    "code": null,
+    "options": ["Jira", "Photoshop", "VLC", "Chrome"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Jira is commonly used for task tracking."
+  },
+  {
+    "id": "se_049",
+    "question": "Which metric measures team speed?",
+    "code": null,
+    "options": ["Velocity", "Coverage", "Latency", "Throughput"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Velocity measures completed work per sprint."
+  },
+  {
+    "id": "se_050",
+    "question": "Which is a benefit of automated testing?",
+    "code": null,
+    "options": ["Faster feedback", "No maintenance", "Less coverage", "More defects"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Automation provides quick, repeatable feedback."
+  }
+]

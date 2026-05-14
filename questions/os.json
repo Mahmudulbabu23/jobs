@@ -1,0 +1,452 @@
+[
+  {
+    "id": "os_001",
+    "question": "What is the main purpose of an operating system?",
+    "code": null,
+    "options": ["Manage hardware and software resources", "Write source code", "Compile programs", "Design web pages"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An OS manages hardware, software, and system resources."
+  },
+  {
+    "id": "os_002",
+    "question": "Which of these is an example of an operating system?",
+    "code": null,
+    "options": ["Windows", "Python", "Chrome", "MySQL"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Windows is an operating system."
+  },
+  {
+    "id": "os_003",
+    "question": "What does CPU scheduling decide?",
+    "code": null,
+    "options": ["Which process gets the CPU next", "How much disk space is used", "Which file to delete", "Which app to install"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Scheduling selects the next ready process for CPU time."
+  },
+  {
+    "id": "os_004",
+    "question": "Which scheduling algorithm can cause starvation?",
+    "code": null,
+    "options": ["Priority scheduling", "Round robin", "FCFS", "FIFO"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Lower-priority processes may starve in priority scheduling."
+  },
+  {
+    "id": "os_005",
+    "question": "What is a process?",
+    "code": null,
+    "options": ["A program in execution", "A file on disk", "A hardware device", "A compiler"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A process is a running program."
+  },
+  {
+    "id": "os_006",
+    "question": "What is a thread?",
+    "code": null,
+    "options": ["A lightweight unit of execution", "A type of disk", "A network protocol", "A memory block"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Threads are lightweight execution units within a process."
+  },
+  {
+    "id": "os_007",
+    "question": "Which memory is volatile?",
+    "code": null,
+    "options": ["RAM", "ROM", "SSD", "DVD"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "RAM loses data when power is off."
+  },
+  {
+    "id": "os_008",
+    "question": "Which memory is non-volatile?",
+    "code": null,
+    "options": ["ROM", "RAM", "Cache", "Registers"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "ROM retains data without power."
+  },
+  {
+    "id": "os_009",
+    "question": "What is paging used for?",
+    "code": null,
+    "options": ["Memory management", "CPU cooling", "File compression", "Network routing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Paging divides memory into fixed-size pages for management."
+  },
+  {
+    "id": "os_010",
+    "question": "What is a page fault?",
+    "code": null,
+    "options": ["Referenced page not in memory", "CPU failure", "Disk failure", "Process termination"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A page fault occurs when a needed page is not in RAM."
+  },
+  {
+    "id": "os_011",
+    "question": "What is deadlock?",
+    "code": null,
+    "options": ["Processes wait forever for resources", "CPU runs too fast", "File is deleted", "Memory is empty"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Deadlock occurs when processes are stuck waiting on each other."
+  },
+  {
+    "id": "os_012",
+    "question": "Which condition is necessary for deadlock?",
+    "code": null,
+    "options": ["Mutual exclusion", "No files", "No memory", "No scheduling"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Mutual exclusion is one of the four necessary deadlock conditions."
+  },
+  {
+    "id": "os_013",
+    "question": "What is a semaphore used for?",
+    "code": null,
+    "options": ["Synchronization", "Compression", "Encryption", "Booting"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Semaphores coordinate access to shared resources."
+  },
+  {
+    "id": "os_014",
+    "question": "What is a mutex?",
+    "code": null,
+    "options": ["A lock for mutual exclusion", "A disk format", "A file type", "A scheduler"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A mutex protects a critical section."
+  },
+  {
+    "id": "os_015",
+    "question": "What is virtual memory?",
+    "code": null,
+    "options": ["Memory illusion larger than RAM", "A type of cache", "A disk partition", "A CPU register"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Virtual memory lets programs use more memory than physical RAM."
+  },
+  {
+    "id": "os_016",
+    "question": "Which is a file system?",
+    "code": null,
+    "options": ["NTFS", "TCP", "HTML", "JPEG"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "NTFS is a file system used by Windows."
+  },
+  {
+    "id": "os_017",
+    "question": "What does an OS kernel do?",
+    "code": null,
+    "options": ["Core OS functions", "Web browsing", "Image editing", "Video rendering only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The kernel is the core of the operating system."
+  },
+  {
+    "id": "os_018",
+    "question": "Which kernel type runs all services in one space?",
+    "code": null,
+    "options": ["Monolithic kernel", "Microkernel", "Hybrid kernel", "Exokernel"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Monolithic kernels keep services in kernel space."
+  },
+  {
+    "id": "os_019",
+    "question": "Which kernel type keeps services minimal in kernel space?",
+    "code": null,
+    "options": ["Microkernel", "Monolithic kernel", "Big kernel", "Static kernel"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Microkernels move many services to user space."
+  },
+  {
+    "id": "os_020",
+    "question": "What is time-sharing?",
+    "code": null,
+    "options": ["Sharing CPU time among processes", "Sharing hard disk only", "Sharing network only", "Sharing keyboard only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Time-sharing gives CPU slices to multiple processes."
+  },
+  {
+    "id": "os_021",
+    "question": "What does FCFS stand for?",
+    "code": null,
+    "options": ["First Come First Served", "Fast CPU File System", "First Control File Service", "Fixed Cycle Flow System"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "FCFS means First Come First Served."
+  },
+  {
+    "id": "os_022",
+    "question": "Which scheduling uses fixed time quantum?",
+    "code": null,
+    "options": ["Round robin", "SJF", "Priority", "FCFS"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Round robin assigns a time quantum to each process."
+  },
+  {
+    "id": "os_023",
+    "question": "What is context switching?",
+    "code": null,
+    "options": ["Saving and loading process state", "Deleting a process", "Changing file permission", "Formatting disk"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Context switching saves the current process state and restores another."
+  },
+  {
+    "id": "os_024",
+    "question": "What is spooling?",
+    "code": null,
+    "options": ["Queueing tasks for later processing", "Increasing RAM", "Reducing CPU speed", "Encrypting files"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Spooling stores jobs in a queue for a device like a printer."
+  },
+  {
+    "id": "os_025",
+    "question": "What is a system call?",
+    "code": null,
+    "options": ["Request from program to OS", "Hardware interrupt only", "A compiler error", "A file path"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Programs use system calls to request OS services."
+  },
+  {
+    "id": "os_026",
+    "question": "Which is an example of a system call?",
+    "code": null,
+    "options": ["open", "printf", "while", "switch"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "open is a common system call in many OS APIs."
+  },
+  {
+    "id": "os_027",
+    "question": "What does disk scheduling optimize?",
+    "code": null,
+    "options": ["Disk access time", "CPU registers", "RAM size", "Screen resolution"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Disk scheduling reduces seek and wait time."
+  },
+  {
+    "id": "os_028",
+    "question": "Which disk scheduling algorithm is commonly used?",
+    "code": null,
+    "options": ["SSTF", "DFS", "BFS", "Dijkstra"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "SSTF serves the closest request first."
+  },
+  {
+    "id": "os_029",
+    "question": "What is a process control block (PCB)?",
+    "code": null,
+    "options": ["Process information record", "A file directory", "A memory chip", "A compiler table"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "PCB stores process state and metadata."
+  },
+  {
+    "id": "os_030",
+    "question": "Which state comes before running in process lifecycle?",
+    "code": null,
+    "options": ["Ready", "Terminated", "Waiting", "New"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A ready process waits to be scheduled for running."
+  },
+  {
+    "id": "os_031",
+    "question": "What is fragmentation?",
+    "code": null,
+    "options": ["Wasted memory space", "CPU overheating", "Disk encryption", "Process locking"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Fragmentation wastes memory due to uneven allocation."
+  },
+  {
+    "id": "os_032",
+    "question": "What is internal fragmentation?",
+    "code": null,
+    "options": ["Unused space inside allocated block", "Unused space between blocks", "Disk failure", "CPU cache issue"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Internal fragmentation is waste within a block."
+  },
+  {
+    "id": "os_033",
+    "question": "What is external fragmentation?",
+    "code": null,
+    "options": ["Free space scattered between blocks", "Unused space inside a block", "File corruption", "CPU scheduling delay"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "External fragmentation is free memory split into small gaps."
+  },
+  {
+    "id": "os_034",
+    "question": "What does a shell do?",
+    "code": null,
+    "options": ["Acts as command interpreter", "Manages RAM", "Saves files", "Compiles kernel"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "A shell interprets user commands."
+  },
+  {
+    "id": "os_035",
+    "question": "Which is a popular Unix shell?",
+    "code": null,
+    "options": ["Bash", "PowerPoint", "Excel", "Chrome"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Bash is a widely used Unix shell."
+  },
+  {
+    "id": "os_036",
+    "question": "What is multitasking?",
+    "code": null,
+    "options": ["Running multiple tasks seemingly at once", "Running one task only", "Deleting tasks", "Encrypting files"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Multitasking lets the OS run many tasks concurrently."
+  },
+  {
+    "id": "os_037",
+    "question": "What is multiprocessing?",
+    "code": null,
+    "options": ["Using multiple CPUs/cores", "Using one process only", "Using one file only", "Using one thread only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Multiprocessing uses multiple CPUs or cores."
+  },
+  {
+    "id": "os_038",
+    "question": "What is demand paging?",
+    "code": null,
+    "options": ["Loading pages when needed", "Loading all pages at once", "Loading no pages", "Loading files from USB"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Demand paging brings pages into memory only when required."
+  },
+  {
+    "id": "os_039",
+    "question": "What does thrashing mean?",
+    "code": null,
+    "options": ["Excessive paging", "Fast CPU speed", "File deletion", "Network delay"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Thrashing happens when the system spends too much time paging."
+  },
+  {
+    "id": "os_040",
+    "question": "What is a device driver?",
+    "code": null,
+    "options": ["Software that controls hardware", "A hardware chip", "A file system", "A compiler option"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Drivers let the OS communicate with hardware devices."
+  },
+  {
+    "id": "os_041",
+    "question": "What is a zombie process?",
+    "code": null,
+    "options": ["Terminated process with exit info still in table", "A running process", "A sleeping thread", "A virus"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "A zombie has finished but still has an entry in the process table."
+  },
+  {
+    "id": "os_042",
+    "question": "What is an orphan process?",
+    "code": null,
+    "options": ["A child process whose parent ended", "A file without owner", "A deadlock state", "A memory leak"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "An orphan process is adopted by init/systemd."
+  },
+  {
+    "id": "os_043",
+    "question": "What is the primary purpose of an interrupt?",
+    "code": null,
+    "options": ["Notify CPU of an event", "Increase disk space", "Compile code", "Format memory"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Interrupts notify the CPU that attention is needed."
+  },
+  {
+    "id": "os_044",
+    "question": "What is an interrupt handler?",
+    "code": null,
+    "options": ["Routine that handles interrupts", "A hardware device", "A file filter", "A compiler pass"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "An interrupt handler services the interrupt request."
+  },
+  {
+    "id": "os_045",
+    "question": "What is system booting?",
+    "code": null,
+    "options": ["Starting the computer and loading OS", "Shutting down the computer", "Installing antivirus", "Updating browser"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Booting loads the operating system into memory."
+  },
+  {
+    "id": "os_046",
+    "question": "Which boot process comes first?",
+    "code": null,
+    "options": ["BIOS/UEFI", "Desktop environment", "User login", "Application launch"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "BIOS/UEFI initializes hardware before the OS loads."
+  },
+  {
+    "id": "os_047",
+    "question": "What is a file permission?",
+    "code": null,
+    "options": ["Access right to file", "File size", "File path", "File type"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Permissions control who can read, write, or execute a file."
+  },
+  {
+    "id": "os_048",
+    "question": "Which permission allows running a program?",
+    "code": null,
+    "options": ["Execute", "Write", "Read", "Delete"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Execute permission allows a file to run as a program."
+  },
+  {
+    "id": "os_049",
+    "question": "What is scheduling fairness?",
+    "code": null,
+    "options": ["Giving processes reasonable CPU access", "Giving one process all CPU", "Stopping all processes", "Ignoring priorities"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Fair scheduling avoids starvation and balances CPU access."
+  },
+  {
+    "id": "os_050",
+    "question": "What does the OS do during resource allocation?",
+    "code": null,
+    "options": ["Assigns CPU, memory, and I/O", "Only edits files", "Only compiles code", "Only manages browser tabs"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "The OS allocates CPU, memory, and I/O resources."
+  }
+]

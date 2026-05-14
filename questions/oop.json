@@ -1,0 +1,452 @@
+[
+  {
+    "id": "oop_001",
+    "question": "Which OOP concept allows one interface, many implementations?",
+    "code": null,
+    "options": ["Polymorphism", "Encapsulation", "Inheritance", "Abstraction"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Polymorphism allows different types to be treated uniformly."
+  },
+  {
+    "id": "oop_002",
+    "question": "Encapsulation means:",
+    "code": null,
+    "options": ["Hiding internal state", "Multiple inheritance", "Overloading only", "Using global variables"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Encapsulation bundles data and methods with access control."
+  },
+  {
+    "id": "oop_003",
+    "question": "Inheritance is used to:",
+    "code": null,
+    "options": ["Reuse code", "Hide data", "Remove classes", "Compile code"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Inheritance allows reuse of base class behavior."
+  },
+  {
+    "id": "oop_004",
+    "question": "Abstraction focuses on:",
+    "code": null,
+    "options": ["Essential details only", "All implementation details", "Copying objects", "File handling"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Abstraction exposes important features and hides complexity."
+  },
+  {
+    "id": "oop_005",
+    "question": "Method overloading means:",
+    "code": null,
+    "options": ["Same name, different parameters", "Same name, same parameters", "Different name, same parameters", "Only in base class"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Overloading uses same method name with different signatures."
+  },
+  {
+    "id": "oop_006",
+    "question": "Method overriding means:",
+    "code": null,
+    "options": ["Subclass provides new implementation", "Same method in same class", "Static method call", "Private method call"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Overriding replaces a base class implementation."
+  },
+  {
+    "id": "oop_007",
+    "question": "Which supports runtime polymorphism?",
+    "code": null,
+    "options": ["Method overriding", "Method overloading", "Operator overloading", "Static binding"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overriding is resolved at runtime via dynamic dispatch."
+  },
+  {
+    "id": "oop_008",
+    "question": "Which supports compile-time polymorphism?",
+    "code": null,
+    "options": ["Method overloading", "Method overriding", "Dynamic binding", "Virtual method"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overloading is resolved at compile time."
+  },
+  {
+    "id": "oop_009",
+    "question": "A class is:",
+    "code": null,
+    "options": ["A blueprint for objects", "An instance", "A function", "A variable"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Classes define structure and behavior for objects."
+  },
+  {
+    "id": "oop_010",
+    "question": "An object is:",
+    "code": null,
+    "options": ["An instance of a class", "A function", "A module", "A package"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Objects are instances created from classes."
+  },
+  {
+    "id": "oop_011",
+    "question": "Which access modifier is most restrictive?",
+    "code": null,
+    "options": ["private", "protected", "public", "internal"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "private limits access to the defining class only."
+  },
+  {
+    "id": "oop_012",
+    "question": "Which access modifier allows subclasses to access members?",
+    "code": null,
+    "options": ["protected", "private", "public", "static"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "protected allows subclass access."
+  },
+  {
+    "id": "oop_013",
+    "question": "Which access modifier allows access from anywhere?",
+    "code": null,
+    "options": ["public", "private", "protected", "final"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "public is accessible from any code."
+  },
+  {
+    "id": "oop_014",
+    "question": "A constructor is used to:",
+    "code": null,
+    "options": ["Initialize objects", "Destroy objects", "Overload operators", "Compile classes"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Constructors set initial state for objects."
+  },
+  {
+    "id": "oop_015",
+    "question": "A destructor is used to:",
+    "code": null,
+    "options": ["Clean up resources", "Create objects", "Rename classes", "Override methods"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Destructors release resources when objects are destroyed."
+  },
+  {
+    "id": "oop_016",
+    "question": "An abstract class:",
+    "code": null,
+    "options": ["Cannot be instantiated", "Must have all methods implemented", "Is always final", "Has no fields"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Abstract classes cannot be instantiated directly."
+  },
+  {
+    "id": "oop_017",
+    "question": "An interface typically:",
+    "code": null,
+    "options": ["Defines method signatures", "Stores implementation only", "Is a class instance", "Has private fields only"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Interfaces specify method contracts."
+  },
+  {
+    "id": "oop_018",
+    "question": "Composition means:",
+    "code": null,
+    "options": ["Has-a relationship", "Is-a relationship", "No relationship", "Is-not relationship"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Composition models a has-a relationship."
+  },
+  {
+    "id": "oop_019",
+    "question": "Inheritance models:",
+    "code": null,
+    "options": ["Is-a relationship", "Has-a relationship", "Uses-a relationship", "None"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Inheritance represents an is-a relationship."
+  },
+  {
+    "id": "oop_020",
+    "question": "Which principle promotes reusable code?",
+    "code": null,
+    "options": ["Inheritance", "Encapsulation", "Abstraction", "Polymorphism"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Inheritance allows reuse of common behavior."
+  },
+  {
+    "id": "oop_021",
+    "question": "Which principle hides complexity?",
+    "code": null,
+    "options": ["Abstraction", "Inheritance", "Overloading", "Static"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Abstraction exposes only essential features."
+  },
+  {
+    "id": "oop_022",
+    "question": "Which principle prevents direct access to internal data?",
+    "code": null,
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Interfaces"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Encapsulation restricts access via access modifiers."
+  },
+  {
+    "id": "oop_023",
+    "question": "Dynamic dispatch is used in:",
+    "code": null,
+    "options": ["Runtime polymorphism", "Compile-time polymorphism", "Encapsulation", "Composition"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Dynamic dispatch selects the method at runtime."
+  },
+  {
+    "id": "oop_024",
+    "question": "Which keyword prevents inheritance?",
+    "code": null,
+    "options": ["final", "virtual", "override", "public"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "final classes cannot be extended."
+  },
+  {
+    "id": "oop_025",
+    "question": "Which keyword enables overriding?",
+    "code": null,
+    "options": ["virtual", "static", "private", "const"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "virtual enables overriding in many languages."
+  },
+  {
+    "id": "oop_026",
+    "question": "A static method:",
+    "code": null,
+    "options": ["Belongs to the class", "Belongs to object", "Is always abstract", "Cannot be called"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Static methods are called on the class itself."
+  },
+  {
+    "id": "oop_027",
+    "question": "Which is true about interfaces?",
+    "code": null,
+    "options": ["Multiple interfaces can be implemented", "Only one interface allowed", "Interfaces hold data", "Interfaces cannot be used"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Classes can implement multiple interfaces."
+  },
+  {
+    "id": "oop_028",
+    "question": "Overloading differs from overriding because:",
+    "code": null,
+    "options": ["Overloading uses different parameters", "Overriding uses same signature", "Both A and B", "Neither"],
+    "answer": 2,
+    "difficulty": "medium",
+    "explanation": "Overloading uses different signatures; overriding uses same."
+  },
+  {
+    "id": "oop_029",
+    "question": "Which principle suggests favoring composition over inheritance?",
+    "code": null,
+    "options": ["Design flexibility", "Compile speed", "Memory leaks", "Syntax"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Composition reduces tight coupling."
+  },
+  {
+    "id": "oop_030",
+    "question": "A class that cannot be instantiated is:",
+    "code": null,
+    "options": ["Abstract class", "Concrete class", "Final class", "Static class"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Abstract classes cannot be instantiated."
+  },
+  {
+    "id": "oop_031",
+    "question": "Which is an example of composition?",
+    "code": null,
+    "options": ["Car has Engine", "Dog is Animal", "Manager is Employee", "Circle is Shape"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Composition uses has-a relationships."
+  },
+  {
+    "id": "oop_032",
+    "question": "Which is an example of inheritance?",
+    "code": null,
+    "options": ["Dog is Animal", "Car has Engine", "School has Students", "CPU has Cache"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Inheritance represents is-a relationships."
+  },
+  {
+    "id": "oop_033",
+    "question": "Which is a benefit of encapsulation?",
+    "code": null,
+    "options": ["Data hiding", "Multiple inheritance", "More globals", "No methods"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Encapsulation hides data and protects invariants."
+  },
+  {
+    "id": "oop_034",
+    "question": "Which is a drawback of deep inheritance?",
+    "code": null,
+    "options": ["Tight coupling", "Better reuse", "Simpler testing", "Less complexity"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Deep inheritance can create tight coupling and complexity."
+  },
+  {
+    "id": "oop_035",
+    "question": "Which keyword calls the parent constructor?",
+    "code": null,
+    "options": ["super", "this", "base", "parent"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "super (or base in C#) invokes parent constructor."
+  },
+  {
+    "id": "oop_036",
+    "question": "Which is a benefit of polymorphism?",
+    "code": null,
+    "options": ["Flexible interfaces", "More global variables", "Reduced reuse", "No overriding"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Polymorphism allows code to work with different types."
+  },
+  {
+    "id": "oop_037",
+    "question": "Which feature supports code reuse without inheritance?",
+    "code": null,
+    "options": ["Composition", "Encapsulation", "Abstraction", "Overloading"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Composition allows reuse by containing other objects."
+  },
+  {
+    "id": "oop_038",
+    "question": "Which is an interface implementation example?",
+    "code": null,
+    "options": ["class Car implements Drivable", "class Car extends Drivable", "class Car private Drivable", "class Car override Drivable"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Implements indicates interface usage."
+  },
+  {
+    "id": "oop_039",
+    "question": "What does 'this' refer to?",
+    "code": null,
+    "options": ["Current object", "Parent class", "Child class", "Static class"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "this refers to the current instance."
+  },
+  {
+    "id": "oop_040",
+    "question": "Which is a key OOP principle?",
+    "code": null,
+    "options": ["Encapsulation", "Normalization", "Compilation", "Routing"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Encapsulation is one of the core OOP principles."
+  },
+  {
+    "id": "oop_041",
+    "question": "Which is a feature of abstract classes?",
+    "code": null,
+    "options": ["Can have concrete methods", "Cannot have fields", "Cannot have constructors", "Cannot be inherited"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Abstract classes can include concrete methods."
+  },
+  {
+    "id": "oop_042",
+    "question": "Which is a feature of interfaces?",
+    "code": null,
+    "options": ["Define contracts", "Allow instance variables", "Provide full implementation", "Forbid inheritance"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Interfaces define method contracts."
+  },
+  {
+    "id": "oop_043",
+    "question": "Which is an example of method overriding?",
+    "code": null,
+    "options": ["Child class replaces parent method", "Two methods same name in one class", "Function pointer", "Static method"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overriding replaces a parent implementation."
+  },
+  {
+    "id": "oop_044",
+    "question": "Which is an example of method overloading?",
+    "code": null,
+    "options": ["Same name, different parameters", "Different classes", "Same signature", "Runtime dispatch"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Overloading uses different signatures with the same name."
+  },
+  {
+    "id": "oop_045",
+    "question": "Which keyword indicates a method cannot be overridden?",
+    "code": null,
+    "options": ["final", "virtual", "override", "abstract"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "final prevents overriding."
+  },
+  {
+    "id": "oop_046",
+    "question": "Which principle reduces coupling?",
+    "code": null,
+    "options": ["Encapsulation", "Global state", "Tight inheritance", "Static everything"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Encapsulation hides implementation details."
+  },
+  {
+    "id": "oop_047",
+    "question": "Which is the correct order for object creation?",
+    "code": null,
+    "options": ["Allocate memory, call constructor", "Call constructor, allocate memory", "Compile, then allocate", "None"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Objects allocate memory then run constructors."
+  },
+  {
+    "id": "oop_048",
+    "question": "Which concept enables method reuse without inheritance?",
+    "code": null,
+    "options": ["Composition", "Overloading", "Static binding", "Casting"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Composition allows reuse by including other objects."
+  },
+  {
+    "id": "oop_049",
+    "question": "Which is a key advantage of interfaces?",
+    "code": null,
+    "options": ["Decoupling", "Tight coupling", "No abstraction", "No reuse"],
+    "answer": 0,
+    "difficulty": "medium",
+    "explanation": "Interfaces decouple implementations from usage."
+  },
+  {
+    "id": "oop_050",
+    "question": "Which concept allows the same method name with different behavior?",
+    "code": null,
+    "options": ["Polymorphism", "Encapsulation", "Abstraction", "Composition"],
+    "answer": 0,
+    "difficulty": "easy",
+    "explanation": "Polymorphism allows different implementations under one interface."
+  }
+]

@@ -1,0 +1,2285 @@
+[
+  {
+    "year": "2026",
+    "questions": [
+      {
+        "id": "prev_2026_001",
+        "question": "A maintenance engineer sets up a RAID 5 array with five 4TB drives. What is the total usable storage capacity?",
+        "code": null,
+        "options": [
+          "20 TB",
+          "16 TB",
+          "12 TB",
+          "18 TB"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "In RAID 5, one drive's worth of capacity is used for parity. Usable = (N−1) × Drive Size = (5−1) × 4 TB = 16 TB. It is not 20 TB because parity data provides fault tolerance and recovery if a drive fails."
+      },
+      {
+        "id": "prev_2026_002",
+        "question": "A critical system has Power Supply, Motherboard, and Storage in series, each with reliability 0.95. What is the total system reliability?",
+        "code": null,
+        "options": [
+          "0.95",
+          "0.9025",
+          "0.857375",
+          "0.85"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "For a series system: R_total = R1 × R2 × R3 = 0.95 × 0.95 × 0.95 = 0.857375 ≈ 85.74%. All components must work for the system to work."
+      },
+      {
+        "id": "prev_2026_003",
+        "question": "At which OSI layer does a standard Router primarily operate, and what is the PDU at that layer?",
+        "code": null,
+        "options": [
+          "Layer 2 – Frame",
+          "Layer 3 – Packet",
+          "Layer 4 – Segment",
+          "Layer 1 – Bit"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "A router operates at the Network Layer (Layer 3) of the OSI model. The PDU at this layer is called a Packet, which carries the source and destination IP addresses for routing decisions."
+      },
+      {
+        "id": "prev_2026_004",
+        "question": "A router has four /24 entries: 10.1.0.0/24, 10.1.1.0/24, 10.1.2.0/24, 10.1.3.0/24. What is the summarized supernet?",
+        "code": null,
+        "options": [
+          "10.1.0.0/23",
+          "10.1.0.0/22",
+          "10.1.0.0/21",
+          "10.1.0.0/24"
+        ],
+        "answer": 1,
+        "difficulty": "hard",
+        "explanation": "Four /24 networks cover 10.1.0.0–10.1.3.255 (1024 addresses). 1024 = 2^10 requires 10 host bits. Prefix = 32 − 10 = /22. Summarized supernet = 10.1.0.0/22."
+      },
+      {
+        "id": "prev_2026_005",
+        "question": "What does the Consistency property in ACID guarantee during a bank fund transfer?",
+        "code": null,
+        "options": [
+          "Data is saved immediately",
+          "The database remains in a valid state before and after the transaction",
+          "Transactions happen simultaneously",
+          "Data is encrypted"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Consistency ensures the database always remains in a valid state. During a fund transfer, the total balance must remain consistent—deducted from one account and added to the other. If any step fails, the entire transaction is rolled back."
+      },
+      {
+        "id": "prev_2026_006",
+        "question": "Which SQL constraint prevents the current_balance column in a Savings_Accounts table from dropping below zero?",
+        "code": "CREATE TABLE Savings_Accounts (\n    account_id INT PRIMARY KEY,\n    customer_name VARCHAR(100),\n    current_balance DECIMAL(10,2),\n    CHECK (current_balance >= 0)\n);",
+        "options": [
+          "NOT NULL (current_balance)",
+          "DEFAULT (current_balance = 0)",
+          "CHECK (current_balance >= 0)",
+          "UNIQUE (current_balance)"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "The CHECK constraint enforces a condition on column values. CHECK (current_balance >= 0) ensures the balance can never be negative, maintaining data integrity."
+      },
+      {
+        "id": "prev_2026_007",
+        "question": "In a Resource Allocation Graph (RAG), if a cycle exists with resources having multiple instances, does it guarantee deadlock?",
+        "code": null,
+        "options": [
+          "Yes, always",
+          "No, not always",
+          "Only if there are 3+ processes",
+          "Only if processes share all resources"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "A cycle in RAG guarantees deadlock ONLY if each resource has a single instance. With multiple instances, a cycle may exist without deadlock—if a process can release a resource, others can proceed. Cycle is necessary but not always sufficient for deadlock."
+      },
+      {
+        "id": "prev_2026_008",
+        "question": "A server suddenly sends abnormal traffic to external systems. Which is the FIRST immediate action to take?",
+        "code": null,
+        "options": [
+          "Run an antivirus scan",
+          "Isolate the server from the network",
+          "Notify management",
+          "Change all passwords"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The first and most critical action is to isolate the server by disconnecting it from the network to stop the abnormal traffic from spreading. Subsequent steps include log analysis, security scanning, and credential resets."
+      },
+      {
+        "id": "prev_2026_009",
+        "question": "For a financial services fraud analytics pipeline using Hadoop, which component handles real-time data ingestion from continuous log streams?",
+        "code": null,
+        "options": [
+          "HDFS",
+          "Apache Hive",
+          "Apache Kafka",
+          "MapReduce"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Apache Kafka is used for real-time streaming data ingestion, collecting continuous transaction logs, user activities, and system events from different sources for fraud analytics pipelines."
+      },
+      {
+        "id": "prev_2026_010",
+        "question": "Which K-map simplification result represents F(A,B,C,D) = Σm(0,3,5,7,8,10,11,12,13,14,15)?",
+        "code": null,
+        "options": [
+          "A'B' + CD + AC",
+          "A + B'D + BC'D",
+          "AB + A'C'D' + BD",
+          "AC' + B'D' + ABD"
+        ],
+        "answer": 0,
+        "difficulty": "hard",
+        "explanation": "Plotting minterms 0,3,5,7,8,10,11,12,13,14,15 on a 4-variable K-map and grouping: Group 8,10,12,14 → A; Group 0,8 → A'B'C'D'; Group 3,7 → B'CD; combining gives A'B' + CD + AC (or equivalent simplified SOP expression)."
+      },
+      {
+        "id": "prev_2026_011",
+        "question": "Given IP 192.168.1.0/24 divided into 4 equal subnets, what is the new CIDR notation?",
+        "code": null,
+        "options": [
+          "/25",
+          "/26",
+          "/27",
+          "/28"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "To create 4 subnets: 4 = 2², so 2 bits are borrowed. New CIDR = /24 + 2 = /26. Subnet mask = 255.255.255.192. Each subnet has 64 addresses (62 usable hosts)."
+      },
+      {
+        "id": "prev_2026_012",
+        "question": "In the first subnet 192.168.1.0/26, what is the first usable host address?",
+        "code": null,
+        "options": [
+          "192.168.1.0",
+          "192.168.1.1",
+          "192.168.1.2",
+          "192.168.1.64"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "In subnet 192.168.1.0/26, the network address is 192.168.1.0 and the broadcast is 192.168.1.63. The first usable host is 192.168.1.1."
+      },
+      {
+        "id": "prev_2026_013",
+        "question": "A workstation is affected by ransomware. What is the FIRST step to mitigate the problem?",
+        "code": null,
+        "options": [
+          "Pay the ransom",
+          "Isolate the system from the network",
+          "Run antivirus software",
+          "Restore from backup"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The first step is to isolate the workstation by disconnecting from the network (LAN/Wi-Fi) to stop the ransomware from spreading. Then: do not pay ransom, remove malware, restore from backup, and report to IT team."
+      },
+      {
+        "id": "prev_2026_014",
+        "question": "What is Dynamic Programming's key characteristic that distinguishes it from simple recursion?",
+        "code": null,
+        "options": [
+          "It uses loops instead of recursion",
+          "It stores results of subproblems to avoid repeated computation",
+          "It always runs in O(1) time",
+          "It works only on sorting problems"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Dynamic Programming solves problems by breaking them into subproblems and storing results (memoization/tabulation) to avoid repeated computation. Key features: overlapping subproblems and optimal substructure."
+      },
+      {
+        "id": "prev_2026_015",
+        "question": "Which type of phishing attack targets a specific person or organization using personalized information?",
+        "code": null,
+        "options": [
+          "Email Phishing",
+          "Spear Phishing",
+          "Smishing",
+          "Vishing"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Spear Phishing is a targeted attack on a specific person or organization using personalized information to appear more credible. Unlike generic email phishing, spear phishing is customized to the victim."
+      },
+      {
+        "id": "prev_2026_016",
+        "question": "What is the key difference between Stateful Inspection Firewall and Next Generation Firewall (NGFW)?",
+        "code": null,
+        "options": [
+          "NGFW only works on Layer 2",
+          "NGFW performs deep packet inspection and supports application awareness",
+          "Stateful firewall is faster than NGFW",
+          "NGFW cannot detect malware"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "NGFW (Next Generation Firewall) goes beyond stateful inspection by performing deep packet inspection (DPI), supporting application awareness, user-based control, IPS, and SSL inspection—providing much higher security than traditional stateful firewalls."
+      },
+      {
+        "id": "prev_2026_017",
+        "question": "In firewall rules (Rule 1: port=89, Rule 2: port<443, Rule 3: port=443), what happens to a packet with port 443 using first-match rule inspection?",
+        "code": null,
+        "options": [
+          "Matched by Rule 1",
+          "Matched by Rule 2",
+          "Matched by Rule 3",
+          "No rule matches, packet dropped"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Firewall checks rules top-to-bottom and stops at first match. Port 443: Rule 1 (port=89) ❌, Rule 2 (port<443) ❌ since 443 is NOT less than 443, Rule 3 (port=443) ✅ matched. Action depends on Rule 3 configuration (ALLOW or DENY)."
+      },
+      {
+        "id": "prev_2026_018",
+        "question": "At which step of DNS resolution does the resolver query the Root DNS server?",
+        "code": null,
+        "options": [
+          "Step 1 – User types the URL",
+          "Step 2 – Query to DNS resolver (ISP)",
+          "Step 3 – Resolver queries Root server (if not cached)",
+          "Step 5 – Authoritative server responds"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "DNS resolution: (1) User enters domain → (2) DNS resolver checks cache → (3) If not cached, resolver queries Root server → (4) Root directs to TLD server → (5) TLD provides Authoritative server → (6) IP returned → (7) Browser connects."
+      },
+      {
+        "id": "prev_2026_019",
+        "question": "What is Inheritance in OOP?",
+        "code": null,
+        "options": [
+          "Passing data between functions",
+          "Child class inherits properties and behaviors from parent class",
+          "Method overloading",
+          "Encapsulation of data"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Inheritance: a child (derived) class inherits properties and behaviors from a parent (base) class. Types: Single (one parent → one child), Multiple (many parents → one child), Multilevel (chain: Vehicle → Car → ElectricCar)."
+      },
+      {
+        "id": "prev_2026_020",
+        "question": "Which SDLC phase involves writing the actual software code according to the design specifications?",
+        "code": null,
+        "options": [
+          "Requirement Analysis",
+          "System Design",
+          "Implementation (Coding)",
+          "Testing"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "SDLC phases: (1) Requirement Analysis, (2) System Design, (3) Implementation/Coding—where actual code is written, (4) Testing, (5) Deployment, (6) Maintenance. Implementation is where the design is converted to working software."
+      },
+      {
+        "id": "prev_2026_021",
+        "question": "What algorithm does OSPF use to calculate the best path to every destination network?",
+        "code": null,
+        "options": [
+          "Bellman-Ford Algorithm",
+          "Dijkstra's Shortest Path Algorithm",
+          "Floyd-Warshall Algorithm",
+          "Prim's Algorithm"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "OSPF (Open Shortest Path First) is a link-state routing protocol that uses Dijkstra's Shortest Path Algorithm to compute the best path based on cost (bandwidth). Routers exchange LSAs and build a complete topology map."
+      },
+      {
+        "id": "prev_2026_022",
+        "question": "Which gates are needed to prove NAND is a Universal Gate?",
+        "code": null,
+        "options": [
+          "AND, XOR, NOT",
+          "NOT, AND, OR",
+          "OR, NOR, XNOR",
+          "AND, OR, NAND"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "A gate is universal if NOT, AND, and OR can be built using only that gate. NAND can implement: NOT (single NAND with both inputs same), AND (NAND followed by NOT), OR (De Morgan: NOT each input then NAND). Therefore NAND is a universal gate."
+      },
+      {
+        "id": "prev_2026_023",
+        "question": "What is the key advantage of threads over processes in terms of communication?",
+        "code": null,
+        "options": [
+          "Threads use more memory",
+          "Threads share memory making inter-thread communication faster",
+          "Threads run slower than processes",
+          "Threads require a separate OS"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Threads within the same process share the same memory space, making inter-thread communication much faster than inter-process communication (IPC). Threads also require lower resource overhead compared to separate processes."
+      },
+      {
+        "id": "prev_2026_024",
+        "question": "What is the difference between Git Commit and Git Push?",
+        "code": null,
+        "options": [
+          "Commit uploads to server; Push saves locally",
+          "Commit saves changes locally; Push uploads committed changes to a remote repository",
+          "Both do the same thing",
+          "Push is for branches only"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Git Commit saves a snapshot of changes to the local repository with a message. Git Push uploads those locally committed changes to a remote repository (like GitHub/GitLab), making them available to other team members."
+      },
+      {
+        "id": "prev_2026_025",
+        "question": "Which OSI layer manages logical addressing and routing of data packets?",
+        "code": null,
+        "options": [
+          "Physical Layer",
+          "Data Link Layer",
+          "Network Layer",
+          "Transport Layer"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "The Network Layer (Layer 3) manages logical addressing (IP addresses) and routing of packets across different networks. It determines the best path for data delivery. Example protocols: IP, OSPF, RIP."
+      },
+      {
+        "id": "prev_2026_026",
+        "question": "Which protocol is connection-oriented and which is connectionless?",
+        "code": null,
+        "options": [
+          "TCP is connectionless; UDP is connection-oriented",
+          "TCP is connection-oriented; UDP is connectionless",
+          "Both are connection-oriented",
+          "Both are connectionless"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "TCP (Transmission Control Protocol) is connection-oriented with reliable delivery, error checking, and flow control—used for HTTP, FTP, email. UDP (User Datagram Protocol) is connectionless and faster—used for video streaming, VoIP, online gaming."
+      },
+      {
+        "id": "prev_2026_027",
+        "question": "What is Cloud Computing and which service model provides virtualized computing infrastructure like VMs and storage?",
+        "code": null,
+        "options": [
+          "SaaS – delivers complete applications",
+          "PaaS – provides a development platform",
+          "IaaS – provides virtualized computing resources like VMs and storage",
+          "DaaS – provides data as a service"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "IaaS (Infrastructure as a Service) provides virtualized computing resources including virtual machines, storage, and networks. Users control the OS and apps. Examples: Amazon EC2, Google Compute Engine, Azure VM."
+      },
+      {
+        "id": "prev_2026_028",
+        "question": "What is the CIA Triad in cyber security?",
+        "code": null,
+        "options": [
+          "Compliance, Integrity, Access",
+          "Confidentiality, Integrity, Availability",
+          "Confidentiality, Integration, Authentication",
+          "Control, Identity, Authorization"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "CIA Triad: Confidentiality (data accessible only to authorized users – encryption, passwords), Integrity (data remains accurate and unaltered – hashing, digital signatures), Availability (data and systems accessible when needed – backups, redundancy)."
+      },
+      {
+        "id": "prev_2026_029",
+        "question": "What is Social Engineering in cyber security?",
+        "code": null,
+        "options": [
+          "Hacking through software vulnerabilities",
+          "Manipulating people psychologically to reveal confidential information",
+          "Installing malware via USB",
+          "Exploiting network protocols"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Social Engineering exploits human psychology rather than technical vulnerabilities to obtain sensitive information. Examples: phishing emails, fake phone calls (vishing), impersonation. Defense: security awareness training."
+      },
+      {
+        "id": "prev_2026_030",
+        "question": "What is the difference between hashing and encryption?",
+        "code": null,
+        "options": [
+          "Both are reversible processes",
+          "Hashing is one-way (irreversible); Encryption is two-way (reversible with a key)",
+          "Hashing uses a key; Encryption does not",
+          "Encryption is faster than hashing"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Hashing is a one-way process converting data to a fixed-length value (e.g., SHA-256, MD5) — cannot be reversed. Encryption is two-way — data can be decrypted using a key. Hashing is used for integrity/password storage; encryption for confidentiality."
+      },
+      {
+        "id": "prev_2026_031",
+        "question": "OOP stands for:",
+        "code": null,
+        "options": [
+          "Open Office Protocol",
+          "Object Operating Program",
+          "Object Oriented Programming",
+          "Output Oriented Process"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Object Oriented Programming (OOP) is a programming paradigm that organizes software into objects containing both data (attributes) and methods (behaviors), enabling code reuse, modularity, and easier maintenance."
+      },
+      {
+        "id": "prev_2026_032",
+        "question": "Which attack floods a system with traffic to make it unavailable?",
+        "code": null,
+        "options": [
+          "Phishing",
+          "DoS (Denial of Service)",
+          "Spoofing",
+          "Sniffing"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "A DoS (Denial of Service) attack floods a system with excessive traffic to make it slow or unavailable to legitimate users. Phishing tricks users into revealing info; Spoofing pretends to be another device; Sniffing intercepts network data."
+      },
+      {
+        "id": "prev_2026_033",
+        "question": "HTTPS is more secure than HTTP because it uses:",
+        "code": null,
+        "options": [
+          "IP",
+          "Encryption (SSL/TLS)",
+          "Cookies",
+          "Proxy"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "HTTPS uses SSL/TLS encryption to convert data into a secure coded form, preventing unauthorized users from reading the information during transmission. HTTP sends data in plain text, making it vulnerable to interception."
+      },
+      {
+        "id": "prev_2026_034",
+        "question": "A firewall is used to:",
+        "code": null,
+        "options": [
+          "Store data",
+          "Monitor and control network traffic",
+          "Compile programs",
+          "Create backups"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on predefined security rules, protecting systems from unauthorized access and attacks."
+      },
+      {
+        "id": "prev_2026_035",
+        "question": "Which SDLC model is known as the linear sequential model?",
+        "code": null,
+        "options": [
+          "Agile",
+          "Spiral",
+          "Waterfall",
+          "V-Model"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "The Waterfall model follows a linear, step-by-step development process where each phase (Requirements → Design → Implementation → Testing → Deployment → Maintenance) is completed before moving to the next."
+      },
+      {
+        "id": "prev_2026_036",
+        "question": "Cloud computing provides:",
+        "code": null,
+        "options": [
+          "Hardware only",
+          "Software only",
+          "On-demand resources over the internet",
+          "Offline services"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Cloud computing provides on-demand access to computing resources (storage, servers, software, networking) over the internet on a pay-as-you-go basis, without requiring ownership or maintenance of physical infrastructure."
+      },
+      {
+        "id": "prev_2026_037",
+        "question": "Which protocol is used for file transfer?",
+        "code": null,
+        "options": [
+          "SMTP",
+          "FTP",
+          "SNMP",
+          "TELNET"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "FTP (File Transfer Protocol) is used to transfer files between computers over a network. SMTP is for email, SNMP is for network management, and TELNET is for remote command-line access."
+      },
+      {
+        "id": "prev_2026_038",
+        "question": "IPv4 address size is:",
+        "code": null,
+        "options": [
+          "16-bit",
+          "32-bit",
+          "64-bit",
+          "128-bit"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "IPv4 uses 32-bit addresses, written in dotted decimal (e.g., 192.168.1.1). IPv6 uses 128-bit addresses. 32 bits allow approximately 4.3 billion unique addresses."
+      },
+      {
+        "id": "prev_2026_039",
+        "question": "Which OSI layer is responsible for routing?",
+        "code": null,
+        "options": [
+          "Transport",
+          "Network",
+          "Data Link",
+          "Session"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The Network Layer (Layer 3) performs routing — determining the best path for packets from source to destination using IP addresses. Routers operate at this layer."
+      },
+      {
+        "id": "prev_2026_040",
+        "question": "Which tool is used for version control?",
+        "code": null,
+        "options": [
+          "Jenkins",
+          "Git",
+          "Docker",
+          "Maven"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Git is a distributed version control system used to track code changes and collaborate with multiple developers. Jenkins is for CI/CD, Docker is for containerization, Maven is a build tool."
+      },
+      {
+        "id": "prev_2026_041",
+        "question": "Which storage has the fastest access speed?",
+        "code": null,
+        "options": [
+          "HDD",
+          "SSD",
+          "DVD",
+          "Cache"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "Cache memory is the fastest storage, located closest to the CPU for quick data access. Speed order: Cache > SSD > HDD > DVD. Cache stores frequently accessed data for near-instant CPU retrieval."
+      },
+      {
+        "id": "prev_2026_042",
+        "question": "Which component is often referred to as the 'brain' of the computer?",
+        "code": null,
+        "options": [
+          "Hard Drive",
+          "RAM",
+          "Central Processing Unit (CPU)",
+          "Power Supply Unit"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "The CPU (Central Processing Unit) executes instructions and controls all computer operations, earning it the title 'brain' of the computer. RAM provides temporary memory, HDD stores data permanently."
+      },
+      {
+        "id": "prev_2026_043",
+        "question": "What does 'GUI' stand for in computing?",
+        "code": null,
+        "options": [
+          "Global User Interface",
+          "Graphical User Interface",
+          "General Utility Interface",
+          "Graphical Unit Interconnection"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "GUI (Graphical User Interface) allows users to interact with computers through visual elements like icons, windows, menus, and buttons, instead of text-based command-line interfaces."
+      },
+      {
+        "id": "prev_2026_044",
+        "question": "Which protocol is primarily used for securely browsing the web?",
+        "code": null,
+        "options": [
+          "HTTP",
+          "FTP",
+          "HTTPS",
+          "SMTP"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "HTTPS (HyperText Transfer Protocol Secure) encrypts web traffic using SSL/TLS, making browsing secure. HTTP is unencrypted; FTP is for file transfer; SMTP is for email."
+      },
+      {
+        "id": "prev_2026_045",
+        "question": "You can ping 8.8.8.8 but cannot browse www.google.com. What is the most likely issue?",
+        "code": null,
+        "options": [
+          "ISP gateway is down",
+          "DNS server is unreachable or misconfigured",
+          "Network cable is unplugged",
+          "DHCP server is full"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "If you can ping an IP (8.8.8.8) but not browse a domain (www.google.com), the network connectivity exists but domain name resolution is failing. This points to the DNS server being unreachable or misconfigured."
+      },
+      {
+        "id": "prev_2026_046",
+        "question": "What is 'Cloud Storage'?",
+        "code": null,
+        "options": [
+          "Storing data on your local hard drive",
+          "Storing data on internet servers managed by a provider",
+          "Storing data on a CD-ROM",
+          "Printing data on paper"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Cloud Storage is storing data on internet servers managed by a third-party provider, allowing access from anywhere with an internet connection. Examples: Google Drive, Dropbox, OneDrive."
+      },
+      {
+        "id": "prev_2026_047",
+        "question": "Which concept ensures that a sender cannot deny having sent a message?",
+        "code": null,
+        "options": [
+          "Confidentiality",
+          "Integrity",
+          "Non-repudiation",
+          "Availability"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Non-repudiation ensures a sender cannot deny having sent a message by using digital signatures or other cryptographic verification methods. It is a key security principle in communications and transactions."
+      },
+      {
+        "id": "prev_2026_048",
+        "question": "Which Linux command is used to change the permissions of a file?",
+        "code": null,
+        "options": [
+          "chown",
+          "chmod",
+          "chgrp",
+          "umask"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "chmod (change mode) is the Linux command used to change file permissions for read (r), write (w), and execute (x) access. chown changes owner, chgrp changes group, umask sets default permissions."
+      },
+      {
+        "id": "prev_2026_049",
+        "question": "Which command displays the IP configuration on a Windows host?",
+        "code": null,
+        "options": [
+          "ipconfig",
+          "route print",
+          "netstat",
+          "tracert"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "ipconfig displays the IP configuration on Windows, including IP address, subnet mask, and default gateway. route print shows the routing table, netstat shows active connections, tracert traces the packet route."
+      },
+      {
+        "id": "prev_2026_050",
+        "question": "Which of the following describes a 'Phishing' attack?",
+        "code": null,
+        "options": [
+          "Scanning ports to find open services",
+          "Sending fraudulent emails to trick users into revealing credentials",
+          "Overloading a server with traffic",
+          "Intercepting Wi-Fi signals from a parking lot"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Phishing involves sending fraudulent emails that appear to be from trusted sources to trick users into revealing credentials or sensitive information. Port scanning is reconnaissance; server overloading is DoS; Wi-Fi interception is sniffing."
+      },
+      {
+        "id": "prev_2026_051",
+        "question": "What is the result of: (1 AND 0) OR (1 AND 1)?",
+        "code": null,
+        "options": [
+          "0",
+          "1",
+          "Null",
+          "-1"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Step 1: (1 AND 0) = 0. Step 2: (1 AND 1) = 1. Step 3: 0 OR 1 = 1. The result is 1."
+      },
+      {
+        "id": "prev_2026_052",
+        "question": "Which is a key principle of 'Agile' project management?",
+        "code": null,
+        "options": [
+          "Detailed documentation over working software",
+          "Following a plan is more important than responding to change",
+          "Iterative development and customer collaboration",
+          "Contract negotiation is the primary goal"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Agile's core principles: iterative development, customer collaboration, responding to change, and delivering working software. It prioritizes working software over documentation, and change response over rigid plans."
+      },
+      {
+        "id": "prev_2026_053",
+        "question": "Which effectively mitigates 'Social Engineering' attacks?",
+        "code": null,
+        "options": [
+          "Installing a stronger firewall",
+          "Regular security awareness training for employees",
+          "Increasing database password complexity",
+          "Upgrading server RAM"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Social engineering exploits human psychology, not technical vulnerabilities. Therefore, regular security awareness training for employees is the most effective mitigation, teaching them to recognize and resist manipulation attempts."
+      },
+      {
+        "id": "prev_2026_054",
+        "question": "What is the correct binary representation of 192.168.1.1?",
+        "code": null,
+        "options": [
+          "11000000.10101000.00000001.00000001",
+          "10100000.10101000.00000001.00000001",
+          "11000000.10001000.00000001.00000001",
+          "11000000.10101000.00000011.00000001"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "192 = 11000000, 168 = 10101000, 1 = 00000001, 1 = 00000001. So 192.168.1.1 in binary = 11000000.10101000.00000001.00000001."
+      },
+      {
+        "id": "prev_2026_055",
+        "question": "What is 'Throughput' in networking?",
+        "code": null,
+        "options": [
+          "The theoretical maximum speed of the medium",
+          "The actual amount of data successfully transferred over a period",
+          "The time for a packet to travel to the destination",
+          "The number of errors on the line"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Throughput is the actual amount of data successfully transferred over a network in a given time, reflecting real-world performance. It differs from bandwidth (theoretical max) and latency (travel time)."
+      },
+      {
+        "id": "prev_2026_056",
+        "question": "Which logic gate outputs 1 only if the inputs are different?",
+        "code": null,
+        "options": [
+          "AND",
+          "OR",
+          "XOR",
+          "NAND"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "XOR (Exclusive OR) outputs 1 when inputs differ (1,0 → 1; 0,1 → 1) and 0 when inputs are the same (0,0 → 0; 1,1 → 0). AND outputs 1 only when both inputs are 1; OR outputs 1 if at least one is 1."
+      },
+      {
+        "id": "prev_2026_057",
+        "question": "Which of the following is an Administrative Control in security?",
+        "code": null,
+        "options": [
+          "Security Guards",
+          "User Training Program",
+          "Smart Cards",
+          "Encryption"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Administrative controls include policies, procedures, and training programs. User Training Programs teach employees to recognize threats. Security guards are physical controls; smart cards and encryption are technical controls."
+      },
+      {
+        "id": "prev_2026_058",
+        "question": "Which port must be open to allow sending emails from a client to a server?",
+        "code": null,
+        "options": [
+          "25 or 587",
+          "110",
+          "143",
+          "443"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "SMTP uses port 25 (server-to-server) and port 587 (client-to-server, preferred for secure submission). Port 110 is POP3 (receive email), port 143 is IMAP (receive email), port 443 is HTTPS."
+      },
+      {
+        "id": "prev_2026_059",
+        "question": "Which is the most secure method for remote administration of a Linux server?",
+        "code": null,
+        "options": [
+          "Telnet using root account",
+          "SSH using password authentication",
+          "SSH using key-based authentication",
+          "VNC without encryption"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "SSH with key-based authentication is most secure: it uses cryptographic keys instead of passwords, is resistant to brute-force attacks, and encrypts all communication. Telnet sends data in plain text; VNC without encryption is vulnerable."
+      },
+      {
+        "id": "prev_2026_060",
+        "question": "What describes a 'Dictionary Attack'?",
+        "code": null,
+        "options": [
+          "Guessing passwords by trying every word in a pre-defined list",
+          "Trying every possible character combination (Brute Force)",
+          "Stealing the physical password notebook",
+          "Asking the user for their password (Social Engineering)"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "A dictionary attack uses a pre-defined list of common words and passwords to guess credentials. It is faster than brute force but limited to known words. Brute force tries all possible combinations."
+      },
+      {
+        "id": "prev_2026_061",
+        "question": "What is the primary purpose of a 'Demilitarized Zone' (DMZ)?",
+        "code": null,
+        "options": [
+          "To store the core database",
+          "To host public-facing services (Web, Email) separate from the internal LAN",
+          "To connect the CEO's computer to the internet",
+          "To test viruses safely"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "A DMZ is a network segment that hosts public-facing services (web servers, email servers) separated from the internal LAN. This limits exposure—even if the DMZ is compromised, the internal network remains protected."
+      },
+      {
+        "id": "prev_2026_062",
+        "question": "Which data structure is required to check if an expression has balanced parentheses?",
+        "code": null,
+        "options": [
+          "Stack",
+          "Queue",
+          "Tree",
+          "Array"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "A Stack (LIFO) is used to check balanced parentheses. Push opening brackets; when a closing bracket is found, pop and check if it matches. If stack is empty at the end, parentheses are balanced."
+      },
+      {
+        "id": "prev_2026_063",
+        "question": "Which data structure often results in a time-space tradeoff by using extra memory to speed up operations?",
+        "code": null,
+        "options": [
+          "Arrays",
+          "Hash Tables",
+          "Stacks",
+          "Queues"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Hash Tables use extra memory to store hash keys, enabling O(1) average-time search and retrieval. This is the classic time-space tradeoff: more memory used to achieve faster execution."
+      },
+      {
+        "id": "prev_2026_064",
+        "question": "Which dynamic programming approach starts solving from the smallest subproblems first?",
+        "code": null,
+        "options": [
+          "Greedy approach",
+          "Recursive approach",
+          "Top-down approach",
+          "Bottom-up approach"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "Bottom-up (tabulation) approach solves the smallest subproblems first and builds up to the full solution, filling a table iteratively. Top-down (memoization) starts from the main problem and stores results recursively."
+      },
+      {
+        "id": "prev_2026_065",
+        "question": "Which of the following services uses TCP?",
+        "code": null,
+        "options": [
+          "DHCP",
+          "SMTP",
+          "CSMA",
+          "DNS (primary)"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "SMTP (Simple Mail Transfer Protocol) uses TCP (port 25/587) to reliably send emails. DHCP uses UDP; CSMA is a media access method, not a transport protocol; DNS typically uses UDP but can use TCP for large transfers."
+      },
+      {
+        "id": "prev_2026_066",
+        "question": "Which standard TCP port is assigned for SSH servers?",
+        "code": null,
+        "options": [
+          "21",
+          "22",
+          "23",
+          "24"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Port 22 is the standard TCP port for SSH (Secure Shell). Port 21 is FTP, port 23 is Telnet, port 24 is reserved/unused."
+      },
+      {
+        "id": "prev_2026_067",
+        "question": "The memory allocated for any object at runtime is:",
+        "code": null,
+        "options": [
+          "Cache",
+          "HDD",
+          "ROM",
+          "RAM"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "RAM (Random Access Memory) is where objects and programs are temporarily stored and executed at runtime. Cache is faster but for CPU instructions; HDD is permanent storage; ROM stores firmware and is read-only."
+      },
+      {
+        "id": "prev_2026_068",
+        "question": "What does ACID stand for in database transactions?",
+        "code": null,
+        "options": [
+          "All Columns in Database",
+          "Atomicity, Consistency, Isolation, Durability",
+          "Automated Commit in Database",
+          "Association of Conditions in Data"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "ACID stands for Atomicity (all or nothing), Consistency (valid state before and after), Isolation (transactions don't interfere), Durability (committed data persists). These properties ensure reliable database transactions."
+      },
+      {
+        "id": "prev_2026_069",
+        "question": "Which neural network architecture is the foundation of most modern LLMs?",
+        "code": null,
+        "options": [
+          "Bayesian Network",
+          "Convolutional Neural Network (CNN)",
+          "Transformer",
+          "Autoencoder"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "The Transformer architecture (introduced in 'Attention Is All You Need', 2017) is the foundation of most modern LLMs (like GPT, BERT, Claude). CNNs are for image processing; autoencoders for compression; Bayesian networks for probabilistic reasoning."
+      },
+      {
+        "id": "prev_2026_070",
+        "question": "If a process fails, most operating systems write error information to a:",
+        "code": null,
+        "options": [
+          "New file",
+          "Another running process",
+          "Log file",
+          "Database"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Operating systems write error information, events, and messages to a log file for debugging and system monitoring. Log files can be reviewed by administrators to diagnose problems and trace events."
+      },
+      {
+        "id": "prev_2026_071",
+        "question": "Which data structure is used to implement recursion in programming?",
+        "code": null,
+        "options": [
+          "Stack",
+          "Queue",
+          "List",
+          "Array"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Stack (LIFO) is used to implement recursion—function calls and local variables are pushed onto the call stack. When a function returns, its frame is popped. The OS uses a call stack to manage recursive function calls."
+      },
+      {
+        "id": "prev_2026_072",
+        "question": "What does CSS stand for?",
+        "code": null,
+        "options": [
+          "Computer Style Sheets",
+          "Creative Style Sheets",
+          "Cascading Style Sheets",
+          "Colorful Style Sheets"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "CSS (Cascading Style Sheets) is a stylesheet language used to control the visual presentation of HTML elements—layout, colors, fonts, spacing, and responsive design."
+      },
+      {
+        "id": "prev_2026_073",
+        "question": "Which type of memory retains its contents even when power is turned off?",
+        "code": null,
+        "options": [
+          "RAM",
+          "ROM",
+          "Cache Memory",
+          "Register"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "ROM (Read-Only Memory) is non-volatile — it retains data permanently even when powered off. RAM, cache, and registers are volatile and lose data when power is removed."
+      },
+      {
+        "id": "prev_2026_074",
+        "question": "Which SQL clause allows aggregate functions after GROUP BY?",
+        "code": null,
+        "options": [
+          "HAVING",
+          "WHERE",
+          "WITH",
+          "SELECT"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "HAVING is used to filter groups after aggregation (e.g., HAVING COUNT(*) > 5). WHERE filters individual rows before grouping. HAVING allows aggregate functions like COUNT, SUM, AVG to be used in conditions."
+      },
+      {
+        "id": "prev_2026_075",
+        "question": "Which command-line tool shows the route that packets take from workstation A to server?",
+        "code": null,
+        "options": [
+          "traceroute",
+          "dig",
+          "ping",
+          "route"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "traceroute (Linux) / tracert (Windows) shows each hop a packet takes to reach a destination, helping diagnose network path issues. ping checks connectivity; dig queries DNS; route shows the routing table."
+      },
+      {
+        "id": "prev_2026_076",
+        "question": "Wrapping data and its related functionality into a single entity is known as:",
+        "code": null,
+        "options": [
+          "Abstraction",
+          "Encapsulation",
+          "Polymorphism",
+          "Modularity"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Encapsulation is the OOP principle of bundling data (attributes) and methods (behaviors) into a single unit (class), protecting internal state from direct access. Abstraction hides implementation details; polymorphism allows multiple behaviors."
+      },
+      {
+        "id": "prev_2026_077",
+        "question": "In MVC architecture, which component handles HTTP GET and POST requests?",
+        "code": null,
+        "options": [
+          "Model",
+          "View",
+          "Controller",
+          "Both Model and View"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "The Controller receives and processes HTTP requests (GET/POST), interacts with the Model for data, and returns responses to the View. Model handles data/business logic; View renders the UI."
+      },
+      {
+        "id": "prev_2026_078",
+        "question": "Source code translation and program modularization are activities of:",
+        "code": null,
+        "options": [
+          "Reverse engineering",
+          "Forward engineering",
+          "Reengineering",
+          "Testing"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Reengineering involves analyzing and transforming existing software (source code translation, modularization) to improve structure or maintainability. Reverse engineering extracts design from existing software; forward engineering builds from scratch."
+      },
+      {
+        "id": "prev_2026_079",
+        "question": "Which one of these is NOT shared by threads within the same process?",
+        "code": null,
+        "options": [
+          "Address Space",
+          "Stack",
+          "Message Queue",
+          "File Descriptor Table"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Each thread has its own Stack (for function calls, local variables, return addresses). Threads share the Address Space, Message Queue, and File Descriptor Table within the same process."
+      },
+      {
+        "id": "prev_2026_080",
+        "question": "If a process is in its critical section, no other process can be in its critical section. This is called:",
+        "code": null,
+        "options": [
+          "Mutual Exclusion",
+          "Race Condition",
+          "Critical Condition",
+          "Synchronous Condition"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Mutual Exclusion is the condition that ensures only one process executes in its critical section at a time, preventing race conditions and data corruption in concurrent systems."
+      },
+      {
+        "id": "prev_2026_081",
+        "question": "Which best describes a public IP address?",
+        "code": null,
+        "options": [
+          "Used only within a local network",
+          "Not routable on the Internet",
+          "Assigned only by local routers",
+          "Unique and globally routable on the Internet"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "A public IP address is globally unique and routable on the Internet, assigned by ISPs. Private IP addresses (e.g., 192.168.x.x) are used within local networks and are not directly routable on the Internet."
+      },
+      {
+        "id": "prev_2026_082",
+        "question": "Which CPU scheduling algorithm gives the minimum average waiting time?",
+        "code": null,
+        "options": [
+          "FCFS",
+          "Round Robin",
+          "SJF (Shortest Job First)",
+          "Priority"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "SJF (Shortest Job First) schedules the process with the shortest burst time next, provably minimizing average waiting time among non-preemptive algorithms. FCFS may cause convoy effect; Round Robin uses fixed time slices."
+      },
+      {
+        "id": "prev_2026_083",
+        "question": "Context switching occurs in which hardware component?",
+        "code": null,
+        "options": [
+          "Compiler",
+          "Memory",
+          "CPU",
+          "I/O Device"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Context switching occurs in the CPU — it saves the state (registers, program counter) of the current process and loads the state of another process, enabling multitasking."
+      },
+      {
+        "id": "prev_2026_084",
+        "question": "Port number for HTTP is:",
+        "code": null,
+        "options": [
+          "21",
+          "25",
+          "80",
+          "443"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Port 80 is the standard port for HTTP (HyperText Transfer Protocol). Port 21 is FTP, port 25 is SMTP, and port 443 is HTTPS."
+      },
+      {
+        "id": "prev_2026_085",
+        "question": "Which language is used to manage databases?",
+        "code": null,
+        "options": [
+          "HTML",
+          "SQL",
+          "XML",
+          "Java"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "SQL (Structured Query Language) is the standard language for creating, managing, and querying relational databases. HTML structures web pages; XML represents data; Java is a general-purpose programming language."
+      },
+      {
+        "id": "prev_2026_086",
+        "question": "Which SQL command is used to remove an entire table permanently?",
+        "code": null,
+        "options": [
+          "DELETE",
+          "DROP",
+          "REMOVE",
+          "TRUNCATE"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "DROP TABLE permanently removes the table and all its data from the database. DELETE removes specific rows; TRUNCATE removes all rows but keeps the table structure; REMOVE is not a standard SQL command."
+      },
+      {
+        "id": "prev_2026_087",
+        "question": "Which of the following is NOT a programming language?",
+        "code": null,
+        "options": [
+          "Python",
+          "Java",
+          "HTML",
+          "C++"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "HTML (HyperText Markup Language) is a markup language used to structure web pages, not a programming language — it has no logic, loops, or conditions. Python, Java, and C++ are all full programming languages."
+      },
+      {
+        "id": "prev_2026_088",
+        "question": "Which command is used to view active connections and listening ports?",
+        "code": null,
+        "options": [
+          "netstat",
+          "ping",
+          "nslookup",
+          "ipconfig"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "netstat shows active network connections, listening ports, protocol statistics, and routing information. ping checks connectivity; nslookup queries DNS; ipconfig shows IP configuration."
+      },
+      {
+        "id": "prev_2026_089",
+        "question": "What is the decimal value of binary number 111?",
+        "code": null,
+        "options": [
+          "3",
+          "5",
+          "7",
+          "9"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Binary 111 = 1×2² + 1×2¹ + 1×2⁰ = 4 + 2 + 1 = 7 in decimal. Binary 11 = 3, binary 101 = 5, binary 1001 = 9."
+      },
+      {
+        "id": "prev_2026_090",
+        "question": "এক কথায় প্রকাশ করুন: অক্ষির অভিমুখে —",
+        "code": null,
+        "options": [
+          "প্রত্যক্ষ",
+          "পরোক্ষ",
+          "সমক্ষ",
+          "চাক্ষুষ"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "অক্ষির (চোখের) অভিমুখে = সমক্ষ। 'সমক্ষ' মানে চোখের সামনে বা সম্মুখে।"
+      },
+      {
+        "id": "prev_2026_091",
+        "question": "'প্রত্যয়'-এর বিপরীত শব্দ কী?",
+        "code": null,
+        "options": [
+          "উপচয়",
+          "অপচয়",
+          "সংশয়",
+          "সন্দেহ"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "'প্রত্যয়' মানে বিশ্বাস বা দৃঢ় মনোভাব। এর বিপরীত শব্দ 'সংশয়' — যার অর্থ সন্দেহ বা অনিশ্চয়তা।"
+      },
+      {
+        "id": "prev_2026_092",
+        "question": "সে এখন যাবে না। — এই বাক্যে 'না' কোন পদ?",
+        "code": null,
+        "options": [
+          "বিশেষণ",
+          "অব্যয়",
+          "ক্রিয়াবিশেষণ",
+          "অনুসর্গ"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "'না' এখানে ক্রিয়াকে বিশেষিত করছে (যাবে না — ক্রিয়ার অবস্থা নির্দেশ করছে), তাই এটি ক্রিয়াবিশেষণ।"
+      },
+      {
+        "id": "prev_2026_093",
+        "question": "'অক্কা পাওয়া' বাগধারায় ফারসি 'অক্কা' শব্দের অর্থ কী?",
+        "code": null,
+        "options": [
+          "প্রভু",
+          "মৃত্যু",
+          "বেহেশত",
+          "আত্মা"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "ফারসি 'অক্কা' শব্দের অর্থ বেহেশত (স্বর্গ)। 'অক্কা পাওয়া' মানে স্বর্গে যাওয়া, অর্থাৎ মৃত্যু।"
+      },
+      {
+        "id": "prev_2026_094",
+        "question": "শুদ্ধ বানান গুচ্ছ কোনটি?",
+        "code": null,
+        "options": [
+          "পরিষ্কার, পুরস্কার",
+          "বিকৃত, বিক্রীত",
+          "স্বীকার, শীক্ষার",
+          "ধরণ, ধারনা"
+        ],
+        "answer": 0,
+        "difficulty": "medium",
+        "explanation": "পরিষ্কার ও পুরস্কার উভয় বানানই শুদ্ধ। বিকৃত/বিক্রীত — উভয়ই সঠিক হলেও এই গুচ্ছে সন্দেহ নেই; শীক্ষার ভুল (শিক্ষার হবে); ধারনা ভুল (ধারণা হবে)।"
+      },
+      {
+        "id": "prev_2026_095",
+        "question": "'কানে কলম' কোন সমাসের উদাহরণ?",
+        "code": null,
+        "options": [
+          "উপপদ তৎপুরুষ",
+          "অলুক দ্বন্দ্ব",
+          "প্রত্যয়ান্ত বহুব্রীহি",
+          "অলুক বহুব্রীহি"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "'কানে কলম' — কানে কলম যার (বিশেষ ব্যক্তির পরিচয় বোঝায়) এবং বিভক্তি লোপ পায়নি ('কানে' এ বিভক্তি আছে)। তাই এটি অলুক বহুব্রীহি সমাস।"
+      },
+      {
+        "id": "prev_2026_096",
+        "question": "Empty vessels sound much — এর সঠিক বঙ্গানুবাদ কোনটি?",
+        "code": null,
+        "options": [
+          "যত কথা তত কাজ।",
+          "অসারের তর্জন গর্জনই সার।",
+          "মুখে বুলি লম্বা, কাজে অষ্টরম্ভা।",
+          "এক মাঘে শীত যায় না।"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "'Empty vessels make the most noise' — এর বঙ্গানুবাদ: অসারের তর্জন গর্জনই সার। অর্থ: যাদের জ্ঞান কম তারাই বেশি কথা বলে।"
+      },
+      {
+        "id": "prev_2026_097",
+        "question": "Pluck me a flower. The correct passive voice form is:",
+        "code": null,
+        "options": [
+          "Let a flower be plucked by me.",
+          "Let a flower be plucked for me.",
+          "Let me a flower be plucked to me.",
+          "A flower is plucked by me."
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Imperative sentences with indirect object: 'Pluck me a flower' → Passive: 'Let a flower be plucked for me.' The indirect object 'me' becomes 'for me' in the passive form."
+      },
+      {
+        "id": "prev_2026_098",
+        "question": "Find out the correct pronoun order form:",
+        "code": null,
+        "options": [
+          "I, you and Shuma are guilty.",
+          "Shuma, you and I are guilty.",
+          "Shuma, I and you are guilty.",
+          "I, you and Shuma is guilty."
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Correct pronoun order for negative/guilty context: 2nd person (you), 3rd person (Shuma/he/she), 1st person (I). Rule: 123 for positive (I, you, he); 231 for negative/guilty (Shuma, you and I). Verb must be plural 'are'."
+      },
+      {
+        "id": "prev_2026_099",
+        "question": "What is the antonym of 'segregate'?",
+        "code": null,
+        "options": [
+          "Isolate",
+          "Combine",
+          "Divide",
+          "Sever"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "'Segregate' means to separate or divide into groups. Its antonym is 'combine' — to bring together. Isolate, divide, and sever all carry meanings of separation."
+      },
+      {
+        "id": "prev_2026_100",
+        "question": "________ Opportunity comes responsibility.",
+        "code": null,
+        "options": [
+          "From",
+          "Before",
+          "Without",
+          "With"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "The correct phrase is 'With opportunity comes responsibility' — meaning that having opportunities carries the obligation to use them wisely. This is a common English idiom."
+      },
+      {
+        "id": "prev_2026_101",
+        "question": "'The man who came here yesterday' — the underlined clause is a/an ________ clause.",
+        "code": null,
+        "options": [
+          "Noun",
+          "Adjective",
+          "Adverbial",
+          "Principal"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The clause 'who came here yesterday' modifies the noun 'man', so it is an Adjective (Relative) Clause. Adjective clauses describe or identify nouns, beginning with relative pronouns (who, which, that)."
+      },
+      {
+        "id": "prev_2026_102",
+        "question": "Are you sure that you ________ the killer before?",
+        "code": null,
+        "options": [
+          "will have seen",
+          "had seen",
+          "would have seen",
+          "must have seen"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "'Had seen' (past perfect) is correct here, referring to an action that was completed before another past time. The question implies a past reference point, so past perfect is appropriate."
+      },
+      {
+        "id": "prev_2026_103",
+        "question": "A restaurant makes 20% profit after selling at a 20% discount. What is the percentage increase of the marked price?",
+        "code": null,
+        "options": [
+          "30%",
+          "20%",
+          "40%",
+          "50%"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "Let CP = 100, SP = 120 (20% profit). After 20% discount: SP = 0.8 × MP → 120 = 0.8 × MP → MP = 150. Increase in marked price = 150 − 100 = 50%. Answer: 50%."
+      },
+      {
+        "id": "prev_2026_104",
+        "question": "A ladder's bottom is 4m from a wall and its top is at 3m height. What is the length of the ladder?",
+        "code": null,
+        "options": [
+          "7m",
+          "35m",
+          "5m",
+          "25m"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Using Pythagorean theorem: Length² = 4² + 3² = 16 + 9 = 25. Length = √25 = 5m."
+      },
+      {
+        "id": "prev_2026_105",
+        "question": "A box (height 2m, length 10m, width 7m) has the top lid open. What is the surface area?",
+        "code": null,
+        "options": [
+          "138 m²",
+          "118 m²",
+          "208 m²",
+          "168 m²"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Open-top box surface area = Bottom + 2 Sides (length×height) + 2 Sides (width×height). = (10×7) + 2(10×2) + 2(7×2) = 70 + 40 + 28 = 138 m². Wait: re-checking: 70+40+28=138. Answer: 138 m²."
+      },
+      {
+        "id": "prev_2026_106",
+        "question": "If x + 1/x = 7, what is the value of x² + 1/x²?",
+        "code": null,
+        "options": [
+          "14",
+          "21",
+          "51",
+          "47"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "(x + 1/x)² = x² + 2 + 1/x² → 49 = x² + 2 + 1/x² → x² + 1/x² = 49 − 2 = 47."
+      },
+      {
+        "id": "prev_2026_107",
+        "question": "Which two values of x satisfy (x+3)² = x+5?",
+        "code": null,
+        "options": [
+          "1, 4",
+          "1, -4",
+          "-1, -4",
+          "-1, 4"
+        ],
+        "answer": 2,
+        "difficulty": "hard",
+        "explanation": "Expand: x²+6x+9 = x+5 → x²+5x+4 = 0 → (x+1)(x+4) = 0 → x = -1 or x = -4. Answer: -1, -4."
+      },
+      {
+        "id": "prev_2026_108",
+        "question": "H.C.F. and L.C.M. of two numbers are 12 and 288. If one number is 96, find the other.",
+        "code": null,
+        "options": [
+          "34",
+          "36",
+          "38",
+          "40"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Using formula: HCF × LCM = Product of two numbers. 12 × 288 = 96 × Other. Other = (12 × 288) / 96 = 3456 / 96 = 36."
+      },
+      {
+        "id": "prev_2026_109",
+        "question": "Which of the following is a buffer state?",
+        "code": null,
+        "options": [
+          "Bangladesh",
+          "Pakistan",
+          "Maldives",
+          "Bhutan"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "Bhutan is a classic buffer state, situated between two major powers — India and China. A buffer state serves as a neutral or intermediate zone between rival powers."
+      },
+      {
+        "id": "prev_2026_110",
+        "question": "Where is the Ethnic Cultural Academy Birisini situated?",
+        "code": null,
+        "options": [
+          "Rangamati",
+          "Habiganj",
+          "Netrokona",
+          "Mymensingh"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "The Ethnic Cultural Academy (Birisini) is situated in Netrokona district, Bangladesh. It was established to preserve and promote the cultural heritage of ethnic communities."
+      },
+      {
+        "id": "prev_2026_111",
+        "question": "Which Bengali scientist is famous for inventing Mercurous Nitrite?",
+        "code": null,
+        "options": [
+          "Satyendra Nath Bose",
+          "Jagadish Chandra Bose",
+          "Muhammad Qudrat-I-Khuda",
+          "Prafulla Chandra Roy"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "Prafulla Chandra Roy (P.C. Roy) is famous for discovering and synthesizing Mercurous Nitrite (Hg₂(NO₂)₂) in 1896, a significant contribution to chemistry. He is known as the 'father of Indian chemistry'."
+      },
+      {
+        "id": "prev_2026_112",
+        "question": "Which organization led the Language Movement first?",
+        "code": null,
+        "options": [
+          "East Pakistan Muslim League",
+          "Tamaddun Majlish",
+          "All-Party Central Language Action Committee",
+          "Dhaka University Language Action Committee"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Tamaddun Majlish, a cultural organization, was the first to demand Bengali as the state language of Pakistan in 1947, initiating the Language Movement that culminated in the events of 21 February 1952."
+      },
+      {
+        "id": "prev_2026_113",
+        "question": "What does NPSB stand for in Bangladesh's banking sector?",
+        "code": null,
+        "options": [
+          "National Payment System of Banks",
+          "National Payment Switch Bangladesh",
+          "National Processing Service Bureau",
+          "Network Payment and Settlement Board"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "NPSB stands for National Payment Switch Bangladesh, operated by Bangladesh Bank. It is the interbank payment infrastructure that facilitates electronic fund transfers between banks in Bangladesh."
+      },
+      {
+        "id": "prev_2026_114",
+        "question": "In which district is the 'Tin Bigha Corridor' located?",
+        "code": null,
+        "options": [
+          "Nilphamari",
+          "Lalmonirhat",
+          "Rangpur",
+          "Kurigram"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The Tin Bigha Corridor is located in Lalmonirhat district, Bangladesh. It is a 178-meter corridor leased to Bangladesh by India to connect Dahagram-Angarpota enclave with Bangladesh."
+      },
+      {
+        "id": "prev_2026_115",
+        "question": "Which country introduced the AI-powered, document-free immigration corridor?",
+        "code": null,
+        "options": [
+          "United States",
+          "United Arab Emirates",
+          "United Kingdom",
+          "Singapore"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The United Arab Emirates (UAE) introduced an AI-powered, document-free immigration corridor using biometric facial recognition technology, allowing passengers to pass through immigration without presenting physical documents."
+      },
+      {
+        "id": "prev_2026_116",
+        "question": "________ I bought you a new dress, would you be happy?",
+        "code": null,
+        "options": [
+          "If",
+          "When",
+          "As",
+          "Since"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "'If' is correct here as it introduces a conditional (hypothetical) sentence. 'If I bought you a new dress, would you be happy?' — a Type 2 conditional expressing an imaginary or unlikely situation."
+      },
+      {
+        "id": "prev_2026_117",
+        "question": "'I want you to understand that worldly gains cannot guarantee ________ everlasting happiness.'",
+        "code": null,
+        "options": [
+          "the",
+          "an",
+          "no article",
+          "a"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "No article is used before 'everlasting happiness' because happiness is an abstract uncountable noun. Abstract nouns do not take articles when used in a general sense."
+      },
+      {
+        "id": "prev_2026_118",
+        "question": "Which of the following words is spelt wrong?",
+        "code": null,
+        "options": [
+          "Commitment",
+          "Disciplinary",
+          "Jewelery",
+          "Absorption"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "'Jewelery' is spelt wrong. The correct spelling is 'Jewellery' (British English) or 'Jewelry' (American English). Commitment, Disciplinary, and Absorption are all correctly spelled."
+      },
+      {
+        "id": "prev_2026_119",
+        "question": "'The biriyani tastes as good as it looks.' Make comparative degree:",
+        "code": null,
+        "options": [
+          "The biriyani looks better than it tastes.",
+          "The biriyani tastes better than it looks.",
+          "The biriyani both tastes and looks better.",
+          "The biriyani tastes no better than it looks."
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "'As good as' (positive degree) converted to comparative: 'no better than'. 'The biriyani tastes no better than it looks' maintains the same meaning — taste equals look, neither is better."
+      },
+      {
+        "id": "prev_2026_120",
+        "question": "A train 220m long at 45 km/h crosses a tunnel 260m long. What is the time taken?",
+        "code": null,
+        "options": [
+          "25.4 sec",
+          "35.4 sec",
+          "38.4 sec",
+          "40.4 sec"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Total distance = 220 + 260 = 480m. Speed = 45 km/h = 45 × 1000/3600 = 12.5 m/s. Time = 480 / 12.5 = 38.4 seconds."
+      },
+      {
+        "id": "prev_2026_121",
+        "question": "Two trucks 300km apart travel toward each other at 70 km/h and 50 km/h. How long to meet?",
+        "code": null,
+        "options": [
+          "5 hrs",
+          "3 hrs",
+          "2.5 hrs",
+          "6 hrs"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Combined speed = 70 + 50 = 120 km/h. Time = Distance / Speed = 300 / 120 = 2.5 hours. Answer: 2.5 hrs."
+      },
+      {
+        "id": "prev_2026_122",
+        "question": "International Literacy Day is observed on:",
+        "code": null,
+        "options": [
+          "4 October",
+          "4 September",
+          "8 September",
+          "8 November"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "International Literacy Day is observed on 8 September every year, proclaimed by UNESCO in 1966. It highlights the importance of literacy for individuals, communities, and societies."
+      },
+      {
+        "id": "prev_2026_123",
+        "question": "The first computer in Bangladesh was installed at the:",
+        "code": null,
+        "options": [
+          "Dhaka University Science Library",
+          "ICDDRB",
+          "Atomic Energy Center",
+          "BCSIR"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "The first computer in Bangladesh was installed at the Atomic Energy Center (now Bangladesh Atomic Energy Commission) in Dhaka in 1964."
+      },
+      {
+        "id": "prev_2026_124",
+        "question": "Where did artist Hamidur Rahman create his mural titled 'Borak Duldul'?",
+        "code": null,
+        "options": [
+          "TSC",
+          "Bangla Academy",
+          "Curzon Hall",
+          "Dhaka University Library"
+        ],
+        "answer": 3,
+        "difficulty": "hard",
+        "explanation": "Artist Hamidur Rahman created the mural 'Borak Duldul' at the Dhaka University Library. Hamidur Rahman was a renowned Bangladeshi artist known for his contributions to the Shaheed Minar design."
+      },
+      {
+        "id": "prev_2026_125",
+        "question": "Why do modern processors favor multistage pipeline over single-cycle implementation?",
+        "code": null,
+        "options": [
+          "Single-cycle uses less power",
+          "Multistage pipeline allows multiple instructions to execute in parallel stages, increasing throughput",
+          "Single-cycle is more accurate",
+          "Multistage uses fewer transistors"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Multistage pipeline divides instruction execution into stages (fetch, decode, execute, memory, write-back). Multiple instructions overlap in different stages simultaneously, increasing throughput, enabling faster clock speeds, and better hardware utilization vs single-cycle design."
+      },
+      {
+        "id": "prev_2026_126",
+        "question": "How does memory hierarchy reduce the performance gap between a fast CPU and slow main memory?",
+        "code": null,
+        "options": [
+          "By slowing down the CPU",
+          "By using cache memory to store frequently accessed data close to the CPU",
+          "By increasing RAM size",
+          "By using faster storage drives"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Memory hierarchy (Cache → RAM → Secondary Storage) places fast cache close to the CPU. Temporal and spatial locality ensure frequently/recently used data stays in cache, minimizing slow main memory access and dramatically reducing the CPU-memory performance gap."
+      },
+      {
+        "id": "prev_2026_127",
+        "question": "A packet passes through 4 routers (2ms processing delay each) with 5 links (5ms transmission delay each). What is the total end-to-end delay?",
+        "code": null,
+        "options": [
+          "25 ms",
+          "33 ms",
+          "28 ms",
+          "40 ms"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Processing delay = 4 routers × 2ms = 8ms. Transmission delay = 5 links × 5ms = 25ms. Total = 8 + 25 = 33ms. (Number of links = routers + 1 = 5, ignoring propagation delay as stated.)"
+      },
+      {
+        "id": "prev_2026_128",
+        "question": "Given IP 192.168.10.0/24 with 3 borrowed bits, how many subnets and hosts per subnet?",
+        "code": null,
+        "options": [
+          "4 subnets, 62 hosts",
+          "8 subnets, 30 hosts",
+          "16 subnets, 14 hosts",
+          "8 subnets, 62 hosts"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Borrowed bits = 3 → Subnets = 2³ = 8. New prefix = /24+3 = /27. Host bits = 32-27 = 5. Hosts per subnet = 2⁵ - 2 = 30 (subtract network and broadcast addresses)."
+      },
+      {
+        "id": "prev_2026_129",
+        "question": "Why is Atomicity specifically critical for an inter-bank fund transfer?",
+        "code": null,
+        "options": [
+          "It speeds up the transaction",
+          "It ensures either the entire transfer (debit + credit) completes or nothing happens, preventing money loss",
+          "It encrypts the transaction",
+          "It logs the transaction"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Atomicity ensures all-or-nothing execution. If debit occurs but credit fails (e.g., system crash), without atomicity money is lost. With atomicity, the transaction rolls back, restoring original balances and maintaining financial integrity."
+      },
+      {
+        "id": "prev_2026_130",
+        "question": "An ATM network has 4 hours downtime per 30 days. What is system availability? (30 days = 720 hrs)",
+        "code": null,
+        "options": [
+          "99.00%",
+          "98.50%",
+          "99.44%",
+          "99.72%"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Availability = [(Total Time − Downtime) / Total Time] × 100 = [(720 − 4) / 720] × 100 = (716/720) × 100 ≈ 99.44%."
+      },
+      {
+        "id": "prev_2026_131",
+        "question": "ATM processes 500 transactions/hour at Tk 0.50 fee per transaction. What is the total revenue loss during 4 hours of downtime?",
+        "code": null,
+        "options": [
+          "Tk 500",
+          "Tk 750",
+          "Tk 1000",
+          "Tk 2000"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Loss per hour = 500 transactions × Tk 0.50 = Tk 250. Total loss = Tk 250 × 4 hours = Tk 1000."
+      },
+      {
+        "id": "prev_2026_132",
+        "question": "What are the four necessary conditions for deadlock? Which one involves a circular chain of waiting processes?",
+        "code": null,
+        "options": [
+          "Mutual Exclusion",
+          "Hold and Wait",
+          "No Preemption",
+          "Circular Wait"
+        ],
+        "answer": 3,
+        "difficulty": "medium",
+        "explanation": "Four deadlock conditions: (1) Mutual Exclusion, (2) Hold and Wait, (3) No Preemption, (4) Circular Wait. Circular Wait: each process waits for a resource held by the next — P1→P2→P3→P1, forming a cycle where no process can proceed."
+      },
+      {
+        "id": "prev_2026_133",
+        "question": "What is the difference between Logical Address and Physical Address in an OS?",
+        "code": null,
+        "options": [
+          "Both are the same in modern OS",
+          "Logical address is generated by CPU and virtual; Physical address is the actual RAM location after MMU translation",
+          "Physical address is created by the CPU",
+          "Logical address is stored in ROM"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Logical Address: generated by CPU, visible to programs, virtual. Physical Address: actual RAM location, obtained after MMU (Memory Management Unit) translates the logical address. Users see logical addresses; hardware uses physical addresses."
+      },
+      {
+        "id": "prev_2026_134",
+        "question": "What is the main disadvantage of a fuse compared to a circuit breaker?",
+        "code": null,
+        "options": [
+          "Fuses are more expensive",
+          "Fuses can only be used once and must be replaced after blowing; circuit breakers can be reset",
+          "Fuses provide less protection",
+          "Fuses cannot handle high voltage"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "The main disadvantage of a fuse is that it is a one-time use device — it melts when it blows and must be replaced manually. Circuit breakers can be reset with a switch and reused, offering more convenience and precise protection."
+      },
+      {
+        "id": "prev_2026_135",
+        "question": "A heater rated 2.4 kW is connected to 240V. What is the minimum fuse current rating to use?",
+        "code": null,
+        "options": [
+          "5A",
+          "10A",
+          "13A",
+          "15A"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Current I = P/V = 2400W / 240V = 10A. The fuse rating should be slightly higher than calculated current, so select the next standard value = 13A fuse."
+      },
+      {
+        "id": "prev_2026_136",
+        "question": "HTTP 2xx status codes represent:",
+        "code": null,
+        "options": [
+          "Redirection",
+          "Client Error",
+          "Success",
+          "Server Error"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "2xx codes indicate successful responses: 200 OK (request successful), 201 Created (resource created), 204 No Content. 4xx = Client Errors; 5xx = Server Errors; 3xx = Redirection."
+      },
+      {
+        "id": "prev_2026_137",
+        "question": "HTTP 4xx status codes represent:",
+        "code": null,
+        "options": [
+          "Success",
+          "Redirection",
+          "Client Error",
+          "Server Error"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "4xx codes indicate client-side errors: 400 Bad Request (invalid syntax), 401 Unauthorized (authentication required), 403 Forbidden (access denied), 404 Not Found (resource not found)."
+      },
+      {
+        "id": "prev_2026_138",
+        "question": "HTTP 5xx status codes represent:",
+        "code": null,
+        "options": [
+          "Success",
+          "Client Error",
+          "Redirection",
+          "Server Error"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "5xx codes indicate server-side errors: 500 Internal Server Error (general server failure), 502 Bad Gateway (invalid upstream response), 503 Service Unavailable (server temporarily down), 504 Gateway Timeout."
+      },
+      {
+        "id": "prev_2026_139",
+        "question": "What are HTTP Cookies and how can they be a security risk?",
+        "code": null,
+        "options": [
+          "Cookies are server-side files; they have no security risk",
+          "Cookies are small browser-stored data; they risk session hijacking, XSS, and man-in-the-middle attacks",
+          "Cookies are encrypted by default; no security risk",
+          "Cookies only store aesthetic preferences"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "HTTP Cookies are small data stored in the browser by websites (for session, preferences, tracking). Security risks: Session Hijacking (stolen cookies grant account access), XSS (scripts read cookies), Man-in-the-Middle (intercepted if no HTTPS), Privacy tracking."
+      },
+      {
+        "id": "prev_2026_140",
+        "question": "Which are the 5 key enabling technologies of cloud computing?",
+        "code": null,
+        "options": [
+          "HTML, CSS, JavaScript, PHP, SQL",
+          "Virtualization, Distributed Computing, High-Speed Internet, SOA, Data Centers",
+          "Docker, Kubernetes, Git, Jenkins, Maven",
+          "Apache, Nginx, MySQL, Redis, RabbitMQ"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Key enabling technologies of cloud computing: (1) Virtualization (multiple VMs on one server), (2) Distributed Computing (shared processing), (3) High-Speed Internet (fast connectivity), (4) Service-Oriented Architecture/SOA (interoperable services), (5) Data Centers (physical infrastructure)."
+      },
+      {
+        "id": "prev_2026_141",
+        "question": "For an e-commerce big data pipeline, which tool is used for real-time data ingestion of web server logs?",
+        "code": null,
+        "options": [
+          "Apache Spark",
+          "Apache Kafka / Amazon Kinesis",
+          "Amazon Redshift",
+          "Apache Airflow"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Apache Kafka / Amazon Kinesis are used at the Data Ingestion Layer to ingest millions of real-time web server logs. Spark processes data; Redshift is a data warehouse; Airflow orchestrates workflows."
+      },
+      {
+        "id": "prev_2026_142",
+        "question": "Which Hadoop component is used for real-time data ingestion (e.g., web server logs) into HDFS?",
+        "code": null,
+        "options": [
+          "YARN",
+          "Hive",
+          "Flume",
+          "ZooKeeper"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "Apache Flume is used for real-time data ingestion — it efficiently collects, aggregates, and transfers streaming data (like web server logs) to HDFS. YARN manages resources; Hive is for SQL querying; ZooKeeper for coordination."
+      },
+      {
+        "id": "prev_2026_143",
+        "question": "What is the role of CSS Media Queries in responsive web design?",
+        "code": null,
+        "options": [
+          "They store user data in the browser",
+          "They apply different CSS styles based on screen size, resolution, or device type",
+          "They handle server-side rendering",
+          "They manage HTTP cookies"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "CSS Media Queries apply different styles based on device characteristics (screen size, resolution, orientation). Example: @media (max-width: 768px) applies styles for mobile screens, enabling responsive layouts across devices."
+      },
+      {
+        "id": "prev_2026_144",
+        "question": "What is the 'Mobile-First' approach in web design?",
+        "code": null,
+        "options": [
+          "Design only for mobile, ignore desktop",
+          "Design for desktop first, then scale down",
+          "Design for mobile first using min-width media queries, then enhance for larger screens",
+          "Use only mobile frameworks like React Native"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Mobile-First means designing the website for small mobile screens first, then progressively enhancing for tablets and desktops using min-width media queries. Benefits: better performance, simpler base design, improved mobile UX."
+      },
+      {
+        "id": "prev_2026_145",
+        "question": "A bank's employees share a single 'Superuser' password. What policy is violated?",
+        "code": null,
+        "options": [
+          "Password length policy",
+          "Account access/individual accountability security policy",
+          "Backup schedule policy",
+          "Data retention policy"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Sharing a single Superuser password violates the account access and individual accountability security policy. Each user should have unique credentials for accountability, audit trails, and least privilege principle compliance."
+      },
+      {
+        "id": "prev_2026_146",
+        "question": "A machine produces defective items at 25% rate. If 2 items are selected, what is the probability that at least one is defective?",
+        "code": null,
+        "options": [
+          "0.25",
+          "0.50",
+          "0.4375",
+          "0.5625"
+        ],
+        "answer": 2,
+        "difficulty": "medium",
+        "explanation": "P(at least one defective) = 1 − P(none defective). P(none defective) = 0.75 × 0.75 = 0.5625. P(at least one) = 1 − 0.5625 = 0.4375 (43.75%)."
+      },
+      {
+        "id": "prev_2026_147",
+        "question": "10 engineers are in a room. If every engineer shakes hands with every other engineer exactly once, what is the total number of handshakes?",
+        "code": null,
+        "options": [
+          "90",
+          "50",
+          "45",
+          "100"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Total handshakes = ¹⁰C₂ = (10 × 9) / (1 × 2) = 90/2 = 45. Using combination formula C(n,2) = n(n-1)/2 where n=10."
+      },
+      {
+        "id": "prev_2026_148",
+        "question": "What is a Zero-Day Attack?",
+        "code": null,
+        "options": [
+          "An attack that happens at midnight",
+          "An attack exploiting a vulnerability before the vendor knows about it or releases a patch",
+          "An attack using zero-length packets",
+          "An attack on newly installed systems"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "A Zero-Day Attack exploits a software/hardware vulnerability before the developer is aware or has released a security patch. Called 'zero-day' because developers have zero days to fix it. Difficult to detect with traditional tools."
+      },
+      {
+        "id": "prev_2026_149",
+        "question": "Which technology is used to secure data in transit?",
+        "code": null,
+        "options": [
+          "AES disk encryption",
+          "TLS/SSL, VPN, HTTPS, SSH",
+          "Database encryption",
+          "Access control lists"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "Data in transit is secured using: TLS/SSL (encrypts client-server communication), HTTPS (secure web browsing), VPN (encrypted tunnels), SSH (secure remote login). Data at rest uses disk/database encryption like AES."
+      },
+      {
+        "id": "prev_2026_150",
+        "question": "What is Preventive Maintenance? Give a data center example.",
+        "code": null,
+        "options": [
+          "Maintenance done after a failure to restore operation",
+          "Maintenance done regularly before failure to prevent breakdown — e.g., cleaning fans, replacing UPS batteries proactively",
+          "Emergency maintenance during a crisis",
+          "Maintenance done once a year only"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Preventive Maintenance is performed regularly before failures occur to reduce breakdown risk. Data center example: regularly cleaning server cooling fans and replacing UPS batteries before they fail. Contrast with Corrective Maintenance (after failure)."
+      },
+      {
+        "id": "prev_2026_151",
+        "question": "What is the difference between Logical Address and Physical Address in context of OS? Which unit performs the translation?",
+        "code": null,
+        "options": [
+          "CPU performs translation",
+          "MMU (Memory Management Unit) translates logical to physical address",
+          "RAM performs translation",
+          "OS scheduler performs translation"
+        ],
+        "answer": 1,
+        "difficulty": "medium",
+        "explanation": "The MMU (Memory Management Unit) hardware translates logical (virtual) addresses generated by the CPU into physical addresses in RAM. This abstraction allows each process to have its own address space and enables virtual memory."
+      },
+      {
+        "id": "prev_2026_152",
+        "question": "Which HTTP status code means 'Not Found'?",
+        "code": null,
+        "options": [
+          "200",
+          "301",
+          "403",
+          "404"
+        ],
+        "answer": 3,
+        "difficulty": "easy",
+        "explanation": "404 Not Found means the requested resource could not be found on the server. 200 = OK (success), 301 = Moved Permanently (redirect), 403 = Forbidden (access denied)."
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "questions": [
+      {
+        "id": "prev_2024_001",
+        "question": "What is the full form of CPU?",
+        "code": null,
+        "options": [
+          "Central Processing Unit",
+          "Computer Program Unit",
+          "Central Performance Utility",
+          "Control Processing Unit"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "CPU stands for Central Processing Unit."
+      },
+      {
+        "id": "prev_2024_002",
+        "question": "Which data structure follows FIFO order?",
+        "code": null,
+        "options": [
+          "Stack",
+          "Queue",
+          "Tree",
+          "Graph"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "Queue follows First-In-First-Out order."
+      },
+      {
+        "id": "prev_2024_003",
+        "question": "Which SQL command is used to retrieve data?",
+        "code": null,
+        "options": [
+          "SELECT",
+          "INSERT",
+          "UPDATE",
+          "DELETE"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "SELECT is used to retrieve records from a table."
+      },
+      {
+        "id": "prev_2024_004",
+        "question": "What is the base of the binary number system?",
+        "code": null,
+        "options": [
+          "2",
+          "8",
+          "10",
+          "16"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Binary uses base 2."
+      },
+      {
+        "id": "prev_2024_005",
+        "question": "Which protocol is used for secure web browsing?",
+        "code": null,
+        "options": [
+          "HTTP",
+          "HTTPS",
+          "FTP",
+          "SMTP"
+        ],
+        "answer": 1,
+        "difficulty": "easy",
+        "explanation": "HTTPS uses TLS for secure browsing."
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "questions": [
+      {
+        "id": "prev_2023_001",
+        "question": "Who wrote 'à¦¬à¦¿à¦¦à§à¦°à§‹à¦¹à§€'?",
+        "code": null,
+        "options": [
+          "Kazi Nazrul Islam",
+          "Rabindranath Tagore",
+          "Michael Madhusudan Dutt",
+          "Jasim Uddin"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "à¦¬à¦¿à¦¦à§à¦°à§‹à¦¹à§€ was written by Kazi Nazrul Islam."
+      },
+      {
+        "id": "prev_2023_002",
+        "question": "What is the antonym of 'increase'?",
+        "code": null,
+        "options": [
+          "Rise",
+          "Grow",
+          "Decrease",
+          "Expand"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "Decrease is the opposite of increase."
+      },
+      {
+        "id": "prev_2023_003",
+        "question": "What is 12 x 12?",
+        "code": null,
+        "options": [
+          "124",
+          "134",
+          "144",
+          "154"
+        ],
+        "answer": 2,
+        "difficulty": "easy",
+        "explanation": "12 times 12 equals 144."
+      },
+      {
+        "id": "prev_2023_004",
+        "question": "Which planet is called the Red Planet?",
+        "code": null,
+        "options": [
+          "Mars",
+          "Venus",
+          "Earth",
+          "Mercury"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Mars is called the Red Planet."
+      },
+      {
+        "id": "prev_2023_005",
+        "question": "Which one is a programming language?",
+        "code": null,
+        "options": [
+          "Python",
+          "Windows",
+          "Chrome",
+          "Linux"
+        ],
+        "answer": 0,
+        "difficulty": "easy",
+        "explanation": "Python is a programming language."
+      }
+    ]
+  }
+]
