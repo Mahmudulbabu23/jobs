@@ -146,6 +146,10 @@
                 display: block;
             }
 
+            .dropdown.open .dropdown-content {
+                display: block;
+            }
+
             .nav-links a:hover {
                 color: var(--ink);
             }
@@ -410,11 +414,11 @@
                     </div>
                     <nav class="nav-links" aria-label="Primary">
                         <a href="index.html">Homes</a>
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Solutions ▾</button>
-                            <div class="dropdown-content" role="menu" aria-label="Solutions menu">
-                                <a href="solutions/Written.html" role="menuitem">Written</a>
-                                <a href="solutions/MCQ.html" role="menuitem">MCQ</a>
+                        <div class="dropdown" data-dropdown>
+                            <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="solutionsMenu">Solutions ▾</button>
+                            <div class="dropdown-content" id="solutionsMenu" role="menu" aria-label="Solutions menu">
+                                <a href="Solutions/Written.html" role="menuitem">Written</a>
+                                <a href="MCq.html" role="menuitem">MCQ</a>
                             </div>
                         </div>
                         <a href="notes/cs_learning_guide_enhanced.html">note</a>
@@ -470,5 +474,31 @@
                 </div>
             </section>
         </main>
+        <script>
+            const dropdown = document.querySelector('[data-dropdown]');
+            const toggle = dropdown?.querySelector('.dropdown-toggle');
+            const menu = dropdown?.querySelector('.dropdown-content');
+
+            function closeMenu() {
+                if (!dropdown || !toggle || !menu) return;
+                dropdown.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle?.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const isOpen = dropdown.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!dropdown || !toggle || !menu) return;
+                if (!dropdown.contains(event.target)) closeMenu();
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeMenu();
+            });
+        </script>
     </body>
 </html>
