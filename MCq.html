@@ -701,7 +701,13 @@ async function startQuiz(selectedTopicsParam){
   document.getElementById('gScore').textContent=gScore;
   document.getElementById('gDone').textContent=gDone;
   updateCounts();
-  const usedTopics = Array.isArray(selectedTopicsParam) && selectedTopicsParam.length? selectedTopicsParam : [...selTopics];
+  // If caller didn't pass explicit topics, derive selected topics from UI tiles to avoid stale/mixed selections
+  const usedTopics = (Array.isArray(selectedTopicsParam) && selectedTopicsParam.length)
+    ? selectedTopicsParam
+    : (function(){
+        const active = Array.from(document.querySelectorAll('.topic-tile.on')).map(el=>el.dataset.id).filter(Boolean);
+        return active.length? active : [...selTopics];
+      })();
   const finalQuestions=generateQuizQuestions([...usedTopics],total,diff);
   if(!finalQuestions)return;
   qs={questions:finalQuestions,answers:new Array(total).fill(null),
